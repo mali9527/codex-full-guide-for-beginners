@@ -1,0 +1,50 @@
+- unit: first-task
+  source_commit: c9065514c514987c2b33f57a8baf3dc95e1232dd
+  paths: &id001
+  - manuscript/first-task.md
+  - facts.yaml
+  - 术语翻译表.md
+  - 参考来源与致谢.md
+  - examples/ch04-first-result/README.md
+  - examples/ch04-first-result/活动筹备-起始材料.zip
+  - examples/ch04-first-result/演示结果/活动简报-v1.txt
+  - examples/ch04-first-result/演示结果/活动简报-v2.txt
+  - examples/ch04-first-result/起始材料/活动筹备/材料/场地说明.txt
+  - examples/ch04-first-result/起始材料/活动筹备/材料/活动安排.txt
+  - examples/ch04-first-result/起始材料/活动筹备/材料/物品清单.txt
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 当前引擎的编辑复核；真实读者试读与完整操作验证未完成。
+  reason: 逐部分检查前置、首次术语、过程与恢复；示意纠错和实际文件结果已区分，参考关系与致谢同步。
+- unit: first-task
+  source_commit: c9065514c514987c2b33f57a8baf3dc95e1232dd
+  paths: *id001
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 本章 Codex 官方文档事实核对；不能据此认定双平台按钮位置、系统行为或最新稳定客户端已实测。
+  reason: 当次读取桌面入口、项目、运行位置、权限和文件工作说明，核对更新日志相关开篇；未沿用旧教程界面保证。
+- unit: first-task
+  source_commit: c9065514c514987c2b33f57a8baf3dc95e1232dd
+  paths: *id001
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 只完成当前作者会话的本地文件级演示；未完成Windows或Mac的完整GUI路径，应用是否最新稳定版未知。
+  reason: 输入与v1保留、v2唯一新增句、文件读回及ZIP内容已核对；完整章节路径仍需双平台操作证据。
