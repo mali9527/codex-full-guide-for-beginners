@@ -5,7 +5,7 @@ language: zh-CN
 product: codex
 audience: 已拥有可用付费账号，会用办公软件和文件夹，但无编程与 Codex 使用经验、不懂终端、路径、Git 的读者
 baseline:
-  product_version: 官方文档快照 2026-09-24；客户端实测版本待定
+  product_version: 官方文档框架基线 2026-09-24；第4章相关页面复核 2026-09-25；双平台客户端路径待实测
   checked_on: '2026-09-24'
 repository:
   name: null
@@ -74,6 +74,9 @@ units:
   - deliverables
   - verification
   facts:
+  - desktop-entry
+  - local-project-context
+  - local-run-mode
   - artifact-preview
   - permission-boundary
   derived_from: null

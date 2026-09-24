@@ -3,11 +3,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-25；未作操作实测
   sources:
   - url: https://learn.chatgpt.com/docs/app
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-25'
+  checked_on: '2026-09-25'
   category: startup
   status: confirmed
   critical: true
@@ -69,29 +69,29 @@
   critical: true
   ttl_days: 90
 - id: local-project-context
-  claim: 本地项目连接本地文件夹；云端项目依靠上传或连接来源，二者的文件访问方式不同。
+  claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT 项目不直接连接电脑文件夹。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-25；未作操作实测
   sources:
   - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-25'
+  checked_on: '2026-09-25'
   category: startup
   status: confirmed
   critical: true
   ttl_days: 180
 - id: permission-boundary
-  claim: 自动审核改变操作审批方式，并不自动扩大沙盒边界；完全访问是不同的权限配置。
+  claim: Ask for approval 允许在当前工作范围内读写文件和运行常规本地命令，联网或超出范围时请求批准；自动审核改变审批方式，不自动扩大边界。可用模式受配置及组织要求限制。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-25；未作操作实测
   sources:
   - url: https://learn.chatgpt.com/docs/permission-modes
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-25'
+  checked_on: '2026-09-25'
   category: permission
   status: confirmed
   critical: true
@@ -101,11 +101,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-25；未作操作实测
   sources:
   - url: https://learn.chatgpt.com/docs/artifacts-viewer
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-25'
+  checked_on: '2026-09-25'
   category: startup
   status: confirmed
   critical: true
@@ -244,6 +244,20 @@
     checked_on: '2026-09-24'
   checked_on: '2026-09-24'
   category: install
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: local-run-mode
+  claim: 桌面 Codex 新对话可选择 Local；它直接在电脑的当前项目文件夹中工作。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-25；未作双平台界面实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/environments/modes
+    checked_on: '2026-09-25'
+  checked_on: '2026-09-25'
+  category: startup
   status: confirmed
   critical: true
   ttl_days: 180
