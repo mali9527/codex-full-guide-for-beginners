@@ -1,13 +1,30 @@
 {
   "version": 1,
   "regions": {
-    "manuscript/intro.md#nav": "054a62f612958664843d84e83823be8fb57ca40e7f4383de4cfc85628db6804d",
-    "manuscript/choose.md#nav": "9ad7ba16b6e681c6977e68afceab5411c039e49a88324d759c3feb949f831f2d",
-    "manuscript/first-task.md#nav": "8e530c0053f1d8d291058b9af51022b4ee25db78b28c8a43e3d6595635ee7215",
-    "README.md#toc": "5c99d166d51a77297ad552af7c5af7ba3b4ae98fdb60c5d5cf5356dbb9afe9a0",
+    "manuscript/intro.md#nav": "577520f18a94af6bcb7a95ff0acaa72bc1df59378cd0358338a0dec4b0f86024",
+    "manuscript/desktop-setup.md#nav": "106d7b4d5da4def8f66894714360578bcf6fb9aed5cd0e677eb68d5af68475d0",
+    "manuscript/workspace-files.md#nav": "685ff5ffeff53b7ee6f52699c1c2f0f81ad9dfcfdf6c846aac9c0f97213611f3",
+    "manuscript/first-task.md#nav": "6f41a9b8217ba8eb5026eab749f0977812b35e46b502ff2f8aa6fd710e09325a",
+    "manuscript/choose.md#nav": "e3f05877051fb159f1cd2d4010b077af2e4a2163139727c5e7fe42eb73a27b8f",
+    "manuscript/clear-requests.md#nav": "c0c11c792d0f03cf2ead3fa7ab8acc8b5382cdbcacd90a2f78b0812fb05d4e5a",
+    "manuscript/work-documents.md#nav": "6c13fe2a98a32d6d55b2f449f4772300ace7de72696f34995c94354eb2037522",
+    "manuscript/work-tables.md#nav": "a939808e7c6358d8ddca28169c51daa2c59848718425f0a463d59bf56bd4b487",
+    "manuscript/context-rules.md#nav": "c8bd029b45201fae1e290db8806d916a6a55d9cda2f12ff320360702b1870597",
+    "manuscript/skills-plugins.md#nav": "a98b65dcdb4ea27bdc7f22a772952792a8106a68a8f178ef561865b06dfa78f6",
+    "manuscript/scheduled-work.md#nav": "4301b0ca97e03d1f795e399c7ed02fedade623938d1ac9192f543eb5fa200fd9",
+    "manuscript/web-basics.md#nav": "6b7b12c80985983097f2420a4fdbb2085b8ff66f0830431c977587b782009d99",
+    "manuscript/first-website.md#nav": "7a2ad6181b998db8c6241ec60cc1656f3dd5cc400d63fd45f34e12a8ea70cf07",
+    "manuscript/versions.md#nav": "fd8577c53fb93e33dbe829a001d500ae9666e3a2d62bba393b8f42125242ed80",
+    "manuscript/small-tool.md#nav": "8a4da8ad299753462129d625692bd5cf649f07e0e79f5e5dfc84d60ec6a1004f",
+    "manuscript/share-maintain.md#nav": "21dc33d10ef5358d0768ad21d2c185bec4be2c8d5bf845be61bb49d34df065b6",
+    "manuscript/terminal-basics.md#nav": "4ffdfdca29263d38cdd2bd10f1a448ce2752ec6866de1d0e95bcf0b32a726d3a",
+    "manuscript/cli-first-task.md#nav": "f04a1c310de7d8aa8a6758501e92c59263445d5f2ecab69cb80669547f0a9ab1",
+    "manuscript/troubleshooting.md#nav": "c44afe559d78b87ae39f152e6a9803bdc965212f1d4a4e936840246abfd8c323",
+    "manuscript/quick-reference.md#nav": "159585f9811df0f913db5321f60cf351644b7cfa5c22f5d2832c213eeee3ff3a",
+    "README.md#toc": "987aa15365262345583b660f20a1d12dcc7b5f697eee2f877db39307f0bedddc",
     "README.md#release": "2103ac282563e72bf157d80dd713666aad6087abf38fc46ef1fd2f2487d67b9f"
   },
   "files": {
-    "全书.md": "93042abc903c54c6164b5cdcdccdb3ab562ba53346a44c8920dcc08ec16fd09b"
+    "全书.md": "7e04acb50e378dcf1b988150c5c61e6912d07574f761642a8c04c7879350d945"
   }
 }

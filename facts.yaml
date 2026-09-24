@@ -1,1 +1,249 @@
-[]
+- id: desktop-entry
+  claim: 当前官方桌面文档在 ChatGPT desktop app 中提供 ChatGPT 与 Codex 入口选择。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/app
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: desktop-platforms
+  claim: 官方快速开始列有 macOS、Windows 和 Linux 桌面入口；本书规划主覆盖 Mac 与 Windows。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/quickstart
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: install
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: windows-native
+  claim: Windows 桌面可原生运行 Codex，默认使用 PowerShell；WSL2 是可选运行路径。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/windows/windows-app
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: install
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: sign-in-options
+  claim: 本地桌面和 Codex CLI 支持 ChatGPT 登录与 API key 两类访问方式，适用计费和管理条件不同。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/auth
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: account
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: usage-availability
+  claim: Codex 的入口、模型、额度和功能可用性受套餐、逐步开放及工作区条件影响，应按当前账号核对。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/pricing
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: quota
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: local-project-context
+  claim: 本地项目连接本地文件夹；云端项目依靠上传或连接来源，二者的文件访问方式不同。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: permission-boundary
+  claim: 自动审核改变操作审批方式，并不自动扩大沙盒边界；完全访问是不同的权限配置。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/permission-modes
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: artifact-preview
+  claim: 桌面支持多种成果的可视预览；CLI 不提供同样的预览与批注界面。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/artifacts-viewer
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: project-instructions
+  claim: Codex 可按全局与项目作用范围读取 AGENTS.md 指令。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/agent-configuration/agents-md
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: stable
+  status: confirmed
+  critical: true
+- id: local-memory
+  claim: 本地 Codex 记忆与 ChatGPT 网页记忆不同；必须持续适用的规则应保存在项目指令或文档。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/customization/memories
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: stable
+  status: confirmed
+  critical: true
+- id: skills-plugins
+  claim: 技能封装任务流程及资源；插件可包含技能与 MCP 服务器等扩展。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/skills-and-plugins
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: stable
+  status: confirmed
+  critical: true
+- id: scheduled-local
+  claim: 需要本地文件的桌面定时任务要求电脑开启且应用运行；CLI 不提供 Scheduled 管理界面。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/automations
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: browser-boundary
+  claim: 桌面内置浏览器可预览本地网页，浏览资料与普通浏览器独立；CLI 没有该内置浏览器界面。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/browser
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: git-review
+  claim: 桌面代码审阅面板要求项目处于 Git 仓库中。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/code-review?surface=app
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: undo
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: review-scope
+  claim: 代码审阅面板可显示仓库中非 Codex 产生的改动；Last turn 和工作区差异的范围不同。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/troubleshooting
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: undo
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: project-actions
+  claim: 桌面 Codex 的 local environments 可保存项目常用启动动作并支持平台特定配置。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/environments/local-environment
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: cli-entry
+  claim: Codex CLI 在本地终端运行，可在工作目录中检查、修改文件并执行命令。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/codex/cli
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: cli-install
+  claim: 官方当前提供 Mac/Linux 与 Windows 的 CLI 独立安装器，也保留 npm/Homebrew 等安装方式。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-24；未作操作实测
+  sources:
+  - url: https://github.com/openai/codex
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: install
+  status: confirmed
+  critical: true
+  ttl_days: 180

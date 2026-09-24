@@ -3,16 +3,17 @@ title: Codex完全零基础入门
 type: book
 language: zh-CN
 product: codex
-audience: 零基础普通人
+audience: 会用办公软件和文件夹，但不懂终端、路径、Git 等概念的零编程基础读者
 baseline:
-  product_version: 待研究
-  checked_on: null
+  product_version: 官方文档快照 2026-09-24；客户端实测版本待定
+  checked_on: '2026-09-24'
 repository:
   name: null
   default_branch: main
 is_test: false
 watershed: choose
 platforms:
+- windows
 - mac
 required_checks:
 - editorial
@@ -20,40 +21,286 @@ required_checks:
 - operations
 units:
 - id: intro
-  title: 认识产品
+  title: Codex 能帮你做什么，你还需要做什么
   path: manuscript/intro.md
   section: popular
   depth: 0
   prerequisites: []
-  features: []
-  facts: []
+  features:
+  - identity
+  facts:
+  - desktop-entry
   derived_from: null
   required_checks:
   - editorial
   - facts
+- id: desktop-setup
+  title: 把桌面应用准备好：Windows 与 Mac
+  path: manuscript/desktop-setup.md
+  section: popular
+  depth: 0
+  prerequisites:
+  - intro
+  features:
+  - setup
+  - account
+  facts:
+  - desktop-platforms
+  - windows-native
+  - sign-in-options
+  - usage-availability
+  derived_from: null
+- id: workspace-files
+  title: 让 Codex 找到材料：项目、任务和文件
+  path: manuscript/workspace-files.md
+  section: popular
+  depth: 0
+  prerequisites:
+  - desktop-setup
+  features:
+  - files
+  - projects
+  facts:
+  - local-project-context
+  derived_from: null
+- id: first-task
+  title: 得到第一份可以检查和保存的结果
+  path: manuscript/first-task.md
+  section: popular
+  depth: 0
+  prerequisites:
+  - workspace-files
+  features:
+  - deliverables
+  - verification
+  facts:
+  - artifact-preview
+  - permission-boundary
+  derived_from: null
 - id: choose
-  title: 继续之前做个选择
+  title: 到这里已经能用：接下来走多远
   path: manuscript/choose.md
   section: watershed
   depth: 0
   prerequisites:
-  - intro
-  features: []
+  - first-task
+  features:
+  - learning-route
   facts: []
   derived_from: null
   required_checks:
   - editorial
   - facts
-- id: first-task
-  title: 完成第一个任务
-  path: manuscript/first-task.md
+- id: clear-requests
+  title: 把事情讲清楚，并带着它一步步改
+  path: manuscript/clear-requests.md
   section: deep
   depth: 1
   prerequisites:
   - choose
-  features: []
+  features:
+  - prompting
+  - iteration
+  facts:
+  - permission-boundary
+  derived_from: null
+- id: work-documents
+  title: 把零散资料整理成真正能交付的文档
+  path: manuscript/work-documents.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - clear-requests
+  features:
+  - documents
+  - sources
+  facts:
+  - artifact-preview
+  derived_from: null
+- id: work-tables
+  title: 让表格和数据帮你判断事情
+  path: manuscript/work-tables.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - work-documents
+  features:
+  - spreadsheets
+  - data-quality
+  facts:
+  - artifact-preview
+  derived_from: null
+- id: context-rules
+  title: 让一个任务做得下去，也接得起来
+  path: manuscript/context-rules.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - clear-requests
+  - work-documents
+  features:
+  - context
+  - instructions
+  - memory
+  facts:
+  - local-project-context
+  - project-instructions
+  - local-memory
+  derived_from: null
+- id: skills-plugins
+  title: 需要新能力时，再认识技能和插件
+  path: manuscript/skills-plugins.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - context-rules
+  - work-tables
+  features:
+  - skills
+  - plugins
+  - browser
+  facts:
+  - skills-plugins
+  - browser-boundary
+  derived_from: null
+- id: scheduled-work
+  title: 把已经做好的流程，变成定时工作
+  path: manuscript/scheduled-work.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - skills-plugins
+  features:
+  - automation
+  facts:
+  - scheduled-local
+  derived_from: null
+- id: web-basics
+  title: 从一份文件，走到一个能打开的网页
+  path: manuscript/web-basics.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - work-documents
+  features:
+  - web-concepts
+  - preview
+  facts:
+  - browser-boundary
+  derived_from: null
+- id: first-website
+  title: 做出自己的第一个网页
+  path: manuscript/first-website.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - web-basics
+  - clear-requests
+  features:
+  - web-build
+  - visual-review
+  facts:
+  - browser-boundary
+  - project-actions
+  derived_from: null
+- id: versions
+  title: 改网页之前，先学会保存版本
+  path: manuscript/versions.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - first-website
+  features:
+  - git
+  - recovery
+  facts:
+  - git-review
+  derived_from: null
+- id: small-tool
+  title: 从展示信息，走向一个实用小工具
+  path: manuscript/small-tool.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - versions
+  - work-tables
+  features:
+  - interaction
+  - acceptance
+  facts:
+  - browser-boundary
+  derived_from: null
+- id: share-maintain
+  title: 把成果交出去，并能在以后继续维护
+  path: manuscript/share-maintain.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - small-tool
+  features:
+  - delivery
+  - publishing
   facts: []
   derived_from: null
+- id: terminal-basics
+  title: 终端并不神秘：先看懂位置和命令
+  path: manuscript/terminal-basics.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - workspace-files
+  - small-tool
+  features:
+  - terminal
+  - paths
+  facts:
+  - cli-entry
+  derived_from: null
+- id: cli-first-task
+  title: 用 Codex CLI 继续同一个项目
+  path: manuscript/cli-first-task.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - terminal-basics
+  - versions
+  features:
+  - cli
+  - resume
+  facts:
+  - cli-entry
+  - cli-install
+  - sign-in-options
+  derived_from: null
+- id: troubleshooting
+  title: 遇到问题时，先找出卡在哪一层
+  path: manuscript/troubleshooting.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - desktop-setup
+  - first-task
+  features:
+  - troubleshooting
+  - limits
+  facts:
+  - usage-availability
+  - review-scope
+  derived_from: null
+- id: quick-reference
+  title: 速查：概念、平台差异和继续学习
+  path: manuscript/quick-reference.md
+  section: appendix
+  depth: 0
+  prerequisites:
+  - intro
+  features:
+  - reference
+  facts: []
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
 outputs:
   combined: 全书.md
   readme: README.md

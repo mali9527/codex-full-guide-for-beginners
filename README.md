@@ -2,22 +2,41 @@
 
 一本面向没有编程基础读者的 Codex 入门书，桌面端为主，包含 CLI 的必要基础。
 
-当前处于研究准备阶段。目录、产品基线和正文尚未确定；下面的三个单元是用于结构检查的占位，并非正式目录。
+已形成研究后的内容框架 v0.3，推荐目录为 19 章与 1 个附录。当前章节文件仍是结构占位，尚未写成正文。官方资料查阅基线为 2026-09-24，双平台操作与截图待实测。
+
+优先阅读[逐章内容框架](内容框架.md)，再查看下面的目录。
 
 ## 读者承诺
 
-从日常任务出发，在需要时解释概念。关注怎样开始、怎样提供材料、怎样判断结果和处理问题，不设置练习题或作业要求。
+假定读者会用办公软件与文件夹，但不懂终端、路径和 Git。Windows 与 Mac 并重，从日常文档、表格逐步走向网页与小工具，CLI 放在补齐前置之后。不设置练习、作业或测验；案例用于演示与解释。
 
 详见[作品需求摘要](需求文档.md)。本书拥有独立的 Git 仓库，与系列其他作品分开维护。
 
 ## 阅读目录
 
 <!-- studio:toc -->
-共 3 个单元，0 张图。
+共 20 个单元，0 张图。
 
-1. [认识产品](manuscript/intro.md)
-2. [继续之前做个选择](manuscript/choose.md)
-3. [完成第一个任务](manuscript/first-task.md)
+1. [Codex 能帮你做什么，你还需要做什么](manuscript/intro.md)
+2. [把桌面应用准备好：Windows 与 Mac](manuscript/desktop-setup.md)
+3. [让 Codex 找到材料：项目、任务和文件](manuscript/workspace-files.md)
+4. [得到第一份可以检查和保存的结果](manuscript/first-task.md)
+5. [到这里已经能用：接下来走多远](manuscript/choose.md)
+6. [把事情讲清楚，并带着它一步步改](manuscript/clear-requests.md)
+7. [把零散资料整理成真正能交付的文档](manuscript/work-documents.md)
+8. [让表格和数据帮你判断事情](manuscript/work-tables.md)
+9. [让一个任务做得下去，也接得起来](manuscript/context-rules.md)
+10. [需要新能力时，再认识技能和插件](manuscript/skills-plugins.md)
+11. [把已经做好的流程，变成定时工作](manuscript/scheduled-work.md)
+12. [从一份文件，走到一个能打开的网页](manuscript/web-basics.md)
+13. [做出自己的第一个网页](manuscript/first-website.md)
+14. [改网页之前，先学会保存版本](manuscript/versions.md)
+15. [从展示信息，走向一个实用小工具](manuscript/small-tool.md)
+16. [把成果交出去，并能在以后继续维护](manuscript/share-maintain.md)
+17. [终端并不神秘：先看懂位置和命令](manuscript/terminal-basics.md)
+18. [用 Codex CLI 继续同一个项目](manuscript/cli-first-task.md)
+19. [遇到问题时，先找出卡在哪一层](manuscript/troubleshooting.md)
+20. [速查：概念、平台差异和继续学习](manuscript/quick-reference.md)
 <!-- /studio:toc -->
 
 ## 版本与下载
@@ -34,7 +53,7 @@
 
 本书通过研读和比较现有资料获得启发，正文、案例和图示自行创作，不直接复制、翻译或近似改写参考教程内容。实际研读分析与借鉴过的来源都将如实列入参考来源与致谢，说明阅读范围和帮助；不仅记录影响最终章节的来源。
 
-现阶段只有研究记录，尚未形成正文。公开参考资料将在写作阶段由真实阅读记录整理，不把未读候选清单冒充参考书目。
+已按真实阅读范围整理[参考来源与致谢](参考来源与致谢.md)，区分深入阅读、选读和发现用途。未读候选和未观看视频不冒充参考书目。当前没有教程文字、图片或代码搬入正文。
 
 ## 写作与维护
 
