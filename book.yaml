@@ -1,0 +1,69 @@
+id: codex
+title: Codex完全零基础入门
+type: book
+language: zh-CN
+product: codex
+audience: 零基础普通人
+baseline:
+  product_version: 待研究
+  checked_on: null
+repository:
+  name: null
+  default_branch: main
+is_test: false
+watershed: choose
+platforms:
+- mac
+required_checks:
+- editorial
+- facts
+- operations
+units:
+- id: intro
+  title: 认识产品
+  path: manuscript/intro.md
+  section: popular
+  depth: 0
+  prerequisites: []
+  features: []
+  facts: []
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: choose
+  title: 继续之前做个选择
+  path: manuscript/choose.md
+  section: watershed
+  depth: 0
+  prerequisites:
+  - intro
+  features: []
+  facts: []
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: first-task
+  title: 完成第一个任务
+  path: manuscript/first-task.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - choose
+  features: []
+  facts: []
+  derived_from: null
+outputs:
+  combined: 全书.md
+  readme: README.md
+  pdf:
+    enabled: false
+    font: PingFang SC
+    paper: a5
+  translations: {}
+diagrams: []
+toolkit: 0.1.0
+published:
+  version: null
+  pdf: null

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "regions": {
+    "manuscript/intro.md#nav": "054a62f612958664843d84e83823be8fb57ca40e7f4383de4cfc85628db6804d",
+    "manuscript/choose.md#nav": "9ad7ba16b6e681c6977e68afceab5411c039e49a88324d759c3feb949f831f2d",
+    "manuscript/first-task.md#nav": "8e530c0053f1d8d291058b9af51022b4ee25db78b28c8a43e3d6595635ee7215",
+    "README.md#toc": "5c99d166d51a77297ad552af7c5af7ba3b4ae98fdb60c5d5cf5356dbb9afe9a0",
+    "README.md#release": "2103ac282563e72bf157d80dd713666aad6087abf38fc46ef1fd2f2487d67b9f"
+  },
+  "files": {
+    "全书.md": "93042abc903c54c6164b5cdcdccdb3ab562ba53346a44c8920dcc08ec16fd09b"
+  }
+}
