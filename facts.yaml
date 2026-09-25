@@ -1,13 +1,13 @@
 - id: desktop-entry
-  claim: 当前官方桌面文档在 ChatGPT desktop app 中提供 ChatGPT 与 Codex 入口选择。
+  claim: 当前官方快速开始在ChatGPT桌面应用的ChatGPT下拉菜单中提供Codex入口。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-25；未作操作实测
+    baseline: 2026-09-26官方文档核对；未作双平台界面实测
   sources:
-  - url: https://learn.chatgpt.com/docs/app
-    checked_on: '2026-09-25'
-  checked_on: '2026-09-25'
+  - url: https://learn.chatgpt.com/docs/quickstart
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: startup
   status: confirmed
   critical: true
@@ -27,15 +27,17 @@
   critical: true
   ttl_days: 180
 - id: windows-native
-  claim: Windows 桌面可原生运行 Codex，默认使用 PowerShell；WSL2 是可选运行路径。
+  claim: Windows桌面支持原生运行；原生沙箱初次设置可能需要管理员批准，受管理环境可能受限；不等于日常都以管理员身份运行。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-26官方文档核对；未作双平台界面实测
   sources:
   - url: https://learn.chatgpt.com/docs/windows/windows-app
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-26'
+  - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: install
   status: confirmed
   critical: true
@@ -69,29 +71,30 @@
   critical: true
   ttl_days: 90
 - id: local-project-context
-  claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT 项目不直接连接电脑文件夹。
+  claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT
+    项目不直接连接电脑文件夹。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-25；未作操作实测
+    baseline: 2026-09-26官方文档核对；未作双平台界面实测
   sources:
   - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-25'
-  checked_on: '2026-09-25'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: startup
   status: confirmed
   critical: true
   ttl_days: 180
 - id: permission-boundary
-  claim: Ask for approval 允许在当前工作范围内读写文件和运行常规本地命令，联网或超出范围时请求批准；自动审核改变审批方式，不自动扩大边界。可用模式受配置及组织要求限制。
+  claim: Ask for approval允许在当前工作区范围内读写文件及运行常规本地命令，需要额外访问时请求批准；权限控件位于输入框下方。配置及组织要求影响可用模式，自动审核不自动扩大访问边界。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-25；未作操作实测
+    baseline: 2026-09-26官方文档核对；未作双平台界面实测
   sources:
   - url: https://learn.chatgpt.com/docs/permission-modes
-    checked_on: '2026-09-25'
-  checked_on: '2026-09-25'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: permission
   status: confirmed
   critical: true
@@ -252,11 +255,67 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-25；未作双平台界面实测
+    baseline: 2026-09-26官方文档核对；未作双平台界面实测
   sources:
   - url: https://learn.chatgpt.com/docs/environments/modes
-    checked_on: '2026-09-25'
-  checked_on: '2026-09-25'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: desktop-file-shortcuts
+  claim: 桌面Codex和Work的Open folder默认快捷键为Windows Ctrl+O、Mac ⌘O；New chat默认快捷键为Ctrl+N、⌘N。快捷键可自定义，不能推定普通Chat入口相同。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/commands
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: windows-unzip
+  claim: 微软文档支持右键ZIP使用Extract All/全部提取并按对话框解压；浏览ZIP与解压到普通文件夹不是同一动作，最终目录层级还取决于包结构与所选位置。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
+  sources:
+  - url: https://support.microsoft.com/zh-cn/windows/experience/storage-filemanagement/zip-and-unzip-files
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: mac-unzip
+  claim: Apple文档说明Mac可双击ZIP解压，解压内容出现在ZIP所在文件夹。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
+  sources:
+  - url: https://support.apple.com/en-euro/guide/mac-help/mchlp2528/mac
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180
+- id: safari-download-location
+  claim: Safari下载位置可在设置中更改，下载列表可定位文件；其文档描述下载ZIP后解压的行为，不能据此要求所有浏览器都生成相同文件夹或保存于下载目录。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
+  sources:
+  - url: https://support.apple.com/guide/safari/download-items-from-the-web-sfri40598/mac
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: startup
   status: confirmed
   critical: true

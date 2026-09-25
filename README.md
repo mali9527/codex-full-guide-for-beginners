@@ -2,9 +2,11 @@
 
 一本面向没有编程基础读者的 Codex 入门书，桌面端为主，包含 CLI 的必要基础。
 
-已形成研究后的内容框架 v0.5，推荐目录为 19 章与 1 个附录。第4章已按作者反馈改为「零散备忘到待办清单」的修订样章与原创配套材料，其余19个单元仍是结构占位。第4章相关官方资料已于2026-09-25复核；文件级演示完成，双平台完整界面路径待实测。
+当前内容框架v0.6，保留19章与1个附录。第3、4章已形成连续阅读稿：先准备和连接两份备忘，再整理、检查、修改清单；其余18个单元仍为占位。两章相关官方与系统资料核对至2026-09-26。
 
-案例选择与讲述方式见[案例设计](案例设计.md)。可以先读[第4章样章](manuscript/first-task.md)和[配套材料](examples/ch04-notes-to-todos/README.md)，再对照[逐章内容框架](内容框架.md)。
+**当前是编辑中的草稿，尚未发行。** 文件级演示已有记录，但下载发行入口、Windows/Mac完整界面路径、稳定版客户端渠道与配图仍待验证；不能把本文当作已完成双平台实测的教程。未解决的具体步骤保留了编辑标记，正式版前须逐项补齐。
+
+案例选择与讲述方式见[案例设计](案例设计.md)。可以连续读[第3章准备文件](manuscript/workspace-files.md)、[第4章整理清单](manuscript/first-task.md)，配合[配套材料](examples/ch04-notes-to-todos/README.md)，再对照[逐章内容框架](内容框架.md)。
 
 ## 读者承诺
 
@@ -19,7 +21,7 @@
 
 1. [Codex 能帮你做什么，你还需要做什么](manuscript/intro.md)
 2. [把桌面应用准备好：Windows 与 Mac](manuscript/desktop-setup.md)
-3. [让 Codex 找到材料：项目、任务和文件](manuscript/workspace-files.md)
+3. [把文件准备好，让 Codex 找到它](manuscript/workspace-files.md)
 4. [得到第一份可以检查和保存的结果](manuscript/first-task.md)
 5. [到这里已经能用：接下来走多远](manuscript/choose.md)
 6. [把事情讲清楚，并带着它一步步改](manuscript/clear-requests.md)

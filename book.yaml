@@ -5,8 +5,8 @@ language: zh-CN
 product: codex
 audience: 已拥有可用付费账号，会用办公软件和文件夹，但无编程与 Codex 使用经验、不懂终端、路径、Git 的读者
 baseline:
-  product_version: 官方文档框架基线 2026-09-24；第4章相关页面复核 2026-09-25；双平台客户端路径待实测
-  checked_on: '2026-09-24'
+  product_version: 第3、4章官方文档核对2026-09-26；客户端稳定渠道及双平台完整路径待实测
+  checked_on: '2026-09-26'
 repository:
   name: null
   default_branch: main
@@ -51,7 +51,7 @@ units:
   - usage-availability
   derived_from: null
 - id: workspace-files
-  title: 让 Codex 找到材料：项目、任务和文件
+  title: 把文件准备好，让 Codex 找到它
   path: manuscript/workspace-files.md
   section: popular
   depth: 0
@@ -61,7 +61,15 @@ units:
   - files
   - projects
   facts:
+  - desktop-entry
   - local-project-context
+  - local-run-mode
+  - permission-boundary
+  - desktop-file-shortcuts
+  - windows-native
+  - windows-unzip
+  - mac-unzip
+  - safari-download-location
   derived_from: null
 - id: first-task
   title: 得到第一份可以检查和保存的结果
@@ -74,10 +82,8 @@ units:
   - deliverables
   - verification
   facts:
-  - desktop-entry
   - local-project-context
   - local-run-mode
-  - artifact-preview
   - permission-boundary
   derived_from: null
 - id: choose

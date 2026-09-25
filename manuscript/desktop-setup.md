@@ -5,5 +5,5 @@
 本单元的读者目标与讲解安排见[内容框架](../内容框架.md)。不设置习题、测验或作业。
 
 <!-- studio:nav -->
-← [Codex 能帮你做什么，你还需要做什么](intro.md) · [目录](../README.md) · [让 Codex 找到材料：项目、任务和文件](workspace-files.md) →
+← [Codex 能帮你做什么，你还需要做什么](intro.md) · [目录](../README.md) · [把文件准备好，让 Codex 找到它](workspace-files.md) →
 <!-- /studio:nav -->
