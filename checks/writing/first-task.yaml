@@ -1,0 +1,57 @@
+schema: 1
+unit: first-task
+input_sha256: febfab7843a2607d5be4d82a0eb3675e0224e5aefa3ba2b773247885e753d333
+evidence_paths:
+- examples/ch04-notes-to-todos/README.md
+- examples/ch04-notes-to-todos/我的待办-起始材料.zip
+- examples/ch04-notes-to-todos/演示结果/待办清单-v1.txt
+- examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
+batch_started_on: '2026-09-26'
+reviewed_on: '2026-09-26'
+reviewer: codex
+reader_review:
+  prior_knowledge:
+    result: pass
+    reason: 已逐段读取当前稿：下载、解压、Ctrl+O和另存直接使用，没有压缩包定义或逐键手势；第4章仍保留路径简释。
+  concept_timing:
+    result: pass
+    reason: 得到成果→路径→实际文件→语义核对，概念围绕结果定位与检查；没有假定编程知识。
+  information_value:
+    result: pass
+    reason: 保留动作对象、原件与成果位置、内容核对和小步修改；常识科普已删，方法从备忘中的具体差异讲出。
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 本轮只用于机制接入试跑，核对下列选定断言；尚未按新机制完成整章全部产品断言反查，其余审阅项保留pending。
+  docs_checked_on: '2026-09-26'
+  change_review:
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: September 2026：09-26 CLI 0.157.1与09-25 CLI 0.157.0开篇选段
+    checked_on: '2026-09-26'
+    effect: 最近变更按产品入口区分；CLI版本不能证明桌面步骤、稳定渠道或双平台路径已经实测。本轮未声称重读完整日志。
+  claims:
+  - anchor: 看清操作是否符合这次要求；看不明白先拒绝，请它解释
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Permission modes / Ask for approval
+    checked_on: '2026-09-26'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 承接前章的Ask for approval设置；本句是遇到请求时的教学建议，不声称每个操作必弹窗。成熟度未单独标注。
+    support: supported
+    rationale: 官方说明工作区边界之外的操作需要批准，支持本表的条件场景；拒绝后请其解释是本书建议，不冒称官方逐字流程或已经实测。
+    notice: ''
+  unused_facts: {}

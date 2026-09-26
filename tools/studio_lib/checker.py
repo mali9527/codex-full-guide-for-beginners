@@ -710,6 +710,21 @@ def check_book(book_dir, publication=False, scope=None, today=None, freshness=Tr
                     checker.issue("stale_generated", "book.yaml", "生成物与源稿不一致：" + str(result.get("changed", result.get("message", "运行 studio build 更新"))))
             except StudioError as exc:
                 checker.issue("build_freshness", "book.yaml", str(exc))
+    # This adopted book requires the same evidence gate in local and fixed-commit checks.
+    if checker.book.get("id") == "codex" and not source_only:
+        import importlib.util
+        gate_path = checker.root / "tools" / "writing_gate.py"
+        if not gate_path.is_file():
+            checker.issue("missing_writing_gate", "tools/writing_gate.py", "Codex writing gate is required")
+        else:
+            spec = importlib.util.spec_from_file_location("codex_book_writing_gate", gate_path)
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            writing = module.validate(checker.root, units=sorted(checker.scope),
+                                      publication=publication, today=checker.today)
+            for level, group in (("error", "errors"), ("warning", "warnings")):
+                for item in writing[group]:
+                    checker.issue(item["code"], item["path"], item["message"], level)
     result = checker.result()
     result["summary"]["source_only"] = bool(source_only)
     return _redacted(result)

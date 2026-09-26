@@ -1,0 +1,71 @@
+schema: 1
+unit: workspace-files
+input_sha256: 6ab6a628676ccddfbef3979e6c3b22de159d43434d45202e39ee164a4379f00d
+evidence_paths:
+- examples/ch04-notes-to-todos/README.md
+- examples/ch04-notes-to-todos/我的待办-起始材料.zip
+- examples/ch04-notes-to-todos/演示结果/待办清单-v1.txt
+- examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
+batch_started_on: '2026-09-26'
+reviewed_on: '2026-09-26'
+reviewer: codex
+reader_review:
+  prior_knowledge:
+    result: pass
+    reason: 已逐段读取当前稿：下载、解压、Ctrl+O和另存直接使用，没有压缩包定义或逐键手势；第4章仍保留路径简释。
+  concept_timing:
+    result: fail
+    reason: 项目/聊天/Local/权限与提示词均结合当前动作说明；但第2章安装前置仍是占位，连续入门路径未完成。
+  information_value:
+    result: pass
+    reason: 保留动作对象、原件与成果位置、内容核对和小步修改；常识科普已删，方法从备忘中的具体差异讲出。
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 本轮只用于机制接入试跑，核对下列选定断言；尚未按新机制完成整章全部产品断言反查，其余审阅项保留pending。
+  docs_checked_on: '2026-09-26'
+  change_review:
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: September 2026：09-26 CLI 0.157.1与09-25 CLI 0.157.0开篇选段
+    checked_on: '2026-09-26'
+    effect: 最近变更按产品入口区分；CLI版本不能证明桌面步骤、稳定渠道或双平台路径已经实测。本轮未声称重读完整日志。
+  claims:
+  - anchor: 这样连接电脑文件夹、组织相关聊天的项目，叫**本地项目**。
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Work in a project；并对照Choose a project or chat without one的入口区分
+    checked_on: '2026-09-26'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 这里指连接电脑文件夹的本地项目，不将ChatGPT项目上传资料行为或CLI目录方式移植到桌面；该小节未单独标成熟度。
+    support: supported
+    rationale: 原页支持本地项目提供电脑文件夹的访问并组织相关聊天；本条只核对正文这一定义，不扩展为全部项目控件均已实测。
+    notice: ''
+  - anchor: 具体范围和可选模式受设置及组织要求影响。
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Permission modes / Ask for approval / Enable modes
+    checked_on: '2026-09-26'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本章采用Ask for approval；模式受本地配置和组织约束。平台标签记录文档适用范围，不能当双平台实测。页面未给本段独立成熟度标签。
+    support: supported
+    rationale: 原页明确可用模式会受配置及组织要求影响，支持正文保留此条件；输入框位置与首次设置仍须操作证据，本条不予替代。
+    notice: ''
+  unused_facts: {}
