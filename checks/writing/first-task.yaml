@@ -1,6 +1,6 @@
-schema: 1
+schema: 2
 unit: first-task
-input_sha256: 227530a8aadf4f56e34932ef76cfe5bb32e2922ed0bcc176a55798a97452a431
+input_sha256: 3d1028264ebd0e4bddf63390eccaa586bc11eed5a0adc9c0ec6eb15523c9c87b
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -22,17 +22,17 @@ reader_review:
     result: pass
     reason: 保留动作对象、原件与成果位置、内容核对和小步修改；常识科普已删，方法从备忘中的具体差异讲出。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 全文围绕同一份清单串起提出要求、语义判断、纠正和版本保留，句子具体，无假经历或空泛安抚；没有靠堆术语扩写。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 回读整章叙述及示例：使用直角引号，提示词不绑定特定语种或国家；代码路径和真实控件名称保留，界面原词与文档译述未当作双平台已核验界面。
   independent_creation:
     result: pending
-    reason: 待按本章完整正文复核
+    reason: 材料和讲解来自本书既有自编案例，本轮未重新对照全部实际参考的原教程；来源回看与原创比较仍待执行，不能只凭低相似度或致谢填通过。
 fact_review:
   coverage: pending
-  reason: 本轮只用于机制接入试跑，核对下列选定断言；尚未按新机制完成整章全部产品断言反查，其余审阅项保留pending。
+  reason: 本轮用新机制回放现有全文并补官方学习提要；下列仍是选定断言，未完成全章逐项来源反查。提示词、演示结果与产品保证须分别判定，coverage保持pending。
   docs_checked_on: '2026-09-26'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
@@ -55,3 +55,34 @@ fact_review:
     rationale: 官方说明工作区边界之外的操作需要批准，支持本表的条件场景；拒绝后请其解释是本书建议，不冒称官方逐字流程或已经实测。
     notice: ''
   unused_facts: {}
+study_brief:
+  mode: retrospective
+  prepared_on: '2026-09-26'
+  base_manuscript_sha256: a50f9ce225800c546765711bfb22987e32ec78efa3e580387a16630be3b64d70
+  reader_goal: 提出可检查的整理要求，找到真实成果，核对语义与未知信息，按明确范围修改并保留版本。
+  reader_start:
+  - 会普通电脑文件操作，不懂编程；前章已解释本地项目、聊天、权限和提示词。
+  - 实际连续路径尚缺第2章与双平台GUI证据；这里仅回放现有文字和自有材料。
+  explain_now:
+  - 聊天里显示结果与实际保存文件不同；路径帮助定位眼前成果。
+  - 完成标准要能检查含义，不能仅看数字和措辞是否流畅。
+  - 工作请求限定任务，但不保证模型每次正确执行；修改后检查变化及未变部分。
+  teaching_sequence:
+  - 先对比两条原备忘与期望清单，说明合并、保留、未知不猜这些完成标准。
+  - 给出原创请求后打开实际成果，按需要引入路径。
+  - 用截止与开始、未预约与已预约的差别检查语义，再做一次有依据的局部修改与版本保留。
+  defer:
+  - 路径语法、盘符、终端命令；此章只需认清保存位置。
+  - 自动化、多任务并行和复杂工具调用；先走通可观察的单次任务。
+  case_plan: 使用自编两份备忘、四项待办和两版结果，不另加复杂数据；学习提出完成标准、分开事实与未知、小步修改。材料仅是教学演示，不能登记为实际桌面运行回执。
+  official_readings:
+  - fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Ask for approval / How permissions work
+    checked_on: '2026-09-26'
+    understanding: 是否请求批准取决于操作及环境边界，不能把每次发送请求描述成必有弹窗；提示词中的边界仍须检查执行。
+    teaching_use: 正文将权限请求作为条件分支，把「保留原件」写成任务要求，再以真实文件检查；不从示例请求推导产品保证。
+study_commit: null
+study_review:
+  result: pass
+  reason: 已按本轮实际官方阅读和整章文本回放形成学习提要及教法取舍，列明需要先懂什么、后置什么和结果怎样判断；这是旧稿校准，不证明原起草前已研究，也不表示下列全章审核或实测完成。

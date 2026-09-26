@@ -1,14 +1,20 @@
-name: Check publication
+name: Check draft and requested delivery
 
 on:
   pull_request:
   push:
+  workflow_dispatch:
+    inputs:
+      units:
+        description: 'Delivery unit IDs separated by spaces, or all for the whole book'
+        required: true
+        type: string
 
 permissions:
   contents: read
 
 jobs:
-  publication:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -20,9 +26,14 @@ jobs:
           python-version: '3.12'
       - name: Install local check dependencies
         run: python -m pip install -r tools/requirements.txt
-      - name: Test per-unit writing evidence gate
-        run: python -m unittest discover -s tools/tests -p test_writing_gate.py -v
+      - name: Test writing mechanism
+        run: python -m unittest discover -s tools/tests -v
       - name: Check reader text for editorial leftovers
         run: python tools/check_reader_text.py
-      - name: Check source and publication evidence
-        run: python tools/studio.py --root . --json check --publication
+      - name: Check draft structure and review gaps
+        run: python tools/studio.py --root . --json check
+      - name: Check explicitly requested delivery
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          DELIVERY_UNITS: ${{ inputs.units }}
+        run: python tools/check_delivery.py

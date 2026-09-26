@@ -230,6 +230,30 @@ def source_gate(path, source, scope, languages):
         r = subprocess.run(["git", "clone", "--quiet", "--no-hardlinks", str(path), str(clone)], capture_output=True, text=True)
         if r.returncode: raise StudioError("本地来源副本创建失败：" + r.stderr)
         run_git(clone, "checkout", "--quiet", "--detach", commit)
+        if load_yaml(clone / "book.yaml").get("id") == "codex":
+            # The entire adopted checker must come from the reviewed commit.
+            entry = clone / "tools" / "studio.py"
+            if not entry.is_file():
+                raise StudioError("固定提交缺少随书 Studio；不能改用当前工作区规则")
+            command = [sys.executable, str(entry), "--root", str(clone), "--json", "check", "--publication"]
+            if scope: command.extend(["--units", *scope])
+            for language in languages or []: command.extend(["--language", language])
+            result = subprocess.run(command, cwd=clone, capture_output=True, text=True, timeout=60)
+            try:
+                payload = json.loads(result.stdout)
+                reports = payload["results"]
+                report = reports[0]
+                if (not isinstance(reports, list) or len(reports) != 1
+                        or not isinstance(report["ok"], bool) or not isinstance(payload.get("ok"), bool)
+                        or not isinstance(report.get("summary"), dict)
+                        or report["summary"].get("book") != "codex"
+                        or not isinstance(report.get("issues"), list)):
+                    raise ValueError("invalid report")
+                if result.returncode != (0 if report["ok"] else 1) or payload.get("ok") != report["ok"]:
+                    raise ValueError("exit status mismatch")
+            except (ValueError, KeyError, IndexError, TypeError) as exc:
+                raise StudioError("固定提交检查未返回有效结果：" + (result.stderr or result.stdout)[:1000]) from exc
+            return report, commit
         return check(clone, True, scope, languages), commit
 
 

@@ -3,7 +3,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方文档核对；未作双平台界面实测
+    baseline: 2026-09-26官方quickstart桌面设置及Start a chat小节核对；未作双平台界面实测
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
     checked_on: '2026-09-26'
@@ -17,11 +17,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-26官方quickstart桌面设置及Start a chat小节核对；未作双平台界面实测
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: install
   status: confirmed
   critical: true
@@ -86,11 +86,18 @@
   critical: true
   ttl_days: 180
 - id: permission-boundary
-  claim: Ask for approval允许在当前工作区范围内读写文件及运行常规本地命令，需要额外访问时请求批准；权限控件位于输入框下方。配置及组织要求影响可用模式，自动审核不自动扩大访问边界。
+  claim: Ask for approval允许在当前工作区范围内读写文件及运行常规本地命令，需要联网或超出工作区边界时请求批准；桌面应用的权限控件位于输入框下方，CLI使用/permissions。配置及组织要求影响可用模式，自动审核不自动扩大访问边界。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方文档核对；未作双平台界面实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-desktop
+    - codex-cli
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/permission-modes
     checked_on: '2026-09-26'
@@ -100,15 +107,22 @@
   critical: true
   ttl_days: 180
 - id: artifact-preview
-  claim: 桌面支持多种成果的可视预览；CLI 不提供同样的预览与批注界面。
+  claim: 桌面支持文档、表格、演示文稿和PDF等成果的可视预览，并可在支持批注的预览上标注；CLI可生成和修改文件，但不提供同样的预览与批注界面。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-25；未作操作实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-desktop
+    - codex-cli
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/artifacts-viewer
-    checked_on: '2026-09-25'
-  checked_on: '2026-09-25'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: startup
   status: confirmed
   critical: true
@@ -153,15 +167,22 @@
   status: confirmed
   critical: true
 - id: scheduled-local
-  claim: 需要本地文件的桌面定时任务要求电脑开启且应用运行；CLI 不提供 Scheduled 管理界面。
+  claim: 需要本地文件的桌面定时任务要求电脑开启、应用运行且项目文件可访问；CLI不提供Scheduled管理界面。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-desktop
+    - codex-cli
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/automations
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: startup
   status: confirmed
   critical: true
@@ -171,11 +192,18 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-desktop
+    - codex-cli
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/browser
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: startup
   status: confirmed
   critical: true
@@ -227,25 +255,37 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-cli
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/codex/cli
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: startup
   status: confirmed
   critical: true
   ttl_days: 180
 - id: cli-install
-  claim: 官方当前提供 Mac/Linux 与 Windows 的 CLI 独立安装器，也保留 npm/Homebrew 等安装方式。
+  claim: 官方README列有Mac/Linux与Windows的CLI独立安装器，也列有npm和Homebrew方式；不同方式与下载项的适用平台须按相应说明选择。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-cli
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://github.com/openai/codex
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-26'
+  checked_on: '2026-09-26'
   category: install
   status: confirmed
   critical: true
@@ -255,7 +295,13 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方文档核对；未作双平台界面实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/environments/modes
     checked_on: '2026-09-26'
@@ -265,11 +311,18 @@
   critical: true
   ttl_days: 180
 - id: desktop-file-shortcuts
-  claim: 桌面Codex和Work的Open folder默认快捷键为Windows Ctrl+O、Mac ⌘O；New chat默认快捷键为Ctrl+N、⌘N。快捷键可自定义，不能推定普通Chat入口相同。
+  claim: 桌面Codex和Work的Open folder默认快捷键为Windows Ctrl+O、Mac ⌘O；桌面New chat默认快捷键包括Ctrl+N、⌘N。快捷键可自定义，Open
+    folder的入口限制不能机械扩大到New chat。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
+    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/commands
     checked_on: '2026-09-26'
@@ -281,7 +334,7 @@
 - id: windows-unzip
   claim: 微软文档支持右键ZIP使用Extract All/全部提取并按对话框解压；浏览ZIP与解压到普通文件夹不是同一动作，最终目录层级还取决于包结构与所选位置。
   scope:
-    product: codex
+    product: windows
     evidence: official-documentation-only
     baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
   sources:
@@ -295,7 +348,7 @@
 - id: mac-unzip
   claim: Apple文档说明Mac可双击ZIP解压，解压内容出现在ZIP所在文件夹。
   scope:
-    product: codex
+    product: macos
     evidence: official-documentation-only
     baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
   sources:
@@ -309,7 +362,7 @@
 - id: safari-download-location
   claim: Safari下载位置可在设置中更改，下载列表可定位文件；其文档描述下载ZIP后解压的行为，不能据此要求所有浏览器都生成相同文件夹或保存于下载目录。
   scope:
-    product: codex
+    product: safari
     evidence: official-documentation-only
     baseline: 2026-09-26官方产品或系统文档；未作双平台界面实测
   sources:

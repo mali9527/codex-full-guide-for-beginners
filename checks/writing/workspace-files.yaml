@@ -1,6 +1,6 @@
-schema: 1
+schema: 2
 unit: workspace-files
-input_sha256: 68d001ddf83a118483af007c255af5b4074d0e5ecbb647d817c4d8fb279fdd5d
+input_sha256: fabdc91e88cca5fd8775ed4456bbb81c9513ef361c5c9334077d1848a7d82347
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -17,22 +17,22 @@ reader_review:
     reason: 已逐段读取当前稿：下载、解压、Ctrl+O和另存直接使用，没有压缩包定义或逐键手势；第4章仍保留路径简释。
   concept_timing:
     result: fail
-    reason: 项目/聊天/Local/权限与提示词均结合当前动作说明；但第2章安装前置仍是占位，连续入门路径未完成。
+    reason: 安装及Windows初始设置回指第2章，但其正文仍是占位；项目、聊天与Local的关系也需在当前任务里串清，不能据目录推定前置已教会。
   information_value:
-    result: pass
-    reason: 保留动作对象、原件与成果位置、内容核对和小步修改；常识科普已删，方法从备忘中的具体差异讲出。
+    result: fail
+    reason: 排障将打开其他可读软件当成问题，价值不足；UTF-8解释仍未给经核验的具体恢复路径，增加定义没有补足下一步，待修订。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 当前全文从备忘用途连续走向连接、权限与读材料，未见虚构亲历或口号。项目、聊天、Local的关系仍需更自然地衔接，列入concept_timing缺口。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 回读整章叙述及示例：使用直角引号，提示词不绑定特定语种或国家；代码路径和真实控件名称保留，界面原词与文档译述未当作双平台已核验界面。
   independent_creation:
     result: pending
-    reason: 待按本章完整正文复核
+    reason: 材料和讲解来自本书既有自编案例，本轮未重新对照全部实际参考的原教程；来源回看与原创比较仍待执行，不能只凭低相似度或致谢填通过。
 fact_review:
   coverage: pending
-  reason: 本轮只用于机制接入试跑，核对下列选定断言；尚未按新机制完成整章全部产品断言反查，其余审阅项保留pending。
+  reason: 本轮用新机制回放现有全文并补官方学习提要；下列仍是选定断言，未完成全章逐项来源反查。提示词、演示结果与产品保证须分别判定，coverage保持pending。
   docs_checked_on: '2026-09-26'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
@@ -69,3 +69,46 @@ fact_review:
     rationale: 原页明确可用模式会受配置及组织要求影响，支持正文保留此条件；输入框位置与首次设置仍须操作证据，本条不予替代。
     notice: ''
   unused_facts: {}
+study_brief:
+  mode: retrospective
+  prepared_on: '2026-09-26'
+  base_manuscript_sha256: 8d41fbf3e9bb15133bedea035acff250f9239391e001ed96f8a9be567676ce1a
+  reader_goal: 连接自有材料所在的文件夹，理解聊天、运行位置和权限怎样影响当前读取；用文件名与内容判断是否找对材料。
+  reader_start:
+  - 会下载、解压、使用文件夹和常见快捷键；没有编程与Codex经验。
+  - 当前稿承接第2章安装与登录，但第2章仍为占位，这一前置未完成，不能宣称连续路径可交付。
+  explain_now:
+  - 本地项目、聊天和Local分别组织什么，它们怎样指向同一份材料。
+  - 权限约束与「先不要改文件」这句工作要求的区别。
+  - 提示词的用途，以及为什么要核对读取的内容和真实原件。
+  teaching_sequence:
+  - 先认识自有两份备忘和整理目标，确定连接外层文件夹的理由。
+  - 按材料放在哪里、在哪里交流、在哪里处理结果说明项目与聊天及Local的关系。
+  - 理解权限后发出只读请求，核对文件名和关键内容，再检查实际原件；不以回复代替结果。
+  defer:
+  - 工作树、云环境和多入口高级配置；此时不为解释Local而展开这些概念。
+  - Git、终端和编码原理；乱码分支需要可执行并实测的处理，不靠定义补足。
+  case_plan: 沿用本书自行编写的两份日常备忘，先读不整理；用照片数量和笔记本规格核对材料。后续修订删去没有实际故障的打开软件支线，补足第2章和经验证的乱码处理；本次不改正文。
+  official_readings:
+  - fact_id: local-run-mode
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local / Worktree / Cloud 的桌面运行位置说明
+    checked_on: '2026-09-26'
+    understanding: Local指向电脑上的当前项目目录；这是桌面选择器的含义，不能据此推断CLI不能在本地工作。
+    teaching_use: 先讲材料位置，再解释本例选Local所对应的处理位置，其他运行方式后置。
+  - fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Permission modes / Ask for approval / How permissions work
+    checked_on: '2026-09-26'
+    understanding: 模式、工作范围和组织配置共同决定可做的事；请求批准不表示每个文件动作都再询问，文本请求也不会切换权限。
+    teaching_use: 把权限与提示词分开解释，提示检查真实文件；不将项目目录说成所有配置下的绝对访问边界。
+  - fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: macOS / Windows：General、Chats 与自定义快捷键说明
+    checked_on: '2026-09-26'
+    understanding: 默认打开文件夹快捷键在Codex/Work入口适用，可被自定义；默认新聊天快捷键不能证明当前窗口状态。
+    teaching_use: 直接给快捷键和目标文件夹，不解释按键手势；界面名称与完整路径另实测。
+study_commit: null
+study_review:
+  result: pass
+  reason: 已按本轮实际官方阅读和整章文本回放形成学习提要及教法取舍，列明需要先懂什么、后置什么和结果怎样判断；这是旧稿校准，不证明原起草前已研究，也不表示下列全章审核或实测完成。

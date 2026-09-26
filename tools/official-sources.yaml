@@ -1,0 +1,36 @@
+# Official identity only: matching a source never proves that it supports a claim.
+schema: 1
+products:
+  codex:
+    hosts: [learn.chatgpt.com, developers.openai.com, platform.openai.com, help.openai.com]
+    repositories: [https://github.com/openai/codex]
+    surfaces: [codex-desktop, codex-cli]
+  openai:
+    hosts: [learn.chatgpt.com, developers.openai.com, platform.openai.com, help.openai.com]
+    repositories: [https://github.com/openai/codex]
+    surfaces: [codex-desktop, codex-cli, other]
+  windows:
+    hosts: [support.microsoft.com, learn.microsoft.com]
+    surfaces: [os, other]
+    platforms: [windows]
+  macos:
+    hosts: [support.apple.com, developer.apple.com]
+    surfaces: [os, other]
+    platforms: [mac]
+  safari:
+    hosts: [support.apple.com]
+    surfaces: [os, other]
+    platforms: [mac]
+  git:
+    hosts: [git-scm.com]
+    surfaces: [os, other]
+  nodejs:
+    hosts: [nodejs.org]
+    surfaces: [os, other]
+  homebrew:
+    hosts: [brew.sh, docs.brew.sh]
+    surfaces: [os, other]
+    platforms: [mac]
+  github:
+    hosts: [docs.github.com]
+    surfaces: [os, other]

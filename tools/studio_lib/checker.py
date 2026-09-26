@@ -623,6 +623,10 @@ class _Checker:
         for uid in self.units:
             self.quality[uid] = {}
             for kind in KINDS:
+                # Codex schema 2 owns editorial/facts; old records are history only.
+                if self.book.get("id") == "codex" and kind in {"editorial", "facts"}:
+                    self.quality[uid][kind] = "unknown"
+                    continue
                 group = [r for r in self.records if r["record"]["unit"] == uid and r["record"]["kind"] == kind]
                 required = kind in self.unit_required.get(uid, getattr(self, "required", []))
                 if not group:
@@ -720,11 +724,19 @@ def check_book(book_dir, publication=False, scope=None, today=None, freshness=Tr
             spec = importlib.util.spec_from_file_location("codex_book_writing_gate", gate_path)
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)
-            writing = module.validate(checker.root, units=sorted(checker.scope),
-                                      publication=publication, today=checker.today)
-            for level, group in (("error", "errors"), ("warning", "warnings")):
-                for item in writing[group]:
-                    checker.issue(item["code"], item["path"], item["message"], level)
+            seen = set()
+            for uid in checker.units:
+                # Keep whole-book status visible; only selected units are delivery gates.
+                writing = module.validate(checker.root, units=[uid],
+                                          publication=publication and uid in checker.scope,
+                                          today=checker.today)
+                checker.quality.setdefault(uid, {}).update(writing.get("quality", {}).get(uid, {}))
+                for level, group in (("error", "errors"), ("warning", "warnings")):
+                    for item in writing[group]:
+                        key = (level, item["code"], item["path"], item["message"])
+                        if key not in seen:
+                            checker.issue(item["code"], item["path"], item["message"], level)
+                            seen.add(key)
     result = checker.result()
     result["summary"]["source_only"] = bool(source_only)
     return _redacted(result)
