@@ -20,5 +20,7 @@ jobs:
           python-version: '3.12'
       - name: Install local check dependencies
         run: python -m pip install -r tools/requirements.txt
+      - name: Check reader text for editorial leftovers
+        run: python tools/check_reader_text.py
       - name: Check source and publication evidence
         run: python tools/studio.py --root . --json check --publication
