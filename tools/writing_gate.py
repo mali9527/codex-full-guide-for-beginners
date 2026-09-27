@@ -457,6 +457,8 @@ class Review:
         elif item["result"] != "pass":
             self.issue("study_review_incomplete", "official study and teaching plan review is " + item["result"], state="fail" if item["result"] == "fail" else "unknown")
         commit = self.record.get("study_commit")
+        if brief["mode"] == "new_draft" and _digest(_safe(self.context.root, self.context.units[self.uid]["path"])) == digest:
+            self.issue("study_base_unchanged", "new_draft still matches its saved starting manuscript; complete the draft before claiming a writing review. A text change alone does not prove reading or thinking order.")
         if brief["mode"] == "retrospective":
             expected = MIGRATION_SNAPSHOTS.get(self.uid)
             current = _digest(_safe(self.context.root, self.context.units[self.uid]["path"]))
@@ -479,7 +481,7 @@ class Review:
             if _digest_bytes(original, Path(self.context.units[self.uid]["path"]).suffix) != digest:
                 self.issue("study_base_changed", "the ancestor manuscript does not match the plan's recorded starting draft")
         except (GateError, UnicodeError, yaml.YAMLError) as exc:
-            self.issue("study_commit_unavailable", "cannot verify the saved before-writing plan: " + str(exc))
+            self.issue("study_commit_unavailable", "cannot verify the saved before-writing plan: " + str(exc) + ". Check that the original plan commit and files exist and are ancestors of HEAD. A shallow clone may need more history; squash or rebasing the plan may remove ancestry. Restore genuine saved history rather than replacing dates or inventing a new plan receipt.")
 
     def run(self):
         required = {"schema", "unit", "input_sha256", "batch_started_on", "reviewed_on", "reviewer", "reader_review", "fact_review"}

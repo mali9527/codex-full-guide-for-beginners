@@ -727,5 +727,120 @@ class WritingGateTests(unittest.TestCase):
         self.assertNotIn("uncommitted_review_inputs", self.codes(result, "warnings"))
 
 
+    def completed_draft_history(self):
+        """Real temporary Git history; fictional records do not certify book facts."""
+        record = self.receipt()
+        git = self.commit_plan(record)
+        plan = record["study_commit"]
+        path = self.root / "manuscript/chapter.md"
+        path.write_text(path.read_text() + "在计划之后补写本章具体解释。\n", encoding="utf-8")
+        self.save_review("chapter", self.refresh(record))
+        git("add", ".")
+        git("commit", "--quiet", "-m", "Save fictional completed chapter and review")
+        draft = git("rev-parse", "HEAD")
+        git("branch", "original-writing", draft)
+        return record, git, plan, draft
+
+    def test_new_draft_cannot_pass_with_only_plan_and_same_finished_text(self):
+        record = self.receipt()
+        self.commit_plan(record)
+        self.save_review("chapter", record)
+        self.assert_quality_block("study_base_unchanged")
+        self.assertEqual({"editorial": "unknown", "facts": "pass"}, self.check(True, ["chapter"])["quality"]["chapter"])
+
+    def test_new_draft_cannot_use_ignorable_whitespace_as_written_content(self):
+        record = self.receipt()
+        self.commit_plan(record)
+        path = self.root / "manuscript/chapter.md"
+        path.write_text(path.read_text().rstrip() + " \n\n  ", encoding="utf-8")
+        self.save_review("chapter", self.refresh(record))
+        self.assert_quality_block("study_base_unchanged")
+
+    def test_revision_may_honestly_decide_that_prose_needs_no_change(self):
+        record = self.receipt()
+        self.commit_plan(record, mode="revision")
+        self.save_review("chapter", record)
+        result = self.check(True, ["chapter"])
+        self.assertEqual([], result["errors"], result)
+        self.assertEqual("pass", result["quality"]["chapter"]["editorial"])
+
+    def test_new_draft_difference_is_not_semantic_or_reading_order_proof(self):
+        record = self.receipt()
+        self.commit_plan(record)
+        path = self.root / "manuscript/chapter.md"
+        path.write_text(path.read_text() + "一点微小改动。\n", encoding="utf-8")
+        self.save_review("chapter", self.refresh(record))
+        # Intentionally documents the limit: the gate checks saved changes, not thought order.
+        self.assertNotIn("study_base_unchanged", self.codes(self.check(True, ["chapter"])))
+
+    def test_merge_commit_preserves_real_study_ancestry(self):
+        _, git, plan, draft = self.completed_draft_history()
+        git("checkout", "--quiet", "-b", "merge-target", plan)
+        (self.root / "unrelated.txt").write_text("unrelated target work\n", encoding="utf-8")
+        git("add", ".")
+        git("commit", "--quiet", "-m", "Independent target change")
+        git("merge", "--no-ff", "--no-edit", draft)
+        self.assertEqual([], self.check(True, ["chapter"])["errors"])
+
+    def test_fast_forward_preserves_real_study_ancestry(self):
+        _, git, plan, draft = self.completed_draft_history()
+        git("checkout", "--quiet", "-b", "ff-target", plan)
+        git("merge", "--ff-only", draft)
+        self.assertEqual(draft, git("rev-parse", "HEAD"))
+        self.assertEqual([], self.check(True, ["chapter"])["errors"])
+
+    def test_squash_drops_plan_ancestry_but_original_history_can_be_restored(self):
+        _, git, _, draft = self.completed_draft_history()
+        # An independent target lacks the original plan. The object remains on original-writing.
+        git("checkout", "--quiet", "--orphan", "squash-target")
+        git("rm", "-rf", ".")
+        git("commit", "--quiet", "--allow-empty", "-m", "Independent target root")
+        git("merge", "--squash", "--allow-unrelated-histories", draft)
+        git("commit", "--quiet", "-m", "Squashed chapter without original ancestry")
+        self.assert_quality_block("study_commit_unavailable")
+        git("merge", "--no-ff", "--no-edit", "--allow-unrelated-histories", "original-writing")
+        self.assertEqual([], self.check(True, ["chapter"])["errors"])
+
+    def test_squashing_only_commits_after_preserved_plan_keeps_evidence(self):
+        _, git, plan, draft = self.completed_draft_history()
+        git("checkout", "--quiet", "-b", "plan-already-present", plan)
+        git("merge", "--squash", draft)
+        git("commit", "--quiet", "-m", "Only post-plan changes squashed")
+        self.assertEqual([], self.check(True, ["chapter"])["errors"])
+
+    def test_rebase_rewriting_plan_breaks_ancestry(self):
+        record, git, plan, draft = self.completed_draft_history()
+        git("checkout", "--quiet", "--orphan", "new-root")
+        git("rm", "-rf", ".")
+        git("commit", "--quiet", "--allow-empty", "-m", "New unrelated history")
+        target = git("rev-parse", "HEAD")
+        git("checkout", "--quiet", "-b", "rewrite-plan", draft)
+        git("rebase", "--onto", target, "--root")
+        self.assert_quality_block("study_commit_unavailable")
+
+    def test_rebase_only_after_preserved_plan_does_not_destroy_evidence(self):
+        _, git, plan, draft = self.completed_draft_history()
+        git("checkout", "--quiet", "-b", "preserved-plan-target", plan)
+        (self.root / "unrelated.txt").write_text("unrelated target work\n", encoding="utf-8")
+        git("add", ".")
+        git("commit", "--quiet", "-m", "Independent change after original plan")
+        git("checkout", "--quiet", "-b", "rebase-after-plan", draft)
+        git("rebase", "--onto", "preserved-plan-target", plan)
+        self.assertEqual([], self.check(True, ["chapter"])["errors"])
+
+    def test_shallow_clone_requires_fetching_real_plan_history(self):
+        self.completed_draft_history()
+        with tempfile.TemporaryDirectory(prefix="writing-evidence-shallow-") as directory:
+            clone = Path(directory) / "book"
+            result = subprocess.run(["git", "clone", "--quiet", "--depth", "1", "--branch", "original-writing", self.root.as_uri(), str(clone)], capture_output=True, text=True)
+            self.assertEqual(0, result.returncode, result.stderr)
+            shallow = gate.validate(clone, ["chapter"], publication=True, today=self.day)
+            self.assertIn("study_commit_unavailable", self.codes(shallow))
+            result = subprocess.run(["git", "-C", str(clone), "fetch", "--quiet", "--unshallow"], capture_output=True, text=True)
+            self.assertEqual(0, result.returncode, result.stderr)
+            complete = gate.validate(clone, ["chapter"], publication=True, today=self.day)
+            self.assertEqual([], complete["errors"], complete)
+
+
 if __name__ == "__main__":
     unittest.main()

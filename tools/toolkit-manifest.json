@@ -16,17 +16,17 @@
     "studio_lib/checker.py": "db69857e009445dc0ee3266be3c0f7729bac8bda41cd514b396d8e7a6e558187",
     "standards/editorial.md": "b14ced6c3c81da5795b729594be7d2c6a29ac48708a6ed4fc31410cba0773dc7",
     "standards/collaboration.md": "f8d3bb488a3806f327b081d7240557400fe25288d73251d0c01c5c7fa871732e",
-    "standards/publishing.md": "9fe3d9008cfad65b4c23518254078847df0bd798ecd6d1704e6b308924c68141",
+    "standards/publishing.md": "af5f01293dd261e252c8973a72796b7281e0538cc232e80464ce39050d2736e3",
     "standards/commons.md": "125f469deb06b58f720093001d57a52bbdc39bf34e02b99c89b5973c376e1cbd",
     "standards/terminology.md": "8639cb695c5cc6ee8a46cafe85b243c003c16f6edebdfbb0e79b47ca96c65614",
     "standards/readme.md": "bca189329552f3a20e9fc6000d9de750bb7e43523b764b82605e83749a93b891",
     "standards/verification.md": "7d9f725b4d5b6266cbf3fe822d470685ecae95aa2e206e93045f6b5a4e2ec567",
     "standards/illustrations.md": "4ee69eef86c84489797b1eb29751974fef398245766469219c25b7b71f88b44d",
     "standards/social-posts.md": "f6130157f23f13379216433ae7d8be138c444859e2bc151492710779f203864b",
-    "writing_gate.py": "8950c6adbf4774a8b7218e60403c03658f4813e2a21bfc17c2641bb0b4aecfef",
+    "writing_gate.py": "77d821e54179cc7baf959345bdb6c23b75183479707d455481629f3fa1de0ed3",
     "check_delivery.py": "418b5f018b719ad224626a5b242eb0a73929a4c36a862cc4567c5464d46bb1dd",
     "official-sources.yaml": "898075270f0d2fb82a4d3c33ec0fab507e71543959bc5199769eee9c983fe844",
-    "tests/test_writing_gate.py": "0088589875d5fe96133cb1a94c4d8c5615d98639d4512c691d332379ecf3bd29",
+    "tests/test_writing_gate.py": "e10b95e8596e08d3903bd7173d66c4b76b14a4e1af0dbdfb365ac0aef803665e",
     "tests/test_writing_integration.py": "b7e509d5e6251a318498d4ff222fedb01f204e19d06592a39ede7b7867d1a533"
   }
 }

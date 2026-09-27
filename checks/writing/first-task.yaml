@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 058dcc4f680b8234ef508073314b1711aafaa518628e2eb5aef005004ab773ee
+input_sha256: 0068b2ed8bd29845a534983833f058308b0377b51d61ace0ba4290c635a0d3c5
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip

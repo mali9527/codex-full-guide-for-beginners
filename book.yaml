@@ -189,7 +189,7 @@ units:
   section: deep
   depth: 1
   prerequisites:
-  - work-documents
+  - clear-requests
   features:
   - web-concepts
   - preview
@@ -215,7 +215,7 @@ units:
   title: 把可用的版本留下，并学会恢复
   path: manuscript/versions.md
   section: deep
-  depth: 2
+  depth: 1
   prerequisites:
   - first-website
   features:
