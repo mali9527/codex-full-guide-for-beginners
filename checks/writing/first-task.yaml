@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 0068b2ed8bd29845a534983833f058308b0377b51d61ace0ba4290c635a0d3c5
+input_sha256: 79c6045df6c1675b748ebaebf4aab1f3811f28b44c42ed305cb14eb91e0cc350
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -8,81 +8,79 @@ evidence_paths:
 - examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
-batch_started_on: '2026-09-26'
+batch_started_on: '2026-09-27'
 reviewed_on: '2026-09-27'
 reviewer: codex
-reader_review:
-  prior_knowledge:
-    result: pass
-    reason: 已逐段读取当前稿：下载、解压、Ctrl+O和另存直接使用，没有压缩包定义或逐键手势；第4章仍保留路径简释。
-  concept_timing:
-    result: pass
-    reason: 得到成果→路径→实际文件→语义核对，概念围绕结果定位与检查；没有假定编程知识。
-  information_value:
-    result: pass
-    reason: 保留动作对象、原件与成果位置、内容核对和小步修改；常识科普已删，方法从备忘中的具体差异讲出。
-  natural_style:
-    result: pass
-    reason: 全文围绕同一份清单串起提出要求、语义判断、纠正和版本保留，句子具体，无假经历或空泛安抚；没有靠堆术语扩写。
-  localization:
-    result: pass
-    reason: 回读整章叙述及示例：使用直角引号，提示词不绑定特定语种或国家；代码路径和真实控件名称保留，界面原词与文档译述未当作双平台已核验界面。
-  independent_creation:
-    result: pending
-    reason: 材料和讲解来自本书既有自编案例，本轮未重新对照全部实际参考的原教程；来源回看与原创比较仍待执行，不能只凭低相似度或致谢填通过。
-fact_review:
-  coverage: pending
-  reason: 本轮用新机制回放现有全文并补官方学习提要；下列仍是选定断言，未完成全章逐项来源反查。提示词、演示结果与产品保证须分别判定，coverage保持pending。
-  docs_checked_on: '2026-09-26'
-  change_review:
-    url: https://learn.chatgpt.com/docs/changelog
-    locator: September 2026：09-26 CLI 0.157.1与09-25 CLI 0.157.0开篇选段
-    checked_on: '2026-09-26'
-    effect: 最近变更按产品入口区分；CLI版本不能证明桌面步骤、稳定渠道或双平台路径已经实测。本轮未声称重读完整日志。
-  claims:
-  - anchor: 看清操作是否符合这次要求；看不明白先拒绝，请它解释
-    fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Permission modes / Ask for approval
-    checked_on: '2026-09-26'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 承接前章的Ask for approval设置；本句是遇到请求时的教学建议，不声称每个操作必弹窗。成熟度未单独标注。
-    support: supported
-    rationale: 官方说明工作区边界之外的操作需要批准，支持本表的条件场景；拒绝后请其解释是本书建议，不冒称官方逐字流程或已经实测。
-    notice: ''
-  unused_facts: {}
 study_brief:
-  mode: retrospective
-  prepared_on: '2026-09-26'
+  mode: revision
+  prepared_on: '2026-09-27'
   base_manuscript_sha256: a50f9ce225800c546765711bfb22987e32ec78efa3e580387a16630be3b64d70
-  reader_goal: 提出可检查的整理要求，找到真实成果，核对语义与未知信息，按明确范围修改并保留版本。
+  reader_goal: 用两份备忘得到真实保存的清单，检查语义和遗漏，再指定一处修改并保留两个版本。
   reader_start:
-  - 会普通电脑文件操作，不懂编程；前章已解释本地项目、聊天、权限和提示词。
-  - 实际连续路径尚缺第2章与双平台GUI证据；这里仅回放现有文字和自有材料。
+  - 此前已有第3章旧稿，路径与权限将由同批修订补齐；稿后回读第1—3章。
+  - 会打开和另存文件，不必重教。
   explain_now:
-  - 聊天里显示结果与实际保存文件不同；路径帮助定位眼前成果。
-  - 完成标准要能检查含义，不能仅看数字和措辞是否流畅。
-  - 工作请求限定任务，但不保证模型每次正确执行；修改后检查变化及未变部分。
-  teaching_sequence:
-  - 先对比两条原备忘与期望清单，说明合并、保留、未知不猜这些完成标准。
-  - 给出原创请求后打开实际成果，按需要引入路径。
-  - 用截止与开始、未预约与已预约的差别检查语义，再做一次有依据的局部修改与版本保留。
-  defer:
-  - 路径语法、盘符、终端命令；此章只需认清保存位置。
-  - 自动化、多任务并行和复杂工具调用；先走通可观察的单次任务。
-  case_plan: 使用自编两份备忘、四项待办和两版结果，不另加复杂数据；学习提出完成标准、分开事实与未知、小步修改。材料仅是教学演示，不能登记为实际桌面运行回执。
+  - 整理合并是改变表达而非替人安排未知日期。
+  - 聊天完成与文件存在、文件正确是不同检查。
+  - 修改对象要精确到v1/v2；重新生成不能冒充恢复被覆盖的原版。
   official_readings:
+  - fact_id: local-run-mode
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local
+    checked_on: '2026-09-27'
+    understanding: 直接写当前项目目录，需实际读回确认成果。
+    teaching_use: 把找文件放在聊天回复之后，不保证每次有文件链接。
+  - fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Use local projects for folders and codebases
+    checked_on: '2026-09-27'
+    understanding: 项目可读改目录内文件；当前任务继续同一聊天无需切目录。
+    teaching_use: 保持材料、结果在同一项目，明确修改文件名。
   - fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Ask for approval / How permissions work
-    checked_on: '2026-09-26'
-    understanding: 是否请求批准取决于操作及环境边界，不能把每次发送请求描述成必有弹窗；提示词中的边界仍须检查执行。
-    teaching_use: 正文将权限请求作为条件分支，把「保留原件」写成任务要求，再以真实文件检查；不从示例请求推导产品保证。
+    locator: Ask for approval
+    checked_on: '2026-09-27'
+    understanding: 生成及修改受当前允许范围影响。
+    teaching_use: 出权限请求按作用对象判断，不写每次都有或自动通过。
+  teaching_sequence:
+  - 用照片截止与数量例子定义完成，再给生成请求和目标文件。
+  - 打开实际成果，对照截止/开始与未预约/已预约，最后进行一处状态变更。
+  - 纠错提示补明确文件名与保存动作，避免聊天里修正却未落盘。
+  defer:
+  - 路径完整定义前移第3章，本章只回指。
+  - 版本管理、Git、自动日程与代办动作不进入首例。
+  case_plan: 原两份材料、四项清单、买笔记本变已完成保持。新增文件级重复演示在独立副本中完成；不将脚本读写说成GUI发送或真人试读。
 study_commit: null
 study_review:
-  result: pass
-  reason: 已按实际官方阅读形成旧稿学习提要及教法取舍；2026-09-27再核对架构调整的影响，新增案例与术语计划只约束后续章节，两章正文不变，当前失败与待审项保留。这是回溯校准，不证明原起草前已研究，不表示全章事实或实测完成。
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

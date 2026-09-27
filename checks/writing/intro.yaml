@@ -1,0 +1,89 @@
+schema: 2
+unit: intro
+input_sha256: 2df6c2870f95e2d7311058fe9353458d2d32ae556875506691601481959e3a77
+evidence_paths:
+- examples/ch04-notes-to-todos/README.md
+- examples/ch04-notes-to-todos/我的待办-起始材料.zip
+- examples/ch04-notes-to-todos/演示结果/待办清单-v1.txt
+- examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
+batch_started_on: '2026-09-27'
+reviewed_on: '2026-09-27'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-27'
+  base_manuscript_sha256: 8054c7486fe8038d16a7db667e5fe783fe045d4c2bc2b34797b2c037620b4003
+  reader_goal: 能把一个日常需求说成具体成果，分清桌面应用、Codex入口和模型，知道材料选择及验收由人负责。
+  reader_start:
+  - 会办公软件和文件夹；没有任何前章知识可依赖。
+  explain_now:
+  - Codex可以在授权范围处理实际文件，完成的标志需要落到文件和内容。
+  - 应用是使用入口，Codex组织文件工作，模型处理理解与生成；型号不是新软件。
+  official_readings:
+  - fact_id: desktop-entry
+    url: https://learn.chatgpt.com/docs/quickstart
+    locator: Setup / Start a chat
+    checked_on: '2026-09-27'
+    understanding: 官方把Chat、Work和Codex区分；本书使用Codex入口连接文件。
+    teaching_use: 简述Work的用途避免把办公能力说成Codex独占；按既定路线继续Codex。
+  - fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Use local projects for folders and codebases
+    checked_on: '2026-09-27'
+    understanding: 本地项目连接真实文件；目录组织与访问保护不是同一件事。
+    teaching_use: 用成果落盘建立工具认识，不将对话答案当文件。
+  - fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model（desktop）；Recommended models中的权限条件
+    checked_on: '2026-09-27'
+    understanding: 模型控件在输入区，换模型不会获得新工作区权限。
+    teaching_use: 只解释角色，不固定当前型号或讨论参数。
+  - fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Ask for approval / How permissions work
+    checked_on: '2026-09-27'
+    understanding: 文件行动有范围；材料可否交给服务处理仍需用户判断。
+    teaching_use: 写授权范围，不作离线或绝不越界保证。
+  teaching_sequence:
+  - 从本书备忘合并后的可见结果说用途，再用购物预算的小算例说明未来工具做什么。
+  - 在已经看懂用途后辨认入口与模型，最后说明人须提供依据和检查结果；不提前教第3、4章的操作。
+  defer:
+  - 权限具体档位与运行位置留第3章。
+  - 模型参数、API、终端、Git和小工具实现后置。
+  case_plan: 两份备忘到四项清单沿用自有材料。预算只给数量×单价的示意结果（2×6+1×9=21），明确是后文工具目标，不伪造已运行页面。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

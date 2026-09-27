@@ -30,6 +30,9 @@ units:
   - identity
   facts:
   - desktop-entry
+  - local-project-context
+  - permission-boundary
+  - desktop-model-control
   derived_from: null
   required_checks:
   - editorial
@@ -46,9 +49,14 @@ units:
   - account
   facts:
   - desktop-platforms
+  - desktop-entry
+  - desktop-download-routes
   - windows-native
+  - windows-first-setup
   - sign-in-options
   - usage-availability
+  - desktop-model-control
+  - mac-open-installer
   derived_from: null
 - id: workspace-files
   title: 把文件准备好，让 Codex 找到它
@@ -61,15 +69,10 @@ units:
   - files
   - projects
   facts:
-  - desktop-entry
   - local-project-context
   - local-run-mode
   - permission-boundary
   - desktop-file-shortcuts
-  - windows-native
-  - windows-unzip
-  - mac-unzip
-  - safari-download-location
   derived_from: null
 - id: first-task
   title: 得到第一份可以检查和保存的结果

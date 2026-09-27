@@ -1,0 +1,104 @@
+schema: 2
+unit: desktop-setup
+input_sha256: 70db58f9e519db1a96632e52b70a4deb9d31f5ccda60b27cef54e28e7738c958
+evidence_paths: []
+batch_started_on: '2026-09-27'
+reviewed_on: '2026-09-27'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-27'
+  base_manuscript_sha256: 616d215c1241c7d3cab9569356dc6e838fbbae6ab564b0eaabd011f0a09ca406
+  reader_goal: 从官方平台入口安装并完成浏览器登录，辨认Codex和模型位置；区分Windows首次设置、账号可用性与额度问题。
+  reader_start:
+  - 会下载和安装常见应用；不懂终端和Git。
+  - 本批第1章拟讲应用/Codex/模型；此刻第1章仍是占位，稿后必须连读新稿确认实际前置。
+  explain_now:
+  - 浏览器登录把账号交回桌面，浏览器成功不等于应用已完成登录。
+  - Windows沙箱用于约束文件与联网操作；初次管理员批准不等于日常完全访问。
+  - 有付费账号仍须核对当前账号/工作区与模型列表。
+  official_readings:
+  - fact_id: desktop-download-routes
+    url: https://learn.chatgpt.com/docs/app
+    locator: Download for macOS (Apple Silicon) / Get started
+    checked_on: '2026-09-27'
+    understanding: 当前Mac入口标Apple Silicon，不能承诺Intel适配；页面未给本轮可核实的macOS最低版本。
+    teaching_use: 以下载入口标注为准，不编系统最低版本；Windows用专页。
+  - fact_id: windows-native
+    url: https://learn.chatgpt.com/docs/windows/windows-app
+    locator: Download / Native sandbox / Windows Subsystem for Linux
+    checked_on: '2026-09-27'
+    understanding: 原生Windows路线不要求先配WSL；开发工具列表是按用途准备。
+    teaching_use: Windows首例只安装桌面应用，Git等不变成前置。
+  - fact_id: windows-first-setup
+    url: https://learn.chatgpt.com/docs/windows/windows-sandbox
+    locator: Windows version matrix / native modes / My native sandbox setup failed
+    checked_on: '2026-09-27'
+    understanding: Windows 11推荐、更新Windows 10尽力支持；elevated初始设置与企业策略会影响成功。
+    teaching_use: 给Set up与管理员失败的具体分流，不用完全访问排障。
+  - fact_id: sign-in-options
+    url: https://learn.chatgpt.com/docs/auth
+    locator: Sign in with ChatGPT / ChatGPT desktop app / Check authentication
+    checked_on: '2026-09-27'
+    understanding: Continue to sign in走浏览器流程；API是另一路线。
+    teaching_use: 既有付费账号用浏览器登录；回桌面确认账号。
+  - fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model（desktop）
+    checked_on: '2026-09-27'
+    understanding: 模型与推理控件在输入框下，选项依当前账号。
+    teaching_use: 说明位置，先保留现有可用选择。
+  - fact_id: usage-availability
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: Where can I see my current usage limits?
+    checked_on: '2026-09-27'
+    understanding: 官方usage dashboard给个人额度及重置，套餐估计不是个人当前状态。
+    teaching_use: 只给查询入口，不展开费用。
+  - fact_id: mac-open-installer
+    url: https://support.apple.com/en-au/guide/mac-help/-mh35835/mac
+    locator: Install apps
+    checked_on: '2026-09-27'
+    understanding: 互联网磁盘映像或安装包按自身引导操作。
+    teaching_use: 保持安装说明简短，不编未见到的安装窗口。
+  teaching_sequence:
+  - 先给平台入口和适用条件，分别处理Windows与Mac安装。
+  - 统一讲浏览器登录与回到应用的可见判断，再辨认入口和模型。
+  - Windows首次沙箱设置就地独立说明，最后按安装/登录/可用性分流排障。
+  defer:
+  - 不列套餐费用，不教API key配置。
+  - PowerShell只作为Windows所用底层工具名称，不要求读者打开；WSL及开发依赖后置。
+  case_plan: 本章只准备应用，不接私人资料、不发首次文件任务；下一章用本书独立演示目录。安装与登录仅有官方文档证据，缺GUI不能写成作者亲测成功。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

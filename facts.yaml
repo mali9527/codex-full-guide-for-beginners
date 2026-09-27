@@ -3,11 +3,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方quickstart桌面设置及Start a chat小节核对；未作双平台界面实测
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: startup
   status: confirmed
   critical: true
@@ -17,11 +17,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方quickstart桌面设置及Start a chat小节核对；未作双平台界面实测
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: install
   status: confirmed
   critical: true
@@ -31,56 +31,57 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方文档核对；未作双平台界面实测
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
   sources:
   - url: https://learn.chatgpt.com/docs/windows/windows-app
-    checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
   - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: install
   status: confirmed
   critical: true
   ttl_days: 180
 - id: sign-in-options
-  claim: 本地桌面和 Codex CLI 支持 ChatGPT 登录与 API key 两类访问方式，适用计费和管理条件不同。
+  claim: 桌面支持ChatGPT登录和API key；桌面未登录页Continue to sign in会打开浏览器，完成后凭据返回应用；个人菜单可查当前账号状态。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
   sources:
   - url: https://learn.chatgpt.com/docs/auth
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: account
   status: confirmed
   critical: true
   ttl_days: 90
 - id: usage-availability
-  claim: Codex 的入口、模型、额度和功能可用性受套餐、逐步开放及工作区条件影响，应按当前账号核对。
+  claim: Codex入口与模型可用性受账号和工作区条件影响；当前额度及重置时间查看官方usage dashboard，不据套餐示例估算个人剩余。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
   sources:
   - url: https://learn.chatgpt.com/docs/pricing
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-27'
+  - url: https://learn.chatgpt.com/docs/auth
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: quota
   status: confirmed
   critical: true
   ttl_days: 90
 - id: local-project-context
-  claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT
-    项目不直接连接电脑文件夹。
+  claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT 项目不直接连接电脑文件夹。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方文档核对；未作双平台界面实测
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
   sources:
   - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: startup
   status: confirmed
   critical: true
@@ -90,7 +91,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
     surfaces:
     - codex-desktop
     - codex-cli
@@ -100,8 +101,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/permission-modes
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: permission
   status: confirmed
   critical: true
@@ -295,7 +296,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
     surfaces:
     - codex-desktop
     platforms:
@@ -304,19 +305,18 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/environments/modes
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: startup
   status: confirmed
   critical: true
   ttl_days: 180
 - id: desktop-file-shortcuts
-  claim: 桌面Codex和Work的Open folder默认快捷键为Windows Ctrl+O、Mac ⌘O；桌面New chat默认快捷键包括Ctrl+N、⌘N。快捷键可自定义，Open
-    folder的入口限制不能机械扩大到New chat。
+  claim: 桌面Codex/Work的Open folder默认Windows Ctrl+O、Mac ⌘O；New chat为Ctrl+N/⌘N；设置为Ctrl+,/⌘,。Keyboard Shortcuts可按命令名查找并自定义绑定。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
     surfaces:
     - codex-desktop
     platforms:
@@ -325,8 +325,10 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/commands
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-27'
+  - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
   category: startup
   status: confirmed
   critical: true
@@ -373,3 +375,83 @@
   status: confirmed
   critical: true
   ttl_days: 180
+- id: desktop-download-routes
+  claim: 官方桌面页的Mac下载标Apple Silicon；Windows应用页链接Microsoft分发入口。两个平台需使用各自下载路线，不把Mac下载包通用于Windows或Intel Mac。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-27第一批写前实际阅读；未作安装或完整GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/app
+    checked_on: '2026-09-27'
+  - url: https://learn.chatgpt.com/docs/windows/windows-app
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: windows-first-setup
+  claim: Windows原生沙箱推荐Windows 11；新且完整更新的Windows 10为best effort，实际最低需1809。推荐elevated需要管理员批准设置；受组织策略约束；unelevated为较弱后备方案。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-27第一批写前实际阅读；未作安装或完整GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: desktop-model-control
+  claim: 桌面Codex可在输入框下方的模型/推理控件选择可用模型；账号可用列表与组织权限相关，模型选择不授予额外权限。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-27第一批写前实际阅读；未作安装或完整GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/models
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: mac-open-installer
+  claim: Mac从互联网取得的磁盘映像或安装包可打开后按提供的安装引导操作；应用安装动作不等于完成产品登录。
+  scope:
+    product: macos
+    evidence: official-documentation-only
+    baseline: 2026-09-27第一批写前实际阅读；未作安装或完整GUI实测
+    surfaces:
+    - os
+    platforms:
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://support.apple.com/en-au/guide/mac-help/-mh35835/mac
+    checked_on: '2026-09-27'
+  checked_on: '2026-09-27'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
