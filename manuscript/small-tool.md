@@ -5,5 +5,5 @@
 本单元的读者目标与讲解安排见[内容框架](../内容框架.md)。不设置习题、测验或作业。
 
 <!-- studio:nav -->
-← [改网页之前，先学会保存版本](versions.md) · [目录](../README.md) · [把成果交出去，并能在以后继续维护](share-maintain.md) →
+← [把可用的版本留下，并学会恢复](versions.md) · [目录](../README.md) · [把成果交出去，并能在以后继续维护](share-maintain.md) →
 <!-- /studio:nav -->

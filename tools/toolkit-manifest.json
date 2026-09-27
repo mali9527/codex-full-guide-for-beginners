@@ -27,6 +27,6 @@
     "check_delivery.py": "418b5f018b719ad224626a5b242eb0a73929a4c36a862cc4567c5464d46bb1dd",
     "official-sources.yaml": "898075270f0d2fb82a4d3c33ec0fab507e71543959bc5199769eee9c983fe844",
     "tests/test_writing_gate.py": "0088589875d5fe96133cb1a94c4d8c5615d98639d4512c691d332379ecf3bd29",
-    "tests/test_writing_integration.py": "c5f8472a4d4d299c6a0b11ca64d4653953024c3b52a0f8935f36f6325f1e319b"
+    "tests/test_writing_integration.py": "b7e509d5e6251a318498d4ff222fedb01f204e19d06592a39ede7b7867d1a533"
   }
 }

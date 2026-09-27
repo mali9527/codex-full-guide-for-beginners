@@ -34,7 +34,7 @@
 11. [把已经做好的流程，变成定时工作](manuscript/scheduled-work.md)
 12. [从一份文件，走到一个能打开的网页](manuscript/web-basics.md)
 13. [做出自己的第一个网页](manuscript/first-website.md)
-14. [改网页之前，先学会保存版本](manuscript/versions.md)
+14. [把可用的版本留下，并学会恢复](manuscript/versions.md)
 15. [从展示信息，走向一个实用小工具](manuscript/small-tool.md)
 16. [把成果交出去，并能在以后继续维护](manuscript/share-maintain.md)
 17. [终端并不神秘：先看懂位置和命令](manuscript/terminal-basics.md)

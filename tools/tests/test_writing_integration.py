@@ -185,7 +185,11 @@ class WritingQualityIntegrationTests(RepoFixture):
         self.save("book.yaml", self.book)
         self.put("tools/writing_gate.py", "raise AssertionError('must not load the Codex gate')\n")
         self.source = self.commit()
-        self.save("checks/legacy.yaml", [self.review(kind) for kind in ("editorial", "facts", "operations")])
+        records = [self.review(kind) for kind in ("editorial", "facts", "operations")]
+        # A different actual engine satisfies both historical and current policies.
+        # This regression tests isolation from Codex, not the other book's policy.
+        records[0]["engine"] = "claude"
+        self.save("checks/legacy.yaml", records)
         result = self.run_check()
         self.assertTrue(result["ok"], result)
         self.assertEqual(result["summary"]["quality"]["intro"]["editorial"], "pass")

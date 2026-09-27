@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 3d1028264ebd0e4bddf63390eccaa586bc11eed5a0adc9c0ec6eb15523c9c87b
+input_sha256: 058dcc4f680b8234ef508073314b1711aafaa518628e2eb5aef005004ab773ee
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -9,7 +9,7 @@ evidence_paths:
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
 batch_started_on: '2026-09-26'
-reviewed_on: '2026-09-26'
+reviewed_on: '2026-09-27'
 reviewer: codex
 reader_review:
   prior_knowledge:
@@ -85,4 +85,4 @@ study_brief:
 study_commit: null
 study_review:
   result: pass
-  reason: 已按本轮实际官方阅读和整章文本回放形成学习提要及教法取舍，列明需要先懂什么、后置什么和结果怎样判断；这是旧稿校准，不证明原起草前已研究，也不表示下列全章审核或实测完成。
+  reason: 已按实际官方阅读形成旧稿学习提要及教法取舍；2026-09-27再核对架构调整的影响，新增案例与术语计划只约束后续章节，两章正文不变，当前失败与待审项保留。这是回溯校准，不证明原起草前已研究，不表示全章事实或实测完成。

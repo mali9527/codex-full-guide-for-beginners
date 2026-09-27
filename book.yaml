@@ -163,7 +163,6 @@ units:
   depth: 2
   prerequisites:
   - context-rules
-  - work-tables
   features:
   - skills
   - plugins
@@ -178,7 +177,7 @@ units:
   section: deep
   depth: 2
   prerequisites:
-  - skills-plugins
+  - context-rules
   features:
   - automation
   facts:
@@ -213,7 +212,7 @@ units:
   - project-actions
   derived_from: null
 - id: versions
-  title: 改网页之前，先学会保存版本
+  title: 把可用的版本留下，并学会恢复
   path: manuscript/versions.md
   section: deep
   depth: 2
@@ -245,7 +244,7 @@ units:
   section: deep
   depth: 2
   prerequisites:
-  - small-tool
+  - versions
   features:
   - delivery
   - publishing
@@ -257,8 +256,7 @@ units:
   section: deep
   depth: 1
   prerequisites:
-  - workspace-files
-  - small-tool
+  - first-task
   features:
   - terminal
   - paths
@@ -272,7 +270,6 @@ units:
   depth: 2
   prerequisites:
   - terminal-basics
-  - versions
   features:
   - cli
   - resume
