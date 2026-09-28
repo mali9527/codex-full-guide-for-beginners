@@ -19,8 +19,8 @@
 <!-- studio:toc -->
 共 20 个单元，0 张图。
 
-1. [Codex 能帮你做什么，你还需要做什么](manuscript/intro.md)
-2. [把桌面应用准备好：Windows 与 Mac](manuscript/desktop-setup.md)
+1. [Codex 能帮你做什么](manuscript/intro.md)
+2. [安装应用，认识 Codex 的基本界面](manuscript/desktop-setup.md)
 3. [把文件准备好，让 Codex 找到它](manuscript/workspace-files.md)
 4. [得到第一份可以检查和保存的结果](manuscript/first-task.md)
 5. [到这里已经能用：接下来走多远](manuscript/choose.md)
