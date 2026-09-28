@@ -11,7 +11,7 @@ repository:
   name: null
   default_branch: main
 is_test: false
-watershed: choose
+watershed: first-task
 platforms:
 - windows
 - mac
@@ -20,35 +20,50 @@ required_checks:
 - facts
 - operations
 units:
-- id: intro
-  title: Codex 能帮你做什么
-  path: manuscript/intro.md
+- id: latest-models
+  title: 开篇：GPT-6 Astra与现在的Codex
+  path: manuscript/latest-models.md
   section: popular
   depth: 0
   prerequisites: []
   features:
-  - identity
+  - latest-models
+  facts:
+  - gpt6-model-use-position
+  - desktop-model-control
+  - reasoning-default-guidance
+  - codex-work-scenarios
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: intro
+  title: 第1章 Codex能帮你做什么
+  path: manuscript/intro.md
+  section: popular
+  depth: 0
+  prerequisites:
+  - latest-models
+  features:
+  - intro
   facts:
   - desktop-entry
-  - local-project-context
-  - permission-boundary
-  - desktop-model-control
   - codex-work-scenarios
+  - permission-boundary
   - artifact-preview
   derived_from: null
   required_checks:
   - editorial
   - facts
 - id: desktop-setup
-  title: 安装应用，认识 Codex 的基本界面
+  title: 第2章 安装应用，进入Codex
   path: manuscript/desktop-setup.md
   section: popular
   depth: 0
   prerequisites:
   - intro
   features:
-  - setup
-  - account
+  - desktop-setup
   facts:
   - desktop-platforms
   - desktop-entry
@@ -56,269 +71,341 @@ units:
   - windows-native
   - windows-first-setup
   - sign-in-options
-  - usage-availability
-  - desktop-model-control
   - mac-open-installer
   - mac-identify-chip
-  - desktop-chat-organization
-  - permission-boundary
-  - artifact-preview
-  - desktop-file-shortcuts
-  - local-run-mode
-  - codex-work-scenarios
   derived_from: null
 - id: workspace-files
-  title: 把文件准备好，让 Codex 找到它
+  title: 第3章 看懂第一屏，并发出第一条消息
   path: manuscript/workspace-files.md
   section: popular
   depth: 0
   prerequisites:
   - desktop-setup
   features:
-  - files
-  - projects
+  - workspace-files
+  facts:
+  - desktop-chat-organization
+  - desktop-file-shortcuts
+  - desktop-model-control
+  - desktop-slash-entries
+  - permission-boundary
+  - artifact-preview
+  - desktop-followup-behavior
+  - desktop-basic-navigation
+  derived_from: null
+- id: first-task
+  title: 第4章 第一次完整使用：把零散备忘整理成待办清单
+  path: manuscript/first-task.md
+  section: watershed
+  depth: 0
+  prerequisites:
+  - workspace-files
+  features:
+  - first-task
   facts:
   - local-project-context
   - local-run-mode
   - permission-boundary
   - desktop-file-shortcuts
-  - desktop-chat-organization
-  derived_from: null
-- id: first-task
-  title: 得到第一份可以检查和保存的结果
-  path: manuscript/first-task.md
-  section: popular
-  depth: 0
-  prerequisites:
-  - workspace-files
-  features:
-  - deliverables
-  - verification
-  facts:
-  - local-project-context
-  - local-run-mode
-  - permission-boundary
-  - desktop-chat-organization
   - artifact-preview
   - codex-work-scenarios
+  - reasoning-default-guidance
   derived_from: null
-- id: choose
-  title: 到这里已经能用：接下来走多远
-  path: manuscript/choose.md
-  section: watershed
-  depth: 0
+- id: account-usage
+  title: 第5章 账号与额度：看懂自己正在用什么
+  path: manuscript/account-usage.md
+  section: deep
+  depth: 1
   prerequisites:
   - first-task
   features:
-  - learning-route
-  facts: []
+  - account-usage
+  facts:
+  - usage-availability
+  - usage-windows-and-credits
   derived_from: null
-  required_checks:
-  - editorial
-  - facts
+- id: models-effort
+  title: 第6章 模型、Effort和快速模式，应该怎么选
+  path: manuscript/models-effort.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - account-usage
+  features:
+  - models-effort
+  facts:
+  - desktop-model-control
+  - reasoning-default-guidance
+  - gpt6-model-use-position
+  - fast-mode-choice
+  - desktop-slash-entries
+  derived_from: null
+- id: permissions
+  title: 第7章 权限与批准：哪些事需要你决定
+  path: manuscript/permissions.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - first-task
+  features:
+  - permissions
+  facts:
+  - permission-boundary
+  - auto-review-routing
+  - permission-modes-enablement
+  - desktop-approve-retry
+  derived_from: null
+- id: running-control
+  title: 第8章 看懂运行过程：补充、排队、停止和继续
+  path: manuscript/running-control.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - permissions
+  features:
+  - running-control
+  facts:
+  - desktop-followup-behavior
+  - desktop-slash-entries
+  - desktop-voice-options
+  - desktop-notification-activity
+  derived_from: null
+- id: materials
+  title: 第9章 把材料交对：文件、图片、链接与应用快照
+  path: manuscript/materials.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - first-task
+  - running-control
+  features:
+  - materials
+  facts:
+  - local-project-context
+  - appshot-input-scope
+  - artifact-preview
+  - codex-work-scenarios
+  derived_from: null
+- id: results
+  title: 第10章 找到、检查、批注和保留成果
+  path: manuscript/results.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - materials
+  features:
+  - results
+  facts:
+  - artifact-preview
+  - desktop-share-snapshot
+  - review-feedback-command-purpose
+  derived_from: null
+- id: web-search
+  title: 第11章 让Codex上网找资料，并检查来源
+  path: manuscript/web-search.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - materials
+  features:
+  - web-search
+  facts:
+  - hosted-search-boundary
+  - codex-work-scenarios
+  derived_from: null
+- id: projects-tasks
+  title: 第12章 管好任务与项目，过几天还能接着做
+  path: manuscript/projects-tasks.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - results
+  features:
+  - projects-tasks
+  facts:
+  - desktop-chat-organization
+  - desktop-chat-retrieval
+  - desktop-project-task-commands
+  - desktop-remote-host
+  derived_from: null
+- id: context
+  title: 第13章 对话变长以后：上下文、压缩和分支
+  path: manuscript/context.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - projects-tasks
+  features:
+  - context
+  facts:
+  - context-compact-fork
+  - desktop-slash-entries
+  derived_from: null
 - id: clear-requests
-  title: 把事情讲清楚，并带着它一步步改
+  title: 第14章 把想法说清楚：让Codex知道你要什么
   path: manuscript/clear-requests.md
   section: deep
   depth: 1
   prerequisites:
-  - choose
-  features:
-  - prompting
-  - iteration
-  facts:
-  - permission-boundary
-  derived_from: null
-- id: work-documents
-  title: 把零散资料整理成真正能交付的文档
-  path: manuscript/work-documents.md
-  section: deep
-  depth: 1
-  prerequisites:
-  - clear-requests
-  features:
-  - documents
-  - sources
-  facts:
-  - artifact-preview
-  derived_from: null
-- id: work-tables
-  title: 让表格和数据帮你判断事情
-  path: manuscript/work-tables.md
-  section: deep
-  depth: 1
-  prerequisites:
-  - work-documents
-  features:
-  - spreadsheets
-  - data-quality
-  facts:
-  - artifact-preview
-  derived_from: null
-- id: context-rules
-  title: 让一个任务做得下去，也接得起来
-  path: manuscript/context-rules.md
-  section: deep
-  depth: 1
-  prerequisites:
-  - clear-requests
-  - work-documents
-  features:
   - context
-  - instructions
-  - memory
+  - web-search
+  features:
+  - clear-requests
   facts:
-  - local-project-context
-  - project-instructions
-  - local-memory
+  - codex-work-scenarios
+  - plan-before-editing
   derived_from: null
-- id: skills-plugins
-  title: 需要新能力时，再认识技能和插件
-  path: manuscript/skills-plugins.md
+- id: planning
+  title: 第15章 先商量怎么做：Plan与方案比较
+  path: manuscript/planning.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - clear-requests
+  features:
+  - planning
+  facts:
+  - plan-before-editing
+  derived_from: null
+- id: feedback
+  title: 第16章 第一版不满意：怎样反馈、核对和改进
+  path: manuscript/feedback.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - planning
+  - results
+  features:
+  - feedback
+  facts:
+  - codex-work-scenarios
+  - review-feedback-command-purpose
+  derived_from: null
+- id: goals
+  title: 第17章 用Goal持续推进有明确终点的任务
+  path: manuscript/goals.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - feedback
+  features:
+  - goals
+  facts:
+  - goal-desktop-lifecycle
+  - plan-before-editing
+  derived_from: null
+- id: delegation
+  title: 第18章 几件事怎样分开做：多个任务与子代理
+  path: manuscript/delegation.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - goals
+  features:
+  - delegation
+  facts:
+  - desktop-subagent-delegation
+  - desktop-chat-organization
+  derived_from: null
+- id: personalization
+  title: 第19章 不想每次重说：偏好、项目说明与记忆
+  path: manuscript/personalization.md
   section: deep
   depth: 2
   prerequisites:
-  - context-rules
+  - context
+  - clear-requests
+  features:
+  - personalization
+  facts:
+  - project-instructions
+  - local-memory
+  - computer-history-optional
+  derived_from: null
+- id: skills
+  title: 第20章 Skill：把已经跑通的做法保存下来
+  path: manuscript/skills.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - personalization
+  - feedback
   features:
   - skills
-  - plugins
-  - browser
   facts:
   - skills-plugins
+  - skill-invocation-surface
+  derived_from: null
+- id: plugins
+  title: 第21章 插件与MCP：接入需要的工具和资料
+  path: manuscript/plugins.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - skills
+  - permissions
+  features:
+  - plugins
+  facts:
+  - plugin-install-connection
+  - plugin-uninstall-connection
+  - desktop-mcp-status-and-connection
+  derived_from: null
+- id: browser
+  title: 第22章 浏览器：把网页交给Codex查看和操作
+  path: manuscript/browser.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - web-search
+  - plugins
+  features:
+  - browser
+  facts:
   - browser-boundary
   derived_from: null
+- id: computer-use
+  title: 第23章 电脑操作：让Codex操作其他应用
+  path: manuscript/computer-use.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - permissions
+  - materials
+  - browser
+  features:
+  - computer-use
+  facts:
+  - appshot-input-scope
+  - auto-review-routing
+  derived_from: null
 - id: scheduled-work
-  title: 把已经做好的流程，变成定时工作
+  title: 第24章 定时任务：让跑通的工作按时再做
   path: manuscript/scheduled-work.md
   section: deep
   depth: 2
   prerequisites:
-  - context-rules
+  - feedback
+  - goals
   features:
-  - automation
+  - scheduled-work
   facts:
   - scheduled-local
-  derived_from: null
-- id: web-basics
-  title: 从一份文件，走到一个能打开的网页
-  path: manuscript/web-basics.md
-  section: deep
-  depth: 1
-  prerequisites:
-  - clear-requests
-  features:
-  - web-concepts
-  - preview
-  facts:
-  - browser-boundary
-  derived_from: null
-- id: first-website
-  title: 做出自己的第一个网页
-  path: manuscript/first-website.md
-  section: deep
-  depth: 2
-  prerequisites:
-  - web-basics
-  - clear-requests
-  features:
-  - web-build
-  - visual-review
-  facts:
-  - browser-boundary
-  - project-actions
-  derived_from: null
-- id: versions
-  title: 把可用的版本留下，并学会恢复
-  path: manuscript/versions.md
-  section: deep
-  depth: 1
-  prerequisites:
-  - first-website
-  features:
-  - git
-  - recovery
-  facts:
-  - git-review
-  derived_from: null
-- id: small-tool
-  title: 从展示信息，走向一个实用小工具
-  path: manuscript/small-tool.md
-  section: deep
-  depth: 2
-  prerequisites:
-  - versions
-  - work-tables
-  features:
-  - interaction
-  - acceptance
-  facts:
-  - browser-boundary
-  derived_from: null
-- id: share-maintain
-  title: 把成果交出去，并能在以后继续维护
-  path: manuscript/share-maintain.md
-  section: deep
-  depth: 2
-  prerequisites:
-  - versions
-  features:
-  - delivery
-  - publishing
-  facts: []
-  derived_from: null
-- id: terminal-basics
-  title: 终端并不神秘：先看懂位置和命令
-  path: manuscript/terminal-basics.md
-  section: deep
-  depth: 1
-  prerequisites:
-  - first-task
-  features:
-  - terminal
-  - paths
-  facts:
-  - cli-entry
-  derived_from: null
-- id: cli-first-task
-  title: 用 Codex CLI 继续同一个项目
-  path: manuscript/cli-first-task.md
-  section: deep
-  depth: 2
-  prerequisites:
-  - terminal-basics
-  features:
-  - cli
-  - resume
-  facts:
-  - cli-entry
-  - cli-install
-  - sign-in-options
-  derived_from: null
-- id: troubleshooting
-  title: 遇到问题时，先找出卡在哪一层
-  path: manuscript/troubleshooting.md
-  section: deep
-  depth: 1
-  prerequisites:
-  - desktop-setup
-  - first-task
-  features:
-  - troubleshooting
-  - limits
-  facts:
-  - usage-availability
-  - review-scope
+  - scheduled-chat-destination
   derived_from: null
 - id: quick-reference
-  title: 速查：概念、平台差异和继续学习
+  title: 附录：命令、设置、排障与术语
   path: manuscript/quick-reference.md
   section: appendix
   depth: 0
   prerequisites:
-  - intro
+  - first-task
   features:
-  - reference
-  facts: []
+  - quick-reference
+  facts:
+  - desktop-slash-entries
+  - desktop-file-shortcuts
+  - review-feedback-command-purpose
   derived_from: null
   required_checks:
   - editorial
