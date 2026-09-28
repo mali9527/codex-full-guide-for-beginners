@@ -129,28 +129,44 @@
   critical: true
   ttl_days: 180
 - id: project-instructions
-  claim: Codex 可按全局与项目作用范围读取 AGENTS.md 指令。
+  claim: Codex按全局与项目作用范围读取AGENTS.md指令；个性化设置中的自定义要求对应个人全局说明，项目可另有要求。/init可为当前项目生成AGENTS.md起稿，不代表已有文件可以覆盖。Personality改变交流方式而非模型能力；/personality在支持的模型中提供选择。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-28基础使用版全程框架复核；仅所列官方正文，非GUI或账号可用性实测；候选章节位置见私有提纲，待迁入book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/agent-configuration/agents-md
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/personalize
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: stable
   status: confirmed
   critical: true
 - id: local-memory
-  claim: 本地 Codex 记忆与 ChatGPT 网页记忆不同；必须持续适用的规则应保存在项目指令或文档。
+  claim: 本地Codex记忆与ChatGPT网页记忆分别存储和控制。本地记忆默认关闭，启用后后台从符合条件的历史任务生成，不保证任务结束后立即更新；/memories可分别控制当前任务使用已有记忆或参与生成未来记忆，不改变全局开关。必须持续适用的规则仍应保存在明确的项目说明或文档。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-24；未作操作实测
+    baseline: 2026-09-28基础使用版全程框架复核；仅所列官方正文，非GUI或账号可用性实测；候选章节位置见私有提纲，待迁入book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/customization/memories
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: stable
   status: confirmed
   critical: true
@@ -664,11 +680,11 @@
   critical: true
   ttl_days: 90
 - id: desktop-followup-behavior
-  claim: 桌面General设置的Follow-up behavior控制运行时追加的消息是用于引导当前运行，还是等待下一轮；Notifications用于设置完成通知。不能承诺所有用户发送补充要求后都立即打断当前运行。
+  claim: 桌面General的Follow-up behavior可将运行时补充消息用于引导当前运行（Steer），或排队等待下一轮（Queue）；排队消息在输入区上方可编辑、调整顺序、发送或删除。不能承诺每次补充都会立即打断当前运行；实际快捷键由当前设置显示，不能照搬CLI键位。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    baseline: 2026-09-28基础使用版全程框架复核；仅所列官方正文，非GUI或账号可用性实测；候选章节位置见私有提纲，待迁入book.yaml
     surfaces:
     - codex-desktop
     platforms:
@@ -676,6 +692,8 @@
     - mac
     availability: unspecified
   sources:
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/reference/settings
     checked_on: '2026-09-28'
   checked_on: '2026-09-28'
@@ -858,6 +876,214 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: desktop-voice-options
+  claim: 桌面语音听写把讲话转成发送前可修改的文字；ChatGPT Voice用于实时讨论、跟进或调整任务。已有Codex任务中启动语音仍在逐步开放，受账号和工作区条件影响；语音屏幕上下文文档限定macOS，任务权限仍适用。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: rollout-dependent
+  sources:
+  - url: https://learn.chatgpt.com/docs/features/voice
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: desktop-notification-activity
+  claim: 桌面通知可分别设置完成、权限请求与提问提醒，并可能需要系统通知授权。Activity可用时可查看未读、运行中及等待回复的任务；通知不是任务已正确完成或电脑离线仍在运行的证明。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/notifications
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: desktop-subagent-delegation
+  claim: 当前本地Codex可在用户明确要求或适用AGENTS.md/Skill要求时，将可独立的工作分配给子代理，再由主任务汇总；桌面显示代理活动。子代理各自使用模型和工具，通常比相应单代理运行消耗更多token；官方建议初用优先只读工作，多个代理同时改文件可能产生冲突。CLI的/agent不据此成为桌面命令。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/agent-configuration/subagents
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: desktop-share-snapshot
+  claim: 官方Use ChatGPT将本地Codex任务的只读分享快照说明限定于macOS桌面。快照不授予项目或电脑访问权限，分享后新消息不会自动更新旧快照；个人账号为持链接者可读，组织账号受组织成员和共享设置限制。分享内容可能含消息、图片及文件路径或差异，分享前应检查；不能推广为Windows相同步骤。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/use-chatgpt
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: desktop-remote-host
+  claim: Codex Remote让手机查看、引导及批准连接电脑上的任务，工作仍在连接的Mac或Windows电脑执行；电脑需保持唤醒和联网，接入需同一账号与工作区并受开放进度和组织设置影响。它不是将本地任务自动迁到云端。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: rollout-dependent
+  sources:
+  - url: https://learn.chatgpt.com/docs/remote
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: desktop-mcp-status-and-connection
+  claim: MCP将Codex连接到外部工具与资料；桌面MCP servers设置可添加、启用和认证服务器，/mcp用于查看已连接服务器状态。插件可包含MCP连接；直接连接的配置也可能独立存在。查看状态不等于安装或完成认证，不要求新手手写配置或运行第三方启动命令。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/extend/mcp
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/plugins
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: plugin-uninstall-connection
+  claim: 卸载插件移除该环境中的插件包；另行建立的MCP集成连接可能继续存在，需要单独断开。组织或默认插件可能没有用户卸载入口，由管理员管理。安装、启用、登录、动作授权与断开连接是不同问题。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/plugins
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: permission
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: computer-history-optional
+  claim: Computer History是macOS上的可选活动历史功能，默认关闭，需要Memories以及相应账号和组织授权；它按所选应用和网站生成活动摘要，不是一般聊天记忆或给当前任务附一张Appshot。关闭或排除来源主要影响未来采集，已有内容需另行清除；不作为Windows/Mac共同入门前置，也未据文档名称推定稳定成熟度。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - mac
+    availability: account-and-workspace-dependent
+  sources:
+  - url: https://learn.chatgpt.com/docs/customization/computer-history
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
+- id: desktop-approve-retry
+  claim: 桌面/approve仅在自动审核开启且存在相应最近拒绝时，允许一次重试该被拒动作。应先理解对象和影响；不表示所有拒绝都可重试，不是全局取消权限或永久放行开关。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: conditional
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: permission
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: desktop-project-task-commands
+  claim: 桌面/project选择供新任务使用的项目，/task开始无项目任务，/local选择在本地项目执行；这些入口不等于自动转移文件、同步所有旧对话或为项目建立完整文件备份。具体可见性受环境和访问条件影响。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/environments/modes
     checked_on: '2026-09-28'
   checked_on: '2026-09-28'
   category: startup
