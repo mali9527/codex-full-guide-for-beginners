@@ -1090,3 +1090,27 @@
   status: confirmed
   critical: false
   ttl_days: 90
+- id: gpt6-model-use-position
+  claim: 官方将GPT-6 Astra用于需要持续判断的复杂多步骤工作，Sol用于日常及复杂工作，Luna用于明确且可重复的任务。桌面可在输入区下方选择账号可用模型；型号出现和默认设置受客户端、登录方式、工作区及开放进度影响。2026-09-22的更新说明将GPT-6 Sol与Luna标为逐步开放；不据页面列出就认定全部账号可用或已全面稳定。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28新模型开篇定向阅读；文档定位与用途已核对，非性能对比、GUI或双平台实测；候选开篇待迁入唯一book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: rollout-dependent
+  sources:
+  - url: https://learn.chatgpt.com/docs/models
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/model-selection
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/changelog
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
