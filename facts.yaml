@@ -516,11 +516,11 @@
   critical: true
   ttl_days: 90
 - id: reasoning-default-guidance
-  claim: 官方Models建议先用所选模型的默认推理投入，复杂规划或分析再提高。不能把某个CLI选择器示例中的Medium默认值推广为所有桌面模型、账号的统一默认值。
+  claim: 官方Models建议从账号可用的默认Power设置起步；Advanced中可分选模型、Effort和速度。Pick a reasoning effort给出Sol Medium、Luna High、Astra Light的起步建议；这是建议，不是所有账号实际选中值。页面示意的起始预设与实际默认还受套餐、客户端、工作区和开放进度影响。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    baseline: 2026-09-28反馈复核，实读Models的Choose a model、Power预设及Pick a reasoning effort；非GUI、账号默认或双平台实测；编排待迁入book.yaml
     surfaces:
     - codex-desktop
     platforms:
@@ -739,6 +739,86 @@
   - url: https://learn.chatgpt.com/docs/projects
     checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: usage-windows-and-credits
+  claim: 官方pricing的五小时消息数是估计，非固定消息上限；周限额可能适用。采用灵活计费的Enterprise/Edu没有固定速率限制，使用按credits扩展。当前余额和重置时间以账号用量面板为准，不能把同一窗口规则推广到所有账号。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础提纲反馈复核；仅所列官方段落确认，非GUI或账号开放实测；编排待迁入book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/pricing
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: quota
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: fast-mode-choice
+  claim: Fast通过增加使用量换取模型速度；与模型和推理投入是不同选择。官方Speed现列出GPT-6 Astra/Sol/Luna可用时按Standard的2.5倍credits计；ChatGPT登录与API计费范围不同。不能据此保证任务总耗时固定缩短，或把旧型号速度倍率推广给GPT-6。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础提纲反馈复核；仅所列官方段落确认，非GUI或账号开放实测；编排待迁入book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/agent-configuration/speed
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: quota
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: hosted-search-boundary
+  claim: Codex托管网页搜索与沙箱内本地命令联网相互独立；托管搜索不使用沙箱网络代理及其域名白名单，本地命令网络受限时搜索仍可能可用。不能把搜索结果当作本地联网权限已经开放的证据。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础提纲反馈复核；仅所列官方段落确认，非GUI或账号开放实测；编排待迁入book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/web-search
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: permission
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: context-compact-fork
+  claim: 桌面斜线菜单的/compact压缩当前聊天上下文，/fork用于从现有聊天创建分支；/status可查看聊天、上下文用量和速率限制。命令可见性受环境与权限影响，分支聊天不能替代文件副本或恢复验证。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础提纲反馈复核；仅所列官方段落确认，非GUI或账号开放实测；编排待迁入book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
     checked_on: '2026-09-28'
   checked_on: '2026-09-28'
   category: startup
