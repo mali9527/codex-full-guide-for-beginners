@@ -515,3 +515,233 @@
   status: confirmed
   critical: true
   ttl_days: 90
+- id: reasoning-default-guidance
+  claim: 官方Models建议先用所选模型的默认推理投入，复杂规划或分析再提高。不能把某个CLI选择器示例中的Medium默认值推广为所有桌面模型、账号的统一默认值。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/models
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: auto-review-routing
+  claim: Approve for me把符合条件的越界批准请求交给独立审核代理；主代理仍在原沙箱边界内。审核可能拒绝请求；Computer Use的应用级授权仍直接询问用户。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/permission-modes
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/sandboxing/auto-review
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: permission
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: permission-modes-enablement
+  claim: 桌面Settings > General中启用Auto-review或Full access，只增加可选模式，不自动选中它或修改已有聊天；可用模式受组织要求及本地配置约束。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/permission-modes
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: permission
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: goal-desktop-lifecycle
+  claim: 桌面输入/goal设置持续目标，输入区上方的进度行提供暂停、恢复、编辑及清除；运行中可补充要求。目标不扩大权限。2026-05-21更新说明Goal已不再标为实验功能，但本轮没有验证各账号可用性。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/long-running-work
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/changelog
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: scheduled-chat-destination
+  claim: 桌面定时任务可回到现有聊天继续使用上下文，或让每次运行开始独立聊天；Scheduled用于查看任务和运行结果。非版本控制项目直接在项目目录运行，不能把Git worktree作为普通文件夹定时任务的必备条件。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/automations
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: skill-invocation-surface
+  claim: 官方技能页将Codex显式选择技能的输入记为$，ChatGPT记为@；适用技能也可由任务匹配。Codex桌面斜线菜单可列出已启用技能；各入口的调用方式不可机械混用。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/skills-and-plugins
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: plugin-install-connection
+  claim: 桌面Plugins目录提供安装入口；插件需要外部服务时还可能要求连接和认证，安装后在新聊天使用其技能或工具。安装插件不等于外部服务已经连接，也不等于所有请求权限已经批准。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/plugins
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: desktop-followup-behavior
+  claim: 桌面General设置的Follow-up behavior控制运行时追加的消息是用于引导当前运行，还是等待下一轮；Notifications用于设置完成通知。不能承诺所有用户发送补充要求后都立即打断当前运行。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: appshot-input-scope
+  claim: Appshots在Mac和Windows桌面捕获最前方应用窗口的截图和可取得文本，作为聊天附件；部分应用只提供可见截图，不能据此保证取得整份文档或屏幕外内容。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/appshots
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: desktop-slash-entries
+  claim: 桌面输入区的斜线菜单提供可用命令；/model选模型、/reasoning选推理投入、/plan切换计划模式、/goal设置持续目标、/side打开临时侧聊、/status显示聊天与用量信息。具体可见命令受环境和访问条件影响。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: desktop-chat-retrieval
+  claim: 桌面项目和聊天可置顶、聊天可重命名与归档；侧栏Search chats用于找回聊天，Settings的Archived chats提供恢复。置顶不增加上下文或访问权限；本轮未核验中文按钮名称与布局。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
