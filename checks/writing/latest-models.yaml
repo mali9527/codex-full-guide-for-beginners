@@ -1,13 +1,10 @@
 schema: 2
 unit: latest-models
-input_sha256: dea34525df1356fe68ce23164ee11c76635dfb277fc835bdb9c1a4214a268262
+input_sha256: 9c539c4df335c3c6a6ca4fdcde50f185b8fad8e24f15bd6b4209e1bb39cf00a0
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
-- examples/ch04-notes-to-todos/我的待办-起始材料.zip
-- examples/ch04-notes-to-todos/演示结果/待办清单-v1.txt
-- examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
-- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 batch_started_on: '2026-09-28'
 reviewed_on: '2026-09-28'
 reviewer: codex
@@ -78,7 +75,7 @@ reader_review:
     reason: 中文直角引号，模型和Advanced保留实际词，时间不绑定国家。
   independent_creation:
     result: pass
-    reason: 对照既有同作者旧书及官方学习卡，未搬用其原案例、口号或段落；自编待办预告。
+    reason: 对照既有同作者旧书及官方学习卡，未搬用其原案例、口号或段落；自编待办预告。 本轮重新读取原件并完成7项材料一致性检查，现将真实配套输入纳入本摘要证据范围。
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。

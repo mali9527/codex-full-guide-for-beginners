@@ -3,11 +3,11 @@ unit: first-task
 input_sha256: bcaef01f44b21a427a19c898f87d34632f2c032a9217419484190042d74502c3
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
 - examples/ch04-notes-to-todos/演示结果/待办清单-v1.txt
 - examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
-- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
-- examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
 batch_started_on: '2026-09-28'
 reviewed_on: '2026-09-28'
 reviewer: codex
@@ -99,7 +99,7 @@ reader_review:
     reason: 原创一般生活提醒，无特定国家语言前提，文件路径有双平台示例。
   independent_creation:
     result: pass
-    reason: 沿用原创新备忘；对照历史教程研究卡未复用活动/网站/删除磁盘等特色案例，保留原始输入与两版输出。
+    reason: 沿用原创新备忘；对照历史教程研究卡未复用活动/网站/删除磁盘等特色案例，保留原始输入与两版输出。 本轮重新读取原件并完成7项材料一致性检查，现将真实配套输入纳入本摘要证据范围。
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
