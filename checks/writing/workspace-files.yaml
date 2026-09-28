@@ -63,7 +63,7 @@ study_brief:
   defer:
   - 不引入版本管理、全盘搜索或文档复杂格式。
   case_plan: 保留两份原始备忘，缩短重复概念解释，新增操作与界面的对应。
-study_commit: null
+study_commit: 72048e0d1b9fd71fca5a8e11c0459deef419b118
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

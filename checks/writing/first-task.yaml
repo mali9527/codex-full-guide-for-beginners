@@ -63,7 +63,7 @@ study_brief:
   defer:
   - 不提前引入技能、自动化、Git恢复或复杂编程。
   case_plan: 沿用已有提示词和v1/v2材料；新增解释不声称重新做过GUI案例。
-study_commit: null
+study_commit: 72048e0d1b9fd71fca5a8e11c0459deef419b118
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

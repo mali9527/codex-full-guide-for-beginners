@@ -296,7 +296,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28稿后补核environments/modes正文，未做GUI实测，原页未明示成熟度
     surfaces:
     - codex-desktop
     platforms:
@@ -305,8 +305,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/environments/modes
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: startup
   status: confirmed
   critical: true
@@ -418,7 +418,7 @@
   critical: true
   ttl_days: 90
 - id: desktop-model-control
-  claim: 桌面Codex可在输入框下方的模型/推理控件选择可用模型；账号可用列表与组织权限相关，模型选择不授予额外权限。
+  claim: 桌面Codex可在输入框下方的模型/推理控件选择可用模型；账号可用列表与组织权限相关，模型选择不授予额外权限。 更高推理投入可能改善复杂任务，但耗时和token消耗更多；不指定所有账号统一的默认型号。
   scope:
     product: codex
     evidence: official-documentation-only

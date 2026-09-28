@@ -21,7 +21,7 @@ required_checks:
 - operations
 units:
 - id: intro
-  title: Codex 能帮你做什么，你还需要做什么
+  title: Codex 能帮你做什么
   path: manuscript/intro.md
   section: popular
   depth: 0
@@ -40,7 +40,7 @@ units:
   - editorial
   - facts
 - id: desktop-setup
-  title: 把桌面应用准备好：Windows 与 Mac
+  title: 安装应用，认识 Codex 的基本界面
   path: manuscript/desktop-setup.md
   section: popular
   depth: 0
@@ -64,6 +64,8 @@ units:
   - permission-boundary
   - artifact-preview
   - desktop-file-shortcuts
+  - local-run-mode
+  - codex-work-scenarios
   derived_from: null
 - id: workspace-files
   title: 把文件准备好，让 Codex 找到它
