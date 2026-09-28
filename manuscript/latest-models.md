@@ -57,4 +57,5 @@ GPT-6 Astra适合需要在多个步骤中持续判断的工作。材料更多、
 [当前模型与桌面选择方式](https://learn.chatgpt.com/docs/models)；[模型选择建议](https://learn.chatgpt.com/docs/model-selection)；[Codex与Work的用途](https://learn.chatgpt.com/docs/use-chatgpt)。
 
 <!-- studio:nav -->
+[目录](../README.md) · [第1章 Codex能帮你做什么](intro.md) →
 <!-- /studio:nav -->

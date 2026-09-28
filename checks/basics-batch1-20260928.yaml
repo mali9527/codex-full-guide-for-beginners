@@ -1,0 +1,162 @@
+- unit: latest-models
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/latest-models.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+- unit: latest-models
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/latest-models.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: trial
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有实际零基础读者试读。
+  reason: 当前引擎编辑判断不能代替真人理解。
+- unit: intro
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/intro.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: trial
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有实际零基础读者试读。
+  reason: 当前引擎编辑判断不能代替真人理解。
+- unit: desktop-setup
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/desktop-setup.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+- unit: desktop-setup
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/desktop-setup.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: trial
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有实际零基础读者试读。
+  reason: 当前引擎编辑判断不能代替真人理解。
+- unit: workspace-files
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/workspace-files.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+- unit: workspace-files
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/workspace-files.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: trial
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有实际零基础读者试读。
+  reason: 当前引擎编辑判断不能代替真人理解。
+- unit: first-task
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/first-task.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+- unit: first-task
+  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  paths:
+  - manuscript/first-task.md
+  - facts.yaml
+  - book.yaml
+  - 写作约定.md
+  - 术语翻译表.md
+  kind: trial
+  result: unknown
+  checked_on: '2026-09-28'
+  engine: codex
+  author_engine: codex
+  platforms:
+  - windows
+  - mac
+  limitations: 没有实际零基础读者试读。
+  reason: 当前引擎编辑判断不能代替真人理解。

@@ -77,5 +77,5 @@ Mac下载页标注的**Apple Silicon**指Apple芯片。可以从苹果菜单进�
 - [识别Apple芯片](https://support.apple.com/en-au/116943)、[在Mac上安装应用](https://support.apple.com/en-au/guide/mac-help/-mh35835/mac)。
 
 <!-- studio:nav -->
-← [Codex 能帮你做什么](intro.md) · [目录](../README.md) · [把文件准备好，让 Codex 找到它](workspace-files.md) →
+← [第1章 Codex能帮你做什么](intro.md) · [目录](../README.md) · [第3章 看懂第一屏，并发出第一条消息](workspace-files.md) →
 <!-- /studio:nav -->

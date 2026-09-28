@@ -89,5 +89,5 @@
 - [斜杠命令](https://learn.chatgpt.com/docs/reference/slash-commands)、[成果预览](https://learn.chatgpt.com/docs/artifacts-viewer)。
 
 <!-- studio:nav -->
-← [安装应用，认识 Codex 的基本界面](desktop-setup.md) · [目录](../README.md) · [得到第一份可以检查和保存的结果](first-task.md) →
+← [第2章 安装应用，进入Codex](desktop-setup.md) · [目录](../README.md) · [第4章 第一次完整使用：把零散备忘整理成待办清单](first-task.md) →
 <!-- /studio:nav -->

@@ -153,5 +153,5 @@
 本章的案例选择参考了已有教程对入门任务的安排，具体作用见[参考来源与致谢](../参考来源与致谢.md)。备忘、提示词、清单和讲解均由本书独立编写。
 
 <!-- studio:nav -->
-← [把文件准备好，让 Codex 找到它](workspace-files.md) · [目录](../README.md) · [到这里已经能用：接下来走多远](choose.md) →
+← [第3章 看懂第一屏，并发出第一条消息](workspace-files.md) · [目录](../README.md) · [第5章 账号与额度：看懂自己正在用什么](account-usage.md) →
 <!-- /studio:nav -->

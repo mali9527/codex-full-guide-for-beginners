@@ -5,5 +5,5 @@
 本单元的读者目标与讲解安排见[内容框架](../内容框架.md)。不设置习题、测验或作业。
 
 <!-- studio:nav -->
-← [需要新能力时，再认识技能和插件](skills-plugins.md) · [目录](../README.md) · [从一份文件，走到一个能打开的网页](web-basics.md) →
+← [第23章 电脑操作：让Codex操作其他应用](computer-use.md) · [目录](../README.md) · [附录：命令、设置、排障与术语](quick-reference.md) →
 <!-- /studio:nav -->

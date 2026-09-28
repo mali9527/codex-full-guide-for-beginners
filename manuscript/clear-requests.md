@@ -5,5 +5,5 @@
 本单元的读者目标与讲解安排见[内容框架](../内容框架.md)。不设置习题、测验或作业。
 
 <!-- studio:nav -->
-← [到这里已经能用：接下来走多远](choose.md) · [目录](../README.md) · [把零散资料整理成真正能交付的文档](work-documents.md) →
+← [第13章 对话变长以后：上下文、压缩和分支](context.md) · [目录](../README.md) · [第15章 先商量怎么做：Plan与方案比较](planning.md) →
 <!-- /studio:nav -->

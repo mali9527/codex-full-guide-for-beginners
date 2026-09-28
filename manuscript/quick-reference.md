@@ -5,5 +5,5 @@
 本单元的读者目标与讲解安排见[内容框架](../内容框架.md)。不设置习题、测验或作业。
 
 <!-- studio:nav -->
-← [遇到问题时，先找出卡在哪一层](troubleshooting.md) · [目录](../README.md)
+← [第24章 定时任务：让跑通的工作按时再做](scheduled-work.md) · [目录](../README.md)
 <!-- /studio:nav -->

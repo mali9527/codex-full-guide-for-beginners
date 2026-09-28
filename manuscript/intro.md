@@ -63,5 +63,5 @@ Work和Codex的能力有重叠。选择Codex之后，并不意味着只能写代
 [桌面快速开始](https://learn.chatgpt.com/docs/quickstart)；[Chat、Work和Codex的用途](https://learn.chatgpt.com/docs/use-chatgpt)；[文件预览与修改](https://learn.chatgpt.com/docs/artifacts-viewer)；[权限范围](https://learn.chatgpt.com/docs/permission-modes)。
 
 <!-- studio:nav -->
-[目录](../README.md) · [安装应用，认识 Codex 的基本界面](desktop-setup.md) →
+← [开篇：GPT-6 Astra与现在的Codex](latest-models.md) · [目录](../README.md) · [第2章 安装应用，进入Codex](desktop-setup.md) →
 <!-- /studio:nav -->
