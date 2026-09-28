@@ -1,6 +1,6 @@
 schema: 2
 unit: workspace-files
-input_sha256: 8706ce1bd9084595d55f545ac007c190924322df75ff9fd82a3d7529a4285b95
+input_sha256: 244804c20d719c3ac2ae318d7bc2f83fe8d4356501a44c45c0cfcba901582b2d
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -65,37 +65,177 @@ study_brief:
   case_plan: 保留两份原始备忘，缩短重复概念解释，新增操作与界面的对应。
 study_commit: 72048e0d1b9fd71fca5a8e11c0459deef419b118
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 对照写前提要与四章连读：项目不再从头下定义，选共同目录与Local均结合即将生成的结果说明。 官方当前能力、项目和预览说明实际改变了讲解次序；不只补链接。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 承接第2章项目/聊天已有认识，仍在第一次接文件时解释路径。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 项目不再从头下定义，选共同目录与Local均结合即将生成的结果说明。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 保留找错材料和乱码排障；删除多次解释项目与聊天分工的句子。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 用两份备忘串起选择目录、开始聊天和读取，不是孤立按钮操作清单。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 两平台路径为示例用户名，引号统一，不让读者照抄演示绝对路径。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 材料与提示词仍为本书原创，未更换成来源独特案例或结构。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 完整回读本章及递归前置，核对价值场景/入口/平台/模型/项目/Local/权限/预览/快捷键等实际出现的断言；保留条件，不用来源链接代替语义对照。自编案例与提示词是需求和教学建议，未冒充已执行的产品保证。文档未验证界面操作或读者理解。
+  docs_checked_on: '2026-09-27'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-26 CLI0.157.1与09-25 CLI0.157.0开篇功能和修复
+    checked_on: '2026-09-28'
+    effect: 当前开篇仍为CLI变更，不据此指定桌面版本。模型页同日仍列可用条件及旧型号弃用，本批不指定型号；未发现所读更新推翻本批基础桌面路线，非全日志审计。
+  claims:
+  - anchor: 用默认快捷键打开「打开文件夹（Open folder）」窗口：
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: 'macOS / Windows: Open folder'
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: Ctrl+O/⌘O适用Codex，且可自定义；不是实测。
+    notice: ''
+  - anchor: 在这个项目里开始**新聊天（New chat）**
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: 'macOS / Windows: New chat'
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: Ctrl+N/⌘N有文档依据，仍要求检查选定项目。
+    notice: ''
+  - anchor: Local 表示直接在电脑上的当前项目文件夹中工作
+    fact_id: local-run-mode
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 限定运行位置，不称默认或隐私模式。
+    notice: ''
+  - anchor: 在输入框下方确认当前聊天使用 **Ask for approval（请求批准）**。
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Enable modes / Ask for approval
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 权限控件位置及模式能力；配置组织差异保留。
+    notice: ''
+  - anchor: 选定项目也不等于在所有配置下都把访问范围锁死在一个文件夹内。
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Sandbox protections are separate from project organization
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 项目组织与保护范围不能等同。
+    notice: ''
+  - anchor: 不会自动把权限切换成只能读取
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: How permissions work
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 工作要求不等于改变权限配置；原件仍需检查。
+    notice: ''
+  - anchor: 在Keyboard Shortcuts中搜索Open folder，查看当前绑定
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/settings
+    locator: Keyboard shortcuts
+    checked_on: '2026-09-27'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 自定义快捷键可按命令查找；具体界面待实测。
+    notice: ''
+  - anchor: 用Windows Ctrl+,或Mac ⌘,打开设置
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: 'macOS / Windows: Settings'
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 给可查绑定的入口，无逐键教学。
+    notice: ''
+  - anchor: 它连接的是电脑里的「我的待办」。
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Use local projects for folders and codebases
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 将第2章概念落到本例材料，不把上传来源当本地文件。
+    notice: ''
+  - anchor: 留在同一聊天里就可以继续
+    fact_id: desktop-chat-organization
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Work in a project
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 本例连续成果用同一聊天，不等于所有任务都塞进同一聊天。
+    notice: ''
   unused_facts: {}
   reading_reuse:
   - url: https://learn.chatgpt.com/docs/environments/modes
@@ -105,4 +245,4 @@ fact_review:
   - url: https://learn.chatgpt.com/docs/reference/settings
     checked_on: '2026-09-27'
     from_batch: first-batch-writing-20260927
-    reason: 本轮主要调整开篇教法，原安装/运行依据仍在7日内；已重新检查09-28更新开篇，相关操作并未改线。
+    reason: 复用27—28日前批实际官方阅读中的同一系统/登录步骤；本批已核对当前更新，未改变路线，不刷新原日期。

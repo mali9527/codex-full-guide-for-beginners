@@ -1,5 +1,5 @@
 - unit: intro
-  source_commit: 88d71aaf37240ed261d3f5de379399131f7a55f6
+  source_commit: 6a66f2d42902182077e1ec902b85079a3a8de8cc
   paths:
   - manuscript/intro.md
   - facts.yaml
@@ -22,7 +22,7 @@
   limitations: 尚无真人零基础读者试读；当前Codex编辑复核不能代替。
   reason: 未实际招募或观察读者，保持unknown。
 - unit: desktop-setup
-  source_commit: 88d71aaf37240ed261d3f5de379399131f7a55f6
+  source_commit: 6a66f2d42902182077e1ec902b85079a3a8de8cc
   paths: &id001
   - manuscript/intro.md
   - manuscript/desktop-setup.md
@@ -44,9 +44,9 @@
   - windows
   - mac
   limitations: Windows环境不可用；Computer Use拒绝访问Codex，Mac文本编辑器打开测试文件未成功；未验证安装、登录、项目/Local/权限、桌面发送及系统应用关闭重开。
-  reason: 已核对官方文档并对照最终正文；9月27日文件级演示完成ZIP解压、原件读取、v1/v2写入读回与范围检查，未把该演示当作此固定提交的桌面复现或双平台通过。
+  reason: 本次已作开篇与界面讲解的文档/编辑复核；没有新增GUI实验。既有文件演示只验证未变的原创材料与输出，不能当作此修订稿的桌面复现。
 - unit: desktop-setup
-  source_commit: 88d71aaf37240ed261d3f5de379399131f7a55f6
+  source_commit: 6a66f2d42902182077e1ec902b85079a3a8de8cc
   paths: *id001
   kind: trial
   result: unknown
@@ -59,7 +59,7 @@
   limitations: 尚无真人零基础读者试读；当前Codex编辑复核不能代替。
   reason: 未实际招募或观察读者，保持unknown。
 - unit: workspace-files
-  source_commit: 88d71aaf37240ed261d3f5de379399131f7a55f6
+  source_commit: 6a66f2d42902182077e1ec902b85079a3a8de8cc
   paths: &id002
   - manuscript/intro.md
   - manuscript/desktop-setup.md
@@ -82,9 +82,9 @@
   - windows
   - mac
   limitations: Windows环境不可用；Computer Use拒绝访问Codex，Mac文本编辑器打开测试文件未成功；未验证安装、登录、项目/Local/权限、桌面发送及系统应用关闭重开。
-  reason: 已核对官方文档并对照最终正文；9月27日文件级演示完成ZIP解压、原件读取、v1/v2写入读回与范围检查，未把该演示当作此固定提交的桌面复现或双平台通过。
+  reason: 本次已作开篇与界面讲解的文档/编辑复核；没有新增GUI实验。既有文件演示只验证未变的原创材料与输出，不能当作此修订稿的桌面复现。
 - unit: workspace-files
-  source_commit: 88d71aaf37240ed261d3f5de379399131f7a55f6
+  source_commit: 6a66f2d42902182077e1ec902b85079a3a8de8cc
   paths: *id002
   kind: trial
   result: unknown
@@ -97,7 +97,7 @@
   limitations: 尚无真人零基础读者试读；当前Codex编辑复核不能代替。
   reason: 未实际招募或观察读者，保持unknown。
 - unit: first-task
-  source_commit: 88d71aaf37240ed261d3f5de379399131f7a55f6
+  source_commit: 6a66f2d42902182077e1ec902b85079a3a8de8cc
   paths: &id003
   - manuscript/intro.md
   - manuscript/desktop-setup.md
@@ -121,9 +121,9 @@
   - windows
   - mac
   limitations: Windows环境不可用；Computer Use拒绝访问Codex，Mac文本编辑器打开测试文件未成功；未验证安装、登录、项目/Local/权限、桌面发送及系统应用关闭重开。
-  reason: 已核对官方文档并对照最终正文；9月27日文件级演示完成ZIP解压、原件读取、v1/v2写入读回与范围检查，未把该演示当作此固定提交的桌面复现或双平台通过。
+  reason: 本次已作开篇与界面讲解的文档/编辑复核；没有新增GUI实验。既有文件演示只验证未变的原创材料与输出，不能当作此修订稿的桌面复现。
 - unit: first-task
-  source_commit: 88d71aaf37240ed261d3f5de379399131f7a55f6
+  source_commit: 6a66f2d42902182077e1ec902b85079a3a8de8cc
   paths: *id003
   kind: trial
   result: unknown

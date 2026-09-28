@@ -1,6 +1,6 @@
 schema: 2
 unit: intro
-input_sha256: 1fca8ca2ccaca377b1af8ec9de1424cdbc1b427627be2093b08bd4d4d79b5fe8
+input_sha256: 010bb47ab822512c859649b90d0154cdd64689698a4236714601c4e396e8d6fe
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -66,36 +66,191 @@ study_brief:
   case_plan: 自编场景只示意用途，不声称已演示；待办案例只在章尾引入，不垄断开篇。
 study_commit: 72048e0d1b9fd71fca5a8e11c0459deef419b118
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 对照写前提要与四章连读：价值与四类用途先于工具名和安装，完成标准细节后置到小案例。 官方当前能力、项目和预览说明实际改变了讲解次序；不只补链接。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 从办公场景起步，未假定编程或Codex经验；程序只按预算用途说明。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 价值与四类用途先于工具名和安装，完成标准细节后置到小案例。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 每类场景说明材料、处理和成果；删除开篇的预算算式和清单验收细节。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 段落围绕用途连续展开，没有虚构经历、功能名堆叠或连续反转口号。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 引号为「」；场景不限定国家、币种或语种；产品英文名保留。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 对照CodexGuide、Stanford和鱼皮实际选读，使用自行设计的用途说明，未用独特口号或名片/磁盘案例。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 完整回读本章及递归前置，核对价值场景/入口/平台/模型/项目/Local/权限/预览/快捷键等实际出现的断言；保留条件，不用来源链接代替语义对照。自编案例与提示词是需求和教学建议，未冒充已执行的产品保证。文档未验证界面操作或读者理解。
+  docs_checked_on: '2026-09-28'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
-  unused_facts: {}
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-26 CLI0.157.1与09-25 CLI0.157.0开篇功能和修复
+    checked_on: '2026-09-28'
+    effect: 当前开篇仍为CLI变更，不据此指定桌面版本。模型页同日仍列可用条件及旧型号弃用，本批不指定型号；未发现所读更新推翻本批基础桌面路线，非全日志审计。
+  claims:
+  - anchor: 它就能在允许的范围内读取文件、处理内容、编写程序，再根据你的反馈继续修改。
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Ask for approval / How permissions work
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 只确认在许可范围使用文件和工具；不保证任务自动正确。
+    notice: ''
+  - anchor: 最后得到的可以是一份文档、一张表格，也可以是一个网页或小工具。
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: What ChatGPT Work can do / Compare ChatGPT Work and Codex on desktop
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 两入口能力有重叠，研究/文档/开发等可在Codex做；下文场景为自编任务方向，非全部账号能力承诺。
+    notice: ''
+  - anchor: Codex 可以编写和修改这些指令。
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Run code and review technical work / Codex comparison
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 指编写程序能力，不把读者案例当已跑通工具。
+    notice: ''
+  - anchor: 涉及最新信息时，需要用到可用的联网工具
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Research and analyze information / availability conditions
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 联网以工具和账号条件可用为前提。
+    notice: ''
+  - anchor: 不必指望第一次就把所有要求说得完美。
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Go from idea to useful result / Refine
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 官方支持自然语言持续反馈；本书教学建议不作结果保证。
+    notice: ''
+  - anchor: 桌面应用支持文档、表格、演示文稿和 PDF 等文件的预览
+    fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Work with files开篇
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 支持范围内并排预览；未声称所有格式或自动打开。
+    notice: ''
+  - anchor: 并在应用的 ChatGPT 下拉菜单里提供 **Codex** 入口。
+    fact_id: desktop-entry
+    url: https://learn.chatgpt.com/docs/quickstart
+    locator: Setup / Start a chat
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 当前文档入口，不借旧教程菜单。
+    notice: ''
+  - anchor: Codex 更突出开发工具与技术细节
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Compare ChatGPT Work and Codex on desktop
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 明确可承担知识工作，不把Work能力全量无条件移植。
+    notice: ''
+  - anchor: 你选择一个模型，是选择这次由哪个模型处理要求
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model / Recommended models
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 选择处理模型，不是安装应用；不指定默认型号。
+    notice: ''
+  - anchor: 功能是否可用，还取决于平台、账号、开放进度和工作区设置。
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: What ChatGPT Work can do末段 / desktop comparison
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 仅列实际可用条件，不编稳定标签。
+    notice: ''
+  - anchor: 从终端使用 Codex 的 CLI 放在后段
+    fact_id: desktop-entry
+    url: https://learn.chatgpt.com/docs/quickstart
+    locator: Setup中的CLI入口
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: CLI入口身份及本书路线，无CLI步骤。
+    notice: ''
+  unused_facts:
+    local-project-context: 本章只讲价值和成果可能性；具体本地文件夹连接留第2/3章，本章未另断言连接步骤。
   reading_reuse: []

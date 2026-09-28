@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 823220fd99ebbd39b1c163ba14f84b4b1891f7483645902ee97bc9240b57e868
+input_sha256: 776c36000c9e6ebfa42b9ae251c01a6fa73c05da6b1d97854a5c117c550ead89
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -65,37 +65,121 @@ study_brief:
   case_plan: 沿用已有提示词和v1/v2材料；新增解释不声称重新做过GUI案例。
 study_commit: 72048e0d1b9fd71fca5a8e11c0459deef419b118
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 对照写前提要与四章连读：先用上一章聊天继续任务，再看进展与成果，发现差异后才说明反馈和另存。 官方当前能力、项目和预览说明实际改变了讲解次序；不只补链接。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 读者已认识界面和路径，本章不重教文件打开，只说明成果对象。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先用上一章聊天继续任务，再看进展与成果，发现差异后才说明反馈和另存。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 完整保留未知日期/未预约/截止时间的必要判断，界面说明各自落到一次操作。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 实例连续进行，新增语句解释为什么在原聊天继续，未额外强设方法栏目。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 本书自编备忘的日期与数量保持；语种中立且引号规范。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 已有自有提示词与v1/v2未移植原教程，稿后再对照实际阅读范围；AI编辑不冒充读者试读。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 完整回读本章及递归前置，核对价值场景/入口/平台/模型/项目/Local/权限/预览/快捷键等实际出现的断言；保留条件，不用来源链接代替语义对照。自编案例与提示词是需求和教学建议，未冒充已执行的产品保证。文档未验证界面操作或读者理解。
+  docs_checked_on: '2026-09-28'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-26 CLI0.157.1与09-25 CLI0.157.0开篇功能和修复
+    checked_on: '2026-09-28'
+    effect: 当前开篇仍为CLI变更，不据此指定桌面版本。模型页同日仍列可用条件及旧型号弃用，本批不指定型号；未发现所读更新推翻本批基础桌面路线，非全日志审计。
+  claims:
+  - anchor: 本例使用 Local，直接处理电脑上的当前项目目录。
+    fact_id: local-run-mode
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 本例读取/写入位置来自Local定义；不保证生成成功。
+    notice: ''
+  - anchor: 若它正在等待批准，核对要操作的对象
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Ask for approval / How permissions work
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 有待批请求时需判断，未保证逐项操作都问。
+    notice: ''
+  - anchor: 这一步看的是电脑里实际留下的成果。
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Use local projects for folders and codebases
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 本例指定保存文件，语义正确另查原创材料。
+    notice: ''
+  - anchor: 聊天内容区会呈现回复和处理进展。
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Go from idea to useful result / local work / Refine
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 在同一聊天继续反馈，可能等补充或批准，非响应时间保证。
+    notice: ''
+  - anchor: 自动打开与支持格式仍有条件。
+    fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Work with files开篇
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 文本案例使用系统打开，不承诺TXT自动预览。
+    notice: ''
+  - anchor: 可以从侧栏回到这个聊天
+    fact_id: desktop-chat-organization
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Organize projects and chats
+    checked_on: '2026-09-28'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 本次文档核对仅支持所列条件；未完成双平台GUI实测，不据此推定所有账号一致。
+    support: supported
+    rationale: 持续任务在原聊天，无关任务另开；无跨聊天全部记忆保证。
+    notice: ''
   unused_facts: {}
   reading_reuse:
   - url: https://learn.chatgpt.com/docs/environments/modes
