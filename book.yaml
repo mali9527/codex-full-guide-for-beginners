@@ -29,6 +29,7 @@ units:
   features:
   - latest-models
   facts:
+  - permission-boundary
   - gpt6-model-use-position
   - desktop-model-control
   - reasoning-default-guidance
@@ -84,6 +85,8 @@ units:
   features:
   - workspace-files
   facts:
+  - local-run-mode
+  - reasoning-default-guidance
   - desktop-chat-organization
   - desktop-file-shortcuts
   - desktop-model-control

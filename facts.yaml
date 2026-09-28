@@ -1095,13 +1095,13 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28新模型开篇定向阅读；文档定位与用途已核对，非性能对比、GUI或双平台实测；候选开篇待迁入唯一book.yaml
+    baseline: 2026-09-28新模型开篇定向阅读；文档定位与用途已核对，非性能对比、GUI或双平台实测；当前开篇采用；型号逐步开放条件保留，文档未明示稳定成熟度
     surfaces:
     - codex-desktop
     platforms:
     - windows
     - mac
-    availability: rollout-dependent
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/models
     checked_on: '2026-09-28'
