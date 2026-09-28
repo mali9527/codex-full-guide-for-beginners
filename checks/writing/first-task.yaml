@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: e1641593b28189c4095a2cf9de53b173e8d6fc92ce961e68a00e15fe4afffe57
+input_sha256: 823220fd99ebbd39b1c163ba14f84b4b1891f7483645902ee97bc9240b57e868
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -8,21 +8,18 @@ evidence_paths:
 - examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
-batch_started_on: '2026-09-27'
+batch_started_on: '2026-09-28'
 reviewed_on: '2026-09-28'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-27'
-  base_manuscript_sha256: a50f9ce225800c546765711bfb22987e32ec78efa3e580387a16630be3b64d70
-  reader_goal: 用两份备忘得到真实保存的清单，检查语义和遗漏，再指定一处修改并保留两个版本。
+  prepared_on: '2026-09-28'
+  base_manuscript_sha256: 8d19c3b1af4b148a36578a6cc1771a0d40f63838e356d89f779811f82fb80e58
+  reader_goal: 在同一聊天要求整理保存，读懂过程与成果区别，反馈具体问题并另存新版本。
   reader_start:
-  - 此前已有第3章旧稿，路径与权限将由同批修订补齐；稿后回读第1—3章。
-  - 会打开和另存文件，不必重教。
+  - 已通过第3章找到两份文件；认识项目/Local/权限/聊天。
   explain_now:
-  - 整理合并是改变表达而非替人安排未知日期。
-  - 聊天完成与文件存在、文件正确是不同检查。
-  - 修改对象要精确到v1/v2；重新生成不能冒充恢复被覆盖的原版。
+  - 同一成果连续对话与新任务开新聊天的用途；预览与实际文件的关系。
   official_readings:
   - fact_id: local-run-mode
     url: https://learn.chatgpt.com/docs/environments/modes
@@ -33,96 +30,75 @@ study_brief:
   - fact_id: local-project-context
     url: https://learn.chatgpt.com/docs/projects
     locator: Use local projects for folders and codebases
-    checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
     understanding: 项目可读改目录内文件；当前任务继续同一聊天无需切目录。
     teaching_use: 保持材料、结果在同一项目，明确修改文件名。
   - fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
     locator: Ask for approval
-    checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
     understanding: 生成及修改受当前允许范围影响。
     teaching_use: 出权限请求按作用对象判断，不写每次都有或自动通过。
+  - fact_id: desktop-chat-organization
+    url: https://learn.chatgpt.com/docs/projects
+    locator: 本地项目/聊天组织
+    checked_on: '2026-09-28'
+    understanding: 桌面项目组织相关聊天，本地项目连接电脑文件夹；各项独立成果可用不同聊天组织，同一成果可继续反馈。侧栏可回到已有聊天，项目并不等于文件访问的保护边界。
+    teaching_use: 在原聊天提出纠错和状态更新，让基本操作贯穿小案例，而不是另列功能清单。
+  - fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Work with files开篇
+    checked_on: '2026-09-28'
+    understanding: 桌面支持文档、表格、演示文稿和PDF等成果的可视预览，并可在支持批注的预览上标注；CLI可生成和修改文件，但不提供同样的预览与批注界面。
+    teaching_use: 在原聊天提出纠错和状态更新，让基本操作贯穿小案例，而不是另列功能清单。
+  - fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Work/Codex桌面对照与自然语言反馈
+    checked_on: '2026-09-28'
+    understanding: Codex与Work的桌面能力有重叠，Codex可用于研究、文档、演示文稿及其他知识工作，也提供开发视图；自然语言要求可随结果继续修订。文件、联网、工具等能力取决于平台、账号、开放进度和工作区设置。
+    teaching_use: 在原聊天提出纠错和状态更新，让基本操作贯穿小案例，而不是另列功能清单。
   teaching_sequence:
-  - 用照片截止与数量例子定义完成，再给生成请求和目标文件。
-  - 打开实际成果，对照截止/开始与未预约/已预约，最后进行一处状态变更。
-  - 纠错提示补明确文件名与保存动作，避免聊天里修正却未落盘。
+  - 说明整理目标、发送要求、查看过程与输出，再从文件检查关键事实。
+  - 在原聊天提出纠错和状态更新，让基本操作贯穿小案例，而不是另列功能清单。
   defer:
-  - 路径完整定义前移第3章，本章只回指。
-  - 版本管理、Git、自动日程与代办动作不进入首例。
-  case_plan: 原两份材料、四项清单、买笔记本变已完成保持。新增文件级重复演示在独立副本中完成；不将脚本读写说成GUI发送或真人试读。
-study_commit: 31a04bd33b1f1fa7b0ab663b77eb87a3538e73c2
+  - 不提前引入技能、自动化、Git恢复或复杂编程。
+  case_plan: 沿用已有提示词和v1/v2材料；新增解释不声称重新做过GUI案例。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已完成的准备章作为真实前置；从两份备忘的时间与数量定义完成标准，再处理保存、核对、纠错、另存。路径不重复授课，v1/v2和原件的保留由实际文件验证，未冒充桌面运行。
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 第3章已经解释项目、Local、权限和路径；本章只应用到结果，不再要求读者自己补前置。
+    result: pending
+    reason: 待按本章完整正文复核
   concept_timing:
-    result: pass
-    reason: 先用照片事项说明何谓做好，再提出整理请求；相对文件位置在纠错时解释，Git恢复后置。
+    result: pending
+    reason: 待按本章完整正文复核
   information_value:
-    result: pass
-    reason: 保留截止/开始时间差别、预约未完成与原件不变；修订后纠错明确文件名和保存动作，覆盖第一版的排障不伪称恢复。
+    result: pending
+    reason: 待按本章完整正文复核
   natural_style:
-    result: pass
-    reason: 整理、找文件、看含义、反馈、状态更新连续发生；方法从变化中带出，没有练习或固定方法栏目。
+    result: pending
+    reason: 待按本章完整正文复核
   localization:
-    result: pass
-    reason: 材料为虚构日常事项，不绑定特定国家语种；两种系统共享相对文件位置，真实按钮不翻译造词。
+    result: pending
+    reason: 待按本章完整正文复核
   independent_creation:
-    result: pass
-    reason: 对照六项来源本批实读范围及此前案例决定，未复制他人的网站/名片/md2html、提示词和经历；bozhou旧案例本轮未重获原文的边界保留。
+    result: pending
+    reason: 待按本章完整正文复核
 fact_review:
-  coverage: reviewed
-  reason: 通读本章及实际前置后反查产品能力、平台入口、权限、按钮、默认值与示例性质；所列claims覆盖正文采用的产品/系统断言。材料内容、算术与提示词另对自有文件核对；排障建议不作必然成功保证。未把文档通过写成操作通过。
-  docs_checked_on: '2026-09-27'
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
   change_review:
-    url: https://learn.chatgpt.com/docs/changelog
-    locator: 最近开篇9月26日CLI0.157.1；9月23日iOS条目；9月22日Sol/Luna rollout说明
-    checked_on: '2026-09-28'
-    effect: 最新开篇不是桌面版本，不能据此固定客户端版本；模型仍有逐步开放与工作区条件，本批不指定型号。未发现本次已读条目推翻前四章当前文档路线；不是全日志审计。
-  claims:
-  - anchor: 若它正在等待你批准某项操作，要先看清作用对象；
-    fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Ask for approval / How permissions work
-    checked_on: '2026-09-27'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
-    support: supported
-    rationale: 条件句不要求必有弹窗；拒绝超范围是案例授权判断。
-    notice: ''
-  - anchor: 本例使用 Local，直接处理电脑上的当前项目目录。
-    fact_id: local-run-mode
-    url: https://learn.chatgpt.com/docs/environments/modes
-    locator: Local
-    checked_on: '2026-09-27'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
-    support: supported
-    rationale: 本例读取/写入位置来自Local定义；不保证生成成功。
-    notice: ''
-  - anchor: 这一步要看的是电脑里实际留下的成果。
-    fact_id: local-project-context
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Use local projects for folders and codebases
-    checked_on: '2026-09-27'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
-    support: supported
-    rationale: 本地项目操作真实文件；实际保存仍必须自行查文件。
-    notice: ''
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
   unused_facts: {}
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/environments/modes
+    checked_on: '2026-09-27'
+    from_batch: first-batch-writing-20260927
+    reason: 本轮主要调整开篇教法，原安装/运行依据仍在7日内；已重新检查09-28更新开篇，相关操作并未改线。

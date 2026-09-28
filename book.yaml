@@ -33,6 +33,8 @@ units:
   - local-project-context
   - permission-boundary
   - desktop-model-control
+  - codex-work-scenarios
+  - artifact-preview
   derived_from: null
   required_checks:
   - editorial
@@ -58,6 +60,10 @@ units:
   - desktop-model-control
   - mac-open-installer
   - mac-identify-chip
+  - desktop-chat-organization
+  - permission-boundary
+  - artifact-preview
+  - desktop-file-shortcuts
   derived_from: null
 - id: workspace-files
   title: 把文件准备好，让 Codex 找到它
@@ -74,6 +80,7 @@ units:
   - local-run-mode
   - permission-boundary
   - desktop-file-shortcuts
+  - desktop-chat-organization
   derived_from: null
 - id: first-task
   title: 得到第一份可以检查和保存的结果
@@ -89,6 +96,9 @@ units:
   - local-project-context
   - local-run-mode
   - permission-boundary
+  - desktop-chat-organization
+  - artifact-preview
+  - codex-work-scenarios
   derived_from: null
 - id: choose
   title: 到这里已经能用：接下来走多远

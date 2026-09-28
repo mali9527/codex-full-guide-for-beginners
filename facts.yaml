@@ -3,11 +3,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: startup
   status: confirmed
   critical: true
@@ -17,11 +17,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: install
   status: confirmed
   critical: true
@@ -31,7 +31,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
   sources:
   - url: https://learn.chatgpt.com/docs/windows/windows-app
     checked_on: '2026-09-28'
@@ -77,11 +77,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
   sources:
   - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: startup
   status: confirmed
   critical: true
@@ -91,7 +91,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
     surfaces:
     - codex-desktop
     - codex-cli
@@ -101,8 +101,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/permission-modes
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: permission
   status: confirmed
   critical: true
@@ -112,7 +112,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
     surfaces:
     - codex-desktop
     - codex-cli
@@ -122,8 +122,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/artifacts-viewer
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: startup
   status: confirmed
   critical: true
@@ -316,7 +316,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
     surfaces:
     - codex-desktop
     platforms:
@@ -325,7 +325,7 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/commands
-    checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/reference/settings
     checked_on: '2026-09-27'
   checked_on: '2026-09-27'
@@ -376,11 +376,11 @@
   critical: true
   ttl_days: 180
 - id: desktop-download-routes
-  claim: 官方桌面页的Mac下载标Apple Silicon；Windows应用页链接Microsoft分发入口。两个平台需使用各自下载路线，不把Mac下载包通用于Windows或Intel Mac。
+  claim: 官方桌面页的Mac下载标Apple Silicon；Windows应用页链接Microsoft分发入口。两个平台需使用各自下载路线，不把Mac下载包通用于Windows或Intel Mac。 2026-09-28实际点击官方Mac下载链接，目标为persistent.oaistatic.com/codex-app-prod/Codex.dmg；页面工具不支持二进制，不等于下载或安装成功。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读；未作安装或完整GUI实测
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
     surfaces:
     - codex-desktop
     platforms:
@@ -389,7 +389,7 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/app
-    checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/windows/windows-app
     checked_on: '2026-09-28'
   checked_on: '2026-09-28'
@@ -422,7 +422,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读；未作安装或完整GUI实测
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
     surfaces:
     - codex-desktop
     platforms:
@@ -431,8 +431,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/models
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: startup
   status: confirmed
   critical: true
@@ -475,3 +475,43 @@
   status: confirmed
   critical: true
   ttl_days: 180
+- id: codex-work-scenarios
+  claim: Codex与Work的桌面能力有重叠，Codex可用于研究、文档、演示文稿及其他知识工作，也提供开发视图；自然语言要求可随结果继续修订。文件、联网、工具等能力取决于平台、账号、开放进度和工作区设置。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28开篇修订写前实读；成熟度未标明，未做GUI或双平台实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/use-chatgpt
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: desktop-chat-organization
+  claim: 桌面项目组织相关聊天，本地项目连接电脑文件夹；各项独立成果可用不同聊天组织，同一成果可继续反馈。侧栏可回到已有聊天，项目并不等于文件访问的保护边界。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
