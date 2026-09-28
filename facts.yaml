@@ -1,5 +1,5 @@
 - id: desktop-entry
-  claim: 当前官方快速开始在ChatGPT桌面应用的ChatGPT下拉菜单中提供Codex入口。
+  claim: 当前官方快速开始在ChatGPT桌面应用的ChatGPT下拉菜单中提供Codex入口。 同页区分Chat、Work与Codex用途；Work面向研究分析和文档，Codex面向开发和文件工作，CLI是另一使用入口。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -34,10 +34,10 @@
     baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
   sources:
   - url: https://learn.chatgpt.com/docs/windows/windows-app
-    checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: install
   status: confirmed
   critical: true
@@ -391,14 +391,15 @@
   - url: https://learn.chatgpt.com/docs/app
     checked_on: '2026-09-27'
   - url: https://learn.chatgpt.com/docs/windows/windows-app
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: startup
   status: confirmed
   critical: true
   ttl_days: 90
 - id: windows-first-setup
   claim: Windows原生沙箱推荐Windows 11；新且完整更新的Windows 10为best effort，实际最低需1809。推荐elevated需要管理员批准设置；受组织策略约束；unelevated为较弱后备方案。
+    官方另将winget可用列为环境假定，缺失时需更新Windows或补Windows程序包管理器。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -410,8 +411,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: startup
   status: confirmed
   critical: true
@@ -455,3 +456,22 @@
   status: confirmed
   critical: true
   ttl_days: 90
+- id: mac-identify-chip
+  claim: Apple菜单的关于本机可查看芯片或处理器；Apple Silicon机型显示Chip及芯片名，Intel机型显示Processor及Intel处理器名。
+  scope:
+    product: macos
+    evidence: official-documentation-only
+    baseline: 2026-09-28成稿反查补读与登记；非本机设置界面实测
+    surfaces:
+    - os
+    platforms:
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://support.apple.com/en-au/116943
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 180

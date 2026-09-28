@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 79c6045df6c1675b748ebaebf4aab1f3811f28b44c42ed305cb14eb91e0cc350
+input_sha256: e1641593b28189c4095a2cf9de53b173e8d6fc92ce961e68a00e15fe4afffe57
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -9,7 +9,7 @@ evidence_paths:
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
 batch_started_on: '2026-09-27'
-reviewed_on: '2026-09-27'
+reviewed_on: '2026-09-28'
 reviewer: codex
 study_brief:
   mode: revision
@@ -50,37 +50,79 @@ study_brief:
   - 路径完整定义前移第3章，本章只回指。
   - 版本管理、Git、自动日程与代办动作不进入首例。
   case_plan: 原两份材料、四项清单、买笔记本变已完成保持。新增文件级重复演示在独立副本中完成；不将脚本读写说成GUI发送或真人试读。
-study_commit: null
+study_commit: 31a04bd33b1f1fa7b0ab663b77eb87a3538e73c2
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已完成的准备章作为真实前置；从两份备忘的时间与数量定义完成标准，再处理保存、核对、纠错、另存。路径不重复授课，v1/v2和原件的保留由实际文件验证，未冒充桌面运行。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 第3章已经解释项目、Local、权限和路径；本章只应用到结果，不再要求读者自己补前置。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先用照片事项说明何谓做好，再提出整理请求；相对文件位置在纠错时解释，Git恢复后置。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 保留截止/开始时间差别、预约未完成与原件不变；修订后纠错明确文件名和保存动作，覆盖第一版的排障不伪称恢复。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 整理、找文件、看含义、反馈、状态更新连续发生；方法从变化中带出，没有练习或固定方法栏目。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 材料为虚构日常事项，不绑定特定国家语种；两种系统共享相对文件位置，真实按钮不翻译造词。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 对照六项来源本批实读范围及此前案例决定，未复制他人的网站/名片/md2html、提示词和经历；bozhou旧案例本轮未重获原文的边界保留。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读本章及实际前置后反查产品能力、平台入口、权限、按钮、默认值与示例性质；所列claims覆盖正文采用的产品/系统断言。材料内容、算术与提示词另对自有文件核对；排障建议不作必然成功保证。未把文档通过写成操作通过。
+  docs_checked_on: '2026-09-27'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 最近开篇9月26日CLI0.157.1；9月23日iOS条目；9月22日Sol/Luna rollout说明
+    checked_on: '2026-09-28'
+    effect: 最新开篇不是桌面版本，不能据此固定客户端版本；模型仍有逐步开放与工作区条件，本批不指定型号。未发现本次已读条目推翻前四章当前文档路线；不是全日志审计。
+  claims:
+  - anchor: 若它正在等待你批准某项操作，要先看清作用对象；
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Ask for approval / How permissions work
+    checked_on: '2026-09-27'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 条件句不要求必有弹窗；拒绝超范围是案例授权判断。
+    notice: ''
+  - anchor: 本例使用 Local，直接处理电脑上的当前项目目录。
+    fact_id: local-run-mode
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local
+    checked_on: '2026-09-27'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 本例读取/写入位置来自Local定义；不保证生成成功。
+    notice: ''
+  - anchor: 这一步要看的是电脑里实际留下的成果。
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Use local projects for folders and codebases
+    checked_on: '2026-09-27'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 文档支持本句的有限范围；现场界面、账号可用性与完整操作尚未实测，不推定所有环境一致。
+    support: supported
+    rationale: 本地项目操作真实文件；实际保存仍必须自行查文件。
+    notice: ''
   unused_facts: {}

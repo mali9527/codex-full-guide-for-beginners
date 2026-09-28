@@ -5,8 +5,8 @@ language: zh-CN
 product: codex
 audience: 已拥有可用付费账号，会用办公软件和文件夹，但无编程与 Codex 使用经验、不懂终端、路径、Git 的读者
 baseline:
-  product_version: 第3、4章官方文档核对2026-09-26；客户端稳定渠道及双平台完整路径待实测
-  checked_on: '2026-09-26'
+  product_version: 第一批四章官方相关文档核对2026-09-27—28；客户端稳定渠道及双平台完整路径待实测
+  checked_on: '2026-09-28'
 repository:
   name: null
   default_branch: main
@@ -57,6 +57,7 @@ units:
   - usage-availability
   - desktop-model-control
   - mac-open-installer
+  - mac-identify-chip
   derived_from: null
 - id: workspace-files
   title: 把文件准备好，让 Codex 找到它
