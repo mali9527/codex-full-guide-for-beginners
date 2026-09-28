@@ -47,11 +47,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-28正式首批重读Authentication的桌面登录与账号段；文档核对，非GUI实测
   sources:
   - url: https://learn.chatgpt.com/docs/auth
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
   category: account
   status: confirmed
   critical: true
@@ -1108,6 +1108,32 @@
   - url: https://learn.chatgpt.com/docs/model-selection
     checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/changelog
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: desktop-basic-navigation
+  claim: 桌面可从New chat开始聊天；默认Windows Ctrl+N、Mac ⌘N新建，Ctrl+B/⌘B收放侧栏。输入区键入/打开当前可用命令列表，Codex用$显式调用技能；本地Codex的@入口可添加文件。设置可按命令名查看或修改快捷键，不能把默认键位当作所有安装的当前设置。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    baseline: 2026-09-28首屏写前阅读Commands、Slash commands、Modes、Settings相关部分，非实机
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/commands
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/environments/modes
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/settings
     checked_on: '2026-09-28'
   checked_on: '2026-09-28'
   category: startup

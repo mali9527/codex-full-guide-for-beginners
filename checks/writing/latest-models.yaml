@@ -1,0 +1,92 @@
+schema: 2
+unit: latest-models
+input_sha256: 606518df0919c74d15c1157f0d3badb2bccad91a8725a1378ddea3932e9e266f
+evidence_paths:
+- examples/ch04-notes-to-todos/README.md
+- examples/ch04-notes-to-todos/我的待办-起始材料.zip
+- examples/ch04-notes-to-todos/演示结果/待办清单-v1.txt
+- examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
+- examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
+batch_started_on: '2026-09-28'
+reviewed_on: '2026-09-28'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-28'
+  base_manuscript_sha256: 6fa9c7bbe5133cf67e35cf179dacaa333e0e0a07ef5de40e88c9df0ce83271cc
+  reader_goal: 从GPT-6 Astra等当前模型看见任务价值，分清模型与Codex，知道选择入口及继续阅读位置。
+  reader_start:
+  - 没有前章，不假定已安装；有办公与电脑常识。
+  explain_now:
+  - 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+  - Astra/Sol/Luna用途和最短选择入口；Effort仅简释。
+  official_readings:
+  - fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/models
+    locator: Recommended models / Choosing Astra, Sol, Luna
+    checked_on: '2026-09-28'
+    understanding: 官方将GPT-6 Astra用于需要持续判断的复杂多步骤工作，Sol用于日常及复杂工作，Luna用于明确且可重复的任务。桌面可在输入区下方选择账号可用模型；型号出现和默认设置受客户端、登录方式、工作区及开放进度影响。2026-09-22的更新说明将GPT-6
+      Sol与Luna标为逐步开放；不据页面列出就认定全部账号可用或已全面稳定。
+    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+  - fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
+    checked_on: '2026-09-28'
+    understanding: 桌面Codex可在输入框下方的模型/推理控件选择可用模型；账号可用列表与组织权限相关，模型选择不授予额外权限。 更高推理投入可能改善复杂任务，但耗时和token消耗更多；不指定所有账号统一的默认型号。
+    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+  - fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Power / Pick a reasoning effort
+    checked_on: '2026-09-28'
+    understanding: 官方Models建议从账号可用的默认Power设置起步；Advanced中可分选模型、Effort和速度。Pick a reasoning effort给出Sol Medium、Luna High、Astra
+      Light的起步建议；这是建议，不是所有账号实际选中值。页面示意的起始预设与实际默认还受套餐、客户端、工作区和开放进度影响。
+    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+  - fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
+    checked_on: '2026-09-28'
+    understanding: Codex与Work的桌面能力有重叠，Codex可用于研究、文档、演示文稿及其他知识工作，也提供开发视图；自然语言要求可随结果继续修订。文件、联网、工具等能力取决于平台、账号、开放进度和工作区设置。
+    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+  teaching_sequence:
+  - 先用四项备忘的片段看成果价值
+  - 再分清工具与模型，按用途介绍型号
+  - 给已安装者入口，未安装者连续进入第1—4章
+  defer:
+  - 完整模型参数、速度用量和Effort档位比较
+  - API价格、性能排名及实验上下文
+  case_plan: 只预览自编备忘两条信息的合并，明示预期成果，不假造Astra已执行。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}
