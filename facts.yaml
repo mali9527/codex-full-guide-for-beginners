@@ -825,3 +825,25 @@
   status: confirmed
   critical: true
   ttl_days: 90
+- id: plan-before-editing
+  claim: 官方Prompting说明，桌面输入/plan可让Codex先调查并提出方案，再进行修改；Long-running work建议目标尚不清楚时先请其提问，厘清约束与完成标准，再按需要启动/goal。这是规划用途与建议，不代表计划正确、已获执行授权或必需先用Plan才能做普通任务。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28第三部分补强研究，实读Prompting的Prompting Codex及Long-running work的Start a goal；非GUI或账号开放实测，章节待迁入book.yaml
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/long-running-work
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90
