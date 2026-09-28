@@ -847,3 +847,20 @@
   status: confirmed
   critical: true
   ttl_days: 90
+- id: review-feedback-command-purpose
+  claim: 桌面斜线命令中的/review用于审查未提交的代码改动或与基础分支比较；/feedback打开向产品提交反馈的对话框，可选择附带日志。二者不是通用文稿审阅或向当前任务提出修改意见的专用命令；修改要求可直接在任务中说明。命令可见性受当前环境和访问条件影响。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    baseline: 2026-09-28第三部分命令补查；实读桌面Slash commands正文，未执行命令或验证双平台菜单，章节待迁入book.yaml
+    surfaces: [codex-desktop]
+    platforms: [windows, mac]
+    availability: unspecified
+  sources:
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-28'
+  checked_on: '2026-09-28'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
