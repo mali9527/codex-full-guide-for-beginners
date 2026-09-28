@@ -1,6 +1,6 @@
 schema: 2
 unit: desktop-setup
-input_sha256: aea29c6b920e23980e41b9d0a46af1b4b8279f9c8afd351c9b45e690564eb17c
+input_sha256: f62fedb063c32b4658272d1aacf9e77397708ca2ecea1c4f467de476f3a53d98
 evidence_paths: []
 batch_started_on: '2026-09-28'
 reviewed_on: '2026-09-28'
@@ -83,7 +83,7 @@ study_review:
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 读者刚知道用途，先给下载与登录，再进入Codex，不要求终端或Git。
+    reason: 读者刚知道用途，先给下载与登录，再进入Codex，不要求终端或Git。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
   concept_timing:
     result: pass
     reason: 芯片、沙箱、账号工作区只在影响安装时解释；界面布局交第3章。
@@ -102,6 +102,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
+    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

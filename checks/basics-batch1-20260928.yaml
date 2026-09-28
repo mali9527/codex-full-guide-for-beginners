@@ -1,5 +1,5 @@
 - unit: latest-models
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/latest-models.md
   - facts.yaml
@@ -15,9 +15,9 @@
   - windows
   - mac
   limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
-  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: latest-models
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/latest-models.md
   - facts.yaml
@@ -33,9 +33,9 @@
   - windows
   - mac
   limitations: 没有实际零基础读者试读。
-  reason: 当前引擎编辑判断不能代替真人理解。
+  reason: 当前引擎编辑判断不能代替真人理解。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: intro
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/intro.md
   - facts.yaml
@@ -51,9 +51,9 @@
   - windows
   - mac
   limitations: 没有实际零基础读者试读。
-  reason: 当前引擎编辑判断不能代替真人理解。
+  reason: 当前引擎编辑判断不能代替真人理解。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: desktop-setup
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/desktop-setup.md
   - facts.yaml
@@ -69,9 +69,9 @@
   - windows
   - mac
   limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
-  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: desktop-setup
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/desktop-setup.md
   - facts.yaml
@@ -87,9 +87,9 @@
   - windows
   - mac
   limitations: 没有实际零基础读者试读。
-  reason: 当前引擎编辑判断不能代替真人理解。
+  reason: 当前引擎编辑判断不能代替真人理解。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: workspace-files
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/workspace-files.md
   - facts.yaml
@@ -105,9 +105,9 @@
   - windows
   - mac
   limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
-  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: workspace-files
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/workspace-files.md
   - facts.yaml
@@ -123,9 +123,9 @@
   - windows
   - mac
   limitations: 没有实际零基础读者试读。
-  reason: 当前引擎编辑判断不能代替真人理解。
+  reason: 当前引擎编辑判断不能代替真人理解。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: first-task
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/first-task.md
   - facts.yaml
@@ -141,9 +141,9 @@
   - windows
   - mac
   limitations: 没有Windows环境；既有Codex应用访问被工具拒绝；未新增GUI复现。
-  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。
+  reason: 本批增加文档、正文及材料一致性复核；不能代替真实操作。 已核对重建后的章节导航，操作/试读仍未执行。
 - unit: first-task
-  source_commit: 3510ef135abcb89c81ab2c7e676598531a8580be
+  source_commit: a17451f480abfafd70901e5b80c8e063ee89a089
   paths:
   - manuscript/first-task.md
   - facts.yaml
@@ -159,4 +159,4 @@
   - windows
   - mac
   limitations: 没有实际零基础读者试读。
-  reason: 当前引擎编辑判断不能代替真人理解。
+  reason: 当前引擎编辑判断不能代替真人理解。 已核对重建后的章节导航，操作/试读仍未执行。

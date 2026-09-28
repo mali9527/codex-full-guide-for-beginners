@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 0bc8025040e2e302a05f8e0a2a567e4842bd2e831e2fc804fc2d4ecd2be8d448
+input_sha256: bcaef01f44b21a427a19c898f87d34632f2c032a9217419484190042d74502c3
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -84,7 +84,7 @@ study_review:
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 把旧第3章文件准备迁入本章，独立说明材料层级、路径、Local及权限。
+    reason: 把旧第3章文件准备迁入本章，独立说明材料层级、路径、Local及权限。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
   concept_timing:
     result: pass
     reason: 路径出现在首次位置核对时；先读确认再要求写入，避免隐藏前置。
@@ -103,6 +103,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
+    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

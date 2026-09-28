@@ -1,6 +1,6 @@
 schema: 2
 unit: workspace-files
-input_sha256: e8d8a72eab5e49e4db5c9406a68f17215453060f61eb003120a5cdce9ed46443
+input_sha256: ee8d8a1a7196e7a458a99fc50393250cbf4f8a42353ab1ed1996bbb70ff5684a
 evidence_paths: []
 batch_started_on: '2026-09-28'
 reviewed_on: '2026-09-28'
@@ -82,7 +82,7 @@ study_review:
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 读者已安装，本章无需文件和项目即可完成三行文字任务。
+    reason: 读者已安装，本章无需文件和项目即可完成三行文字任务。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
   concept_timing:
     result: pass
     reason: 先侧栏、输入、消息，再最小设置；@/$只讲用途不提前要求Skill知识。
@@ -101,6 +101,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
+    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

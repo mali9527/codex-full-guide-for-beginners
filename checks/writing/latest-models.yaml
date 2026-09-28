@@ -1,6 +1,6 @@
 schema: 2
 unit: latest-models
-input_sha256: 4ef037b322b491ab9bdcbc931c50c4f04562c67b3615ed6e6c01205247833f17
+input_sha256: dea34525df1356fe68ce23164ee11c76635dfb277fc835bdb9c1a4214a268262
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
@@ -63,7 +63,7 @@ study_review:
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 读者无需已安装；只预告第4章目标，操作要求转第2章。
+    reason: 读者无需已安装；只预告第4章目标，操作要求转第2章。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
   concept_timing:
     result: pass
     reason: 先说明成果价值，再区分工具与模型；Effort只给最低解释，第6章展开。
@@ -82,6 +82,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
+    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

@@ -1,6 +1,6 @@
 schema: 2
 unit: intro
-input_sha256: 488d5bb828d328d6d11291fc1615d86ac89a056a7b3a618bd44a5d9146f4f35e
+input_sha256: c0f0b5ca6547c737e25432b1cf7fb781b167a60e5b5ee5a0db0eb9201e13bce0
 evidence_paths: []
 batch_started_on: '2026-09-28'
 reviewed_on: '2026-09-28'
@@ -55,7 +55,7 @@ study_review:
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 只依赖开篇的模型工具区别，未假定已会路径或安装。
+    reason: 只依赖开篇的模型工具区别，未假定已会路径或安装。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
   concept_timing:
     result: pass
     reason: 先具体用途后交流流程再入口选择，程序就地解释用途。
@@ -74,6 +74,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
+    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
