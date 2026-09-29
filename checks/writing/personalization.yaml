@@ -48,7 +48,7 @@ study_brief:
   - 不教环境变量/override工程
   - Computer History非必做
   case_plan: 把原材料不动、未定保留、另存和实际路径写进项目说明；不写一次性购买状态。
-study_commit: null
+study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

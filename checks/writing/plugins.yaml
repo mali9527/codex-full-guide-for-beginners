@@ -42,7 +42,7 @@ study_brief:
   - 不绑定某个必须付费服务
   - Sign in with ChatGPT beta/Apple Messages不作通用登录教程
   case_plan: 只读自己服务的无敏感测试文档，没外部账号直接用本地材料路线，不假设特定插件始终可用。
-study_commit: null
+study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

@@ -35,7 +35,7 @@ study_brief:
   - 插件安装下一章
   - 录制仅Mac指路，不作为前置
   case_plan: 复用清单整理但材料名由每次请求给，不硬编码本机路径；不实际安装作者新技能。
-study_commit: null
+study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
