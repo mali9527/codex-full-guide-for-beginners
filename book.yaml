@@ -57,6 +57,8 @@ units:
   - artifact-preview
   - task-materials-and-output
   - local-project-context
+  - desktop-model-control
+  - plugin-install-connection
   derived_from: null
   required_checks:
   - editorial
@@ -82,6 +84,8 @@ units:
   - desktop-update-policy
   - desktop-file-shortcuts
   - usage-availability
+  - permission-boundary
+  - desktop-model-control
   derived_from: null
 - id: workspace-files
   title: 第3章 看懂第一屏，并发出第一条消息
@@ -131,6 +135,8 @@ units:
   - reasoning-default-guidance
   - task-materials-and-output
   - desktop-basic-navigation
+  - desktop-model-control
+  - windows-first-setup
   derived_from: null
 - id: account-usage
   title: 第5章 账号与额度：看懂自己正在用什么
