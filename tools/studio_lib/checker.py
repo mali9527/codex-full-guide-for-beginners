@@ -8,7 +8,7 @@ import yaml
 
 from .common import StudioError, load_yaml, safe_path, run_git, git_commit, slug, stripped_generated
 
-BOOK_FIELDS = set("id title type language product audience baseline repository is_test watershed units outputs diagrams toolkit published platforms required_checks protected_terms".split())
+BOOK_FIELDS = set("id title type language product audience baseline repository is_test watershed units outputs diagrams toolkit published platforms required_checks protected_terms branding".split())
 UNIT_FIELDS = set("id title path section depth prerequisites features facts derived_from required_checks".split())
 FACT_FIELDS = set("id claim scope sources checked_on category ttl_days status critical".split())
 RECORD_FIELDS = set("unit source_commit paths kind result checked_on engine author_engine platforms limitations reason".split())
@@ -18,7 +18,7 @@ SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 SHA = re.compile(r"^(?:[0-9a-f]{40}|[0-9a-f]{64})$")
 SKIP_DIRS = {".git", ".venv", "node_modules", "__pycache__", "build"}
 DIAGRAM = re.compile(r"<!--\s*diagram:\s*([^\s>]+)\s*-->")
-LINK = re.compile(r"!?\[[^\]\n]*\]\((<[^>\n]+>|(?:\\.|[^()\s]|\([^)]*\))+)(?:\s+['\"][^\n]*?['\"])?\)")
+LINK = re.compile(r"!?\[(?:\\.|[^\]\\\n])*\]\((<[^>\n]+>|(?:\\.|[^()\s]|\([^)]*\))+)(?:\s+['\"][^\n]*?['\"])?\)")
 REFERENCE = re.compile(r"^\s{0,3}\[[^\]\n]+\]:\s*(<[^>\n]+>|\S+)", re.M)
 
 # Deliberately small deny-list: recognizable credentials, not a general secret scanner.
@@ -80,7 +80,8 @@ def _anchors(text):
 
 
 class _Checker:
-    def __init__(self, root, publication, scope, today):
+    def __init__(self, root, publication, scope, today, languages=None):
+        self.languages = languages
         self.root = Path(root).resolve()
         self.publication = publication
         self.scope_requested = scope
@@ -157,6 +158,12 @@ class _Checker:
         if not self.fields(book, BOOK_FIELDS, "book.yaml", ("id", "title", "type", "language", "product", "units", "outputs")):
             return
         self.book = book
+        if "branding" in book:
+            from .branding import author_brand
+            try:
+                author_brand(self.root, book)
+            except (StudioError, OSError) as exc:
+                self.issue("invalid_branding", "book.yaml:branding", str(exc))
         for key in ("id", "product"):
             if not isinstance(book.get(key), str) or not SLUG.fullmatch(book.get(key, "")):
                 self.issue("invalid_id", "book.yaml", "{} 必须是稳定 slug".format(key))
@@ -287,9 +294,32 @@ class _Checker:
                     self.issue("output_collision", value, "输出不能覆盖正文或另一输出")
                 paths.add(resolved)
         pdf = outputs.get("pdf")
-        if pdf is not None and self.fields(pdf, {"enabled", "font", "paper"}, "book.yaml:outputs:pdf"):
+        pdf_fields = {"enabled", "font", "paper", "profile", "body_font", "heading_font", "code_font", "font_paths",
+                      "toc", "toc_depth", "bookmark_depth", "figure_appendix", "author", "subtitle", "series_title"}
+        if pdf is not None and self.fields(pdf, pdf_fields, "book.yaml:outputs:pdf"):
             if not isinstance(pdf.get("enabled", False), bool):
                 self.issue("invalid_type", "book.yaml:outputs:pdf", "enabled 必须是布尔值")
+            for key in ("font", "body_font", "heading_font", "code_font", "author", "subtitle", "series_title"):
+                if key in pdf and (not isinstance(pdf[key], str) or (key.endswith("font") and not pdf[key].strip())):
+                    self.issue("invalid_type", "book.yaml:outputs:pdf", key + " 必须是有效文本")
+            for key in ("toc", "figure_appendix"):
+                if key in pdf and type(pdf[key]) is not bool:
+                    self.issue("invalid_type", "book.yaml:outputs:pdf", key + " 必须是布尔值")
+            for key in ("toc_depth", "bookmark_depth"):
+                if key in pdf and (type(pdf[key]) is not int or not 1 <= pdf[key] <= 6):
+                    self.issue("invalid_value", "book.yaml:outputs:pdf", key + " 必须是 1—6")
+            if pdf.get("profile", "standard") not in ("standard", "mobile"):
+                self.issue("invalid_value", "book.yaml:outputs:pdf", "profile 必须是 standard 或 mobile")
+            if pdf.get("paper", "a5") not in ("a5", "b5", "a4"):
+                self.issue("invalid_value", "book.yaml:outputs:pdf", "paper 必须是 a5、b5 或 a4")
+            font_paths = pdf.get("font_paths", [])
+            if not isinstance(font_paths, list) or any(not isinstance(p, str) or not p for p in font_paths):
+                self.issue("invalid_type", "book.yaml:outputs:pdf", "font_paths 必须是书内目录列表")
+            else:
+                for rel in font_paths:
+                    directory = self.path(rel)
+                    if directory and not directory.is_dir():
+                        self.issue("missing_resource", rel, "PDF 字体目录不存在")
         translations = outputs.get("translations", {})
         if not isinstance(translations, dict):
             self.issue("invalid_type", "book.yaml:translations", "translations 必须是语言映射")
@@ -407,7 +437,7 @@ class _Checker:
             return
         declared, actual = {}, {}
         for diagram in registry:
-            if not self.fields(diagram, {"id", "unit", "type"}, "book.yaml:diagrams", ("id", "unit", "type")):
+            if not self.fields(diagram, {"id", "unit", "type", "spec"}, "book.yaml:diagrams", ("id", "unit", "type")):
                 continue
             did = diagram.get("id")
             if not isinstance(did, str) or not did:
@@ -435,7 +465,22 @@ class _Checker:
                 if not re.search(r"<!--\s*diagram:\s*[^>]+-->\s*$", prefix):
                     self.issue("unregistered_mindmap", relative, "mindmap 前缺少 diagram ID 注释")
         for did in declared.keys() - actual.keys():
-            self.issue("missing_diagram", "book.yaml", "登记图示未在正文找到：" + did)
+            diagram = declared[did]
+            pending_v2 = (diagram.get('type') == 'illustration' and diagram.get('spec') and
+                          load_yaml(self.root / diagram['spec']).get('schema_version') == 2)
+            self.issue("missing_diagram", "book.yaml", "登记图示未在正文找到：" + did,
+                       'warning' if pending_v2 else 'error')
+
+        from .illustrations import audit
+        try:
+            reports = [audit(self.root, publication=self.publication, scope=self.scope, language=lang)
+                       for lang in (self.languages or [self.book.get('language', 'zh-CN')])]
+            result = {'issues': [issue for report in reports for issue in report['issues']]}
+        except (StudioError, OSError, ValueError, TypeError, KeyError) as exc:
+            self.issue("illustration_policy", "book.yaml", str(exc))
+        else:
+            for issue in result["issues"]:
+                self.issue(issue["code"], issue["path"], issue["message"], issue["level"])
 
     def fact_records(self):
         if not (self.root / "facts.yaml").exists():
@@ -565,6 +610,27 @@ class _Checker:
             return sorted([d for d in values if isinstance(d, dict) and d.get("unit") == uid], key=lambda d: str(d.get("id", "")))
         if related_diagrams(old) != related_diagrams(self.book):
             return False, "本单元的图示声明已变化"
+        # Illustration reviews include the brief, labels and adopted style.
+        for diagram in related_diagrams(self.book) or []:
+            if diagram.get("type") != "illustration": continue
+            try:
+                from .illustrations import resolve
+                _, _, brief, folder, _ = resolve(self.root, diagram["id"])
+                if brief.get('schema_version') == 2:
+                    from .illustrations import inputs
+                    old_selection = self.old_yaml(commit, (folder / 'selection.yaml').relative_to(self.root).as_posix()) or {}
+                    primary = self.book.get('language', 'zh-CN')
+                    old_fp = old_selection.get('languages', {}).get(primary, {}).get('input_fingerprint')
+                    if old_fp != inputs(self.root, diagram['id'], primary)[1]:
+                        return False, '插图教学内容或主语言制作输入已变化'
+                    continue
+                dependencies = [folder / "brief.yaml", folder / brief["labels"], folder / "selection.yaml"]
+                style = self.root / "assets/illustrations/styles" / brief["style"]
+                dependencies += [style / name for name in ("style.md", "prefix.txt", "reference.png", "paper.png", "approval.json")]
+                if any(not self.same_file(commit, p.relative_to(self.root).as_posix()) for p in dependencies):
+                    return False, "插图设计、采用记录或风格依据已变化"
+            except (StudioError, OSError, ValueError, KeyError):
+                return False, "插图生产记录不完整"
         refs = self.units[uid].get("facts", [])
         if refs:
             old_facts = self.old_yaml(commit, "facts.yaml")
@@ -650,11 +716,9 @@ class _Checker:
                     reason = "检查结果为 " + state
                 elif state == "pass" and kind == "editorial":
                     engine, author = r.get("engine"), r.get("author_engine")
-                    if engine == "human":
-                        if not r.get("reason"):
-                            state, reason = "unknown", "人工替代交叉审校需说明接受理由"
-                    elif engine not in ("claude", "codex") or author not in ("claude", "codex", "human") or engine == author:
-                        state, reason = "unknown", "编辑审校须记录不同的起草与审校引擎"
+                    # Cross-engine review is an author-triggered option, not a publication gate.
+                    if engine not in ("claude", "codex", "human") or author not in ("claude", "codex", "human"):
+                        state, reason = "unknown", "编辑复核须如实记录起草与审校引擎（claude、codex 或 human）"
                 elif state == "pass" and kind == "trial" and r.get("engine") != "human":
                     state, reason = "unknown", "真实试读需明确为 human；AI 模拟不能算目标读者试读"
                 elif state == "pass" and kind == "operations":
@@ -673,9 +737,9 @@ class _Checker:
                             "warnings": sum(i["level"] == "warning" for i in self.issues)}}
 
 
-def check_book(book_dir, publication=False, scope=None, today=None, freshness=True, source_only=False):
+def check_book(book_dir, publication=False, scope=None, today=None, freshness=True, source_only=False, languages=None):
     """Check local book files; never fetch, write source files, or infer real-world verification."""
-    checker = _Checker(book_dir, publication, scope, today)
+    checker = _Checker(book_dir, publication, scope, today, languages)
     checker.privacy()
     checker.configuration()
     checker.filesystem()

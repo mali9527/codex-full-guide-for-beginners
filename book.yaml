@@ -8,7 +8,7 @@ baseline:
   product_version: 全书基础使用版；相关官方材料按章节核对至2026-09-29，客户端稳定渠道及双平台完整路径待实测
   checked_on: '2026-09-29'
 repository:
-  name: null
+  name: mali9527/codex-full-guide-for-beginners
   default_branch: main
 is_test: false
 watershed: first-task
@@ -486,3 +486,8 @@ toolkit: 0.1.0
 published:
   version: null
   pdf: null
+branding:
+  name: 马力
+  name_en: Ma Li
+  avatar: assets/branding/mali-avatar-v1.svg
+  sha256: fad893d4fc70ecd187eb8c4e0dc3f94e300df69ef87929f64c90d3f86e915945

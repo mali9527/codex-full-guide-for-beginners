@@ -39,7 +39,9 @@ build 先检查权威输入，再在临时目录生成；最后只写配置的�
 python tools/studio.py build --pdf --source v2026.09.1 --version v2026.09.1 --export-id 01
 ~~~
 
-源提交中的 outputs.pdf.enabled 必须为 true。工具从 Git 固定快照构建，不读工作区未提交正文；输出 build/pdf/<正文版本>/<导出号>/，含 PDF 和 export.json。已有导出号拒绝覆盖。视觉审阅的结论需另行记录。
+完整操作见 [PDF 导出与检查](PDF.md)。默认共用 A5 标准版，`--pdf-profile mobile` 选择实验窄版，`--export-date YYYY-MM-DD` 固定导出日期。源提交中的 outputs.pdf.enabled 必须为 true。工具从 Git 固定快照构建，不读工作区未提交正文；输出 build/pdf/<正文版本>/<导出号>/，含 PDF、export.json 和 qa.json；诊断保存在 build/pdf-work/。已有导出号拒绝覆盖。视觉审阅的结论需另行记录。
+
+PDF 可选 Python 依赖安装 `python -m pip install -r tools/requirements-pdf.txt`，普通 Markdown 构建不需要。`python tools/studio.py --json pdf-check /绝对路径/book.pdf` 只读检查字体嵌入、链接、越界及稀疏候选；加 `--render --output 新目录` 生成至多12个代表页，需已有 Poppler。机器通过不等于视觉通过。
 
 Mac 环境采用 Pandoc、Typst、中文字体；有 Mermaid 时使用锁定 Mermaid CLI。安装可选 Node 依赖：PUPPETEER_SKIP_DOWNLOAD=true npm ci --prefix tools，并将 STUDIO_CHROME 指向已安装 Chrome 可执行文件。独立安装的渲染器可通过 STUDIO_MMDC 指定。没有图的 Markdown 路径不加载这些工具。
 
@@ -68,3 +70,40 @@ entries 只在本地更新 book.yaml 与 README，要求可核对的公开回执
 采用版本见 tools/TOOLKIT_VERSION，tools/toolkit-manifest.json 记录入库时各工具文件。先比较已采用版本、本地定制和新源；本地有定制时展示差异并建立升级任务，不能直接覆盖。总控的 tools/toolkit_diff.py 只做比较，没有升级写入动作。
 
 升级后运行 check/build 与对应测试，确认本书规范差异，再更新采用版本。工具升级不自动更新产品事实或正文。
+
+
+## 统一手绘插图（notebook-pen-v1）
+
+每张图登记于 `book.yaml.diagrams`，`type: illustration`，`spec` 指向 `assets/illustrations/FIG-001/brief.yaml`。纸底和已确认样张随书保存。最终 PNG 必须不透明；透明和半透明像素在导入与构建检查中阻断。
+
+```sh
+python tools/studio.py illustrations status
+python tools/studio.py illustrations pack --figure FIG-001 --output .studio/illustrations/pack-001
+# 在可用图像工具中使用 pack-001/prompt.txt，以风格包 paper.png 为底稿。
+python tools/studio.py illustrations import --figure FIG-001 --pack .studio/illustrations/pack-001 --image /path/to/candidate.png --revision r01 --tool image_gen.imagegen --reference-used
+python tools/studio.py illustrations select --figure FIG-001 --revision r01 --review /path/to/review.json
+python tools/studio.py check
+python tools/studio.py build
+```
+
+总控运行时，在动作后指定作品 ID，例如 `illustrations status claude-code`。`--image` 和 `--review` 是本机输入；生产包输出路径须在书仓内。版本已存在时拒绝覆盖；下一次使用 `r02` 和新生产包。工具不调用生成服务，不假设模型、成本或种子；实际未知值保留 unknown。
+
+审校 JSON 至少包含 `reviewer`、`checked_on`、`image_sha256`、`input_fingerprint`，以及 `content/text/visual/background: pass`。应先对照正文、逐字标签、箭头与统一纸底进行真实看图检查，再填写结果。`placement` 的阅读复核另记；`select` 只完成工作稿采用，不能代替有效编辑复核或其他公开条件；跨引擎审核仅由作者手动选用。
+
+`status` 从现场推导 planned / selected / placed 与 current / stale。正文相关小节、所引事实、brief、标签、纸底或风格变化会使采用记录过期。标题必须唯一命中；不会模糊猜测位置。正文中的图、图注由成对 diagram 注释界定，自动导航不影响来源摘要。
+
+合订稿和固定提交 PDF 复用仓库中选定的图片字节，不重新生成。繁体 Markdown 的转换不会改动图内文字，`check --language zh-TW` 会单独报告图中文字本地化待验，正式公开时阻断。当前实现只自动采用 zh-CN 图片，繁体图片的独立选择与生成适配器仍待扩展。
+
+插图风格执行检查：公共前缀缺失（包括误写为 undefined）时不能制作生产包；所有采用图在 import/select/check/PDF 读取时解码检查透明度及颜色。彩色像素或明显色偏被拒绝；中性纸纹仅容许每通道 24/255 内的噪声，超过 12/255 的像素不得多于 0.5%。这不是把彩色图去色的转换。仍须人工检查笔触、纸底与文字。图内不得添加重复的界面版本注释。审校记录新增 monochrome: pass，不能只凭旧的 visual: pass 采用。
+
+## 在整个项目中使用
+
+总控 `.venv/bin/python tools/studio.py illustrations status` 会核对全部登记作品和两种模板，包括尚未生成图片的书。总控 assets/illustrations/ 是系列母版；new-book 自动把策略与完整风格包复制到新书。每本书独立运行时仍使用自己的 assets/illustrations/policy.json 和风格快照。
+
+纸底、参考样张和生成前缀的哈希必须符合采用策略；未登记的正文图片、原生 Mermaid 和活动旧图会阻断检查。采用前仍要逐张查看方格纸、黑色中性笔画法、黑白、不透明及无重复界面版本声明。现有工具不会替你生成图片、对彩色图去色或补写未执行的视觉检查。
+
+## 正文后配图与多语言
+
+使用 [插图与多语言工作流](ILLUSTRATIONS.md)。新增 illustrations plan/plan-check/register/migrate/reference-add/preview/reuse；pack/import/select 增加 --language，导入 v2 候选须有真实 --receipt。概念图与界面图共用链路，思维导图是 concept 的 form: mindmap。
+
+translations pack/import/status/build 接入已启用的英文等语言；正文、图中文字和成图共同核对。build --language en 使用已审读英文正文与已采用英文图，不自动翻译、不回退到中文图。传统 --zh-tw 路径保留。所有生成工具和真实视觉研究由执行者在明确生产阶段使用，普通检查与构建保持离线。

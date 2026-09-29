@@ -32,7 +32,7 @@ def read_json(path, default):
 
 
 def relative_url(target, parent):
-    return quote(os.path.relpath(target, parent).replace(os.sep, "/"), safe="/#")
+    return quote(os.path.relpath(Path(target).resolve(), Path(parent).resolve()).replace(os.sep, "/"), safe="/#")
 
 
 def region(text, name, value, previous, key, check_only=False):
@@ -105,13 +105,43 @@ def headings(text):
     return result
 
 
-def rewritten_body(root, unit, text, out_parent, units, pdf_mode=False):
+def pdf_reference_links(text):
+    """Expand ordinary reference links outside code and escaped bracket text."""
+    definitions = {}
+    pattern = r'^ {0,3}\[([^\]^\n]+)\]:\s*(<[^>\n]+>|\S+)(\s+(?:"[^"\n]*"|\x27[^\x27\n]*\x27|\([^\n]*\)))?\s*$'
+    def key(value): return " ".join(value.split()).casefold()
+    def remember(line):
+        match = re.match(pattern, line.rstrip("\n"))
+        if match: definitions.setdefault(key(match[1]), match[2] + (match[3] or ""))
+        return line
+    map_markdown(text, remember)
+    def expand(line):
+        if line.startswith(("    ", "\t")): return line
+        if re.match(pattern, line.rstrip("\n")): return "\n"
+        def inline(value):
+            def reference(match):
+                prefix = value[:match.start()]
+                if (len(prefix) - len(prefix.rstrip("\\"))) % 2: return match[0]
+                label = match[2] if match[2] is not None else match[1].lstrip("!")[1:-1]
+                label = label or match[1].lstrip("!")[1:-1]
+                target = definitions.get(key(label))
+                return match[1] + "(" + target + ")" if target else match[0]
+            return re.sub(r'(?<!!)(!?\[[^\]^\n]+\])(?:\[([^\]\n]*)\])?(?![\[(])', reference, value)
+        return map_inline(line, inline)
+    return map_markdown(text, expand)
+
+
+def rewritten_body(root, unit, text, out_parent, units, pdf_mode=False, source_commit=None):
+    if pdf_mode: text = pdf_reference_links(text)
     path_to_unit = {safe_path(root, u["path"]).resolve(): u for u in units}
     heading_ids = {u["id"]: headings(safe_path(root, u["path"]).read_text(encoding="utf-8")) for u in units}
     counters = {}
     def links(s):
         def link(m):
-            dest = m.group(2)
+            if pdf_mode:
+                prefix = s[:m.start()]
+                if (len(prefix) - len(prefix.rstrip("\\"))) % 2: return m[0]
+            dest = m.group(2).strip("<>")
             if urlsplit(dest).scheme or dest.startswith("//"): return m.group(0)
             path, mark, fragment = dest.partition("#")
             source = safe_path(root, unit["path"])
@@ -124,9 +154,17 @@ def rewritten_body(root, unit, text, out_parent, units, pdf_mode=False):
                 try: target.relative_to(root.resolve())
                 except ValueError: raise StudioError("{}: 链接越界 {}".format(unit["path"], dest))
                 new = relative_url(target, out_parent) + (mark + fragment if mark else "")
-            return m.group(1) + "(" + new + ")"
-        return re.sub(r"(!?\[[^\]\n]*\])\(([^)\s]+)\)", link, s)
+                if pdf_mode and source_commit and not m.group(1).startswith("!"):
+                    repo = (load_yaml(root / "book.yaml").get("repository") or {}).get("name")
+                    if not repo:
+                        raise StudioError("PDF 附件链接需要 repository.name：" + dest)
+                    new = "https://github.com/" + repo + "/blob/" + source_commit + "/" + quote(target.relative_to(root.resolve()).as_posix(), safe="/") + (mark + fragment if mark else "")
+            title = (m.group(3) or "") if m.lastindex >= 3 else ""
+            return m.group(1) + "(" + new + title + ")"
+        pattern = r'(!?\[[^\]\n]*\])\(\s*(<[^>\n]+>|[^)\s]+)(\s+(?:"[^"\n]*"|\x27[^\x27\n]*\x27|\([^\n]*\)))?\s*\)' if pdf_mode else r"(!?\[[^\]\n]*\])\(([^)\s]+)\)"
+        return re.sub(pattern, link, s)
     def line(s):
+        if pdf_mode and s.startswith(("    ", "\t")): return s
         m = re.match(r"^(#{1,6})\s+(.+?)(\n?)$", s)
         body = map_inline(s, links)
         if not m: return body
@@ -137,7 +175,8 @@ def rewritten_body(root, unit, text, out_parent, units, pdf_mode=False):
         else:
             body = '<a id="{}"></a>\n{}'.format(anchor, body)
         return body
-    result = map_markdown(stripped_generated(text), line)
+    manuscript = re.sub(r"<!-- studio:nav -->.*?<!-- /studio:nav -->", "", text, flags=re.S).strip("\r\n") if pdf_mode else stripped_generated(text)
+    result = map_markdown(manuscript, line)
     if pdf_mode:
         # A unit-level target is stable even after its visible heading changes.
         result = "[]{#" + unit["id"] + "}\n\n" + result
@@ -313,11 +352,17 @@ def translation_status(root, book, scope=None):
     return statuses
 
 
-def build_book(book_dir, check_only=False, translate=False, pdf=False, source_ref=None, version=None, export_id=None):
+def build_book(book_dir, check_only=False, translate=False, pdf=False, source_ref=None, version=None, export_id=None, language=None, pdf_profile=None, export_date=None):
     root = Path(book_dir).resolve()
     if pdf:
-        if check_only: raise StudioError("--check 不能与 --pdf 同用；PDF 单独按固定提交导出")
-        return export_pdf(root, source_ref, version, export_id)
+        if check_only or translate:
+            raise StudioError("PDF 不与 --check／自动繁简转换合用；单独按固定提交导出")
+        return export_pdf(root, source_ref, version, export_id, pdf_profile, export_date, language)
+    if pdf_profile or export_date:
+        raise StudioError("--pdf-profile 与 --export-date 只能用于 --pdf")
+    if language and language != load_yaml(root / 'book.yaml').get('language', 'zh-CN'):
+        from .localization import build
+        return build(root, language, check_only)
     from .checker import check_book
     validation = check_book(root, freshness=False, source_only=True)
     errors = [i for i in validation["issues"] if i["level"] == "error"]
@@ -353,6 +398,10 @@ def build_book(book_dir, check_only=False, translate=False, pdf=False, source_re
         combined = safe_path(root, combined_rel)
         chunks = ["<!-- Generated by studio; edit the units in book.yaml. -->", "# " + book["title"], "## 目录",
                   "\n".join("- [{}](#{})".format(u["title"], u["id"]) for u in units)]
+        from .branding import author_html
+        signature = author_html(root, book, combined.parent)
+        if signature:
+            chunks.insert(2, signature)
         for u in units:
             chunks += ['<a id="{}"></a>'.format(u["id"]), rewritten_body(root, u, bodies[u["id"]], combined.parent, units)]
         outputs[combined_rel] = "\n\n".join(chunks) + "\n"
@@ -391,92 +440,6 @@ def tool_run(args, cwd=None):
     return result.stdout.strip()
 
 
-def export_pdf(root, source_ref, version, export_id):
-    if not source_ref or not version or not export_id:
-        raise StudioError("PDF 需要 --source、--version 和 --export-id；不得隐式使用工作区")
-    if not re.fullmatch(r"v\d{4}\.\d{2}\.\d+(?:-rc\.\d+)?", version) or not re.fullmatch(r"\d{2,}", export_id):
-        raise StudioError("无效正文版本或导出编号")
-    commit = git_commit(root, source_ref)
-    known_tag = subprocess.run(["git","-C",str(root),"rev-parse","--verify","refs/tags/"+version+"^{commit}"],
-                               capture_output=True,text=True)
-    if known_tag.returncode == 0 and known_tag.stdout.strip() != commit:
-        raise StudioError("正文版本标签与 PDF 来源提交不一致：" + version)
-    archive = subprocess.run(["git", "-C", str(root), "archive", commit], capture_output=True)
-    if archive.returncode: raise StudioError("Git snapshot 获取失败")
-    for tool in ("pandoc", "typst"):
-        if not shutil.which(tool): raise StudioError("PDF 依赖缺失：" + tool)
-    with tempfile.TemporaryDirectory(prefix="studio-pdf-") as tmp:
-        stage = Path(tmp); source = stage / "source"; source.mkdir()
-        with tarfile.open(fileobj=io.BytesIO(archive.stdout)) as tar:
-            for member in tar.getmembers():
-                safe_path(source, member.name)
-                if member.issym() or member.islnk(): raise StudioError("PDF snapshot 不接受符号链接：" + member.name)
-            tar.extractall(source)
-        book, bodies = book_inputs(source)
-        from .checker import check_book
-        structure = check_book(source, freshness=False)
-        problems = [i for i in structure["issues"] if i["level"] == "error"]
-        if problems:
-            raise StudioError("PDF 来源结构检查失败：" + json.dumps(problems, ensure_ascii=False))
-        pdf_config = (book.get("outputs") or {}).get("pdf") or {}
-        if not pdf_config.get("enabled"): raise StudioError("该来源版本未启用 PDF")
-        font = pdf_config.get("font", "PingFang SC")
-        fonts = tool_run(["typst", "fonts"])
-        if font.lower() not in fonts.lower(): raise StudioError("缺少声明的中文字体：" + font)
-        parts = ["来源提交：" + TICK + commit + TICK]
-        diagram_count = 0
-        for unit in book["units"]:
-            body = rewritten_body(source, unit, bodies[unit["id"]], source, book["units"], pdf_mode=True)
-            pattern = r"<!--\s*diagram:\s*([A-Za-z0-9_-]+)\s*-->\s*" + TICK + r"{3}mermaid\s*\n([\s\S]*?)" + TICK + r"{3}"
-            def diagram(match):
-                nonlocal diagram_count
-                did, code = match.group(1), match.group(2)
-                if not any(d.get("id") == did and d.get("unit") == unit["id"] for d in book.get("diagrams", [])):
-                    raise StudioError("{}: 未登记的图 {}".format(unit["path"], did))
-                mmdc = os.environ.get("STUDIO_MMDC") or shutil.which("mmdc")
-                if not mmdc:
-                    local = root / "tools" / "node_modules" / ".bin" / "mmdc"
-                    mmdc = str(local) if local.exists() else None
-                if not mmdc: raise StudioError("图渲染依赖缺失：按 tools/README.md 的 PDF 说明安装 mmdc")
-                diagram_count += 1
-                inp = source / ("diagram-" + did + ".mmd")
-                out = source / ("diagram-" + did + ".png")
-                if not code.lstrip().startswith("---"):
-                    code = "---\nconfig:\n  theme: forest\n  themeVariables:\n    fontFamily: PingFang SC\n    fontSize: 17px\n    lineColor: '#D9D9D9'\n---\n" + code
-                inp.write_text(code, encoding="utf-8")
-                args = [mmdc, "-i", str(inp), "-o", str(out), "-b", "white", "-s", "2"]
-                chrome = os.environ.get("STUDIO_CHROME")
-                if chrome:
-                    p = source / "puppeteer.json"
-                    p.write_text(json.dumps({"executablePath": chrome}), encoding="utf-8")
-                    args += ["-p", str(p)]
-                tool_run(args, source)
-                if not out.is_file() or out.stat().st_size < 20: raise StudioError("图渲染未产生有效文件：" + did)
-                return "![{}]({}){{width=75%}}".format(did, out.name)
-            body = re.sub(pattern, diagram, body)
-            if re.search(TICK+r"{3}mermaid", body): raise StudioError(unit["path"] + ": 存在无登记标记的 Mermaid 图")
-            if re.search(r"!\[[^\]]*\]\(https?://", body): raise StudioError("PDF 必须使用已保存的本地图片，不能构建时下载")
-            if book.get("type") == "book":
-                parts.append(TICK*3 + "{=typst}\n#pagebreak(weak: true)\n" + TICK*3)
-            parts.append(body)
-        markdown = source / "export.md"; markdown.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
-        result_pdf = source / (book["id"] + "-" + version + "-" + export_id + ".pdf")
-        tool_run(["pandoc", str(markdown), "--from=markdown+raw_html+raw_attribute", "--pdf-engine=typst", "--toc",
-                  "-V", "mainfont="+font, "-V", "papersize="+pdf_config.get("paper", "a5"),
-                  "-V", "fontsize=10pt", "--variable-json=margin:"+json.dumps({"top":"18mm","right":"18mm","bottom":"18mm","left":"18mm"}),
-                  "--metadata=title:"+book["title"], "--metadata=subtitle:正文 "+version+" · 导出 "+export_id,
-                  "--metadata=date:"+str(datetime.date.today()), "--metadata=lang:zh", "--metadata=region:CN",
-                  "-o", str(result_pdf)], source)
-        if not result_pdf.is_file() or result_pdf.read_bytes()[:5] != b"%PDF-": raise StudioError("未产生有效 PDF")
-        output_dir = safe_path(root, "build/pdf/{}/{}".format(version, export_id))
-        receipt = {"source_commit": commit, "version": version, "export_id": export_id, "sha256": sha(result_pdf.read_bytes()),
-                   "file": result_pdf.name, "font": font, "diagrams": diagram_count,
-                   "toolkit_version": book.get("toolkit"), "builder_sha256": sha(Path(__file__).read_bytes()),
-                   "tools": {t: tool_run([t, "--version"]).splitlines()[0] for t in ("pandoc", "typst")}, "visual_review": "pending"}
-        if output_dir.exists():
-            raise StudioError("{}: 导出编号已存在，保留已审阅文件；使用新编号".format(output_dir))
-        output_dir.mkdir(parents=True)
-        shutil.copy2(result_pdf, output_dir / result_pdf.name)
-        atomic_write(output_dir / "export.json", json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
-        return {"ok": True, "target": book["id"], "mode": "pdf", "source_commit": commit,
-                "outputs": [str(output_dir / result_pdf.name), str(output_dir / "export.json")], "pending": ["PDF 视觉审阅"]}
+def export_pdf(root, source_ref, version, export_id, profile=None, export_date=None, language=None):
+    from .pdf_export import export_pdf as export
+    return export(root, source_ref, version, export_id, profile, export_date, language)

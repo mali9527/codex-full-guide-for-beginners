@@ -91,7 +91,9 @@ def status(root, workspace, target):
                     reviews[key] = reviews.get(key, 0) + 1
         try: head = git_commit(path)
         except StudioError: head = None
-        items.append({"id": w["id"], "state": w.get("state"), "path": str(path), "source_commit": head,
+        from studio_lib.illustrations import audit
+        illustration_state = audit(path)
+        items.append({"illustrations": illustration_state, "id": w["id"], "state": w.get("state"), "path": str(path), "source_commit": head,
                       "units": len(book.get("units", [])), "tasks": tasks, "fact_expired": expired,
                       "fact_unknown": sorted(set(uncertain)), "recorded_checks": reviews,
                       "quality": "未重新核对；运行 check 获取当前基线结果",
@@ -123,27 +125,25 @@ def update_roadmap(root, workspace):
 
 def check(path, publication=False, scope=None, languages=None, freshness=True, source_only=False):
     from studio_lib.checker import check_book
-    report = check_book(path, publication=publication, scope=scope, freshness=freshness, source_only=source_only)
-    if languages and "zh-TW" in languages:
-        from studio_lib.builder import translation_status
-        book = load_yaml(path / "book.yaml")
-        statuses = translation_status(path, book, scope)
-        report["translations"] = statuses
-        for item in statuses:
-            if item["status"] != "current":
-                report["issues"].append({"level": "error" if publication else "warning", "code": "translation_"+item["status"],
-                                         "path": "translations.yaml", "message": "{}: {}".format(item["unit"], item["status"])})
-        report["ok"] = not any(i["level"] == "error" for i in report["issues"])
-        report["summary"]["errors"] = sum(i["level"]=="error" for i in report["issues"])
-        report["summary"]["warnings"] = sum(i["level"]=="warning" for i in report["issues"])
+    report = check_book(path, publication=publication, scope=scope, freshness=freshness, source_only=source_only, languages=languages)
+    if languages:
+        from studio_lib.localization import status as language_status
+        reports = [language_status(path, language, scope, publication=publication) for language in languages]
+        report['translations'] = [x for r in reports for x in r['translations']]
+        report['issues'].extend(i for r in reports for i in r['issues'] if i not in report['issues'])
+        report['ok'] = not any(i['level'] == 'error' for i in report['issues'])
+        report['summary']['errors'] = sum(i['level']=='error' for i in report['issues'])
+        report['summary']['warnings'] = sum(i['level']=='warning' for i in report['issues'])
     return report
 
 
 def install_toolkit(destination, source_tools):
     target = destination / "tools"
     target.mkdir(parents=True, exist_ok=True)
-    for name in ("studio.py", "requirements.txt", "package.json", "package-lock.json", "FORMAT.md", "README.md"):
+    for name in ("studio.py", "requirements.txt", "requirements-pdf.txt", "package.json", "package-lock.json", "FORMAT.md", "README.md", "ILLUSTRATIONS.md", "PDF.md"):
         if (source_tools / name).is_file(): shutil.copy2(source_tools / name, target / name)
+    if (source_tools / "pdf").is_dir():
+        shutil.copytree(source_tools / "pdf", target / "pdf", dirs_exist_ok=True)
     shutil.copytree(source_tools / "studio_lib", target / "studio_lib", dirs_exist_ok=True,
                     ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
     if (source_tools.parent / "standards").is_dir():
@@ -154,6 +154,42 @@ def install_toolkit(destination, source_tools):
                 for p in target.rglob("*") if p.is_file() and p.name != "toolkit-manifest.json"
                 and not {"node_modules", "__pycache__"}.intersection(p.relative_to(target).parts)}
     atomic_write(target / "toolkit-manifest.json", json.dumps({"version": VERSION, "files": manifest}, indent=2)+"\n")
+
+
+def install_illustration_style(destination, root):
+    from studio_lib.illustrations import style_policy, POLICY_PATH, STYLE_ID
+    style_policy(root, {})
+    relative = Path('assets/illustrations/styles') / STYLE_ID
+    shutil.copytree(root / relative, destination / relative, dirs_exist_ok=True)
+    shutil.copy2(root / POLICY_PATH, destination / POLICY_PATH)
+    rules = root / "assets/illustrations/workflow-v2.json"
+    if rules.exists(): shutil.copy2(rules, destination / "assets/illustrations/workflow-v2.json")
+    style_policy(destination, {})
+
+
+def illustration_status(root, workspace, target=None):
+    from studio_lib.illustrations import audit, style_policy
+    if workspace is None or target:
+        return audit(work_path(root, works(root, workspace, target)[0]))
+    canonical = style_policy(root, {})
+    reports = []
+    for work in works(root, workspace):
+        report = audit(work_path(root, work))
+        if not work.get('is_test') and report.get('policy') != canonical:
+            report['ok'] = False
+            report['issues'].append({'level': 'error', 'code': 'illustration_series_drift',
+                                    'path': work['path'], 'message': '本书插图策略与项目统一基准不一致'})
+        reports.append({'target': work['id'], 'is_test': work.get('is_test', False), **report})
+    templates = []
+    for kind in ('book', 'tutorial'):
+        try:
+            adopted = style_policy(root / 'templates' / kind, {})
+            if adopted != canonical: raise StudioError('模板插图策略与项目统一基准不一致')
+            templates.append({'template': kind, 'ok': True})
+        except (StudioError, OSError, ValueError, KeyError, TypeError) as exc:
+            templates.append({'template': kind, 'ok': False, 'error': str(exc)})
+    return {'ok': all(r['ok'] for r in reports + templates), 'policy': canonical,
+            'results': reports, 'templates': templates, 'network': '未访问', 'generation': '未执行'}
 
 
 def new_book(root, workspace, args):
@@ -187,6 +223,7 @@ def new_book(root, workspace, args):
         if book.get("product") == "__WORK_ID__": book["product"] = args.id
         book.setdefault("repository", {})["name"] = args.repo
         dump_yaml(stage / "book.yaml", book)
+        install_illustration_style(stage, root)
         install_toolkit(stage, root / "tools")
         if (root / "standards").is_dir():
             shutil.copytree(root / "standards", stage / "tools" / "standards", dirs_exist_ok=True)
@@ -443,11 +480,25 @@ def parser():
         if name == "status": q.add_argument("--write-roadmap", action="store_true")
         if name == "check":
             q.add_argument("--publication", action="store_true"); q.add_argument("--units", nargs="+")
-            q.add_argument("--language", action="append", choices=["zh-CN", "zh-TW"])
+            q.add_argument("--language", action="append", help="已启用的语言，如 zh-CN、en、zh-TW")
         if name == "build":
             q.add_argument("--check", action="store_true"); q.add_argument("--zh-tw", action="store_true")
             q.add_argument("--pdf", action="store_true"); q.add_argument("--source")
-            q.add_argument("--version", dest="content_version"); q.add_argument("--export-id")
+            q.add_argument("--version", dest="content_version"); q.add_argument("--export-id"); q.add_argument("--language")
+            q.add_argument("--pdf-profile", choices=["standard", "mobile"])
+            q.add_argument("--export-date", help="PDF 导出日期 YYYY-MM-DD")
+    qa = subs.add_parser("pdf-check", help="检查已有 PDF；机器通过不等于视觉通过")
+    qa.add_argument("path"); qa.add_argument("--render", action="store_true"); qa.add_argument("--output")
+    i = subs.add_parser("illustrations")
+    i.add_argument("action", choices=["status", "plan", "plan-check", "register", "migrate", "reference-add", "pack", "import", "select", "preview", "reuse", "gallery"])
+    i.add_argument("work", nargs="?")
+    for option in ("figure", "output", "image", "pack", "revision", "tool", "review", "language", "receipt", "metadata", "plan", "source-language"):
+        i.add_argument("--" + option)
+    i.add_argument("--reference-used", action="store_true")
+    t = subs.add_parser("translations")
+    t.add_argument("action", choices=["status", "pack", "import", "build"]); t.add_argument("work", nargs="?")
+    for option in ("unit", "language", "output", "pack", "text", "review"): t.add_argument("--" + option)
+    t.add_argument("--check", action="store_true")
     n = subs.add_parser("new-book"); n.add_argument("id"); n.add_argument("--title"); n.add_argument("--path")
     n.add_argument("--type", choices=["book", "tutorial"], default="book"); n.add_argument("--repo")
     n.add_argument("--test", action="store_true"); n.add_argument("--priority", type=int, default=3)
@@ -459,12 +510,21 @@ def parser():
     r.add_argument("--source", default="HEAD"); r.add_argument("--asset", action="append", default=[])
     r.add_argument("--title"); r.add_argument("--notes-file"); r.add_argument("--kind", choices=["milestone","pdf"], default="milestone")
     r.add_argument("--source-version"); r.add_argument("--promote", action="store_true"); r.add_argument("--expected-latest")
-    r.add_argument("--units", nargs="+"); r.add_argument("--language", action="append", choices=["zh-CN","zh-TW"])
+    r.add_argument("--units", nargs="+"); r.add_argument("--language", action="append", help="本次发行语言")
     return p
 
 
 
 def human_result(command, result):
+    if command == "pdf-check":
+        lines = ["PDF 机械检查：" + ("通过" if result["ok"] else "需处理"),
+                 "页数：{}；视觉审阅：pending".format(result.get("pages", 0))]
+        for issue in result.get("errors", []) + result.get("warnings", []):
+            lines.append("{}{}：{}".format(issue.get("code", "检查"),
+                         " / 第{}页".format(issue["page"]) if issue.get("page") else "", issue["message"]))
+        for rendered in result.get("rendered_files", []):
+            lines.append("第{}页校样：{}".format(rendered["page"], rendered["path"]))
+        return "\n".join(lines)
     lines = [("完成" if result.get("ok") else "需要处理") + " · " + command]
     if result.get("published"):
         lines.append("远端已公开；入口等后续步骤以以下结果为准。")
@@ -479,6 +539,11 @@ def human_result(command, result):
             for task in work["tasks"]: lines.append("  - {}：{}".format(task["id"], task["state"]))
             lines.append("  质量：登记概览，请运行 check 核对当前基线。")
         lines.append("耗时：{} 秒。".format(result.get("elapsed_seconds")))
+    if "figures" in result:
+        lines.append("手绘 {} 张；旧图剩余 {} 张。".format(len(result["figures"]), result["legacy_remaining"]))
+        for row in result["figures"]:
+            lines.append("{} · {} · {}".format(row["id"] + (" [" + row["language"] + "]" if row.get("language") else ""), row["stage"], row.get("source", row.get("reason", ""))))
+        for issue in result["issues"]: lines.append(issue["message"])
     reports = result.get("results") or [result]
     for report in reports:
         if "check" in report:
@@ -497,6 +562,11 @@ def human_result(command, result):
             lines.append("{} · {} · 来源 {}".format(report.get("target"),report["mode"],report.get("source_commit","当前源稿")))
             for path in report.get("changed",report.get("outputs",[])): lines.append("  " + str(path))
             if report.get("mode")=="check" and report.get("ok"): lines.append("  生成物一致，源仓未写入。")
+        elif "figures" in report:
+            lines.append('{}：手绘 {} 张；旧图 {} 张；{}。'.format(
+                report.get('target', '当前作品'), len(report['figures']), report.get('legacy_remaining', 0),
+                '无待办' if report.get('ready', report['ok'] and not report.get('issues')) else '有待办／需处理'))
+            for issue in report['issues']: lines.append('  ' + issue['message'])
         else:
             for key,label in (("target","作品"),("repository","仓库"),("tag","标签"),("commit","来源提交"),
                               ("status","状态"),("promotion","推荐入口"),("plan_path","清单"),("receipt_path","回执"),
@@ -506,8 +576,17 @@ def human_result(command, result):
                 lines.append("{} / {}：底稿 {}，{} → {}；{}".format(item["work"],item["unit"],item["source"],
                              item["adopted"],item["available"],item["action"]))
             for path in report.get("outputs",[]): lines.append("产物："+str(path))
+        planning = report.get('planning') or (report if 'unregistered_candidates' in report else None)
+        if planning:
+            lines.append('配图研究：{} / {} 个单元已研究。'.format(planning['ready'],planning['total']))
+            for candidate in planning.get('unregistered_candidates',[]):
+                lines.append('  {} · {} · {}'.format(candidate['id'],candidate['stage'],candidate['reason']))
+        for row in report.get("translations",[]): lines.append("译文 {} / {}：{}".format(row.get("unit"), row.get("language"), row.get("status")))
+        if "stage" in report: lines.append("阶段：" + str(report["stage"]))
         for item in report.get("pending",[]): lines.append("下一步："+str(item))
     if result.get("roadmap"): lines.append("已更新登记概览："+result["roadmap"])
+    for template in result.get('templates', []):
+        lines.append('模板 {}：{}'.format(template['template'], '通过' if template['ok'] else template['error']))
     return "\n".join(lines)
 
 
@@ -515,10 +594,26 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         root, workspace = locate(args.root)
-        if args.command == "status":
+        if args.command == "pdf-check":
+            from studio_lib.pdf_qa import inspect_pdf
+            result = inspect_pdf(Path(args.path).resolve(), Path(args.output).resolve() if args.output else None, args.render)
+        elif args.command == "status":
             result = status(root, workspace, args.work)
             if args.write_roadmap:
                 result["roadmap"] = update_roadmap(root, workspace)
+        elif args.command == "illustrations":
+            if args.action == 'status' and not args.work and workspace is not None and not args.language:
+                result = illustration_status(root, workspace, args.work)
+            else:
+                selected = works(root, workspace, args.work)
+                if len(selected) != 1: raise StudioError("插图操作必须指定一本书")
+                from studio_lib.illustrations import command
+                result = command(work_path(root, selected[0]), args)
+        elif args.command == "translations":
+            selected = works(root, workspace, args.work)
+            if len(selected) != 1: raise StudioError("语言操作必须指定一本书")
+            from studio_lib.localization import command
+            result = command(work_path(root, selected[0]), args)
         elif args.command == "new-book": result = new_book(root, workspace, args)
         elif args.command == "commons": result = commons_diff(root, workspace)
         elif args.command == "release": result = release_command(root, workspace, args)
@@ -535,7 +630,8 @@ def main(argv=None):
                         report = {"ok": False, "stage": "structure", "check": structure}
                     else:
                         report = build_book(path, check_only=args.check, translate=args.zh_tw, pdf=args.pdf,
-                                            source_ref=args.source, version=args.content_version, export_id=args.export_id)
+                                            source_ref=args.source, version=args.content_version, export_id=args.export_id, language=args.language,
+                                            pdf_profile=args.pdf_profile, export_date=args.export_date)
                 reports.append(report)
             result = {"ok": all(r["ok"] for r in reports), "results": reports}
         if args.json:
