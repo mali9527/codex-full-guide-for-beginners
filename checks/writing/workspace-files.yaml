@@ -1,10 +1,10 @@
 schema: 2
 unit: workspace-files
-input_sha256: d29f345aa8dc535328ee2061f4a07f8bdd1a196b33bb1d4bd0f1b20aa33ab307
+input_sha256: a43921be51081201cd32944f6e8055b6f219491290acb796b7857252d62d276a
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -52,40 +52,41 @@ study_brief:
   - 附件与文件引用的选择留第9章，预览与批注留第10章
   - Steer、Queue和停止留第8章
   case_plan: 三条自设提醒（水杯两次、还书一次），只回复文字；「我的待办」已连接但本章不读写其中文件。修订把重复于后章的设置讲解压成指路，让第一条消息更早出现在读者眼前。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：成稿次序为认三个区域→取得材料并选外层文件夹→Open folder→Edit project核对路径→在项目内New chat、Local、Ask
+    for approval→三条提醒的短消息→状态表→同任务追加；输入框周围的设置、其他入口与成果面板移到小任务之后，各用两三句并指向主讲章。Add folder与Make
+    primary按提要压成备选入口一节。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 第2章仅进入Codex。此处取得原创材料，选外层文件夹、核对路径，再建任务；发送前实际选Local与Ask for approval，不把术语出现当成设置完成。
+    reason: 承接第2章已进入Codex；路径在核对位置时解释；提示词、项目与任务在用到处说明。
   concept_timing:
     result: pending
-    reason: 已修复两种目录入口被误读为连续步骤、先发消息后讲状态的问题；仍缺普通运行的停止入口依据，不能将第8章占位当作首次运行退出方法已教。 全书衔接复核：全文回读顺序：选外层目录→核对路径→新任务/Local/权限→短消息→结果后反馈。第9、12章详细材料和项目操作现有正文可接，但不代替本章必要操作。普通运行直接停止仍未取得真实入口，原concept_timing
-      pending保留。
+    reason: 首次运行前仍未教读者怎样停下一次普通运行。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。需在Windows与Mac实机确认后补入，本项保持待定。
   information_value:
     result: pass
-    reason: 必要设置移到首次发送之前；其他控件在短消息之后按用途介绍，附件/听写/插件等明确可选，没有要求全部操作。
+    reason: 全章由约7150字减到约6400字：把与第6、7、9、10章重复的讲解压成指路，合并「批准／批注」一节；框架要求本章承担的入口一项未删。
   natural_style:
     result: pass
-    reason: 完整连读：文件夹→确认路径→可选已有项目分支→新任务/权限→发送→观察状态→结束后核对→同任务追问；跨章节与分支返回明确。
+    reason: 三条提醒的例子贯穿发送、读状态和追加；设置表缩成四行。真人试读未做。
   localization:
     result: pass
-    reason: 路径为双平台示例；命令菜单与聊天斜杠菜单分开，GUI名称与平台默认键未凭猜测增补；停止键仍未知。
+    reason: 路径给Windows与Mac两种写法；听写键位写明Mac上也是Control；命令菜单与斜杠菜单分开。
   independent_creation:
     result: pass
-    reason: 水杯/还书消息、我的待办材料与说明独立编写；按读者所处状态重组官方知识，没有搬用官方网页、CLI或外部工作案例。
+    reason: 水杯、还书三条提醒与「我的待办」材料为本书自编。
 fact_review:
   coverage: reviewed
-  reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
-    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并核对42个锚点。本轮实际读取projects、reference/commands、permission-modes、prompting、environments/modes、models、agent-configuration/speed、artifacts-viewer、reference/settings（2026-09-29），features/voice、reference/slash-commands、plugins（2026-09-28），automations（2026-09-27）。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。正文未写任何停止按钮或按键。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0开篇功能与修复
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 实际重读指定范围，未把CLI版本当成桌面版本；没有据此推出停止快捷键或统一沙箱出现时机。桌面步骤依据各专页。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: 侧栏用来找到工作，输入框用来提出要求，消息区域用来看处理过程和回复
     fact_id: desktop-basic-navigation

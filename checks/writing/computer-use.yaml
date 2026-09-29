@@ -1,10 +1,10 @@
 schema: 2
 unit: computer-use
-input_sha256: 9f23b49e05456f4100c1da8152986a84c97d243dd388d49a14e821d6fd906812
+input_sha256: 68944e817491597a652e223707b1748ea731fc9adc259b241e0e570944108d73
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -30,40 +30,39 @@ study_brief:
   defer:
   - 普通任务的直接停止控件缺依据，仍按Steer停止要求并提示先退回文件或快照路线
   case_plan: 查看已打开的自编清单窗口中一项是否完整显示；只读。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：判断是否需要→安装启用→系统授权分平台→应用批准→准备窗口并确认停止方式→小范围只读请求→核对真实结果→结束与撤回。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 文件与快照已会，插件安装和系统授权均在接管前，目标文本窗口先打开。
+    reason: 已会文件、截图、快照和浏览器，懂权限三层。
   concept_timing:
     result: pending
-    reason: 普通运行直接停止控件尚无实际路径依据，正文已限未确认控制时先用材料路线；仍需按RESULT-01补真实界面与停止/接手状态，不能把Steer消息当即时停止。
-      全书衔接复核：与第7/8/9/21章连读：安装启用、系统权限、应用批准、准备目标窗口与停止条件后才只读要求；前台Windows与Mac适用后台条件分开。停止控件未确认时明确退回文件/Appshot路线，pending不升级。
+    reason: 交出应用控制之前需要知道怎样收回，而直接停止控件的位置仍无依据。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。保持待定。
   information_value:
     result: pass
-    reason: 不教虚拟机/locked use；只读核对足够说明新增能力。
+    reason: 只读核对一个窗口足以说明新增能力；限制与撤回分开讲。
   natural_style:
     result: pass
-    reason: 目标文件和结果对应，未使用付款/消息发送等无关首次案例。
+    reason: 否定式表述由18处降到9处，余下的是平台限制与官方明确的不能项。真人试读未做。
   localization:
     result: pass
-    reason: Mac两项系统权限、Windows前台/解锁条件分别，不把本机条件推广。
+    reason: Mac的两项系统权限与Windows前台条件分开。
   independent_creation:
     result: pass
-    reason: 提示词和目标文件自编；未实际控制应用，正文不展示假截图/回执。
+    reason: 查看清单窗口的请求为自设；正文没有虚构截图或回执。
 fact_review:
   coverage: reviewed
-  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
-    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并核对9个锚点。本轮实际读取computer-use（2026-09-28）、appshots、prompting（2026-09-29）。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: Appshot或截图也可能够用
     fact_id: appshot-input-scope

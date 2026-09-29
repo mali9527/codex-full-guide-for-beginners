@@ -1,10 +1,10 @@
 schema: 2
 unit: scheduled-work
-input_sha256: fabb5fb82905c64dfee863d335bc9cf5ab8fcd3170c5b0d2b9de8d0728ecc5e1
+input_sha256: 8f8c415c254bad590e8ca8dbcd6d364b24ca515da95ecf9cf12f37cbb75e91d7
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -36,39 +36,40 @@ study_brief:
   defer:
   - 技能调用为可选，不作前置
   case_plan: 每周一次只读核对待办清单与两份备忘；时区示例为自设。全书在此收束。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：先手动完成同样一次→写清每次做什么→选目的地→用对话建立→到Scheduled核对→本地条件→首轮检查→更新、暂停、恢复、删除。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 同样提示词先手动跑通，当前版本说明清楚后才计划；Skill可选。
+    reason: 已会Goal与反馈，有可检查的当前清单。
   concept_timing:
     result: pass
-    reason: 输入/输出/时间/时区/目的地→创建实际保存→Scheduled→首轮检查→修改暂停删除，范围明确。 全书衔接复核：与Goal/Skill章连读：先手动同任务通过，确定当前版本与只读边界，写时区和目的地后保存，查Scheduled再核首轮。更新已有安排不重复创建，暂停未来安排不当停止当前执行。
+    reason: 先手动跑通，再定时；技能调用为可选。
   information_value:
     result: pass
-    reason: 不教RRULE或Git，后台权限保留限制，不承诺离线补跑。
+    reason: 当前版本怎样指定、无变化时是否报告、后台无人批准三处判断保留。
   natural_style:
     result: pass
-    reason: 沿清单只读检查，不扩自动办公；新状态与原备忘不能混判错误。
+    reason: 否定式表述由16处降到4处；全书收束段缩为三句。真人试读未做。
   localization:
     result: pass
-    reason: Asia/Tokyo是明确可替换示例，非国家限定；桌面与网页事件触发不混用。
+    reason: 时区示例注明替换；不假定读者所在地。
   independent_creation:
     result: pass
-    reason: 安排提示词自编，本轮未建立真实自动运行；首轮检查仍未知。
+    reason: 每周核对清单的安排为自设。
 fact_review:
   coverage: reviewed
-  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
-    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并核对7个锚点。本轮实际读取automations（2026-09-27）。错过的运行是否补跑，官方页Claude未找到说明，正文写「本书不假定会自动补上」。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: 先把单次工作做对
     fact_id: scheduled-chat-destination

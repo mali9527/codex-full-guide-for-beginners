@@ -1,10 +1,10 @@
 schema: 2
 unit: quick-reference
-input_sha256: 5861ac5615a8d84381b65a5ac2156bcc180f1364ca84c1a76d1a7c5cc4fe0917
+input_sha256: aaf3350c943367e49198ebe15e91f9d5b7f851cb05cdaf631e255c4aeca0a841
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -39,39 +39,39 @@ study_brief:
   defer:
   - 不新增教学内容
   case_plan: 无案例；修订只同步正文改动与归档路径写法。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：按问题找章→常用命令→默认键位→设置地图→按需功能→排障→术语；只同步正文改动，未新增教学内容。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 按读者问题引回完整主讲章，附录不暗中承担从未讲过的基础操作。
+    reason: 供已读正文的读者回查。
   concept_timing:
     result: pass
-    reason: 命令、键位和设置均先指明桌面当前可用，普通停止不编键，Goal另用进度行。 全书衔接复核：全章回读并逐项与主讲章对照：19组命令、14项默认键位及设置入口均有主讲或官方依据；新选功能注明预览/公开测试/平台条件。修正一条审阅锚点指向真实表格行而非标题，没有改变产品事实。
+    reason: 各行回指主讲章。
   information_value:
     result: pass
-    reason: 按用途筛而非复制官方全集，少量可选功能只辨认并链接，不恢复网站/CLI课程。
+    reason: 命令表第三列由「不等于、不是」改为各命令实际管什么；第5章一行补入会员档位与达到限额。
   natural_style:
     result: pass
-    reason: 表格是回查需要，非正文全部变成清单；术语回查不重复长定义。
+    reason: 表格为主，叙述句很少。真人试读未做。
   localization:
     result: pass
-    reason: 两平台默认键逐项校验，Visualizations预览与Sites公测明确，Micro为硬件。
+    reason: 键位分Windows与Mac；听写一行Mac写Control。
   independent_creation:
     result: pass
-    reason: 映射按全书读者问题自行组织，未采用官网字母顺序/代码例/截图或图示。
+    reason: 无案例。
 fact_review:
   coverage: reviewed
-  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
-    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并核对27个锚点。本轮实际读取reference/commands、reference/settings、projects、models（2026-09-29）、reference/slash-commands（2026-09-28）。按需功能表所列image-generation、visualizations、sites、pets、codex-micro五页及下载页Claude本轮未重读，对应断言原文未改，沿用原记录的定位与核对日期。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: 先在输入区键入`/`
     fact_id: desktop-slash-entries

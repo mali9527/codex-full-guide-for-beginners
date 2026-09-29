@@ -1,13 +1,13 @@
 schema: 2
 unit: latest-models
-input_sha256: 02b7d1e1a127a734f3216305b7072312ea026bee87d8489e4f63d3f1654c34f7
+input_sha256: 3bef314c28d947e57030a98b960ebcf238d97073197ad39b97eda46300c32e9b
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -46,44 +46,40 @@ study_brief:
   - Power各预设、Max、Ultra、Fast与用量关系留第6章
   - 权限与批准留第7章，运行中补充留第8章
   case_plan: 沿用本书自编备忘中的发照片一例，以及自设的两台设备资料比较情景；示例只说明用法，不写成模型测试结果。本轮修订压缩重复的限制句，把判断放在段首。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：三条教学顺序均落在成稿——从整理资料的麻烦进入、四种用途各配自设小例、再讲模型／Codex／工具分工、提要求、选型与Effort、找到Astra；Power预设清单与Max、Ultra按提要留给第6章。三项官方阅读分别落实为三行起点表、「相同材料比较」和请求示例的四件事。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 从两条提醒解释连续判断，再讲资料比较与成果；推理先通过截止时间和重复事项说明。尚未安装者可理解，未要求先会路径、终端或Git。 本轮衔接检查：正文无变化；核对模型/工具/文件夹访问段与本次项目事实补充不冲突，材料准备前移不改变开篇读者前提。
-      本轮按v2.2检查：全文回读：开篇说明用途，找Astra仅对已安装者可选；未把材料示例或模型选项当作读者已经操作，未安装者明确到第2章继续。
+    reason: 只用日常电脑经验；推理、Effort在第一次出现处结合合并提醒的例子解释，未假定读者已装应用。
   concept_timing:
     result: pass
-    reason: 先价值和情景，再模型/工具分工，最后Effort与最短入口；图片输入的用途先于能力名称。第6章仍承担完整设置，不在开篇展开API或Skill安装。
-      本轮回读未发现把预告当成已执行步骤；型号选择为可选，不成为安装前置。 全书衔接复核：开篇全文回读：资料比较、看图与工具分工仍是用途预告；找Astra仅面向已安装者。第6章现已承担Power/Advanced与Max/Ultra细节，开篇不需要重复。新增资料目录案例不改变此处两份备忘的准备范围。
+    reason: 先讲能帮什么，再讲设置；Effort只讲到Light起步，档位细节回指第6章，权限与运行中补充分别指向第7、8章。
   information_value:
     result: pass
-    reason: 新增多材料判断、看图与修改之别、关键补问、第一版后何时继续、回复文风，均连接用户可作的选择；型号表保持短，不靠跑分和规格扩篇。
+    reason: 删去逐段附带的限制提醒（否定式表述由22处降到7处），保留「换模型不补材料」「工作约定不替代权限」两处确会误解的说明。
   natural_style:
     result: pass
-    reason: 全文通读：设备需求与维护例子说明事实/推测，独立请求说明完成边界；没有翻译式参数堆积、虚构作者经历或常识扩写。限定语只保留影响判断的条件。
+    reason: 判断放在段首，例子沿用发照片与设备比较；设问与对仗句已去掉。是否读来轻松仍需真人试读，本项只代表编辑复核。
   localization:
     result: pass
-    reason: 设备/家人/提醒案例不绑定地区语种；中文引号统一，Power/Advanced/Light保留真实名称；没有以某国账号或本机界面代表全部用户。
+    reason: 未绑定语种或国家；型号、按钮保留原词；日期为完整年月日。
   independent_creation:
     result: pass
-    reason: 对照实际官方文章与既有来源记录：正文以自编设备材料、说明稿、截图/原文件情景组织，不复刻博客技能数据库示例、代码、结构或原教程独特案例。两条备忘来自本书已有原创材料；未虚称本轮新读第三方教程。
+    reason: 两台设备、发照片与请求示例均为本书自设，文中已说明不是模型测试结果；未取用官方示例。
 fact_review:
   coverage: reviewed
-  reason: 通读c5f544f全篇、review-packet非穷尽候选与写前官方笔记，逐段反查价值、图像模态、工具、关键补问、反馈、文风、完成边界、三模型定位、Effort及入口。27处产品说明关联8事实；推理通俗解释、设备/说明稿情景、检查与路径预告属于教学归纳和自编要求，未当成性能或GUI证据。
-    构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
-    本轮因关联官方事实日期/范围变动重新通读开篇及27处对应：文档可用性、工具边界、Power/Advanced与Light解释仍一致；没有修改正文或刷新API/博客原阅读日期。
-    项目入口修订的影响复核：正文无变化；核对模型/工具/文件夹访问段与本次项目事实补充不冲突，材料准备前移不改变开篇读者前提。沿用本日上批完整反查与其声明的来源读取日期，本轮不是重读所有官方页。
-    本轮仅规则与前后衔接影响核对，全文已读；原事实与来源日期未变，未冒称本轮重读全部模型/功能页面。 本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并逐条核对27个锚点仍各出现一次。本轮实际读取models、model-selection、prompting三页（2026-09-29）；developers.openai.com上的Astra型号页、指南与文章Claude未重读，对应断言原文未改，沿用原记录的定位与核对日期。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0新功能与修复；稿后定向复读2026-09-22 Sol/Luna开放条目
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 未据CLI更新改写桌面安装/控件路径；Sol/Luna开放条件与当前Models保留，不宣布全部账号稳定。9月22日此次定位为稿后反查，不倒填写前证据。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: OpenAI把它定位为面向高难度完整任务的模型，强调跨资料、跨工具、跨步骤的判断能力。
     fact_id: gpt6-model-use-position

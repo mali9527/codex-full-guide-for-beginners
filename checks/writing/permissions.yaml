@@ -1,10 +1,10 @@
 schema: 2
 unit: permissions
-input_sha256: 17aebef1bbdeac8ca13a3f6042545cfe542107fce3a8181a95a89c32349735da
+input_sha256: c1168483aa066bf252e1036fc2ab00cc2fcdae2909c32bc9f7d999186b88d520
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -45,39 +45,39 @@ study_brief:
   - 电脑操作的系统授权细节留第23章
   - 插件连接留第21章
   case_plan: 自设情景：把核对后的清单复制到项目外的另一文件夹而触发请求；标明是说明判断方法的假设。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：从第4章没有逐步询问的经历进入→权限与任务要求→三模式表→启用与选中→请求出现时看对象和动作→其他授权层→自动审核拒绝以后。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 沿前章已选Ask，解释真正允许范围后再介绍可选切换，系统授权不当已具备。
+    reason: 第3、4章已选过Ask for approval；沙箱在此作一句解释。
   concept_timing:
     result: pass
-    reason: 先设置启用→回当前任务选中；请求出现→读懂→批准/拒绝→检查执行结果。 全书衔接复核：全文回读：启用模式后回当前任务选中，批准/系统权限/服务连接分别解释；Enter/Esc限批准状态，/approve限适用最近拒绝。将「普通话」改为「日常语言」，不限定语言地区。
+    reason: 先辨认请求再谈批准或拒绝；电脑操作的系统授权指向第23章。
   information_value:
     result: pass
-    reason: 不教config或绕限制；保留三层授权与托管搜索差异以解释实际困惑。
+    reason: 三模式表、三层授权表和/approve的窄用途保留；重复的「不是修复按钮」只在第2章保留，本章改为说明先找失败原因。
   natural_style:
     result: pass
-    reason: 假设的跨目录请求标明示意，判断落到对象/动作，不伪造审批卡片。
+    reason: 开头改为读者自己的疑问；否定式表述由14处降到4处。真人试读未做。
   localization:
     result: pass
-    reason: 真实英文模式名统一，中文批准与批注明确；组织限制不当个人操作失误。
+    reason: 按钮原词保留；组织限制说明找管理员。
   independent_creation:
     result: pass
-    reason: 原创复制清单情境，未复制官方安全案例/策略/配置；无假实测。
+    reason: 复制清单到另一文件夹的情景为自设并已标明是假设。
 fact_review:
   coverage: reviewed
-  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
-    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并核对9个锚点。本轮实际读取permission-modes、reference/commands（2026-09-29）、sandboxing/auto-review、web-search、reference/slash-commands（2026-09-28）。Enter与Esc仅按官方所列条件写为批准请求打开时适用。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: 当前任务的权限控件位于输入框下方
     fact_id: permission-boundary

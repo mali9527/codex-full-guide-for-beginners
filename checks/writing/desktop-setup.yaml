@@ -1,10 +1,10 @@
 schema: 2
 unit: desktop-setup
-input_sha256: 2885c31a70630ec7c2458e5628ea8a0327120afa40bf22ebff4f3a62a519742a
+input_sha256: 76f9e545dbdc57f446eaad16efd85607c95e969036fe98364ba3252cc7736fb0
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -38,39 +38,40 @@ study_brief:
   - 权限模式选择留第7章
   - 额度留第5章
   case_plan: 本章无案例文件；以读者自己的电脑为对象。修订只收紧重复提醒，不新增未核对的界面描述。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：下载→安装→登录回应用→进入Codex→认出New chat的主线连续；Windows沙箱设置保持为出现提示才处理的条件分支，完成后回原任务；设置、更新与排查表在后。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 从未安装/未登录开始；先平台安装，再共同登录并确认进入Codex。认识New chat不要求此时建任务，文件夹与首次任务留第3章。
+    reason: 只假定会下载安装普通软件；Apple芯片、工作区、沙箱、winget在需要时解释。
   concept_timing:
     result: pass
-    reason: Windows沙箱改为开始本地工作时遇到提示才处理的分支，设好后返回原项目/任务；不把未知出现时点写成安装与登录之间的固定步骤。 全书衔接复核：全文回读安装登录：浏览器登录后返回应用、选择Codex后才去第3章连文件夹；Windows提示仍为条件分支。新增快捷键事实只扩展其余动作，不改变本章Settings/Openfolder/更新条件；未借最新阅读提升旧安装实测。
+    reason: 权限模式只在Full access一处点到并指向第7章；额度不在本章展开。
   information_value:
     result: pass
-    reason: 保留官方下载链接、系统条件、登录返回、入口与排障；新增的是动作前置和返回位置，没有扩写解压、按键等常识。
+    reason: 保留平台条件、受管设备和排查表；删去「不必」「不要」式的重复叮嘱（19处降到6处）。
   natural_style:
     result: pass
-    reason: 完整连读：两平台安装合流到登录，Windows条件分支标题直接说明何时使用；章节结尾的完成标准是进入Codex而非已新建任务。
+    reason: 步骤句保持动作在前；改后无新增界面描述。真人试读未做。
   localization:
     result: pass
-    reason: 双平台分别交代，实际控件名称保留；Windows条件未推广到Mac，组织条件未说成人人相同。
+    reason: Windows与Mac分节，沙箱流程标明仅Windows；Mac芯片识别按系统菜单原名。
   independent_creation:
     result: pass
-    reason: 官方快速开始用于核对安装/登录/选工作位置的关系；本书独立重排为非编程读者路线，不使用官方网页/CLI案例或逐段转述。
+    reason: 无案例材料；排查表按读者停住的位置自行组织。
 fact_review:
   coverage: reviewed
-  reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
-    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并核对25个锚点。本轮实际读取reference/commands、reference/settings、auth（2026-09-29）、reference/troubleshooting（2026-09-28）、windows/windows-sandbox（2026-09-26）、quickstart、windows/windows-app与app下载页（2026-09-25）；更新管理页与两个Apple支持页Claude未读，对应断言原文未改，沿用原记录的定位与核对日期。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0开篇功能与修复
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 实际重读指定范围，未把CLI版本当成桌面版本；没有据此推出停止快捷键或统一沙箱出现时机。桌面步骤依据各专页。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: Windows和Mac的安装条件分别说明
     fact_id: desktop-platforms

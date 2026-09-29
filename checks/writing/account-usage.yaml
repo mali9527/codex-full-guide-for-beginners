@@ -1,10 +1,10 @@
 schema: 2
 unit: account-usage
-input_sha256: bf268a74a6f9a3fc8fc192daeb07e0933da81cb31127ffd0d3ce36cdd57fb56c
+input_sha256: 84097fa2f4ae895d8052eb788da195f4d78d87604a0dd03c09ba27755d06aa6b
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
-reviewer: codex
+reviewer: claude
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -38,39 +38,40 @@ study_brief:
   - 模型与Fast的选择留第6章
   - 上下文用量留第13章
   case_plan: 以第4章那次任务与「把还书放第一项」的短请求对比消耗；百分比读法为示例数字。按作者2026-09-28要求补会员档位与查看额度的基础知识。
-study_commit: null
+study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
-  result: pending
-  reason: Claude修订批次：学习提要已保存，待成稿后对照。
+  result: pass
+  reason: 对照写前提要：核对账号与工作区→几种会员差在哪里→用量页面读法→窗口与每周限额→一条消息为何没有固定消耗→/status→达到限额以后→少花冤枉用量。pricing一页的档位清单、Pro倍数、进行中的一轮可继续、credits用途均写入正文，未列价格。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 以前章已登录/做过文件为前置，先核身份再用量页，token与上下文在用途处解释。
+    reason: 以第4章做过的任务为参照；token、credits、窗口在用到处解释。
   concept_timing:
     result: pass
-    reason: 百分比先读范围/标签，虚构读数明示；不把后章压缩当解决账号限额前置。 全书衔接复核：全文回读与第6/13章衔接：先核账号工作区再用量页；token/credits/上下文只作当前需要的区分，没有以/compact解决订阅限额。后章真实写出后无需增加重复定义。
+    reason: 会员档位放在看用量之前，读者先知道自己的额度从哪里来；上下文用量只作区分并指向第13章。
   information_value:
     result: pass
-    reason: 没有价格表或套餐选择，重点保留账号/窗口/credits区别和失败分类。
+    reason: 按作者2026-09-28提出的要求补入会员档位与达到限额后的处理；原稿只讲「不讨论套餐」而没有说明档位，读者最想知道的两件事现在有了答案。
   natural_style:
     result: pass
-    reason: 用两条熟悉请求解释消耗，连续自然段，不用术语堆砌。
+    reason: 否定式表述由21处降到4处；百分比读法保留示例并写明是举例。真人试读未做。
   localization:
     result: pass
-    reason: Mac/Windows共通页面用真实名称，组织差异不推广；时间以账号页面为准。
+    reason: 档位名称保留原词；不写价格与货币；组织账号差异单独说明。
   independent_creation:
     result: pass
-    reason: 数值读法和文件情境自行编写，没有采用官方套餐营销或企业案例。
+    reason: 消耗对比沿用本书两条请求；档位表按官方描述转述并注明官方以编程为例。
 fact_review:
   coverage: reviewed
-  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
-    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  reason: Claude通读成稿并核对锚点。本轮实际读取pricing、auth（2026-09-29）、reference/slash-commands（2026-09-28）。新增五条断言均取自pricing当日原文；写作约定「不展开套餐选购与价格」仍遵守，正文只说明档位差别，不作购买建议。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
     checked_on: '2026-09-29'
-    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
   claims:
   - anchor: 核对当前登录身份
     fact_id: sign-in-options
@@ -155,5 +156,103 @@ fact_review:
     conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
     support: supported
     rationale: 桌面任务ID、上下文与限额；不是成果完成度。
+    notice: ''
+  - anchor: Work和Codex包含在Free、Go、Plus、Pro、Business、Edu和Enterprise各档里
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: 页首套餐说明句
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    support: supported
+    rationale: 原文列出七个档位名称；正文据此说明Codex没有单独会员，不列价格。
+    notice: ''
+  - anchor: 速率限制是Plus的5倍或20倍
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: Pro档说明
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    support: supported
+    rationale: 原文为5x or 20x higher rate limits than Plus；正文只转述倍数。
+    notice: ''
+  - anchor: 在合理使用的范围内，这一轮还能继续做完
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: 达到限额时进行中的一轮
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    support: supported
+    rationale: 原文写明可继续该轮并受公平使用限制；正文保留这一条件。
+    notice: ''
+  - anchor: 官方说明Plus和Pro用户达到限额后可以另行购买credits
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: credits与达到限额后的继续方式
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    support: supported
+    rationale: 原文限定Plus与Pro；组织账号另写由组织决定，未作购买建议。
+    notice: ''
+  - anchor: 模型选择、上下文、推理投入、工具使用、检索和缓存都会影响用量
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: 影响用量的因素
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    support: supported
+    rationale: 原文逐项列出并说明单看提示长度不可靠；正文未给换算。
+    notice: ''
+  - anchor: API key，按开发平台的规则计费
+    fact_id: sign-in-options
+    url: https://learn.chatgpt.com/docs/auth
+    locator: API key计费说明
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    support: supported
+    rationale: 原文写明API key按OpenAI Platform标准费率计费，不使用ChatGPT套餐包含的额度。
+    notice: ''
+  - anchor: 面向整个组织，带企业级管理功能
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: 各档说明文字
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    support: supported
+    rationale: 档位表五行均按pricing页各档一句说明转述；官方以编程任务为例，正文已注明。未列价格。
     notice: ''
   unused_facts: {}
