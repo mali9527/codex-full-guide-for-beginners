@@ -81,7 +81,7 @@ study_brief:
   - Git或恢复承诺
   - 新业务场景
   case_plan: 保持两份原创备忘与四待办；主生成请求补充完成后的对照检查、未确定信息与实际保存位置，不改事实或演示结果。仅保留原素材的一次状态更新。
-study_commit: null
+study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

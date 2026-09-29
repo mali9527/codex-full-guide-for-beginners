@@ -78,7 +78,7 @@ study_brief:
   - 企业管理策略编辑
   - 未经实机确认的About菜单层级
   case_plan: 不伪造安装经历或拖放截图；按官方真实标签给步骤，winget只在该错误出现时解释用途与官方排障入口。
-study_commit: null
+study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

@@ -58,7 +58,7 @@ study_brief:
   - 插件和定时的设置
   - 网页/业务制作专题
   case_plan: 沿用本书照片提醒作轻量预告；新增自编购物名称合并、说明稿受众、页面预算用途，不复制官方资料中的演示或个人经历。
-study_commit: null
+study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

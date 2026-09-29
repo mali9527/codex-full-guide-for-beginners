@@ -110,6 +110,7 @@ units:
   - scheduled-chat-destination
   - scheduled-local
   - permission-modes-enablement
+  - usage-availability
   derived_from: null
 - id: first-task
   title: 第4章 第一次完整使用：把零散备忘整理成待办清单

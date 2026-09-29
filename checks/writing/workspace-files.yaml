@@ -92,7 +92,7 @@ study_brief:
   - 语音屏幕上下文
   - MCP配置和Git审查
   case_plan: 保留本书原创水杯/还书三条提醒，两轮回复只给语义预期。语音可选且发送前改文字；界面不凭空断言布局和中文标签。
-study_commit: null
+study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
