@@ -1,0 +1,71 @@
+schema: 2
+unit: planning
+input_sha256: e798f6720a7893f3f293cb168986ecc0ef7fe70de59e0271abe2174dc4ae70ce
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: f7d201003444d3f810d049c4c9e454b015e357aff6d3066c4e818b6492dfdd30
+  reader_goal: 先讨论有分歧的做法，并明确从计划转执行。
+  reader_start:
+  - 已会自然语言边界与任务分支；未用Plan。
+  explain_now:
+  - 计划用于有选择的多步工作
+  - 提问与方案对比
+  - Plan开关与明确授权
+  official_readings:
+  - fact_id: plan-before-editing
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Prompting Codex
+    checked_on: '2026-09-29'
+    understanding: Plan先调查提方案再编辑；可以读取相关资料。
+    teaching_use: 先确认项目材料，输入/plan，限只读，先解决真正影响结果的问题。
+  - fact_id: plan-before-editing
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /plan toggle
+    checked_on: '2026-09-29'
+    understanding: 切换规划模式而非普通提示词；退出也需要操作。
+    teaching_use: 看当前模式，确定方案，再切出Plan核对状态后发执行要求。
+  teaching_sequence:
+  - 确认项目和文件→/plan→只读调查及问题→比较方案→选定→切出Plan确认→限定输出执行→实际核对
+  defer:
+  - Goal下一组，不当计划必然后续
+  - 不许把计划完成算文件完成
+  case_plan: 按状态还是按事项排待办；通过保持原意的比较展示取舍，不增加业务场景。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

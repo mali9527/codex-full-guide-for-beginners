@@ -1,0 +1,71 @@
+schema: 2
+unit: feedback
+input_sha256: cda0e64d8236e5da941a2f0065798fad20130222ae359d6528d5c2de492facdc
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 9325abbfba0dec2bdaa130eba0dd5640eb44a751ef340fb1e232135674455469
+  reader_goal: 用事实和完成标准判断第一版的问题，给准确修改意见。
+  reader_start:
+  - 已会打开、批注、另存和Plan。
+  explain_now:
+  - 事实错误/表达选择/新条件分开
+  - 小步修订与保留正确部分
+  - review和feedback的实际用途
+  official_readings:
+  - fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Improve with follow-up messages
+    checked_on: '2026-09-29'
+    understanding: 可以补来源、纠正方向或细节而不重来。
+    teaching_use: 原创三类问题给不同反馈；检查变更和非变更范围。
+  - fact_id: review-feedback-command-purpose
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /review;/feedback
+    checked_on: '2026-09-29'
+    understanding: 代码审查与产品意见不同，不是通用审稿按钮。
+    teaching_use: 文稿意见直接说，故障反馈只在真有问题时用命令并核对日志。
+  teaching_sequence:
+  - 打开具体版本→判错在哪→给位置/依据/改动范围→另存→回读差异→更新当前版
+  defer:
+  - 不教Git代码审核
+  - 不把多模型赞同当事实来源
+  case_plan: 分别纠正漏10张、改排版、补购买完成状态；假设错误明示不制造。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

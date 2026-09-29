@@ -1,0 +1,73 @@
+schema: 2
+unit: goals
+input_sha256: 5e3dd3df371d8a913ce89b03759a8994c156c265ba99a3a73520962d72b13636
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 68a2cb549c154ef2d70335402863779823bbe66c58d4665ac9077d997ab72645
+  reader_goal: 为持续工作定义可检查终点，启动、暂停、恢复和结束Goal。
+  reader_start:
+  - 已知计划、权限、运行补充和文件核验。
+  explain_now:
+  - 持续目标的必要条件
+  - 目标进度行控制与消息不同
+  - 需要决定或环境不可用会停
+  - 可选Remote工作仍在电脑
+  official_readings:
+  - fact_id: goal-desktop-lifecycle
+    url: https://learn.chatgpt.com/docs/long-running-work
+    locator: Start; Define done; Steer
+    checked_on: '2026-09-29'
+    understanding: 目标文字是要求也是完成标准，不改变权限。
+    teaching_use: 先具备原创材料和明确输出，再/goal，按进度行暂停/编辑/恢复/清除。
+  - fact_id: desktop-remote-host
+    url: https://learn.chatgpt.com/docs/remote
+    locator: Get started with Remote
+    checked_on: '2026-09-29'
+    understanding: 手机操作连接电脑而非自动云端运行；同账号、工作区与在线条件。
+    teaching_use: 可选路径完整简述，离线暂停、恢复后核对文件。
+  teaching_sequence:
+  - 取得原创目录包→打开本地文件夹→只读确认4文件→明确12条核对标准→/goal设置目标→看进度行
+  - 需要改变范围先暂停→编辑目标核对→恢复→检查3份实际文件→无后续时清除目标；不等于恢复文件
+  defer:
+  - 不要求Remote或订阅额外功能
+  - 没有Goal时用普通任务仍能完成案例
+  case_plan: 新原创12条目录和4份输入，输出索引/待确认/接续；旧索引缺项、相似名不合并、未知保留提供真实可核查终点。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

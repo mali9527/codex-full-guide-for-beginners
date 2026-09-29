@@ -1,0 +1,71 @@
+schema: 2
+unit: delegation
+input_sha256: 01a18e2e197ce8694b515aa13e1aa94f8dc8d62300a7d8bc6dbd7dd19f42665e
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: e26f65be776f5cd4e69aee55a21bba3729c9b89bfc31a96d4328e620ba4a2dcd
+  reader_goal: 判断哪些工作可以独立分开，并汇总可追查结果。
+  reader_start:
+  - 已学项目和Goal，已经认识目录案例。
+  explain_now:
+  - 多个用户任务与内部子代理不同
+  - 先只读分工再单人合稿
+  - 独立证据不是多个AI同意
+  official_readings:
+  - fact_id: desktop-subagent-delegation
+    url: https://learn.chatgpt.com/docs/agent-configuration/subagents
+    locator: Availability; Why
+    checked_on: '2026-09-29'
+    understanding: 桌面明确要求独立分工，代理分别用模型工具且增加用量；显示各代理任务活动。
+    teaching_use: 让两个代理分别核条目覆盖与规则落实，主任务汇总不并发写文件。
+  - fact_id: desktop-chat-organization
+    url: https://learn.chatgpt.com/docs/long-running-work
+    locator: Run goals in parallel
+    checked_on: '2026-09-29'
+    understanding: 任务各有上下文与目标，共同文件会冲突。
+    teaching_use: 按是否独立、是否同写判断并行，否则串行。
+  teaching_sequence:
+  - 先确定资料/标准→拆两个独立只读问题→明确请求子代理→查看活动与来源→主任务处理冲突→单一写入成稿→核对
+  defer:
+  - 不写自定义agent文件/CLI agent
+  - 不因分工强行调Ultra
+  case_plan: 复用目录材料做覆盖和规则两种检查，分工报告指向条目和原文件，不冒充真人审核。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

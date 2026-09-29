@@ -513,6 +513,8 @@
   sources:
   - url: https://learn.chatgpt.com/docs/use-chatgpt
     checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-29'
   checked_on: '2026-09-29'
   category: startup
   status: confirmed
@@ -768,6 +770,8 @@
     checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/reference/settings
     checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/commands
+    checked_on: '2026-09-29'
   checked_on: '2026-09-28'
   category: startup
   status: confirmed
@@ -875,6 +879,8 @@
     checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/long-running-work
     checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-29'
   checked_on: '2026-09-28'
   category: startup
   status: confirmed
@@ -992,7 +998,7 @@
     platforms:
     - windows
     - mac
-    availability: rollout-dependent
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/remote
     checked_on: '2026-09-28'

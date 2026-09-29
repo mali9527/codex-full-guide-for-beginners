@@ -331,6 +331,7 @@ units:
   facts:
   - goal-desktop-lifecycle
   - plan-before-editing
+  - desktop-remote-host
   derived_from: null
 - id: delegation
   title: 第18章 几件事怎样分开做：多个任务与子代理

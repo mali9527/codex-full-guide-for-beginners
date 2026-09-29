@@ -1,0 +1,65 @@
+schema: 2
+unit: clear-requests
+input_sha256: a7b73c7251befcd9107a3d91d7180d9e9bf8fe0e8fe140e60b836c9975c692e4
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 298d518b0e5b9167789cfa60ad5ad91ecf54d1c14c2cfb6a42d7ccb53c5a3692
+  reader_goal: 把模糊要求变成可以核对的结果要求。
+  reader_start:
+  - 已会材料、文件检查、查证与任务接续。
+  explain_now:
+  - 目的影响输出
+  - 必需条件与偏好不同
+  - 未知和约束写在发生处
+  official_readings:
+  - fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Context; Boundaries; Ready to use
+    checked_on: '2026-09-29'
+    understanding: 应说用途、资料、限制与检查，不必控制每个动作。
+    teaching_use: 从熟悉清单的含糊要求改成完整请求，不套固定公式。
+  teaching_sequence:
+  - 先看已有材料和当前目标→说用途/成果/必要条件→明确未知处理→发请求→用结果补充
+  defer:
+  - Plan入口下一章，当前普通对话足够
+  - 不写万能提示词
+  case_plan: 沿清单展示「方便看」意味着信息顺序不同，明确哪些是作者建议。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}
