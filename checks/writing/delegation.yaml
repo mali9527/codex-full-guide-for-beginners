@@ -35,7 +35,7 @@ study_brief:
   - 不写自定义agent文件/CLI agent
   - 不因分工强行调Ultra
   case_plan: 复用目录材料做覆盖和规则两种检查，分工报告指向条目和原文件，不冒充真人审核。
-study_commit: null
+study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

@@ -35,7 +35,7 @@ study_brief:
   - 不教Git代码审核
   - 不把多模型赞同当事实来源
   case_plan: 分别纠正漏10张、改排版、补购买完成状态；假设错误明示不制造。
-study_commit: null
+study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

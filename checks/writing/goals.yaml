@@ -37,7 +37,7 @@ study_brief:
   - 不要求Remote或订阅额外功能
   - 没有Goal时用普通任务仍能完成案例
   case_plan: 新原创12条目录和4份输入，输出索引/待确认/接续；旧索引缺项、相似名不合并、未知保留提供真实可核查终点。
-study_commit: null
+study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

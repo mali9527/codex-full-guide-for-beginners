@@ -35,7 +35,7 @@ study_brief:
   - Goal下一组，不当计划必然后续
   - 不许把计划完成算文件完成
   case_plan: 按状态还是按事项排待办；通过保持原意的比较展示取舍，不增加业务场景。
-study_commit: null
+study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

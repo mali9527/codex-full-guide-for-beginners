@@ -29,7 +29,7 @@ study_brief:
   - Plan入口下一章，当前普通对话足够
   - 不写万能提示词
   case_plan: 沿清单展示「方便看」意味着信息顺序不同，明确哪些是作者建议。
-study_commit: null
+study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
