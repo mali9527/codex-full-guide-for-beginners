@@ -1,340 +1,128 @@
 schema: 2
 unit: workspace-files
-input_sha256: bccecd18430e280b36b1c5b7d0a29007e7d0ad57691c10a2f254ce5fbadca445
+input_sha256: 11020e2d507b1832546094f2e5b2fdb83869e9ad807a0eb06b465e3d98075685
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-28'
-  base_manuscript_sha256: 9ef1b7847f98fee0afab3c42a3ad23dc6ea824c771ad64dda78916e756a5ec0f
-  reader_goal: 读者知道主要区域各做什么，能发一条请求、看到回复并继续修改；能找到设置与后续功能入口。
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 38d79af3426bbf35bee4d213e1b458ee61e256d595ebc560374a6db8e0aba83c
+  reader_goal: 读者能看懂第一屏区域和常用入口，发出简短请求、判断回复并继续改一处。
   reader_start:
-  - 第2章将同批完成安装说明；无项目、路径或编程知识。
+  - 已能进入Codex，尚未连接材料文件夹；Astra开篇给过模型与工具概念。
   explain_now:
-  - 项目组织相关工作，任务保留一次交流
-  - 输入、运行、回复和真实成果的区别
-  - 模型/权限/位置互相独立；/和@各自用途
+  - 常驻聊天区域与按需工作面板
+  - 任务与项目、聊天原文与当前材料
+  - 附件/@/$/斜线菜单的不同用途
+  - 听写与实时语音
+  - 模型Effort速度权限运行位置各管什么
   official_readings:
-  - fact_id: desktop-chat-organization
-    url: https://learn.chatgpt.com/docs/projects
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面项目组织相关聊天，本地项目连接电脑文件夹；各项独立成果可用不同聊天组织，同一成果可继续反馈。侧栏可回到已有聊天，项目并不等于文件访问的保护边界。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: desktop-file-shortcuts
-    url: https://learn.chatgpt.com/docs/reference/commands
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面Codex/Work的Open folder默认Windows Ctrl+O、Mac ⌘O；New chat为Ctrl+N/⌘N；设置为Ctrl+,/⌘,。Keyboard
-      Shortcuts可按命令名查找并自定义绑定。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面Codex可在输入框下方的模型/推理控件选择可用模型；账号可用列表与组织权限相关，模型选择不授予额外权限。 更高推理投入可能改善复杂任务，但耗时和token消耗更多；不指定所有账号统一的默认型号。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: desktop-slash-entries
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面输入区的斜线菜单提供可用命令；/model选模型、/reasoning选推理投入、/plan切换计划模式、/goal设置持续目标、/side打开临时侧聊、/status显示聊天与用量信息。具体可见命令受环境和访问条件影响。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: Ask for approval允许在当前工作区范围内读写文件及运行常规本地命令，需要联网或超出工作区边界时请求批准；桌面应用的权限控件位于输入框下方，CLI使用/permissions。配置及组织要求影响可用模式，自动审核不自动扩大访问边界。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: artifact-preview
-    url: https://learn.chatgpt.com/docs/artifacts-viewer
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面支持文档、表格、演示文稿和PDF等成果的可视预览，并可在支持批注的预览上标注；CLI可生成和修改文件，但不提供同样的预览与批注界面。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: desktop-followup-behavior
-    url: https://learn.chatgpt.com/docs/prompting
-    locator: Settings General / Follow-up behavior
-    checked_on: '2026-09-28'
-    understanding: 桌面General的Follow-up behavior可将运行时补充消息用于引导当前运行（Steer），或排队等待下一轮（Queue）；排队消息在输入区上方可编辑、调整顺序、发送或删除。不能承诺每次补充都会立即打断当前运行；实际快捷键由当前设置显示，不能照搬CLI键位。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
   - fact_id: desktop-basic-navigation
     url: https://learn.chatgpt.com/docs/reference/commands
-    locator: Keyboard shortcuts / Use a slash command / input hint
-    checked_on: '2026-09-28'
-    understanding: 桌面可从New chat开始聊天；默认Windows Ctrl+N、Mac ⌘N新建，Ctrl+B/⌘B收放侧栏。输入区键入/打开当前可用命令列表，Codex用$显式调用技能；本地Codex的@入口可添加文件。设置可按命令名查看或修改快捷键，不能把默认键位当作所有安装的当前设置。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: macOS/Windows General、Chats、Input、Workspace
+    checked_on: '2026-09-29'
+    understanding: 命令菜单和快捷键能帮助找入口，默认键位可能被改。
+    teaching_use: 给按钮优先路径及少量必要替代，面板不讲成必见。
+  - fact_id: desktop-voice-options
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Use voice dictation
+    checked_on: '2026-09-29'
+    understanding: 听写生成草稿可先改再发。
+    teaching_use: 就地用现有三条提醒说明，实时对话后置。
+  - fact_id: desktop-voice-options
+    url: https://learn.chatgpt.com/docs/features/voice
+    locator: Voice and dictation；Availability
+    checked_on: '2026-09-29'
+    understanding: 实时语音和听写不同，既有任务语音逐步开放。
+    teaching_use: 只解释区别，不强制开启新功能。
+  - fact_id: task-materials-and-output
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Attach files；Compare Work and Codex
+    checked_on: '2026-09-29'
+    understanding: 文件/图片可作为材料，访问电脑另需目录。
+    teaching_use: 附件和@讲对象用途，不等同所有文件可见。
+  - fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: Use a slash command；Available commands
+    checked_on: '2026-09-29'
+    understanding: 斜线是功能入口，$是技能，/status可在当前环境查状态。
+    teaching_use: 菜单可用项为准，不背命令。
+  - fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Power / Advanced；Effort
+    checked_on: '2026-09-29'
+    understanding: 预设组合与精确选择不同。
+    teaching_use: 控件解释服务初次判断，详细设置留第6章。
+  - fact_id: fast-mode-choice
+    url: https://learn.chatgpt.com/docs/agent-configuration/speed
+    locator: Fast mode
+    checked_on: '2026-09-29'
+    understanding: 速度与推理不同，会增加消耗。
+    teaching_use: 一段说明用途和默认起步即可。
+  - fact_id: permission-modes-enablement
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Enable modes；How permissions work
+    checked_on: '2026-09-29'
+    understanding: 自动审核不是批注文稿，启用不等于选中。
+    teaching_use: 初见易混处一句讲清，完整批准留第7章。
+  - fact_id: plugin-install-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Overview；Use and install
+    checked_on: '2026-09-29'
+    understanding: 安装扩展与连接服务不同。
+    teaching_use: Plugins先定位用途，首例不依赖安装。
+  - fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Manage scheduled tasks
+    checked_on: '2026-09-29'
+    understanding: Scheduled是结果与日程入口。
+    teaching_use: 先认识入口，本地运行条件就地说明。
   teaching_sequence:
-  - 先看界面区域与当前任务
-  - 发不带附件的短请求并修改一次
-  - 认识输入区功能与控制，不展开全部档位
-  - 讲找回、收放和卡住处
+  - 先给区域方位并找到新任务
+  - 用三条提醒发送和改顺序
+  - 结合已发生的交流解释状态
+  - 材料与听写入口
+  - 模型/权限及运行位置、插件定时设置去向
+  - 预览与面板、回到任务
   defer:
-  - 文件夹连接与路径到第4章
-  - 消息队列/侧聊到第8章，模型和批准详细判断后置
-  case_plan: 自编三条简短日常事项，只要求列清单并增加完成标记，不需要文件、网络、插件或Git。
-study_commit: e3a38898e317004ee3987e0c608fcb855e21bd86
+  - 全量命令表
+  - 所有权限和Effort档位的选择教程
+  - 语音屏幕上下文
+  - MCP配置和Git审查
+  case_plan: 保留本书原创水杯/还书三条提醒，两轮回复只给语义预期。语音可选且发送前改文字；界面不凭空断言布局和中文标签。
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照已保存写前提要与完整成稿，官方理解实际用于讲解顺序和案例；原稿祖先e3a3889存在，未借用retrospective。稿后补充事实关联另记，不回填写前计划。
-    本轮仅重审扩写开篇造成的前置变化，章节正文未变，原写前提要与study_commit不重建。
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 读者已安装，本章无需文件和项目即可完成三行文字任务。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
-      2026-09-29连读：开篇给出Astra用途和Light建议，本章仍用当前可用选择发三条提醒；模型/Effort表只就地定位，完整设置留第6章。
+    result: pending
+    reason: 待按本章完整正文复核
   concept_timing:
-    result: pass
-    reason: 先侧栏、输入、消息，再最小设置；@/$只讲用途不提前要求Skill知识。
+    result: pending
+    reason: 待按本章完整正文复核
   information_value:
-    result: pass
-    reason: 增加首屏工作用途、重复提醒和一次明确反馈；模型详细档位留第6章。
+    result: pending
+    reason: 待按本章完整正文复核
   natural_style:
-    result: pass
-    reason: 水杯/还书的短例串起界面，没有把整章写成按钮清单。
+    result: pending
+    reason: 待按本章完整正文复核
   localization:
-    result: pass
-    reason: 按默认Win/Mac键位并说明可改；中文直角引号，实际功能名不强译。
+    result: pending
+    reason: 待按本章完整正文复核
   independent_creation:
-    result: pass
-    reason: 三条提醒及排序反馈自编，不来自教程独特案例；菜单入口属公共产品事实。
+    result: pending
+    reason: 待按本章完整正文复核
 fact_review:
-  coverage: reviewed
-  reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
-    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。 2026-09-29连读：开篇给出Astra用途和Light建议，本章仍用当前可用选择发三条提醒；模型/Effort表只就地定位，完整设置留第6章。
-    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。 构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
-  docs_checked_on: '2026-09-28'
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
   change_review:
-    url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0新功能与修复；稿后定向复读2026-09-22 Sol/Luna开放条目
-    checked_on: '2026-09-29'
-    effect: 未据CLI更新改写桌面安装/控件路径；Sol/Luna开放条件与当前Models保留，不宣布全部账号稳定。9月22日此次定位为稿后反查，不倒填写前证据。
-  claims:
-  - anchor: 默认快捷键是Windows的 **Ctrl+N**、Mac的 **⌘N**。
-    fact_id: desktop-basic-navigation
-    url: https://learn.chatgpt.com/docs/reference/commands
-    locator: New chat rows on Windows and macOS
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id001
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 默认键位可自定义。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：默认键位可自定义。
-    notice: ''
-  - anchor: Windows的 **Ctrl+B**、Mac的 **⌘B**切换显示
-    fact_id: desktop-basic-navigation
-    url: https://learn.chatgpt.com/docs/reference/commands
-    locator: Toggle sidebar rows
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id001
-    availability: unspecified
-    conditions: 侧栏收起时使用；以当前设置为准。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：侧栏收起时使用；以当前设置为准。
-    notice: ''
-  - anchor: 也可以先不选项目，直接开始交流。
-    fact_id: desktop-chat-organization
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Choose a project or start without one
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id002
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 无项目短文字任务可开始，不等同已连接本地文件。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：无项目短文字任务可开始，不等同已连接本地文件。
-    notice: ''
-  - anchor: '**项目**把相关的工作放在一起，还可以关联电脑上的文件夹。'
-    fact_id: desktop-chat-organization
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Projects and chats；local folders
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id002
-    availability: unspecified
-    conditions: 项目与任务目的不同，目录第12章展开。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：项目与任务目的不同，目录第12章展开。
-    notice: ''
-  - anchor: 打开Settings中的Shortcuts查看当前设置。
-    fact_id: desktop-file-shortcuts
-    url: https://learn.chatgpt.com/docs/reference/settings
-    locator: Keyboard shortcuts
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 查看当前绑定并可自定义，路径文字按官方设置分区；非截图。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：查看当前绑定并可自定义，路径文字按官方设置分区；非截图。
-    notice: ''
-  - anchor: 运行过程中也可以继续输入消息，不过新消息是立即介入还是排队等待，受应用的后续消息设置和当前状态影响。
-    fact_id: desktop-followup-behavior
-    url: https://learn.chatgpt.com/docs/reference/settings
-    locator: General：Follow-up behavior
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 本章示例等上一轮结束，队列和Steer第8章展开。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：本章示例等上一轮结束，队列和Steer第8章展开。
-    notice: ''
-  - anchor: '**Effort**可以理解为模型为解决问题投入的思考程度。'
-    fact_id: reasoning-default-guidance
-    url: https://learn.chatgpt.com/docs/models
-    locator: Pick a reasoning effort
-    checked_on: '2026-09-29'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 不把档位当答案长度或正确率保证。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：不把档位当答案长度或正确率保证。
-    notice: ''
-  - anchor: 模型列表与推理选项会受账号、版本和开放进度影响
-    fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: Choose a model；available models
-    checked_on: '2026-09-29'
-    surface: codex-desktop
-    platforms: &id003
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 本章不指定强制型号。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：本章不指定强制型号。
-    notice: ''
-  - anchor: 模型控件和权限控件位于输入框下方。
-    fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Permissions control below composer
-    checked_on: '2026-09-29'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 权限控件位置；模型位置另由desktop-model-control支持。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：权限控件位置；模型位置另由desktop-model-control支持。
-    notice: ''
-  - anchor: 模型控件和权限控件位于输入框下方。
-    fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: Model and reasoning control below composer
-    checked_on: '2026-09-29'
-    surface: codex-desktop
-    platforms: *id003
-    availability: unspecified
-    conditions: 模型控件位置；并列的权限位置另列事实。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：模型控件位置；并列的权限位置另列事实。
-    notice: ''
-  - anchor: '**Local**表示围绕这个本地项目目录开展工作。'
-    fact_id: local-run-mode
-    url: https://learn.chatgpt.com/docs/environments/modes
-    locator: Local mode
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 本地项目条件写明，其他模式暂不操作。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：本地项目条件写明，其他模式暂不操作。
-    notice: ''
-  - anchor: 在本地Codex任务中选择文件引用，让要求指向具体材料
-    fact_id: desktop-basic-navigation
-    url: https://learn.chatgpt.com/docs/environments/modes
-    locator: '@ files in local Codex'
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id001
-    availability: unspecified
-    conditions: 限本地Codex；不概括成任意@都引用文件。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：限本地Codex；不概括成任意@都引用文件。
-    notice: ''
-  - anchor: 打开当前可用的命令菜单，可继续输入文字筛选
-    fact_id: desktop-slash-entries
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: Slash command menu
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 当前环境可见性，不承诺旧列表全部可用。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：当前环境可见性，不承诺旧列表全部可用。
-    notice: ''
-  - anchor: 选择当前可用的Skill，让任务使用某项既定能力或做法
-    fact_id: desktop-basic-navigation
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: $ mention skills
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id001
-    availability: unspecified
-    conditions: 只交代入口，未假定已安装任何特定Skill。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：只交代入口，未假定已安装任何特定Skill。
-    notice: ''
-  - anchor: 桌面应用对文档、表格、演示文稿和PDF等支持可视预览
-    fact_id: artifact-preview
-    url: https://learn.chatgpt.com/docs/artifacts-viewer
-    locator: Preview files；supported formats and auto-open
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 正文限定格式、设置与批注支持；不等于纯文本自动显示。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：正文限定格式、设置与批注支持；不等于纯文本自动显示。
-    notice: ''
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
   unused_facts: {}
-  reading_reuse:
-  - url: https://learn.chatgpt.com/docs/artifacts-viewer
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/environments/modes
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/reference/commands
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/reference/settings
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/reference/slash-commands
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。

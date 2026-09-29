@@ -55,6 +55,8 @@ units:
   - codex-work-scenarios
   - permission-boundary
   - artifact-preview
+  - task-materials-and-output
+  - local-project-context
   derived_from: null
   required_checks:
   - editorial
@@ -77,6 +79,9 @@ units:
   - sign-in-options
   - mac-open-installer
   - mac-identify-chip
+  - desktop-update-policy
+  - desktop-file-shortcuts
+  - usage-availability
   derived_from: null
 - id: workspace-files
   title: 第3章 看懂第一屏，并发出第一条消息
@@ -98,6 +103,13 @@ units:
   - artifact-preview
   - desktop-followup-behavior
   - desktop-basic-navigation
+  - task-materials-and-output
+  - desktop-voice-options
+  - fast-mode-choice
+  - plugin-install-connection
+  - scheduled-chat-destination
+  - scheduled-local
+  - permission-modes-enablement
   derived_from: null
 - id: first-task
   title: 第4章 第一次完整使用：把零散备忘整理成待办清单
@@ -116,6 +128,8 @@ units:
   - artifact-preview
   - codex-work-scenarios
   - reasoning-default-guidance
+  - task-materials-and-output
+  - desktop-basic-navigation
   derived_from: null
 - id: account-usage
   title: 第5章 账号与额度：看懂自己正在用什么

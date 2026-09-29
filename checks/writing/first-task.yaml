@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 4cb67cf75005825fcf307cc43c6d69655d13d69c5bd596eac6726386d4b937a2
+input_sha256: 313c84aaf654843b2f6e6597e37880c58edf104f3a27e1305f0b28b057d7ff67
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -13,235 +13,105 @@ reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-28'
-  base_manuscript_sha256: 11ad803484a604b56d72d4a1c4406626f17f1bd25e8b15e3565399939070be7e
-  reader_goal: 从两份备忘走通材料连接、读取、生成清单、实际打开检查和保留两版的完整过程。
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 0a910cb08eed4506559b0391883e4177f34c30978b243612970d014ebc6e663f
+  reader_goal: 读者完成两文件读取、四项清单保存、实际核对及v2局部更新，并能定位材料或保存错误。
   reader_start:
-  - 第3章将先成稿，读者会发消息与继续反馈；尚未连接本地目录、未学路径。
+  - 已经发过两轮文字消息并认识区域；首次连接本地文件，路径仍要解释。
   explain_now:
-  - 路径就是文件地址，本地项目连接材料目录，Local直接处理该目录
-  - Ask for approval不是每次改文件都问；只读要求需明确表达
-  - 完成标准、未知日期与文件落盘的区别
+  - 本地项目与上传附件的区别
+  - 路径和当前工作目录
+  - Local及明确保存位置
+  - 输入/输出/边界与可检查的完成标准
+  - 只改一项并验证原件和前版
   official_readings:
+  - fact_id: task-materials-and-output
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Goal / Context / Output / Boundaries；final check
+    checked_on: '2026-09-29'
+    understanding: 要求不仅是整理文字，还包括保存、保留与核对。
+    teaching_use: 修改自己的提示词，把检查纳入完成，不照抄官方模板。
   - fact_id: local-project-context
     url: https://learn.chatgpt.com/docs/projects
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的
-      ChatGPT 项目不直接连接电脑文件夹。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Use local projects for folders
+    checked_on: '2026-09-29'
+    understanding: 本地项目将电脑目录提供给任务；当前读取内容不能凭文件名猜。
+    teaching_use: 文件夹路径和附件区别在实际连接时说清。
   - fact_id: local-run-mode
     url: https://learn.chatgpt.com/docs/environments/modes
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面 Codex 新对话可选择 Local；它直接在电脑的当前项目文件夹中工作。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Local
+    checked_on: '2026-09-29'
+    understanding: Local工作在当前项目目录。
+    teaching_use: 把结果位置列为任务可核对内容。
   - fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: Ask for approval允许在当前工作区范围内读写文件及运行常规本地命令，需要联网或超出工作区边界时请求批准；桌面应用的权限控件位于输入框下方，CLI使用/permissions。配置及组织要求影响可用模式，自动审核不自动扩大访问边界。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Ask for approval；boundaries
+    checked_on: '2026-09-29'
+    understanding: 常规目录内动作可直接执行，任务要求与权限不同。
+    teaching_use: 解释原件不动不是只读权限；请求批准看对象动作。
   - fact_id: desktop-file-shortcuts
     url: https://learn.chatgpt.com/docs/reference/commands
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面Codex/Work的Open folder默认Windows Ctrl+O、Mac ⌘O；New chat为Ctrl+N/⌘N；设置为Ctrl+,/⌘,。Keyboard
-      Shortcuts可按命令名查找并自定义绑定。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Open folder；New chat
+    checked_on: '2026-09-29'
+    understanding: 两平台快捷键可用但可被自定义。
+    teaching_use: 同时提供命令菜单查Open folder。
   - fact_id: artifact-preview
     url: https://learn.chatgpt.com/docs/artifacts-viewer
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面支持文档、表格、演示文稿和PDF等成果的可视预览，并可在支持批注的预览上标注；CLI可生成和修改文件，但不提供同样的预览与批注界面。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: codex-work-scenarios
-    url: https://learn.chatgpt.com/docs/use-chatgpt
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: Codex与Work的桌面能力有重叠，Codex可用于研究、文档、演示文稿及其他知识工作，也提供开发视图；自然语言要求可随结果继续修订。文件、联网、工具等能力取决于平台、账号、开放进度和工作区设置。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: File source/output/review；preview
+    checked_on: '2026-09-29'
+    understanding: 可视预览与实际文件/检查分工。
+    teaching_use: txt案例优先系统打开，不预设所有文件自动预览。
   - fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
-    locator: Power / Pick a reasoning effort
-    checked_on: '2026-09-28'
-    understanding: 官方Models建议从账号可用的默认Power设置起步；Advanced中可分选模型、Effort和速度。Pick a reasoning
-      effort给出Sol Medium、Luna High、Astra Light的起步建议；这是建议，不是所有账号实际选中值。页面示意的起始预设与实际默认还受套餐、客户端、工作区和开放进度影响。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Default Power；Astra Light
+    checked_on: '2026-09-29'
+    understanding: 先当前可用设置，Astra可Light。
+    teaching_use: 首例就地起步，不要求跳第6章。
   teaching_sequence:
-  - 先看材料与目标四件事
-  - 连接正确文件夹并就地选Local、起步模型和Ask for approval
-  - 先读材料确认再生成并保存
-  - 对照原件查含义，明确反馈并留v1/v2
+  - 先呈现此次交付及备忘材料
+  - 选择外层文件夹、核对Local和权限
+  - 先只读确认材料内容
+  - 将完成标准写入生成请求
+  - 看进展和提问、到实际位置查成果
+  - 语义核对、漏项反馈、只改一项生成v2
+  - 留下接续位置与针对性排障
   defer:
-  - 复杂冲突材料
-  - Git恢复、批量文件管理与外发动作
-  case_plan: 沿用本书两份备忘与四项待办，自编结果作对照，不冒充本轮Codex GUI运行记录。
-study_commit: e3a38898e317004ee3987e0c608fcb855e21bd86
+  - 计划模式和Goal
+  - 所有预览批注操作
+  - Git或恢复承诺
+  - 新业务场景
+  case_plan: 保持两份原创备忘与四待办；主生成请求补充完成后的对照检查、未确定信息与实际保存位置，不改事实或演示结果。仅保留原素材的一次状态更新。
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照已保存写前提要与完整成稿，官方理解实际用于讲解顺序和案例；原稿祖先e3a3889存在，未借用retrospective。稿后补充事实关联另记，不回填写前计划。
-    本轮仅重审扩写开篇造成的前置变化，章节正文未变，原写前提要与study_commit不重建。
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 把旧第3章文件准备迁入本章，独立说明材料层级、路径、Local及权限。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
-      2026-09-29连读：开篇的两条照片提醒只是价值预告，本章仍完整提供文件、路径、权限、v1/v2核对，未用开篇替代操作。两条原文、10张与截止含义一致。
+    result: pending
+    reason: 待按本章完整正文复核
   concept_timing:
-    result: pass
-    reason: 路径出现在首次位置核对时；先读确认再要求写入，避免隐藏前置。
+    result: pending
+    reason: 待按本章完整正文复核
   information_value:
-    result: pass
-    reason: 保留截止/开始、未预约/已预约、重建/恢复差别，删重复的界面定义。
+    result: pending
+    reason: 待按本章完整正文复核
   natural_style:
-    result: pass
-    reason: 案例按阅读、生成、检查、改一项自然推进；表格服务具体对照和排障。
+    result: pending
+    reason: 待按本章完整正文复核
   localization:
-    result: pass
-    reason: 原创一般生活提醒，无特定国家语言前提，文件路径有双平台示例。
+    result: pending
+    reason: 待按本章完整正文复核
   independent_creation:
-    result: pass
-    reason: 沿用原创新备忘；对照历史教程研究卡未复用活动/网站/删除磁盘等特色案例，保留原始输入与两版输出。 本轮重新读取原件并完成7项材料一致性检查，现将真实配套输入纳入本摘要证据范围。
+    result: pending
+    reason: 待按本章完整正文复核
 fact_review:
-  coverage: reviewed
-  reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
-    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。 2026-09-29连读：开篇的两条照片提醒只是价值预告，本章仍完整提供文件、路径、权限、v1/v2核对，未用开篇替代操作。两条原文、10张与截止含义一致。
-    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。 构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
-  docs_checked_on: '2026-09-28'
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
   change_review:
-    url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0新功能与修复；稿后定向复读2026-09-22 Sol/Luna开放条目
-    checked_on: '2026-09-29'
-    effect: 未据CLI更新改写桌面安装/控件路径；Sol/Luna开放条件与当前Models保留，不宣布全部账号稳定。9月22日此次定位为稿后反查，不倒填写前证据。
-  claims:
-  - anchor: Windows是 **Ctrl+O**，Mac是 **⌘O**。
-    fact_id: desktop-file-shortcuts
-    url: https://learn.chatgpt.com/docs/reference/commands
-    locator: Open folder rows
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id002
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 默认快捷键可被用户自定义，排障表指向当前绑定。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：默认快捷键可被用户自定义，排障表指向当前绑定。
-    notice: ''
-  - anchor: 连接以后，「我的待办」成为一个**本地项目**。
-    fact_id: local-project-context
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Local projects and folder selection
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 自编文件夹作为任务目录，不让文件名代替实际地址。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：自编文件夹作为任务目录，不让文件名代替实际地址。
-    notice: ''
-  - anchor: Local表示直接围绕电脑上的当前项目目录工作
-    fact_id: local-run-mode
-    url: https://learn.chatgpt.com/docs/environments/modes
-    locator: Local mode
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 文件需实际写入该目录；聊天文字不能证明写入。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：文件需实际写入该目录；聊天文字不能证明写入。
-    notice: ''
-  - anchor: 它允许在当前工作区范围内读写文件及执行常规本地操作，需要额外访问时再请求批准
-    fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Ask for approval
-    checked_on: '2026-09-29'
-    surface: codex-desktop
-    platforms: &id001
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 配置与组织决定具体边界；并非每次写入都批准，未泛化托管检索网络。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：配置与组织决定具体边界；并非每次写入都批准，未泛化托管检索网络。
-    notice: ''
-  - anchor: 这是对本次工作的约束，不会自动把权限切成只能读取。
-    fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Permission modes；task prompt vs control
-    checked_on: '2026-09-29'
-    surface: codex-desktop
-    platforms: *id001
-    availability: unspecified
-    conditions: 原件不动是工作要求；后文仍实际检查原件。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：原件不动是工作要求；后文仍实际检查原件。
-    notice: ''
-  - anchor: 上一章认识了成果预览，它便于边看边改，自动打开与支持格式仍有条件。
-    fact_id: artifact-preview
-    url: https://learn.chatgpt.com/docs/artifacts-viewer
-    locator: Preview files and settings
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 本例使用系统文本软件路线，不保证txt自动预览。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：本例使用系统文本软件路线，不保证txt自动预览。
-    notice: ''
-  - anchor: 留在刚才读取备忘的任务里，接着发送：
-    fact_id: codex-work-scenarios
-    url: https://learn.chatgpt.com/docs/use-chatgpt
-    locator: Review and refine；work with files
-    checked_on: '2026-09-29'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 连续自然语言交流，案例输出为原创示范，不假称桌面独立复现。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：连续自然语言交流，案例输出为原创示范，不假称桌面独立复现。
-    notice: ''
-  - anchor: 在Settings的快捷键设置中搜索Open folder，核对当前绑定
-    fact_id: desktop-file-shortcuts
-    url: https://learn.chatgpt.com/docs/reference/settings
-    locator: Keyboard shortcuts
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id002
-    availability: unspecified
-    conditions: 可自定义，具体平台界面仍待实测。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：可自定义，具体平台界面仍待实测。
-    notice: ''
-  unused_facts:
-    reasoning-default-guidance: 本章沿用第3章现有可用设置，不再讲档位；无该事实的新产品断言。
-  reading_reuse:
-  - url: https://learn.chatgpt.com/docs/artifacts-viewer
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/environments/modes
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/reference/commands
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/reference/settings
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

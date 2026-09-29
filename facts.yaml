@@ -3,11 +3,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -17,11 +17,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
   sources:
   - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: install
   status: confirmed
   critical: true
@@ -31,13 +31,13 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
   sources:
   - url: https://learn.chatgpt.com/docs/windows/windows-app
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: install
   status: confirmed
   critical: true
@@ -47,11 +47,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28正式首批重读Authentication的桌面登录与账号段；文档核对，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
   sources:
   - url: https://learn.chatgpt.com/docs/auth
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: account
   status: confirmed
   critical: true
@@ -61,13 +61,13 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读对应官方小节；文档确认，不是Windows/Mac GUI实测或稳定渠道认证
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
   sources:
   - url: https://learn.chatgpt.com/docs/pricing
-    checked_on: '2026-09-27'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/auth
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: quota
   status: confirmed
   critical: true
@@ -78,11 +78,11 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
   sources:
   - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -92,7 +92,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     - codex-cli
@@ -113,7 +113,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     - codex-cli
@@ -123,8 +123,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/artifacts-viewer
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -189,7 +189,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-26官方相关小节核对；平台为本书覆盖范围，未作双平台界面实测；原页未明示成熟度
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     - codex-cli
@@ -199,8 +199,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/automations
-    checked_on: '2026-09-26'
-  checked_on: '2026-09-26'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -313,7 +313,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28稿后补核environments/modes正文，未做GUI实测，原页未明示成熟度
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -322,8 +322,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/environments/modes
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -334,7 +334,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -343,10 +343,10 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/commands
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/reference/settings
-    checked_on: '2026-09-27'
-  checked_on: '2026-09-27'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -399,7 +399,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -408,10 +408,10 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/app
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/windows/windows-app
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -422,7 +422,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-27第一批写前实际阅读；未作安装或完整GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -430,8 +430,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -441,7 +441,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -499,7 +499,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订写前实读；成熟度未标明，未做GUI或双平台实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -519,7 +519,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28开篇修订定向重读；逐页日期见sources，其余前批阅读不刷新；仅文档确认，非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -528,8 +528,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -540,7 +540,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28反馈复核，实读Models的Choose a model、Power预设及Pick a reasoning effort；非GUI、账号默认或双平台实测；编排待迁入book.yaml
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -582,7 +582,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -591,8 +591,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/permission-modes
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: permission
   status: confirmed
   critical: true
@@ -627,7 +627,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -636,8 +636,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/automations
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -669,7 +669,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -678,8 +678,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/plugins
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -689,7 +689,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础使用版全程框架复核；仅所列官方正文，非GUI或账号可用性实测；候选章节位置见私有提纲，待迁入book.yaml
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -698,10 +698,10 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/prompting
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/reference/settings
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -731,7 +731,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -740,8 +740,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/slash-commands
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -793,7 +793,7 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础提纲反馈复核；仅所列官方段落确认，非GUI或账号开放实测；编排待迁入book.yaml
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
@@ -802,8 +802,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/agent-configuration/speed
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: quota
   status: confirmed
   critical: true
@@ -896,19 +896,19 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础使用版全程框架复核；关联候选章节见私有研究报告，正式book.yaml未迁移；非GUI实测
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
     surfaces:
     - codex-desktop
     platforms:
     - windows
     - mac
-    availability: rollout-dependent
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/features/voice
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/prompting
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: false
@@ -1126,6 +1126,7 @@
   ttl_days: 90
 - id: desktop-basic-navigation
   claim: 桌面可从New chat开始聊天；默认Windows Ctrl+N、Mac ⌘N新建，Ctrl+B/⌘B收放侧栏。输入区键入/打开当前可用命令列表，Codex用$显式调用技能；本地Codex的@入口可添加文件。设置可按命令名查看或修改快捷键，不能把默认键位当作所有安装的当前设置。
+    官方Commands另列Open command menu（Windows Ctrl+Shift+P、Mac ⌘⇧P）和Toggle bottom panel（Ctrl+J/⌘J）；可按命令名查找，界面面板按当前功能出现。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -1135,17 +1136,17 @@
     - windows
     - mac
     availability: unspecified
-    baseline: 2026-09-28首屏写前阅读Commands、Slash commands、Modes、Settings相关部分，非实机
+    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
   sources:
   - url: https://learn.chatgpt.com/docs/reference/commands
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/reference/slash-commands
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/environments/modes
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/reference/settings
-    checked_on: '2026-09-28'
-  checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
   category: startup
   status: confirmed
   critical: true
@@ -1216,3 +1217,52 @@
   category: startup
   checked_on: '2026-09-29'
   status: confirmed
+- id: desktop-update-policy
+  claim: 桌面应用通常自动检查并安装更新，内置更新默认启用；组织可管理并关闭它。Settings > General的In-app updates可显示Managed及组织关闭信息；Check
+    for Updates菜单存在不证明未受组织限制。应用与独立CLI的版本可不同，不能用CLI版本当桌面应用版本。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    baseline: 2026-09-29前四章写前实读；非GUI实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/enterprise/manage-app-updates
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/reference/troubleshooting
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
+  category: install
+  status: confirmed
+  critical: true
+  ttl_days: 90
+- id: task-materials-and-output
+  claim: 官方提示建议以成果为起点，补充相关材料、用途、格式及重要边界；生成文件时说明来源、文件类型、结构和检查标准。自然语言跟进可修改方向、补来源和调整详略；文件预览及附件不等于允许任意访问电脑原文件。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    baseline: 2026-09-29前四章写前实读；非GUI实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/artifacts-viewer
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/use-chatgpt
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
+  category: startup
+  status: confirmed
+  critical: true
+  ttl_days: 90

@@ -1,305 +1,114 @@
 schema: 2
 unit: desktop-setup
-input_sha256: 84e830c03a89fa387fc198affe3adedf3c759da38162d57c6150bd56fddd69b1
+input_sha256: f4be225c54986ff8fdff1724f7608c2f1ec7217dd1b4c2d904adc573dc4d526c
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-28'
-  base_manuscript_sha256: 0cebc17a2ec174501c9d9e5904e4b2ae908e59382310d67f55ed0f77e4e70555
-  reader_goal: 能够从真实Windows/Mac链接取得应用，完成登录、进入Codex，识别Windows首次设置和常见卡点。
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 10e46b461b70a51906a8a11b305dd051545d7bf255f0fea67b4758e30fecd05f
+  reader_goal: 读者能找到自己平台的官方包并理解登录与Windows首设，知道遇到不同故障到哪里核对。
   reader_start:
-  - 开篇和第1章将同批完成；尚未实际认识界面控件，不以旧第2章已教为前提。
+  - 第1章已说明应用、入口及工具；本章不假定终端或开发工具经验。
   explain_now:
-  - 平台与芯片适用条件
-  - 登录浏览器返回应用；账号工作区不是材料文件夹
-  - Windows沙箱配置与日常权限不同
+  - ChatGPT桌面应用与Codex入口的名称关系
+  - ChatGPT账号和API登录的区别
+  - Windows首次沙箱为何需要管理员
+  - 自动更新与组织更新控制
   official_readings:
-  - fact_id: desktop-platforms
-    url: https://learn.chatgpt.com/docs/quickstart
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 官方快速开始列有 macOS、Windows 和 Linux 桌面入口；本书规划主覆盖 Mac 与 Windows。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
-  - fact_id: desktop-entry
-    url: https://learn.chatgpt.com/docs/quickstart
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 当前官方快速开始在ChatGPT桌面应用的ChatGPT下拉菜单中提供Codex入口。 同页区分Chat、Work与Codex用途；Work面向研究分析和文档，Codex面向开发和文件工作，CLI是另一使用入口。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
   - fact_id: desktop-download-routes
     url: https://learn.chatgpt.com/docs/app
-    locator: Download links
-    checked_on: '2026-09-28'
-    understanding: 官方桌面页的Mac下载标Apple Silicon；Windows应用页链接Microsoft分发入口。两个平台需使用各自下载路线，不把Mac下载包通用于Windows或Intel
-      Mac。 2026-09-28实际点击官方Mac下载链接，目标为persistent.oaistatic.com/codex-app-prod/Codex.dmg；页面工具不支持二进制，不等于下载或安装成功。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Download for macOS (Apple Silicon)
+    checked_on: '2026-09-29'
+    understanding: Mac包与兼容条件明确，页面新名称与包内旧名称可能并存。
+    teaching_use: 说明按官方平台入口选择，保留链接失败兜底。
   - fact_id: windows-native
     url: https://learn.chatgpt.com/docs/windows/windows-app
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: Windows桌面支持原生运行；原生沙箱初次设置可能需要管理员批准，受管理环境可能受限；不等于日常都以管理员身份运行。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Native sandbox；Windows-native default
+    checked_on: '2026-09-29'
+    understanding: 可以原生使用，不强制WSL或开发工具。
+    teaching_use: 一般安装与开发环境加装分开。
   - fact_id: windows-first-setup
     url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    locator: Configure / Windows version matrix
-    checked_on: '2026-09-28'
-    understanding: Windows原生沙箱推荐Windows 11；新且完整更新的Windows 10为best effort，实际最低需1809。推荐elevated需要管理员批准设置；受组织策略约束；unelevated为较弱后备方案。
-      官方另将winget可用列为环境假定，缺失时需更新Windows或补Windows程序包管理器。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Version matrix；environment assumptions；Troubleshooting
+    checked_on: '2026-09-29'
+    understanding: 操作限制由沙箱承担，初始配置需批准，设备策略可能拦截。
+    teaching_use: 讲清为什么出现Set up，补winget缺失和组织失败下一步。
   - fact_id: sign-in-options
     url: https://learn.chatgpt.com/docs/auth
-    locator: Sign in with ChatGPT / desktop / profile menu
-    checked_on: '2026-09-28'
-    understanding: 桌面支持ChatGPT登录和API key；桌面未登录页Continue to sign in会打开浏览器，完成后凭据返回应用；个人菜单可查当前账号状态。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    locator: Desktop sign-in；Check authentication
+    checked_on: '2026-09-29'
+    understanding: 浏览器认证返回应用才构成桌面登录；另有API路径。
+    teaching_use: 围绕登录现象说明，不教密钥或终端。
+  - fact_id: desktop-update-policy
+    url: https://learn.chatgpt.com/docs/enterprise/manage-app-updates
+    locator: Default updater；Verify managed setting
+    checked_on: '2026-09-29'
+    understanding: 一般自动更新，菜单存在不代表组织允许。
+    teaching_use: 新增日后维护与查Managed的短段；不编造About位置。
+  - fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/settings
+    locator: Open Settings；Keyboard shortcuts
+    checked_on: '2026-09-29'
+    understanding: 设置有两平台快捷键，并可查绑定。
+    teaching_use: 为入口不显眼提供可查替代路径。
   - fact_id: mac-open-installer
     url: https://support.apple.com/en-au/guide/mac-help/-mh35835/mac
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
+    locator: 前批实际阅读Apple安装或About This Mac芯片段，本次复用
     checked_on: '2026-09-27'
     understanding: Mac从互联网取得的磁盘映像或安装包可打开后按提供的安装引导操作；应用安装动作不等于完成产品登录。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    teaching_use: Mac常规动作保持原范围；没有重新联网阅读或执行安装。
   - fact_id: mac-identify-chip
     url: https://support.apple.com/en-au/116943
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
+    locator: 前批实际阅读Apple安装或About This Mac芯片段，本次复用
     checked_on: '2026-09-28'
     understanding: Apple菜单的关于本机可查看芯片或处理器；Apple Silicon机型显示Chip及芯片名，Intel机型显示Processor及Intel处理器名。
-    teaching_use: 只讲本章当前动作所需部分；保持文档与GUI实测、教学建议与产品保证的区分。
+    teaching_use: Mac常规动作保持原范围；没有重新联网阅读或执行安装。
   teaching_sequence:
-  - 列两个直接下载链接及回退官方页面
-  - 分别讲Windows与Mac安装特殊条件
-  - 讲共同登录与Codex入口
-  - 解释Windows首次设置触发点并给定位排障
+  - 按平台提供直接入口和支持条件
+  - Windows和Mac各自说明准备与首次访问
+  - 浏览器认证后回应用确认账号
+  - 选择Codex、打开设置和核对更新
+  - 按停住位置给排障
   defer:
-  - 套餐购买、API密钥路线、WSL与终端安装
-  - 完整首屏导览挪到第3章
-  case_plan: 不使用私人文件或额外购买；只讲官方路径，尚未做的两平台安装不记为成功。
-study_commit: e3a38898e317004ee3987e0c608fcb855e21bd86
+  - winget命令安装教程
+  - API密钥创建
+  - 企业管理策略编辑
+  - 未经实机确认的About菜单层级
+  case_plan: 不伪造安装经历或拖放截图；按官方真实标签给步骤，winget只在该错误出现时解释用途与官方排障入口。
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照已保存写前提要与完整成稿，官方理解实际用于讲解顺序和案例；原稿祖先e3a3889存在，未借用retrospective。稿后补充事实关联另记，不回填写前计划。
-    本轮仅重审扩写开篇造成的前置变化，章节正文未变，原写前提要与study_commit不重建。
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 读者刚知道用途，先给下载与登录，再进入Codex，不要求终端或Git。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
-      2026-09-29连读：Astra开篇扩写不改变本章Windows/Mac准备路径，也没有要求先选Astra才能安装；安装/登录原事实原日期复用，GUI缺口不变。
+    result: pending
+    reason: 待按本章完整正文复核
   concept_timing:
-    result: pass
-    reason: 芯片、沙箱、账号工作区只在影响安装时解释；界面布局交第3章。
+    result: pending
+    reason: 待按本章完整正文复核
   information_value:
-    result: pass
-    reason: 保留系统/管理员/组织限制和浏览器返回；删原稿重复界面大段。
+    result: pending
+    reason: 待按本章完整正文复核
   natural_style:
-    result: pass
-    reason: 段落解释判断，平台差异和排障用表；未拆解下载等电脑常识。
+    result: pending
+    reason: 待按本章完整正文复核
   localization:
-    result: pass
-    reason: 保留Continue to sign in等真实词，Win/Mac分开，无地区可用承诺。
+    result: pending
+    reason: 待按本章完整正文复核
   independent_creation:
-    result: pass
-    reason: 官方事实独立叙述；没有仿造教程安装截图、作者经历或快捷安装方法。
+    result: pending
+    reason: 待按本章完整正文复核
 fact_review:
-  coverage: reviewed
-  reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
-    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。 2026-09-29连读：Astra开篇扩写不改变本章Windows/Mac准备路径，也没有要求先选Astra才能安装；安装/登录原事实原日期复用，GUI缺口不变。
-    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。 构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
-  docs_checked_on: '2026-09-28'
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
   change_review:
-    url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0新功能与修复；稿后定向复读2026-09-22 Sol/Luna开放条目
-    checked_on: '2026-09-29'
-    effect: 未据CLI更新改写桌面安装/控件路径；Sol/Luna开放条件与当前Models保留，不宣布全部账号稳定。9月22日此次定位为稿后反查，不倒填写前证据。
-  claims:
-  - anchor: Windows和Mac的安装过程分开说明；登录后，两种电脑可以沿着同一条主线学习。
-    fact_id: desktop-platforms
-    url: https://learn.chatgpt.com/docs/quickstart
-    locator: Desktop quickstart
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 指本书主线兼顾两平台，不是所有功能完全一致。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：指本书主线兼顾两平台，不是所有功能完全一致。
-    notice: ''
-  - anchor: '[下载Windows安装程序](https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi)'
-    fact_id: desktop-download-routes
-    url: https://learn.chatgpt.com/docs/windows/windows-app
-    locator: Download for Windows链接
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id001
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 官网目标已核对，直接点击Web返回InternalError；未实际下载或安装。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：官网目标已核对，直接点击Web返回InternalError；未实际下载或安装。
-    notice: ''
-  - anchor: '[下载Mac安装包](https://persistent.oaistatic.com/codex-app-prod/Codex.dmg)'
-    fact_id: desktop-download-routes
-    url: https://learn.chatgpt.com/docs/app
-    locator: Download for macOS (Apple Silicon)
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id001
-    availability: unspecified
-    conditions: Mac入口标为Apple Silicon；工具没有完成二进制下载。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：Mac入口标为Apple Silicon；工具没有完成二进制下载。
-    notice: ''
-  - anchor: Windows原生运行以Windows 11为推荐环境。
-    fact_id: windows-first-setup
-    url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    locator: Windows requirements
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id002
-    - windows
-    availability: unspecified
-    conditions: Win10较新且更新完整、最低1809、best-effort；正文保留组织限制。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：Win10较新且更新完整、最低1809、best-effort；正文保留组织限制。
-    notice: ''
-  - anchor: 桌面入门不要求先安装Git、Python或Node.js，也不需要先安装Linux环境。
-    fact_id: windows-native
-    url: https://learn.chatgpt.com/docs/windows/windows-app
-    locator: Native Windows support
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    availability: unspecified
-    conditions: 指桌面入门与本批文本案例，不推广到全部开发项目。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：指桌面入门与本批文本案例，不推广到全部开发项目。
-    notice: ''
-  - anchor: 第一次开始处理本地文件时，应用可能显示 **Set up Agent sandbox to continue**
-    fact_id: windows-first-setup
-    url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    locator: Set up Agent sandbox；elevated与unelevated
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id002
-    availability: unspecified
-    conditions: 可能在首次本地任务出现，推荐管理员设置，后备较弱及组织限制保留；非实际按钮截图。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：可能在首次本地任务出现，推荐管理员设置，后备较弱及组织限制保留；非实际按钮截图。
-    notice: ''
-  - anchor: 可以从苹果菜单进入「关于本机」，查看「芯片」一栏
-    fact_id: mac-identify-chip
-    url: https://support.apple.com/en-au/116943
-    locator: About This Mac；Chip/Processor
-    checked_on: '2026-09-28'
-    surface: os
-    platforms:
-    - mac
-    availability: unspecified
-    conditions: Apple芯片与Intel区分来自Apple官方，无本机界面实测。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：Apple芯片与Intel区分来自Apple官方，无本机界面实测。
-    notice: ''
-  - anchor: 打开从官方入口取得的安装包，按其中的引导完成安装，再启动应用。
-    fact_id: mac-open-installer
-    url: https://support.apple.com/en-au/guide/mac-help/-mh35835/mac
-    locator: Install apps from the internet
-    checked_on: '2026-09-28'
-    surface: os
-    platforms:
-    - mac
-    availability: unspecified
-    conditions: 只保留一般安装指引，不虚构Codex安装包拖放布局。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：只保留一般安装指引，不虚构Codex安装包拖放布局。
-    notice: ''
-  - anchor: 在未登录页面选择 **Continue to sign in**
-    fact_id: sign-in-options
-    url: https://learn.chatgpt.com/docs/auth
-    locator: Sign in with ChatGPT；browser authentication
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 已有可用ChatGPT账号；核对浏览器账号和回应用状态。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：已有可用ChatGPT账号；核对浏览器账号和回应用状态。
-    notice: ''
-  - anchor: 组织账号还应核对当前工作区是否符合预期。
-    fact_id: sign-in-options
-    url: https://learn.chatgpt.com/docs/auth
-    locator: Account and workspace status
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 工作区为账号管理范围；不等同电脑文件夹。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：工作区为账号管理范围；不等同电脑文件夹。
-    notice: ''
-  - anchor: 如果页面还提供API密钥等其他登录方式，本书继续使用ChatGPT账号。
-    fact_id: sign-in-options
-    url: https://learn.chatgpt.com/docs/auth
-    locator: Sign-in options
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 不要求本批创建API凭据。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：不要求本批创建API凭据。
-    notice: ''
-  - anchor: 在应用中的 **ChatGPT** 下拉菜单里选择 **Codex**
-    fact_id: desktop-entry
-    url: https://learn.chatgpt.com/docs/quickstart
-    locator: Desktop quickstart；Choose Codex；New chat
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 入口来自当前官方页；缺入口时核对可用条件，非所有账号保证。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：入口来自当前官方页；缺入口时核对可用条件，非所有账号保证。
-    notice: ''
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
   unused_facts: {}
-  reading_reuse:
-  - url: https://learn.chatgpt.com/docs/app
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/auth
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/quickstart
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/windows/windows-app
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://support.apple.com/en-au/116943
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
-  - url: https://support.apple.com/en-au/guide/mac-help/-mh35835/mac
-    checked_on: '2026-09-28'
-    from_batch: basics-batch1-20260928
-    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
