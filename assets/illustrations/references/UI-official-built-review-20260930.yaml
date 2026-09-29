@@ -1,0 +1,70 @@
+id: UI-official-built-review-20260930
+source_url: https://openai.com/zh-Hans-CN/codex/
+asset_url: https://images.ctfassets.net/kftzwdyauwt9/3VNkIvFSqReRhjyqqBUOjd/cea1689f7e9ce0215dd3699e7befd6b0/Built.png?w=3840&q=80&fm=webp
+product: Codex
+surface: desktop
+platform: unknown
+version: unknown
+environment: official-product-image
+ui_locale: en
+state: changed-files-summary
+status: verified
+sanitized: true
+reviewed_by: Codex；实际查看原始WebP及同像素PNG
+checked_on: '2026-09-30'
+viewed_image_sha256: 80fc01f562962e0d6d67e0796c1c9aff6aa8d83f4bec80ebbed595319a6d6d8a
+source_kind: official-product-image-not-local-capture
+limitations:
+- 官方产品宣传页中的裁切画面，未公开客户端版本和采集环境；不能证明本机或两平台操作成功。
+- 只核对图内局部原文与相对位置，不推断完整窗口、菜单、点击后的状态或最新账号可见性。
+- 原图深色模式案例不采用，背景与文案不复制入手绘；仅取必要控件作教学定位。
+regions:
+- id: changed-files
+  box:
+  - 0.363
+  - 0.85
+  - 0.467
+  - 0.891
+  text: Changed 8 files
+  treatment: keep
+  reason: 保留官方示例中的文件数摘要，不能改成自编案例的数量冒充实测。
+- id: review
+  box:
+  - 0.594
+  - 0.85
+  - 0.662
+  - 0.891
+  text: Review
+  treatment: keep
+  reason: 原图右侧入口与右指向符号，作为本张手绘要强调的区域。
+- id: summary-row
+  box:
+  - 0.319
+  - 0.832
+  - 0.681
+  - 0.915
+  text: ''
+  treatment: simplify
+  reason: 保留横向摘要框、左侧文件图标及右侧Review位置；中部增删数本图不讲，省略。
+- id: source-example
+  box:
+  - 0.313
+  - 0.183
+  - 0.689
+  - 0.809
+  text: ''
+  treatment: omit
+  reason: 深色模式案例与本章无关，不复制原文或换成本书案例伪造实机结果。
+- id: marketing-background
+  box:
+  - 0
+  - 0
+  - 0.28
+  - 1
+  text: ''
+  treatment: omit
+  reason: 宣传渐变不属于要讲解的界面控件，最终采用本书固定方格纸。
+image_sha256: 80fc01f562962e0d6d67e0796c1c9aff6aa8d83f4bec80ebbed595319a6d6d8a
+dimensions:
+- 3129
+- 1760

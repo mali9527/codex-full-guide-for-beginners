@@ -1,0 +1,8 @@
+title: 从回复走到修改检查
+caption: 官方示例中的修改摘要：左侧显示改动文件数，右侧是Review入口。这里的8是原图示例数量。
+alt: 手绘放大官方图中的摘要条，左侧Changed 8 files，右侧Review；作者圈注分别指向修改摘要与检查入口。
+labels:
+  count: Changed 8 files
+  review: Review
+  summary: 修改摘要
+  inspect: 检查入口
