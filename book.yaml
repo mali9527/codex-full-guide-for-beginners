@@ -152,6 +152,8 @@ units:
   facts:
   - usage-availability
   - usage-windows-and-credits
+  - sign-in-options
+  - desktop-slash-entries
   derived_from: null
 - id: models-effort
   title: 第6章 模型、Effort和快速模式，应该怎么选
@@ -168,6 +170,7 @@ units:
   - gpt6-model-use-position
   - fast-mode-choice
   - desktop-slash-entries
+  - desktop-file-shortcuts
   derived_from: null
 - id: permissions
   title: 第7章 权限与批准：哪些事需要你决定
@@ -183,6 +186,8 @@ units:
   - auto-review-routing
   - permission-modes-enablement
   - desktop-approve-retry
+  - hosted-search-boundary
+  - desktop-file-shortcuts
   derived_from: null
 - id: running-control
   title: 第8章 看懂运行过程：补充、排队、停止和继续
@@ -198,6 +203,7 @@ units:
   - desktop-slash-entries
   - desktop-voice-options
   - desktop-notification-activity
+  - desktop-file-shortcuts
   derived_from: null
 - id: materials
   title: 第9章 把材料交对：文件、图片、链接与应用快照

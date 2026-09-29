@@ -1,0 +1,84 @@
+schema: 2
+unit: permissions
+input_sha256: 6e30961da07b90c306b328fc4eba9418343fc74f04f0e8d1f176df7396a83203
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 4e99fac2ba5ed7a189e7cc1ea7e52f5da6b186b86907111ac629295009745b89
+  reader_goal: 能在当前任务选择权限，读请求并批准/拒绝，理解自动审核的边界。
+  reader_start:
+  - 第3/4章实际选过Ask for approval，知道工作文件夹；不懂沙箱和不同授权层。
+  explain_now:
+  - 允许范围与谁来批准
+  - 模式启用和选中
+  - 请求对象/动作/影响与拒绝后续
+  official_readings:
+  - fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Enable modes; How permissions work
+    checked_on: '2026-09-29'
+    understanding: 当前工作区允许常规操作，越界才需要批准；项目名不是技术隔离。
+    teaching_use: 先读当前选择，模式介绍后再给可选切换路径。
+  - fact_id: auto-review-routing
+    url: https://learn.chatgpt.com/docs/sandboxing/auto-review
+    locator: How; When; Denials
+    checked_on: '2026-09-29'
+    understanding: 自动审核更换审核者，不能替代应用级批准；拒绝需解释。
+    teaching_use: 原创复制输出至另一目录的情境，明确是示意请求非实录。
+  - fact_id: desktop-approve-retry
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /approve
+    checked_on: '2026-09-29'
+    understanding: 只适用最近自动拒绝的一次重试，不永久开锁。
+    teaching_use: 先理解拒绝再介绍菜单，保留组织限制。
+  - fact_id: hosted-search-boundary
+    url: https://learn.chatgpt.com/docs/web-search
+    locator: Configure local web search
+    checked_on: '2026-09-29'
+    understanding: 托管搜索和本地命令联网不是同一权限。
+    teaching_use: 解释为何已能搜索又遇联网请求，不带配置课。
+  teaching_sequence:
+  - 当前任务→核对权限控件→理解模式→需要其他模式时设置启用再回任务选中
+  - 出现请求→读对象/动作/范围→批准或拒绝→看执行结果；不明白先问解释
+  defer:
+  - 不教配置文件或解除组织限制
+  - 连接授权第21章、系统应用授权第23章详讲
+  case_plan: 用当前清单另存范围和不代办待办讲批准判断，假设的请求明确不是实际卡片。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

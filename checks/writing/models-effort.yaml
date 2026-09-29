@@ -1,0 +1,78 @@
+schema: 2
+unit: models-effort
+input_sha256: 38e6a80e496472945f83d50f19976e07d4ca5c17298de1fb0de22253a5c02634
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 8fa5a21eb5d0fa3d02830c1420a7e5224ebf445d5479542d0c2f793d9a8b04b4
+  reader_goal: 在当前任务找到模型和Effort，知道从哪档起步及何时调整。
+  reader_start:
+  - 会打开当前任务，了解用量；已见Power/Advanced但未系统比较档位。
+  explain_now:
+  - 模型、Effort、Speed区别
+  - Power与Advanced实际选择顺序
+  - Light等起点与Max/Ultra范围
+  official_readings:
+  - fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model; Pick a reasoning effort; Max or Ultra
+    checked_on: '2026-09-29'
+    understanding: 预设与可分选设置不同，推荐起点不是实际默认；Ultra不是单纯多想。
+    teaching_use: 先控件再选择，再以备忘缺数量/冲突比较何时应升档。
+  - fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/model-selection
+    locator: Meet the models; Experiment
+    checked_on: '2026-09-29'
+    understanding: 模型按任务结构选择，同输入比较才有意义。
+    teaching_use: 用本书原创材料说明模型不足与材料缺失的区别。
+  - fact_id: fast-mode-choice
+    url: https://learn.chatgpt.com/docs/agent-configuration/speed
+    locator: Fast mode
+    checked_on: '2026-09-29'
+    understanding: 速度与推理投入独立，增加消耗不保证整个任务同比例变快。
+    teaching_use: 不教CLI on/off语法，桌面以可见菜单核对开关。
+  teaching_sequence:
+  - 当前任务→输入区模型控件→先读Power→需要明确型号时Advanced→选择型号/Effort→核对显示
+  - 同一小材料→先检查结果类型→一次调整一个变量→保留能满足要求的设置
+  defer:
+  - 参数规格/计价表不纳入
+  - 子代理完整判断第18章，Ultra这里只解释必要区别
+  case_plan: 沿原创四项待办对比事实提取与含混判断，情境为教学建议，不称实际模型性能对比。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

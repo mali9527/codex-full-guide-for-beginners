@@ -1,0 +1,86 @@
+schema: 2
+unit: running-control
+input_sha256: 635874927ba0c0fe15b32de81e692e7ea369049ce9ef10c8471dbf28e7320a5d
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 30edd4bee4f8f39e3d2689f25223548bd0c547de0f2334705895ae2ab318966c
+  reader_goal: 知道当前在等谁，怎样补充、排队、要求停下并核对已产生结果。
+  reader_start:
+  - 已会发送、保存、选模型与权限；未学队列/侧聊，普通桌面停止入口仍待核验。
+  explain_now:
+  - 运行状态与成果状态不同
+  - Steer与Queue的设置、队列管理
+  - side仅临时询问，停止请求需确认
+  - 通知与可选语音开始结束
+  official_readings:
+  - fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Steering and queuing
+    checked_on: '2026-09-29'
+    understanding: 补充是当前引导还是下一轮由设置决定，不能抄CLI按键。
+    teaching_use: 先General设行为、再发补充并查队列；停止后核对文件。
+  - fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /side
+    checked_on: '2026-09-29'
+    understanding: 侧聊不打断主任务，不能当成改变主任务的指令。
+    teaching_use: 先问解释，关键改变仍回主任务发送。
+  - fact_id: desktop-notification-activity
+    url: https://learn.chatgpt.com/docs/notifications
+    locator: Configure desktop; Activity
+    checked_on: '2026-09-29'
+    understanding: 不同通知对应需要注意，不证明成果正确。
+    teaching_use: 教设置与返回任务检查；无界面截图不画铃铛位置。
+  - fact_id: desktop-voice-options
+    url: https://learn.chatgpt.com/docs/features/voice
+    locator: Start talking; Limits
+    checked_on: '2026-09-29'
+    understanding: 已有任务语音逐步开放，Stop voice chat停止的是语音。
+    teaching_use: 可选路径完整交代开始/麦克风/结束，不把它当停止文件任务。
+  teaching_sequence:
+  - 读当前状态→等输入则回答或处理批准→需要改方向先确认Steer/Queue→发送并看实际处理
+  - 要撤回后续工作→Steer明确停止要求→等确认并清理不再需要的队列→检查已有文件；不是即时终止保证
+  - side问解释后回主任务；通知/语音均可选且有退出方法
+  defer:
+  - 普通直接停止按钮/快捷键缺证保持原待核验，不猜
+  - Goal暂停第17章；跨天接续第12/13章
+  case_plan: 续用四项待办，只做只读/另存副本的运行示例；没有人为制造可恢复失败或展示假工具日志。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

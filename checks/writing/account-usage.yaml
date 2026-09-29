@@ -1,0 +1,78 @@
+schema: 2
+unit: account-usage
+input_sha256: 540fef8b2e4c71361c09fda7b2b7306d354b93e124a6d8a15ffa6cdd3cc8f978
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 11426c1c7d04bf97e5b527af1995e0e9ffcfb5cd1d1e31ae76b7f6f0b50d74d7
+  reader_goal: 看懂当前登录身份、额度窗口及重置时间，遇到限制能分清原因。
+  reader_start:
+  - 已登录Codex并完成第4章文件任务；不懂token/credits，不假定读者知道当前组织工作区。
+  explain_now:
+  - 身份与本地项目不同
+  - 额度、token和credits各表示什么
+  - 看实际剩余与限制后采取行动
+  official_readings:
+  - fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: 'FAQ: usage limits / tokens and credits'
+    checked_on: '2026-09-29'
+    understanding: 一句消息不是固定计费单位，不同窗口与账号规则不能混用。
+    teaching_use: 先打开个人用量，再用虚构数值解释百分比；不列表套餐价格。
+  - fact_id: sign-in-options
+    url: https://learn.chatgpt.com/docs/auth
+    locator: OpenAI authentication
+    checked_on: '2026-09-29'
+    understanding: 订阅身份和API身份对应不同规则。
+    teaching_use: 只沿已有付费ChatGPT登录，API作为识别误入的说明。
+  - fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /status
+    checked_on: '2026-09-29'
+    understanding: 桌面状态显示任务、上下文和限额；上下文不是账号额度。
+    teaching_use: 教在输入区选择菜单项及分别读标签。
+  teaching_sequence:
+  - 已登录→个人菜单核对身份→官方用量页核对同一账号→读窗口/剩余/重置时间
+  - 当前任务输入/→选择/status→分清上下文与限额→按错误种类处理
+  defer:
+  - 不讲购买套餐或API密钥
+  - 上下文压缩在第13章，当前只分清两个百分比
+  case_plan: 用明确标注的虚构剩余比例解释可用量，不展示本人账号或编造实测截图。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

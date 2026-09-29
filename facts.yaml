@@ -103,6 +103,8 @@
   sources:
   - url: https://learn.chatgpt.com/docs/permission-modes
     checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/reference/commands
+    checked_on: '2026-09-29'
   checked_on: '2026-09-29'
   category: permission
   status: confirmed
@@ -535,8 +537,8 @@
   critical: true
   ttl_days: 90
 - id: reasoning-default-guidance
-  claim: 官方Models建议从账号可用的默认Power设置起步；Advanced中可分选模型、Effort和速度。Pick a reasoning effort给出Sol
-    Medium、Luna High、Astra Light的起步建议；这是建议，不是所有账号实际选中值。页面示意的起始预设与实际默认还受套餐、客户端、工作区和开放进度影响。
+  claim: 官方Models建议先用账号当前可用Power；Advanced分选模型、Effort和速度。起步建议Sol Medium、Luna High、Astra
+    Light，并非统一实际默认。Light/Medium/High/Extra High随任务分析需要选择，代际不能机械对应。Max增加单任务推理投入；Ultra用子代理并行，Luna不支持Ultra；可用项仍受模型/账号/设置影响。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -769,7 +771,7 @@
   critical: true
   ttl_days: 90
 - id: usage-windows-and-credits
-  claim: 官方pricing的五小时消息数是估计，非固定消息上限；周限额可能适用。采用灵活计费的Enterprise/Edu没有固定速率限制，使用按credits扩展。当前余额和重置时间以账号用量面板为准，不能把同一窗口规则推广到所有账号。
+  claim: 官方pricing的五小时消息数为估计，非固定条数；周限额可能适用，灵活计费Enterprise/Edu规则不同。Work与Codex共享用量，tokens计量输入/输出等信息，credits用于适用的用量计费。模型、上下文、推理、工具和缓存均影响消耗；以当前账号用量面板的范围、余额、重置时间为准。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -1066,7 +1068,7 @@
     platforms:
     - windows
     - mac
-    availability: conditional
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/slash-commands
     checked_on: '2026-09-28'
