@@ -1,9 +1,9 @@
 schema: 2
 unit: intro
-input_sha256: c0f0b5ca6547c737e25432b1cf7fb781b167a60e5b5ee5a0db0eb9201e13bce0
+input_sha256: 19f88664ae505e75118b04fa233a2bfcd9b4546465fdd68a5f0ca0800c1523b4
 evidence_paths: []
-batch_started_on: '2026-09-28'
-reviewed_on: '2026-09-28'
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
   mode: revision
@@ -52,10 +52,12 @@ study_commit: e3a38898e317004ee3987e0c608fcb855e21bd86
 study_review:
   result: pass
   reason: 对照已保存写前提要与完整成稿，官方理解实际用于讲解顺序和案例；原稿祖先e3a3889存在，未借用retrospective。稿后补充事实关联另记，不回填写前计划。
+    本轮仅重审扩写开篇造成的前置变化，章节正文未变，原写前提要与study_commit不重建。
 reader_review:
   prior_knowledge:
     result: pass
     reason: 只依赖开篇的模型工具区别，未假定已会路径或安装。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
+      2026-09-29连读：开篇新增Astra具体协作能力，本章仍负责Codex整体用途与Chat/Work/Codex关系；少量价值回顾用于衔接，不增加安装或模型设置前置。
   concept_timing:
     result: pass
     reason: 先具体用途后交流流程再入口选择，程序就地解释用途。
@@ -74,19 +76,20 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
-    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
+    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。 2026-09-29连读：开篇新增Astra具体协作能力，本章仍负责Codex整体用途与Chat/Work/Codex关系；少量价值回顾用于衔接，不增加安装或模型设置前置。
+    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-26 CLI 0.157.1与2026-09-25 CLI 0.157.0开篇
-    checked_on: '2026-09-28'
-    effect: 本轮未发现可据以替换桌面路径的更新；CLI记录不作为桌面稳定版证明。型号开放条件以Models当前正文及已有同日型号研究为准。
+    locator: 2026-09-28 CLI 0.158.0新功能与修复；稿后定向复读2026-09-22 Sol/Luna开放条目
+    checked_on: '2026-09-29'
+    effect: 未据CLI更新改写桌面安装/控件路径；Sol/Luna开放条件与当前Models保留，不宣布全部账号稳定。9月22日此次定位为稿后反查，不倒填写前证据。
   claims:
   - anchor: 你用日常语言说明要求，提供需要的材料，它可以在允许的范围内读取、处理和修改文件，调用工具完成任务。
     fact_id: codex-work-scenarios
     url: https://learn.chatgpt.com/docs/use-chatgpt
     locator: Use ChatGPT；Start with a goal与Codex/Work工作范围
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
     surface: codex-desktop
     platforms: &id001
     - windows
@@ -100,7 +103,7 @@ fact_review:
     fact_id: codex-work-scenarios
     url: https://learn.chatgpt.com/docs/use-chatgpt
     locator: Use ChatGPT；研究用途与Connect tools
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
     surface: codex-desktop
     platforms: *id001
     availability: unspecified
@@ -112,7 +115,7 @@ fact_review:
     fact_id: codex-work-scenarios
     url: https://learn.chatgpt.com/docs/use-chatgpt
     locator: Codex coding及知识工作重叠
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
     surface: codex-desktop
     platforms: *id001
     availability: unspecified
@@ -124,7 +127,7 @@ fact_review:
     fact_id: codex-work-scenarios
     url: https://learn.chatgpt.com/docs/use-chatgpt
     locator: Choose Chat, Work, or Codex
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
     surface: codex-desktop
     platforms: *id001
     availability: unspecified
@@ -136,7 +139,7 @@ fact_review:
     fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
     locator: Permission modes与限制范围
-    checked_on: '2026-09-28'
+    checked_on: '2026-09-29'
     surface: codex-desktop
     platforms:
     - windows
@@ -175,3 +178,12 @@ fact_review:
     rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：Chat/Work/Codex职责表是文档用途概括，CLI/扩展不作为桌面前置。
     notice: ''
   unused_facts: {}
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/artifacts-viewer
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+  - url: https://learn.chatgpt.com/docs/quickstart
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。

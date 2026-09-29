@@ -1,9 +1,9 @@
 schema: 2
 unit: desktop-setup
-input_sha256: f62fedb063c32b4658272d1aacf9e77397708ca2ecea1c4f467de476f3a53d98
+input_sha256: 25a36d0cef47f7969aca3bfb779ddc45ab7fef731ca593a2b32c3260dbea9aba
 evidence_paths: []
-batch_started_on: '2026-09-28'
-reviewed_on: '2026-09-28'
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
   mode: revision
@@ -80,10 +80,12 @@ study_commit: e3a38898e317004ee3987e0c608fcb855e21bd86
 study_review:
   result: pass
   reason: 对照已保存写前提要与完整成稿，官方理解实际用于讲解顺序和案例；原稿祖先e3a3889存在，未借用retrospective。稿后补充事实关联另记，不回填写前计划。
+    本轮仅重审扩写开篇造成的前置变化，章节正文未变，原写前提要与study_commit不重建。
 reader_review:
   prior_knowledge:
     result: pass
     reason: 读者刚知道用途，先给下载与登录，再进入Codex，不要求终端或Git。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
+      2026-09-29连读：Astra开篇扩写不改变本章Windows/Mac准备路径，也没有要求先选Astra才能安装；安装/登录原事实原日期复用，GUI缺口不变。
   concept_timing:
     result: pass
     reason: 芯片、沙箱、账号工作区只在影响安装时解释；界面布局交第3章。
@@ -102,13 +104,14 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
-    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
+    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。 2026-09-29连读：Astra开篇扩写不改变本章Windows/Mac准备路径，也没有要求先选Astra才能安装；安装/登录原事实原日期复用，GUI缺口不变。
+    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-26 CLI 0.157.1与2026-09-25 CLI 0.157.0开篇
-    checked_on: '2026-09-28'
-    effect: 本轮未发现可据以替换桌面路径的更新；CLI记录不作为桌面稳定版证明。型号开放条件以Models当前正文及已有同日型号研究为准。
+    locator: 2026-09-28 CLI 0.158.0新功能与修复；稿后定向复读2026-09-22 Sol/Luna开放条目
+    checked_on: '2026-09-29'
+    effect: 未据CLI更新改写桌面安装/控件路径；Sol/Luna开放条件与当前Models保留，不宣布全部账号稳定。9月22日此次定位为稿后反查，不倒填写前证据。
   claims:
   - anchor: Windows和Mac的安装过程分开说明；登录后，两种电脑可以沿着同一条主线学习。
     fact_id: desktop-platforms
@@ -271,3 +274,32 @@ fact_review:
     rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：入口来自当前官方页；缺入口时核对可用条件，非所有账号保证。
     notice: ''
   unused_facts: {}
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/app
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+  - url: https://learn.chatgpt.com/docs/auth
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+  - url: https://learn.chatgpt.com/docs/quickstart
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+  - url: https://learn.chatgpt.com/docs/windows/windows-app
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+  - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+  - url: https://support.apple.com/en-au/116943
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。
+  - url: https://support.apple.com/en-au/guide/mac-help/-mh35835/mac
+    checked_on: '2026-09-28'
+    from_batch: basics-batch1-20260928
+    reason: 本章正文未变；本轮完整连读后确认扩写前置不改变此断言。沿用前批真实原页阅读，未冒称29日重新打开该页。

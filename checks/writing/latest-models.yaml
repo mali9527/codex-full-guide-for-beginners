@@ -1,6 +1,6 @@
 schema: 2
 unit: latest-models
-input_sha256: b1b81d7b06f5953b517b12e77f2d3052bdeea1661117e7d0df11674ff2134827
+input_sha256: bc824a6007df34074b04ac2e7faf586935a07e22852b7fa5c72138a02751c212
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -95,35 +95,413 @@ study_brief:
   case_plan: 沿用本书两份备忘作轻量预告；新增两份设备说明与个人需求对比的假设情景，不填真实品牌价格；自编整理说明稿请求，仅展示提法，不冒充实际Astra运行。
 study_commit: 47cd3c617f19ff4e7c45b5effa77cf04a189af24
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 对固定成稿c5f544f逐段比对47cd3c6的写前提要：官方持续判断/关键补问/文风倾向进入四种用途与配合方法，模型模态与工具分开；未将API规格或示例迁作桌面保证。学习顺序确实影响成稿，而非稿后补链接。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 从两条提醒解释连续判断，再讲资料比较与成果；推理先通过截止时间和重复事项说明。尚未安装者可理解，未要求先会路径、终端或Git。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先价值和情景，再模型/工具分工，最后Effort与最短入口；图片输入的用途先于能力名称。第6章仍承担完整设置，不在开篇展开API或Skill安装。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 新增多材料判断、看图与修改之别、关键补问、第一版后何时继续、回复文风，均连接用户可作的选择；型号表保持短，不靠跑分和规格扩篇。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 全文通读：设备需求与维护例子说明事实/推测，独立请求说明完成边界；没有翻译式参数堆积、虚构作者经历或常识扩写。限定语只保留影响判断的条件。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 设备/家人/提醒案例不绑定地区语种；中文引号统一，Power/Advanced/Light保留真实名称；没有以某国账号或本机界面代表全部用户。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 对照实际官方文章与既有来源记录：正文以自编设备材料、说明稿、截图/原文件情景组织，不复刻博客技能数据库示例、代码、结构或原教程独特案例。两条备忘来自本书已有原创材料；未虚称本轮新读第三方教程。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读c5f544f全篇、review-packet非穷尽候选与写前官方笔记，逐段反查价值、图像模态、工具、关键补问、反馈、文风、完成边界、三模型定位、Effort及入口。27处产品说明关联8事实；推理通俗解释、设备/说明稿情景、检查与路径预告属于教学归纳和自编要求，未当成性能或GUI证据。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0新功能与修复；稿后定向复读2026-09-22 Sol/Luna开放条目
+    checked_on: '2026-09-29'
+    effect: 未据CLI更新改写桌面安装/控件路径；Sol/Luna开放条件与当前Models保留，不宣布全部账号稳定。9月22日此次定位为稿后反查，不倒填写前证据。
+  claims:
+  - anchor: OpenAI把它定位为面向高难度完整任务的模型，强调跨资料、跨工具、跨步骤的判断能力。
+    fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/models
+    locator: Where each model shines；Choose a model
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。正文是官方定位，不是比较测试或所有任务效果承诺。
+    support: supported
+    rationale: 正文是官方定位，不是比较测试或所有任务效果承诺。
+    notice: ''
+  - anchor: 它要根据前面读到的内容决定下一步，使用可用工具处理材料，再把你的新意见接到原任务上。
+    fact_id: astra-collaboration-behavior
+    url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
+    locator: Introduction；GPT-6 Astra behavior
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。以备忘情景解释跨步骤处理与反馈能力；具体清单不是本轮运行证据。
+    support: supported
+    rationale: 以备忘情景解释跨步骤处理与反馈能力；具体清单不是本轮运行证据。
+    notice: ''
+  - anchor: Astra的官方用途包括研究、文档制作和软件工作
+    fact_id: astra-model-input-tools
+    url: https://developers.openai.com/api/docs/models/gpt-6-astra
+    locator: Model description
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。型号页描述computer use/research/document creation；正文不移用API规格。
+    support: supported
+    rationale: 型号页描述computer use/research/document creation；正文不移用API规格。
+    notice: ''
+  - anchor: Codex也支持研究、文档等知识工作，并不要求所有任务都从写代码开始。
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Compare Work and Codex
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。Work/Codex知识工作有重叠；不保证所有文件格式或外部连接。
+    support: supported
+    rationale: Work/Codex知识工作有重叠；不保证所有文件格式或外部连接。
+    notice: ''
+  - anchor: 你不必重新开始，可以继续说：
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Review and iterate；Refine
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。原任务内继续反馈的用法，自编请求不规定模型必得同样结果。
+    support: supported
+    rationale: 原任务内继续反馈的用法，自编请求不规定模型必得同样结果。
+    notice: ''
+  - anchor: Astra本身支持图像输入，可以结合你提供的图片理解问题
+    fact_id: astra-model-input-tools
+    url: https://developers.openai.com/api/docs/models/gpt-6-astra
+    locator: Modalities：image input only
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。输入模态不是图片生成能力；截图中的具体问题是自编情景。
+    support: supported
+    rationale: 输入模态不是图片生成能力；截图中的具体问题是自编情景。
+    notice: ''
+  - anchor: 提供截图时，再说明希望它关注哪一块，会更有帮助。
+    fact_id: astra-model-input-tools
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Add useful context
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。官方建议指出相关区域；不宣称识图或版面修改必然准确。
+    support: supported
+    rationale: 官方建议指出相关区域；不宣称识图或版面修改必然准确。
+    notice: ''
+  - anchor: 后者还要能访问文件，并有相应的操作工具与权限。
+    fact_id: astra-model-input-tools
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Files；Connect tools；feature availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。看图片与实际修改分开；实际工具和授权是额外条件。
+    support: supported
+    rationale: 看图片与实际修改分开；实际工具和授权是额外条件。
+    notice: ''
+  - anchor: 官方特别提到Astra吸收新要求、调整方向和围绕原目标持续工作的能力
+    fact_id: astra-collaboration-behavior
+    url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
+    locator: GPT-6 Astra behavior；Steerability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。能力定位与具体补充情景分开，不保证每条运行中消息即时生效。
+    support: supported
+    rationale: 能力定位与具体补充情景分开，不保证每条运行中消息即时生效。
+    notice: ''
+  - anchor: 也指出它会在重要信息缺失时提出有针对性的问题。
+    fact_id: astra-collaboration-behavior
+    url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
+    locator: Initiative and follow-through
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。涉及重要选择时的行为倾向；例子用「可能」而非固定触发承诺。
+    support: supported
+    rationale: 涉及重要选择时的行为倾向；例子用「可能」而非固定触发承诺。
+    notice: ''
+  - anchor: 这是一种工作约定，不会替代应用里的权限设置。
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Permission modes；configured boundaries
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。指令要求与软件访问控制分层，不把默认批准扩大为全部权限。
+    support: supported
+    rationale: 指令要求与软件访问控制分层，不把默认批准扩大为全部权限。
+    notice: ''
+  - anchor: 模型负责理解、判断和组织内容；读取文件、搜索网页、执行计算或操作应用，还需要相应工具。
+    fact_id: astra-model-input-tools
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Start with a goal；Add context；Connect tools
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。常用工作组成的教学归纳，不声称所有平台均安装或连接相应工具。
+    support: supported
+    rationale: 常用工作组成的教学归纳，不声称所有平台均安装或连接相应工具。
+    notice: ''
+  - anchor: 换了模型，不会自动补齐缺少的材料，也不会自动获得某个账号、网站或文件夹的访问权。
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Permission boundaries；Availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。换型号不授予访问权；材料仍需提供或通过已授权工具取得。
+    support: supported
+    rationale: 换型号不授予访问权；材料仍需提供或通过已授权工具取得。
+    notice: ''
+  - anchor: 你在桌面上具体能用哪些功能，仍取决于平台、账号、工具和授权。
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Work and Codex availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。正文保留官方平台/计划/开放/管理条件，不把API工具支持等同桌面可用。
+    support: supported
+    rationale: 正文保留官方平台/计划/开放/管理条件，不把API工具支持等同桌面可用。
+    notice: ''
+  - anchor: 更有用的是交代想得到什么、哪些材料有关、重要限制是什么；只有过程本身影响结果时，才规定具体步骤。
+    fact_id: astra-outcome-guidance
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Describe the result；Add useful context；Set boundaries
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。归纳官方提示建议，后接独立设计的新版说明请求，不复制官方模板。
+    support: supported
+    rationale: 归纳官方提示建议，后接独立设计的新版说明请求，不复制官方模板。
+    notice: ''
+  - anchor: Astra有时会在完成第一版后回来等你判断
+    fact_id: astra-collaboration-behavior
+    url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
+    locator: Persistence
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。官方文章描述某些工作会提前停止；「有时」保留边界，不说模型必须无限继续。
+    support: supported
+    rationale: 官方文章描述某些工作会提前停止；「有时」保留边界，不说模型必须无限继续。
+    notice: ''
+  - anchor: 要提前说明做到哪里才算结束。
+    fact_id: astra-outcome-guidance
+    url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
+    locator: Persistence；decision boundaries
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。把完成边界写入要求是使用建议；保留先方案后确认的另一合理目标。
+    support: supported
+    rationale: 把完成边界写入要求是使用建议；保留先方案后确认的另一合理目标。
+    notice: ''
+  - anchor: 它可能偏向详细、格式较多的回复。
+    fact_id: astra-collaboration-behavior
+    url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
+    locator: Personality and writing style
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。官方倾向说明，具体段落或清单选择由读者目标决定。
+    support: supported
+    rationale: 官方倾向说明，具体段落或清单选择由读者目标决定。
+    notice: ''
+  - anchor: 需要联系多份材料、处理含混要求、权衡不同条件，或把几个环节连续做完时，可以优先考虑Astra。
+    fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/model-selection
+    locator: Pick a model；Astra/Sol/Luna；Effort
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。覆盖本节三型号表的用途归纳；角色重叠，非唯一选择或跑分结论。
+    support: supported
+    rationale: 覆盖本节三型号表的用途归纳；角色重叠，非唯一选择或跑分结论。
+    notice: ''
+  - anchor: 比较时可以使用相同材料和要求，看结果是否漏信息、是否满足限制，以及需要等多久。
+    fact_id: astra-outcome-guidance
+    url: https://learn.chatgpt.com/docs/model-selection
+    locator: Experiment
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。同输入比较与选择较轻够用设置；核对项由本书任务自行设计。
+    support: supported
+    rationale: 同输入比较与选择较轻够用设置；核对项由本书任务自行设计。
+    notice: ''
+  - anchor: Effort指模型在处理任务时的思考投入。
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Pick a reasoning effort
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。解释推理投入而非回复字数；复杂判断/等待和消耗的关系限于可能改善。
+    support: supported
+    rationale: 解释推理投入而非回复字数；复杂判断/等待和消耗的关系限于可能改善。
+    notice: ''
+  - anchor: 官方建议从 **Light** 开始
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Pick a reasoning effort：Astra Light
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。这是Astra建议起点，不是全部模型、账号已选中的默认档。
+    support: supported
+    rationale: 这是Astra建议起点，不是全部模型、账号已选中的默认档。
+    notice: ''
+  - anchor: 投入增加，可能改善复杂判断，也会增加等待和使用消耗。
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Pick a reasoning effort
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。官方时间/token权衡转为非编程解释；具体幅度与质量不作保证。
+    support: supported
+    rationale: 官方时间/token权衡转为非编程解释；具体幅度与质量不作保证。
+    notice: ''
+  - anchor: 第一次使用还不用把Max、Ultra等所有选项都调一遍。
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Max and Ultra
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。官方说多数任务不需要最高档；正文是初学建议，不隐去以后选择。
+    support: supported
+    rationale: 官方说多数任务不需要最高档；正文是初学建议，不隐去以后选择。
+    notice: ''
+  - anchor: 在桌面Codex输入框下方，打开模型与推理设置控件。
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model in the desktop app
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。文档位置已核对，未实际点击Windows/Mac客户端。
+    support: supported
+    rationale: 文档位置已核对，未实际点击Windows/Mac客户端。
+    notice: ''
+  - anchor: 它把模型与思考投入组合在一起。
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Power；Advanced
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。Power组合预设与Advanced分选关系；以可用菜单为条件，不将示意默认当实机。
+    support: supported
+    rationale: Power组合预设与Advanced分选关系；以可用菜单为条件，不将示意默认当实机。
+    notice: ''
+  - anchor: 实际可选项和默认值会受账号、客户端、工作区与开放进度影响。
+    fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/models
+    locator: Availability；Power defaults
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。型号与预设条件明确；Changelog的逐步开放不升级为全账号稳定。
+    support: supported
+    rationale: 型号与预设条件明确；Changelog的逐步开放不升级为全账号稳定。
+    notice: ''
   unused_facts: {}
