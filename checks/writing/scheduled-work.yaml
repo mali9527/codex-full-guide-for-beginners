@@ -36,7 +36,7 @@ study_brief:
   - 不教RRULE/CLI/Git
   - 不将网页事件触发套到桌面
   case_plan: 每周对照备忘报告当前清单差异，不自动修改；示例时区明确可替换，不实际创建定时。
-study_commit: null
+study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

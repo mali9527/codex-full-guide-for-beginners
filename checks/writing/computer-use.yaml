@@ -35,7 +35,7 @@ study_brief:
   - 没有实际界面证据不猜停止按钮；沿原缺口pending
   - 不教locked-use/VM/管理员认证
   case_plan: 在读者已打开的文本软件里查看自编清单指定项，不发送、不支付、不改系统设置；未确认停控时回材料路线。
-study_commit: null
+study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

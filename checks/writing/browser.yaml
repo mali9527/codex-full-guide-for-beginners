@@ -36,7 +36,7 @@ study_brief:
   - 不教CDP开发模式
   - 不恢复网页制作课
   case_plan: 只读官方文档页的一条条件；批注为定位反馈，不改官网。
-study_commit: null
+study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
