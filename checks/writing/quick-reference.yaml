@@ -1,0 +1,91 @@
+schema: 2
+unit: quick-reference
+input_sha256: ff070c0772db26ae7b7b81fa4b81717b1666abd366046a7020fed086e3f63bcf
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 022eddea916d864a2a92b71a215722bb13efd64cef888d9740480c4bf43f5029
+  reader_goal: 遇到具体问题能找到命令、设置和主讲章，不把附录当必须掌握的命令全集。
+  reader_start:
+  - 可按需翻阅，不假定所有可选功能已开启；详细前置回正文主讲章。
+  explain_now:
+  - 按用途查入口
+  - 默认键可自定义且批准Esc不是停止
+  - 功能地图的可选条件和公测/预览
+  - 常见排障先核对象与真实错误
+  official_readings:
+  - fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: Desktop command table
+    checked_on: '2026-09-29'
+    understanding: 同名命令不是按字面翻译，review与feedback用途受限。
+    teaching_use: 每行配主讲章/限制，goal控制不发明新命令。
+  - fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: macOS/Windows
+    checked_on: '2026-09-29'
+    understanding: 默认键位有条件，键盘设置可查绑定。
+    teaching_use: 并列表格只取书中常用键，不写未知Stop。
+  - fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/visualizations
+    locator: Availability
+    checked_on: '2026-09-29'
+    understanding: 桌面仍preview，不能标稳定。
+    teaching_use: 功能地图明确预览和实际候选入口。
+  - fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/sites
+    locator: Availability; deployment
+    checked_on: '2026-09-29'
+    understanding: public beta且URL为生产发布，不只是私下预览。
+    teaching_use: 地图只给用途和不部署审阅区别。
+  - fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/features/codex-micro
+    locator: Overview
+    checked_on: '2026-09-29'
+    understanding: Micro是硬件，不是轻量模型。
+    teaching_use: 用一句识别避免读者误会必须买。
+  teaching_sequence:
+  - 从用户问题找到主讲章→查已用命令或设置→确认平台和当前可用→回正文按完整前置操作
+  - 可选功能先读条件和官方链接，不假定已安装
+  defer:
+  - 完整开发命令/配置/硬件设置
+  - 具体图片生成/网站制作课程
+  case_plan: 使用功能与问题的原创映射表，术语解释回正文，不照搬官方字母顺序命令表。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

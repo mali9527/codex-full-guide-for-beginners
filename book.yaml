@@ -448,6 +448,17 @@ units:
   - desktop-slash-entries
   - desktop-file-shortcuts
   - review-feedback-command-purpose
+  - reasoning-default-guidance
+  - permission-modes-enablement
+  - desktop-followup-behavior
+  - local-memory
+  - project-instructions
+  - browser-boundary
+  - desktop-computer-use
+  - desktop-notification-activity
+  - optional-desktop-feature-map
+  - desktop-download-routes
+  - usage-availability
   derived_from: null
   required_checks:
   - editorial

@@ -1332,3 +1332,32 @@
   status: confirmed
   critical: true
   ttl_days: 90
+- id: optional-desktop-feature-map
+  claim: 可选功能地图：桌面可请求生成/编辑图片；Pets为Mac/Windows浮动活动入口，外观不改变模型能力；Codex Micro是专用控制硬件而非模型；Visualizations桌面预览仍逐步开放，CLI/IDE不呈现；Sites为public
+    beta，部署URL为真实生产部署，应在部署前审阅。具体入口和条件按对应原页，不因列表存在即保证账号可用。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    baseline: 2026-09-29附录原页相关段落；不同产品入口/成熟度在逐项文字保留，未作GUI实测
+  sources:
+  - url: https://learn.chatgpt.com/docs/features/codex-micro
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/image-generation
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/pets
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/visualizations
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/sites
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
+  category: startup
+  status: confirmed
+  critical: false
+  ttl_days: 90
