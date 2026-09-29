@@ -1,6 +1,6 @@
 schema: 2
 unit: latest-models
-input_sha256: bc824a6007df34074b04ac2e7faf586935a07e22852b7fa5c72138a02751c212
+input_sha256: 2bbee6b455e6b83d0f2057ff582e249bf78c1086cce09a228fc19409206cf6d7
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -119,6 +119,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读c5f544f全篇、review-packet非穷尽候选与写前官方笔记，逐段反查价值、图像模态、工具、关键补问、反馈、文风、完成边界、三模型定位、Effort及入口。27处产品说明关联8事实；推理通俗解释、设备/说明稿情景、检查与路径预告属于教学归纳和自编要求，未当成性能或GUI证据。
+    构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

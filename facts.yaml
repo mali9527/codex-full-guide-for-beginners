@@ -73,7 +73,8 @@
   critical: true
   ttl_days: 90
 - id: local-project-context
-  claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT 项目不直接连接电脑文件夹。
+  claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT
+    项目不直接连接电脑文件夹。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -328,7 +329,8 @@
   critical: true
   ttl_days: 180
 - id: desktop-file-shortcuts
-  claim: 桌面Codex/Work的Open folder默认Windows Ctrl+O、Mac ⌘O；New chat为Ctrl+N/⌘N；设置为Ctrl+,/⌘,。Keyboard Shortcuts可按命令名查找并自定义绑定。
+  claim: 桌面Codex/Work的Open folder默认Windows Ctrl+O、Mac ⌘O；New chat为Ctrl+N/⌘N；设置为Ctrl+,/⌘,。Keyboard
+    Shortcuts可按命令名查找并自定义绑定。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -392,7 +394,8 @@
   critical: true
   ttl_days: 180
 - id: desktop-download-routes
-  claim: 官方桌面页的Mac下载标Apple Silicon；Windows应用页链接Microsoft分发入口。两个平台需使用各自下载路线，不把Mac下载包通用于Windows或Intel Mac。 2026-09-28实际点击官方Mac下载链接，目标为persistent.oaistatic.com/codex-app-prod/Codex.dmg；页面工具不支持二进制，不等于下载或安装成功。
+  claim: 官方桌面页的Mac下载标Apple Silicon；Windows应用页链接Microsoft分发入口。两个平台需使用各自下载路线，不把Mac下载包通用于Windows或Intel
+    Mac。 2026-09-28实际点击官方Mac下载链接，目标为persistent.oaistatic.com/codex-app-prod/Codex.dmg；页面工具不支持二进制，不等于下载或安装成功。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -532,7 +535,8 @@
   critical: true
   ttl_days: 90
 - id: reasoning-default-guidance
-  claim: 官方Models建议从账号可用的默认Power设置起步；Advanced中可分选模型、Effort和速度。Pick a reasoning effort给出Sol Medium、Luna High、Astra Light的起步建议；这是建议，不是所有账号实际选中值。页面示意的起始预设与实际默认还受套餐、客户端、工作区和开放进度影响。
+  claim: 官方Models建议从账号可用的默认Power设置起步；Advanced中可分选模型、Effort和速度。Pick a reasoning effort给出Sol
+    Medium、Luna High、Astra Light的起步建议；这是建议，不是所有账号实际选中值。页面示意的起始预设与实际默认还受套餐、客户端、工作区和开放进度影响。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -618,7 +622,8 @@
   critical: true
   ttl_days: 90
 - id: scheduled-chat-destination
-  claim: 桌面定时任务可回到现有聊天继续使用上下文，或让每次运行开始独立聊天；Scheduled用于查看任务和运行结果。非版本控制项目直接在项目目录运行，不能把Git worktree作为普通文件夹定时任务的必备条件。
+  claim: 桌面定时任务可回到现有聊天继续使用上下文，或让每次运行开始独立聊天；Scheduled用于查看任务和运行结果。非版本控制项目直接在项目目录运行，不能把Git
+    worktree作为普通文件夹定时任务的必备条件。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -848,7 +853,8 @@
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28第三部分补强研究，实读Prompting的Prompting Codex及Long-running work的Start a goal；非GUI或账号开放实测，章节待迁入book.yaml
+    baseline: 2026-09-28第三部分补强研究，实读Prompting的Prompting Codex及Long-running work的Start
+      a goal；非GUI或账号开放实测，章节待迁入book.yaml
     surfaces:
     - codex-desktop
     platforms:
@@ -871,8 +877,11 @@
     product: codex
     evidence: official-documentation-only
     baseline: 2026-09-28第三部分命令补查；实读桌面Slash commands正文，未执行命令或验证双平台菜单，章节待迁入book.yaml
-    surfaces: [codex-desktop]
-    platforms: [windows, mac]
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/reference/slash-commands
@@ -1091,7 +1100,8 @@
   critical: false
   ttl_days: 90
 - id: gpt6-model-use-position
-  claim: 官方将GPT-6 Astra用于需要持续判断的复杂多步骤工作，Sol用于日常及复杂工作，Luna用于明确且可重复的任务。桌面可在输入区下方选择账号可用模型；型号出现和默认设置受客户端、登录方式、工作区及开放进度影响。2026-09-22的更新说明将GPT-6 Sol与Luna标为逐步开放；不据页面列出就认定全部账号可用或已全面稳定。
+  claim: 官方将GPT-6 Astra用于需要持续判断的复杂多步骤工作，Sol用于日常及复杂工作，Luna用于明确且可重复的任务。桌面可在输入区下方选择账号可用模型；型号出现和默认设置受客户端、登录方式、工作区及开放进度影响。2026-09-22的更新说明将GPT-6
+    Sol与Luna标为逐步开放；不据页面列出就认定全部账号可用或已全面稳定。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -1154,16 +1164,12 @@
     baseline: 2026-09-29开篇扩写写前实读；模型层能力与桌面工具分开，非性能、GUI或账号可用性实测
   sources:
   - url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
-    locator: Introduction；GPT-6 Astra behavior；Initiative and follow-through；Personality
-      and writing style
     checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/models
-    locator: Where each model shines
     checked_on: '2026-09-29'
   - url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
-    locator: Decision boundaries；Persistence
     checked_on: '2026-09-29'
-  category: behavior
+  category: startup
   checked_on: '2026-09-29'
   status: confirmed
 - id: astra-model-input-tools
@@ -1180,15 +1186,12 @@
     baseline: 2026-09-29开篇扩写写前实读；模型层能力与桌面工具分开，非性能、GUI或账号可用性实测
   sources:
   - url: https://developers.openai.com/api/docs/models/gpt-6-astra
-    locator: Model description；Modalities；Tools
     checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/prompting
-    locator: Add useful context
     checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/use-chatgpt
-    locator: Compare Work and Codex；feature availability
     checked_on: '2026-09-29'
-  category: behavior
+  category: startup
   checked_on: '2026-09-29'
   status: confirmed
 - id: astra-outcome-guidance
@@ -1205,15 +1208,11 @@
     baseline: 2026-09-29开篇扩写写前实读；模型层能力与桌面工具分开，非性能、GUI或账号可用性实测
   sources:
   - url: https://learn.chatgpt.com/docs/prompting
-    locator: Describe the result；Add useful context；Set boundaries；Make result ready
-      to use
     checked_on: '2026-09-29'
   - url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
-    locator: Better skills；Up-to-date AGENTS.md；Persistence
     checked_on: '2026-09-29'
   - url: https://learn.chatgpt.com/docs/model-selection
-    locator: Experiment；How to think about models and reasoning effort
     checked_on: '2026-09-29'
-  category: behavior
+  category: startup
   checked_on: '2026-09-29'
   status: confirmed

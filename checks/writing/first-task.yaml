@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: cbd5d71e7eacb6ca15ea79a62905d203f81cb8e66c8d979831bc4006b8bb4400
+input_sha256: 4cb67cf75005825fcf307cc43c6d69655d13d69c5bd596eac6726386d4b937a2
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -106,7 +106,7 @@ fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
     构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。 2026-09-29连读：开篇的两条照片提醒只是价值预告，本章仍完整提供文件、路径、权限、v1/v2核对，未用开篇替代操作。两条原文、10张与截止含义一致。
-    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。
+    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。 构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

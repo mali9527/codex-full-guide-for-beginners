@@ -1,6 +1,6 @@
 schema: 2
 unit: workspace-files
-input_sha256: a4606d7b44231aa7ed8d4d9d9a6f3fd5f174cf3dfabde9cb5a6495b1dc5a9abb
+input_sha256: bccecd18430e280b36b1c5b7d0a29007e7d0ad57691c10a2f254ce5fbadca445
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -104,7 +104,7 @@ fact_review:
   coverage: reviewed
   reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
     构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。 2026-09-29连读：开篇给出Astra用途和Light建议，本章仍用当前可用选择发三条提醒；模型/Effort表只就地定位，完整设置留第6章。
-    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。
+    全文与原断言再次对应，未出现新产品断言；更新已实际重读的来源日期，未重读页面明确复用。 构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
   docs_checked_on: '2026-09-28'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
