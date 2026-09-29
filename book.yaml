@@ -512,7 +512,7 @@ diagrams:
   spec: assets/illustrations/FIG-021/brief.yaml
 toolkit: 0.1.0
 published:
-  version: null
+  version: v2026.09.1-rc.1
   pdf: null
 branding:
   name: 马力

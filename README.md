@@ -84,7 +84,7 @@
 <!-- studio:release -->
 当前维护稿以本仓库为准。
 
-尚未登记已公开的里程碑版本。
+已公开正文：[v2026.09.1-rc.1](https://github.com/mali9527/codex-full-guide-for-beginners/releases/tag/v2026.09.1-rc.1)。
 <!-- /studio:release -->
 
 © 2026 马力。正文、原创案例与插图保留版权；公开阅读不自动授予转载、改编或商用许可，详见[LICENSE](LICENSE)。第三方工具和依赖保留各自许可。
