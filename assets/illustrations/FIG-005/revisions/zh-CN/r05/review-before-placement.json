@@ -1,0 +1,16 @@
+{
+  "image_sha256": "ed0f6df9b5f7a065b20938336ed3c04c93104f5fce3a2e09b70d2d2bd1bc4879",
+  "input_fingerprint": "0c41933277b6a944f1ed97330d76d65ba179e31e70e417ec2e156a3d6f14594d",
+  "language": "zh-CN",
+  "reviewer": "codex",
+  "checked_on": "2026-09-30",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pending",
+  "notes": "模型与工具分工、输入输出正确；r04多出并字，已由image_gen修正r05并实际复看。 本轮已实际查看原图及358px浏览器预览，中文字可辨，固定方格纸、黑笔与中性灰一致。仅概念图审校，不是GUI实测。"
+}

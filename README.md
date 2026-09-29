@@ -1,20 +1,35 @@
 # Codex完全零基础入门
 
-一本面向完全零基础读者的Codex入门书，从用途、安装和第一屏开始，讲清基本操作与常用功能。
+<p><img src="assets/branding/mali-avatar-v1.svg" width="48" height="48" alt="马力" align="absmiddle"> <strong>马力 · Ma Li</strong></p>
 
-当前内容框架v0.14：GPT-6 Astra开篇导读、五部分24章及附录均已有可阅读初稿。后续章节从账号、模型与权限，逐步讲到材料、成果、Plan、Goal、Skill、插件、浏览器、电脑操作与定时任务。
+[English overview](README.en.md) · 中文正文
 
-**当前是编辑中的草稿，尚未发行。** 相关官方资料按章节核对至2026-09-29；Windows/Mac完整操作路径、普通运行的直接停止入口、界面插图和真人试读仍待完成。
+![Codex完全零基础入门：从第一屏，到独立完成一件事。中文正文，英文导览。](assets/social/cover-bilingual-20260929.png)
 
-从[GPT-6 Astra开篇导读](manuscript/latest-models.md)和[第1章用途](manuscript/intro.md)开始，再读[第2章安装](manuscript/desktop-setup.md)、[第3章第一屏](manuscript/workspace-files.md)、[第4章完整任务](manuscript/first-task.md)。第4章使用原创的[两份备忘材料](examples/ch04-notes-to-todos/README.md)，第17—18章另有原创的[资料目录材料](examples/ch17-reference-index/README.md)。也可直接阅读[全书合订稿](全书.md)，完整阅读安排见[内容框架](内容框架.md)。
+**从选对项目文件夹、发出第一条消息，到找到成果、检查并继续修改。** 给会用办公软件和文件夹、从未用过Codex的人；不需要编程基础。
 
-## 读者承诺
+**[开始阅读：第1章 Codex能帮你做什么](manuscript/intro.md)** · [全书连读](全书.md) · [下载案例材料](examples/ch04-notes-to-todos/README.md)
 
-默认读者已有可用付费账号，会用办公软件和文件夹，但没有编程及Codex经验。Windows与Mac兼顾，桌面端为主线。围绕模型与Effort、权限批准、运行控制、材料、成果和持续协作，逐步认识Skill、插件、浏览器与定时任务。当前版本不展开办公业务、网页制作或CLI专题，不设置练习、作业或测验。预览、测试与逐步开放的能力单独说明；正式写作遵循[写作约定](写作约定.md)。
+2026年9月公开试读初稿：开篇、24章与附录已有正文，配有7张概念图。相关官方资料按章节核对至2026-09-29。**这不是已完成双平台实测的正式版**；安装、权限、运行控制等路径仍有待验证项，详见[阅读与核验范围](docs/阅读与核验说明.md)。
 
-详见[作品需求摘要](需求文档.md)。本书拥有独立的 Git 仓库，与系列其他作品分开维护。
+## 你会从哪里开始
 
-## 阅读目录
+第一件事很小：把两份零散备忘整理成一份待办清单。你会先准备材料、打开项目文件夹，再提出要求、找到保存的文件、对照原件检查，最后更新第二版。这条完整路径贯穿前四章。
+
+之后再逐步认识模型与Effort、权限批准、运行控制，以及怎样把一份工作接着做下去。GPT-6 Astra有什么用，放在[开篇导读](manuscript/latest-models.md)；模型与思考力度怎样选，放在[第6章](manuscript/models-effort.md)。
+
+| 你现在想弄清什么 | 从这里读 |
+|---|---|
+| 能做什么、怎样安装、第一屏和项目文件夹 | [第1章](manuscript/intro.md) → [第2章](manuscript/desktop-setup.md) → [第3章](manuscript/workspace-files.md) → [第4章](manuscript/first-task.md) |
+| 模型、Effort、权限和正在运行的任务 | [第5章起](manuscript/account-usage.md) |
+| 提供材料、查看成果、批注、联网与接续工作 | [第9章起](manuscript/materials.md) |
+| 说清需求、Plan、反馈、Goal与任务分工 | [第14章起](manuscript/clear-requests.md) |
+| 偏好、Skill、插件、浏览器、电脑操作和定时任务 | [第19章起](manuscript/personalization.md) |
+
+默认你已有可用付费账号。桌面端为主，Windows和Mac并列说明；当前版本不展开CLI、网页制作或办公业务专题，也不安排作业和测验。预览或逐步开放的功能保留条件说明。
+
+<details>
+<summary>展开完整目录</summary>
 
 <!-- studio:toc -->
 共 26 个单元，0 张图。
@@ -47,7 +62,24 @@
 26. [附录：命令、设置、排障与术语](manuscript/quick-reference.md)
 <!-- /studio:toc -->
 
-## 版本与下载
+</details>
+
+## 材料与常用查阅
+
+- [第4章：两份备忘与两版示例清单](examples/ch04-notes-to-todos/README.md)
+- [第17—18章：资料目录与分工检查材料](examples/ch17-reference-index/README.md)
+- [命令、设置、排障与术语速查](manuscript/quick-reference.md)
+- [参考来源与致谢](参考来源与致谢.md) · [核验范围](docs/阅读与核验说明.md)
+
+如果这本书能帮你查到一个入口、想清一次批准，或检查一份实际成果，可以点 **Star** 留作查阅。需要接收后续版本，可用 **Watch → Custom → Releases**。发现问题，请在[纠错入口](https://github.com/mali9527/codex-full-guide-for-beginners/issues/new/choose)写明章节、平台、版本和实际现象；提交截图前遮住个人信息。
+
+## 同系列
+
+[Claude Code完全零基础入门](https://github.com/mali9527/claude-code-full-guide-for-beginners)：另一个工具的独立教程。两书各讲自己的安装、界面与操作，不把一个工具的入口套到另一个工具。
+
+## 版本与许可
+
+本轮为公开试读预发布；[发行页](https://github.com/mali9527/codex-full-guide-for-beginners/releases)保留固定版本和本轮范围。没有PDF附件，英文仅为导览。
 
 <!-- studio:release -->
 当前维护稿以本仓库为准。
@@ -55,16 +87,4 @@
 尚未登记已公开的里程碑版本。
 <!-- /studio:release -->
 
-尚未发行，没有公开下载版本。PDF、翻译、远端仓库和最终许可将按后续安排单独确定。
-
-## 参考来源与致谢
-
-本书通过研读和比较现有资料获得启发，正文、案例和图示自行创作，不直接复制、翻译或近似改写参考教程内容。实际研读分析与借鉴过的来源都将如实列入参考来源与致谢，说明阅读范围和帮助；不仅记录影响最终章节的来源。
-
-已按真实阅读范围整理[参考来源与致谢](参考来源与致谢.md)，区分深入阅读、选读和发现用途。未读候选和未观看视频不冒充参考书目。当前没有教程文字、图片或代码搬入正文。
-
-## 写作与维护
-
-单元顺序、前置、事实关联仅由 book.yaml 管理。研究、任务和完整审校记录由私有总控维护，公开仓只保留必要读者资料和检查摘要。工具说明见 tools/README.md，协作入口见 AGENTS.md。
-
-许可见 LICENSE；当前尚未选择发行许可。
+© 2026 马力。正文、原创案例与插图保留版权；公开阅读不自动授予转载、改编或商用许可，详见[LICENSE](LICENSE)。第三方工具和依赖保留各自许可。

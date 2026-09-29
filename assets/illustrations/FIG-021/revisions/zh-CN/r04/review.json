@@ -1,0 +1,16 @@
+{
+  "image_sha256": "e403d89e9fbb9a3cf6b8f59a6da4912866203476c4e8d60c5d7aba80081157cf",
+  "input_fingerprint": "6e8c3fdb9817ce56903542042f60ae4c8ea694d240b4d2cd8e3f46222ed5db25",
+  "language": "zh-CN",
+  "reviewer": "codex",
+  "checked_on": "2026-09-30",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pass",
+  "notes": "四种要求并列，无优先级箭头，记忆仅辅助接续。 本轮已实际查看原图及358px浏览器预览，中文字可辨，固定方格纸、黑笔与中性灰一致。仅概念图审校，不是GUI实测。"
+}

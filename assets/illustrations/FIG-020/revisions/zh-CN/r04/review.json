@@ -1,0 +1,16 @@
+{
+  "image_sha256": "edd8b393fd795c5c2bc8abd90fefa111ccc8273d9d49493ca8d8724394e80617",
+  "input_fingerprint": "b4b00453cd8d28d6e0c5512eb4cf866a7102afb4763f969d618ca4c0189534b3",
+  "language": "zh-CN",
+  "reviewer": "codex",
+  "checked_on": "2026-09-30",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pass",
+  "notes": "只读检查并行后由主任务核对合稿，锁为只读意图的概念表达，无权限保障承诺。 本轮已实际查看原图及358px浏览器预览，中文字可辨，固定方格纸、黑笔与中性灰一致。仅概念图审校，不是GUI实测。"
+}

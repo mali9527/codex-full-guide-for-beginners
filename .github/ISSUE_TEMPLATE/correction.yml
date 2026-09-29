@@ -1,0 +1,26 @@
+name: 章节纠错 / Report a correction
+description: 报告事实、步骤、图文或阅读障碍 / Report an issue with a chapter
+title: "[纠错] "
+body:
+  - type: input
+    id: chapter
+    attributes:
+      label: 章节与位置 / Chapter and location
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 平台与应用版本 / Platform and app version
+      description: 如涉及操作，请写Windows或Mac及应用版本；不要填写账号凭据。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 实际问题 / What happened
+      description: 写出操作、预期和实际结果；截图前遮住个人信息。
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 依据或建议 / Source or suggestion

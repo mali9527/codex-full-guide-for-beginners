@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "unknown",
+  "original_sha256": "e0e64098f48438f60cc52343e82c8e63ed19dbf630fd725698ced383148602b2",
+  "output_sha256": "ca20159f3c339152025aff44837d9e12544ba339392f539ba27a19e30e47d181",
+  "normalization": "L to RGB neutral gray; proportional resize to 1280x640; no compositing",
+  "generation_date": "2026-09-29",
+  "reviewed_on": "2026-09-30",
+  "recovery_note": "Original generated image preserved. The previous temporary production directory was not retained after interruption; the exact cover prompt is unavailable. This receipt records the surviving image and current export, not a reconstructed exact prompt.",
+  "design_summary": "Bilingual title; Chinese subtitle and language scope; Ma Li credit; folder/chat/checked-document concept, black pen on fixed fine grid paper."
+}

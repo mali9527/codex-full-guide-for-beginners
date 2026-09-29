@@ -50,6 +50,13 @@ Codex中的个人自定义说明保存在全局的`AGENTS.md`中，项目还可�
 
 ## 记忆提供帮助，但不能代替明确约定
 
+
+<!-- diagram: FIG-021 -->
+![四张便条区分当前要求、个人偏好、项目说明与记忆，分别用于本轮、常用习惯、当前工作和辅助接续。](../assets/illustrations/FIG-021/revisions/zh-CN/r04/zh-CN.png)
+
+*图：本轮要求、个人习惯、项目约定与记忆各有用途。*
+<!-- /diagram: FIG-021 -->
+
 **Memories，记忆**，用于把过去工作中有用的信息带到未来任务。本地Codex记忆与ChatGPT网页记忆分别存储和控制，网页那边记住的事，本地Codex未必知道。[本地记忆](https://learn.chatgpt.com/docs/customization/memories)
 
 本地记忆默认关闭。需要时，到 **Settings → Personalization → Enable memories** 开启，再回到当前任务用 **`/memories`** 查看这次任务的两类选择：能否使用已有记忆，能否作为生成未来记忆的材料。这两项只管当前任务，全局开关仍在设置里。

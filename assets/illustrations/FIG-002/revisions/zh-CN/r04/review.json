@@ -1,0 +1,16 @@
+{
+  "image_sha256": "a61143a0559e158db083f27b19e109ee08b4d5c23f94063f4aa212d86797ca5c",
+  "input_fingerprint": "7988e80e7dac9885b0129097d6d9c894d309f658b2f66745438c430b321c2d0d",
+  "language": "zh-CN",
+  "reviewer": "codex",
+  "checked_on": "2026-09-30",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pass",
+  "notes": "两份原件与v1/v2分目录，文字与归属正确；需放在第二版完成后。 本轮已实际查看原图及358px浏览器预览，中文字可辨，固定方格纸、黑笔与中性灰一致。仅概念图审校，不是GUI实测。"
+}

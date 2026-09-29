@@ -1,0 +1,16 @@
+{
+  "image_sha256": "971e549321315ca851264f988d57f40fe8e5ac61169fafbcd8520f5fc33c243e",
+  "input_fingerprint": "2df59765c545f6c18e45d6d2fb4db1ae0e7d1262e1a0035e2080cb444280920a",
+  "language": "zh-CN",
+  "reviewer": "codex",
+  "checked_on": "2026-09-30",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pending",
+  "notes": "具体反馈回到处理材料，未回到提出要求；流程箭头完整。 本轮已实际查看原图及358px浏览器预览，中文字可辨，固定方格纸、黑笔与中性灰一致。仅概念图审校，不是GUI实测。"
+}
