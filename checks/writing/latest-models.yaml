@@ -93,7 +93,7 @@ study_brief:
   - Max/Ultra、技能安装和浏览器/电脑操作细节
   - 实验上下文管理默认关闭及配置，不设新手前置
   case_plan: 沿用本书两份备忘作轻量预告；新增两份设备说明与个人需求对比的假设情景，不填真实品牌价格；自编整理说明稿请求，仅展示提法，不冒充实际Astra运行。
-study_commit: null
+study_commit: 47cd3c617f19ff4e7c45b5effa77cf04a189af24
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
