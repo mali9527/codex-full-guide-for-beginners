@@ -1,6 +1,6 @@
 schema: 2
 unit: latest-models
-input_sha256: 6dfa3bf802eb3e06189fbab1c7d351e651eba71feeeaa10f423738738570a4e6
+input_sha256: cb7a69b0863739b9c171fced47ef3ab90860f5da8801c16a6ac9b4fdc1c91110
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -97,11 +97,11 @@ study_commit: 47cd3c617f19ff4e7c45b5effa77cf04a189af24
 study_review:
   result: pass
   reason: 对固定成稿c5f544f逐段比对47cd3c6的写前提要：官方持续判断/关键补问/文风倾向进入四种用途与配合方法，模型模态与工具分开；未将API规格或示例迁作桌面保证。学习顺序确实影响成稿，而非稿后补链接。
-    9月29日前四章深化批次实际重读开篇全文：新增权限/导航事实范围不改变开篇用途和Astra选择说明；原写前47cd3c6保留。
+    9月29日前四章深化批次实际重读开篇全文：新增权限/导航事实范围不改变开篇用途和Astra选择说明；原写前47cd3c6保留。 本轮针对971b718的影响复核：正文无变化；核对模型/工具/文件夹访问段与本次项目事实补充不冲突，材料准备前移不改变开篇读者前提。原写前提要和正文提交保留；未实质重写这章。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 从两条提醒解释连续判断，再讲资料比较与成果；推理先通过截止时间和重复事项说明。尚未安装者可理解，未要求先会路径、终端或Git。
+    reason: 从两条提醒解释连续判断，再讲资料比较与成果；推理先通过截止时间和重复事项说明。尚未安装者可理解，未要求先会路径、终端或Git。 本轮衔接检查：正文无变化；核对模型/工具/文件夹访问段与本次项目事实补充不冲突，材料准备前移不改变开篇读者前提。
   concept_timing:
     result: pass
     reason: 先价值和情景，再模型/工具分工，最后Effort与最短入口；图片输入的用途先于能力名称。第6章仍承担完整设置，不在开篇展开API或Skill安装。
@@ -122,6 +122,7 @@ fact_review:
   reason: 通读c5f544f全篇、review-packet非穷尽候选与写前官方笔记，逐段反查价值、图像模态、工具、关键补问、反馈、文风、完成边界、三模型定位、Effort及入口。27处产品说明关联8事实；推理通俗解释、设备/说明稿情景、检查与路径预告属于教学归纳和自编要求，未当成性能或GUI证据。
     构建发现新增事实的category/来源locator不符合既有schema；仅改为startup并将定位保留在本摘要和写前提要。已逐项比较，事实原文、URL、日期、条件和正文均未改变，不修改工具或成熟度。
     本轮因关联官方事实日期/范围变动重新通读开篇及27处对应：文档可用性、工具边界、Power/Advanced与Light解释仍一致；没有修改正文或刷新API/博客原阅读日期。
+    项目入口修订的影响复核：正文无变化；核对模型/工具/文件夹访问段与本次项目事实补充不冲突，材料准备前移不改变开篇读者前提。沿用本日上批完整反查与其声明的来源读取日期，本轮不是重读所有官方页。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

@@ -1,6 +1,6 @@
 schema: 2
 unit: desktop-setup
-input_sha256: a6a3496d1380350814311cd5ff7ff953cafd84a21894f4834776831e36635f7b
+input_sha256: 34d826eb0dc7397356876abe4d5362ece89a48ff5200226765aad51ced42bc6f
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -82,10 +82,11 @@ study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
 study_review:
   result: pass
   reason: 对固定稿aeba79f及写前c5f3d68逐项比较：Windows官方首设与更新管理参与讲解顺序；管理员设置为何出现、组织更新如何判断进入正文；未照搬开发工具安装段。
+    本轮针对971b718的影响复核：只有Windows首次设置时点回指和结尾两处改变，已逐项对照；保留条件式，不把打开文件夹等同已完成沙箱首设。原写前提要和正文提交保留；未实质重写这章。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 假定会下载和安装，只解释陌生的沙箱、账号工作区和API分支；不教逐键动作。
+    reason: 假定会下载和安装，只解释陌生的沙箱、账号工作区和API分支；不教逐键动作。 本轮衔接检查：只有Windows首次设置时点回指和结尾两处改变，已逐项对照；保留条件式，不把打开文件夹等同已完成沙箱首设。
   concept_timing:
     result: pass
     reason: 先平台条件、再运行设置与登录、再入口和维护；Windows首设何时出现保留条件。
@@ -104,6 +105,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读固定稿aeba79f的全章、前置开篇与相邻章，并查看review-packet。完整反查下载目标、平台条件、Windows本地沙箱与winget、Mac条件、浏览器登录/账号工作区、Codex入口、设置快捷键与更新管理；排障建议不冒充成功实测。
+    项目入口修订的影响复核：只有Windows首次设置时点回指和结尾两处改变，已逐项对照；保留条件式，不把打开文件夹等同已完成沙箱首设。沿用本日上批完整反查与其声明的来源读取日期，本轮不是重读所有官方页。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

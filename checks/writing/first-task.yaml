@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 2d826dbf4f0aab2c803227a569c83df0cdabee8bf788a97bac15a0409fbcfd7a
+input_sha256: 461bad2d8e321c670388419c1e66a97a1a09b86a651ace5abc8ce888538e0cf1
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -51,35 +51,230 @@ study_brief:
   case_plan: 沿用本书我的待办ZIP和两备忘；准备/连接/路径前移第3章，第4章从正确项目读材料。无新业务例、无运行效果保证。
 study_commit: 56047b6426bedc24f44ce1173c5a520e0b6df9ae
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 对971b718正文与56047b6提要核对：保留完整交付环节，移除连接步骤重复；跳读可回到第3章准备，本章新任务仍给完整文件要求。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 现在已在第3章选目录、学路径与Local；本章从该项目New chat开始，直接读材料，不把已讲内容再教一遍。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 回到项目→本次设置→只读确认→生成保存→打开核对→局部修改与v2；相对位置在第一次反馈时解释。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 保留四事实检查、保存位置、失败追问和恢复边界；跳读者有直接准备链接，未新增业务支线。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 完整连读后，回指段和后续只读请求衔接自然；原件/结果表提供必要定位，没有重复快捷键大段。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 路径定义前移不损失Windows/Mac入口；语言和地区限制未增加，真实按钮与中文用途一致。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 两备忘、v1/v2和主请求未改变，仅调整前置；未重新读取或模仿外部教程，来源对照沿既有实际研究范围。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 完整通读971b718第3/4章及review-packet，逐项反查新增连接步骤与移位后的断言；本轮四页阅读加上同日已完成的原批次事实复核，不冒称本轮重读其余所有页面。原件/提示词/检查标准未改，文件演示仍属此前记录。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0新功能和修复开篇
+    checked_on: '2026-09-29'
+    effect: 本轮实际重读；未发现可据此更改桌面目录入口的依据，未把CLI号当桌面版本。实际步骤据Projects/Commands/Modes。
+  claims:
+  - anchor: 可以从Light档Effort开始
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Astra effort recommendation
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。官方起点不是此案例效果测试或所有人默认。
+    support: supported
+    rationale: 官方起点不是此案例效果测试或所有人默认。
+    notice: ''
+  - anchor: 若当前提供的是Power预设
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Power presets
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。以可用选择起步，不要求Astra作为前置。
+    support: supported
+    rationale: 以可用选择起步，不要求Astra作为前置。
+    notice: ''
+  - anchor: 它允许在当前工作区范围内读写文件及执行常规本地操作
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Ask for approval；How permissions work
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。包含下方控件位置、批准不逐次、范围受配置约束。
+    support: supported
+    rationale: 包含下方控件位置、批准不逐次、范围受配置约束。
+    notice: ''
+  - anchor: 这是对本次工作的约束，不会自动把权限切成只能读取。
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Sandbox and approvals
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。任务语义与执行权限不同；保留原件仍需文件核对。
+    support: supported
+    rationale: 任务语义与执行权限不同；保留原件仍需文件核对。
+    notice: ''
+  - anchor: 若Windows此时提示首次设置沙箱
+    fact_id: windows-first-setup
+    url: https://learn.chatgpt.com/docs/windows/windows-sandbox
+    locator: Native setup
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。条件式回指第2章，不猜出现时间。
+    support: supported
+    rationale: 条件式回指第2章，不猜出现时间。
+    notice: ''
+  - anchor: 这条提示词只做一件事：确认它能够找到并读到正确材料。
+    fact_id: task-materials-and-output
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Add useful context
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。作者拆成先只读再整理，便于定位错误；未声称官方固定工作流。
+    support: supported
+    rationale: 作者拆成先只读再整理，便于定位错误；未声称官方固定工作流。
+    notice: ''
+  - anchor: 这段要求把工作推进到了交付：先整理，再保存，再对照材料检查。
+    fact_id: task-materials-and-output
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Describe result / boundaries / check result
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。自编请求和检查标准，模型回话不等于成功。
+    support: supported
+    rationale: 自编请求和检查标准，模型回话不等于成功。
+    notice: ''
+  - anchor: 自动打开与支持格式仍有条件
+    fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Desktop preview
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。本例txt用系统打开，未将演示文字当GUI证据。
+    support: supported
+    rationale: 本例txt用系统打开，未将演示文字当GUI证据。
+    notice: ''
+  - anchor: 回到刚才的任务继续反馈，不用另开一个任务
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Refine result
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。当前任务可持续改，限定文件和局部变化。
+    support: supported
+    rationale: 当前任务可持续改，限定文件和局部变化。
+    notice: ''
+  - anchor: 明确以「待办清单-v2.txt」为当前版本
+    fact_id: task-materials-and-output
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Context / Follow-up
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。避免改错对象的作者建议，不假定新任务继承全部历史。
+    support: supported
+    rationale: 避免改错对象的作者建议，不假定新任务继承全部历史。
+    notice: ''
+  - anchor: 在其中用New chat开始整理清单的任务
+    fact_id: desktop-basic-navigation
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: New chat
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档说明；非GUI或账号可用性实测。该动作已在第3章解释，不重列默认键。
+    support: supported
+    rationale: 该动作已在第3章解释，不重列默认键。
+    notice: ''
+  - anchor: 本次工作的外层文件夹，已经连接到Codex项目
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Use local projects
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档说明；非GUI或账号可用性实测。这是按第3章完成后的条件，未把读者一定已操作当实测事实；跳读提供回指。
+    support: supported
+    rationale: 这是按第3章完成后的条件，未把读者一定已操作当实测事实；跳读提供回指。
+    notice: ''
+  - anchor: Local说明文件操作围绕本地项目开展
+    fact_id: local-run-mode
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档说明；非GUI或账号可用性实测。本地工作位置不等于AI离线处理。
+    support: supported
+    rationale: 本地工作位置不等于AI离线处理。
+    notice: ''
+  - anchor: 默认快捷键可以自定义
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/settings
+    locator: Keyboard shortcuts
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档说明；非GUI或账号可用性实测。故障表保留按Open folder查当前绑定的入口。
+    support: supported
+    rationale: 故障表保留按Open folder查当前绑定的入口。
+    notice: ''
   unused_facts: {}

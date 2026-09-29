@@ -1,6 +1,6 @@
 schema: 2
 unit: intro
-input_sha256: 2f40a25efe0cf612325d2a484bc3b3564ed32e318584cf48708e61e80c67b65a
+input_sha256: d09487304aac3efaf000e647bf4508bbb27600c885cfd0b5f081b55fdd734330
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -62,10 +62,11 @@ study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
 study_review:
   result: pass
   reason: 对固定稿aeba79f及写前c5f3d68逐项比较：写前提要中的成果、工具与材料关系，落实为四类用途与AI代理过程，再区分应用/入口/模型；没有重抄Astra能力列表。
+    本轮针对971b718的影响复核：只有第3/4章预告一句改动，已回读所在材料输入段；先打开后处理与新顺序一致，既有能力断言未变。原写前提要和正文提交保留；未实质重写这章。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 开篇讲模型，本章尚未安装；用材料到成果的日常情景解释AI代理，无路径/Git前置。
+    reason: 开篇讲模型，本章尚未安装；用材料到成果的日常情景解释AI代理，无路径/Git前置。 本轮衔接检查：只有第3/4章预告一句改动，已回读所在材料输入段；先打开后处理与新顺序一致，既有能力断言未变。
   concept_timing:
     result: pass
     reason: 能力先看可交付物，再讲工具/材料条件与三个入口；完整设置留后章。
@@ -84,6 +85,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读固定稿aeba79f的全章、前置开篇与相邻章，并查看review-packet。完整反查价值、四类能力、AI代理的通俗解释、材料输入、入口与模型区分；自编情景与选择/核对建议独立于产品能力证据。
+    项目入口修订的影响复核：只有第3/4章预告一句改动，已回读所在材料输入段；先打开后处理与新顺序一致，既有能力断言未变。沿用本日上批完整反查与其声明的来源读取日期，本轮不是重读所有官方页。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
