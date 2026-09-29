@@ -1,6 +1,6 @@
 schema: 2
 unit: permissions
-input_sha256: 6e30961da07b90c306b328fc4eba9418343fc74f04f0e8d1f176df7396a83203
+input_sha256: 79c5df45105aa93a2011ca4266de141e4c3a14aa7589938d005752221d77d7e8
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -50,35 +50,162 @@ study_brief:
   case_plan: 用当前清单另存范围和不代办待办讲批准判断，假设的请求明确不是实际卡片。
 study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 沿前章已选Ask，解释真正允许范围后再介绍可选切换，系统授权不当已具备。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先设置启用→回当前任务选中；请求出现→读懂→批准/拒绝→检查执行结果。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 不教config或绕限制；保留三层授权与托管搜索差异以解释实际困惑。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 假设的跨目录请求标明示意，判断落到对象/动作，不伪造审批卡片。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 真实英文模式名统一，中文批准与批注明确；组织限制不当个人操作失误。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 原创复制清单情境，未复制官方安全案例/策略/配置；无假实测。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
-  unused_facts: {}
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 当前任务的权限控件位于输入框下方
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: How permissions work
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 常规工作区与越界请求区分，任务限制不自动切换沙箱。
+    notice: ''
+  - anchor: 技术上限制文件和网络访问的范围
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Sandbox / approvals
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 项目名不当技术隔离。
+    notice: ''
+  - anchor: Full access没有必要作为
+    fact_id: permission-modes-enablement
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Enable modes
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 模式行为及风险来自官方，采用Ask为本书教学选择。
+    notice: ''
+  - anchor: 它改变的是谁来审核
+    fact_id: auto-review-routing
+    url: https://learn.chatgpt.com/docs/sandboxing/auto-review
+    locator: How auto-review works
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 审核与访问边界分开；审核可能错误。
+    notice: ''
+  - anchor: 设置中启用，只是让模式可选
+    fact_id: permission-modes-enablement
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Enable modes
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Settings General启用→回任务选中→核对，不默认改已有任务。
+    notice: ''
+  - anchor: 批准请求打开时用Enter批准，Esc拒绝
+    fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: Input and modes macOS/Windows
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 明确状态范围，Esc不当运行停止键。
+    notice: ''
+  - anchor: 电脑系统和外部服务的授权
+    fact_id: auto-review-routing
+    url: https://learn.chatgpt.com/docs/sandboxing/auto-review
+    locator: When it triggers; Computer Use
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 应用级批准仍由用户，不当自动批准全部授权。
+    notice: ''
+  - anchor: 托管网页搜索，与它在你电脑上执行一条需要联网的命令
+    fact_id: hosted-search-boundary
+    url: https://learn.chatgpt.com/docs/web-search
+    locator: Configure local web search
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 托管搜索不等于命令联网获准。
+    notice: ''
+  - anchor: 为那次被拒动作批准一次重试
+    fact_id: desktop-approve-retry
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /approve
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 仅最近自动拒绝且适用，不保证突破组织规则。
+    notice: ''
+  unused_facts:
+    desktop-file-shortcuts: 本章不教授新的快捷键，设置入口采用对应功能专页；该事实作为已学查找入口保留关联。

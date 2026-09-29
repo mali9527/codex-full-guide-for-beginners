@@ -1,6 +1,6 @@
 schema: 2
 unit: running-control
-input_sha256: 635874927ba0c0fe15b32de81e692e7ea369049ce9ef10c8471dbf28e7320a5d
+input_sha256: a020d806e74ee693aa8036b33f611e156f83689967fee2db4c14c16b38acc828
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -52,35 +52,161 @@ study_brief:
   case_plan: 续用四项待办，只做只读/另存副本的运行示例；没有人为制造可恢复失败或展示假工具日志。
 study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 已会任务、权限与文件检查，进入状态→补充设置→队列，未让读者猜输入位置。
   concept_timing:
     result: pending
-    reason: 待按本章完整正文复核
+    reason: 普通任务的直接停止控件/快捷键仍缺实际依据；已讲Steer停止要求、确认状态与已写文件，不能将此当作即时中断已教完整。沿既有RESULT-01补核验。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 保留队列、侧聊、错误接续、通知与可选语音，不扩跨天管理与Goal细节。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 示例围绕已知备忘与保存失败，侧聊按需要，不编运行日志或时长。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Windows/Mac通知键对照，语音屏幕上下文仅Mac；CLI键位未混用。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 请求、表格与讲述独立，语音/Work/开发例未照搬，实际读取范围已登记。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
-  unused_facts: {}
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: '**Steer**把补充加入当前运行'
+    fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Steering and queuing
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Steer/Queue区别及示例为独立安排。
+    notice: ''
+  - anchor: Settings → General → Follow-up behavior
+    fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/reference/settings
+    locator: General
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 先看默认，再回任务发送，快捷键不猜。
+    notice: ''
+  - anchor: 排队的消息显示在输入框上方
+    fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Steering and queuing
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 可编辑排序发送删除；排队不等于影响当前运行。
+    notice: ''
+  - anchor: 这是把停止要求送入当前运行
+    fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Steering and queuing; narrow or stop
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 只讲送入要求和检查确认，不声称立即杀掉当前工具；直接按钮缺口仍保留。
+    notice: ''
+  - anchor: 选择 **`/side`**
+    fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /side
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 临时侧聊不打断主任务，关键变化回主任务。
+    notice: ''
+  - anchor: Settings → Notifications
+    fact_id: desktop-notification-activity
+    url: https://learn.chatgpt.com/docs/notifications
+    locator: Configure desktop notifications
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 完成/提问/权限分别提醒，系统授权与结果正确分开。
+    notice: ''
+  - anchor: Windows的Ctrl+Alt+U、Mac的⌘⌥U
+    fact_id: desktop-notification-activity
+    url: https://learn.chatgpt.com/docs/notifications
+    locator: Follow chats in Activity view
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 条件式Activity，默认键位官方支持。
+    notice: ''
+  - anchor: 选择可用的 **Start voice chat**
+    fact_id: desktop-voice-options
+    url: https://learn.chatgpt.com/docs/features/voice
+    locator: Start talking
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 新旧任务名称区分，麦克风、结束及逐步开放明确。
+    notice: ''
+  - anchor: 在Mac上可选的屏幕上下文
+    fact_id: desktop-voice-options
+    url: https://learn.chatgpt.com/docs/features/voice
+    locator: Show ChatGPT what you see
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 仅Mac，不推广Windows；详细范围在材料章。
+    notice: ''
+  unused_facts:
+    desktop-file-shortcuts: 本章不教授新的快捷键，设置入口采用对应功能专页；该事实作为已学查找入口保留关联。

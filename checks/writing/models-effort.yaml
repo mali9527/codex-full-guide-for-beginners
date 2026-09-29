@@ -1,6 +1,6 @@
 schema: 2
 unit: models-effort
-input_sha256: 38e6a80e496472945f83d50f19976e07d4ca5c17298de1fb0de22253a5c02634
+input_sha256: a8a983bb970c47ac8a4d6b6d500d0782bd0cc20f013ab0951284a6a2fc8be140
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -44,35 +44,162 @@ study_brief:
   case_plan: 沿原创四项待办对比事实提取与含混判断，情境为教学建议，不称实际模型性能对比。
 study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 已会任务/额度；从当前控件开始，先预设再高级选择，缺型号仍可继续。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Effort先讲作用再档位；Ultra只解释分工特点，完整操作留第18章但不要求现在开。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 保留起点与误区，删参数/购买表；材料错误与设置问题分开。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 原创两条日期冲突引出推理需求，避免把菜单逐项抄成说明书。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Light/Low只使用当前桌面原名，默认与推荐严格区分，条件与模型匹配。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 没有性能测试或作者经历，建议由独立案例推导，未移植官方样例。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
-  unused_facts: {}
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 查看输入框下方的模型与推理控件
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 实际入口与当前选中状态，未猜默认型号。
+    notice: ''
+  - anchor: 控件可能先显示 **Power** 预设
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Power / Advanced
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 预设与单项控制分开，示意值不当本人默认。
+    notice: ''
+  - anchor: '**`/model`**选择当前任务的模型'
+    fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /model /reasoning
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 先选择菜单动作再设置，未把自然语言当切换回执。
+    notice: ''
+  - anchor: 按清楚的规则提取日期、分类或做小改动
+    fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/model-selection
+    locator: Meet the models / Experiment
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 本书给任务起点，不称实测横评或唯一适配。
+    notice: ''
+  - anchor: '**Effort是模型处理问题时投入多少推理。**'
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 推理投入不是回复长度或权限。
+    notice: ''
+  - anchor: '**Astra用Light，Sol用Medium，Luna用High**'
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Pick a reasoning effort
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 官方起步建议，不是统一默认或跨代等值。
+    notice: ''
+  - anchor: '**Max**让所选模型在一个任务上投入更多推理'
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Know when to use Max or Ultra
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 不承诺人人都可见；Ultra分工及Luna排除已反查。
+    notice: ''
+  - anchor: '**`/fast`**切换'
+    fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /fast
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 桌面菜单动作，不采用CLI参数。
+    notice: ''
+  - anchor: credits按Standard的2.5倍速率消耗
+    fact_id: fast-mode-choice
+    url: https://learn.chatgpt.com/docs/agent-configuration/speed
+    locator: Fast mode
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 型号与可用条件限定；倍率是消耗而非总时间。
+    notice: ''
+  unused_facts:
+    desktop-file-shortcuts: 本章不教授新的快捷键，设置入口采用对应功能专页；该事实作为已学查找入口保留关联。

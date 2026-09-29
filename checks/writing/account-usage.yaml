@@ -1,6 +1,6 @@
 schema: 2
 unit: account-usage
-input_sha256: 540fef8b2e4c71361c09fda7b2b7306d354b93e124a6d8a15ffa6cdd3cc8f978
+input_sha256: 685f4cb3a004b7857d96d77b37dee11a70614a32177d17d9d74fbe34eaef5606
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -44,35 +44,119 @@ study_brief:
   case_plan: 用明确标注的虚构剩余比例解释可用量，不展示本人账号或编造实测截图。
 study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 以前章已登录/做过文件为前置，先核身份再用量页，token与上下文在用途处解释。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 百分比先读范围/标签，虚构读数明示；不把后章压缩当解决账号限额前置。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 没有价格表或套餐选择，重点保留账号/窗口/credits区别和失败分类。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 用两条熟悉请求解释消耗，连续自然段，不用术语堆砌。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Mac/Windows共通页面用真实名称，组织差异不推广；时间以账号页面为准。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 数值读法和文件情境自行编写，没有采用官方套餐营销或企业案例。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 核对当前登录身份
+    fact_id: sign-in-options
+    url: https://learn.chatgpt.com/docs/auth
+    locator: OpenAI authentication / Sign in with ChatGPT
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 当前身份与组织工作区影响权限；没有说本地项目即账号工作区。
+    notice: ''
+  - anchor: 打开[官方用量页面]
+    fact_id: usage-availability
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: Where can I see my current usage limits
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 指向官方usage地址；虚构比例明示，不冒充查询本人余额。
+    notice: ''
+  - anchor: 每五小时大约多少条消息
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: What are the usage limits
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 估计不是固定条数，短窗口/周限制及组织差异有条件。
+    notice: ''
+  - anchor: token与字数不一一对应
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: What are tokens and credits
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 解释信息处理单位，不提供无依据字数换算。
+    notice: ''
+  - anchor: Work与Codex共享使用量
+    fact_id: usage-windows-and-credits
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: Usage FAQ
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 模型/材料/工具影响消耗，未给每人统一倍率。
+    notice: ''
+  - anchor: 从菜单选择 **`/status`**
+    fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /status
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 桌面任务ID、上下文与限额；不是成果完成度。
+    notice: ''
   unused_facts: {}
