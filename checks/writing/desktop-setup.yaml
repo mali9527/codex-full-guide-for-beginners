@@ -1,10 +1,10 @@
 schema: 2
 unit: desktop-setup
-input_sha256: 76f9e545dbdc57f446eaad16efd85607c95e969036fe98364ba3252cc7736fb0
+input_sha256: 91d35e6a26227c50e08951cfd8af8ea4f52fc5bbc37120affc608ee67befeaf0
 evidence_paths: []
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -42,30 +42,30 @@ study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
   result: pass
   reason: 对照写前提要：下载→安装→登录回应用→进入Codex→认出New chat的主线连续；Windows沙箱设置保持为出现提示才处理的条件分支，完成后回原任务；设置、更新与排查表在后。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 只假定会下载安装普通软件；Apple芯片、工作区、沙箱、winget在需要时解释。
+    reason: 只假定会下载安装普通软件；Apple芯片、工作区、沙箱、winget在需要时解释。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pass
-    reason: 权限模式只在Full access一处点到并指向第7章；额度不在本章展开。
+    reason: 权限模式只在Full access一处点到并指向第7章；额度不在本章展开。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
-    reason: 保留平台条件、受管设备和排查表；删去「不必」「不要」式的重复叮嘱（19处降到6处）。
+    reason: 保留平台条件、受管设备和排查表；删去「不必」「不要」式的重复叮嘱（19处降到6处）。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 步骤句保持动作在前；改后无新增界面描述。真人试读未做。
+    reason: 步骤句保持动作在前；改后无新增界面描述。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: Windows与Mac分节，沙箱流程标明仅Windows；Mac芯片识别按系统菜单原名。
+    reason: Windows与Mac分节，沙箱流程标明仅Windows；Mac芯片识别按系统菜单原名。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: 无案例材料；排查表按读者停住的位置自行组织。
+    reason: 无案例材料；排查表按读者停住的位置自行组织。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对25个锚点。本轮实际读取reference/commands、reference/settings、auth（2026-09-29）、reference/troubleshooting（2026-09-28）、windows/windows-sandbox（2026-09-26）、quickstart、windows/windows-app与app下载页（2026-09-25）；更新管理页与两个Apple支持页Claude未读，对应断言原文未改，沿用原记录的定位与核对日期。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

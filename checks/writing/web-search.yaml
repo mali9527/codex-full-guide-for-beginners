@@ -1,10 +1,10 @@
 schema: 2
 unit: web-search
-input_sha256: 6c1c0c8b2fcc914641e4dc7cb98d7178633a1aa9d3258beb4faa06ec98aa35f8
+input_sha256: 9ca44860c808f7d8d9ac8a5c2d1c6bed9a0e626ff240a16abe061fe6beab6331
 evidence_paths: []
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -36,28 +36,30 @@ study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
   result: pass
   reason: 对照写前提要：把要查的问题说清→看是否真的搜索与读取→四个检查问题→事实、推断与未知→网页内容与操作边界→保存查证记录。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 已会提供链接并读懂权限请求。
+    reason: 已会提供链接并读懂权限请求。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pass
-    reason: 先限定问题再谈来源检查；操作登录网站留第22章。
+    reason: 先限定问题再谈来源检查；操作登录网站留第22章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
-    reason: 四问表、缓存结果、托管搜索与本地命令联网的区别保留；否定式表述由22处降到6处。
+    reason: 四问表、缓存结果、托管搜索与本地命令联网的区别保留；否定式表述由22处降到6处。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 例句改为陈述读者要做的事。真人试读未做。
+    reason: 例句改为陈述读者要做的事。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: 查证请求写明平台，Mac读者替换即可。
+    reason: 查证请求写明平台，Mac读者替换即可。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: Windows首次设置的查证问题为自设。
+    reason: Windows首次设置的查证问题为自设。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对4个锚点。本轮实际读取web-search（2026-09-28）。 本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

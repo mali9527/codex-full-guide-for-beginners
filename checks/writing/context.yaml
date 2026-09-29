@@ -1,10 +1,10 @@
 schema: 2
 unit: context
-input_sha256: b956188e307874a660d48c97e274770afc57d1881ca1144d2e9c6a592643fe6d
+input_sha256: a4183212a5af2725d0a46e637c78a2c014a4380621961b6eb0592fed31c3639d
 evidence_paths: []
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -35,30 +35,30 @@ study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
   result: pass
   reason: 对照写前提要：上下文是什么→/status看哪种占用→压缩前先整理接续说明→/compact→核对关键约束→继续还是换任务→/fork与文件名区分。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 已会写接续说明，见过/status。
+    reason: 已会写接续说明，见过/status。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pass
-    reason: 压缩之前先留接续说明；记忆留第19章，工作树只作一句说明。
+    reason: 压缩之前先留接续说明；记忆留第19章，工作树只作一句说明。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
-    reason: 保留上下文与额度的区别、分支不复制文件两处关键说明；否定式表述由20处降到3处。
+    reason: 保留上下文与额度的区别、分支不复制文件两处关键说明；否定式表述由20处降到3处。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 「用不着」一词在初改稿中出现5次，已换掉。真人试读未做。
+    reason: 「用不着」一词在初改稿中出现5次，已换掉。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: 命令保留原词。
+    reason: 命令保留原词。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: 两种排版方案的比较为自设。
+    reason: 两种排版方案的比较为自设。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对6个锚点。本轮实际读取reference/slash-commands（2026-09-28）、config-file/config-reference与environments/modes（2026-09-29）。自动压缩只写「阈值随模型而定」，未给比例。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

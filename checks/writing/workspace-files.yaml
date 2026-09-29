@@ -1,10 +1,10 @@
 schema: 2
 unit: workspace-files
-input_sha256: a43921be51081201cd32944f6e8055b6f219491290acb796b7857252d62d276a
+input_sha256: dab43a736e0ac9a487d1eea44b363557f08e574f4b2948e7008b9bf16c763982
 evidence_paths: []
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -57,30 +57,33 @@ study_review:
   result: pass
   reason: 对照写前提要：成稿次序为认三个区域→取得材料并选外层文件夹→Open folder→Edit project核对路径→在项目内New chat、Local、Ask
     for approval→三条提醒的短消息→状态表→同任务追加；输入框周围的设置、其他入口与成果面板移到小任务之后，各用两三句并指向主讲章。Add folder与Make
-    primary按提要压成备选入口一节。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    primary按提要压成备选入口一节。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30
+    Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 承接第2章已进入Codex；路径在核对位置时解释；提示词、项目与任务在用到处说明。
+    reason: 承接第2章已进入Codex；路径在核对位置时解释；提示词、项目与任务在用到处说明。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pending
     reason: 首次运行前仍未教读者怎样停下一次普通运行。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。需在Windows与Mac实机确认后补入，本项保持待定。
+      2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
-    reason: 全章由约7150字减到约6400字：把与第6、7、9、10章重复的讲解压成指路，合并「批准／批注」一节；框架要求本章承担的入口一项未删。
+    reason: 全章由约7150字减到约6400字：把与第6、7、9、10章重复的讲解压成指路，合并「批准／批注」一节；框架要求本章承担的入口一项未删。 2026-09-30
+      Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 三条提醒的例子贯穿发送、读状态和追加；设置表缩成四行。真人试读未做。
+    reason: 三条提醒的例子贯穿发送、读状态和追加；设置表缩成四行。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: 路径给Windows与Mac两种写法；听写键位写明Mac上也是Control；命令菜单与斜杠菜单分开。
+    reason: 路径给Windows与Mac两种写法；听写键位写明Mac上也是Control；命令菜单与斜杠菜单分开。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: 水杯、还书三条提醒与「我的待办」材料为本书自编。
+    reason: 水杯、还书三条提醒与「我的待办」材料为本书自编。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对42个锚点。本轮实际读取projects、reference/commands、permission-modes、prompting、environments/modes、models、agent-configuration/speed、artifacts-viewer、reference/settings（2026-09-29），features/voice、reference/slash-commands、plugins（2026-09-28），automations（2026-09-27）。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。正文未写任何停止按钮或按键。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

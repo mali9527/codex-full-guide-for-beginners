@@ -1,10 +1,10 @@
 schema: 2
 unit: models-effort
-input_sha256: 8c5dceddf5960a9be40915c9550afb53804223606cf288e73762366bd81db629
+input_sha256: 1d782ec9e2032c7f331491455300411c7bb9d8952d8ba92e48af650dcb98c00c
 evidence_paths: []
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -49,30 +49,31 @@ study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
   result: pass
   reason: 对照写前提要：找到控件→读Power预设→需要时进Advanced→按工作需要选模型→Effort含义与起步建议→Max与Ultra→Fast→用结果决定是否调整。models一页的六个预设与起始预设已写入。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 第3、4章已用过模型控件；Power、Effort、Fast在调整之前各自解释。
+    reason: 第3、4章已用过模型控件；Power、Effort、Fast在调整之前各自解释。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pass
-    reason: 先找到当前任务的控件再谈调档；子代理细节指向第18章。
+    reason: 先找到当前任务的控件再谈调档；子代理细节指向第18章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
-    reason: 补入六个Power预设的清单和起始预设，读者打开控件能对上名称；倍率只说明用量。
+    reason: 补入六个Power预设的清单和起始预设，读者打开控件能对上名称；倍率只说明用量。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 一次只改一项的建议保留；否定式表述由15处降到3处。真人试读未做。
+    reason: 一次只改一项的建议保留；否定式表述由15处降到3处。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: 型号与档位保留原词；不比较价格。
+    reason: 型号与档位保留原词；不比较价格。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: 漏掉「选10张」与照片更新两例为自设情景。
+    reason: 漏掉「选10张」与照片更新两例为自设情景。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对锚点。本轮实际读取models、agent-configuration/speed、model-selection（2026-09-29）、reference/slash-commands（2026-09-28）。起始预设Sol
     Light与Advanced中的逐型号起步建议在正文分开表述，未合并成一个「默认值」。 本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

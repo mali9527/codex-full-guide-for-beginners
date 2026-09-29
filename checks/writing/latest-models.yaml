@@ -1,13 +1,13 @@
 schema: 2
 unit: latest-models
-input_sha256: 3bef314c28d947e57030a98b960ebcf238d97073197ad39b97eda46300c32e9b
+input_sha256: 85b065f09266c328cd850cd805bef9fc110f5ed06044706f0ef1a7b97b00fdfa
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -50,30 +50,31 @@ study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
   result: pass
   reason: 对照写前提要：三条教学顺序均落在成稿——从整理资料的麻烦进入、四种用途各配自设小例、再讲模型／Codex／工具分工、提要求、选型与Effort、找到Astra；Power预设清单与Max、Ultra按提要留给第6章。三项官方阅读分别落实为三行起点表、「相同材料比较」和请求示例的四件事。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 只用日常电脑经验；推理、Effort在第一次出现处结合合并提醒的例子解释，未假定读者已装应用。
+    reason: 只用日常电脑经验；推理、Effort在第一次出现处结合合并提醒的例子解释，未假定读者已装应用。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pass
-    reason: 先讲能帮什么，再讲设置；Effort只讲到Light起步，档位细节回指第6章，权限与运行中补充分别指向第7、8章。
+    reason: 先讲能帮什么，再讲设置；Effort只讲到Light起步，档位细节回指第6章，权限与运行中补充分别指向第7、8章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
-    reason: 删去逐段附带的限制提醒（否定式表述由22处降到7处），保留「换模型不补材料」「工作约定不替代权限」两处确会误解的说明。
+    reason: 删去逐段附带的限制提醒（否定式表述由22处降到7处），保留「换模型不补材料」「工作约定不替代权限」两处确会误解的说明。 2026-09-30
+      Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 判断放在段首，例子沿用发照片与设备比较；设问与对仗句已去掉。是否读来轻松仍需真人试读，本项只代表编辑复核。
+    reason: 判断放在段首，例子沿用发照片与设备比较；设问与对仗句已去掉。是否读来轻松仍需真人试读，本项只代表编辑复核。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: 未绑定语种或国家；型号、按钮保留原词；日期为完整年月日。
+    reason: 未绑定语种或国家；型号、按钮保留原词；日期为完整年月日。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: 两台设备、发照片与请求示例均为本书自设，文中已说明不是模型测试结果；未取用官方示例。
+    reason: 两台设备、发照片与请求示例均为本书自设，文中已说明不是模型测试结果；未取用官方示例。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并逐条核对27个锚点仍各出现一次。本轮实际读取models、model-selection、prompting三页（2026-09-29）；developers.openai.com上的Astra型号页、指南与文章Claude未重读，对应断言原文未改，沿用原记录的定位与核对日期。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

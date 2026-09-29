@@ -1,10 +1,10 @@
 schema: 2
 unit: account-usage
-input_sha256: 84097fa2f4ae895d8052eb788da195f4d78d87604a0dd03c09ba27755d06aa6b
+input_sha256: d9147cca2ecad064f1527af7c2079805e316b042a4a2b27d561caf2c43feb739
 evidence_paths: []
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -42,30 +42,31 @@ study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
   result: pass
   reason: 对照写前提要：核对账号与工作区→几种会员差在哪里→用量页面读法→窗口与每周限额→一条消息为何没有固定消耗→/status→达到限额以后→少花冤枉用量。pricing一页的档位清单、Pro倍数、进行中的一轮可继续、credits用途均写入正文，未列价格。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 以第4章做过的任务为参照；token、credits、窗口在用到处解释。
+    reason: 以第4章做过的任务为参照；token、credits、窗口在用到处解释。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pass
-    reason: 会员档位放在看用量之前，读者先知道自己的额度从哪里来；上下文用量只作区分并指向第13章。
+    reason: 会员档位放在看用量之前，读者先知道自己的额度从哪里来；上下文用量只作区分并指向第13章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
     reason: 按作者2026-09-28提出的要求补入会员档位与达到限额后的处理；原稿只讲「不讨论套餐」而没有说明档位，读者最想知道的两件事现在有了答案。
+      2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 否定式表述由21处降到4处；百分比读法保留示例并写明是举例。真人试读未做。
+    reason: 否定式表述由21处降到4处；百分比读法保留示例并写明是举例。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: 档位名称保留原词；不写价格与货币；组织账号差异单独说明。
+    reason: 档位名称保留原词；不写价格与货币；组织账号差异单独说明。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: 消耗对比沿用本书两条请求；档位表按官方描述转述并注明官方以编程为例。
+    reason: 消耗对比沿用本书两条请求；档位表按官方描述转述并注明官方以编程为例。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对锚点。本轮实际读取pricing、auth（2026-09-29）、reference/slash-commands（2026-09-28）。新增五条断言均取自pricing当日原文；写作约定「不展开套餐选购与价格」仍遵守，正文只说明档位差别，不作购买建议。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

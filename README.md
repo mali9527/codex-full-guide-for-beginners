@@ -32,7 +32,7 @@
 <summary>展开完整目录</summary>
 
 <!-- studio:toc -->
-共 26 个单元，0 张图。
+共 26 个单元，7 张图。
 
 1. [开篇：GPT-6 Astra与现在的Codex](manuscript/latest-models.md)
 2. [第1章 Codex能帮你做什么](manuscript/intro.md)

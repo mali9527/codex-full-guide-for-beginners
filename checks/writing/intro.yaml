@@ -1,10 +1,10 @@
 schema: 2
 unit: intro
-input_sha256: a3dd9f603b7d67a8d0da0173a95aad1c0dca5f3c34cad9dbf42613ef34f7e0aa
+input_sha256: 8a8d479a69eed47064b9905820af2a7a9f0781386fd66133eedded180a34e754
 evidence_paths: []
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-29'
-reviewer: claude
+reviewed_on: '2026-09-30'
+reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
@@ -42,30 +42,30 @@ study_commit: cc5465ac84231422896a8177597b17992f99ebbe
 study_review:
   result: pass
   reason: 对照写前提要：四类成果各配可检查的小例、材料与工具需要交到任务里、提供材料的三种方式、读者参与的判断、三层关系与入口表均按提要顺序成稿；按use-chatgpt一页补入「只想要成果时Work也能做同类工作」。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
+    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 从文件之间来回切换的日常麻烦写起，未用开发术语；程序、AI代理在用到处各一句解释。
+    reason: 从文件之间来回切换的日常麻烦写起，未用开发术语；程序、AI代理在用到处各一句解释。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   concept_timing:
     result: pass
-    reason: 附件与连接文件夹的区别在此点到，实际操作留第3章；联网查证留第11章，均有准确回指。
+    reason: 附件与连接文件夹的区别在此点到，实际操作留第3章；联网查证留第11章，均有准确回指。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   information_value:
     result: pass
-    reason: 每类用途都落到读者能检查的结果；压缩了「不代表」「并不等同」一类句子（11处降到3处）。
+    reason: 每类用途都落到读者能检查的结果；压缩了「不代表」「并不等同」一类句子（11处降到3处）。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   natural_style:
     result: pass
-    reason: 段落围绕一个意思，判断在前；说明稿请求保留。真人试读未做。
+    reason: 段落围绕一个意思，判断在前；说明稿请求保留。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   localization:
     result: pass
-    reason: 入口名称保留原词，例子不依赖职业或地区。
+    reason: 入口名称保留原词，例子不依赖职业或地区。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
   independent_creation:
     result: pass
-    reason: 两份备忘、说明稿请求、购物预算工具均为自设。
+    reason: 两份备忘、说明稿请求、购物预算工具均为自设。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
 fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对17个锚点。本轮实际读取use-chatgpt（2026-09-28）、prompting、artifacts-viewer、projects（2026-09-29）；quickstart为2026-09-25所读。新增的Work一句依据use-chatgpt入口对照表，归入既有锚点「Work和Codex的能力有重叠。」所属事实。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
+    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
