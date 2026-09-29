@@ -6,48 +6,42 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 11426c1c7d04bf97e5b527af1995e0e9ffcfb5cd1d1e31ae76b7f6f0b50d74d7
-  reader_goal: 看懂当前登录身份、额度窗口及重置时间，遇到限制能分清原因。
+  base_manuscript_sha256: 7e1f1cb541ce36aaae4786851d456400383ad4d782fe0d90d486dda7859e7e71
+  reader_goal: 能确认当前账号与工作区，说出几种会员大致差在哪里，到用量页面和/status看懂剩余与重置，遇到限额提示知道分清原因和下一步。
   reader_start:
-  - 已登录Codex并完成第4章文件任务；不懂token/credits，不假定读者知道当前组织工作区。
+  - 已完成一次文件任务；会在输入框用斜线菜单。
   explain_now:
-  - 身份与本地项目不同
-  - 额度、token和credits各表示什么
-  - 看实际剩余与限制后采取行动
+  - 会员档位差在用量、模型与管理功能
+  - 窗口、每周限额、credits各指什么
+  - token衡量的范围比打了多少字大
+  - 达到限额时当前这一轮的处理
   official_readings:
   - fact_id: usage-windows-and-credits
     url: https://learn.chatgpt.com/docs/pricing
-    locator: 'FAQ: usage limits / tokens and credits'
+    locator: 套餐说明、用量表注释与常见问题
     checked_on: '2026-09-29'
-    understanding: 一句消息不是固定计费单位，不同窗口与账号规则不能混用。
-    teaching_use: 先打开个人用量，再用虚构数值解释百分比；不列表套餐价格。
-  - fact_id: sign-in-options
-    url: https://learn.chatgpt.com/docs/auth
-    locator: OpenAI authentication
-    checked_on: '2026-09-29'
-    understanding: 订阅身份和API身份对应不同规则。
-    teaching_use: 只沿已有付费ChatGPT登录，API作为识别误入的说明。
+    understanding: Work与Codex包含在Free、Go、Plus、Pro、Business、Edu、Enterprise各档；Pro为Plus的5倍或20倍用量；本地消息与云端聊天共用额度，可能另有每周限额；达到限额时进行中的这一轮可以做完；credits用于在达到包含额度后继续；当前限额看用量仪表板。
+    teaching_use: 新增一节说明档位差别和达到限额时的实际情形，不列价格、不作购买建议。
   - fact_id: desktop-slash-entries
     url: https://learn.chatgpt.com/docs/reference/slash-commands
     locator: /status
-    checked_on: '2026-09-29'
-    understanding: 桌面状态显示任务、上下文和限额；上下文不是账号额度。
-    teaching_use: 教在输入区选择菜单项及分别读标签。
+    checked_on: '2026-09-28'
+    understanding: 桌面/status显示聊天标识、上下文用量和速率限制。
+    teaching_use: 作为任务内查看入口，并与账号用量页区分。
   teaching_sequence:
-  - 已登录→个人菜单核对身份→官方用量页核对同一账号→读窗口/剩余/重置时间
-  - 当前任务输入/→选择/status→分清上下文与限额→按错误种类处理
+  - 个人菜单核对账号与工作区→几种会员差在哪里
+  - 打开用量页面→先读标签再读数字→窗口与每周限额→为什么一条消息没有固定消耗
+  - 任务内/status→出现限制时分清是哪一种→达到限额后的处理→怎样少花冤枉用量
   defer:
-  - 不讲购买套餐或API密钥
-  - 上下文压缩在第13章，当前只分清两个百分比
-  case_plan: 用明确标注的虚构剩余比例解释可用量，不展示本人账号或编造实测截图。
-study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
+  - 模型与Fast的选择留第6章
+  - 上下文用量留第13章
+  case_plan: 以第4章那次任务与「把还书放第一项」的短请求对比消耗；百分比读法为示例数字。按作者2026-09-28要求补会员档位与查看额度的基础知识。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读与第6/13章衔接：先核账号工作区再用量页；token/credits/上下文只作当前需要的区分，没有以/compact解决订阅限额。后章真实写出后无需增加重复定义。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

@@ -6,54 +6,54 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: fad8fc9fff647ab8be333d50350519119d2266e951a51b8252a4fcc3d91993c7
-  reader_goal: 按作用范围保存稳定要求，并管理可选记忆。
+  base_manuscript_sha256: 8703216738cae33223934fec6c2a4321d0930a3f70b55783043e164fb3fc5167
+  reader_goal: 能把一条要求放到合适的范围：本次任务、个人偏好、项目说明或记忆，并会检查项目说明是否生效。
   reader_start:
-  - 已知当前上下文与项目目录，不懂长期说明。
+  - 已会写接续说明；已会用斜线菜单。
   explain_now:
-  - 当前要求/个人偏好/项目说明
-  - AGENTS文本用途和已有文件保护
-  - 记忆使用与生成、全局与本次区别
+  - 三个范围
+  - 项目说明文件是什么
+  - 记忆默认关闭且不是可靠交接
+  - Computer History是什么
   official_readings:
   - fact_id: project-instructions
     url: https://learn.chatgpt.com/docs/personalize
-    locator: Personal instructions; personality
-    checked_on: '2026-09-29'
-    understanding: 风格改变交流，个人要求存全局AGENTS；项目说明有作用范围。
-    teaching_use: 先设置偏好，再在正确项目检查已有说明，生成最小文件后新任务验证。
+    locator: Personality与custom instructions
+    checked_on: '2026-09-28'
+    understanding: 个性可选Friendly、Pragmatic、None，只改变交流方式；Codex的自定义说明存于全局AGENTS.md。
+    teaching_use: 个人偏好一节用设置入口，不要求找文件。
   - fact_id: project-instructions
     url: https://learn.chatgpt.com/docs/agent-configuration/agents-md
-    locator: Discovery; verify
+    locator: 发现顺序与大小限制
     checked_on: '2026-09-29'
-    understanding: 按目录发现，已有override及更近目录影响；不等于安全权限。
-    teaching_use: 不用终端，直接让Codex报告加载的文件与摘要。
+    understanding: 先全局后项目，越靠近当前目录的说明越优先；空文件被跳过，合计超过上限后不再追加。
+    teaching_use: 规则没生效时的检查清单据此写。
   - fact_id: local-memory
     url: https://learn.chatgpt.com/docs/customization/memories
-    locator: Control/configure local memories
-    checked_on: '2026-09-29'
-    understanding: 默认关闭，后台生成与网页分离，任务控制不改总开关。
-    teaching_use: Settings先开启后/memories两项选择，退出/关闭与删除不同。
+    locator: 记忆的生成与默认状态
+    checked_on: '2026-09-28'
+    understanding: 本地记忆默认关闭，后台生成；与网页记忆分开；必须生效的要求放AGENTS.md。
+    teaching_use: 记忆一节强调必要信息仍要明说。
   - fact_id: computer-history-optional
     url: https://learn.chatgpt.com/docs/customization/computer-history
-    locator: How; permissions; clear
+    locator: 平台、默认状态与采集范围
     checked_on: '2026-09-29'
-    understanding: Mac默认关闭，采集与清除分开，服务器处理生成。
-    teaching_use: 仅可选介绍，没启用也完整学本书。
+    understanding: 限macOS与支持地区，对Pro、Business、Enterprise默认关闭，需开启Memories；采集点击、输入、切换等事件，不含截图与音频；摘要经服务器处理后存本机。
+    teaching_use: 压缩为一段可选认识。
   teaching_sequence:
-  - 确定要求作用范围→设置或检查项目说明→保存→新任务核对来源和执行
-  - 可选记忆先全局启用→当前任务控制使用/生成→核对真实结果；不保证立刻记住
+  - 三种范围→Settings → Personalization写个人偏好
+  - 项目说明：先查已有→没有再用/init起草→保存后新任务确认
+  - 记忆：开启、/memories两类选择、后台生成
+  - Computer History简述
   defer:
-  - 不教环境变量/override工程
-  - Computer History非必做
-  case_plan: 把原材料不动、未定保留、另存和实际路径写进项目说明；不写一次性购买状态。
-study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
+  - Skill留第20章
+  case_plan: 沿用「我的待办」项目的四条工作约定；自设。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：与上下文/Skill章连读：当前要求、个人设置、项目AGENTS与记忆各有范围；先检查已有说明再/init，新任务核对读取和行为。ComputerHistory只作Mac条件功能，不变成所有读者前置。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

@@ -6,42 +6,41 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: ac1ed0479a79563e5d2bd4f39d0007344c955b8f3b64440c606563dda695e1b2
-  reader_goal: 选择正确浏览器和标签，并在限定网站范围内查看操作。
+  base_manuscript_sha256: db7137d51a197df3871613bbe636f2a6df294dbd49a78f25742d464d07ef7de8
+  reader_goal: 能区分内置浏览器与已有标签两条路线，完成一次只读查看，管理网站许可，连接失败时知道查哪一层。
   reader_start:
-  - 已会网页搜索、插件安装、成果批注。
+  - 已会联网查证与安装插件；已懂批准请求。
   explain_now:
-  - 内置资料与常用浏览器不同
-  - 扩展安装到正确用户配置
-  - 网站许可与具体动作分开
+  - 两种浏览器环境的登录状态不同
+  - 网站许可与页面动作分开
+  - 页面批注
   official_readings:
   - fact_id: browser-boundary
     url: https://learn.chatgpt.com/docs/browser
-    locator: Computer Use; Comment
-    checked_on: '2026-09-29'
-    understanding: '@Browser内置自动具备，访问需批准；Annotation后仍发请求，不自动改第三方网站。'
-    teaching_use: 先打开公开官方页做只读检查，不需要开发服务器。
+    locator: 内置浏览器、独立资料与限制
+    checked_on: '2026-09-27'
+    understanding: 内置浏览器使用与常用浏览器分开的资料，不共享标签与登录；CLI与编辑器扩展没有它。
+    teaching_use: 先认识内置浏览器再讲扩展。
   - fact_id: browser-boundary
     url: https://learn.chatgpt.com/docs/chrome-extension
-    locator: Setup; permissions; troubleshoot
-    checked_on: '2026-09-29'
-    understanding: 插件/扩展/Manage/新任务/@选择顺序；浏览器开关是菜单显示非网站总授权。
-    teaching_use: 按实际浏览器与profile核对，退出网站允许名单说明。
+    locator: 支持浏览器、安装与权限
+    checked_on: '2026-09-28'
+    understanding: 支持Chrome、Edge、Brave、Opera、Vivaldi；在Settings > Computer Use选浏览器并安装插件与扩展，显示Manage后用@选择；Opera不支持侧聊。
+    teaching_use: 安装步骤后先让它报告页面标题与地址。
   teaching_sequence:
-  - 选内置或已有标签→具备连接/授权→确认URL/标题/账号→明确只读目标→查实际页面→反馈
-  - 需扩展时先Settings ComputerUse→安装→Manage→新任务@→网站批准→检查；撤销从Manage名单
+  - 先决定用哪条路线→@Browser只读打开官方页→核对地址标题
+  - 网站许可与页面动作→下载与上传边界
+  - 扩展：设置→安装→Manage→新任务@选择→报告页面
+  - 只交需要的页面→页面批注→连接不上时的排查
   defer:
-  - 不教CDP开发模式
-  - 不恢复网页制作课
-  case_plan: 只读官方文档页的一条条件；批注为定位反馈，不改官网。
-study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
+  - 操作其他应用留第23章
+  case_plan: 以官方项目说明页为只读对象；不恢复网页制作内容。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：与材料/插件/电脑操作章连读：内置profile与扩展浏览器的已有标签分开；先连接并核对用户配置/网站许可再@标签。批注保存后才发送要求，内置上传自动化限制不省略。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

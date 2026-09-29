@@ -8,47 +8,40 @@ reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: b710e9f61fd4fdbe58602899a851b286ff878862ee39e801edceb958f0535e44
-  reader_goal: 按安装→登录→返回应用→进入Codex的主线准备好；Windows本地设置仅在出现提示时进入并返回。
+  base_manuscript_sha256: 6fd8d11482bb218b113947f7020a6a2331aa07a35da3b1928677c1cfacc882a8
+  reader_goal: 能选对下载入口完成安装和登录，进入Codex；遇到Windows首次设置、更新受管理或登录未返回时知道查哪里。
   reader_start:
-  - 第1章已解释桌面应用、Codex入口和模型不同；读者尚未完成安装登录，也未连接目录。
+  - 已知道应用、入口和模型的区别；会下载安装普通软件。
   explain_now:
-  - 平台安装分支与共同登录主线
-  - Windows沙箱是条件设置，不固定置于登录之前
-  - 第2章结束只进入Codex，第3章在明确项目后创建首次任务
+  - 浏览器登录后要回应用确认
+  - 账号工作区与电脑文件夹不是一回事
+  - 沙箱是首次本地工作时的运行限制
   official_readings:
-  - fact_id: desktop-entry
-    url: https://learn.chatgpt.com/docs/quickstart
-    locator: Setup / Start a chat
-    checked_on: '2026-09-29'
-    understanding: 先安装登录，再选择工作位置和开始任务；不同入口不混成固定点击过程。
-    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
-  - fact_id: sign-in-options
-    url: https://learn.chatgpt.com/docs/auth
-    locator: Sign in with ChatGPT / desktop app
-    checked_on: '2026-09-29'
-    understanding: 浏览器身份认证后要返回应用确认，不把身份与本地环境混成一步。
-    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
   - fact_id: windows-first-setup
     url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    locator: Configure the Windows sandbox
-    checked_on: '2026-09-29'
-    understanding: Set up属于本地运行配置；源码/开发环境分支不移用为安装必做。
-    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+    locator: 首次设置、管理员批准与受管设备
+    checked_on: '2026-09-26'
+    understanding: 原生沙箱依赖管理员批准的初次设置，会出现系统提权提示；受管设备可能被策略阻止；日常运行不需要管理员权限。
+    teaching_use: Windows设置写成出现提示才处理的条件分支，完成后回到原任务。
+  - fact_id: desktop-entry
+    url: https://learn.chatgpt.com/docs/quickstart
+    locator: Setup；Start a chat
+    checked_on: '2026-09-25'
+    understanding: 桌面应用登录后从ChatGPT下拉选择Codex，再开始聊天。
+    teaching_use: 登录与进入Codex连续讲，模型选择后置。
   teaching_sequence:
-  - 选择对应平台安装包→完成安装并打开应用；不同时走两平台
-  - 在浏览器登录→返回应用确认账号（本章登录节）→进入Codex；此时还未要求在空位置发消息
-  - 开始本地工作如遇Set up→阅读本章条件分支并设置→返回第3章原任务
+  - 按电脑选官方下载→安装→打开应用
+  - Continue to sign in→浏览器登录→回应用确认账号与工作区
+  - 下拉选择Codex→认出New chat→进入第3章
+  - 条件分支：Windows出现Set up提示时设置并回原任务；设置与更新入口；按停住的位置排查
   defer:
-  - 后续章节的完整档位策略、队列控制与高级项目管理
-  - 正在运行时停止入口尚无双平台真实依据；本轮未找到可确认桌面普通任务停止键的文档，保留原操作清单缺口，不移植CLI或猜按钮。
-  case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
-study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
+  - 权限模式选择留第7章
+  - 额度留第5章
+  case_plan: 本章无案例文件；以读者自己的电脑为对象。修订只收紧重复提醒，不新增未核对的界面描述。
+study_commit: null
 study_review:
-  result: pass
-  reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读安装登录：浏览器登录后返回应用、选择Codex后才去第3章连文件夹；Windows提示仍为条件分支。新增快捷键事实只扩展其余动作，不改变本章Settings/Openfolder/更新条件；未借最新阅读提升旧安装实测。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

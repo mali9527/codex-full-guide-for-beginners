@@ -6,41 +6,40 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: f7d201003444d3f810d049c4c9e454b015e357aff6d3066c4e818b6492dfdd30
-  reader_goal: 先讨论有分歧的做法，并明确从计划转执行。
+  base_manuscript_sha256: b32ce3fa03addaf4fac980c1d8729aa22e520e449702f985bc423b9e634d0455
+  reader_goal: 能判断何时先讨论方案，用/plan进入、读懂取舍、收束范围，再明确切出并执行。
   reader_start:
-  - 已会自然语言边界与任务分支；未用Plan。
+  - 已会把需求说清；已会用斜线菜单。
   explain_now:
-  - 计划用于有选择的多步工作
-  - 提问与方案对比
-  - Plan开关与明确授权
+  - 先讨论也要读材料
+  - 计划看取舍不看步数
+  - 认可方案不等于已修改文件
   official_readings:
   - fact_id: plan-before-editing
     url: https://learn.chatgpt.com/docs/prompting
-    locator: Prompting Codex
+    locator: Codex：/plan与/goal
     checked_on: '2026-09-29'
-    understanding: Plan先调查提方案再编辑；可以读取相关资料。
-    teaching_use: 先确认项目材料，输入/plan，限只读，先解决真正影响结果的问题。
+    understanding: /plan让Codex先调查并提出做法再修改；计划认可后可用/goal持续推进。
+    teaching_use: 进入与切出各写一次动作与核对。
   - fact_id: plan-before-editing
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: /plan toggle
-    checked_on: '2026-09-29'
-    understanding: 切换规划模式而非普通提示词；退出也需要操作。
-    teaching_use: 看当前模式，确定方案，再切出Plan核对状态后发执行要求。
+    url: https://learn.chatgpt.com/docs/long-running-work
+    locator: Plan与Goal的关系
+    checked_on: '2026-09-28'
+    understanding: 结果不清楚时先用Plan问清约束，再转成带完成标准的目标。
+    teaching_use: 结尾区分Plan与Goal的用途。
   teaching_sequence:
-  - 确认项目和文件→/plan→只读调查及问题→比较方案→选定→切出Plan确认→限定输出执行→实际核对
+  - 确认计划针对哪份文件→/plan进入并核对模式→限定调查范围
+  - 比较两种做法的取舍→回答影响选择的问题
+  - 收束成可检查的下一步→/plan切出→明确执行要求→打开实际文件
   defer:
-  - Goal下一组，不当计划必然后续
-  - 不许把计划完成算文件完成
-  case_plan: 按状态还是按事项排待办；通过保持原意的比较展示取舍，不增加业务场景。
-study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
+  - Goal留第17章
+  case_plan: 沿用待办清单v2，按状态分组与保持事项顺序两种自设做法。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交d69d4d8比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：与第14/16章连续读：先当前项目和v2，/plan调查与比较，确认选择以后切出规划并明确执行，执行后仍看文件。没有从方案说明直接跳到声称完成。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

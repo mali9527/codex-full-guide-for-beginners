@@ -8,56 +8,54 @@ reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: b2674818f5f2b8372e1be668bcedbc3052d06b1329170e57490ccbeddd9b40b8
-  reader_goal: 在正确项目准备好首次任务，选必要设置后发消息，知道何时等待、何时回应、何时发送下一条。
+  base_manuscript_sha256: e45fc08cf8c9c607c7f3d3313d03878b74cf6d61e11d6e4386df75ff4a1fd599
+  reader_goal: 能打开本书材料所在文件夹并核对路径，在该项目里新建任务、选Local和Ask for approval，发出一条短消息并看懂本轮状态，再追加一条修改。
   reader_start:
-  - 已按第2章安装、登录并进入Codex；没有要求读者已创建任务或完成Windows沙箱。
-  - 会下载/解压，但项目连接、路径、Local、权限和运行状态尚未学过。
+  - 已安装、登录并进入Codex；已认出New chat入口。
+  - 会下载、解压、找文件夹。
   explain_now:
-  - Open folder与Add folder是替代入口
-  - 先核对项目目录，再开始一次新任务并选Local
-  - 发送前选择Ask for approval并确认模型可用
-  - 第一次发送→识别运行/等待→完成后检查→在同一任务继续
+  - 项目与电脑文件夹的关系、路径是什么
+  - 一轮请求的几种状态
+  - 输入框附近各个选项各管一件什么事
   official_readings:
-  - fact_id: desktop-basic-navigation
-    url: https://learn.chatgpt.com/docs/reference/commands
-    locator: macOS/Windows General / Chats / Input
+  - fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Local projects；Edit project、Add folder、Make primary
     checked_on: '2026-09-29'
-    understanding: 默认键和应用入口是找位置的帮助，New chat不应在相邻段反复执行。
-    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+    understanding: 需要读写电脑文件时添加本地项目；Edit project可增改文件夹，新任务从主要文件夹开始，次要文件夹可搜索读写但不自动发现项目文件。
+    teaching_use: 先用Open folder完成连接并核对路径，已有项目的Add folder与Make primary缩成一段备选入口。
+  - fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: General与Chats快捷键表
+    checked_on: '2026-09-29'
+    understanding: Open folder为Ctrl+O与⌘O且限Codex和Work；New chat为Ctrl+N与⌘N；批准与拒绝键只在请求打开时适用；页面没有停止运行的快捷键。
+    teaching_use: 只给打开文件夹、新任务、侧栏、命令菜单四组键位；不写停止键。
   - fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Permission modes / How permissions work
+    locator: Ask for approval；控件位置
     checked_on: '2026-09-29'
-    understanding: 权限控件在输入框下方；应先选再发，不把名称介绍当已经完成设置。
-    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
-  - fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: Choose a model / Power / Advanced
-    checked_on: '2026-09-29'
-    understanding: 有可用模型即可首次发送，Power默认起点与主动Advanced调整分开。
-    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+    understanding: 该模式可在当前工作区读写并运行常规本地命令，联网或越出边界前询问；控件在输入框下方；官方建议多数工作从它开始。
+    teaching_use: 发送前选定并核对，详解留第7章。
   - fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
-    locator: Prompting overview / Steering and queuing
+    locator: Steering and queuing
     checked_on: '2026-09-29'
-    understanding: 后续消息可能进入当前轮或队列；首例先等结束再发，不能默认即时替换。
-    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+    understanding: 运行中的消息可引导当前运行或排队等下一轮，由设置决定。
+    teaching_use: 本章只要求等一轮结束再反馈，一句话指向第8章。
   teaching_sequence:
-  - 材料已解压→Open folder选择外层→Edit project核对路径；已有项目只需另一条Add folder分支
-  - 目录正确→New chat一次→核对项目/Local与权限，模型保留可用起点→可发送第一条
-  - 短要求发送→看运行/补问/批准/失败→等本轮结束核对两事项→在同一任务调整顺序
-  - 完整结果之后再看附件、听写和详细控件；这些预览不当作首次任务必做
+  - 认三个区域→侧栏与New chat
+  - 取得随书材料并选外层文件夹→Open folder→Edit project核对路径→在该项目New chat→选Local→选Ask for approval并核对
+  - 发三条提醒的短消息→看状态表判断本轮处于哪一步→核对结果→同一任务追加调整顺序的要求
+  - 完成小任务后再认输入框附近的设置、其他入口和成果面板，各用两三句并指向主讲章
   defer:
-  - 后续章节的完整档位策略、队列控制与高级项目管理
-  - 正在运行时停止入口尚无双平台真实依据；本轮未找到可确认桌面普通任务停止键的文档，保留原操作清单缺口，不移植CLI或猜按钮。
-  case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
-study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
+  - 模型与Effort选择留第6章，权限模式留第7章
+  - 附件与文件引用的选择留第9章，预览与批注留第10章
+  - Steer、Queue和停止留第8章
+  case_plan: 三条自设提醒（水杯两次、还书一次），只回复文字；「我的待办」已连接但本章不读写其中文件。修订把重复于后章的设置讲解压成指路，让第一条消息更早出现在读者眼前。
+study_commit: null
 study_review:
-  result: pass
-  reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读顺序：选外层目录→核对路径→新任务/Local/权限→短消息→结果后反馈。第9、12章详细材料和项目操作现有正文可接，但不代替本章必要操作。普通运行直接停止仍未取得真实入口，原concept_timing
-    pending保留。 写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

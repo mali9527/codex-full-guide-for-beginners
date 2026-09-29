@@ -6,41 +6,41 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: ab10d6dd51e1fe222348179d6339936a2c1160309c40606d8052ab2f9c59ad03
-  reader_goal: 把已跑通的流程做成自己可调用的技能并维护。
+  base_manuscript_sha256: b92af40bdc9f6ebc2b7bc453fbe266d6b09c8c284afd23973fa8658995d32675
+  reader_goal: 能判断一套做法是否值得存成Skill，找到并选择已有技能，用$skill-creator创建、试用、修改和停用自己的技能。
   reader_start:
-  - 已会项目说明和文件结果，未装插件。
+  - 已有跑通并核对过的清单整理流程；已会写项目说明。
   explain_now:
-  - 流程技能与常驻说明不同
-  - 先查可用→内置creator创建→确认位置→调用
-  - 试用/触发范围/停用
+  - 技能复用的是做法
+  - 描述决定何时被选用
+  - 选中入口出现不等于结果有效
   official_readings:
   - fact_id: skills-plugins
     url: https://learn.chatgpt.com/docs/build-skills
-    locator: Create a skill; sidebar; disable
+    locator: 创建、结构、发现与调用设置
     checked_on: '2026-09-29'
-    understanding: 内置creator可自然语言创建指令型技能，无需先插件；技能变更自动发现，有问题重启。
-    teaching_use: 取得路径从内置creator开始，先检查说明再独立新任务调用。
+    understanding: 技能是含SKILL.md的目录，需name与description；个人技能存于用户目录下的技能文件夹，改动自动发现，未出现时重启；先载入名称与描述，选用时再读全文；可设为仅显式调用；优先写指令而非脚本。
+    teaching_use: 创建请求只用自然语言，检查路径写死、擅自补日期等问题。
   - fact_id: skill-invocation-surface
     url: https://learn.chatgpt.com/docs/skills-and-plugins
-    locator: Use skills
-    checked_on: '2026-09-29'
-    understanding: Codex用$指定；自动匹配看描述。
-    teaching_use: 输入$选实际候选，名字明确标为本例拟定。
+    locator: 调用符号与创建入口
+    checked_on: '2026-09-28'
+    understanding: Codex用$点名技能，ChatGPT用@；也可按描述自动匹配。
+    teaching_use: 先看已有技能，再创建。
   teaching_sequence:
-  - 先确认流程已完成→Skills查看已有→$skill-creator描述边界→审说明/保存位置→新任务$实际技能名并交材料→检查真实输出→局部更新/按精确路径停用
+  - 值得做成技能的条件→侧栏Skills与$菜单查看已有
+  - $skill-creator描述已跑通的流程→读草稿→保存并确认出现
+  - 新任务试用并按第4章事实核对→修改、停用、更新
   defer:
-  - 插件安装下一章
-  - 录制仅Mac指路，不作为前置
-  case_plan: 复用清单整理但材料名由每次请求给，不硬编码本机路径；不实际安装作者新技能。
-study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
+  - 插件留第21章
+  - 录制并重放仅一句
+  case_plan: 拟名notes-to-todos的个人技能，为本例名称；材料仍是两份备忘。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：与个人规则/插件章连读：已有流程先跑通，再内置创建器，读取SKILL后新任务调用核对；示例名字不冒充预装。停用走实际config来源，不发明GUI开关。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

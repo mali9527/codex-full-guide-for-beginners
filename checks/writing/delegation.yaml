@@ -15,41 +15,34 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: e26f65be776f5cd4e69aee55a21bba3729c9b89bfc31a96d4328e620ba4a2dcd
-  reader_goal: 判断哪些工作可以独立分开，并汇总可追查结果。
+  base_manuscript_sha256: 75ba938e4a6cac02a3794039e5d189b984de002323f00fd5b33120596fdbbb6a
+  reader_goal: 能判断几件事是否适合分开做，用自然语言请主任务安排只读的子代理检查，并核对返回的依据。
   reader_start:
-  - 已学项目和Goal，已经认识目录案例。
+  - 已完成资料目录的整理并有三份结果。
   explain_now:
-  - 多个用户任务与内部子代理不同
-  - 先只读分工再单人合稿
-  - 独立证据不是多个AI同意
+  - 多个任务与子代理的区别
+  - 分工的成本
+  - 意见一致不是独立证据
   official_readings:
   - fact_id: desktop-subagent-delegation
     url: https://learn.chatgpt.com/docs/agent-configuration/subagents
-    locator: Availability; Why
+    locator: 触发条件、活动查看、成本与适用工作
     checked_on: '2026-09-29'
-    understanding: 桌面明确要求独立分工，代理分别用模型工具且增加用量；显示各代理任务活动。
-    teaching_use: 让两个代理分别核条目覆盖与规则落实，主任务汇总不并发写文件。
-  - fact_id: desktop-chat-organization
-    url: https://learn.chatgpt.com/docs/long-running-work
-    locator: Run goals in parallel
-    checked_on: '2026-09-29'
-    understanding: 任务各有上下文与目标，共同文件会冲突。
-    teaching_use: 按是否独立、是否同写判断并行，否则串行。
+    understanding: 本地Codex在直接请求或适用的项目、技能说明下才使用子代理，Ultra可主动分工；桌面可从主任务的活动进入各子代理线程；可直接请Codex引导或停止子代理；子代理流程比单代理消耗更多token；读多的工作适合并行，写多的要防冲突。
+    teaching_use: 从只读检查开始；补一句停止某个子代理可以直接向主任务提出。
   teaching_sequence:
-  - 先确定资料/标准→拆两个独立只读问题→明确请求子代理→查看活动与来源→主任务处理冲突→单一写入成稿→核对
+  - 先分清两种分工→从只读检查开始的请求
+  - 看活动与返回内容→改文件时由主任务合稿
+  - 成本与判断→回到证据
   defer:
-  - 不写自定义agent文件/CLI agent
-  - 不因分工强行调Ultra
-  case_plan: 复用目录材料做覆盖和规则两种检查，分工报告指向条目和原文件，不冒充真人审核。
-study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
+  - 自定义代理配置不教
+  case_plan: 沿用资料目录结果，两个只读检查角度为本书自设。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交d69d4d8比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：与Goal、技能章连读：多个任务与内部子代理分清，以两项只读检查开始，合稿由主任务负责；没有把/agent
-    CLI或Ultra强加给普通文件整理。并行未做实测。 写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

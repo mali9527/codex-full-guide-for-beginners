@@ -6,48 +6,49 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 8fa5a21eb5d0fa3d02830c1420a7e5224ebf445d5479542d0c2f793d9a8b04b4
-  reader_goal: 在当前任务找到模型和Effort，知道从哪档起步及何时调整。
+  base_manuscript_sha256: bd1c0140f7002e2e692a4946e781a56fdd5a712151b5103b129c35af9da75ae4
+  reader_goal: 能在当前任务找到模型控件，读懂Power预设与Advanced，按任务需要选模型与Effort，知道Max、Ultra、Fast各改变什么。
   reader_start:
-  - 会打开当前任务，了解用量；已见Power/Advanced但未系统比较档位。
+  - 已会查看用量；在第4章用过模型控件。
   explain_now:
-  - 模型、Effort、Speed区别
-  - Power与Advanced实际选择顺序
-  - Light等起点与Max/Ultra范围
+  - 先分清是材料没读到还是判断没做好
+  - Power预设是什么
+  - Effort不是回答长度
+  - Fast换的是速度与用量
   official_readings:
   - fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
-    locator: Choose a model; Pick a reasoning effort; Max or Ultra
+    locator: Power presets；Advanced；起步建议；Max与Ultra
     checked_on: '2026-09-29'
-    understanding: 预设与可分选设置不同，推荐起点不是实际默认；Ultra不是单纯多想。
-    teaching_use: 先控件再选择，再以备忘缺数量/冲突比较何时应升档。
-  - fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/model-selection
-    locator: Meet the models; Experiment
-    checked_on: '2026-09-29'
-    understanding: 模型按任务结构选择，同输入比较才有意义。
-    teaching_use: 用本书原创材料说明模型不足与材料缺失的区别。
+    understanding: 六个Power预设依次为Luna High、Sol Light、Sol Medium、Astra Light、Astra Medium、Astra
+      Extra High；Advanced可分选模型、推理投入和速度；Max加深单任务推理，Ultra用子代理并行，Luna不支持Ultra。
+    teaching_use: 补一段解释预设把型号和档位组合在一起，列出官方当前给出的六个组合，说明以自己看到的为准。
   - fact_id: fast-mode-choice
     url: https://learn.chatgpt.com/docs/agent-configuration/speed
-    locator: Fast mode
+    locator: 速率说明
     checked_on: '2026-09-29'
-    understanding: 速度与推理投入独立，增加消耗不保证整个任务同比例变快。
-    teaching_use: 不教CLI on/off语法，桌面以可见菜单核对开关。
+    understanding: Astra、Sol、Luna的Fast按Standard的2.5倍计credits；用ChatGPT登录时在桌面、CLI和扩展可用。
+    teaching_use: 保留倍率，强调它描述用量而非整项任务的提速比例。
+  - fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/model-selection
+    locator: 比较建议
+    checked_on: '2026-09-29'
+    understanding: 用相同输入比较，保留满足质量要求的最轻设置。
+    teaching_use: 结尾落在用结果决定是否调整。
   teaching_sequence:
-  - 当前任务→输入区模型控件→先读Power→需要明确型号时Advanced→选择型号/Effort→核对显示
-  - 同一小材料→先检查结果类型→一次调整一个变量→保留能满足要求的设置
+  - 找到当前任务控件→读Power预设→需要时进Advanced→核对显示
+  - 按工作需要的判断选模型→Effort含义与起步建议→Max与Ultra
+  - Fast与/fast→用具体问题决定是否调整
   defer:
-  - 参数规格/计价表不纳入
-  - 子代理完整判断第18章，Ultra这里只解释必要区别
-  case_plan: 沿原创四项待办对比事实提取与含混判断，情境为教学建议，不称实际模型性能对比。
-study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
+  - 子代理分工留第18章
+  - 额度读法已在第5章
+  case_plan: 沿用漏掉「选10张」与周五前发照片的更新两例，均为自设情景。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读：实际选择入口在分析档位之前；Light/Medium/High是三型号建议起点，不是统一默认。Ultra分工在第18章已展开，不将语义上提高投入等同资料核验。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

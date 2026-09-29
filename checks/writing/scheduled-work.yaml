@@ -6,42 +6,40 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 449267d5a03c5f2b337f45535fa6c7bbdc9757f81f91e296b188d77ad198aed6
-  reader_goal: 把手动成功的小流程设为定时，并核对首轮和后续维护。
+  base_manuscript_sha256: 2dc7ddd3b0369d171dae5f323123c601682e9e3fc567e0a2a14fce1c1dfbeaaf
+  reader_goal: 能把一项已手动跑通的只读检查设为定时，核对保存的安排与首轮结果，并会修改、暂停、恢复和删除。
   reader_start:
-  - 已会普通任务、Goal和Skill，未配置调度。
+  - 已会用Goal与反馈；有可检查的当前清单。
   explain_now:
-  - 提醒/持续/定时不同
-  - 时间时区/材料/输出/目的地明确
-  - 状态与运行成功不同，修改暂停删除分开
+  - Goal、提醒与周期执行的区别
+  - 回原任务还是独立运行
+  - 本地运行条件
   official_readings:
-  - fact_id: scheduled-chat-destination
-    url: https://learn.chatgpt.com/docs/automations
-    locator: Create/update; same chat; test
-    checked_on: '2026-09-29'
-    understanding: 可自然语言设定，当前任务或独立轮次；先手动再首轮检查。
-    teaching_use: 先只读核对当前清单，再明确每周时间时区与独立运行。
   - fact_id: scheduled-local
     url: https://learn.chatgpt.com/docs/automations
-    locator: Local project; permission model
-    checked_on: '2026-09-29'
-    understanding: 电脑应用文件可用且默认沙箱限制；后台批准不能假定同前台。
-    teaching_use: 先检查环境和无越界路径，不承诺睡眠补跑或自动重试。
+    locator: 本地条件与管理
+    checked_on: '2026-09-27'
+    understanding: 需要本地文件的任务要求电脑开着、应用运行、项目文件夹可访问；CLI没有Scheduled管理界面；网页任务不能直接在电脑文件夹里工作。
+    teaching_use: 先手动跑通，再定时；本地条件单列一节。
+  - fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: 目的地与查看
+    checked_on: '2026-09-27'
+    understanding: 可回到原任务或每次独立运行，在Scheduled查看。
+    teaching_use: 本例选独立运行并说明理由。
   teaching_sequence:
-  - 手动跑通只读检查→明确材料/时间/时区/输出与当前或新任务→对话创建→Scheduled核对保存结果与下次时间→检查首轮
-  - 更新前定位唯一计划→改/暂停/恢复/删除→确认状态；查看遗漏/重复及环境条件
+  - 先手动完成同样一次→写清每次做什么
+  - 选目的地→用对话建立安排→到Scheduled核对名称、频率、时区、下次时间
+  - 本地条件→首轮运行后检查→更新、暂停、恢复、删除
   defer:
-  - 不教RRULE/CLI/Git
-  - 不将网页事件触发套到桌面
-  case_plan: 每周对照备忘报告当前清单差异，不自动修改；示例时区明确可替换，不实际创建定时。
-study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
+  - 技能调用为可选，不作前置
+  case_plan: 每周一次只读核对待办清单与两份备忘；时区示例为自设。全书在此收束。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：与Goal/Skill章连读：先手动同任务通过，确定当前版本与只读边界，写时区和目的地后保存，查Scheduled再核首轮。更新已有安排不重复创建，暂停未来安排不当停止当前执行。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

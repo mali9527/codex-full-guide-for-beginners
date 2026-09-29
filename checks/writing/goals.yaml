@@ -15,43 +15,44 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 68a2cb549c154ef2d70335402863779823bbe66c58d4665ac9077d997ab72645
-  reader_goal: 为持续工作定义可检查终点，启动、暂停、恢复和结束Goal。
+  base_manuscript_sha256: de1c5bafdd6607fc021c8bb5278a622e43dde243b24d702836942d4d6ce33fd0
+  reader_goal: 能为有明确终点的多步工作写出Goal，用进度行暂停、编辑、恢复、清除，完成后核对实际文件。
   reader_start:
-  - 已知计划、权限、运行补充和文件核验。
+  - 已会打开项目文件夹、选权限、用Plan与反馈。
   explain_now:
-  - 持续目标的必要条件
-  - 目标进度行控制与消息不同
-  - 需要决定或环境不可用会停
-  - 可选Remote工作仍在电脑
+  - Goal适合什么工作
+  - 目标文字就是完成依据
+  - 暂停、清除与文件撤销不同
+  - 本地运行条件
   official_readings:
   - fact_id: goal-desktop-lifecycle
     url: https://learn.chatgpt.com/docs/long-running-work
-    locator: Start; Define done; Steer
-    checked_on: '2026-09-29'
-    understanding: 目标文字是要求也是完成标准，不改变权限。
-    teaching_use: 先具备原创材料和明确输出，再/goal，按进度行暂停/编辑/恢复/清除。
+    locator: Goal的启动、进度行与条件
+    checked_on: '2026-09-28'
+    understanding: /goal启动，目标文字同时是最初要求和完成标准；进度行可暂停、恢复、编辑、清除；沿用原沙箱与批准策略；Mac可开Prevent
+      sleep while running。
+    teaching_use: 目标写进终点与范围，控制一节按暂停→检查→编辑→恢复的次序。
   - fact_id: desktop-remote-host
     url: https://learn.chatgpt.com/docs/remote
-    locator: Get started with Remote
-    checked_on: '2026-09-29'
-    understanding: 手机操作连接电脑而非自动云端运行；同账号、工作区与在线条件。
-    teaching_use: 可选路径完整简述，离线暂停、恢复后核对文件。
+    locator: 设置路径与要求
+    checked_on: '2026-09-28'
+    understanding: 手机可查看、引导、批准连接电脑上的任务；电脑须唤醒联网，同一账号与工作区；设置在Settings > Connections。
+    teaching_use: 作为可选段放章末。
   teaching_sequence:
-  - 取得原创目录包→打开本地文件夹→只读确认4文件→明确12条核对标准→/goal设置目标→看进度行
-  - 需要改变范围先暂停→编辑目标核对→恢复→检查3份实际文件→无后续时清除目标；不等于恢复文件
+  - 看这次要完成什么→取得资料目录材料→Open folder→New chat、Local→只读列出四份输入
+  - 核对模型与权限→/goal填写目标
+  - 进度行管理→需要决定时的等待→完成后核对三份文件
+  - 离开电脑前的条件→可选Remote
   defer:
-  - 不要求Remote或订阅额外功能
-  - 没有Goal时用普通任务仍能完成案例
-  case_plan: 新原创12条目录和4份输入，输出索引/待确认/接续；旧索引缺项、相似名不合并、未知保留提供真实可核查终点。
-study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
+  - 子代理留第18章
+  - 定时留第24章
+  case_plan: 本书自编「资料目录」：四份输入、12条记录、三份结果；文件级核对已有，Goal桌面运行未实测。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交d69d4d8比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：对照12条原创材料及三份示例结果：先准备/打开项目再/goal，输出与未知项规定明确；进度行控制和普通运行停止分开。文件演示10项读回通过只支持材料完整性，不支持GoalGUI。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

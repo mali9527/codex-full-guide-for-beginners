@@ -8,64 +8,40 @@ reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: f48bb28a2f26cae1bbdbb4919461c11ddb3dcc040677c5f60cb33043a83a4156
-  reader_goal: 读者能把一项日常需求说成可检查的成果，并分清入口、材料、工具与人的判断。
+  base_manuscript_sha256: 6dde7517cea5e62c5485296fcdc29b9fcc727b943760c9d4ad2fc3fea03e305f
+  reader_goal: 能说出Codex可以帮自己得到哪几类成果、自己要参与哪些判断，并分清应用、三个入口与模型。
   reader_start:
-  - 开篇已介绍Astra、模型与工具；尚未安装，不能假定会项目和路径。
+  - 读过开篇或直接从本章开始；尚未安装应用。
   explain_now:
-  - AI代理把目标拆成处理过程的含义
-  - 可交付文件与文字建议
-  - 材料访问与输入方式
-  - Chat/Work/Codex实际分工
+  - AI代理这种工作方式与进展消息的区别
+  - 提供材料的三种方式
+  - Chat、Work、Codex与模型的层次
   official_readings:
   - fact_id: codex-work-scenarios
     url: https://learn.chatgpt.com/docs/use-chatgpt
-    locator: Go from idea；Compare Work and Codex
-    checked_on: '2026-09-29'
-    understanding: 官方把沟通、工具和反馈连为完整工作；两个入口能力重叠。
-    teaching_use: 先讲工作怎样改变，再辨界面入口。
+    locator: Choose Chat, Work or Codex；对照表
+    checked_on: '2026-09-28'
+    understanding: Chat用于问答讨论，Work面向可审阅的成果并隐藏技术细节，Codex显示开发者细节；功能取决于套餐、平台、地区、开放进度和工作区设置；三者能力有重叠。
+    teaching_use: 保留三入口对照表，并补一句：只想要成果时Work也能做，本书学到的操作大多通用。
   - fact_id: task-materials-and-output
     url: https://learn.chatgpt.com/docs/prompting
-    locator: Describe the result；Add useful context；Boundaries
+    locator: Add useful context；Make the result ready to use
     checked_on: '2026-09-29'
-    understanding: 有用的要求关注成果与少数会改变答案的条件，不需要固定公式。
-    teaching_use: 自编小请求讲清输入、交付和检查。
-  - fact_id: artifact-preview
-    url: https://learn.chatgpt.com/docs/artifacts-viewer
-    locator: Opening paragraphs
-    checked_on: '2026-09-29'
-    understanding: 文件类型、结构及检查要求决定可用成果，预览按入口有条件。
-    teaching_use: 以成果可打开继续使用说明价值。
-  - fact_id: local-project-context
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Use local projects；Start without a project
-    checked_on: '2026-09-29'
-    understanding: 项目组织和本地访问不同，空任务不需先创建项目。
-    teaching_use: 解释文件在电脑不等于已提供给当前任务。
-  - fact_id: desktop-entry
-    url: https://learn.chatgpt.com/docs/quickstart
-    locator: Setup / Start a chat
-    checked_on: '2026-09-29'
-    understanding: 安装的是桌面应用，再选Codex。
-    teaching_use: 用一张短入口表消除名称混淆。
+    understanding: 只提供会改变结果的背景；说明读者、格式与用途比要求「更专业」有用。
+    teaching_use: 说明稿请求示例围绕读者、内容顺序和交付方式展开。
   teaching_sequence:
-  - 从原始材料到具体成果看价值
-  - 按整理/制作/研究/简单程序展示用途及判断
-  - 以一轮合作解释代理、材料与人
-  - 澄清入口与入门路线
+  - 从文件之间来回切换的日常麻烦进入→四类成果各配一个能检查的小例
+  - 为什么能把工作继续往下做→材料与工具不是自动齐备→提供材料的三种方式
+  - 读者要参与的判断→应用、入口、模型三层关系→指向第2章安装
   defer:
-  - 模型Effort完整档位
-  - 插件和定时的设置
-  - 网页/业务制作专题
-  case_plan: 沿用本书照片提醒作轻量预告；新增自编购物名称合并、说明稿受众、页面预算用途，不复制官方资料中的演示或个人经历。
-study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
+  - 打开项目文件夹的操作在第3章
+  - 联网查证在第11章
+  - CLI与编辑器扩展不教
+  case_plan: 沿用两份备忘四件待办作为全书首例的预告，另用说明稿请求与购物预算工具说明检查方法，均为本书自设。
+study_commit: null
 study_review:
-  result: pass
-  reason: 对固定稿aeba79f及写前c5f3d68逐项比较：写前提要中的成果、工具与材料关系，落实为四类用途与AI代理过程，再区分应用/入口/模型；没有重抄Astra能力列表。
-    本轮针对971b718的影响复核：只有第3/4章预告一句改动，已回读所在材料输入段；先打开后处理与新顺序一致，既有能力断言未变。原写前提要和正文提交保留；未实质重写这章。
-    本轮操作依赖规则影响复核：全文回读：价值、示例与后续实际使用分开；材料/工具/权限前提均说明，第3章连接文件夹、第4章文件任务的预告与现稿相符。正文未改，原写前依据保持。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读用途与参与判断：当前常用功能版没有恢复网页制作课程；项目连接、插件连接仍明确后置到各主讲章。后续材料与成果章已承接，不能把用途示例当作已经教过操作。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

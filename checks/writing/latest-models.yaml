@@ -11,96 +11,45 @@ reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 55debb6bdbe66579e3ba11f48ccca1623af8d45c411a15f70489723bbd740705
-  reader_goal: 让没有编程经验的读者具体理解GPT-6 Astra的用途、工作方式、输入与工具、选择及配合方法，能判断为什么使用它。
+  base_manuscript_sha256: 1914ffeaa18ed69aaf3752abce5fe735aae569d3a3ea4f23324fc3bdb09b3f2e
+  reader_goal: 读完能说出Astra、Sol、Luna各自先考虑什么工作，知道Effort指思考投入、Astra从Light起步，并知道从哪一章开始读。
   reader_start:
-  - 全书开篇，没有安装或前章前置；有电脑与办公经验。
+  - 只有日常电脑与办公经验，尚未安装应用，也没有发过任何请求。
   explain_now:
-  - 多步骤完成与一次文字回答的区别
-  - 模型、图像输入和工具的分工
-  - 针对重要缺口提问、接住反馈及完成标准
-  - Astra与Sol/Luna和Effort起点
+  - 推理在整理材料这类小事里指什么
+  - 模型、Codex入口和工具各管什么
+  - Effort是思考投入，不是回答长短
   official_readings:
-  - fact_id: astra-collaboration-behavior
-    url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
-    locator: Introduction；GPT-6 Astra behavior；Initiative and follow-through；Personality
-      and writing style
-    checked_on: '2026-09-29'
-    understanding: 能力不只是回答难题，也包括连续处理、针对关键缺口提问、接住修改与行为倾向。
-    teaching_use: 用资料比较到说明稿的自编情景解释，不用开发领域术语或性能保证。
-  - fact_id: astra-model-input-tools
-    url: https://developers.openai.com/api/docs/models/gpt-6-astra
-    locator: Model description；Modalities；Tools
-    checked_on: '2026-09-29'
-    understanding: 看图是模型输入能力，操作应用和生成图片要有工具；API数字不等于桌面用户得到的上限。
-    teaching_use: 给截图解释/实际改页面的对比，说明材料与工具关系，后置具体工具操作。
-  - fact_id: astra-outcome-guidance
-    url: https://learn.chatgpt.com/docs/prompting
-    locator: Describe the result；Add useful context；Set boundaries；Make result ready
-      to use
-    checked_on: '2026-09-29'
-    understanding: 目标、材料、成果、边界比机械步骤更重要；并非固定提示词模板。
-    teaching_use: 加入自编说明稿请求，解释哪些要求值得写。
-  - fact_id: astra-outcome-guidance
-    url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
-    locator: Better skills；Up-to-date AGENTS.md；Persistence
-    checked_on: '2026-09-29'
-    understanding: 旧指令过密或边界含混可能让Astra反复准备或过早停下。
-    teaching_use: 给完成标准和保留关键批准的对比，不教删权限或全面放行。
-  - fact_id: astra-outcome-guidance
-    url: https://learn.chatgpt.com/docs/model-selection
-    locator: Experiment；How to think about models and reasoning effort
-    checked_on: '2026-09-29'
-    understanding: 按同输入比较是否够好，以较轻设置开始；官方推荐不等于保证。
-    teaching_use: 选择建议服务日常判断，具体模型控制仍留第6章。
   - fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
-    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    locator: Choose a model；Power presets与Advanced；起步建议
     checked_on: '2026-09-29'
-    understanding: Astra Light、Medium及高投入按工作难度选择；Max/Ultra不是普通任务必需。
-    teaching_use: 最小解释思考投入与等待，避免把Light等同短答。
-  - fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
-    checked_on: '2026-09-29'
-    understanding: 输入框下方Power与Advanced可选，实际可见性受环境影响。
-    teaching_use: 保留最短入口，尚未安装读者可先看用途。
+    understanding: 页面给出六个Power预设和Advanced分选；起步建议为Astra Light、Sol Medium、Luna High；Luna不支持Ultra；可用性取决于开放进度、登录方式和客户端。
+    teaching_use: 开篇只讲Astra从Light起步和选择入口，预设清单与Max、Ultra留第6章，不在导读堆档位。
   - fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/models
-    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    url: https://learn.chatgpt.com/docs/model-selection
+    locator: 各模型适用工作与比较建议
     checked_on: '2026-09-29'
-    understanding: Astra偏持续多步骤判断；Sol/Luna依任务范围也适用。
-    teaching_use: Astra详细介绍后再比较，不用表格代替Astra正文。
-  - fact_id: codex-work-scenarios
-    url: https://learn.chatgpt.com/docs/use-chatgpt
-    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    understanding: Luna适合范围明确的小改动和提取，Sol适合日常研究与需要判断的工作，Astra适合需要广泛上下文和完整成果的工作；建议用相同输入比较并保留满足质量要求的最轻设置。
+    teaching_use: 用一张三行表给起点，随后用「相同材料比较结果」代替型号排名。
+  - fact_id: astra-outcome-guidance
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Describe the result；Set boundaries；Make the result ready to use
     checked_on: '2026-09-29'
-    understanding: Codex也可研究文档等，工具与账号有条件。
-    teaching_use: 非编程用户的例子仍留在桌面Codex。
-  - fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
-    checked_on: '2026-09-29'
-    understanding: 提示词决定本次要求，权限决定可操作范围；模型更新不扩大边界。
-    teaching_use: 人要核对材料和实际成果，不能以更强模型取消检查。
+    understanding: 官方建议先说成果、相关背景和少量关键边界，不用固定模板；后续用跟进消息修改。
+    teaching_use: 请求示例只保留读者、依据、何时询问和完成标准四件事，并说明不是要背的句式。
   teaching_sequence:
-  - 从普通资料任务引出Astra价值
-  - 以多个具体能力和自编例子讲清阅读判断、工具和持续修改
-  - 解释怎样交代要求、少量有用设置与检查
-  - 给安装和后续章节入口
+  - 从整理几份资料的实际麻烦进入→说明Astra的定位→四种能帮上忙的情形各用一个自设小例
+  - 分清模型、Codex与工具→怎样提要求→何时选Astra与Effort起点
+  - 已安装者：输入框下方模型控件→Advanced→核对型号与档位；未安装者指向第1、2章
   defer:
-  - API参数、价格、上下文数字、迁移代码和性能跑分
-  - Max/Ultra、技能安装和浏览器/电脑操作细节
-  - 实验上下文管理默认关闭及配置，不设新手前置
-  case_plan: 沿用本书两份备忘作轻量预告；新增两份设备说明与个人需求对比的假设情景，不填真实品牌价格；自编整理说明稿请求，仅展示提法，不冒充实际Astra运行。
-study_commit: 47cd3c617f19ff4e7c45b5effa77cf04a189af24
+  - Power各预设、Max、Ultra、Fast与用量关系留第6章
+  - 权限与批准留第7章，运行中补充留第8章
+  case_plan: 沿用本书自编备忘中的发照片一例，以及自设的两台设备资料比较情景；示例只说明用法，不写成模型测试结果。本轮修订压缩重复的限制句，把判断放在段首。
+study_commit: null
 study_review:
-  result: pass
-  reason: 对固定成稿c5f544f逐段比对47cd3c6的写前提要：官方持续判断/关键补问/文风倾向进入四种用途与配合方法，模型模态与工具分开；未将API规格或示例迁作桌面保证。学习顺序确实影响成稿，而非稿后补链接。
-    9月29日前四章深化批次实际重读开篇全文：新增权限/导航事实范围不改变开篇用途和Astra选择说明；原写前47cd3c6保留。 本轮针对971b718的影响复核：正文无变化；核对模型/工具/文件夹访问段与本次项目事实补充不冲突，材料准备前移不改变开篇读者前提。原写前提要和正文提交保留；未实质重写这章。
-    本轮操作依赖规则影响复核：全文回读：开篇说明用途，找Astra仅对已安装者可选；未把材料示例或模型选项当作读者已经操作，未安装者明确到第2章继续。正文未改，原写前依据保持。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：开篇全文回读：资料比较、看图与工具分工仍是用途预告；找Astra仅面向已安装者。第6章现已承担Power/Advanced与Max/Ultra细节，开篇不需要重复。新增资料目录案例不改变此处两份备忘的准备范围。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

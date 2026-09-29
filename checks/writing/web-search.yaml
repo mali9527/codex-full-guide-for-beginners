@@ -6,41 +6,36 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 06a6a7741443a6856ede0d1d06f516f7025ab399c0e74234bdb38911af213585
-  reader_goal: 发起有范围的查证，并能沿来源判断结论。
+  base_manuscript_sha256: fe747af04e41aecd10c47549d14d4cad063fe3e94af8be9121ddf60d0aa19b52
+  reader_goal: 能提出范围清楚的联网查证要求，看出是否实际搜索并读了原页，核对来源支持什么，把事实、推断和未知分开。
   reader_start:
-  - 已会交链接和看读取范围，知道联网与批准不同。
+  - 已会提供链接作为线索；知道权限请求怎样读。
   explain_now:
-  - 搜索/打开原页/核对主张不同
-  - 日期、平台和稳定性条件
-  - 网页内容是资料而非工作指令
+  - 回答流畅与实际查过
+  - 缓存结果与当前信息
+  - 网页里的指令只是材料
+  - 托管搜索与本地命令联网
   official_readings:
   - fact_id: hosted-search-boundary
     url: https://learn.chatgpt.com/docs/web-search
-    locator: Web search; local web search
-    checked_on: '2026-09-29'
-    understanding: 托管搜索与命令联网独立；缓存不等于实时查证。
-    teaching_use: 给当前官方安装页这一熟悉问题，要求日期/平台/来源并看工具活动。
-  - fact_id: codex-work-scenarios
-    url: https://learn.chatgpt.com/docs/prompting
-    locator: Provide context and boundaries
-    checked_on: '2026-09-29'
-    understanding: 具体问题、证据范围和输出影响工作质量。
-    teaching_use: 原创查证请求，区分查到、推断、没找到。
+    locator: 搜索方式、缓存与权限关系
+    checked_on: '2026-09-28'
+    understanding: 本地Codex默认使用OpenAI维护的索引而非实时抓取；搜索是托管工具，与沙箱网络相互独立；搜索活动记录在对话里。
+    teaching_use: 要求当前信息时写明时点，并检查来源日期。
   teaching_sequence:
-  - 明确当前问题/时点/平台→发出联网要求→看实际搜索和页面读取→点开关键原页→匹配结论与条件
+  - 把要查的问题说清→发送后看工具活动与来源链接
+  - 打开关键链接→四个检查问题
+  - 分开事实、推断与未知→处理冲突来源
+  - 网页内容与操作边界→保存查证记录
   defer:
-  - 浏览器操控第22章
-  - 不编辑网络配置
-  case_plan: 以核对自己系统的安装和首次设置为例，只输出查证结果，不执行下载命令。
-study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
+  - 操作登录网站留第22章
+  case_plan: 自设查证问题：Windows首次本地运行前的设置；结果另存为查证记录，不改待办清单。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交65f5db6比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：连读材料链接与本章：给URL以后仍需实际读源；托管搜索与本地联网权限分开。按问题/条件/更新时间比较，不把官方更新页CLI条目当桌面稳定保证。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

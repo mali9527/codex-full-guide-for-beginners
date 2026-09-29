@@ -6,54 +6,49 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 4e99fac2ba5ed7a189e7cc1ea7e52f5da6b186b86907111ac629295009745b89
-  reader_goal: 能在当前任务选择权限，读请求并批准/拒绝，理解自动审核的边界。
+  base_manuscript_sha256: 344a24d5dc9fdfad5ebc2b1b077d4ee78ef07ea46c34acedd53ba95a6e5afbb5
+  reader_goal: 能说出三种权限模式的区别并在任务中选定，读懂一条批准请求的对象与动作，知道拒绝后怎样继续。
   reader_start:
-  - 第3/4章实际选过Ask for approval，知道工作文件夹；不懂沙箱和不同授权层。
+  - 第3、4章已在输入框下方选过Ask for approval。
   explain_now:
-  - 允许范围与谁来批准
-  - 模式启用和选中
-  - 请求对象/动作/影响与拒绝后续
+  - 权限允许什么与这次应该做什么
+  - 启用模式与在任务中选中
+  - 系统授权、任务批准、外部服务授权三层
+  - 托管搜索与本地命令联网
   official_readings:
   - fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Enable modes; How permissions work
+    locator: 三种模式；How permissions work
     checked_on: '2026-09-29'
-    understanding: 当前工作区允许常规操作，越界才需要批准；项目名不是技术隔离。
-    teaching_use: 先读当前选择，模式介绍后再给可选切换路径。
+    understanding: 沙箱定义可访问的文件和网络，批准决定何时停下；换审核者不扩大沙箱；启用模式只让它可选。
+    teaching_use: 用「能做什么」与「这次该做什么」开头，三模式表后紧跟启用与选中。
   - fact_id: auto-review-routing
     url: https://learn.chatgpt.com/docs/sandboxing/auto-review
-    locator: How; When; Denials
-    checked_on: '2026-09-29'
-    understanding: 自动审核更换审核者，不能替代应用级批准；拒绝需解释。
-    teaching_use: 原创复制输出至另一目录的情境，明确是示意请求非实录。
-  - fact_id: desktop-approve-retry
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: /approve
-    checked_on: '2026-09-29'
-    understanding: 只适用最近自动拒绝的一次重试，不永久开锁。
-    teaching_use: 先理解拒绝再介绍菜单，保留组织限制。
+    locator: 审核范围、拒绝处理与/approve
+    checked_on: '2026-09-28'
+    understanding: 自动审核是换审核者而非扩权，可能出错；连续被拒会中止本轮；/approve只放行一次重试；电脑操作的应用授权仍直接问用户。
+    teaching_use: 被拒以后一节写清先读原因、缩小范围，再谈/approve。
   - fact_id: hosted-search-boundary
     url: https://learn.chatgpt.com/docs/web-search
-    locator: Configure local web search
-    checked_on: '2026-09-29'
-    understanding: 托管搜索和本地命令联网不是同一权限。
-    teaching_use: 解释为何已能搜索又遇联网请求，不带配置课。
+    locator: 托管搜索与沙箱网络
+    checked_on: '2026-09-28'
+    understanding: 网页搜索是托管工具，不走沙箱的网络代理与域名白名单。
+    teaching_use: 用一段话说明能搜网页不代表本地命令已获准联网。
   teaching_sequence:
-  - 当前任务→核对权限控件→理解模式→需要其他模式时设置启用再回任务选中
-  - 出现请求→读对象/动作/范围→批准或拒绝→看执行结果；不明白先问解释
+  - 从第4章没有逐步询问的经历进入→权限与任务要求→三模式表
+  - Settings → General启用→回任务选中并核对
+  - 请求出现时先看对象和动作→不懂先请它解释→批准后查结果、拒绝后给替代范围
+  - 其他授权层→自动审核拒绝后的处理
   defer:
-  - 不教配置文件或解除组织限制
-  - 连接授权第21章、系统应用授权第23章详讲
-  case_plan: 用当前清单另存范围和不代办待办讲批准判断，假设的请求明确不是实际卡片。
-study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
+  - 电脑操作的系统授权细节留第23章
+  - 插件连接留第21章
+  case_plan: 自设情景：把核对后的清单复制到项目外的另一文件夹而触发请求；标明是说明判断方法的假设。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读：启用模式后回当前任务选中，批准/系统权限/服务连接分别解释；Enter/Esc限批准状态，/approve限适用最近拒绝。将「普通话」改为「日常语言」，不限定语言地区。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

@@ -6,48 +6,51 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 188df750947738f7633f8d06927470ffd27fd55c2b26af6c03ddee14fd7108ea
-  reader_goal: 能按任务选择材料入口，并确认读到的范围。
+  base_manuscript_sha256: 6f97b030176cd5d1617693726669ea87e10199550ac80c4b30bd8f5e0ccd0749
+  reader_goal: 能按材料所在位置选择粘贴、文件引用、图片、链接或应用快照，并在开始加工前确认实际读到了什么。
   reader_start:
-  - 已知本地项目、路径和第一份清单，未使用@或Appshot。
+  - 已会在本地项目中读写文件；知道路径是文件地址。
   explain_now:
-  - 粘贴/引用文件/图片/链接各自用途
-  - 相对路径依赖当前文件夹
-  - Appshot捕获范围、目的地和授权
+  - 相对路径依赖共同起点
+  - 选到文件与读完文件
+  - 图片需要观察目标
+  - 应用快照给的是材料不是控制权
   official_readings:
-  - fact_id: local-project-context
-    url: https://learn.chatgpt.com/docs/environments/modes
-    locator: Local; @
-    checked_on: '2026-09-29'
-    understanding: 可引用文件并不表示所有目录都已读入。
-    teaching_use: 先确认项目再@选文件，要求报告读取范围。
-  - fact_id: desktop-image-input
-    url: https://learn.chatgpt.com/docs/image-inputs
-    locator: Desktop image inputs
-    checked_on: '2026-09-29'
-    understanding: 图像要配观察要求，拖入后的附件应检查。
-    teaching_use: 先无隐私图片，再Shift拖入并核对附件。
   - fact_id: appshot-input-scope
     url: https://learn.chatgpt.com/docs/appshots
-    locator: Capture; destination; permissions
+    locator: 捕获范围、热键、目的地与权限
     checked_on: '2026-09-29'
-    understanding: 窗口截图与可访问文本范围不同；默认目的地可能新任务。
-    teaching_use: 捕获前选目的地，捕获后查附件与任务，不假定整页已读。
+    understanding: 只捕获最前方窗口，可含截图与可取得文本；默认热键为Mac两侧Command、Windows两侧Alt；目的地有Current
+      chat、New chat、Automatic，Automatic在60秒内交互过的任务会续用；部分应用只给可见截图。
+    teaching_use: 先定目的地再捕获，回任务核对附件后再提要求。
+  - fact_id: desktop-image-input
+    url: https://learn.chatgpt.com/docs/image-inputs
+    locator: 桌面添加图片与说明建议
+    checked_on: '2026-09-29'
+    understanding: 按住Shift把图片拖入输入区；说明图片显示什么、看哪里、要什么结果。
+    teaching_use: 图片一节围绕观察目标写。
+  - fact_id: local-run-mode
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local与@文件
+    checked_on: '2026-09-29'
+    understanding: Local直接在当前项目目录工作；输入区提示用@添加文件。
+    teaching_use: 文件引用放在材料选择表之前。
   teaching_sequence:
-  - 选要处理的副本→确认本地项目和当前目录→按材料类型添加→检查附件或明确路径→让Codex先说明实际读到什么
-  - 可选Appshot先选窗口和目的地，再热键/授权，最后核对附件与范围
+  - 先决定交哪一种材料→选择表
+  - 位置从共同起点说起→先问当前工作文件夹
+  - 先确认读到的内容→图片与观察目标
+  - 应用快照：定目的地→切到目标窗口→捕获→回任务核对
+  - 链接与隐私提醒→出问题时的定位次序
   defer:
-  - 多应用操控第23章
-  - 不教终端路径命令
-  case_plan: 同一备忘补充一张无敏感内容图片；重点比较材料范围，不新增业务案例。
-study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
+  - 联网查证留第11章
+  - 操作应用留第23章
+  case_plan: 沿用「我的待办」材料与自设截图情景；不使用真实私人内容。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交65f5db6比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：对最终Appshot修正段与前后章回读：Settings选择目的地后返回接收任务，浮动控件位置不冒充该设置；附件/路径/快照不等于批量访问授权，第22章才进入网页操作。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

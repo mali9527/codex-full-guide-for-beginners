@@ -6,56 +6,55 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 30edd4bee4f8f39e3d2689f25223548bd0c547de0f2334705895ae2ab318966c
-  reader_goal: 知道当前在等谁，怎样补充、排队、要求停下并核对已产生结果。
+  base_manuscript_sha256: 936a7cea9c4815adbfa3087d92740f9efc651be5b4391e5e6c8461ff72bd07ce
+  reader_goal: 能判断任务现在在等谁，会用Steer补充、用Queue排队，知道怎样要求停下并核对已留下的文件，会用侧聊、通知和可选语音。
   reader_start:
-  - 已会发送、保存、选模型与权限；未学队列/侧聊，普通桌面停止入口仍待核验。
+  - 已会发送、保存、选模型与权限、处理批准请求。
   explain_now:
-  - 运行状态与成果状态不同
-  - Steer与Queue的设置、队列管理
-  - side仅临时询问，停止请求需确认
-  - 通知与可选语音开始结束
+  - 计划、过程、等待与结果的区别
+  - Steer与Queue
+  - 停止请求与撤销修改是两件事
+  - 侧聊不改变主任务
   official_readings:
   - fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
     locator: Steering and queuing
     checked_on: '2026-09-29'
-    understanding: 补充是当前引导还是下一轮由设置决定，不能抄CLI按键。
-    teaching_use: 先General设行为、再发补充并查队列；停止后核对文件。
-  - fact_id: desktop-slash-entries
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: /side
+    understanding: Steer把消息加入当前运行，Queue留待下一轮；默认在Settings > General > Follow-up behavior，并显示临时改用另一种行为的快捷键；排队消息在输入框上方可编辑、排序、发送或删除。该节没有关于停止运行的说明。
+    teaching_use: 停止仍按Steer送入停止要求来教，并明确不保证即时中断。
+  - fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: 快捷键表
     checked_on: '2026-09-29'
-    understanding: 侧聊不打断主任务，不能当成改变主任务的指令。
-    teaching_use: 先问解释，关键改变仍回主任务发送。
+    understanding: 页面没有停止、中断或取消运行的快捷键；批准与拒绝键仅在请求打开时适用。
+    teaching_use: 正文不写停止按钮或按键，缺口留在操作证据清单。
   - fact_id: desktop-notification-activity
     url: https://learn.chatgpt.com/docs/notifications
-    locator: Configure desktop; Activity
+    locator: 通知类型与Activity
     checked_on: '2026-09-29'
-    understanding: 不同通知对应需要注意，不证明成果正确。
-    teaching_use: 教设置与返回任务检查；无界面截图不画铃铛位置。
+    understanding: 可分别设置完成、权限请求和提问提醒；Activity显示未读、运行中或等待回应的任务。
+    teaching_use: 通知一节写设置入口和铃铛，不把提醒当成成果正确。
   - fact_id: desktop-voice-options
     url: https://learn.chatgpt.com/docs/features/voice
-    locator: Start talking; Limits
-    checked_on: '2026-09-29'
-    understanding: 已有任务语音逐步开放，Stop voice chat停止的是语音。
-    teaching_use: 可选路径完整交代开始/麦克风/结束，不把它当停止文件任务。
+    locator: 听写与语音对话
+    checked_on: '2026-09-28'
+    understanding: 语音对话用于实时交流，听写只转文字；屏幕上下文限macOS；语音限Plus及以上并逐步开放。
+    teaching_use: 语音作为可选段，结束语音与停止任务分开。
   teaching_sequence:
-  - 读当前状态→等输入则回答或处理批准→需要改方向先确认Steer/Queue→发送并看实际处理
-  - 要撤回后续工作→Steer明确停止要求→等确认并清理不再需要的队列→检查已有文件；不是即时终止保证
-  - side问解释后回主任务；通知/语音均可选且有退出方法
+  - 读最新消息判断状态→状态表
+  - 需要补充→先看Follow-up behavior→回原任务发送→看消息进了当前运行还是队列
+  - 方向不对→清理队列→用Steer发停止要求→等确认→到文件夹核对→再决定恢复或继续
+  - 侧聊→失败后的接续→通知与Activity→可选语音
   defer:
-  - 普通直接停止按钮/快捷键缺证保持原待核验，不猜
-  - Goal暂停第17章；跨天接续第12/13章
-  case_plan: 续用四项待办，只做只读/另存副本的运行示例；没有人为制造可恢复失败或展示假工具日志。
-study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
+  - Goal暂停留第17章，定时暂停留第24章
+  - 普通任务的直接停止控件缺官方说明与实机证据，不写入正文
+  case_plan: 沿用四项待办与保存失败的自设情景；不展示虚构的运行日志或耗时。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读：运行状态→Steer/Queue设置→回任务并检查消息状态→停止请求/文件状态→side/失败/通知/语音。后章Goal和定时各有控制，不混作总停止；直接停止入口仍缺，pending保留。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass

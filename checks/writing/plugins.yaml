@@ -6,48 +6,41 @@ batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
+  mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: cb7ef4b7893c1f5a0600d57e54aaf3843558f5a0d725263bb7bd5bd664cddd86
-  reader_goal: 按当前需要安装和连接插件，能分辨不同状态并撤销。
+  base_manuscript_sha256: a24fe98a3712d8c739297e3974998ad9850d08bfd3b9f6bd7572fefd32e49529
+  reader_goal: 能为一个明确需要找到并安装插件、完成连接、在新任务里只读使用，并按五种状态排查和卸载。
   reader_start:
-  - 已知技能和权限，未连接外部服务。
+  - 已会用技能；已懂权限与批准。
   explain_now:
-  - 插件打包与连接服务
-  - 安装/启用/认证/对象访问/动作批准分开
-  - MCP状态与独立连接
+  - 插件、技能与MCP的关系
+  - 安装、启用、连接、对象权限、动作获准
+  - 卸载与断开连接
   official_readings:
   - fact_id: plugin-install-connection
     url: https://learn.chatgpt.com/docs/plugins
-    locator: Install and use; Permissions
-    checked_on: '2026-09-29'
-    understanding: 安装后新任务，认证时机不同，外部服务账号仍需权限。
-    teaching_use: 限定用户已使用服务中的测试文件，只读获取标题首段。
+    locator: 安装、连接、调用与卸载
+    checked_on: '2026-09-28'
+    understanding: 在Plugins中打开详情点加号安装，按提示连接外部服务，再开新任务使用；可自动、用@点名插件或用$调用其技能；卸载用Uninstall
+      plugin。
+    teaching_use: 主流程写清安装后新开任务这一步。
   - fact_id: desktop-mcp-status-and-connection
     url: https://learn.chatgpt.com/docs/extend/mcp
-    locator: Configure desktop
+    locator: Settings > MCP servers与/mcp
     checked_on: '2026-09-29'
-    understanding: Settings MCP servers添加后Restart，Authenticate独立，/mcp只显示状态。
-    teaching_use: 不运行陌生启动命令，适用时用服务提供的可信连接。
-  - fact_id: plugin-uninstall-connection
-    url: https://learn.chatgpt.com/docs/plugins
-    locator: Remove a plugin
-    checked_on: '2026-09-29'
-    understanding: 卸载包不自动断独立MCP，管理员插件可能无移除入口。
-    teaching_use: 退出前按停止使用/卸载/断开授权分别核对。
+    understanding: 设置页可添加服务器、显示启用与认证状态；传输分本地进程与服务地址两类；/mcp查看已连接服务器；本地配置与网页端分开。
+    teaching_use: 直接添加服务器只作可信服务的备选说明。
   teaching_sequence:
-  - 有实际材料需求→Plugins详情核对来源和条件→安装→服务账号认证与权限→新任务调用→查看来源和结果
-  - 故障按状态定位→不用时停用/卸载→需要时独立断服务授权
+  - 插件提供什么→MCP一句话
+  - 从只读需要开始：找插件→看详情→安装→连接→新任务调用→到原服务核对
+  - 五种状态表→/mcp与设置页→动作边界→关闭与卸载
   defer:
-  - 不绑定某个必须付费服务
-  - Sign in with ChatGPT beta/Apple Messages不作通用登录教程
-  case_plan: 只读自己服务的无敏感测试文档，没外部账号直接用本地材料路线，不假设特定插件始终可用。
-study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
+  - 浏览器扩展留第22章
+  case_plan: 自设情景：读取文档服务中一份无敏感信息的测试文档的标题和第一段；不指定服务商。
+study_commit: null
 study_review:
-  result: pass
-  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
-    本轮全书连读及共享材料影响复核（固定正文6995af6）：与Skill/Browser章连读：选具体只读需要，安装、启用、登录连接后开新任务，再确认对象及结果；MCP名词在用途后解释，卸载与撤回授权分别处理。
-    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
+  result: pending
+  reason: Claude修订批次：学习提要已保存，待成稿后对照。
 reader_review:
   prior_knowledge:
     result: pass
