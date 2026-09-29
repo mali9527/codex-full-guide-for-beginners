@@ -1,6 +1,6 @@
 schema: 2
 unit: workspace-files
-input_sha256: 450d7a1f86bf4bcf121b0c57ebbd5fbc92b9f1a708422c2d484ba7a9b50d2c15
+input_sha256: 6a89085cc61f2a434b556e493bb088b7570734b5b6fe11701244101029a121f2
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -54,36 +54,36 @@ study_brief:
   case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
 study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
 study_review:
-  result: pending
-  reason: 待对固定成稿与写前提要核对
+  result: pass
+  reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 第2章仅进入Codex。此处取得原创材料，选外层文件夹、核对路径，再建任务；发送前实际选Local与Ask for approval，不把术语出现当成设置完成。
   concept_timing:
     result: pending
-    reason: 待按操作顺序完整审阅
+    reason: 已修复两种目录入口被误读为连续步骤、先发消息后讲状态的问题；仍缺普通运行的停止入口依据，不能将第8章占位当作首次运行退出方法已教。
   information_value:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 必要设置移到首次发送之前；其他控件在短消息之后按用途介绍，附件/听写/插件等明确可选，没有要求全部操作。
   natural_style:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 完整连读：文件夹→确认路径→可选已有项目分支→新任务/权限→发送→观察状态→结束后核对→同任务追问；跨章节与分支返回明确。
   localization:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 路径为双平台示例；命令菜单与聊天斜杠菜单分开，GUI名称与平台默认键未凭猜测增补；停止键仍未知。
   independent_creation:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 水杯/还书消息、我的待办材料与说明独立编写；按读者所处状态重组官方知识，没有搬用官方网页、CLI或外部工作案例。
 fact_review:
-  coverage: pending
-  reason: 本轮先保存学习提要，待从修订后的全章反查
+  coverage: reviewed
+  reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0新功能和修复开篇
+    locator: 2026-09-28 CLI 0.158.0开篇功能与修复
     checked_on: '2026-09-29'
-    effect: 本轮实际重读；未发现可据此更改桌面目录入口的依据，未把CLI号当桌面版本。实际步骤据Projects/Commands/Modes。
+    effect: 实际重读指定范围，未把CLI版本当成桌面版本；没有据此推出停止快捷键或统一沙箱出现时机。桌面步骤依据各专页。
   claims:
   - anchor: 侧栏用来找到工作，输入框用来提出要求，消息区域用来看处理过程和回复
     fact_id: desktop-basic-navigation
@@ -352,7 +352,7 @@ fact_review:
     support: supported
     rationale: Local只定义操作位置，不能据此推断离线；其他运行模式仅认名称。
     notice: ''
-  - anchor: 权限控件也位于输入框下方。
+  - anchor: 发送前，打开输入框下方的权限控件
     fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
     locator: How permissions work
@@ -364,7 +364,7 @@ fact_review:
     availability: unspecified
     conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。官方控件位置；未看GUI，操作证据独立。
     support: supported
-    rationale: 官方控件位置；未看GUI，操作证据独立。
+    rationale: 官方控件位置；未看GUI，操作证据独立。 本轮按操作顺序调整锚点，文档支持范围不扩大。
     notice: ''
   - anchor: 并不意味着每读一份文件、每改一行字都来问一次
     fact_id: permission-boundary
@@ -590,7 +590,7 @@ fact_review:
     support: supported
     rationale: 给动作名和默认键，不编造按钮图标或假定不可自定义。
     notice: ''
-  - anchor: 打开后，在关联这份文件夹的项目里用 **New chat** 开始任务
+  - anchor: 文件夹位置确认后，在对应项目里用 **New chat** 开始任务
     fact_id: local-project-context
     url: https://learn.chatgpt.com/docs/projects
     locator: Use local projects；primary folder
@@ -602,7 +602,7 @@ fact_review:
     availability: unspecified
     conditions: 官方文档说明；非GUI或账号可用性实测。要求核对任务所选项目与Local，不推断具体打开后的自动状态。
     support: supported
-    rationale: 要求核对任务所选项目与Local，不推断具体打开后的自动状态。
+    rationale: 要求核对任务所选项目与Local，不推断具体打开后的自动状态。 本轮按操作顺序调整锚点，文档支持范围不扩大。
     notice: ''
   - anchor: 选择 **Edit project（编辑项目）**，查看关联的文件夹
     fact_id: local-project-context
@@ -646,7 +646,7 @@ fact_review:
     support: supported
     rationale: 只给多个目录条件分支，新任务起点不推为旧任务自动切换。
     notice: ''
-  - anchor: 允许执行哪些操作，还受权限设置约束
+  - anchor: 打开文件夹本身不等于选好了权限
     fact_id: permission-boundary
     url: https://learn.chatgpt.com/docs/permission-modes
     locator: How permissions work；sandbox boundary
@@ -658,9 +658,9 @@ fact_review:
     availability: unspecified
     conditions: 官方文档说明；非GUI或账号可用性实测。读者位置与操作许可分开，非项目即严格权限边界。
     support: supported
-    rationale: 读者位置与操作许可分开，非项目即严格权限边界。
+    rationale: 读者位置与操作许可分开，非项目即严格权限边界。 本轮按操作顺序调整锚点，文档支持范围不扩大。
     notice: ''
-  - anchor: 若Windows在开始本地工作时提示首次设置沙箱
+  - anchor: 若Windows此时提示首次设置沙箱
     fact_id: windows-first-setup
     url: https://learn.chatgpt.com/docs/windows/windows-sandbox
     locator: Native sandbox setup
@@ -671,6 +671,6 @@ fact_review:
     availability: unspecified
     conditions: 官方文档说明；非GUI或账号可用性实测。沿用本日此前批次实读；条件式回指第2章，不声明固定出现时机。
     support: supported
-    rationale: 沿用本日此前批次实读；条件式回指第2章，不声明固定出现时机。
+    rationale: 沿用本日此前批次实读；条件式回指第2章，不声明固定出现时机。 本轮按操作顺序调整锚点，文档支持范围不扩大。
     notice: ''
   unused_facts: {}

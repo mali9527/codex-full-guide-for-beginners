@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 461bad2d8e321c670388419c1e66a97a1a09b86a651ace5abc8ce888538e0cf1
+input_sha256: 6cd2219c151529f98a2e4f9bfede9e529ae13a4df6490863fed60a527d0746e9
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -53,38 +53,38 @@ study_brief:
   case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
 study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
 study_review:
-  result: pending
-  reason: 待对固定成稿与写前提要核对
+  result: pass
+  reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
 reader_review:
   prior_knowledge:
     result: pending
-    reason: 待按操作顺序完整审阅
+    reason: 第3章已接好文件夹；解释本章另开一次任务的原因，之后读/生成/改版全在同一任务。普通运行停止入口尚缺，不能视为前章已完整教会运行控制。
   concept_timing:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 明确从Codex切到电脑文件夹/文本软件读原件，再返回同一任务；当前权限重新选并核对；先保存与检查v1再生成v2，错误纠正只在实际出错时使用。
   information_value:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 保留四事实、保存位置、修改范围与恢复边界。新增都是操作衔接：设置不假定继承、文件是否真实存在、条件反馈是否必要，没有增加电脑常识教学。
   natural_style:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 完整连读并对照原件与提示词，先读原件使后文「刚才的文本软件」有依据；返回任务、等待结束再开文件的对象明确。
   localization:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 电脑文件夹与Codex项目分开说明；原有相对路径按例解释，不增加某种编辑器的专属前置；Astra为可选设置，缺该型号仍可继续。
   independent_creation:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 两份原创备忘、主请求与v1/v2未变；只补操作次序和解释，没有引入外部提示词或案例；参考范围及未采纳部分已登记。
 fact_review:
-  coverage: pending
-  reason: 本轮先保存学习提要，待从修订后的全章反查
+  coverage: reviewed
+  reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0新功能和修复开篇
+    locator: 2026-09-28 CLI 0.158.0开篇功能与修复
     checked_on: '2026-09-29'
-    effect: 本轮实际重读；未发现可据此更改桌面目录入口的依据，未把CLI号当桌面版本。实际步骤据Projects/Commands/Modes。
+    effect: 实际重读指定范围，未把CLI版本当成桌面版本；没有据此推出停止快捷键或统一沙箱出现时机。桌面步骤依据各专页。
   claims:
-  - anchor: 可以从Light档Effort开始
+  - anchor: Light是官方给出的Astra常见起点
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Astra effort recommendation
@@ -96,9 +96,9 @@ fact_review:
     availability: unspecified
     conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。官方起点不是此案例效果测试或所有人默认。
     support: supported
-    rationale: 官方起点不是此案例效果测试或所有人默认。
+    rationale: 官方起点不是此案例效果测试或所有人默认。 本轮按操作顺序调整锚点，文档支持范围不扩大。
     notice: ''
-  - anchor: 若当前提供的是Power预设
+  - anchor: 模型可以保持当前可用的Power预设
     fact_id: desktop-model-control
     url: https://learn.chatgpt.com/docs/models
     locator: Power presets
@@ -110,7 +110,7 @@ fact_review:
     availability: unspecified
     conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。以可用选择起步，不要求Astra作为前置。
     support: supported
-    rationale: 以可用选择起步，不要求Astra作为前置。
+    rationale: 以可用选择起步，不要求Astra作为前置。 本轮按操作顺序调整锚点，文档支持范围不扩大。
     notice: ''
   - anchor: 它允许在当前工作区范围内读写文件及执行常规本地操作
     fact_id: permission-boundary
@@ -278,5 +278,19 @@ fact_review:
     conditions: 官方文档说明；非GUI或账号可用性实测。故障表保留按Open folder查当前绑定的入口。
     support: supported
     rationale: 故障表保留按Open folder查当前绑定的入口。
+    notice: ''
+  - anchor: 进入可用的 **Advanced**
+    fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model；Power / Advanced
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档；实际可选项受账号、版本与开放条件影响。不是GUI验证。
+    support: supported
+    rationale: 补足可选Astra设置的控件入口→Advanced→型号与Effort→核对当前值；不要求无此选项的读者停下。
     notice: ''
   unused_facts: {}

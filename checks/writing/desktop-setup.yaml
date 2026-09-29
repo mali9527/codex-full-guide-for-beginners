@@ -1,6 +1,6 @@
 schema: 2
 unit: desktop-setup
-input_sha256: 34d826eb0dc7397356876abe4d5362ece89a48ff5200226765aad51ced42bc6f
+input_sha256: a9681181c87ab1566b6679c809367d9fb8b4cd670cf14549379c6d92b7809241
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -45,36 +45,36 @@ study_brief:
   case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
 study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
 study_review:
-  result: pending
-  reason: 待对固定成稿与写前提要核对
+  result: pass
+  reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 从未安装/未登录开始；先平台安装，再共同登录并确认进入Codex。认识New chat不要求此时建任务，文件夹与首次任务留第3章。
   concept_timing:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: Windows沙箱改为开始本地工作时遇到提示才处理的分支，设好后返回原项目/任务；不把未知出现时点写成安装与登录之间的固定步骤。
   information_value:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 保留官方下载链接、系统条件、登录返回、入口与排障；新增的是动作前置和返回位置，没有扩写解压、按键等常识。
   natural_style:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 完整连读：两平台安装合流到登录，Windows条件分支标题直接说明何时使用；章节结尾的完成标准是进入Codex而非已新建任务。
   localization:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 双平台分别交代，实际控件名称保留；Windows条件未推广到Mac，组织条件未说成人人相同。
   independent_creation:
-    result: pending
-    reason: 待按操作顺序完整审阅
+    result: pass
+    reason: 官方快速开始用于核对安装/登录/选工作位置的关系；本书独立重排为非编程读者路线，不使用官方网页/CLI案例或逐段转述。
 fact_review:
-  coverage: pending
-  reason: 本轮先保存学习提要，待从修订后的全章反查
+  coverage: reviewed
+  reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-28 CLI 0.158.0；9月25日macOS安全更新；9月22日Sol/Luna开放条目
+    locator: 2026-09-28 CLI 0.158.0开篇功能与修复
     checked_on: '2026-09-29'
-    effect: 相关条目写前实读；不把CLI更新号当桌面版，不据新条目推断全账号稳定。正文首次使用路线以对应当前官方主体为准。
+    effect: 实际重读指定范围，未把CLI版本当成桌面版本；没有据此推出停止快捷键或统一沙箱出现时机。桌面步骤依据各专页。
   claims:
   - anchor: Windows和Mac的安装条件分别说明
     fact_id: desktop-platforms
