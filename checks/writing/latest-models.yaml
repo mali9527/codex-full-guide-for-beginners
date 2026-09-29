@@ -1,208 +1,129 @@
 schema: 2
 unit: latest-models
-input_sha256: 9c539c4df335c3c6a6ca4fdcde50f185b8fad8e24f15bd6b4209e1bb39cf00a0
+input_sha256: b1b81d7b06f5953b517b12e77f2d3052bdeea1661117e7d0df11674ff2134827
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
-batch_started_on: '2026-09-28'
-reviewed_on: '2026-09-28'
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
 reviewer: codex
 study_brief:
-  mode: new_draft
-  prepared_on: '2026-09-28'
-  base_manuscript_sha256: 6fa9c7bbe5133cf67e35cf179dacaa333e0e0a07ef5de40e88c9df0ce83271cc
-  reader_goal: 从GPT-6 Astra等当前模型看见任务价值，分清模型与Codex，知道选择入口及继续阅读位置。
+  mode: revision
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 55debb6bdbe66579e3ba11f48ccca1623af8d45c411a15f70489723bbd740705
+  reader_goal: 让没有编程经验的读者具体理解GPT-6 Astra的用途、工作方式、输入与工具、选择及配合方法，能判断为什么使用它。
   reader_start:
-  - 没有前章，不假定已安装；有办公与电脑常识。
+  - 全书开篇，没有安装或前章前置；有电脑与办公经验。
   explain_now:
-  - 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
-  - Astra/Sol/Luna用途和最短选择入口；Effort仅简释。
+  - 多步骤完成与一次文字回答的区别
+  - 模型、图像输入和工具的分工
+  - 针对重要缺口提问、接住反馈及完成标准
+  - Astra与Sol/Luna和Effort起点
   official_readings:
-  - fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/models
-    locator: Recommended models / Choosing Astra, Sol, Luna
-    checked_on: '2026-09-28'
-    understanding: 官方将GPT-6 Astra用于需要持续判断的复杂多步骤工作，Sol用于日常及复杂工作，Luna用于明确且可重复的任务。桌面可在输入区下方选择账号可用模型；型号出现和默认设置受客户端、登录方式、工作区及开放进度影响。2026-09-22的更新说明将GPT-6
-      Sol与Luna标为逐步开放；不据页面列出就认定全部账号可用或已全面稳定。
-    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
-  - fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: 桌面Codex可在输入框下方的模型/推理控件选择可用模型；账号可用列表与组织权限相关，模型选择不授予额外权限。 更高推理投入可能改善复杂任务，但耗时和token消耗更多；不指定所有账号统一的默认型号。
-    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+  - fact_id: astra-collaboration-behavior
+    url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
+    locator: Introduction；GPT-6 Astra behavior；Initiative and follow-through；Personality
+      and writing style
+    checked_on: '2026-09-29'
+    understanding: 能力不只是回答难题，也包括连续处理、针对关键缺口提问、接住修改与行为倾向。
+    teaching_use: 用资料比较到说明稿的自编情景解释，不用开发领域术语或性能保证。
+  - fact_id: astra-model-input-tools
+    url: https://developers.openai.com/api/docs/models/gpt-6-astra
+    locator: Model description；Modalities；Tools
+    checked_on: '2026-09-29'
+    understanding: 看图是模型输入能力，操作应用和生成图片要有工具；API数字不等于桌面用户得到的上限。
+    teaching_use: 给截图解释/实际改页面的对比，说明材料与工具关系，后置具体工具操作。
+  - fact_id: astra-outcome-guidance
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Describe the result；Add useful context；Set boundaries；Make result ready
+      to use
+    checked_on: '2026-09-29'
+    understanding: 目标、材料、成果、边界比机械步骤更重要；并非固定提示词模板。
+    teaching_use: 加入自编说明稿请求，解释哪些要求值得写。
+  - fact_id: astra-outcome-guidance
+    url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
+    locator: Better skills；Up-to-date AGENTS.md；Persistence
+    checked_on: '2026-09-29'
+    understanding: 旧指令过密或边界含混可能让Astra反复准备或过早停下。
+    teaching_use: 给完成标准和保留关键批准的对比，不教删权限或全面放行。
+  - fact_id: astra-outcome-guidance
+    url: https://learn.chatgpt.com/docs/model-selection
+    locator: Experiment；How to think about models and reasoning effort
+    checked_on: '2026-09-29'
+    understanding: 按同输入比较是否够好，以较轻设置开始；官方推荐不等于保证。
+    teaching_use: 选择建议服务日常判断，具体模型控制仍留第6章。
   - fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
-    locator: Power / Pick a reasoning effort
-    checked_on: '2026-09-28'
-    understanding: 官方Models建议从账号可用的默认Power设置起步；Advanced中可分选模型、Effort和速度。Pick a reasoning
-      effort给出Sol Medium、Luna High、Astra Light的起步建议；这是建议，不是所有账号实际选中值。页面示意的起始预设与实际默认还受套餐、客户端、工作区和开放进度影响。
-    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    checked_on: '2026-09-29'
+    understanding: Astra Light、Medium及高投入按工作难度选择；Max/Ultra不是普通任务必需。
+    teaching_use: 最小解释思考投入与等待，避免把Light等同短答。
+  - fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    checked_on: '2026-09-29'
+    understanding: 输入框下方Power与Advanced可选，实际可见性受环境影响。
+    teaching_use: 保留最短入口，尚未安装读者可先看用途。
+  - fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/models
+    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    checked_on: '2026-09-29'
+    understanding: Astra偏持续多步骤判断；Sol/Luna依任务范围也适用。
+    teaching_use: Astra详细介绍后再比较，不用表格代替Astra正文。
   - fact_id: codex-work-scenarios
     url: https://learn.chatgpt.com/docs/use-chatgpt
-    locator: 本轮或已登记近7日阅读中与本章有关的主体段落；具体范围见事实来源和参考来源与致谢
-    checked_on: '2026-09-28'
-    understanding: Codex与Work的桌面能力有重叠，Codex可用于研究、文档、演示文稿及其他知识工作，也提供开发视图；自然语言要求可随结果继续修订。文件、联网、工具等能力取决于平台、账号、开放进度和工作区设置。
-    teaching_use: 模型负责理解与判断，工具按权限执行；不把换模型当增权限。
+    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    checked_on: '2026-09-29'
+    understanding: Codex也可研究文档等，工具与账号有条件。
+    teaching_use: 非编程用户的例子仍留在桌面Codex。
+  - fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Models / Use ChatGPT / Permissions中本轮实际读取的相关主体段落
+    checked_on: '2026-09-29'
+    understanding: 提示词决定本次要求，权限决定可操作范围；模型更新不扩大边界。
+    teaching_use: 人要核对材料和实际成果，不能以更强模型取消检查。
   teaching_sequence:
-  - 先用四项备忘的片段看成果价值
-  - 再分清工具与模型，按用途介绍型号
-  - 给已安装者入口，未安装者连续进入第1—4章
+  - 从普通资料任务引出Astra价值
+  - 以多个具体能力和自编例子讲清阅读判断、工具和持续修改
+  - 解释怎样交代要求、少量有用设置与检查
+  - 给安装和后续章节入口
   defer:
-  - 完整模型参数、速度用量和Effort档位比较
-  - API价格、性能排名及实验上下文
-  case_plan: 只预览自编备忘两条信息的合并，明示预期成果，不假造Astra已执行。
-study_commit: e3a38898e317004ee3987e0c608fcb855e21bd86
+  - API参数、价格、上下文数字、迁移代码和性能跑分
+  - Max/Ultra、技能安装和浏览器/电脑操作细节
+  - 实验上下文管理默认关闭及配置，不设新手前置
+  case_plan: 沿用本书两份备忘作轻量预告；新增两份设备说明与个人需求对比的假设情景，不填真实品牌价格；自编整理说明稿请求，仅展示提法，不冒充实际Astra运行。
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照已保存写前提要与完整成稿，官方理解实际用于讲解顺序和案例；原稿祖先e3a3889存在，未借用retrospective。稿后补充事实关联另记，不回填写前计划。
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 读者无需已安装；只预告第4章目标，操作要求转第2章。 构建后逐章核对导航与新目录，正文与3510ef1逐字一致；开篇接第1章，第4章接第5章账号与额度。
+    result: pending
+    reason: 待按本章完整正文复核
   concept_timing:
-    result: pass
-    reason: 先说明成果价值，再区分工具与模型；Effort只给最低解释，第6章展开。
+    result: pending
+    reason: 待按本章完整正文复核
   information_value:
-    result: pass
-    reason: 无API规格与套餐比较，保留Astra/Sol/Luna用途和可用条件。
+    result: pending
+    reason: 待按本章完整正文复核
   natural_style:
-    result: pass
-    reason: 用两条照片提醒解释多步骤，未虚构作者经历或模型对比收益。
+    result: pending
+    reason: 待按本章完整正文复核
   localization:
-    result: pass
-    reason: 中文直角引号，模型和Advanced保留实际词，时间不绑定国家。
+    result: pending
+    reason: 待按本章完整正文复核
   independent_creation:
-    result: pass
-    reason: 对照既有同作者旧书及官方学习卡，未搬用其原案例、口号或段落；自编待办预告。 本轮重新读取原件并完成7项材料一致性检查，现将真实配套输入纳入本摘要证据范围。
+    result: pending
+    reason: 待按本章完整正文复核
 fact_review:
-  coverage: reviewed
-  reason: 全文连读并反查所有产品/系统断言，包含控件、可用条件、平台、运行位置及预览；教学建议与自编结果单独判断。新增所需事实关联，未把事实ID覆盖当作全文覆盖的自动证明。
-    构建后仅受管导航改变，已比对全文与导航目标，产品断言保持不变。
-  docs_checked_on: '2026-09-28'
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
   change_review:
-    url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-26 CLI 0.157.1与2026-09-25 CLI 0.157.0开篇
-    checked_on: '2026-09-28'
-    effect: 本轮未发现可据以替换桌面路径的更新；CLI记录不作为桌面稳定版证明。型号开放条件以Models当前正文及已有同日型号研究为准。
-  claims:
-  - anchor: GPT-6 Astra适合需要在多个步骤中持续判断的工作。
-    fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/models
-    locator: Choosing Astra, Sol, or Luna；型号定位与多步骤用途
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id001
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 官方用途定位，未做性能比较，型号开放受账号与客户端影响。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：官方用途定位，未做性能比较，型号开放受账号与客户端影响。
-    notice: ''
-  - anchor: '| GPT-6 Sol | 日常写作、资料研究，以及需要兼顾完整性和判断的工作 |'
-    fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/models
-    locator: Recommended models及三款用途对比
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id001
-    availability: unspecified
-    conditions: 表格为选择起点，正文说明用途重叠，不是排他或排名。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：表格为选择起点，正文说明用途重叠，不是排他或排名。
-    notice: ''
-  - anchor: '| GPT-6 Luna | 范围清楚、标准明确的整理、提取、分类等重复任务 |'
-    fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/models
-    locator: Choosing Astra, Sol, or Luna
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id001
-    availability: unspecified
-    conditions: 不承诺所有账号都能选择此型号。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：不承诺所有账号都能选择此型号。
-    notice: ''
-  - anchor: 在桌面Codex的输入框下方，找到模型与推理设置控件。
-    fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: Choose a model；Power及Advanced控件
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id002
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 位置为文档所述；Power可见性和Advanced选项受账号与版本影响，非实机。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：位置为文档所述；Power可见性和Advanced选项受账号与版本影响，非实机。
-    notice: ''
-  - anchor: 有些界面先显示Power预设，它把模型和思考投入组合成几个选择。
-    fact_id: desktop-model-control
-    url: https://learn.chatgpt.com/docs/models
-    locator: Power and Advanced
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id002
-    availability: unspecified
-    conditions: 没有写成所有账号默认值，不承诺当前登录界面相同。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：没有写成所有账号默认值，不承诺当前登录界面相同。
-    notice: ''
-  - anchor: 如果可以选择Astra，也可以从官方建议的Light档开始，看看结果是否满足要求。
-    fact_id: reasoning-default-guidance
-    url: https://learn.chatgpt.com/docs/models
-    locator: Pick a reasoning effort
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: &id003
-    - windows
-    - mac
-    availability: unspecified
-    conditions: Astra Light为文档建议；不是以高低档保证正确性。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：Astra Light为文档建议；不是以高低档保证正确性。
-    notice: ''
-  - anchor: 更高的投入可能有助于复杂判断，也会增加等待和消耗。
-    fact_id: reasoning-default-guidance
-    url: https://learn.chatgpt.com/docs/models
-    locator: Pick a reasoning effort
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms: *id003
-    availability: unspecified
-    conditions: 说明复杂判断与等待消耗权衡，不给量化耗时承诺。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：说明复杂判断与等待消耗权衡，不给量化耗时承诺。
-    notice: ''
-  - anchor: 你可以把材料交给Codex，请它合并重复提醒，保留要求，再保存一份待办清单。
-    fact_id: codex-work-scenarios
-    url: https://learn.chatgpt.com/docs/use-chatgpt
-    locator: Tell ChatGPT what you want；Work/Codex及Review and refine
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 自编案例预告，非真实Astra运行输出；文件能力依赖任务工具。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：自编案例预告，非真实Astra运行输出；文件能力依赖任务工具。
-    notice: ''
-  - anchor: 它能使用哪些材料、调用哪些工具，还要看这次任务的条件和权限。
-    fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Permission modes；workspace与审批边界
-    checked_on: '2026-09-28'
-    surface: codex-desktop
-    platforms:
-    - windows
-    - mac
-    availability: unspecified
-    conditions: 模型选择不扩大权限；任务授权与技术能力区分。 官方页未明示成熟度时保留unspecified；文档核对不等于GUI实测。
-    support: supported
-    rationale: 逐段反查正文与上述官方段落，按条件限缩表达；具体依据与教学取舍：模型选择不扩大权限；任务授权与技术能力区分。
-    notice: ''
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
   unused_facts: {}

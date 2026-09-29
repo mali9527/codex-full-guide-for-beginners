@@ -29,6 +29,9 @@ units:
   features:
   - latest-models
   facts:
+  - astra-collaboration-behavior
+  - astra-model-input-tools
+  - astra-outcome-guidance
   - permission-boundary
   - gpt6-model-use-position
   - desktop-model-control
