@@ -1,7 +1,16 @@
 schema: 2
 unit: goals
-input_sha256: 5e3dd3df371d8a913ce89b03759a8994c156c265ba99a3a73520962d72b13636
-evidence_paths: []
+input_sha256: cea7cfccd69e23e75cdd3a00b2b3500fe1aa90d804f4b771b0bdaf21881a258e
+evidence_paths:
+- examples/ch17-reference-index/README.md
+- examples/ch17-reference-index/演示结果/分类索引.txt
+- examples/ch17-reference-index/演示结果/待确认事项.txt
+- examples/ch17-reference-index/演示结果/接续说明.txt
+- examples/ch17-reference-index/资料目录/材料/整理规则.txt
+- examples/ch17-reference-index/资料目录/材料/文件目录.txt
+- examples/ch17-reference-index/资料目录/材料/旧索引.txt
+- examples/ch17-reference-index/资料目录/材料/补充决定.txt
+- examples/ch17-reference-index/资料目录-起始材料.zip
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
@@ -39,35 +48,123 @@ study_brief:
   case_plan: 新原创12条目录和4份输入，输出索引/待确认/接续；旧索引缺项、相似名不合并、未知保留提供真实可核查终点。
 study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交d69d4d8比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：对照12条原创材料及三份示例结果：先准备/打开项目再/goal，输出与未知项规定明确；进度行控制和普通运行停止分开。文件演示10项读回通过只支持材料完整性，不支持GoalGUI。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 新目录材料、解压开文件夹、新任务Local、四文件读取、设置核对均在启动目标前。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 定义可检查终点后/goal；进度行暂停→查已写文件→编辑→恢复，清除含义明确。 全书衔接复核：对照12条原创材料及三份示例结果：先准备/打开项目再/goal，输出与未知项规定明确；进度行控制和普通运行停止分开。文件演示10项读回通过只支持材料完整性，不支持GoalGUI。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 12条登记多文件互检说明持续用途；Remote可选，不做硬件/云平台课。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 以未知分类/相似文件名的真实判断推进，不堆Goal宣传或时长承诺。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Remote双平台同账号工作区，Mac防睡单独条件；无具体账号可用性假证据。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 四份输入三份结果和目标文字原创，已与官方代码迁移案例对照无近似。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
-  unused_facts: {}
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: Windows默认用Ctrl+O
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: Open folder
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 新案例先取得材料开目录，非隐藏已准备条件。
+    notice: ''
+  - anchor: 选择 **`/goal`**
+    fact_id: goal-desktop-lifecycle
+    url: https://learn.chatgpt.com/docs/long-running-work
+    locator: Start a goal; Define done
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 目标即初始要求及终点；12条与三文件自编，不延用官网迁移示例。
+    notice: ''
+  - anchor: 目标进度行
+    fact_id: goal-desktop-lifecycle
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: Set/manage goal
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 输入上方暂停恢复编辑清除，逐个解释对象，非撤销文件。
+    notice: ''
+  - anchor: Goal仍遵守原来的权限与批准规则
+    fact_id: goal-desktop-lifecycle
+    url: https://learn.chatgpt.com/docs/long-running-work
+    locator: Steer a running goal
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 需要决定可等待，目标不授权额外账号/动作。
+    notice: ''
+  - anchor: 先暂停Goal
+    fact_id: goal-desktop-lifecycle
+    url: https://learn.chatgpt.com/docs/long-running-work
+    locator: Steer; local prevent sleep
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 断网先暂停；Mac防睡条件不保证网络/账号永久有效。
+    notice: ''
+  - anchor: Settings → Connections → Control this Mac or PC
+    fact_id: desktop-remote-host
+    url: https://learn.chatgpt.com/docs/remote
+    locator: Get started
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 电脑端连接→手机同账号工作区→Remote选电脑；仍本机运行需在线，条件开放。
+    notice: ''
+  unused_facts:
+    plan-before-editing: Goal文中假定已读第15章，当前新示例已明确目标，未重复调用Plan；不将它设必备步骤。

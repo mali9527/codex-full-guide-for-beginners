@@ -1,6 +1,6 @@
 schema: 2
 unit: plugins
-input_sha256: 3eb56cc1dc180b8716ae07f93b1079569bc115b9ebf4f2831c4921caee641b69
+input_sha256: a0b6331d0958cdfe7bdc8b6186bbb0cfca9035f2167e9c6f672cec009df8289d
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -44,35 +44,150 @@ study_brief:
   case_plan: 只读自己服务的无敏感测试文档，没外部账号直接用本地材料路线，不假设特定插件始终可用。
 study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与Skill/Browser章连读：选具体只读需要，安装、启用、登录连接后开新任务，再确认对象及结果；MCP名词在用途后解释，卸载与撤回授权分别处理。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 安装→连接认证→新任务→只读对象→对照原服务，没有将连接成功当所有文件可读。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 五种状态明确，MCP只状态，独立配置与服务授权分别管理。 全书衔接复核：与Skill/Browser章连读：选具体只读需要，安装、启用、登录连接后开新任务，再确认对象及结果；MCP名词在用途后解释，卸载与撤回授权分别处理。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 不教协议开发/API工程；没有外部账号直接用已有本地路线。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 测试文档标题/首段便于核对，不替读者预设某个付费服务。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Desktop only/组织管理员限制准确，非全部平台通用；CLI安装命令未搬桌面。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 只读请求原创，官网Gmail/Slack实例不复制；授权没实际进行。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 里面可能包含技能、连接工具和其他资源
+    fact_id: plugin-install-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Overview
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 能力包和账号服务分别，插件不必都有外部账号。
+    notice: ''
+  - anchor: MCP，Model Context Protocol
+    fact_id: desktop-mcp-status-and-connection
+    url: https://learn.chatgpt.com/docs/extend/mcp
+    locator: Intro / Supported features
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 用途先行，协议不展开开发，能力依服务。
+    notice: ''
+  - anchor: 详情中的安装加号
+    fact_id: plugin-install-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Install/use
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 先详情条件、安装、认证、新任务；Desktop only不能当网页可用。
+    notice: ''
+  - anchor: 在`@`菜单中选择当前提供的插件入口
+    fact_id: plugin-install-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Choose a specific plugin
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 插件@与前章技能$分开，适用当前入口。
+    notice: ''
+  - anchor: 选择 **`/mcp`**
+    fact_id: desktop-mcp-status-and-connection
+    url: https://learn.chatgpt.com/docs/extend/mcp
+    locator: Configure desktop
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 只状态，不当认证/安装命令。
+    notice: ''
+  - anchor: Settings → MCP servers
+    fact_id: desktop-mcp-status-and-connection
+    url: https://learn.chatgpt.com/docs/extend/mcp
+    locator: Configure desktop
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Add server类型/保存Restart/Authenticate按来源，避免陌生命令。
+    notice: ''
+  - anchor: 外部服务有自己的账号权限和数据处理规则
+    fact_id: plugin-install-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Permissions and data sharing
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 工具可用不自动授权发送/共享，服务规则与Codex沙箱共同适用。
+    notice: ''
+  - anchor: Uninstall plugin
+    fact_id: plugin-uninstall-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Remove plugin
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 管理员条件及独立MCP可能仍连，卸载不等于撤回外部结果。
+    notice: ''
   unused_facts: {}

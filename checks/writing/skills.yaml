@@ -1,6 +1,6 @@
 schema: 2
 unit: skills
-input_sha256: 1aeb4c1f857fb7bfbc0da9baac5ee302fb98bd4d062ea823b0ef018e42527fb1
+input_sha256: af20723024748f9651337f7dc8d6f5e76a80fbc043d265079028202262a96f80
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -37,35 +37,163 @@ study_brief:
   case_plan: 复用清单整理但材料名由每次请求给，不硬编码本机路径；不实际安装作者新技能。
 study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与个人规则/插件章连读：已有流程先跑通，再内置创建器，读取SKILL后新任务调用核对；示例名字不冒充预装。停用走实际config来源，不发明GUI开关。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 内置creator先具备→起草→保存确认→新任务调用；没有依赖尚未学的插件。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 实际技能名/路径确认后才$选择；拟定notes-to-todos明确不是预装，停用与删除分开。 全书衔接复核：与个人规则/插件章连读：已有流程先跑通，再内置创建器，读取SKILL后新任务调用核对；示例名字不冒充预装。停用走实际config来源，不发明GUI开关。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 不教脚本或技能发行，说明性流程足够；记录重放只作可选指路。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 沿已经跑通清单说明为什么复用，创建请求具体、输入不写死。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Codex$、ChatGPT@和插件@区分，录制仅Mac条件明确。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 没有实际安装技能，示例流程和提示词自行编写，不移植官方周报模板。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 特定任务的说明和必要资源
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/skills-and-plugins
+    locator: Use skills
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 与模型和授权不同，先跑通再保存是教法。
+    notice: ''
+  - anchor: 侧栏打开 **Skills**
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/build-skills
+    locator: Standalone skills desktop
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 查看已存在项目，未假定拟定技能已安装。
+    notice: ''
+  - anchor: 输入 **`$`**
+    fact_id: skill-invocation-surface
+    url: https://learn.chatgpt.com/docs/skills-and-plugins
+    locator: Explicit selection
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Codex$与ChatGPT@区别，以真实候选选取；斜线技能亦有桌面命令页依据。
+    notice: ''
+  - anchor: '**`$skill-creator`**'
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/build-skills
+    locator: Create skill / SYSTEM
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 内置creator先创建再调用，默认指令型，不需要插件前置。
+    notice: ''
+  - anchor: 主要说明放在 **`SKILL.md`**
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/build-skills
+    locator: Skill structure
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 字段最小解释，普通读者不需手写实现。
+    notice: ''
+  - anchor: 本地技能与修改通常会自动被发现
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/build-skills
+    locator: Detection / where loads
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 不见时核位置/范围再重启，不保证同名合并。
+    notice: ''
+  - anchor: 先看到技能名称和描述
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/build-skills
+    locator: Progressive disclosure / optional metadata
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 适用再加载，明确选择可控，未规定人人固定预算。
+    notice: ''
+  - anchor: 本地技能配置中的启用设置
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/build-skills
+    locator: Enable/disable local skills
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 精确路径只停一个、保留文件/其他设置/重启，未编桌面开关。
+    notice: ''
+  - anchor: 可选的 **Record & Replay**
+    fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/extend/record-and-replay
+    locator: Availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 仅Mac及ComputerUse条件，本文不教录制操作。
+    notice: ''
   unused_facts: {}

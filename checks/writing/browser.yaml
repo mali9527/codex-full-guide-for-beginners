@@ -1,6 +1,6 @@
 schema: 2
 unit: browser
-input_sha256: d75c41fe9fbe9bc344e6d2ca2d96173e83418cb055b8447d83edc06e3e5af8d2
+input_sha256: 6139d41556c5ebcc90d3af73a09d97545d90c3837fcc8e4c15fdfc781a71ae90
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -38,35 +38,164 @@ study_brief:
   case_plan: 只读官方文档页的一条条件；批注为定位反馈，不改官网。
 study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与材料/插件/电脑操作章连读：内置profile与扩展浏览器的已有标签分开；先连接并核对用户配置/网站许可再@标签。批注保存后才发送要求，内置上传自动化限制不省略。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先选择内置或已有浏览器，扩展profile/Manage/新任务完整，再确认URL和账号。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 网站允许不等于提交动作；批注保存后另发要求；不需要终端启动服务器。 全书衔接复核：与材料/插件/电脑操作章连读：内置profile与扩展浏览器的已有标签分开；先连接并核对用户配置/网站许可再@标签。批注保存后才发送要求，内置上传自动化限制不省略。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 不展开CDP、云端Work、上传配置课，保留眼前最可能误解的入口。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 自选官网项目段只读，小请求无需造网站或购物情境。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 五浏览器和Opera侧聊差异准确，内置设置与扩展Manage分开。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 未复制官网价格卡/仪表盘案例、截图或代码；无联网发帖操作。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 明确使用 **`@Browser`**
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/browser
+    locator: Open / Computer Use
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 自带内置入口，只读官网不用开发服务器。
+    notice: ''
+  - anchor: 使用独立的浏览器资料
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/browser
+    locator: Browser profile / downloads
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 常用浏览器登录不共享，下载目录可设。
+    notice: ''
+  - anchor: 内置浏览器不能自动完成文件上传
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/browser
+    locator: Computer Use in browser
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 当前限制明确不推广其他扩展；支持点按钮不意味着所有操作都行。
+    notice: ''
+  - anchor: Chrome、Edge、Brave、Opera和Vivaldi
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/chrome-extension
+    locator: Availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 五浏览器当前支持与开放组织条件，侧聊Opera另限。
+    notice: ''
+  - anchor: 进入 **Settings → Computer Use**
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/chrome-extension
+    locator: Set up browser
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 插件→扩展商店安装→Manage→正确profile→新任务@，顺序完整。
+    notice: ''
+  - anchor: Allow once
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/chrome-extension
+    locator: Website access / manage
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 访问与动作分开，允许列表/阻止列表/菜单开关不同。
+    notice: ''
+  - anchor: 开启 **Annotation mode**
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/browser
+    locator: Comment on page
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 选区域→写保存→回任务要求，未声称直接改第三方网页。
+    notice: ''
+  - anchor: Chrome、Edge、Brave和Vivaldi还支持浏览器侧聊
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/chrome-extension
+    locator: Use side chat
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Opera除外；主线仍桌面。
+    notice: ''
+  - anchor: 先确认网站没有被阻止
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/chrome-extension
+    locator: Troubleshooting
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 对象→连接/profile→新任务→重启，不扩权限消除报错。
+    notice: ''
   unused_facts: {}

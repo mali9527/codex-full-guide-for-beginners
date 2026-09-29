@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 6cd2219c151529f98a2e4f9bfede9e529ae13a4df6490863fed60a527d0746e9
+input_sha256: ca9a04373806807bf2d5533890babb2a159007b3db3a0d9f9ce7de117b108505
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -55,6 +55,8 @@ study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
 study_review:
   result: pass
   reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读与配套原件/两版清单比较：先人读原件、回同任务核对设置、AI读对以后生成、实际打开检查、确认v1再存v2。新ch17材料不混入起始包；普通运行直接停止前置未闭合，prior_knowledge
+    pending保留。 写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
     result: pending
@@ -62,6 +64,8 @@ reader_review:
   concept_timing:
     result: pass
     reason: 明确从Codex切到电脑文件夹/文本软件读原件，再返回同一任务；当前权限重新选并核对；先保存与检查v1再生成v2，错误纠正只在实际出错时使用。
+      全书衔接复核：全文回读与配套原件/两版清单比较：先人读原件、回同任务核对设置、AI读对以后生成、实际打开检查、确认v1再存v2。新ch17材料不混入起始包；普通运行直接停止前置未闭合，prior_knowledge
+      pending保留。
   information_value:
     result: pass
     reason: 保留四事实、保存位置、修改范围与恢复边界。新增都是操作衔接：设置不假定继承、文件是否真实存在、条件反馈是否必要，没有增加电脑常识教学。
@@ -77,6 +81,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

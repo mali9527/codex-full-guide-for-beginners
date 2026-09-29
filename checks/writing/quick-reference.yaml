@@ -1,6 +1,6 @@
 schema: 2
 unit: quick-reference
-input_sha256: ff070c0772db26ae7b7b81fa4b81717b1666abd366046a7020fed086e3f63bcf
+input_sha256: 5861ac5615a8d84381b65a5ac2156bcc180f1364ca84c1a76d1a7c5cc4fe0917
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -57,35 +57,415 @@ study_brief:
   case_plan: 使用功能与问题的原创映射表，术语解释回正文，不照搬官方字母顺序命令表。
 study_commit: f6a7b3dfbf49a62fe09d52bad381470f6444dd08
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交f6a7b3d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：全章回读并逐项与主讲章对照：19组命令、14项默认键位及设置入口均有主讲或官方依据；新选功能注明预览/公开测试/平台条件。修正一条审阅锚点指向真实表格行而非标题，没有改变产品事实。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 按读者问题引回完整主讲章，附录不暗中承担从未讲过的基础操作。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 命令、键位和设置均先指明桌面当前可用，普通停止不编键，Goal另用进度行。 全书衔接复核：全章回读并逐项与主讲章对照：19组命令、14项默认键位及设置入口均有主讲或官方依据；新选功能注明预览/公开测试/平台条件。修正一条审阅锚点指向真实表格行而非标题，没有改变产品事实。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 按用途筛而非复制官方全集，少量可选功能只辨认并链接，不恢复网站/CLI课程。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 表格是回查需要，非正文全部变成清单；术语回查不重复长定义。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 两平台默认键逐项校验，Visualizations预览与Sites公测明确，Micro为硬件。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 映射按全书读者问题自行组织，未采用官网字母顺序/代码例/截图或图示。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 先在输入区键入`/`
+    fact_id: desktop-slash-entries
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: Use / complete desktop command table
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 全表逐项对照，model/reasoning/fast/project/task/local/plan/goal/side/compact/fork/init/memories/personality/mcp/pet/approve均用途与条件限定；非CLI全集。
+    notice: ''
+  - anchor: 审查代码改动 | `/review`
+    fact_id: review-feedback-command-purpose
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: review/feedback
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 代码审查与产品反馈两行明确，不当文稿按钮。
+    notice: ''
+  - anchor: 选技能用Codex的`$`菜单
+    fact_id: skill-invocation-surface
+    url: https://learn.chatgpt.com/docs/skills-and-plugins
+    locator: Use skills
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 技能$，其他对象@须看候选，不机械混用。
+    notice: ''
+  - anchor: 打开文件夹 Open folder | Ctrl+O | ⌘O
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: macOS and Windows full command table
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 14行逐项核对，桌面条件与自定义绑定前置。
+    notice: ''
+  - anchor: 命令菜单 | Ctrl+Shift+P或Ctrl+K
+    fact_id: desktop-basic-navigation
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: General
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Mac/Windows另列，与终端或Searchchats快捷键不混。
+    notice: ''
+  - anchor: 听写先把话转成输入框中的文字
+    fact_id: desktop-voice-options
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Use voice dictation
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 两平台CtrlShiftD，检查再发；不当直接语音或自动发送。
+    notice: ''
+  - anchor: 批准请求打开时
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: Approve / Decline
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 批准卡状态限定，Esc不当普通停止键。
+    notice: ''
+  - anchor: General | 运行中补充采用Steer还是Queue
+    fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/reference/settings
+    locator: General
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 设置作用与任务选项不同。
+    notice: ''
+  - anchor: 设置中让一种权限模式可选
+    fact_id: permission-modes-enablement
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Enable modes
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 启用与当前任务选择两步，附录引主讲章。
+    notice: ''
+  - anchor: Personalization | 交流风格
+    fact_id: project-instructions
+    url: https://learn.chatgpt.com/docs/personalize
+    locator: Choose personality / custom instructions
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 主控位置和作用准确，模型能力无夸大。
+    notice: ''
+  - anchor: Enable memories
+    fact_id: local-memory
+    url: https://learn.chatgpt.com/docs/customization/memories
+    locator: Configure local memories
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 本地开关引用第19章，未当网页记忆。
+    notice: ''
+  - anchor: Archived chats | 找回归档任务
+    fact_id: desktop-chat-retrieval
+    url: https://learn.chatgpt.com/docs/reference/settings
+    locator: Archived chats
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 恢复入口以桌面为准。
+    notice: ''
+  - anchor: Notifications | 完成、待回答、待批准
+    fact_id: desktop-notification-activity
+    url: https://learn.chatgpt.com/docs/notifications
+    locator: Desktop notifications
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 设置与活动快捷键有适用条件。
+    notice: ''
+  - anchor: Browser | 内置浏览器的网站
+    fact_id: browser-boundary
+    url: https://learn.chatgpt.com/docs/browser
+    locator: Browser settings
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 内置与扩展管理入口分开。
+    notice: ''
+  - anchor: Computer use | 应用访问
+    fact_id: desktop-computer-use
+    url: https://learn.chatgpt.com/docs/computer-use
+    locator: Settings Computer use
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 应用权限与连接管理不当全局文件权限。
+    notice: ''
+  - anchor: MCP servers | 直接连接服务
+    fact_id: desktop-mcp-status-and-connection
+    url: https://learn.chatgpt.com/docs/extend/mcp
+    locator: Configure desktop
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 管理认证/连接，细节转第21章。
+    notice: ''
+  - anchor: 文件、插件、应用或浏览器的`@`候选
+    fact_id: plugin-install-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Choose plugin
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 选择的对象须核对，未承诺所有候选一直可见。
+    notice: ''
+  - anchor: Effort | 模型投入的推理程度
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Reasoning effort
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 概念回查与Power预设分开，不给未经来源型号默认。
+    notice: ''
+  - anchor: 官方用量页
+    fact_id: usage-availability
+    url: https://learn.chatgpt.com/docs/pricing
+    locator: Usage FAQ
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 同一账号与范围核对，没有读取本人额度的假数据。
+    notice: ''
+  - anchor: 图片生成与编辑
+    fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/image-generation
+    locator: Generate/edit / inputs
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 地图仅用途，没移植API指令或费用数字。
+    notice: ''
+  - anchor: 桌面是预览，正在逐步开放
+    fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/visualizations
+    locator: Check availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 保留preview状态，不称稳定可用。
+    notice: ''
+  - anchor: 当前为公开测试
+    fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/sites
+    locator: Availability; production deployments
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 公测与真实部署后果明确，未创建/发布网站。
+    notice: ''
+  - anchor: 浮动入口新开的任务不自动属于某个项目
+    fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/pets
+    locator: Start a chat
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 宠物可选、双平台与项目外任务区别。
+    notice: ''
+  - anchor: 它是控制硬件，不是模型
+    fact_id: optional-desktop-feature-map
+    url: https://learn.chatgpt.com/docs/features/codex-micro
+    locator: Overview
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 仅识别用途，无购买建议或型号性能猜测。
+    notice: ''
+  - anchor: Mac可选、默认关闭
+    fact_id: computer-history-optional
+    url: https://learn.chatgpt.com/docs/customization/computer-history
+    locator: Availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Mac与默认/组织条件，第19章细节。
+    notice: ''
+  - anchor: 电脑仍负责运行，需唤醒和联网
+    fact_id: desktop-remote-host
+    url: https://learn.chatgpt.com/docs/remote
+    locator: Get started
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: Remote不当云端迁移，含条件。
+    notice: ''
+  - anchor: 官方入口：[桌面下载]
+    fact_id: desktop-download-routes
+    url: https://learn.chatgpt.com/docs/app
+    locator: Download / availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 正确桌面官方入口，下接专页不是新安装保证。
+    notice: ''
   unused_facts: {}

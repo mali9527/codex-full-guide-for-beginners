@@ -1,7 +1,16 @@
 schema: 2
 unit: delegation
-input_sha256: 01a18e2e197ce8694b515aa13e1aa94f8dc8d62300a7d8bc6dbd7dd19f42665e
-evidence_paths: []
+input_sha256: 568056328be8782160dc301ea4d6aca4ab58fd461ee134954bdcbb216c07df5e
+evidence_paths:
+- examples/ch17-reference-index/README.md
+- examples/ch17-reference-index/演示结果/分类索引.txt
+- examples/ch17-reference-index/演示结果/待确认事项.txt
+- examples/ch17-reference-index/演示结果/接续说明.txt
+- examples/ch17-reference-index/资料目录/材料/整理规则.txt
+- examples/ch17-reference-index/资料目录/材料/文件目录.txt
+- examples/ch17-reference-index/资料目录/材料/旧索引.txt
+- examples/ch17-reference-index/资料目录/材料/补充决定.txt
+- examples/ch17-reference-index/资料目录-起始材料.zip
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
 reviewer: codex
@@ -37,35 +46,123 @@ study_brief:
   case_plan: 复用目录材料做覆盖和规则两种检查，分工报告指向条目和原文件，不冒充真人审核。
 study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交d69d4d8比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与Goal、技能章连读：多个任务与内部子代理分清，以两项只读检查开始，合稿由主任务负责；没有把/agent
+    CLI或Ultra强加给普通文件整理。并行未做实测。 写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 沿已准备目录结果开始，只读两项独立检查；不会要求读者先写配置或创建Git分支。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先判断能独立→明确委派→查看返回→处理冲突→主任务合稿；共有文件不并写。 全书衔接复核：与Goal、技能章连读：多个任务与内部子代理分清，以两项只读检查开始，合稿由主任务负责；没有把/agent
+      CLI或Ultra强加给普通文件整理。并行未做实测。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 没有让四项小改动也开代理，不展开代理团队工程，额外成本具体。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 覆盖/规则两个角度贴近已学材料，多个AI同意不作独立证据。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 桌面与CLI /agent区别明确，活动只按实际可见入口描述。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 分工请求、报告判断与来源比较原创，无外部多代理模板或性能承诺。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 这些任务各有自己的上下文
+    fact_id: desktop-chat-organization
+    url: https://learn.chatgpt.com/docs/long-running-work
+    locator: Run goals in parallel
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 用户独立任务须汇总，文件同写冲突条件明确。
+    notice: ''
+  - anchor: 受主任务委派、承担某个具体工作的另一个代理
+    fact_id: desktop-subagent-delegation
+    url: https://learn.chatgpt.com/docs/agent-configuration/subagents
+    locator: Availability / core terms
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 按具体分工用途引术语，非给代理人为身份。
+    notice: ''
+  - anchor: 在用户明确要求
+    fact_id: desktop-subagent-delegation
+    url: https://learn.chatgpt.com/docs/agent-configuration/subagents
+    locator: Desktop availability
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 当前本地触发条件，未把Work的主动委派差异移植。
+    notice: ''
+  - anchor: 桌面使用自己的活动入口
+    fact_id: desktop-subagent-delegation
+    url: https://learn.chatgpt.com/docs/agent-configuration/subagents
+    locator: Desktop / CLI difference
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 活动可检视，没有给未实见的展开图标或将/agent当桌面命令。
+    notice: ''
+  - anchor: 各自进行模型和工具工作
+    fact_id: desktop-subagent-delegation
+    url: https://learn.chatgpt.com/docs/agent-configuration/subagents
+    locator: Token usage; read-heavy
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 额外消耗与只读建议有依据，不保证并行必快。
+    notice: ''
+  - anchor: Ultra涉及更多分工
+    fact_id: reasoning-default-guidance
+    url: https://learn.chatgpt.com/docs/models
+    locator: Max/Ultra
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 承接第6章，不声称选择档位代替明确范围或触发条件。
+    notice: ''
   unused_facts: {}

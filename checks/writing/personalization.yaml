@@ -1,6 +1,6 @@
 schema: 2
 unit: personalization
-input_sha256: 0908bc1ac4418fecc74ff41e07d762bb578a01135d4d464e1a30dd87a5ae7018
+input_sha256: f54d680e868fa89c7a03e32c20c96161df1ced6e62e0ca3faefb12ecd293647f
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -50,35 +50,162 @@ study_brief:
   case_plan: 把原材料不动、未定保留、另存和实际路径写进项目说明；不写一次性购买状态。
 study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与上下文/Skill章连读：当前要求、个人设置、项目AGENTS与记忆各有范围；先检查已有说明再/init，新任务核对读取和行为。ComputerHistory只作Mac条件功能，不变成所有读者前置。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 按本次→个人→项目→记忆逐层，新项目先查已有说明，不教终端编辑配置。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: /init前保护已有文件，保存后新任务确认；记忆先总开关再本次两项控制。 全书衔接复核：与上下文/Skill章连读：当前要求、个人设置、项目AGENTS与记忆各有范围；先检查已有说明再/init，新任务核对读取和行为。ComputerHistory只作Mac条件功能，不变成所有读者前置。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 不展开环境变量/层级配置；Computer History仅辨认与关闭清除边界。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 原材料不动等都是读者已经用过的约定，避免抽象规则体系。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Mac历史限定与系统入口保留，网页记忆不冒充本地；英文真实项不造译名。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 项目规则和偏好自编，未抄官网npm/pnpm/支付项目样例。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 打开 **Settings → Personalization**
+    fact_id: project-instructions
+    url: https://learn.chatgpt.com/docs/personalize
+    locator: Personality; Custom instructions
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 跨任务偏好与单任务要求分开；入口与全局AGENTS有文档依据。
+    notice: ''
+  - anchor: '**`/personality`** 选择'
+    fact_id: project-instructions
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /personality
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 有模型支持条件，风格非能力。
+    notice: ''
+  - anchor: 按全局和项目目录范围读取
+    fact_id: project-instructions
+    url: https://learn.chatgpt.com/docs/agent-configuration/agents-md
+    locator: How discovery works
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 目录发现与近目录/override区别不成安全边界；不把非Git项目强设Git。
+    notice: ''
+  - anchor: 选择 **`/init`**
+    fact_id: project-instructions
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /init
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 先检查已有文件，再生成并审核，避免无条件覆盖。
+    notice: ''
+  - anchor: 本地Codex记忆与ChatGPT网页记忆分别存储和控制
+    fact_id: local-memory
+    url: https://learn.chatgpt.com/docs/customization/memories
+    locator: Intro / Configure
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 本地默认关闭、Settings开启与当前任务控制不同。
+    notice: ''
+  - anchor: 能否使用已有记忆，能否作为生成未来记忆的材料
+    fact_id: local-memory
+    url: https://learn.chatgpt.com/docs/customization/memories
+    locator: Control local memories per chat
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 两开关与全局分别，未称关闭即删除。
+    notice: ''
+  - anchor: 后台处理符合条件的历史任务
+    fact_id: local-memory
+    url: https://learn.chatgpt.com/docs/customization/memories
+    locator: How / storage
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 不保证即时，额度条件、生成状态和不以手改为主有依据。
+    notice: ''
+  - anchor: 它默认关闭，需要相应账号、Memories和组织授权条件
+    fact_id: computer-history-optional
+    url: https://learn.chatgpt.com/docs/customization/computer-history
+    locator: Availability / permissions
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 仅Mac可选，不推动启用，保留账号组织条件。
+    notice: ''
+  - anchor: 不把截图放进历史，也不录音
+    fact_id: computer-history-optional
+    url: https://learn.chatgpt.com/docs/customization/computer-history
+    locator: How / local storage / clear
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 交互文字、服务端处理、关闭与清除区分，清除不可撤销。
+    notice: ''
   unused_facts: {}

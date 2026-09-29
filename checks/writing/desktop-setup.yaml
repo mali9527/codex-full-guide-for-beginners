@@ -1,6 +1,6 @@
 schema: 2
 unit: desktop-setup
-input_sha256: a9681181c87ab1566b6679c809367d9fb8b4cd670cf14549379c6d92b7809241
+input_sha256: 2885c31a70630ec7c2458e5628ea8a0327120afa40bf22ebff4f3a62a519742a
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -47,13 +47,15 @@ study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
 study_review:
   result: pass
   reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读安装登录：浏览器登录后返回应用、选择Codex后才去第3章连文件夹；Windows提示仍为条件分支。新增快捷键事实只扩展其余动作，不改变本章Settings/Openfolder/更新条件；未借最新阅读提升旧安装实测。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
     result: pass
     reason: 从未安装/未登录开始；先平台安装，再共同登录并确认进入Codex。认识New chat不要求此时建任务，文件夹与首次任务留第3章。
   concept_timing:
     result: pass
-    reason: Windows沙箱改为开始本地工作时遇到提示才处理的分支，设好后返回原项目/任务；不把未知出现时点写成安装与登录之间的固定步骤。
+    reason: Windows沙箱改为开始本地工作时遇到提示才处理的分支，设好后返回原项目/任务；不把未知出现时点写成安装与登录之间的固定步骤。 全书衔接复核：全文回读安装登录：浏览器登录后返回应用、选择Codex后才去第3章连文件夹；Windows提示仍为条件分支。新增快捷键事实只扩展其余动作，不改变本章Settings/Openfolder/更新条件；未借最新阅读提升旧安装实测。
   information_value:
     result: pass
     reason: 保留官方下载链接、系统条件、登录返回、入口与排障；新增的是动作前置和返回位置，没有扩写解压、按键等常识。
@@ -69,6 +71,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

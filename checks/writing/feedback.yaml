@@ -1,6 +1,6 @@
 schema: 2
 unit: feedback
-input_sha256: cda0e64d8236e5da941a2f0065798fad20130222ae359d6528d5c2de492facdc
+input_sha256: 30add22329bacfee734a4c0841e3e976c49e0107f05e3c031e6a16e3f30173c2
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -37,35 +37,80 @@ study_brief:
   case_plan: 分别纠正漏10张、改排版、补购买完成状态；假设错误明示不制造。
 study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交d69d4d8比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与第10/14/15章连读：区分事实错误、表达偏好和新消息，保留正确部分；自查依赖证据。/review、/feedback的用途与附录一致，未写成通用审稿入口。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 已会成果打开和批注，先辨认当前文件再提意见，不假定旧窗口即新版本。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 纠错、表达选择、新事实分别处理，改后核事实及未改范围。 全书衔接复核：与第10/14/15章连读：区分事实错误、表达偏好和新消息，保留正确部分；自查依赖证据。/review、/feedback的用途与附录一致，未写成通用审稿入口。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 保留/review与/feedback防误用，不扩Git教程或强制换模型。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 具体漏数量和日期排版示例自然展开，不人为要求制造错误。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 用界面命令原名，日志范围与提交对象讲清；无地域化业务背景。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 三类反馈均围绕自编备忘，未使用官方领导简报/预算或代码实例。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 在原任务中继续
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Improve with follow-ups
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 已有成果→定位→来源→小步修改→再次检查，本书原创展开。
+    notice: ''
+  - anchor: '**`/review`** 用于代码改动审查'
+    fact_id: review-feedback-command-purpose
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /review
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 局限代码/未提交与基础分支比较，非文稿审阅。
+    notice: ''
+  - anchor: '**`/feedback`** 则打开向产品提交意见'
+    fact_id: review-feedback-command-purpose
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /feedback
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 产品反馈与当前稿件反馈分开，日志可选不自动发送。
+    notice: ''
   unused_facts: {}

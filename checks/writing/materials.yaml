@@ -1,6 +1,6 @@
 schema: 2
 unit: materials
-input_sha256: e7f2c7ff7b8e0255266bf3407b4201da33e4d2c8c76e60eb545dde63354c4a63
+input_sha256: 4509c108a4d1efad9ce0695538a584b183f7525f5a2d7c500bbafd235dd0651b
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -44,35 +44,151 @@ study_brief:
   case_plan: 同一备忘补充一张无敏感内容图片；重点比较材料范围，不新增业务案例。
 study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交65f5db6比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：对最终Appshot修正段与前后章回读：Settings选择目的地后返回接收任务，浮动控件位置不冒充该设置；附件/路径/快照不等于批量访问授权，第22章才进入网页操作。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 承接已连接项目与清单，@前有目录确认，图片先说明对象，快照先设置目的地。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 回查并改正Appshot设置位置，不借浮动宠物承担未教前置；读取范围先确认再生成。 全书衔接复核：对最终Appshot修正段与前后章回读：Settings选择目的地后返回接收任务，浮动控件位置不冒充该设置；附件/路径/快照不等于批量访问授权，第22章才进入网页操作。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 每种输入有实际用途，路径只作必要解释，不重教下载/解压。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先材料用途再入口与局限，示例围绕熟悉清单，无机械每键拆解。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 双Command/双Alt、Mac系统授权与正文英文设置名称分别核对。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 使用自编清单和局部检查请求，不采用官网预算/邮件/开发案例。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
-  unused_facts: {}
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 输入区的 **`@`** 可以用来选择文件
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local; file mentions
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 先选对项目/文件，再检查读到内容，未把候选当完整读取。
+    notice: ''
+  - anchor: '**相对路径**'
+    fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Local projects / working directory
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 普通文件地址概念，示例从项目起点，未猜本机完整路径。
+    notice: ''
+  - anchor: 先说明读到了哪些部分
+    fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Add context and boundaries
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 原创检查要求，不保证复杂文件自动完整理解。
+    notice: ''
+  - anchor: 按住 **Shift** 拖入图片
+    fact_id: desktop-image-input
+    url: https://learn.chatgpt.com/docs/image-inputs
+    locator: Desktop image input
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 真实桌面段落，网页/CLI分支没有混用。
+    notice: ''
+  - anchor: 最前方应用窗口的截图
+    fact_id: appshot-input-scope
+    url: https://learn.chatgpt.com/docs/appshots
+    locator: What appshots capture
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 限定最前窗口/可得文字，不推断所有窗口或整文件。
+    notice: ''
+  - anchor: 找到Appshot destination
+    fact_id: appshot-input-scope
+    url: https://learn.chatgpt.com/docs/appshots
+    locator: Take an appshot; destination
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 反查后已纠正浮动控件误当设置入口；设置在app settings。
+    notice: ''
+  - anchor: Mac同时按两侧的 **Command**
+    fact_id: appshot-input-scope
+    url: https://learn.chatgpt.com/docs/appshots
+    locator: Take; Permissions
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 默认热键两平台分别，权限条件Mac注明。
+    notice: ''
+  - anchor: 最近60秒内交互过的任务
+    fact_id: appshot-input-scope
+    url: https://learn.chatgpt.com/docs/appshots
+    locator: Default destination
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 默认行为后要求核对实际落点，不保证每次同一任务。
+    notice: ''
+  unused_facts:
+    artifact-preview: 预览与批注集中第10章，本章只区分材料输入，不新增成果预览步骤。

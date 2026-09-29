@@ -1,6 +1,6 @@
 schema: 2
 unit: account-usage
-input_sha256: 685f4cb3a004b7857d96d77b37dee11a70614a32177d17d9d74fbe34eaef5606
+input_sha256: bf268a74a6f9a3fc8fc192daeb07e0933da81cb31127ffd0d3ce36cdd57fb56c
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -46,13 +46,15 @@ study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
   result: pass
   reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读与第6/13章衔接：先核账号工作区再用量页；token/credits/上下文只作当前需要的区分，没有以/compact解决订阅限额。后章真实写出后无需增加重复定义。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
     result: pass
     reason: 以前章已登录/做过文件为前置，先核身份再用量页，token与上下文在用途处解释。
   concept_timing:
     result: pass
-    reason: 百分比先读范围/标签，虚构读数明示；不把后章压缩当解决账号限额前置。
+    reason: 百分比先读范围/标签，虚构读数明示；不把后章压缩当解决账号限额前置。 全书衔接复核：全文回读与第6/13章衔接：先核账号工作区再用量页；token/credits/上下文只作当前需要的区分，没有以/compact解决订阅限额。后章真实写出后无需增加重复定义。
   information_value:
     result: pass
     reason: 没有价格表或套餐选择，重点保留账号/窗口/credits区别和失败分类。
@@ -68,6 +70,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

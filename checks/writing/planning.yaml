@@ -1,6 +1,6 @@
 schema: 2
 unit: planning
-input_sha256: e798f6720a7893f3f293cb168986ecc0ef7fe70de59e0271abe2174dc4ae70ce
+input_sha256: 3a4dc2ddc22f53f21adc5b653d0e690a9cd6becd67e849f9b11c9308a09adb01
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -37,35 +37,80 @@ study_brief:
   case_plan: 按状态还是按事项排待办；通过保持原意的比较展示取舍，不增加业务场景。
 study_commit: d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交d69d4d8比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与第14/16章连续读：先当前项目和v2，/plan调查与比较，确认选择以后切出规划并明确执行，执行后仍看文件。没有从方案说明直接跳到声称完成。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先选项目/读当前v2，才能讨论结构；未假定计划自然知道文件状态。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 进入Plan→核状态→读材料问问题→选择→明确切出→执行→查成果，退出步骤已完整。 全书衔接复核：与第14/16章连续读：先当前项目和v2，/plan调查与比较，确认选择以后切出规划并明确执行，执行后仍看文件。没有从方案说明直接跳到声称完成。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 只在有实质选择时用Plan，小改动直接做；不强加Goal。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 原创状态/事项排序比较，不逐段复述官方开发调查示例。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 桌面toggle来源确定，未编译中文按钮或移植CLI键。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 分析目的与章节结构独立，案例两种排序为编辑判断而非真实菜单。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 选择 **`/plan`**
+    fact_id: plan-before-editing
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: /plan
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 进入规划后核对模式；toggle提供退出依据，不臆造执行按钮。
+    notice: ''
+  - anchor: 先调查并提出方案，再修改
+    fact_id: plan-before-editing
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Prompting Codex
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 调查先有实际项目材料，限制只读是本轮明确要求。
+    notice: ''
+  - anchor: 再使用 **`/plan`** 切出规划模式
+    fact_id: plan-before-editing
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: Toggle plan mode
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 选择方案→切出核状态→发明确执行→查文件，不把认可计划算授权文件。
+    notice: ''
   unused_facts: {}

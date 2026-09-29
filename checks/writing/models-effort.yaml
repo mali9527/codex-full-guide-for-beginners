@@ -1,6 +1,6 @@
 schema: 2
 unit: models-effort
-input_sha256: a8a983bb970c47ac8a4d6b6d500d0782bd0cc20f013ab0951284a6a2fc8be140
+input_sha256: b79117c67101ff5233b1fce88fc555dc17ba22dd9c2fe5058f69d40ab05a9fd6
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -46,13 +46,15 @@ study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
   result: pass
   reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读：实际选择入口在分析档位之前；Light/Medium/High是三型号建议起点，不是统一默认。Ultra分工在第18章已展开，不将语义上提高投入等同资料核验。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
     result: pass
     reason: 已会任务/额度；从当前控件开始，先预设再高级选择，缺型号仍可继续。
   concept_timing:
     result: pass
-    reason: Effort先讲作用再档位；Ultra只解释分工特点，完整操作留第18章但不要求现在开。
+    reason: Effort先讲作用再档位；Ultra只解释分工特点，完整操作留第18章但不要求现在开。 全书衔接复核：全文回读：实际选择入口在分析档位之前；Light/Medium/High是三型号建议起点，不是统一默认。Ultra分工在第18章已展开，不将语义上提高投入等同资料核验。
   information_value:
     result: pass
     reason: 保留起点与误区，删参数/购买表；材料错误与设置问题分开。
@@ -68,6 +70,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

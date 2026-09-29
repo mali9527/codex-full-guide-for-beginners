@@ -1,6 +1,6 @@
 schema: 2
 unit: results
-input_sha256: 6020c8b4985039cae74a92e9ec5b3de5a93d5cd379819da0861ca9c19cee1df7
+input_sha256: f90c50c827350c699309eb8b0b0c158d40bc7e83c5d03fbcb8731a6c42cea9e2
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -44,35 +44,122 @@ study_brief:
   case_plan: 沿待办清单核对负责人/未知日期/四项完整性，给已认可版与修改版明确文件名。
 study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交65f5db6比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：连读第4/9/10/16章：先确定文件和版本，才预览批注，再核对实际保存；不重复两份备忘全文。Share快照仅写官方local
+    Mac范围，Undo应用动作不当文件恢复。 写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 先有文件路径再预览/批注；无项目路径未知不填假默认目录。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 另存与检查顺序完整，批注缺具体图标时用文字定位完整退路；Share上传前先查受众。 全书衔接复核：连读第4/9/10/16章：先确定文件和版本，才预览批注，再核对实际保存；不重复两份备忘全文。Share快照仅写官方local
+      Mac范围，Undo应用动作不当文件恢复。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 保留消息/文件/预览/源文件区别，撤销限制与版本实际有关。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 清单事实和排版分开，假设错误条件化，不鼓励每轮重写。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: macOS分享限制明确，Windows按实际文件交付，控件名称不捏译。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 批注原句与版本建议自编，无外部文稿结构/经历或屏幕复刻。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
-  unused_facts: {}
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 预览文档、表格、演示文稿、PDF
+    fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Create and review
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 支持范围及自动显示有条件，文件与预览分开。
+    notice: ''
+  - anchor: HTML文件可以在支持的预览中
+    fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Preview HTML
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 条件化render/source，不要求编程知识。
+    notice: ''
+  - anchor: 选中要讨论的文字或区域
+    fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Annotate artifacts
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 批注加入上下文后提出要求；未编按钮位置且有文本定位替代。
+    notice: ''
+  - anchor: Undo表示撤销应用支持的上一项动作
+    fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: 'Navigation: Undo last action'
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 官方限定lastaction，不推广成文件万能恢复。
+    notice: ''
+  - anchor: 本地Codex任务分享快照
+    fact_id: desktop-share-snapshot
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Share local Codex chat
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: macOS限定，Share上传/受众/复制顺序清楚；Windows退回文件。
+    notice: ''
+  - anchor: 之后继续修改任务，不会自动更新旧快照
+    fact_id: desktop-share-snapshot
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Shared snapshot contents / revoke
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 后续消息不自动同步，Data Controls管理撤销，先检查敏感内容。
+    notice: ''
+  unused_facts:
+    review-feedback-command-purpose: review/feedback具体区别留第16章，本章普通批注不调用该命令。

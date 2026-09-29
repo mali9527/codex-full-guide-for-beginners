@@ -1,6 +1,6 @@
 schema: 2
 unit: workspace-files
-input_sha256: 6a89085cc61f2a434b556e493bb088b7570734b5b6fe11701244101029a121f2
+input_sha256: d29f345aa8dc535328ee2061f4a07f8bdd1a196b33bb1d4bd0f1b20aa33ab307
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -56,13 +56,16 @@ study_commit: b965f26cc1879683aaad8d3772b8adfd98207e8a
 study_review:
   result: pass
   reason: 将ce5af70固定正文与b965f26写前revision提要及未修改原稿比较：本章依照已登记官方阅读重排操作前置、动作和继续条件。已落实正常路径，普通运行停止方法的未知保留在读者审阅与既有操作记录中，不冒充已核验。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读顺序：选外层目录→核对路径→新任务/Local/权限→短消息→结果后反馈。第9、12章详细材料和项目操作现有正文可接，但不代替本章必要操作。普通运行直接停止仍未取得真实入口，原concept_timing
+    pending保留。 写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
     result: pass
     reason: 第2章仅进入Codex。此处取得原创材料，选外层文件夹、核对路径，再建任务；发送前实际选Local与Ask for approval，不把术语出现当成设置完成。
   concept_timing:
     result: pending
-    reason: 已修复两种目录入口被误读为连续步骤、先发消息后讲状态的问题；仍缺普通运行的停止入口依据，不能将第8章占位当作首次运行退出方法已教。
+    reason: 已修复两种目录入口被误读为连续步骤、先发消息后讲状态的问题；仍缺普通运行的停止入口依据，不能将第8章占位当作首次运行退出方法已教。 全书衔接复核：全文回读顺序：选外层目录→核对路径→新任务/Local/权限→短消息→结果后反馈。第9、12章详细材料和项目操作现有正文可接，但不代替本章必要操作。普通运行直接停止仍未取得真实入口，原concept_timing
+      pending保留。
   information_value:
     result: pass
     reason: 必要设置移到首次发送之前；其他控件在短消息之后按用途介绍，附件/听写/插件等明确可选，没有要求全部操作。
@@ -78,6 +81,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读ce5af70全文并对照原断言与review-packet，重点反查本次动作、条件与顺序变化；本轮8个官方页面指定范围实读见SRCH-023，其他未变断言复用本日原批次及原记录中声明的旧阅读日期。未把文档事实或编辑判断当成GUI实测，未给未知停止入口添猜测性断言。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

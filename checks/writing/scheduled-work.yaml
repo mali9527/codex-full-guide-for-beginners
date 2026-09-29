@@ -1,6 +1,6 @@
 schema: 2
 unit: scheduled-work
-input_sha256: 591fbb0b0865f32226aa0786fe6d59843b7081653eca505005f1191f6a4b2c69
+input_sha256: fabb5fb82905c64dfee863d335bc9cf5ab8fcd3170c5b0d2b9de8d0728ecc5e1
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -38,35 +38,136 @@ study_brief:
   case_plan: 每周对照备忘报告当前清单差异，不自动修改；示例时区明确可替换，不实际创建定时。
 study_commit: 5d8035d42339d7a4693acf5b53d8e19d22387771
 study_review:
-  result: pending
-  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+  result: pass
+  reason: 已对固定正文38252c2与写前提交5d8035d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：与Goal/Skill章连读：先手动同任务通过，确定当前版本与只读边界，写时区和目的地后保存，查Scheduled再核首轮。更新已有安排不重复创建，暂停未来安排不当停止当前执行。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 同样提示词先手动跑通，当前版本说明清楚后才计划；Skill可选。
   concept_timing:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 输入/输出/时间/时区/目的地→创建实际保存→Scheduled→首轮检查→修改暂停删除，范围明确。 全书衔接复核：与Goal/Skill章连读：先手动同任务通过，确定当前版本与只读边界，写时区和目的地后保存，查Scheduled再核首轮。更新已有安排不重复创建，暂停未来安排不当停止当前执行。
   information_value:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 不教RRULE或Git，后台权限保留限制，不承诺离线补跑。
   natural_style:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 沿清单只读检查，不扩自动办公；新状态与原备忘不能混判错误。
   localization:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: Asia/Tokyo是明确可替换示例，非国家限定；桌面与网页事件触发不混用。
   independent_creation:
-    result: pending
-    reason: 待按本章完整正文复核
+    result: pass
+    reason: 安排提示词自编，本轮未建立真实自动运行；首轮检查仍未知。
 fact_review:
-  coverage: pending
-  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
-  docs_checked_on: null
+  coverage: reviewed
+  reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
+  docs_checked_on: '2026-09-29'
   change_review:
-    url: ''
-    locator: ''
-    checked_on: null
-    effect: ''
-  claims: []
+    url: https://learn.chatgpt.com/docs/changelog
+    locator: 2026-09-28 CLI 0.158.0开篇功能/修复
+    checked_on: '2026-09-29'
+    effect: 本写作批实际读取；不将CLI版本或键位直接转成桌面事实。具体功能以本章所读专页为准。
+  claims:
+  - anchor: 先把单次工作做对
+    fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Test scheduled tasks
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 手动确认与首几轮再检查是官方建议，案例原创只读。
+    notice: ''
+  - anchor: 每次启动独立任务
+    fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Manage / same chat
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 当前上下文继续与每次独立明确选择，普通文件夹不依赖Git。
+    notice: ''
+  - anchor: 从对话创建或更新计划
+    fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Ask to create/update
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 时间时区对象结果持久要求；创建后核实际保存，没把文字安排当回执。
+    notice: ''
+  - anchor: 侧栏的 **Scheduled**
+    fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Manage scheduled tasks
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 看状态/记录/结果，下次运行时间实际核对；聊天更新已有计划而非重复创建。
+    notice: ''
+  - anchor: 电脑要开启、应用在运行、文件夹仍可访问
+    fact_id: scheduled-local
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Local conditions
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 明确本地依赖，未保证睡眠/离线/缺文件成功。
+    notice: ''
+  - anchor: 某些越界操作可能直接失败
+    fact_id: scheduled-local
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Permissions security model
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 后台默认沙箱/审批限制非照搬前台，组织条件保留。
+    notice: ''
+  - anchor: 修改或暂停未来安排
+    fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Manage / update
+    checked_on: '2026-09-29'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    support: supported
+    rationale: 用对话指明已有安排并核状态，不编具体编辑按钮、补跑或删除回滚保证。
+    notice: ''
   unused_facts: {}

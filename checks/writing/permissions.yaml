@@ -1,6 +1,6 @@
 schema: 2
 unit: permissions
-input_sha256: 79c5df45105aa93a2011ca4266de141e4c3a14aa7589938d005752221d77d7e8
+input_sha256: 17aebef1bbdeac8ca13a3f6042545cfe542107fce3a8181a95a89c32349735da
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-29'
@@ -52,13 +52,15 @@ study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
   result: pass
   reason: 已对固定正文d0b7a7d与写前提交557cf6d比较：官方阅读落实为本章具体入口/条件/动作/核对次序，案例和取舍与提要相符；未以链接存在代替理解。
+    本轮全书连读及共享材料影响复核（固定正文6995af6）：全文回读：启用模式后回当前任务选中，批准/系统权限/服务连接分别解释；Enter/Esc限批准状态，/approve限适用最近拒绝。将「普通话」改为「日常语言」，不限定语言地区。
+    写前提要与study_commit均保持原样；GUI、截图及真人验证未升级。
 reader_review:
   prior_knowledge:
     result: pass
     reason: 沿前章已选Ask，解释真正允许范围后再介绍可选切换，系统授权不当已具备。
   concept_timing:
     result: pass
-    reason: 先设置启用→回当前任务选中；请求出现→读懂→批准/拒绝→检查执行结果。
+    reason: 先设置启用→回当前任务选中；请求出现→读懂→批准/拒绝→检查执行结果。 全书衔接复核：全文回读：启用模式后回当前任务选中，批准/系统权限/服务连接分别解释；Enter/Esc限批准状态，/approve限适用最近拒绝。将「普通话」改为「日常语言」，不限定语言地区。
   information_value:
     result: pass
     reason: 不教config或绕限制；保留三层授权与托管搜索差异以解释实际困惑。
@@ -74,6 +76,7 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 通读固定章稿与review-packet，逐项反查产品动作、选项、条件和保证性措辞；下列锚点覆盖实际用到的事实，原创提示词和判断示例另作意图/来源对照。未把文档支持、AI审稿或文件演示当成GUI操作通过。
+    本轮对当前关联事实扩展的影响已复核：快捷键事实扩展不改变先前按键；新材料只影响第17/18章示例；平台条件仍按各条真实来源。已有安装与前四章来源保持原核对日期，不宣称本轮重读全部旧来源。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
