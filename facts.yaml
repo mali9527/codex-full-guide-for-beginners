@@ -344,8 +344,8 @@
   critical: true
   ttl_days: 180
 - id: desktop-file-shortcuts
-  claim: 桌面Codex/Work的Open folder默认Windows Ctrl+O、Mac ⌘O；New chat为Ctrl+N/⌘N；设置为Ctrl+,/⌘,。Keyboard
-    Shortcuts可按命令名查找并自定义绑定。
+  claim: 桌面Open folder默认Windows Ctrl+O、Mac⌘O；New chat Ctrl+N/⌘N；设置Ctrl+,/⌘,；快捷键设置Ctrl+/或⌘/可查并自定义。官方Commands分别列文件搜索Ctrl+P/⌘P、文件树Ctrl+Shift+E/⌘⇧E、任务内查找Ctrl+F/⌘F；Undo
+    last app action仅应用动作撤销，不能据此保证还原所有AI文件操作。其他快捷键按对应功能事实和官方双平台表核对。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -545,6 +545,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/long-running-work
     checked_on: '2026-09-29'
   checked_on: '2026-09-29'
   category: startup

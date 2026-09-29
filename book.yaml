@@ -5,8 +5,8 @@ language: zh-CN
 product: codex
 audience: 已拥有可用付费账号，会用办公软件和文件夹，但无编程与 Codex 使用经验、不懂终端、路径、Git 的读者
 baseline:
-  product_version: 第一批四章官方相关文档核对2026-09-27—28；客户端稳定渠道及双平台完整路径待实测
-  checked_on: '2026-09-28'
+  product_version: 全书基础使用版；相关官方材料按章节核对至2026-09-29，客户端稳定渠道及双平台完整路径待实测
+  checked_on: '2026-09-29'
 repository:
   name: null
   default_branch: main
@@ -347,6 +347,7 @@ units:
   facts:
   - desktop-subagent-delegation
   - desktop-chat-organization
+  - reasoning-default-guidance
   derived_from: null
 - id: personalization
   title: 第19章 不想每次重说：偏好、项目说明与记忆
@@ -420,6 +421,7 @@ units:
   - appshot-input-scope
   - auto-review-routing
   - desktop-computer-use
+  - desktop-followup-behavior
   derived_from: null
 - id: scheduled-work
   title: 第24章 定时任务：让跑通的工作按时再做
@@ -459,6 +461,14 @@ units:
   - optional-desktop-feature-map
   - desktop-download-routes
   - usage-availability
+  - desktop-basic-navigation
+  - desktop-voice-options
+  - desktop-chat-retrieval
+  - skill-invocation-surface
+  - desktop-remote-host
+  - computer-history-optional
+  - desktop-mcp-status-and-connection
+  - plugin-install-connection
   derived_from: null
   required_checks:
   - editorial

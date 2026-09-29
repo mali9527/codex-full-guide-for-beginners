@@ -2,11 +2,11 @@
 
 一本面向完全零基础读者的Codex入门书，从用途、安装和第一屏开始，讲清基本操作与常用功能。
 
-当前内容框架v0.12：新模型开篇导读、五部分24章及附录。开篇与第1—4章已形成首批连续稿，其余21个单元尚待正式写作。
+当前内容框架v0.14：GPT-6 Astra开篇导读、五部分24章及附录均已有可阅读初稿。后续章节从账号、模型与权限，逐步讲到材料、成果、Plan、Goal、Skill、插件、浏览器、电脑操作与定时任务。
 
-**当前是编辑中的草稿，尚未发行。** 相关官方资料核对至2026-09-28；Windows/Mac完整操作路径、界面插图和真人试读仍待完成。
+**当前是编辑中的草稿，尚未发行。** 相关官方资料按章节核对至2026-09-29；Windows/Mac完整操作路径、普通运行的直接停止入口、界面插图和真人试读仍待完成。
 
-从[GPT-6 Astra开篇导读](manuscript/latest-models.md)和[第1章用途](manuscript/intro.md)开始，再读[第2章安装](manuscript/desktop-setup.md)、[第3章第一屏](manuscript/workspace-files.md)、[第4章完整任务](manuscript/first-task.md)。第4章使用原创的[两份备忘材料](examples/ch04-notes-to-todos/README.md)，完整阅读安排见[内容框架](内容框架.md)。
+从[GPT-6 Astra开篇导读](manuscript/latest-models.md)和[第1章用途](manuscript/intro.md)开始，再读[第2章安装](manuscript/desktop-setup.md)、[第3章第一屏](manuscript/workspace-files.md)、[第4章完整任务](manuscript/first-task.md)。第4章使用原创的[两份备忘材料](examples/ch04-notes-to-todos/README.md)，第17—18章另有原创的[资料目录材料](examples/ch17-reference-index/README.md)。也可直接阅读[全书合订稿](全书.md)，完整阅读安排见[内容框架](内容框架.md)。
 
 ## 读者承诺
 
