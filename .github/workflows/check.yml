@@ -16,6 +16,9 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    env:
+      # Date-only review records use the author's working timezone.
+      TZ: Asia/Tokyo
     steps:
       - uses: actions/checkout@v7
         with:
