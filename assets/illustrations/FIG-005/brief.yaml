@@ -1,0 +1,30 @@
+kind: concept
+form: relationship
+reader_question: Codex和模型怎样一起工作
+takeaway: 模型负责理解与判断，工具负责具体操作；成果仍要打开检查。
+source_sections:
+- 模型、Codex和工具，各自负责什么
+placement: 模型、Codex和工具，各自负责什么
+composition: 左侧要求与材料，中间Codex框内模型和工具上下排列，模型与工具互通，右侧成果检查。只画概念，不画真实界面。
+content_guard: 统一notebook-pen-v1方格纸黑笔；不添加未核验功能，不把概念关系画成真实界面；不声称已查看截图。 图像材料可以送入模型理解，但文件修改连接工具；不得把所有工具画成Astra自带或账号默认拥有。
+text_roles:
+  user:
+    role: author
+  codex:
+    role: author
+  model:
+    role: author
+  tools:
+    role: author
+  result:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 1bcc29285abb8e9fa5c10b4cd93f00af42f67795e6d584ec9f1c07b174096699
+  reviewed_by: codex：ce5af70操作次序及候选图呈现状态复核，非GUI验证；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；codex：2026-09-30恢复已审设计并复核正文邻接
+  checked_on: '2026-09-30'
+  reason: 正文此处需要看清Codex和模型怎样一起工作，用图呈现关系或定位。
+  benefit: 模型处理要求，Codex提供交流及工具工作的入口；权限仍有边界。
+labels:
+  zh-CN: labels.zh-CN.yaml

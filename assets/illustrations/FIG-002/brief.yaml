@@ -1,0 +1,57 @@
+content_guard: 原始材料保留；整理清单不等于执行待办；不得虚构日期、已完成状态或实际软件控件。
+kind: concept
+form: mindmap
+reader_question: 材料和结果分别放在哪里？
+takeaway: 原始依据留在「材料」，不同版本的成果保存在「结果」。
+source_sections:
+- 做完一件，就让清单跟着更新
+placement: 做完一件，就让清单跟着更新
+composition: 树形归属：我的待办下分材料和结果，材料下两份原文件，结果下v1和v2。左右平衡，文件名用足够大黑字。概念树，无界面按钮，无流程箭头。
+text_roles:
+  root:
+    role: author
+  source:
+    role: author
+  a:
+    role: author
+  b:
+    role: author
+  output:
+    role: author
+  v1:
+    role: author
+  v2:
+    role: author
+structure:
+  root: root
+  nodes:
+  - root
+  - source
+  - a
+  - b
+  - output
+  - v1
+  - v2
+  edges:
+  - - root
+    - source
+  - - root
+    - output
+  - - source
+    - a
+  - - source
+    - b
+  - - output
+    - v1
+  - - output
+    - v2
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 2abd313b162d80068a516abfb8d2b79276d94796d3f39f1406113c7c5d0f2925
+  reviewed_by: codex：ce5af70操作次序及候选图呈现状态复核，非GUI验证；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；codex：2026-09-30恢复已审设计并复核正文邻接；codex：2026-09-30恢复已审设计并复核正文邻接
+  checked_on: '2026-09-30'
+  reason: 完整回读第4章后，将两版文件层级放到v2生成与检查完成之后，避免提前寻找文件。
+  benefit: 知道文件真实保存在哪里，也理解原材料应当保留。
+labels:
+  zh-CN: labels.zh-CN.yaml

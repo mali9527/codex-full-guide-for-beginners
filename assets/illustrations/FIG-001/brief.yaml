@@ -1,0 +1,30 @@
+content_guard: 原始材料保留；整理清单不等于执行待办；不得虚构日期、已完成状态或实际软件控件。
+kind: concept
+form: comparison
+reader_question: 两份备忘怎样变成一份清单？
+takeaway: 合并同一件事时，截止时间与数量都保留。
+source_sections:
+- 先想清楚，什么样的结果算完成
+placement: 先想清楚，什么样的结果算完成
+composition: 两张纸条分别为时间和数量，箭头合并到一张清单，清单同时保留时间和数量。
+text_roles:
+  note1:
+    role: author
+  note2:
+    role: author
+  result:
+    role: author
+  date:
+    role: author
+  count:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 9ef2f94c571e3ba6c452ba8c85a457010f39614c610438133356eff812a75150
+  reviewed_by: codex：ce5af70操作次序及候选图呈现状态复核，非GUI验证；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；codex：2026-09-30恢复已审设计并复核正文邻接；codex：2026-09-30恢复已审设计并复核正文邻接
+  checked_on: '2026-09-30'
+  reason: 开篇已经给出前后文本；用空间对应强化“合并”与“保留”的区别。
+  benefit: 在发出要求前知道要得到什么，避免把精简理解成删信息。
+labels:
+  zh-CN: labels.zh-CN.yaml

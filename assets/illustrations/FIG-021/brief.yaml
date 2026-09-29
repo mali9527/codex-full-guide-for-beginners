@@ -1,0 +1,28 @@
+kind: concept
+form: comparison
+reader_question: 这条要求应该放在什么地方
+takeaway: 本轮要求、个人习惯、项目约定与记忆各有用途。
+source_sections:
+- 记忆提供帮助，但不能代替明确约定
+placement: 记忆提供帮助，但不能代替明确约定
+composition: 四张便条二乘二并列，每张放一个类别与用途。没有优先级箭头，不宣称记忆完整可靠。
+content_guard: 统一notebook-pen-v1不透明细方格纸、黑白中性灰；保持现有语言文字身份。只表达本章已讲内容。
+text_roles:
+  current:
+    role: author
+  personal:
+    role: author
+  project:
+    role: author
+  memory:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: c8bc8a64c2ef1d2813ab6f379fa05c4454ccc5d830a74fe1e6877bafd14928d8
+  reviewed_by: codex：正文完成后逐章研究插图用途、位置与前置；非截图或成图验收；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；codex：2026-09-30恢复已审设计并复核正文邻接
+  checked_on: '2026-09-30'
+  reason: 此处涉及不同入口、对象或状态，单靠名称容易混淆。
+  benefit: 这条要求应该放在什么地方
+labels:
+  zh-CN: labels.zh-CN.yaml

@@ -1,0 +1,28 @@
+kind: concept
+form: flow
+reader_question: 两个检查任务怎样交回一个成果
+takeaway: 两个检查各有范围，主任务对照依据汇总，不让多个代理同时改同一文件。
+source_sections:
+- 从只读检查开始，更容易看清分工
+placement: 从只读检查开始，更容易看清分工
+composition: 同一份已保存材料向下分流到两个只读检查框，使用锁图标示意不修改材料，两框再汇聚主任务核对并合稿。字体足够大。
+content_guard: 统一notebook-pen-v1不透明细方格纸、黑白中性灰；保持现有语言文字身份。只表达本章已讲内容。
+text_roles:
+  source:
+    role: author
+  one:
+    role: author
+  two:
+    role: author
+  main:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 06a3015604366e3eb1c42e92f3360d6ea8c4988df811e457fc987cd46deb6c79
+  reviewed_by: codex：正文完成后逐章研究插图用途、位置与前置；非截图或成图验收；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；codex：2026-09-30恢复已审设计并复核正文邻接
+  checked_on: '2026-09-30'
+  reason: 此处涉及不同入口、对象或状态，单靠名称容易混淆。
+  benefit: 两个检查任务怎样交回一个成果
+labels:
+  zh-CN: labels.zh-CN.yaml

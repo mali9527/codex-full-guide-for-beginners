@@ -1,0 +1,30 @@
+kind: concept
+form: flow
+reader_question: 一次工作怎样继续改好
+takeaway: 检查具体成果，再用明确反馈继续修改。
+source_sections:
+- 你需要参与哪些判断
+placement: 你需要参与哪些判断
+composition: 提出要求→处理材料→打开成果→对照检查→具体反馈→处理材料。最后箭头只返回处理材料，绝不返回提出要求。
+content_guard: 统一notebook-pen-v1方格纸黑笔；不添加未核验功能，不把概念关系画成真实界面；不声称已查看截图。
+text_roles:
+  request:
+    role: author
+  work:
+    role: author
+  result:
+    role: author
+  check:
+    role: author
+  feedback:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 13f5254a83bd326415573f39c6d7fdfb6ee7cdbe83c43ac8ff9335b3410ebcd7
+  reviewed_by: codex：ce5af70操作次序及候选图呈现状态复核，非GUI验证；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；codex：2026-09-30恢复已审设计并复核正文邻接
+  checked_on: '2026-09-30'
+  reason: 正文此处需要看清一次工作怎样继续改好，用图呈现关系或定位。
+  benefit: 提出要求后检查实际成果，具体反馈让下一轮修改有依据。
+labels:
+  zh-CN: labels.zh-CN.yaml

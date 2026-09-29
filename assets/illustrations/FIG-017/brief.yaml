@@ -1,0 +1,28 @@
+kind: concept
+form: comparison
+reader_question: 分出任务以后，文件是否也分开了
+takeaway: 分开任务以后，仍需核对文件位置，并为新方案另存文件。
+source_sections:
+- '`/fork`让另一种思路有自己的任务'
+placement: '`/fork`让另一种思路有自己的任务'
+composition: 两张任务便条同时用箭头指向唯一文件夹，内放同一份文件。没有软件窗口装饰或按钮，标题保留可能性。
+content_guard: 统一notebook-pen-v1不透明细方格纸、黑白中性灰；保持现有语言文字身份。只表达本章已讲内容。
+text_roles:
+  original:
+    role: author
+  fork:
+    role: author
+  folder:
+    role: author
+  file:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 86b61b0a0790ef82fa8962295f1bf1ed4aef7af59381219cf22bb3af6e4c2f87
+  reviewed_by: codex：正文完成后逐章研究插图用途、位置与前置；非截图或成图验收；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；codex：2026-09-30恢复已审设计并复核正文邻接
+  checked_on: '2026-09-30'
+  reason: 此处涉及不同入口、对象或状态，单靠名称容易混淆。
+  benefit: 分出任务以后，文件是否也分开了
+labels:
+  zh-CN: labels.zh-CN.yaml

@@ -481,7 +481,35 @@ outputs:
     font: PingFang SC
     paper: a5
   translations: {}
-diagrams: []
+diagrams:
+- id: FIG-005
+  unit: latest-models
+  type: illustration
+  spec: assets/illustrations/FIG-005/brief.yaml
+- id: FIG-006
+  unit: intro
+  type: illustration
+  spec: assets/illustrations/FIG-006/brief.yaml
+- id: FIG-001
+  unit: first-task
+  type: illustration
+  spec: assets/illustrations/FIG-001/brief.yaml
+- id: FIG-002
+  unit: first-task
+  type: illustration
+  spec: assets/illustrations/FIG-002/brief.yaml
+- id: FIG-017
+  unit: context
+  type: illustration
+  spec: assets/illustrations/FIG-017/brief.yaml
+- id: FIG-020
+  unit: delegation
+  type: illustration
+  spec: assets/illustrations/FIG-020/brief.yaml
+- id: FIG-021
+  unit: personalization
+  type: illustration
+  spec: assets/illustrations/FIG-021/brief.yaml
 toolkit: 0.1.0
 published:
   version: null
