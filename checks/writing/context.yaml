@@ -36,7 +36,7 @@ study_brief:
   - 记忆与项目持久说明第19章
   - 不教工作树创建操作
   case_plan: 同一清单按日期或按负责人排版的分支比较，不让两个任务覆盖同一文件。
-study_commit: null
+study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

@@ -42,7 +42,7 @@ study_brief:
   - 远程主机第17章只选讲
   - Git工作树后文只解释用途
   case_plan: 把一个清单修订留原任务，独立资料查证另开；结束写三行接续说明。
-study_commit: null
+study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

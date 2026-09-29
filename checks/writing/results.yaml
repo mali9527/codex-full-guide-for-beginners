@@ -42,7 +42,7 @@ study_brief:
   - 不教Git恢复
   - /review用于代码的区别第16章
   case_plan: 沿待办清单核对负责人/未知日期/四项完整性，给已认可版与修改版明确文件名。
-study_commit: null
+study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

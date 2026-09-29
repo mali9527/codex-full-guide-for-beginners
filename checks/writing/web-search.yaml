@@ -35,7 +35,7 @@ study_brief:
   - 浏览器操控第22章
   - 不编辑网络配置
   case_plan: 以核对自己系统的安装和首次设置为例，只输出查证结果，不执行下载命令。
-study_commit: null
+study_commit: 65f5db676bb00c792c60e4ca21aac737e04d7517
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
