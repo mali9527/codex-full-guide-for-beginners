@@ -50,7 +50,7 @@ study_brief:
   - 普通直接停止按钮/快捷键缺证保持原待核验，不猜
   - Goal暂停第17章；跨天接续第12/13章
   case_plan: 续用四项待办，只做只读/另存副本的运行示例；没有人为制造可恢复失败或展示假工具日志。
-study_commit: null
+study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

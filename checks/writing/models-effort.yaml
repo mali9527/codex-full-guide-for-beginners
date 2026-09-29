@@ -42,7 +42,7 @@ study_brief:
   - 参数规格/计价表不纳入
   - 子代理完整判断第18章，Ultra这里只解释必要区别
   case_plan: 沿原创四项待办对比事实提取与含混判断，情境为教学建议，不称实际模型性能对比。
-study_commit: null
+study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习

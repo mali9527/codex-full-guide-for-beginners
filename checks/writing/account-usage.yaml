@@ -42,7 +42,7 @@ study_brief:
   - 不讲购买套餐或API密钥
   - 上下文压缩在第13章，当前只分清两个百分比
   case_plan: 用明确标注的虚构剩余比例解释可用量，不展示本人账号或编造实测截图。
-study_commit: null
+study_commit: 557cf6d24a474646de0fd290021492d3f0a379b6
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
