@@ -82,6 +82,8 @@
   sources:
   - url: https://learn.chatgpt.com/docs/projects
     checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/environments/modes
+    checked_on: '2026-09-29'
   checked_on: '2026-09-29'
   category: startup
   status: confirmed
@@ -111,7 +113,7 @@
   critical: true
   ttl_days: 180
 - id: artifact-preview
-  claim: 桌面支持文档、表格、演示文稿和PDF等成果的可视预览，并可在支持批注的预览上标注；CLI可生成和修改文件，但不提供同样的预览与批注界面。
+  claim: 桌面支持文档、表格、演示文稿和PDF等成果的可视预览，并可在支持批注的预览上选择区域加入上下文并提出修改；不是所有格式都可直接修改文字。HTML在可用时可预览并切换源码。CLI不提供相同预览批注界面。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -709,7 +711,8 @@
   critical: true
   ttl_days: 90
 - id: appshot-input-scope
-  claim: Appshots在Mac和Windows桌面捕获最前方应用窗口的截图和可取得文本，作为聊天附件；部分应用只提供可见截图，不能据此保证取得整份文档或屏幕外内容。
+  claim: Appshots在Mac和Windows桌面捕获最前方应用窗口截图和可取得文本，可含屏外文字；部分应用仅截图。默认热键Mac同时按两个Command、Windows两个Alt；可自定义。Automatic目的地通常新任务，近60秒交互任务可复用；可指定Current
+    chat或New chat。Mac涉及屏幕录制/辅助功能权限，组织也可限制。不等于控制应用或取得整份文档。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -831,7 +834,7 @@
   critical: true
   ttl_days: 90
 - id: context-compact-fork
-  claim: 桌面斜线菜单的/compact压缩当前聊天上下文，/fork用于从现有聊天创建分支；/status可查看聊天、上下文用量和速率限制。命令可见性受环境与权限影响，分支聊天不能替代文件副本或恢复验证。
+  claim: 桌面/status可查看任务标识、上下文用量和限额；/compact压缩当前任务上下文，配置参考明确有模型相关的自动历史压缩阈值，不固定为某个百分比。/fork创建任务分支，本地任务可新本地任务或工作树；分支聊天不等于文件备份。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -845,6 +848,10 @@
   sources:
   - url: https://learn.chatgpt.com/docs/reference/slash-commands
     checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/config-file/config-reference
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/environments/modes
+    checked_on: '2026-09-29'
   checked_on: '2026-09-28'
   category: startup
   status: confirmed
@@ -1267,4 +1274,24 @@
   category: startup
   status: confirmed
   critical: true
+  ttl_days: 90
+- id: desktop-image-input
+  claim: 官方Image inputs的桌面路径为按住Shift把图片拖入输入区，也可要求查看本地图片；应说明图片所示对象、关注区域和预期结果。网页/CLI/IDE入口分别说明，不能混用。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    baseline: 2026-09-29读取Image inputs桌面段，未实测拖放或图片理解结果
+  sources:
+  - url: https://learn.chatgpt.com/docs/image-inputs
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
+  category: startup
+  status: confirmed
+  critical: false
   ttl_days: 90

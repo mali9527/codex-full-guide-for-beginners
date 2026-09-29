@@ -1,0 +1,72 @@
+schema: 2
+unit: context
+input_sha256: 58f60904984ed05b7c74ff8de703509e5b4d3bb4d507afd6994454b09645a37a
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: b4bdf49d4c99c47217e80145b5fc578a9688ce3bba6b09b1a226a2fcb6bcd51a
+  reader_goal: 理解长任务中哪些信息仍需显式保留，正确用compact与fork。
+  reader_start:
+  - 已学任务/文件分离、status及接续说明；没学上下文窗口。
+  explain_now:
+  - 模型当前可处理的信息有限
+  - 自动/手动压缩不增加账号额度
+  - 分支任务和文件副本不同
+  official_readings:
+  - fact_id: context-compact-fork
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: status/compact/fork
+    checked_on: '2026-09-29'
+    understanding: 手动压缩和新分支作用对象是任务上下文，不能当备份。
+    teaching_use: 先保存关键条件和当前文件路径，压缩后复述核对；同目录分支先另存。
+  - fact_id: context-compact-fork
+    url: https://learn.chatgpt.com/docs/config-file/config-reference
+    locator: model_auto_compact_token_limit; model_context_window
+    checked_on: '2026-09-29'
+    understanding: 系统支持自动压缩且与模型阈值相关，不能编固定比例。
+    teaching_use: 用容量概念解释而不教配置数值。
+  teaching_sequence:
+  - 发现冗长/遗漏→核对当前材料和要求→保存接续说明→按需要compact→核对关键约束
+  - 尝试另一方案→先保存副本→fork并检查项目目录→给新方案不同输出名
+  defer:
+  - 记忆与项目持久说明第19章
+  - 不教工作树创建操作
+  case_plan: 同一清单按日期或按负责人排版的分支比较，不让两个任务覆盖同一文件。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

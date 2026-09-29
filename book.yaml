@@ -220,6 +220,7 @@ units:
   - appshot-input-scope
   - artifact-preview
   - codex-work-scenarios
+  - desktop-image-input
   derived_from: null
 - id: results
   title: 第10章 找到、检查、批注和保留成果
@@ -234,6 +235,7 @@ units:
   - artifact-preview
   - desktop-share-snapshot
   - review-feedback-command-purpose
+  - desktop-file-shortcuts
   derived_from: null
 - id: web-search
   title: 第11章 让Codex上网找资料，并检查来源
@@ -262,6 +264,7 @@ units:
   - desktop-chat-retrieval
   - desktop-project-task-commands
   - desktop-remote-host
+  - local-project-context
   derived_from: null
 - id: context
   title: 第13章 对话变长以后：上下文、压缩和分支

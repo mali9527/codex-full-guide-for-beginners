@@ -1,0 +1,78 @@
+schema: 2
+unit: projects-tasks
+input_sha256: 3ca0a990a3de3d7c5058baa98fca9572fad1aab9c505b282a8fdef912e231d2c
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 7563b4d34682e7be8ae615baa389484edcf585d2c5c6431124f0997153b77bef
+  reader_goal: 按成果组织项目和任务，过几天能定位并继续。
+  reader_start:
+  - 已打开本地文件夹并完成文件任务，未系统整理侧栏。
+  explain_now:
+  - 项目共享文件而任务分别对话
+  - 新建/改名/置顶/搜索/归档恢复
+  - 多文件夹与主要目录
+  official_readings:
+  - fact_id: desktop-chat-retrieval
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Organize desktop chats
+    checked_on: '2026-09-29'
+    understanding: 桌面检索和恢复入口不能抄网页分支。
+    teaching_use: 侧栏Search chats找回、Settings Archived chats恢复。
+  - fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/projects
+    locator: Local project folders
+    checked_on: '2026-09-29'
+    understanding: 新任务用主要目录；次要目录不自动加载全部项目说明。
+    teaching_use: 新任务前检查项目目录，改主要目录不承诺移动旧任务。
+  - fact_id: desktop-project-task-commands
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+    locator: project/task/local
+    checked_on: '2026-09-29'
+    understanding: 命令是明确功能入口而非文件迁移。
+    teaching_use: 以菜单当前状态验证，结合第3章打开文件夹。
+  teaching_sequence:
+  - 先决定同成果继续还是独立成果新任务→选择项目→确认目录→发要求
+  - 改名/置顶→以后搜索→打开检查文件现状→必要时归档与恢复
+  defer:
+  - 远程主机第17章只选讲
+  - Git工作树后文只解释用途
+  case_plan: 把一个清单修订留原任务，独立资料查证另开；结束写三行接续说明。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

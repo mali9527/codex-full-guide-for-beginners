@@ -1,0 +1,78 @@
+schema: 2
+unit: results
+input_sha256: 6020c8b4985039cae74a92e9ec5b3de5a93d5cd379819da0861ca9c19cee1df7
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 4a99851c14f48295f82e31d249d038f060bb09d5057f357b06b97f218a6a50d5
+  reader_goal: 找到真实成果、做具体批注，并保留可继续的版本。
+  reader_start:
+  - 已知待办清单实际路径和材料引用；未使用预览批注与分享。
+  explain_now:
+  - 回复/文件/预览各自作用
+  - 批注指出位置仍需提出修改要求
+  - 保留副本与分享受众
+  official_readings:
+  - fact_id: artifact-preview
+    url: https://learn.chatgpt.com/docs/artifacts-viewer
+    locator: Review and annotate
+    checked_on: '2026-09-29'
+    understanding: 批注是反馈上下文，预览依格式；不能保证直接编辑任何文件。
+    teaching_use: 从真实文件路径进入，文字反馈做完整退路。
+  - fact_id: desktop-share-snapshot
+    url: https://learn.chatgpt.com/docs/use-chatgpt
+    locator: Share a local Codex chat
+    checked_on: '2026-09-29'
+    understanding: macOS分享会发布快照，后续消息不更新。
+    teaching_use: 先检查隐私和受众，再Share等待上传复制链接；Windows不用同样步骤。
+  - fact_id: desktop-file-shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+    locator: Undo last action
+    checked_on: '2026-09-29'
+    understanding: 应用最后动作撤销不能等同任何文件修改回滚。
+    teaching_use: 先保留已认可副本，再让模型修改另存。
+  teaching_sequence:
+  - 等完成→看文件名/路径→打开实际文件或支持预览→用来源核对→精确反馈→另存修改稿→再次打开
+  - 可选分享先检查内容/受众→Share→待上传→Copy link→检查公开快照
+  defer:
+  - 不教Git恢复
+  - /review用于代码的区别第16章
+  case_plan: 沿待办清单核对负责人/未知日期/四项完整性，给已认可版与修改版明确文件名。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

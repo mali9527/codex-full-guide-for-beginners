@@ -1,0 +1,78 @@
+schema: 2
+unit: materials
+input_sha256: e7f2c7ff7b8e0255266bf3407b4201da33e4d2c8c76e60eb545dde63354c4a63
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 188df750947738f7633f8d06927470ffd27fd55c2b26af6c03ddee14fd7108ea
+  reader_goal: 能按任务选择材料入口，并确认读到的范围。
+  reader_start:
+  - 已知本地项目、路径和第一份清单，未使用@或Appshot。
+  explain_now:
+  - 粘贴/引用文件/图片/链接各自用途
+  - 相对路径依赖当前文件夹
+  - Appshot捕获范围、目的地和授权
+  official_readings:
+  - fact_id: local-project-context
+    url: https://learn.chatgpt.com/docs/environments/modes
+    locator: Local; @
+    checked_on: '2026-09-29'
+    understanding: 可引用文件并不表示所有目录都已读入。
+    teaching_use: 先确认项目再@选文件，要求报告读取范围。
+  - fact_id: desktop-image-input
+    url: https://learn.chatgpt.com/docs/image-inputs
+    locator: Desktop image inputs
+    checked_on: '2026-09-29'
+    understanding: 图像要配观察要求，拖入后的附件应检查。
+    teaching_use: 先无隐私图片，再Shift拖入并核对附件。
+  - fact_id: appshot-input-scope
+    url: https://learn.chatgpt.com/docs/appshots
+    locator: Capture; destination; permissions
+    checked_on: '2026-09-29'
+    understanding: 窗口截图与可访问文本范围不同；默认目的地可能新任务。
+    teaching_use: 捕获前选目的地，捕获后查附件与任务，不假定整页已读。
+  teaching_sequence:
+  - 选要处理的副本→确认本地项目和当前目录→按材料类型添加→检查附件或明确路径→让Codex先说明实际读到什么
+  - 可选Appshot先选窗口和目的地，再热键/授权，最后核对附件与范围
+  defer:
+  - 多应用操控第23章
+  - 不教终端路径命令
+  case_plan: 同一备忘补充一张无敏感内容图片；重点比较材料范围，不新增业务案例。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

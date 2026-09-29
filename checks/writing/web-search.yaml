@@ -1,0 +1,71 @@
+schema: 2
+unit: web-search
+input_sha256: 076e087bea3d114dfaf57d4a85cc210de7ea85b6c23b2a1564a8538d50628f04
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 06a6a7741443a6856ede0d1d06f516f7025ab399c0e74234bdb38911af213585
+  reader_goal: 发起有范围的查证，并能沿来源判断结论。
+  reader_start:
+  - 已会交链接和看读取范围，知道联网与批准不同。
+  explain_now:
+  - 搜索/打开原页/核对主张不同
+  - 日期、平台和稳定性条件
+  - 网页内容是资料而非工作指令
+  official_readings:
+  - fact_id: hosted-search-boundary
+    url: https://learn.chatgpt.com/docs/web-search
+    locator: Web search; local web search
+    checked_on: '2026-09-29'
+    understanding: 托管搜索与命令联网独立；缓存不等于实时查证。
+    teaching_use: 给当前官方安装页这一熟悉问题，要求日期/平台/来源并看工具活动。
+  - fact_id: codex-work-scenarios
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Provide context and boundaries
+    checked_on: '2026-09-29'
+    understanding: 具体问题、证据范围和输出影响工作质量。
+    teaching_use: 原创查证请求，区分查到、推断、没找到。
+  teaching_sequence:
+  - 明确当前问题/时点/平台→发出联网要求→看实际搜索和页面读取→点开关键原页→匹配结论与条件
+  defer:
+  - 浏览器操控第22章
+  - 不编辑网络配置
+  case_plan: 以核对自己系统的安装和首次设置为例，只输出查证结果，不执行下载命令。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}
