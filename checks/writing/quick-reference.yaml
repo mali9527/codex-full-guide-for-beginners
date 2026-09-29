@@ -55,7 +55,7 @@ study_brief:
   - 完整开发命令/配置/硬件设置
   - 具体图片生成/网站制作课程
   case_plan: 使用功能与问题的原创映射表，术语解释回正文，不照搬官方字母顺序命令表。
-study_commit: null
+study_commit: f6a7b3dfbf49a62fe09d52bad381470f6444dd08
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
