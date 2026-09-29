@@ -1,0 +1,71 @@
+schema: 2
+unit: computer-use
+input_sha256: c611f7db60c5b2b2b5ef6d285d475ca1b8f35935d3cfe656b276803357a7c5c8
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 5701eb86a795f4e5ead1aacb72a390739dfe052657d1630ae0e2520400583665
+  reader_goal: 分清文件、快照与真实应用操作，并从小范围验证授权。
+  reader_start:
+  - 已学插件、浏览器、权限；普通任务直接停止控件缺证。
+  explain_now:
+  - Mac系统与应用两层授权
+  - Windows前台使用条件
+  - 实际结果与退出/撤销不同
+  official_readings:
+  - fact_id: desktop-computer-use
+    url: https://learn.chatgpt.com/docs/computer-use
+    locator: Setup; Windows; Permissions; Safety
+    checked_on: '2026-09-29'
+    understanding: 两平台流程不同，Windows占用前台，不能自动批准系统安全请求。
+    teaching_use: 先安装启用、确认目标和停控，再只读自编清单，检查窗口与文本。
+  - fact_id: appshot-input-scope
+    url: https://learn.chatgpt.com/docs/appshots
+    locator: Capture
+    checked_on: '2026-09-29'
+    understanding: 只给材料时快照足够，不等于接管。
+    teaching_use: 用同一清单比较三种路线，控制是按需选项。
+  teaching_sequence:
+  - 先判断是否需要UI→确认适用平台/账号→插件启用→系统授权→应用批准→确认停止控制/正确窗口→只读小动作→检查→按需撤销
+  defer:
+  - 没有实际界面证据不猜停止按钮；沿原缺口pending
+  - 不教locked-use/VM/管理员认证
+  case_plan: 在读者已打开的文本软件里查看自编清单指定项，不发送、不支付、不改系统设置；未确认停控时回材料路线。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

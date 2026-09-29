@@ -265,6 +265,7 @@ units:
   - desktop-project-task-commands
   - desktop-remote-host
   - local-project-context
+  - desktop-file-shortcuts
   derived_from: null
 - id: context
   title: 第13章 对话变长以后：上下文、压缩和分支
@@ -332,6 +333,7 @@ units:
   - goal-desktop-lifecycle
   - plan-before-editing
   - desktop-remote-host
+  - desktop-file-shortcuts
   derived_from: null
 - id: delegation
   title: 第18章 几件事怎样分开做：多个任务与子代理
@@ -417,6 +419,7 @@ units:
   facts:
   - appshot-input-scope
   - auto-review-routing
+  - desktop-computer-use
   derived_from: null
 - id: scheduled-work
   title: 第24章 定时任务：让跑通的工作按时再做

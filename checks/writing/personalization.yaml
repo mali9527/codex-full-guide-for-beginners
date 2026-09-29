@@ -1,0 +1,84 @@
+schema: 2
+unit: personalization
+input_sha256: 0908bc1ac4418fecc74ff41e07d762bb578a01135d4d464e1a30dd87a5ae7018
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: fad8fc9fff647ab8be333d50350519119d2266e951a51b8252a4fcc3d91993c7
+  reader_goal: 按作用范围保存稳定要求，并管理可选记忆。
+  reader_start:
+  - 已知当前上下文与项目目录，不懂长期说明。
+  explain_now:
+  - 当前要求/个人偏好/项目说明
+  - AGENTS文本用途和已有文件保护
+  - 记忆使用与生成、全局与本次区别
+  official_readings:
+  - fact_id: project-instructions
+    url: https://learn.chatgpt.com/docs/personalize
+    locator: Personal instructions; personality
+    checked_on: '2026-09-29'
+    understanding: 风格改变交流，个人要求存全局AGENTS；项目说明有作用范围。
+    teaching_use: 先设置偏好，再在正确项目检查已有说明，生成最小文件后新任务验证。
+  - fact_id: project-instructions
+    url: https://learn.chatgpt.com/docs/agent-configuration/agents-md
+    locator: Discovery; verify
+    checked_on: '2026-09-29'
+    understanding: 按目录发现，已有override及更近目录影响；不等于安全权限。
+    teaching_use: 不用终端，直接让Codex报告加载的文件与摘要。
+  - fact_id: local-memory
+    url: https://learn.chatgpt.com/docs/customization/memories
+    locator: Control/configure local memories
+    checked_on: '2026-09-29'
+    understanding: 默认关闭，后台生成与网页分离，任务控制不改总开关。
+    teaching_use: Settings先开启后/memories两项选择，退出/关闭与删除不同。
+  - fact_id: computer-history-optional
+    url: https://learn.chatgpt.com/docs/customization/computer-history
+    locator: How; permissions; clear
+    checked_on: '2026-09-29'
+    understanding: Mac默认关闭，采集与清除分开，服务器处理生成。
+    teaching_use: 仅可选介绍，没启用也完整学本书。
+  teaching_sequence:
+  - 确定要求作用范围→设置或检查项目说明→保存→新任务核对来源和执行
+  - 可选记忆先全局启用→当前任务控制使用/生成→核对真实结果；不保证立刻记住
+  defer:
+  - 不教环境变量/override工程
+  - Computer History非必做
+  case_plan: 把原材料不动、未定保留、另存和实际路径写进项目说明；不写一次性购买状态。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

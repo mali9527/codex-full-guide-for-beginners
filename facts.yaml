@@ -152,6 +152,8 @@
     checked_on: '2026-09-28'
   - url: https://learn.chatgpt.com/docs/reference/slash-commands
     checked_on: '2026-09-28'
+  - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-29'
   checked_on: '2026-09-28'
   category: stable
   status: confirmed
@@ -176,7 +178,7 @@
   status: confirmed
   critical: true
 - id: skills-plugins
-  claim: 技能封装任务流程及资源；插件可包含技能与 MCP 服务器等扩展。
+  claim: 技能封装明确任务的流程与资源；Codex有内置skill-creator，可用自然语言描述生成以指令为主的技能，侧栏Skills查看。技能描述决定何时适用，使用时读取SKILL.md；本地新技能和改动可自动发现，没出现时重启。可按精确路径在技能配置中停用，配置变动后重启。插件可打包技能和MCP，技能本身不提供外部授权。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -184,12 +186,18 @@
   sources:
   - url: https://learn.chatgpt.com/docs/skills-and-plugins
     checked_on: '2026-09-24'
+  - url: https://learn.chatgpt.com/docs/build-skills
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/plugins
+    checked_on: '2026-09-29'
+  - url: https://learn.chatgpt.com/docs/extend/record-and-replay
+    checked_on: '2026-09-29'
   checked_on: '2026-09-24'
   category: stable
   status: confirmed
   critical: true
 - id: scheduled-local
-  claim: 需要本地文件的桌面定时任务要求电脑开启、应用运行且项目文件可访问；CLI不提供Scheduled管理界面。
+  claim: 桌面使用本地文件的定时任务要求电脑开启、应用运行、项目仍可访问；后台使用默认沙箱，不能据此保证等待时会弹出交互批准或越界成功。组织策略也可能影响行为。CLI无Scheduled管理界面，网页事件触发不等同桌面本地定时。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -210,7 +218,8 @@
   critical: true
   ttl_days: 180
 - id: browser-boundary
-  claim: 桌面内置浏览器可预览本地网页，浏览资料与普通浏览器独立；CLI 没有该内置浏览器界面。
+  claim: 桌面内置Browser独立于常用浏览器资料与登录，可@Browser、打开链接或工具栏进入；下载默认系统Downloads，可设置位置。网站访问有单独批准/允许名单，内置浏览器不能自动上传文件。要用现有Chrome/Edge/Brave/Opera/Vivaldi标签须对应插件/扩展与连接，Settings
+    Computer Use管理；Opera无侧聊。浏览器/网站授权与页面动作范围分开。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -225,6 +234,8 @@
   sources:
   - url: https://learn.chatgpt.com/docs/browser
     checked_on: '2026-09-26'
+  - url: https://learn.chatgpt.com/docs/chrome-extension
+    checked_on: '2026-09-29'
   checked_on: '2026-09-26'
   category: startup
   status: confirmed
@@ -628,8 +639,7 @@
   critical: true
   ttl_days: 90
 - id: scheduled-chat-destination
-  claim: 桌面定时任务可回到现有聊天继续使用上下文，或让每次运行开始独立聊天；Scheduled用于查看任务和运行结果。非版本控制项目直接在项目目录运行，不能把Git
-    worktree作为普通文件夹定时任务的必备条件。
+  claim: 可用对话创建/更新定时任务，指定回到当前任务复用上下文或每次独立运行；Scheduled查看状态/运行结果。普通非版本控制文件夹直接在项目目录运行，不以Git为前置。设置后应检查实际保存的安排并审阅首几轮结果；未规定统一错过补跑、去重或删除回滚行为。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -1061,7 +1071,7 @@
     - codex-desktop
     platforms:
     - mac
-    availability: account-and-workspace-dependent
+    availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/customization/computer-history
     checked_on: '2026-09-28'
@@ -1300,4 +1310,25 @@
   category: startup
   status: confirmed
   critical: false
+  ttl_days: 90
+- id: desktop-computer-use
+  claim: Computer Use在支持地区的Mac和Windows桌面Work/Codex可用；需安装并启用插件的服务/技能。Mac需屏幕录制/辅助功能且应用批准另行控制；Windows使用活动桌面前台，目标应用需可见，不能同时正常操作同一桌面。可@Computer/@AppName或自然语言请求，Settings
+    Computer use管理应用批准并移除Always allow。不能自动操作终端/ChatGPT本身，不能批准系统安全授权或管理员认证；结束任务、停用插件和撤销授权不同。
+  scope:
+    product: codex
+    evidence: official-documentation-only
+    surfaces:
+    - codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    baseline: 2026-09-29读Computer Use相关正文；未GUI/Windows/账号实测，普通停止控制位置仍未确认
+  sources:
+  - url: https://learn.chatgpt.com/docs/computer-use
+    checked_on: '2026-09-29'
+  checked_on: '2026-09-29'
+  category: startup
+  status: confirmed
+  critical: true
   ttl_days: 90

@@ -1,0 +1,78 @@
+schema: 2
+unit: plugins
+input_sha256: 3eb56cc1dc180b8716ae07f93b1079569bc115b9ebf4f2831c4921caee641b69
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: cb7ef4b7893c1f5a0600d57e54aaf3843558f5a0d725263bb7bd5bd664cddd86
+  reader_goal: 按当前需要安装和连接插件，能分辨不同状态并撤销。
+  reader_start:
+  - 已知技能和权限，未连接外部服务。
+  explain_now:
+  - 插件打包与连接服务
+  - 安装/启用/认证/对象访问/动作批准分开
+  - MCP状态与独立连接
+  official_readings:
+  - fact_id: plugin-install-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Install and use; Permissions
+    checked_on: '2026-09-29'
+    understanding: 安装后新任务，认证时机不同，外部服务账号仍需权限。
+    teaching_use: 限定用户已使用服务中的测试文件，只读获取标题首段。
+  - fact_id: desktop-mcp-status-and-connection
+    url: https://learn.chatgpt.com/docs/extend/mcp
+    locator: Configure desktop
+    checked_on: '2026-09-29'
+    understanding: Settings MCP servers添加后Restart，Authenticate独立，/mcp只显示状态。
+    teaching_use: 不运行陌生启动命令，适用时用服务提供的可信连接。
+  - fact_id: plugin-uninstall-connection
+    url: https://learn.chatgpt.com/docs/plugins
+    locator: Remove a plugin
+    checked_on: '2026-09-29'
+    understanding: 卸载包不自动断独立MCP，管理员插件可能无移除入口。
+    teaching_use: 退出前按停止使用/卸载/断开授权分别核对。
+  teaching_sequence:
+  - 有实际材料需求→Plugins详情核对来源和条件→安装→服务账号认证与权限→新任务调用→查看来源和结果
+  - 故障按状态定位→不用时停用/卸载→需要时独立断服务授权
+  defer:
+  - 不绑定某个必须付费服务
+  - Sign in with ChatGPT beta/Apple Messages不作通用登录教程
+  case_plan: 只读自己服务的无敏感测试文档，没外部账号直接用本地材料路线，不假设特定插件始终可用。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

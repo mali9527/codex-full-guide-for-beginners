@@ -1,0 +1,72 @@
+schema: 2
+unit: scheduled-work
+input_sha256: 591fbb0b0865f32226aa0786fe6d59843b7081653eca505005f1191f6a4b2c69
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: 449267d5a03c5f2b337f45535fa6c7bbdc9757f81f91e296b188d77ad198aed6
+  reader_goal: 把手动成功的小流程设为定时，并核对首轮和后续维护。
+  reader_start:
+  - 已会普通任务、Goal和Skill，未配置调度。
+  explain_now:
+  - 提醒/持续/定时不同
+  - 时间时区/材料/输出/目的地明确
+  - 状态与运行成功不同，修改暂停删除分开
+  official_readings:
+  - fact_id: scheduled-chat-destination
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Create/update; same chat; test
+    checked_on: '2026-09-29'
+    understanding: 可自然语言设定，当前任务或独立轮次；先手动再首轮检查。
+    teaching_use: 先只读核对当前清单，再明确每周时间时区与独立运行。
+  - fact_id: scheduled-local
+    url: https://learn.chatgpt.com/docs/automations
+    locator: Local project; permission model
+    checked_on: '2026-09-29'
+    understanding: 电脑应用文件可用且默认沙箱限制；后台批准不能假定同前台。
+    teaching_use: 先检查环境和无越界路径，不承诺睡眠补跑或自动重试。
+  teaching_sequence:
+  - 手动跑通只读检查→明确材料/时间/时区/输出与当前或新任务→对话创建→Scheduled核对保存结果与下次时间→检查首轮
+  - 更新前定位唯一计划→改/暂停/恢复/删除→确认状态；查看遗漏/重复及环境条件
+  defer:
+  - 不教RRULE/CLI/Git
+  - 不将网页事件触发套到桌面
+  case_plan: 每周对照备忘报告当前清单差异，不自动修改；示例时区明确可替换，不实际创建定时。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}

@@ -1,0 +1,71 @@
+schema: 2
+unit: skills
+input_sha256: 1aeb4c1f857fb7bfbc0da9baac5ee302fb98bd4d062ea823b0ef018e42527fb1
+evidence_paths: []
+batch_started_on: '2026-09-29'
+reviewed_on: '2026-09-29'
+reviewer: codex
+study_brief:
+  mode: new_draft
+  prepared_on: '2026-09-29'
+  base_manuscript_sha256: ab10d6dd51e1fe222348179d6339936a2c1160309c40606d8052ab2f9c59ad03
+  reader_goal: 把已跑通的流程做成自己可调用的技能并维护。
+  reader_start:
+  - 已会项目说明和文件结果，未装插件。
+  explain_now:
+  - 流程技能与常驻说明不同
+  - 先查可用→内置creator创建→确认位置→调用
+  - 试用/触发范围/停用
+  official_readings:
+  - fact_id: skills-plugins
+    url: https://learn.chatgpt.com/docs/build-skills
+    locator: Create a skill; sidebar; disable
+    checked_on: '2026-09-29'
+    understanding: 内置creator可自然语言创建指令型技能，无需先插件；技能变更自动发现，有问题重启。
+    teaching_use: 取得路径从内置creator开始，先检查说明再独立新任务调用。
+  - fact_id: skill-invocation-surface
+    url: https://learn.chatgpt.com/docs/skills-and-plugins
+    locator: Use skills
+    checked_on: '2026-09-29'
+    understanding: Codex用$指定；自动匹配看描述。
+    teaching_use: 输入$选实际候选，名字明确标为本例拟定。
+  teaching_sequence:
+  - 先确认流程已完成→Skills查看已有→$skill-creator描述边界→审说明/保存位置→新任务$实际技能名并交材料→检查真实输出→局部更新/按精确路径停用
+  defer:
+  - 插件安装下一章
+  - 录制仅Mac指路，不作为前置
+  case_plan: 复用清单整理但材料名由每次请求给，不硬编码本机路径；不实际安装作者新技能。
+study_commit: null
+study_review:
+  result: pending
+  reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
+reader_review:
+  prior_knowledge:
+    result: pending
+    reason: 待按本章完整正文复核
+  concept_timing:
+    result: pending
+    reason: 待按本章完整正文复核
+  information_value:
+    result: pending
+    reason: 待按本章完整正文复核
+  natural_style:
+    result: pending
+    reason: 待按本章完整正文复核
+  localization:
+    result: pending
+    reason: 待按本章完整正文复核
+  independent_creation:
+    result: pending
+    reason: 待按本章完整正文复核
+fact_review:
+  coverage: pending
+  reason: 待从完整正文反查产品断言；不能仅复用已有事实列表
+  docs_checked_on: null
+  change_review:
+    url: ''
+    locator: ''
+    checked_on: null
+    effect: ''
+  claims: []
+  unused_facts: {}
