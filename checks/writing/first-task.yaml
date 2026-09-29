@@ -14,67 +14,69 @@ reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 5a86e2c50ed41b8f8bab891d19f58438c37ea971f784241a62878bc01db7fb5f
-  reader_goal: 承接第3章已经打开的材料项目，读取材料后完成整理、保存和修改，不重复教打开。
+  base_manuscript_sha256: 9310369c36a40e2109ae65d728ab98e57d0d18498d9fbb7fb72ebbdb7528cae2
+  reader_goal: 沿第3章的项目完成真实文件交付，明确电脑与Codex切换、设置确认、v1可用及v2保存的先后。
   reader_start:
-  - 修订后的第3章已准备随书材料、打开外层项目、认识Local和路径，未读取材料或生成结果。
+  - 已准备我的待办项目，学过路径、Local、当前权限和一次消息的等待/完成。
+  - 短消息只产生回复；尚未生成结果文件夹、v1或v2，不能假定已有。
   explain_now:
-  - 从已连接的项目接续工作
-  - 原材料与结果目录分工
-  - 实际读到内容后再整理
+  - 电脑查看原件与让Codex读取是两次不同动作
+  - 在新任务重新核对设置，而不假定继承上一任务
+  - 纠错示例为有错误才执行的分支
+  - v1存在且检查完成后才改v2，保存结束后才打开
   official_readings:
-  - fact_id: local-project-context
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Use local projects for folders and codebases；Choose a project
+  - fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model / Pick a reasoning effort
     checked_on: '2026-09-29'
-    understanding: 仅创建或重命名项目不等于连接本地目录；Edit project/Add folder/Make primary各有作用。
-    teaching_use: 把打开文件夹作为独立基础步骤；高级多目录只作必要条件说明。
-  - fact_id: desktop-file-shortcuts
-    url: https://learn.chatgpt.com/docs/reference/commands
-    locator: Windows/macOS General：Open folder、command menu；New chat
+    understanding: 第3章只设起点，第4章若主动选Astra要给Advanced到Light的动作，不只解释名词。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+  - fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: How permissions work
     checked_on: '2026-09-29'
-    understanding: 两平台打开文件夹和找命令的默认入口明确，当前绑定可能变化。
-    teaching_use: 同时给动作名和双平台快捷键，不猜按钮图标。
-  - fact_id: local-run-mode
-    url: https://learn.chatgpt.com/docs/environments/modes
-    locator: Local
+    understanding: 每次新任务核对选中模式；原件不动是请求而不是只读权限。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+  - fact_id: task-materials-and-output
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Prompting overview / Follow-up
     checked_on: '2026-09-29'
-    understanding: Local直接围绕当前项目目录，不是离线承诺。
-    teaching_use: 放在新建项目任务时核对，而不只在设置表里定义。
+    understanding: 先看真实结果再反馈；本书条件分支与两版文件根据原创材料独立设计。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
   teaching_sequence:
-  - 回到第3章项目与两份备忘
-  - 保留原件/只读检查
-  - 沿原有完成标准生成和核对
+  - 回到项目并为文件工作开任务→在电脑文字软件读两原件→返回该Codex任务检查模型/权限
+  - 只读请求→核对找对材料→生成保存请求→等报告保存后在电脑打开v1
+  - 核对四项→有具体错误才反馈/重开，否则跳过→在同一任务另存v2→等保存后打开两版比较
   defer:
-  - 多目录高级管理、Git、worktree和项目配置文件
-  - 没有真实截图不画界面
-  case_plan: 沿用本书我的待办ZIP和两备忘；准备/连接/路径前移第3章，第4章从正确项目读材料。无新业务例、无运行效果保证。
-study_commit: 56047b6426bedc24f44ce1173c5a520e0b6df9ae
+  - 后续章节的完整档位策略、队列控制与高级项目管理
+  - 正在运行时停止入口尚无双平台真实依据；本轮未找到可确认桌面普通任务停止键的文档，保留原操作清单缺口，不移植CLI或猜按钮。
+  case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
+study_commit: ''
 study_review:
-  result: pass
-  reason: 对971b718正文与56047b6提要核对：保留完整交付环节，移除连接步骤重复；跳读可回到第3章准备，本章新任务仍给完整文件要求。
+  result: pending
+  reason: 待对固定成稿与写前提要核对
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 现在已在第3章选目录、学路径与Local；本章从该项目New chat开始，直接读材料，不把已讲内容再教一遍。
+    result: pending
+    reason: 待按操作顺序完整审阅
   concept_timing:
-    result: pass
-    reason: 回到项目→本次设置→只读确认→生成保存→打开核对→局部修改与v2；相对位置在第一次反馈时解释。
+    result: pending
+    reason: 待按操作顺序完整审阅
   information_value:
-    result: pass
-    reason: 保留四事实检查、保存位置、失败追问和恢复边界；跳读者有直接准备链接，未新增业务支线。
+    result: pending
+    reason: 待按操作顺序完整审阅
   natural_style:
-    result: pass
-    reason: 完整连读后，回指段和后续只读请求衔接自然；原件/结果表提供必要定位，没有重复快捷键大段。
+    result: pending
+    reason: 待按操作顺序完整审阅
   localization:
-    result: pass
-    reason: 路径定义前移不损失Windows/Mac入口；语言和地区限制未增加，真实按钮与中文用途一致。
+    result: pending
+    reason: 待按操作顺序完整审阅
   independent_creation:
-    result: pass
-    reason: 两备忘、v1/v2和主请求未改变，仅调整前置；未重新读取或模仿外部教程，来源对照沿既有实际研究范围。
+    result: pending
+    reason: 待按操作顺序完整审阅
 fact_review:
-  coverage: reviewed
-  reason: 完整通读971b718第3/4章及review-packet，逐项反查新增连接步骤与移位后的断言；本轮四页阅读加上同日已完成的原批次事实复核，不冒称本轮重读其余所有页面。原件/提示词/检查标准未改，文件演示仍属此前记录。
+  coverage: pending
+  reason: 本轮先保存学习提要，待从修订后的全章反查
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

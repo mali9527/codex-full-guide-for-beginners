@@ -8,104 +8,67 @@ reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: 10e46b461b70a51906a8a11b305dd051545d7bf255f0fea67b4758e30fecd05f
-  reader_goal: 读者能找到自己平台的官方包并理解登录与Windows首设，知道遇到不同故障到哪里核对。
+  base_manuscript_sha256: b710e9f61fd4fdbe58602899a851b286ff878862ee39e801edceb958f0535e44
+  reader_goal: 按安装→登录→返回应用→进入Codex的主线准备好；Windows本地设置仅在出现提示时进入并返回。
   reader_start:
-  - 第1章已说明应用、入口及工具；本章不假定终端或开发工具经验。
+  - 第1章已解释桌面应用、Codex入口和模型不同；读者尚未完成安装登录，也未连接目录。
   explain_now:
-  - ChatGPT桌面应用与Codex入口的名称关系
-  - ChatGPT账号和API登录的区别
-  - Windows首次沙箱为何需要管理员
-  - 自动更新与组织更新控制
+  - 平台安装分支与共同登录主线
+  - Windows沙箱是条件设置，不固定置于登录之前
+  - 第2章结束只进入Codex，第3章在明确项目后创建首次任务
   official_readings:
-  - fact_id: desktop-download-routes
-    url: https://learn.chatgpt.com/docs/app
-    locator: Download for macOS (Apple Silicon)
+  - fact_id: desktop-entry
+    url: https://learn.chatgpt.com/docs/quickstart
+    locator: Setup / Start a chat
     checked_on: '2026-09-29'
-    understanding: Mac包与兼容条件明确，页面新名称与包内旧名称可能并存。
-    teaching_use: 说明按官方平台入口选择，保留链接失败兜底。
-  - fact_id: windows-native
-    url: https://learn.chatgpt.com/docs/windows/windows-app
-    locator: Native sandbox；Windows-native default
-    checked_on: '2026-09-29'
-    understanding: 可以原生使用，不强制WSL或开发工具。
-    teaching_use: 一般安装与开发环境加装分开。
-  - fact_id: windows-first-setup
-    url: https://learn.chatgpt.com/docs/windows/windows-sandbox
-    locator: Version matrix；environment assumptions；Troubleshooting
-    checked_on: '2026-09-29'
-    understanding: 操作限制由沙箱承担，初始配置需批准，设备策略可能拦截。
-    teaching_use: 讲清为什么出现Set up，补winget缺失和组织失败下一步。
+    understanding: 先安装登录，再选择工作位置和开始任务；不同入口不混成固定点击过程。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
   - fact_id: sign-in-options
     url: https://learn.chatgpt.com/docs/auth
-    locator: Desktop sign-in；Check authentication
+    locator: Sign in with ChatGPT / desktop app
     checked_on: '2026-09-29'
-    understanding: 浏览器认证返回应用才构成桌面登录；另有API路径。
-    teaching_use: 围绕登录现象说明，不教密钥或终端。
-  - fact_id: desktop-update-policy
-    url: https://learn.chatgpt.com/docs/enterprise/manage-app-updates
-    locator: Default updater；Verify managed setting
+    understanding: 浏览器身份认证后要返回应用确认，不把身份与本地环境混成一步。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+  - fact_id: windows-first-setup
+    url: https://learn.chatgpt.com/docs/windows/windows-sandbox
+    locator: Configure the Windows sandbox
     checked_on: '2026-09-29'
-    understanding: 一般自动更新，菜单存在不代表组织允许。
-    teaching_use: 新增日后维护与查Managed的短段；不编造About位置。
-  - fact_id: desktop-file-shortcuts
-    url: https://learn.chatgpt.com/docs/reference/settings
-    locator: Open Settings；Keyboard shortcuts
-    checked_on: '2026-09-29'
-    understanding: 设置有两平台快捷键，并可查绑定。
-    teaching_use: 为入口不显眼提供可查替代路径。
-  - fact_id: mac-open-installer
-    url: https://support.apple.com/en-au/guide/mac-help/-mh35835/mac
-    locator: 前批实际阅读Apple安装或About This Mac芯片段，本次复用
-    checked_on: '2026-09-27'
-    understanding: Mac从互联网取得的磁盘映像或安装包可打开后按提供的安装引导操作；应用安装动作不等于完成产品登录。
-    teaching_use: Mac常规动作保持原范围；没有重新联网阅读或执行安装。
-  - fact_id: mac-identify-chip
-    url: https://support.apple.com/en-au/116943
-    locator: 前批实际阅读Apple安装或About This Mac芯片段，本次复用
-    checked_on: '2026-09-28'
-    understanding: Apple菜单的关于本机可查看芯片或处理器；Apple Silicon机型显示Chip及芯片名，Intel机型显示Processor及Intel处理器名。
-    teaching_use: Mac常规动作保持原范围；没有重新联网阅读或执行安装。
+    understanding: Set up属于本地运行配置；源码/开发环境分支不移用为安装必做。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
   teaching_sequence:
-  - 按平台提供直接入口和支持条件
-  - Windows和Mac各自说明准备与首次访问
-  - 浏览器认证后回应用确认账号
-  - 选择Codex、打开设置和核对更新
-  - 按停住位置给排障
+  - 选择对应平台安装包→完成安装并打开应用；不同时走两平台
+  - 在浏览器登录→返回应用确认账号（本章登录节）→进入Codex；此时还未要求在空位置发消息
+  - 开始本地工作如遇Set up→阅读本章条件分支并设置→返回第3章原任务
   defer:
-  - winget命令安装教程
-  - API密钥创建
-  - 企业管理策略编辑
-  - 未经实机确认的About菜单层级
-  case_plan: 不伪造安装经历或拖放截图；按官方真实标签给步骤，winget只在该错误出现时解释用途与官方排障入口。
-study_commit: c5f3d684e5a29770f1239788c0010958e69b05d2
+  - 后续章节的完整档位策略、队列控制与高级项目管理
+  - 正在运行时停止入口尚无双平台真实依据；本轮未找到可确认桌面普通任务停止键的文档，保留原操作清单缺口，不移植CLI或猜按钮。
+  case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
+study_commit: ''
 study_review:
-  result: pass
-  reason: 对固定稿aeba79f及写前c5f3d68逐项比较：Windows官方首设与更新管理参与讲解顺序；管理员设置为何出现、组织更新如何判断进入正文；未照搬开发工具安装段。
-    本轮针对971b718的影响复核：只有Windows首次设置时点回指和结尾两处改变，已逐项对照；保留条件式，不把打开文件夹等同已完成沙箱首设。原写前提要和正文提交保留；未实质重写这章。
+  result: pending
+  reason: 待对固定成稿与写前提要核对
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 假定会下载和安装，只解释陌生的沙箱、账号工作区和API分支；不教逐键动作。 本轮衔接检查：只有Windows首次设置时点回指和结尾两处改变，已逐项对照；保留条件式，不把打开文件夹等同已完成沙箱首设。
+    result: pending
+    reason: 待按操作顺序完整审阅
   concept_timing:
-    result: pass
-    reason: 先平台条件、再运行设置与登录、再入口和维护；Windows首设何时出现保留条件。
+    result: pending
+    reason: 待按操作顺序完整审阅
   information_value:
-    result: pass
-    reason: 新增管理员设置用途、winget条件排障、自动更新与组织Managed，均影响能否继续；没有展开企业策略或开发环境。
+    result: pending
+    reason: 待按操作顺序完整审阅
   natural_style:
-    result: pass
-    reason: 平台分段，登录回应用有明确判断；排障按停住步骤，不堆泛化安抚。
+    result: pending
+    reason: 待按操作顺序完整审阅
   localization:
-    result: pass
-    reason: Windows/Mac并列且不互相推广；真实英文标签保留，中文引号一致。
+    result: pending
+    reason: 待按操作顺序完整审阅
   independent_creation:
-    result: pass
-    reason: 不翻译官方Windows开发环境工具清单或企业配置代码；自行按首次使用障碍组织，未画想象安装包或编造本机成功。
+    result: pending
+    reason: 待按操作顺序完整审阅
 fact_review:
-  coverage: reviewed
-  reason: 通读固定稿aeba79f的全章、前置开篇与相邻章，并查看review-packet。完整反查下载目标、平台条件、Windows本地沙箱与winget、Mac条件、浏览器登录/账号工作区、Codex入口、设置快捷键与更新管理；排障建议不冒充成功实测。
-    项目入口修订的影响复核：只有Windows首次设置时点回指和结尾两处改变，已逐项对照；保留条件式，不把打开文件夹等同已完成沙箱首设。沿用本日上批完整反查与其声明的来源读取日期，本轮不是重读所有官方页。
+  coverage: pending
+  reason: 本轮先保存学习提要，待从修订后的全章反查
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

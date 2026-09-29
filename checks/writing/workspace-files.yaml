@@ -8,68 +8,76 @@ reviewer: codex
 study_brief:
   mode: revision
   prepared_on: '2026-09-29'
-  base_manuscript_sha256: fac59bbebd5241bde4700fa0f59c26114a20caf897b9917988d272f616feadcc
-  reader_goal: 把项目文件夹作为第一次使用的明确基础动作：知道为何需要、怎么打开/设置、选哪层并核对当前任务位置。
+  base_manuscript_sha256: b2674818f5f2b8372e1be668bcedbc3052d06b1329170e57490ccbeddd9b40b8
+  reader_goal: 在正确项目准备好首次任务，选必要设置后发消息，知道何时等待、何时回应、何时发送下一条。
   reader_start:
-  - 已安装进入Codex，会常见文件夹操作；原第3章只认项目名称而未教连接，作者指出顺序缺口。
+  - 已按第2章安装、登录并进入Codex；没有要求读者已创建任务或完成Windows沙箱。
+  - 会下载/解压，但项目连接、路径、Local、权限和运行状态尚未学过。
   explain_now:
-  - 本地文件夹和项目名称不同
-  - Open folder与Edit project/Add folder
-  - 路径核对及主要文件夹
-  - 为该项目新建任务并确认Local
+  - Open folder与Add folder是替代入口
+  - 先核对项目目录，再开始一次新任务并选Local
+  - 发送前选择Ask for approval并确认模型可用
+  - 第一次发送→识别运行/等待→完成后检查→在同一任务继续
   official_readings:
-  - fact_id: local-project-context
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Use local projects for folders and codebases；Choose a project
-    checked_on: '2026-09-29'
-    understanding: 仅创建或重命名项目不等于连接本地目录；Edit project/Add folder/Make primary各有作用。
-    teaching_use: 把打开文件夹作为独立基础步骤；高级多目录只作必要条件说明。
-  - fact_id: desktop-file-shortcuts
+  - fact_id: desktop-basic-navigation
     url: https://learn.chatgpt.com/docs/reference/commands
-    locator: Windows/macOS General：Open folder、command menu；New chat
+    locator: macOS/Windows General / Chats / Input
     checked_on: '2026-09-29'
-    understanding: 两平台打开文件夹和找命令的默认入口明确，当前绑定可能变化。
-    teaching_use: 同时给动作名和双平台快捷键，不猜按钮图标。
-  - fact_id: local-run-mode
-    url: https://learn.chatgpt.com/docs/environments/modes
-    locator: Local
+    understanding: 默认键和应用入口是找位置的帮助，New chat不应在相邻段反复执行。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+  - fact_id: permission-boundary
+    url: https://learn.chatgpt.com/docs/permission-modes
+    locator: Permission modes / How permissions work
     checked_on: '2026-09-29'
-    understanding: Local直接围绕当前项目目录，不是离线承诺。
-    teaching_use: 放在新建项目任务时核对，而不只在设置表里定义。
+    understanding: 权限控件在输入框下方；应先选再发，不把名称介绍当已经完成设置。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+  - fact_id: desktop-model-control
+    url: https://learn.chatgpt.com/docs/models
+    locator: Choose a model / Power / Advanced
+    checked_on: '2026-09-29'
+    understanding: 有可用模型即可首次发送，Power默认起点与主动Advanced调整分开。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
+  - fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Prompting overview / Steering and queuing
+    checked_on: '2026-09-29'
+    understanding: 后续消息可能进入当前轮或队列；首例先等结束再发，不能默认即时替换。
+    teaching_use: 据当前操作依赖重排，具体顺序见teaching_sequence；无新GUI实测。
   teaching_sequence:
-  - 侧栏认识后立即准备并打开文件夹
-  - 核对地址和新任务位置，再发短消息
-  - 已有材料入口和设置解释回指实际项目
+  - 材料已解压→Open folder选择外层→Edit project核对路径；已有项目只需另一条Add folder分支
+  - 目录正确→New chat一次→核对项目/Local与权限，模型保留可用起点→可发送第一条
+  - 短要求发送→看运行/补问/批准/失败→等本轮结束核对两事项→在同一任务调整顺序
+  - 完整结果之后再看附件、听写和详细控件；这些预览不当作首次任务必做
   defer:
-  - 多目录高级管理、Git、worktree和项目配置文件
-  - 没有真实截图不画界面
-  case_plan: 沿用本书我的待办ZIP和两备忘；准备/连接/路径前移第3章，第4章从正确项目读材料。无新业务例、无运行效果保证。
-study_commit: 56047b6426bedc24f44ce1173c5a520e0b6df9ae
+  - 后续章节的完整档位策略、队列控制与高级项目管理
+  - 正在运行时停止入口尚无双平台真实依据；本轮未找到可确认桌面普通任务停止键的文档，保留原操作清单缺口，不移植CLI或猜按钮。
+  case_plan: 保留两份短备忘、四项待办和v1/v2；第3章水杯/还书请求不变。审阅进入与返回、条件分支与文件是否已生成，不增加案例和电脑常识。
+study_commit: ''
 study_review:
-  result: pass
-  reason: 对971b718正文与56047b6写前提要核对：Projects中的本地目录/主要文件夹与Commands的入口落实为先连接再发送；Local解释随当前任务核对，不把项目当权限。
+  result: pending
+  reason: 待对固定成稿与写前提要核对
 reader_review:
   prior_knowledge:
-    result: pass
-    reason: 读者会文件夹常识，但不懂项目与路径；在第一条消息前解释二者关系、选择哪层、核对哪处。无需编程项目。
+    result: pending
+    reason: 待按操作顺序完整审阅
   concept_timing:
-    result: pass
-    reason: 认识侧栏→实际打开文件夹→核对路径/Local→短消息→周围控件；Make primary仅为已有多文件夹时的条件分支。
+    result: pending
+    reason: 待按操作顺序完整审阅
   information_value:
-    result: pass
-    reason: 补齐Open folder与Edit project/Add folder两种入口；动作名称、默认键和找命令方式各有用途。第4章不重复整段准备。
+    result: pending
+    reason: 待按操作顺序完整审阅
   natural_style:
-    result: pass
-    reason: 材料沿用我的待办，随后短提醒明确只回复文字；文件准备不是提前执行文件任务，两个阶段交代清楚。
+    result: pending
+    reason: 待按操作顺序完整审阅
   localization:
-    result: pass
-    reason: 双平台路径明确demo为示例；快捷键按平台写出，Make primary保持真实名称并用主要文件夹解释，不猜汉化。
+    result: pending
+    reason: 待按操作顺序完整审阅
   independent_creation:
-    result: pass
-    reason: 项目用途按读者问题独立重组；沿用原创两备忘和水杯短请求，无官方多仓库/Quick chat/CLI案例或表达结构搬用。
+    result: pending
+    reason: 待按操作顺序完整审阅
 fact_review:
-  coverage: reviewed
-  reason: 完整通读971b718第3/4章及review-packet，逐项反查新增连接步骤与移位后的断言；本轮四页阅读加上同日已完成的原批次事实复核，不冒称本轮重读其余所有页面。原件/提示词/检查标准未改，文件演示仍属此前记录。
+  coverage: pending
+  reason: 本轮先保存学习提要，待从修订后的全章反查
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
