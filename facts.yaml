@@ -74,7 +74,7 @@
   ttl_days: 90
 - id: local-project-context
   claim: 本地项目可连接电脑文件夹；项目菜单 Edit project / Add folder 可添加文件夹，新增对话从主要文件夹开始。仅上传来源的 ChatGPT
-    项目不直接连接电脑文件夹。
+    项目不直接连接电脑文件夹。 当前官方项目页另列Make primary以指定主要工作文件夹；新任务从主要文件夹开始，不据此认定旧任务已自动切换位置。
   scope:
     product: codex
     evidence: official-documentation-only
