@@ -49,7 +49,7 @@ study_brief:
   - 多目录高级管理、Git、worktree和项目配置文件
   - 没有真实截图不画界面
   case_plan: 沿用本书我的待办ZIP和两备忘；准备/连接/路径前移第3章，第4章从正确项目读材料。无新业务例、无运行效果保证。
-study_commit: null
+study_commit: 56047b6426bedc24f44ce1173c5a520e0b6df9ae
 study_review:
   result: pending
   reason: 待比较官方理解、读者起点与本章讲法；不以链接存在证明已学习
