@@ -36,7 +36,7 @@ study_brief:
   - Steer、Queue和停止留第8章
   - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 三条自设提醒（水杯两次、还书一次），只回复文字；「我的待办」已连接但本章不读写其中文件。修订把重复于后章的设置讲解压成指路，让第一条消息更早出现在读者眼前。
-study_commit: null
+study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
   result: pending
   reason: 2026-10-04写前提要，保存后再修订和复核。

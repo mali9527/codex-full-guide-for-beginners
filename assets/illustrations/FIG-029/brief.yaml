@@ -1,0 +1,44 @@
+kind: interface
+form: detail
+reader_question: 找到打开文件夹的动作，区分应用菜单与聊天消息。
+takeaway: 找到打开文件夹的动作，区分应用菜单与聊天消息。
+source_sections:
+- 在Codex中打开它
+placement: 在Codex中打开它
+composition: 单行局部：横向菜单行内Open Folder...居左，Ctrl+O居右，严格按原图左右关系；不重造完整菜单。作者圈注「打开工作文件夹」位于上方，黑笔箭头指向Open
+  Folder...文字。无标题，无额外按钮。
+content_guard: 固定notebook-pen-v1纸底与黑笔，1448×1086不透明中性灰。保留真实局部控件，不添加未见状态，不画标题/图注/版本声明。来源截图只作位置依据，配色不复制。
+text_roles:
+  open:
+    role: ui
+  shortcut:
+    role: ui
+  callout:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: windows
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: ja/en
+  state: file-menu-open
+  references:
+  - UI-note-open-folder-20261004
+  controls:
+  - label: open
+    reference: UI-note-open-folder-20261004
+    region: open-folder
+  - label: shortcut
+    reference: UI-note-open-folder-20261004
+    region: shortcut
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 61ac84f40c0cce1bae0d01e09911d59e0708903f0eab189f40d08fa17c3c9a8a
+  reviewed_by: Codex：2026-10-04回读正文并实际查看来源图片
+  checked_on: '2026-10-04'
+  reason: 找到打开文件夹的动作，区分应用菜单与聊天消息。
+  benefit: 找到打开文件夹的动作，区分应用菜单与聊天消息。
+labels:
+  zh-CN: labels.zh-CN.yaml

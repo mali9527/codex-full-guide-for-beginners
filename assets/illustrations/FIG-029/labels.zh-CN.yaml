@@ -1,0 +1,7 @@
+title: 找到打开文件夹的动作，区分应用菜单与聊天消息。
+caption: Windows来源图中Open Folder菜单的一行。右侧Ctrl+O是该图显示的快捷键；Mac默认用⌘O。
+alt: 找到打开文件夹的动作，区分应用菜单与聊天消息。
+labels:
+  open: Open Folder...
+  shortcut: Ctrl+O
+  callout: 打开工作文件夹

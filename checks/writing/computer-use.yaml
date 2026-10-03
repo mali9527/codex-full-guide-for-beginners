@@ -32,7 +32,7 @@ study_brief:
   - 普通任务的直接停止控件缺依据，仍按Steer停止要求并提示先退回文件或快照路线
   - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 查看已打开的自编清单窗口中一项是否完整显示；只读。
-study_commit: null
+study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
   result: pending
   reason: 2026-10-04写前提要，保存后再修订和复核。

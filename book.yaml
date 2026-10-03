@@ -517,6 +517,14 @@ diagrams:
   unit: workspace-files
   type: illustration
   spec: assets/illustrations/FIG-028/brief.yaml
+- id: FIG-029
+  unit: workspace-files
+  type: illustration
+  spec: assets/illustrations/FIG-029/brief.yaml
+- id: FIG-019
+  unit: goals
+  type: illustration
+  spec: assets/illustrations/FIG-019/brief.yaml
 toolkit: 0.1.0
 published:
   version: v2026.09.1-rc.1

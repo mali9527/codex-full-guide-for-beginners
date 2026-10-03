@@ -50,7 +50,7 @@
 
 已经告一段落的任务可以归档，让侧栏更清楚。在当前任务中，默认归档快捷键是Mac的 **⌘⇧A**、Windows的 **Ctrl+Shift+A**，也可以在自己的快捷键设置中查对应动作。
 
-要继续已归档的任务，打开Settings，在 **Archived chats** 里找到它，用 **Unarchive** 恢复。设置里没有直接看到这一栏时，到 **Data Controls** 里找。恢复以后先查看最后的成果与未完成事项，再发新要求。[任务检索与归档恢复](https://learn.chatgpt.com/docs/projects)
+要继续已归档的任务，在桌面应用打开 **Settings → Archived chats**，找到对应任务，用 **Unarchive** 恢复。恢复以后先查看最后的成果与未完成事项，再发新要求。网上有些说明会多一层Data Controls，那是网页入口的路径；本书这里讲的是桌面应用。入口与你的版本不同时，先核对[当前桌面设置说明](https://learn.chatgpt.com/docs/reference/settings)，不要为了找回任务重新创建同名项目。
 
 归档整理的是任务列表。任务从侧栏消失了，电脑里的成果文件仍在原处；文件的备份要另外做。
 

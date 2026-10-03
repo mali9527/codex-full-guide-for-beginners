@@ -1,0 +1,42 @@
+kind: interface
+form: detail
+reader_question: 区分暂停状态与恢复、编辑和清除三个控制，不把它们当成删除成果。
+takeaway: 区分暂停状态与恢复、编辑和清除三个控制，不把它们当成删除成果。
+source_sections:
+- 进度行用来管理持续目标
+placement: 进度行用来管理持续目标
+composition: 只画暂停的目标进度行：左侧靶心与Paused goal；目标原文和耗时省略为少量无语义短线；右侧按来源次序画铅笔、圆圈内播放三角、垃圾桶。下方三个独立作者标签与箭头依次对应这三个图标。不要画普通停止方块、输入框、模型、权限或完整窗口。
+content_guard: 固定notebook-pen-v1纸底与黑笔，1448×1086不透明中性灰。保留真实局部控件，不添加未见状态，不画标题/图注/版本声明。来源截图只作位置依据，配色不复制。
+text_roles:
+  paused:
+    role: ui
+  edit:
+    role: author
+  resume:
+    role: author
+  clear:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: unknown
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: paused-goal-progress-row
+  references:
+  - UI-mirror-goal-paused-20261004
+  controls:
+  - label: paused
+    reference: UI-mirror-goal-paused-20261004
+    region: paused
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: db6dc0de7c48c20e3d0ab36c13db04a204c436ec1d4a465134c0593a747bb75d
+  reviewed_by: Codex：2026-10-04回读正文并实际查看来源图片
+  checked_on: '2026-10-04'
+  reason: 区分暂停状态与恢复、编辑和清除三个控制，不把它们当成删除成果。
+  benefit: 区分暂停状态与恢复、编辑和清除三个控制，不把它们当成删除成果。
+labels:
+  zh-CN: labels.zh-CN.yaml

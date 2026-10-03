@@ -87,7 +87,7 @@
 | Keyboard shortcuts | 查找和调整默认键位 | 3、12 |
 | Notifications | 完成、待回答、待批准等提醒 | 8 |
 | Personalization | 交流风格、个人说明、Enable memories | 19 |
-| Archived chats | 找回归档任务；没有这一栏时到Data Controls里找 | 12 |
+| Archived chats | 桌面应用在Settings → Archived chats中，用Unarchive找回归档任务 | 12 |
 | Browser | 内置浏览器的网站、资料与下载设置 | 22 |
 | Computer use | 应用访问、扩展浏览器连接与对应网站管理 | 22、23 |
 | MCP servers | 直接连接服务的启用、认证和设置 | 21 |

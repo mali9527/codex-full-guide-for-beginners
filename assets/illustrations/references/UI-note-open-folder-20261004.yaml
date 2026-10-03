@@ -1,0 +1,51 @@
+id: UI-note-open-folder-20261004
+source_url: https://note.com/ai_nitta000/n/n969f18fd2e7a?hl=en
+asset_url: https://assets.st-note.com/img/1777201696-wu1sPdXn08j9MIiVltoAhDRE.png?width=1200
+platform: windows
+ui_locale: ja/en
+state: file-menu-open
+regions:
+- id: open-folder
+  box:
+  - 0.35
+  - 0.44
+  - 0.55
+  - 0.49
+  text: Open Folder...
+  treatment: keep
+  reason: 真实菜单中用于打开工作文件夹的行。
+- id: shortcut
+  box:
+  - 0.48
+  - 0.44
+  - 0.54
+  - 0.49
+  text: Ctrl+O
+  treatment: keep
+  reason: 同一行右侧原始快捷键。
+- id: other-menu
+  box:
+  - 0.22
+  - 0.17
+  - 0.78
+  - 0.83
+  text: ''
+  treatment: omit
+  reason: 省略其他菜单项和侧栏，局部不声称完整菜单。
+product: Codex
+surface: desktop
+version: unknown
+environment: published-source-image-browser-render
+status: verified
+sanitized: true
+reviewed_by: Codex：CUA实际查看图片；原JPEG另存为像素相同的PNG。非实机操作。
+checked_on: '2026-10-04'
+viewed_image_sha256: d73fa21ac49e42257959ca92c052575cfa8e30e099b58abc0d6da3748c3767e4
+limitations:
+- 来源客户端版本与拍摄时间未知；原图只私有保存，转载许可未确认。
+- 只采用实际看见的局部，当前功能文字另由官方文档核对。
+- 1280×720浏览器全视口截图；没有裁切、改色或重新制作UI。
+image_sha256: d73fa21ac49e42257959ca92c052575cfa8e30e099b58abc0d6da3748c3767e4
+dimensions:
+- 1280
+- 720

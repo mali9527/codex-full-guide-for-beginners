@@ -29,7 +29,7 @@ study_brief:
   - 不新增教学内容
   - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 无案例；修订只同步正文改动与归档路径写法。
-study_commit: null
+study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
   result: pending
   reason: 2026-10-04写前提要，保存后再修订和复核。
