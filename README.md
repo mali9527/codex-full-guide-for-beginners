@@ -31,10 +31,10 @@
 <details>
 <summary>展开完整目录</summary>
 
-本分支另有一张界面图处于制作候选阶段，尚未加入正文；已入稿的教学图仍为7张。下面图数包含已登记候选。
+本分支另有两张界面图处于制作候选阶段，尚未加入正文；已入稿的教学图仍为7张。下面图数包含已登记候选。
 
 <!-- studio:toc -->
-共 26 个单元，8 张图。
+共 26 个单元，9 张图。
 
 1. [开篇：GPT-6 Astra与现在的Codex](manuscript/latest-models.md)
 2. [第1章 Codex能帮你做什么](manuscript/intro.md)
