@@ -1,0 +1,68 @@
+id: UI-mirror-computer-approval-20261004
+asset_url: https://doc.jarvisuni.com/openai/_official_assets/images/codex/app/computer-use-approval-light.webp
+platform: mac
+ui_locale: en
+state: app-permission-request
+regions:
+- id: heading
+  box:
+  - 0.35
+  - 0.34
+  - 0.42
+  - 0.37
+  text: Computer Use
+  treatment: keep
+  reason: 请求类别
+- id: request
+  box:
+  - 0.35
+  - 0.37
+  - 0.5
+  - 0.4
+  text: Allow Codex to use Calculator?
+  treatment: keep
+  reason: 当前所请求应用
+- id: always
+  box:
+  - 0.35
+  - 0.4
+  - 0.4
+  - 0.42
+  text: Always allow
+  treatment: keep
+  reason: 原图未勾选，保留单次与持续区别
+- id: cancel
+  box:
+  - 0.575
+  - 0.4
+  - 0.612
+  - 0.42
+  text: Cancel
+  treatment: keep
+  reason: 取消按钮
+- id: allow
+  box:
+  - 0.615
+  - 0.4
+  - 0.65
+  - 0.42
+  text: Allow
+  treatment: keep
+  reason: 允许按钮
+source_url: https://doc.jarvisuni.com/openai/codex/app/features
+product: Codex
+surface: desktop
+version: unknown
+environment: published-source-image-browser-render
+status: verified
+sanitized: true
+reviewed_by: Codex：实际查看浏览器显示的图片；JPEG转PNG保持解码像素完全相同。
+checked_on: '2026-10-04'
+viewed_image_sha256: e02a4f43fa203f5b87a71c1c62ad324d1905621336a9aab286e2ea4018bb237a
+limitations:
+- 历史镜像资产，客户端版本和拍摄日期未知；不冒充当前版本实测。
+- 仅采用必要通用UI局部；旧型号、原案例对话及装饰不绘制；原图私有保存。
+image_sha256: e02a4f43fa203f5b87a71c1c62ad324d1905621336a9aab286e2ea4018bb237a
+dimensions:
+- 1280
+- 720

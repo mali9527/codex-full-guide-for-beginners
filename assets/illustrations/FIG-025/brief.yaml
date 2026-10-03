@@ -1,0 +1,62 @@
+kind: interface
+form: detail
+reader_question: 把正文中的入口和选择对应到实际可见控件，只保留当前步骤需要的局部。
+takeaway: Computer Use请求框局部。来源以Calculator为例；实际使用时先核对自己请求的应用，再在Allow和Cancel之间选择。Always
+  allow是另一个持续授权选项。
+source_sections:
+- 应用批准是另一层选择
+placement: 应用批准是另一层选择
+composition: 原比例放大单个请求框：Computer Use在左上，下一行Allow Codex to use Calculator?；框底左侧未勾选的Always
+  allow，右侧Cancel在Allow左边。不要画快捷键、旧型号或整窗。上方作者文字先核对应用指向Calculator，下方作者文字再决定是否允许指向右侧两个按钮；两支箭头分开不遮文字。Calculator保留原UI名称，不改成书中自编清单软件。
+content_guard: 严格固定方格纸与中性黑笔；1448×1086；所有像素R=G=B，无颜色，不增加标题、图注和版本声明。
+text_roles:
+  heading:
+    role: ui
+  request:
+    role: ui
+  always:
+    role: ui
+  cancel:
+    role: ui
+  allow:
+    role: ui
+  object:
+    role: author
+  choice:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: app-permission-request
+  references:
+  - UI-mirror-computer-approval-20261004
+  controls:
+  - label: heading
+    reference: UI-mirror-computer-approval-20261004
+    region: heading
+  - label: request
+    reference: UI-mirror-computer-approval-20261004
+    region: request
+  - label: always
+    reference: UI-mirror-computer-approval-20261004
+    region: always
+  - label: cancel
+    reference: UI-mirror-computer-approval-20261004
+    region: cancel
+  - label: allow
+    reference: UI-mirror-computer-approval-20261004
+    region: allow
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 27e802791194c472cda7f78c85838bf8c15e66a0bdc4a83234ac92253e5cd8c4
+  reviewed_by: Codex：回读全章与实际来源图片
+  checked_on: '2026-10-04'
+  reason: 把正文中的入口和选择对应到实际可见控件，只保留当前步骤需要的局部。
+  benefit: 把正文中的入口和选择对应到实际可见控件，只保留当前步骤需要的局部。
+labels:
+  zh-CN: labels.zh-CN.yaml

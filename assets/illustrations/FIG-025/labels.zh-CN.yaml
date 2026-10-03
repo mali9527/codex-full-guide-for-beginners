@@ -1,0 +1,12 @@
+title: 设置与批准入口
+caption: Computer Use请求框局部。来源以Calculator为例；实际使用时先核对自己请求的应用，再在Allow和Cancel之间选择。Always
+  allow是另一个持续授权选项。
+alt: Computer Use请求框局部。来源以Calculator为例；实际使用时先核对自己请求的应用，再在Allow和Cancel之间选择。Always allow是另一个持续授权选项。
+labels:
+  heading: Computer Use
+  request: Allow Codex to use Calculator?
+  always: Always allow
+  cancel: Cancel
+  allow: Allow
+  object: 先核对应用
+  choice: 再决定是否允许

@@ -1,0 +1,43 @@
+kind: interface
+form: detail
+reader_question: 把正文中的入口和选择对应到实际可见控件，只保留当前步骤需要的局部。
+takeaway: Windows出现设置横幅时，从Set up进入本地沙箱配置；图中不表示设置已经成功。
+source_sections:
+- Windows：开始本地工作时，如果出现设置提示
+placement: Windows：开始本地工作时，如果出现设置提示
+composition: 仅画一条横幅，锁图标后保留Set up Agent sandbox to continue文字，右侧Set up黑笔按钮。上方作者文字与箭头指向按钮。横幅宽占画面80%，上下留白；长句可适当分行但不画其余输入框、型号、分支或权限。
+content_guard: 严格固定方格纸与中性黑笔；1448×1086；所有像素R=G=B，无颜色，不增加标题、图注和版本声明。
+text_roles:
+  message:
+    role: ui
+  setup:
+    role: ui
+  callout:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: windows
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: sandbox-setup-required
+  references:
+  - UI-mirror-windows-sandbox-20261004
+  controls:
+  - label: message
+    reference: UI-mirror-windows-sandbox-20261004
+    region: message
+  - label: setup
+    reference: UI-mirror-windows-sandbox-20261004
+    region: setup
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 4bd8f9dd9dffd38fa62d4c2dc9855a48b56892f2d389a30daefeab1767b2f2b1
+  reviewed_by: Codex：回读全章与实际来源图片
+  checked_on: '2026-10-04'
+  reason: 把正文中的入口和选择对应到实际可见控件，只保留当前步骤需要的局部。
+  benefit: 把正文中的入口和选择对应到实际可见控件，只保留当前步骤需要的局部。
+labels:
+  zh-CN: labels.zh-CN.yaml

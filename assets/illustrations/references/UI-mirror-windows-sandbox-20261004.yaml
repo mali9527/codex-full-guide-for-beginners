@@ -1,0 +1,41 @@
+id: UI-mirror-windows-sandbox-20261004
+asset_url: https://doc.jarvisuni.com/openai/_official_assets/images/codex/windows/windows-sandbox-setup.webp
+platform: windows
+ui_locale: en
+state: sandbox-setup-required
+regions:
+- id: message
+  box:
+  - 0.25
+  - 0.4
+  - 0.45
+  - 0.44
+  text: Set up Agent sandbox to continue
+  treatment: keep
+  reason: Windows首次设置横幅
+- id: setup
+  box:
+  - 0.73
+  - 0.4
+  - 0.77
+  - 0.44
+  text: Set up
+  treatment: keep
+  reason: 原横幅右侧按钮
+source_url: https://doc.jarvisuni.com/openai/codex/app/features
+product: Codex
+surface: desktop
+version: unknown
+environment: published-source-image-browser-render
+status: verified
+sanitized: true
+reviewed_by: Codex：实际查看浏览器显示的图片；JPEG转PNG保持解码像素完全相同。
+checked_on: '2026-10-04'
+viewed_image_sha256: 264625ae94f7442dd0a2d7328598794c4ababb02802f24b22392c593a1eb76d1
+limitations:
+- 历史镜像资产，客户端版本和拍摄日期未知；不冒充当前版本实测。
+- 仅采用必要通用UI局部；旧型号、原案例对话及装饰不绘制；原图私有保存。
+image_sha256: 264625ae94f7442dd0a2d7328598794c4ababb02802f24b22392c593a1eb76d1
+dimensions:
+- 1280
+- 720

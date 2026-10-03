@@ -525,6 +525,14 @@ diagrams:
   unit: goals
   type: illustration
   spec: assets/illustrations/FIG-019/brief.yaml
+- id: FIG-007
+  unit: desktop-setup
+  type: illustration
+  spec: assets/illustrations/FIG-007/brief.yaml
+- id: FIG-025
+  unit: computer-use
+  type: illustration
+  spec: assets/illustrations/FIG-025/brief.yaml
 toolkit: 0.1.0
 published:
   version: v2026.09.1-rc.1

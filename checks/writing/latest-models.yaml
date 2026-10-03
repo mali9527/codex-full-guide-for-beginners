@@ -35,7 +35,7 @@ study_brief:
   - Power各预设、Max、Ultra、Fast与用量关系留第6章
   - 权限与批准留第7章，运行中补充留第8章
   case_plan: 沿用本书自编备忘中的发照片一例，以及自设的两台设备资料比较情景；示例只说明用法，不写成模型测试结果。本轮修订压缩重复的限制句，把判断放在段首。
-study_commit: null
+study_commit: 072be7c12f042abdb3dee5675671eb5b178142b5
 study_review:
   result: pending
   reason: 实际官方阅读后保存提要与原正文，再作定向修订。

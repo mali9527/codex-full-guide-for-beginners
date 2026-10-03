@@ -1,0 +1,7 @@
+title: 设置与批准入口
+caption: Windows出现设置横幅时，从Set up进入本地沙箱配置；图中不表示设置已经成功。
+alt: Windows出现设置横幅时，从Set up进入本地沙箱配置；图中不表示设置已经成功。
+labels:
+  message: Set up Agent sandbox to continue
+  setup: Set up
+  callout: 设置本地运行环境
