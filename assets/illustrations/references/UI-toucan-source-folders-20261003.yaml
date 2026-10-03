@@ -1,0 +1,81 @@
+id: UI-toucan-source-folders-20261003
+source_url: https://www.taketoucan.com/help/codex
+asset_url: https://www.taketoucan.com/help/mac-setup/MacSetup04CodexAddProject.png
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: third-party-published-image-browser-render
+ui_locale: en
+state: create-project-folder-list
+status: verified
+sanitized: true
+reviewed_by: Codex：CUA查看来源图片，并用view_image复看保存的全视口PNG；非Codex实机操作。
+checked_on: '2026-10-03'
+viewed_image_sha256: d216c87a6c0271fd25107d1b61dabdbd61e9b311ff5ace991cf4cece6058ca57
+limitations:
+- 来源页面声明Mac；客户端版本、拍摄日期、图片后处理情况未知。
+- 该PNG是1280×720浏览器全视口渲染，源图声明1600×1000；保留两侧黑边，未裁切改像素。
+- 只用于Source folders局部控件定位；没有完整路径、Make primary或点击后状态。
+- 创建项目画面不是Edit project画面的实机证明；新图图注明确局部来自创建项目。
+- 无本机或Windows操作证据；原图仅私有保存，许可未知。
+- getScreenshot返回JPEG，原始字节保留为.jpg；为工具作同像素PNG编码转换，并比较解码像素完全相等，未改尺寸/裁切/颜色。PNG已经重新view_image查看。
+regions:
+- id: source-folders
+  box:
+  - 0.141
+  - 0.393
+  - 0.291
+  - 0.432
+  text: Source folders
+  treatment: keep
+  reason: 位于列表上方的区域名称。
+- id: documents
+  box:
+  - 0.158
+  - 0.497
+  - 0.315
+  - 0.552
+  text: Documents
+  treatment: keep
+  reason: 列表内实际可见的示例名称，不能替换成本书材料名称冒充实测。
+- id: add-folder
+  box:
+  - 0.158
+  - 0.625
+  - 0.31
+  - 0.684
+  text: Add folder
+  treatment: keep
+  reason: 列表下方的实际入口与文件夹加号图标。
+- id: list
+  box:
+  - 0.142
+  - 0.456
+  - 0.855
+  - 0.723
+  text: ''
+  treatment: simplify
+  reason: 保留上已有目录、下添加入口及删除叉号的层级；纯色和圆角用黑笔表达。
+- id: project-case
+  box:
+  - 0.143
+  - 0.244
+  - 0.855
+  - 0.352
+  text: ''
+  treatment: omit
+  reason: 项目名字与Take Toucan专属案例不复制。
+- id: dialog-actions
+  box:
+  - 0.552
+  - 0.774
+  - 0.855
+  - 0.865
+  text: ''
+  treatment: omit
+  reason: 本图只讲文件夹列表，不拼造完整对话框或后续点击状态。
+image_sha256: d216c87a6c0271fd25107d1b61dabdbd61e9b311ff5ace991cf4cece6058ca57
+dimensions:
+- 1280
+- 720

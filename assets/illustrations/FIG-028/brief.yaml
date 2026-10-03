@@ -1,0 +1,54 @@
+kind: interface
+form: detail
+reader_question: 项目里在哪里添加电脑上的文件夹？
+takeaway: Source folders列出已关联的文件夹，Add folder用于添加。
+source_sections:
+- 已有项目的另一种入口
+placement: 已有项目的另一种入口
+composition: 单一局部：Source folders标题在列表上方；列表上行左侧文件夹图标和Documents、右侧叉号；下行左侧文件夹加号图标和Add
+  folder。严格保持上下顺序，局部外不画完整窗口、项目名和底部按钮。右侧两条独立黑笔圈注分别指向上行与下行。标题、图注不画进图里。
+content_guard: notebook-pen-v1固定方格纸黑笔，1448×1086不透明纯中性灰。来源为Take Toucan发布的Mac创建项目图片，版本未知；只重绘实际看到的Source
+  folders局部，不声称是Edit project窗口或当前双平台实测。保留Documents原示例名，不替换为我的待办；不复制专属项目名、例文、配色和外围装饰。不要补画路径、Make
+  primary、Local或点击后状态。
+text_roles:
+  source:
+    role: ui
+  folder:
+    role: ui
+  add:
+    role: ui
+  linked:
+    role: author
+  attach:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: third-party-published-image-browser-render
+  ui_locale: en
+  state: create-project-folder-list
+  references:
+  - UI-toucan-source-folders-20261003
+  controls:
+  - label: source
+    reference: UI-toucan-source-folders-20261003
+    region: source-folders
+  - label: folder
+    reference: UI-toucan-source-folders-20261003
+    region: documents
+  - label: add
+    reference: UI-toucan-source-folders-20261003
+    region: add-folder
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 15ea72799f2308a2bb553e853365840aba9f69c8343a551bde92ea3e58826d30
+  reviewed_by: codex：ce5af70操作次序及候选图呈现状态复核，非GUI验证；claude：2026-09-29全书修订后复核图文位置，非GUI验证，未生成图片；Codex：2026-10-03通读本章并查看Take
+    Toucan四张发布图片
+  checked_on: '2026-10-03'
+  reason: 零基础读者可能只给项目起名就认为文件夹已连接；已查看的来源提供真实Source folders列表局部，可帮助区分已关联目录与添加入口。
+  benefit: 能找到Add folder，并看懂它与上方已关联文件夹的关系。
+labels:
+  zh-CN: labels.zh-CN.yaml
