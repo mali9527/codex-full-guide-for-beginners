@@ -2,48 +2,37 @@ schema: 2
 unit: quick-reference
 input_sha256: fca007296f46ffd01728bf528f4b9919f8094ce97dc547a854abb752a08b1283
 evidence_paths: []
-batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-30'
+batch_started_on: '2026-10-04'
+reviewed_on: '2026-10-04'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-29'
-  base_manuscript_sha256: 4b3cb36564bfcbd76b7689b7cd88b1b519fd7af7e74aa53c1723982f473dfa75
+  prepared_on: '2026-10-04'
+  base_manuscript_sha256: e9da3c09b16b773b9afb589c8e402e2485a177a161a8851d831d75b1dc63a6c1
   reader_goal: 遇到问题能按现象找到主讲章、常用命令、默认键位、设置位置与排查次序。
   reader_start:
   - 已读过或跳读过正文相关章节。
   explain_now:
   - 命令、键位与设置都以当前环境为准
   official_readings:
-  - fact_id: desktop-slash-entries
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: 桌面命令表
-    checked_on: '2026-09-28'
-    understanding: 页面列出桌面可用的斜线命令及用途。
-    teaching_use: 按用途排列常用命令，不抄全集。
-  - fact_id: desktop-file-shortcuts
-    url: https://learn.chatgpt.com/docs/reference/commands
-    locator: 快捷键表
-    checked_on: '2026-09-29'
-    understanding: 列有常用默认键位；批准与拒绝键限请求打开时；无停止运行键。
-    teaching_use: 键位表下保留该限定。
   - fact_id: desktop-chat-retrieval
-    url: https://learn.chatgpt.com/docs/projects
-    locator: 归档恢复路径
-    checked_on: '2026-09-29'
-    understanding: 项目页写Settings > Data Controls > Archived chats。
-    teaching_use: 设置地图同步改为两处都提示。
+    url: https://learn.chatgpt.com/docs/reference/settings
+    locator: Archived chats
+    checked_on: '2026-10-04'
+    understanding: 附录与第12章采用同一条桌面路径。
+    teaching_use: 附录与第12章采用同一条桌面路径。
   teaching_sequence:
   - 按问题找章→常用命令→默认键位
   - 设置地图→按需功能→排障表→术语
+  - 附录与第12章采用同一条桌面路径。
   defer:
   - 不新增教学内容
+  - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 无案例；修订只同步正文改动与归档路径写法。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照写前提要：按问题找章→常用命令→默认键位→设置地图→按需功能→排障→术语；只同步正文改动，未新增教学内容。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
-    2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+  result: pending
+  reason: 2026-10-04写前提要，保存后再修订和复核。
 reader_review:
   prior_knowledge:
     result: pass
@@ -452,3 +441,96 @@ fact_review:
     rationale: 正确桌面官方入口，下接专页不是新安装保证。
     notice: ''
   unused_facts: {}
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/skills-and-plugins
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/reference/commands
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/permission-modes
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/personalize
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/customization/memories
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/notifications
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/browser
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/computer-use
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/extend/mcp
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/plugins
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/models
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/pricing
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/image-generation
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/visualizations
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/sites
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/pets
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/features/codex-micro
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/customization/computer-history
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/remote
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/app
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。

@@ -554,7 +554,9 @@
   critical: true
   ttl_days: 90
 - id: reasoning-default-guidance
-  claim: 官方Models建议先用账号当前可用Power；Advanced分选模型、Effort和速度。起步建议Sol Medium、Luna High、Astra 2026-09-29复读补充：同页展示六个Power预设，依次为Luna High、Sol Light（起始预设）、Sol Medium、Astra Light、Astra Medium、Astra Extra High，部分付费档位不含Astra Extra High；预设清单以当前账号控件显示为准，起始预设不等同于Advanced中的逐型号起步建议。
+  claim: 官方Models建议先用账号当前可用Power；Advanced分选模型、Effort和速度。起步建议Sol Medium、Luna High、Astra
+    2026-09-29复读补充：同页展示六个Power预设，依次为Luna High、Sol Light（起始预设）、Sol Medium、Astra Light、Astra
+    Medium、Astra Extra High，部分付费档位不含Astra Extra High；预设清单以当前账号控件显示为准，起始预设不等同于Advanced中的逐型号起步建议。
     Light，并非统一实际默认。Light/Medium/High/Extra High随任务分析需要选择，代际不能机械对应。Max增加单任务推理投入；Ultra用子代理并行，Luna不支持Ultra；可用项仍受模型/账号/设置影响。
   scope:
     product: codex
@@ -766,11 +768,12 @@
   critical: true
   ttl_days: 90
 - id: desktop-chat-retrieval
-  claim: 桌面项目和聊天可置顶、聊天可重命名与归档；侧栏Search chats用于找回聊天，设置中的Archived chats提供恢复。2026-09-29复读发现两页写法不同：项目页对桌面应用写Settings > Data Controls > Archived chats，设置参考页把Archived chats列为独立分区并用Unarchive恢复；快捷键页未给Search chats默认键位。正文写先找Archived chats、未见时到Data Controls查找，实际位置待GUI核对。置顶不增加上下文或访问权限；本轮未核验中文按钮名称与布局。
+  claim: 桌面项目和聊天可置顶，聊天可重命名与归档；Search chats查找旧任务。桌面恢复路径为Settings > Archived chats，使用Unarchive恢复。项目页同时展示网页分支的Data
+    Controls路径，不应混为桌面两步。置顶不增加上下文或访问权限。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28基础知识研究；只确认所列官方段落，非GUI、账号开放或双平台实测；候选编排尚未采用
+    baseline: 2026-10-04复读Projects桌面分支与Settings Archived chats；无GUI或账号实测。
     surfaces:
     - codex-desktop
     platforms:
@@ -779,18 +782,20 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/projects
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
   - url: https://learn.chatgpt.com/docs/reference/settings
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
   - url: https://learn.chatgpt.com/docs/reference/commands
     checked_on: '2026-09-29'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-04'
   category: startup
   status: confirmed
   critical: true
   ttl_days: 90
 - id: usage-windows-and-credits
-  claim: 官方pricing的五小时消息数为估计，非固定条数；周限额可能适用，灵活计费Enterprise/Edu规则不同。Work与Codex共享用量，tokens计量输入/输出等信息，credits用于适用的用量计费。模型、上下文、推理、工具和缓存均影响消耗；以当前账号用量面板的范围、余额、重置时间为准。 2026-09-29复读pricing补充：Work与Codex包含在Free、Go、Plus、Pro、Business、Edu、Enterprise各档，Pro为Plus的5倍或20倍速率限制；在进行中的一轮里达到限额时，该轮可在公平使用范围内继续完成；达到包含限额后可用credits继续，Plus与Pro用户可另购credits；当前限额查看usage dashboard。本书据此说明档位差别与限额处理，不列价格、不作购买建议。
+  claim: 官方pricing的五小时消息数为估计，非固定条数；周限额可能适用，灵活计费Enterprise/Edu规则不同。Work与Codex共享用量，tokens计量输入/输出等信息，credits用于适用的用量计费。模型、上下文、推理、工具和缓存均影响消耗；以当前账号用量面板的范围、余额、重置时间为准。
+    2026-09-29复读pricing补充：Work与Codex包含在Free、Go、Plus、Pro、Business、Edu、Enterprise各档，Pro为Plus的5倍或20倍速率限制；在进行中的一轮里达到限额时，该轮可在公平使用范围内继续完成；达到包含限额后可用credits继续，Plus与Pro用户可另购credits；当前限额查看usage
+    dashboard。本书据此说明档位差别与限额处理，不列价格、不作购买建议。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -961,7 +966,8 @@
   critical: false
   ttl_days: 90
 - id: desktop-subagent-delegation
-  claim: 当前本地Codex可在用户明确要求或适用AGENTS.md/Skill要求时，将可独立的工作分配给子代理，再由主任务汇总；桌面显示代理活动。子代理各自使用模型和工具，通常比相应单代理运行消耗更多token；官方建议初用优先只读工作，多个代理同时改文件可能产生冲突。CLI的/agent不据此成为桌面命令。 2026-09-29复读补充：可直接请Codex引导或停止某个子代理；Ultra档可主动分工。
+  claim: 当前本地Codex可在用户明确要求或适用AGENTS.md/Skill要求时，将可独立的工作分配给子代理，再由主任务汇总；桌面显示代理活动。子代理各自使用模型和工具，通常比相应单代理运行消耗更多token；官方建议初用优先只读工作，多个代理同时改文件可能产生冲突。CLI的/agent不据此成为桌面命令。
+    2026-09-29复读补充：可直接请Codex引导或停止某个子代理；Ultra档可主动分工。
   scope:
     product: codex
     evidence: official-documentation-only
@@ -1064,7 +1070,8 @@
   critical: true
   ttl_days: 90
 - id: computer-history-optional
-  claim: Computer History是macOS上的可选活动历史功能，默认关闭，需要Memories以及相应账号和组织授权；它按所选应用和网站生成活动摘要，不是一般聊天记忆或给当前任务附一张Appshot。关闭或排除来源主要影响未来采集，已有内容需另行清除；不作为Windows/Mac共同入门前置，也未据文档名称推定稳定成熟度。 2026-09-29复读确认：仅macOS及支持地区，采集点击、输入、切换等交互事件与可取得文字，不含截图与音频，摘要经服务端处理。
+  claim: Computer History是macOS上的可选活动历史功能，默认关闭，需要Memories以及相应账号和组织授权；它按所选应用和网站生成活动摘要，不是一般聊天记忆或给当前任务附一张Appshot。关闭或排除来源主要影响未来采集，已有内容需另行清除；不作为Windows/Mac共同入门前置，也未据文档名称推定稳定成熟度。
+    2026-09-29复读确认：仅macOS及支持地区，采集点击、输入、切换等交互事件与可取得文字，不含截图与音频，摘要经服务端处理。
   scope:
     product: codex
     evidence: official-documentation-only

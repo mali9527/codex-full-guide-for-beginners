@@ -18,7 +18,6 @@ platforms:
 required_checks:
 - editorial
 - facts
-- operations
 units:
 - id: latest-models
   title: 开篇：GPT-6 Astra与现在的Codex

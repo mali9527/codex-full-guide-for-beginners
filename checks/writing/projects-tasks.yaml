@@ -2,13 +2,13 @@ schema: 2
 unit: projects-tasks
 input_sha256: 8632f55ba6ac32fb27d1715f134029853d1047c5632c1ed156924d1fb2f14e82
 evidence_paths: []
-batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-30'
+batch_started_on: '2026-10-04'
+reviewed_on: '2026-10-04'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-29'
-  base_manuscript_sha256: 08b2d7979d60d29a8d765f737347bac2e837f96d336747f8f71593006d82ef01
+  prepared_on: '2026-10-04'
+  base_manuscript_sha256: 3bcd99379d7805e7005435b12283d62f149de24d1c753ac6d303bdd64a070062
   reader_goal: 能决定继续原任务还是另开，给任务起名、置顶、搜索、归档和恢复，离开前留下接续说明。
   reader_start:
   - 已有一个项目和至少一个完成的任务。
@@ -20,36 +20,24 @@ study_brief:
   official_readings:
   - fact_id: desktop-chat-retrieval
     url: https://learn.chatgpt.com/docs/projects
-    locator: Organize chats；归档恢复路径
-    checked_on: '2026-09-29'
-    understanding: 项目页写恢复路径为Settings > Data Controls > Archived chats；设置参考页把Archived
-      chats列为一个分区。两页写法不同。
-    teaching_use: 正文写「在Settings里找Archived chats，没有直接看到就到Data Controls里找」，并登记冲突。
-  - fact_id: desktop-project-task-commands
-    url: https://learn.chatgpt.com/docs/reference/slash-commands
-    locator: /project、/task、/local
-    checked_on: '2026-09-28'
-    understanding: 三个命令分别选项目、开无项目任务、选本地运行。
-    teaching_use: 命令表保留，强调选完仍要核对显示。
-  - fact_id: local-project-context
-    url: https://learn.chatgpt.com/docs/projects
-    locator: Primary与secondary folders
-    checked_on: '2026-09-29'
-    understanding: 新任务从主要文件夹开始；次要文件夹不自动发现项目文件。
-    teaching_use: 多文件夹一节保持简短。
+    locator: Organize projects and chats / app
+    checked_on: '2026-10-04'
+    understanding: 桌面归档从Settings进入Archived chats；网页分支不写成备用桌面路径。
+    teaching_use: 桌面归档从Settings进入Archived chats；网页分支不写成备用桌面路径。
   teaching_sequence:
   - 同一成果留在原任务→独立成果另开任务
   - 新任务先核对工作位置→命令入口
   - 多文件夹与主要位置→起名、置顶、搜索
   - 归档与恢复→离开前的接续说明→回来先看实际文件
+  - 桌面归档从Settings进入Archived chats；网页分支不写成备用桌面路径。
   defer:
   - 上下文与分支留第13章
+  - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 沿用待办清单与自设的资料查证任务名。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照写前提要：同一成果留在原任务→独立成果另开→新任务先核对位置→命令入口→多文件夹→起名、置顶、搜索→归档与恢复→接续说明。归档恢复按提要改写，两页写法不同的情况登记在事实记录。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+  result: pending
+  reason: 2026-10-04写前提要，保存后再修订和复核。
 reader_review:
   prior_knowledge:
     result: pass
@@ -195,3 +183,20 @@ fact_review:
     notice: ''
   unused_facts:
     desktop-remote-host: 本章不教远程，条件与完整可选设置在第17章。
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/reference/commands
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。

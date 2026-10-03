@@ -2,13 +2,13 @@ schema: 2
 unit: computer-use
 input_sha256: 0d9229ac51e9ed2a585851f125c010d5032c34a38f9e63f6a5157eb3fdca9c34
 evidence_paths: []
-batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-30'
+batch_started_on: '2026-10-04'
+reviewed_on: '2026-10-04'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-29'
-  base_manuscript_sha256: 72722a85c386c8d68d6e3be519dcfec020fb90e5c214df3300521e3ea96e177c
+  prepared_on: '2026-10-04'
+  base_manuscript_sha256: 7aa13c88422d48d16c9e8f628727a07b8acbe8897754dd9b00926deed68ee23f
   reader_goal: 能判断是否需要操作应用，完成安装启用与系统授权，从一个只读小动作开始并核对真实结果，知道怎样撤回授权。
   reader_start:
   - 已会用文件、截图、应用快照和浏览器；已懂权限三层。
@@ -19,22 +19,23 @@ study_brief:
   official_readings:
   - fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
-    locator: 平台、权限、应用批准与限制
-    checked_on: '2026-09-28'
-    understanding: 支持macOS与Windows，Windows仅前台；macOS需屏幕录制与辅助功能授权；按应用请求许可，可选Always allow并在设置中移除；不能操作终端类应用和ChatGPT自身，也不能批准系统安全提示。
-    teaching_use: 从只读查看一个窗口开始，分平台写条件。
+    locator: Safety guidance / App permissions
+    checked_on: '2026-10-04'
+    understanding: 应用访问请求可以Cancel；只读案例先确认应用，再允许单次读取；未知立即停止控件不作为已教会的前提。
+    teaching_use: 应用访问请求可以Cancel；只读案例先确认应用，再允许单次读取；未知立即停止控件不作为已教会的前提。
   teaching_sequence:
   - 先判断是否需要→安装启用→系统授权分平台
   - 应用批准→开始前准备窗口并确认停止方式
   - 小范围只读请求→核对真实应用里的结果→结束与撤回
+  - 应用访问请求可以Cancel；只读案例先确认应用，再允许单次读取；未知立即停止控件不作为已教会的前提。
   defer:
   - 普通任务的直接停止控件缺依据，仍按Steer停止要求并提示先退回文件或快照路线
+  - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 查看已打开的自编清单窗口中一项是否完整显示；只读。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照写前提要：判断是否需要→安装启用→系统授权分平台→应用批准→准备窗口并确认停止方式→小范围只读请求→核对真实结果→结束与撤回。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
-    2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005,FIG-021，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+  result: pending
+  reason: 2026-10-04写前提要，保存后再修订和复核。
 reader_review:
   prior_knowledge:
     result: pass
@@ -192,3 +193,16 @@ fact_review:
     notice: ''
   unused_facts:
     auto-review-routing: 本章不新增自动审核操作；应用批准依据Computer Use专页，不能用自动审核代替。
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/appshots
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/computer-use
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。

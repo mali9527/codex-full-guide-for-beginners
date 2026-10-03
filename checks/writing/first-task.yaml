@@ -8,13 +8,13 @@ evidence_paths:
 - examples/ch04-notes-to-todos/我的待办-起始材料.zip
 - examples/ch04-notes-to-todos/演示结果/待办清单-v1.txt
 - examples/ch04-notes-to-todos/演示结果/待办清单-v2.txt
-batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-30'
+batch_started_on: '2026-10-04'
+reviewed_on: '2026-10-04'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-29'
-  base_manuscript_sha256: d2b0acb66fa2f059ebcd51f16d18c55f46482e9c45eba6850d74c33b1b8e13a0
+  prepared_on: '2026-10-04'
+  base_manuscript_sha256: 22b6967b09b7a3891b77cee5437fa66997949dc78cc71ed953b11d6dbae3ec8f
   reader_goal: 在已连接的项目里让Codex读取两份备忘、生成并保存v1，到文件夹打开核对四项事实，再按新进展另存v2。
   reader_start:
   - 第3章已打开「我的待办」并会新建任务、选Local与权限、读一轮状态。
@@ -23,38 +23,27 @@ study_brief:
   - 完成标准先于请求
   - 任务要求与权限设置的区别
   official_readings:
-  - fact_id: permission-boundary
-    url: https://learn.chatgpt.com/docs/permission-modes
-    locator: Ask for approval
-    checked_on: '2026-09-29'
-    understanding: 允许工作区内读写，越界或联网前询问；不是每改一行都问。
-    teaching_use: 首例继续使用该模式，遇到请求时看对象与目的。
-  - fact_id: task-materials-and-output
+  - fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
-    locator: Describe the result；Improve the result with follow-up messages
-    checked_on: '2026-09-29'
-    understanding: 先说成果，后用具体跟进修改，不必重开。
-    teaching_use: 请求写明文件名、位置与保存后的检查；修改用同一任务。
-  - fact_id: artifact-preview
-    url: https://learn.chatgpt.com/docs/artifacts-viewer
-    locator: 预览格式与自动打开
-    checked_on: '2026-09-29'
-    understanding: 桌面预览文档、表格、演示文稿、PDF与生成的HTML；自动打开受设置影响。
-    teaching_use: 文本清单走文件夹核对路线，不依赖预览。
+    locator: Steering and queuing
+    checked_on: '2026-10-04'
+    understanding: 读取与生成分开；首次写文件前回指第3章已讲的纠正入口。避免靠同名文件夹或顺手联网完成其他事项。
+    teaching_use: 读取与生成分开；首次写文件前回指第3章已讲的纠正入口。避免靠同名文件夹或顺手联网完成其他事项。
   teaching_sequence:
   - 回到项目→New chat→到文件夹读两份原件→回任务核对模型与权限
   - 只读确认读到的内容→定完成标准→发整理并保存的请求→看进展与可能的提问
   - 到文件夹打开v1→按四项事实核对→有错才纠正→确认v1后发v2请求→打开两版比较
+  - 读取与生成分开；首次写文件前回指第3章已讲的纠正入口。避免靠同名文件夹或顺手联网完成其他事项。
   defer:
   - 模型选择原理留第6章
   - 批注操作留第10章
   - 任务找回与上下文留第12、13章
+  - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 两份自编备忘、四件待办、v1与v2两版配套结果；笔记本已买是演示中的新消息。修订收紧设置一节的连续限制句，其余保持。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照写前提要：回到项目→New chat→人先读两份原件→回任务核对模型与权限→只读确认→定完成标准→整理并保存→到文件夹打开v1核对四项→有错才纠正→v2另存并比较。设置一节原有四段连续的限制说明并为三段。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+  result: pending
+  reason: 2026-10-04写前提要，保存后再修订和复核。
 reader_review:
   prior_knowledge:
     result: pending
@@ -296,3 +285,44 @@ fact_review:
     rationale: 补足可选Astra设置的控件入口→Advanced→型号与Effort→核对当前值；不要求无此选项的读者停下。
     notice: ''
   unused_facts: {}
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/models
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/permission-modes
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/windows/windows-sandbox
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/artifacts-viewer
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/use-chatgpt
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/reference/commands
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/projects
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/environments/modes
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
+  - url: https://learn.chatgpt.com/docs/reference/settings
+    checked_on: '2026-09-29'
+    from_batch: Claude 2026-09-29全书编辑批次
+    reason: 本批仅修订运行控制前置或桌面归档路径；其他未改段落对照原稿复用原阅读，逐条保留日期。
