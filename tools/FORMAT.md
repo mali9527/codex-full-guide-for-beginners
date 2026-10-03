@@ -153,3 +153,10 @@ v2 成图导入、采用与核验进一步要求每像素 R=G=B，且宽高与�
 ## Author branding
 
 Optional `book.yaml.branding` maps `name`, optional `name_en`, `avatar` (book-local PNG or SVG path), and `sha256` (exact asset SHA-256). Omission preserves legacy behavior. Author photographs keep their original colors and are not teaching FIG assets. `check` validates the asset and digest; combined Markdown includes a 48px signature. PDF source snapshots provide the avatar; `export.json.author_branding` records name, relative path and digest. The shared template uses a 22mm standard / 16mm mobile cover portrait and an 8mm body header portrait; branded body top margins are 20mm standard / 18mm mobile. Portraits never load from host-private paths or the live working tree during fixed-source exports.
+
+
+## Same-language concept context review
+
+`illustrations recheck --figure ID --language LOCALE --revision NEW --pack PATH --review PATH` creates a new revision of identical, previously adopted concept pixels. Only `facts` may differ in the input payload. All other inputs, source sections, labels, prompt, and references must match the immutable generated origin exactly. Interface and cross-language artwork are excluded.
+
+The new review must pass every normal review including placement and include `fact_assessment: {changed_fact_id: reason}` covering exactly the changed fact IDs. The `context-review` receipt records the original language, revision, image SHA and input fingerprint; references use `reused: true`, never a fabricated generation `passed: true`. Import and every subsequent selection validate original inputs, provenance, generation receipt, prompt, image and reading review. Review chains point to the generated origin, not to another context review. Existing revisions remain immutable.

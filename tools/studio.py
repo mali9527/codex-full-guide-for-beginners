@@ -490,7 +490,7 @@ def parser():
     qa = subs.add_parser("pdf-check", help="检查已有 PDF；机器通过不等于视觉通过")
     qa.add_argument("path"); qa.add_argument("--render", action="store_true"); qa.add_argument("--output")
     i = subs.add_parser("illustrations")
-    i.add_argument("action", choices=["status", "plan", "plan-check", "register", "migrate", "reference-add", "pack", "import", "select", "preview", "reuse", "gallery"])
+    i.add_argument("action", choices=["status", "plan", "plan-check", "register", "migrate", "reference-add", "pack", "import", "select", "preview", "reuse", "recheck", "gallery"])
     i.add_argument("work", nargs="?")
     for option in ("figure", "output", "image", "pack", "revision", "tool", "review", "language", "receipt", "metadata", "plan", "source-language"):
         i.add_argument("--" + option)

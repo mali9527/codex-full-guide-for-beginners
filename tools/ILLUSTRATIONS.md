@@ -141,6 +141,19 @@ python3 tools/studio.py illustrations status codex
 
 选择按语言更新 selection.yaml 与正文对应 FIG 块。共享图意、标签或参考变化时，相关版本失效；只改英文文字不会导致中文图失效。整个书还要逐图看一致性，不能只看单张样图。
 
+### 只有事实背景变化时，复核原概念图
+
+同一章的事实更新可能不影响图内内容。例如模型默认档位改变，模型与工具的关系图仍可能成立。先重新查看原图与当前正文，再判断每条变动事实是否影响图意。只有同语言概念图、原图已完成入稿审阅、图片字节和所有非事实输入完全相同，才可使用 `recheck`。图意、标签、来源段落、界面或风格变化不适用。
+
+准备新的生产包和实际审校 JSON；JSON 除原有必需字段外，增加 `fact_assessment`，逐一以变动事实 ID 为键，说明为何无需改图。不得覆盖旧审校，也不能只刷新指纹。
+
+~~~sh
+python3 tools/studio.py illustrations pack --figure FIG-101 --language zh-CN --output .studio/packs/FIG-101-context-r02
+python3 tools/studio.py illustrations recheck --figure FIG-101 --language zh-CN --revision r02 --pack .studio/packs/FIG-101-context-r02 --review /absolute/review-r02.json
+~~~
+
+工具保存新修订及 `context-review` 回执，原图字节不变，保留最初的生成来源、旧输入和旧审校。回执明确没有再次生成，不把参考复用写成一次新的图像调用；每次核验仍检查完整来源链。该入口只解决事实背景变化，不放宽视觉、文字或入稿要求。
+
 ## 5. 正文与插图一起本地化
 
 单书 terms.yaml 是小型稳定 ID → 语言表达映射；正文按实际用到的词、插图按 brief.terms 选择依赖。新增无关术语不要求重画全书。标签、标题、图注和替代说明均在各语言文字包中维护。

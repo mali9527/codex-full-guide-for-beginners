@@ -481,6 +481,9 @@ def command(root, args):
     if args.action == 'preview':
         if not args.revision or not args.output: raise StudioError('需要 --revision 和 --output')
         return workflow.preview(root,args.figure,args.revision,language,args.output)
+    if args.action == 'recheck':
+        if not all((args.revision,args.pack,args.review)): raise StudioError('需要 --revision、--pack、--review')
+        return workflow.recheck(root,args.figure,language,args.revision,args.pack,args.review)
     if args.action == 'reuse':
         if not args.source_language or not args.revision or not args.pack or not language: raise StudioError('需要 --source-language、--language、--revision、--pack')
         return workflow.reuse(root,args.figure,args.source_language,language,args.revision,args.pack)
