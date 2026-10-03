@@ -16,7 +16,7 @@
 
 
 <!-- diagram: FIG-020 -->
-![同一份已保存材料分给两个只读检查，分别核对编号遗漏与分类未知，再由主任务核对合稿。](../assets/illustrations/FIG-020/revisions/zh-CN/r04/zh-CN.png)
+![同一份已保存材料分给两个只读检查，分别核对编号遗漏与分类未知，再由主任务核对合稿。](../assets/illustrations/FIG-020/revisions/zh-CN/r05/zh-CN.png)
 
 *图：两个检查各有范围，主任务对照依据汇总，不让多个代理同时改同一文件。*
 <!-- /diagram: FIG-020 -->

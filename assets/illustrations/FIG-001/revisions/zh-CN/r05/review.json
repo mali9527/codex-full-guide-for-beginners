@@ -1,0 +1,20 @@
+{
+  "image_sha256": "f228f1b4520f9769c50d6fc28deef14a5775de925e1eb7eb193dac9ec2919935",
+  "input_fingerprint": "2c0b477a458ee5dd93ae4f21403e95190e366d668e8dcd4584dfd0b510d685b0",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pass",
+  "notes": "2026-10-04实际重新查看完整原图，并对照当前图意、来源小节、标签和图注；内容、纸底、文字、箭头及像素均未变。358px可读性沿用2026-09-30对同一字节图片的实际浏览器审阅，不声称本轮重新打开浏览器预览。当前上下文关系未变；具体事实影响逐项记录。无新生成或像素编辑。",
+  "fact_assessment": {
+    "reasoning-default-guidance": "图中仅两条备忘合并并保留截止时间、照片数量，没有型号或Effort建议。",
+    "desktop-followup-behavior": "新增Steer/Queue前置不改变本图的两项条件及清单关系；图中不表示停止按钮。"
+  }
+}

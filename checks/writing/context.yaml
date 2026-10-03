@@ -1,6 +1,6 @@
 schema: 2
 unit: context
-input_sha256: a4183212a5af2725d0a46e637c78a2c014a4380621961b6eb0592fed31c3639d
+input_sha256: babb54fc8c35f6cf7226817b3d03f6ae21b1b715d3d6d08dd554623a30c6c41c
 evidence_paths: []
 batch_started_on: '2026-09-29'
 reviewed_on: '2026-09-30'
@@ -40,6 +40,8 @@ reader_review:
   prior_knowledge:
     result: pass
     reason: 已会写接续说明，见过/status。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+      2026-10-04前置影响复核：本单元正文与cd6e82a逐字一致。前置增量仅补运行纠正入口、归档桌面路径和当前模型建议；没有引入新操作前提或改变备忘材料。原事实结论与日期沿用，原实测状态不变。
+      2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
     result: pass
     reason: 压缩之前先留接续说明；记忆留第19章，工作树只作一句说明。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
@@ -59,6 +61,7 @@ fact_review:
   coverage: reviewed
   reason: Claude通读成稿并核对6个锚点。本轮实际读取reference/slash-commands（2026-09-28）、config-file/config-reference与environments/modes（2026-09-29）。自动压缩只写「阈值随模型而定」，未给比例。
     本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
+    2026-10-04前置影响复核：本单元正文与cd6e82a逐字一致。前置增量仅补运行纠正入口、归档桌面路径和当前模型建议；没有引入新操作前提或改变备忘材料。原事实结论与日期沿用，原实测状态不变。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

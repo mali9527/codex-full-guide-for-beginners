@@ -138,6 +138,7 @@ units:
   - desktop-basic-navigation
   - desktop-model-control
   - windows-first-setup
+  - desktop-followup-behavior
   derived_from: null
 - id: account-usage
   title: 第5章 账号与额度：看懂自己正在用什么
@@ -509,10 +510,6 @@ diagrams:
   unit: personalization
   type: illustration
   spec: assets/illustrations/FIG-021/brief.yaml
-- id: FIG-027
-  unit: results
-  type: illustration
-  spec: assets/illustrations/FIG-027/brief.yaml
 - id: FIG-028
   unit: workspace-files
   type: illustration

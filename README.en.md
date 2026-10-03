@@ -10,7 +10,7 @@ Learn where to put your files, how to start a task, and how to find, check and r
 
 **[Start with Chapter 1 (Chinese)](manuscript/intro.md)** · [Read the complete draft (Chinese)](全书.md)
 
-This September 2026 public reading draft includes an opening guide, 24 chapters, an appendix and seven concept illustrations. **It is not an operationally verified final edition.** Windows and Mac workflows still need hands-on testing, and interface illustrations are pending real screenshots. See [verification scope](docs/verification-scope.en.md).
+This October 2026 documentation-based update includes an opening guide, 24 Chinese chapters, an appendix and seven concept illustrations. Selected sections now cover GPT-6.1 Sol, Fast usage, steering and desktop archive recovery, checked against official documentation on October 4. Interface drawings are still being completed. This is not a claim that every workflow has been tested on Windows, Mac or every account. See [verification scope](docs/verification-scope.en.md).
 
 ## What the guide covers
 

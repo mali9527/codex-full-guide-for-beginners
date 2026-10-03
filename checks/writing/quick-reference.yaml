@@ -1,6 +1,6 @@
 schema: 2
 unit: quick-reference
-input_sha256: fca007296f46ffd01728bf528f4b9919f8094ce97dc547a854abb752a08b1283
+input_sha256: 467b5c7cf0d104d2596167b907fdc6f44f3a1a68e7e40fa022302e24e66c1962
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -31,37 +31,37 @@ study_brief:
   case_plan: 无案例；修订只同步正文改动与归档路径写法。
 study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
-  result: pending
-  reason: 2026-10-04写前提要，保存后再修订和复核。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 供已读正文的读者回查。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。 本项为当前引擎编辑判断；未记为GUI或真人验证。
+      2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
     result: pass
-    reason: 各行回指主讲章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   information_value:
     result: pass
-    reason: 命令表第三列由「不等于、不是」改为各命令实际管什么；第5章一行补入会员档位与达到限额。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 表格为主，叙述句很少。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: 键位分Windows与Mac；听写一行Mac写Control。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 无案例。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。 本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并核对27个锚点。本轮实际读取reference/commands、reference/settings、projects、models（2026-09-29）、reference/slash-commands（2026-09-28）。按需功能表所列image-generation、visualizations、sites、pets、codex-micro五页及下载页Claude本轮未重读，对应断言原文未改，沿用原记录的定位与核对日期。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。 从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: 先在输入区键入`/`
     fact_id: desktop-slash-entries
@@ -217,17 +217,17 @@ fact_review:
     support: supported
     rationale: 本地开关引用第19章，未当网页记忆。
     notice: ''
-  - anchor: Archived chats | 找回归档任务
+  - anchor: 桌面应用在Settings → Archived chats中
     fact_id: desktop-chat-retrieval
     url: https://learn.chatgpt.com/docs/reference/settings
     locator: Archived chats
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 恢复入口以桌面为准。
     notice: ''

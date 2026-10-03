@@ -1,6 +1,6 @@
 schema: 2
 unit: computer-use
-input_sha256: 0d9229ac51e9ed2a585851f125c010d5032c34a38f9e63f6a5157eb3fdca9c34
+input_sha256: da1fb307a9f310598c047ac3fe2ae348c5bbf2cd4939870f2032717a3afb0a57
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -34,38 +34,42 @@ study_brief:
   case_plan: 查看已打开的自编清单窗口中一项是否完整显示；只读。
 study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
-  result: pending
-  reason: 2026-10-04写前提要，保存后再修订和复核。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 已会文件、截图、快照和浏览器，懂权限三层。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005,FIG-021，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
     result: pending
-    reason: 交出应用控制之前需要知道怎样收回，而直接停止控件的位置仍无依据。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。保持待定。
-      2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005,FIG-021，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 已补应用请求Cancel与不满足停止条件时的文件/Appshot退路。当前官方页说明可停止或接手，但未给可核对的具体控件路径；读者尚不能从本章独立学会即时收回控制。本项保留，关闭条件是取得可靠文档/实际图片并补指引，不再强制GUI实测。
   information_value:
     result: pass
-    reason: 只读核对一个窗口足以说明新增能力；限制与撤回分开讲。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005,FIG-021，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 否定式表述由18处降到9处，余下的是平台限制与官方明确的不能项。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005,FIG-021，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: Mac的两项系统权限与Windows前台条件分开。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005,FIG-021，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 查看清单窗口的请求为自设；正文没有虚构截图或回执。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005,FIG-021，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并核对9个锚点。本轮实际读取computer-use（2026-09-28）、appshots、prompting（2026-09-29）。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: Appshot或截图也可能够用
     fact_id: appshot-input-scope
@@ -85,13 +89,13 @@ fact_review:
     fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
     locator: Set up
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 支持地区/双平台/Work或Codex条件，安装启用服务技能先于Try now。
     notice: ''
@@ -99,12 +103,12 @@ fact_review:
     fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
     locator: Permissions
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 系统权限和应用许可两层，不让AI批准系统安全请求。
     notice: ''
@@ -112,12 +116,12 @@ fact_review:
     fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
     locator: Windows foreground
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: Windows前台占用，不能保证锁屏或同时操作。
     notice: ''
@@ -125,13 +129,13 @@ fact_review:
     fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
     locator: App approvals
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 长期批准与本次不同，Settings移除。
     notice: ''
@@ -139,13 +143,13 @@ fact_review:
     fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
     locator: Steering and queuing
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: Steer是发送给当前运行的补充；不能据此承诺即时中断工具，直接停止入口仍pending。
     notice: ''
@@ -153,13 +157,13 @@ fact_review:
     fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
     locator: Start task
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 明确目标软件窗口和只读小动作，能力不猜所有应用皆支持。
     notice: ''
@@ -167,13 +171,13 @@ fact_review:
     fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
     locator: Saved changes / restrictions
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 项目面板不一定显示全部应用状态；终端/ChatGPT/管理员授权限制准确。
     notice: ''
@@ -181,15 +185,29 @@ fact_review:
     fact_id: desktop-computer-use
     url: https://learn.chatgpt.com/docs/computer-use
     locator: Revoke saved decision
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 结束任务/停用服务技能/撤销系统不同，不自动还原文件。
+    notice: ''
+  - anchor: 就选择 **Cancel**
+    fact_id: desktop-computer-use
+    url: https://learn.chatgpt.com/docs/computer-use
+    locator: App permissions
+    checked_on: '2026-10-04'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；本书说明实际可用条件，非操作实测。
+    support: supported
+    rationale: 官方示例实际列Allow/Cancel；正文拒绝对象不符的单次请求。
     notice: ''
   unused_facts:
     auto-review-routing: 本章不新增自动审核操作；应用批准依据Computer Use专页，不能用自动审核代替。

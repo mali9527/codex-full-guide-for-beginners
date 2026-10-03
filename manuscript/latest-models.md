@@ -60,7 +60,7 @@ Astra的重点之一，就是让这种需要连续判断的工作保持连贯。
 
 
 <!-- diagram: FIG-005 -->
-![要求与材料进入Codex，模型负责理解和判断，工具负责读取与操作，形成可打开检查的成果。](../assets/illustrations/FIG-005/revisions/zh-CN/r05/zh-CN.png)
+![要求与材料进入Codex，模型负责理解和判断，工具负责读取与操作，形成可打开检查的成果。](../assets/illustrations/FIG-005/revisions/zh-CN/r06/zh-CN.png)
 
 *图：模型负责理解与判断，工具负责具体操作；成果仍要打开检查。*
 <!-- /diagram: FIG-005 -->

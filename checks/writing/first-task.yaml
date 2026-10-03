@@ -1,6 +1,6 @@
 schema: 2
 unit: first-task
-input_sha256: 4af064943f8b62e834aedcf0c512d2c18b9a6e6111181487d1575c69f1ed5838
+input_sha256: ebf6ee500acfd0bea46303ac06c96680e99cc5232bf95d1d71361a731e0be141
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -42,38 +42,43 @@ study_brief:
   case_plan: 两份自编备忘、四件待办、v1与v2两版配套结果；笔记本已买是演示中的新消息。修订收紧设置一节的连续限制句，其余保持。
 study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
-  result: pending
-  reason: 2026-10-04写前提要，保存后再修订和复核。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
 reader_review:
   prior_knowledge:
-    result: pending
-    reason: 本章让Codex实际写文件，而读者尚未学到怎样停下一次普通运行。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。保持待定。
-      2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    result: pass
+    reason: 全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
     result: pass
-    reason: 完成标准在发出整理请求之前给出；任务要求与权限的区别在写「原材料不动」处说明。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   information_value:
     result: pass
-    reason: 保留四项事实核对表、截止时间变开始时间、未预约变已预约两个关键例子；删去重复的安抚句。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 沿用两份备忘；纠错示例写明没有该错误就跳过。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: 文件夹与项目分开讲；快捷键可自定义已说明；Astra为可选。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 备忘、请求、v1与v2均为本书自编，配套文件在examples目录。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并核对15个锚点，另对照examples/ch04-notes-to-todos中的原件与两版清单确认四项事实、日期、数量与正文一致。本轮实际读取permission-modes、prompting、artifacts-viewer、models、environments/modes、projects、reference/commands（2026-09-29）、use-chatgpt（2026-09-28）。文件级对照不代表桌面操作已实测。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全章回读：先读两份原件、再让Codex确认材料、定义完成标准、生成v1并打开检查，再另存v2；出错时明确回指已学Steer。示例文件和四项事实未变，不依赖尚未讲授的第8章。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: Light是官方给出的Astra常见起点
     fact_id: reasoning-default-guidance
@@ -283,6 +288,20 @@ fact_review:
     conditions: 官方文档；实际可选项受账号、版本与开放条件影响。不是GUI验证。
     support: supported
     rationale: 补足可选Astra设置的控件入口→Advanced→型号与Effort→核对当前值；不要求无此选项的读者停下。
+    notice: ''
+  - anchor: 用Steer要求停下后续工作
+    fact_id: desktop-followup-behavior
+    url: https://learn.chatgpt.com/docs/prompting
+    locator: Steering and queuing
+    checked_on: '2026-10-04'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；本书说明实际可用条件，非操作实测。
+    support: supported
+    rationale: 调用第3章已教的同一入口；不承诺瞬间中断。
     notice: ''
   unused_facts: {}
   reading_reuse:

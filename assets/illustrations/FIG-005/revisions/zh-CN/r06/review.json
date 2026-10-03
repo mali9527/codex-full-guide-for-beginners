@@ -1,0 +1,20 @@
+{
+  "image_sha256": "ed0f6df9b5f7a065b20938336ed3c04c93104f5fce3a2e09b70d2d2bd1bc4879",
+  "input_fingerprint": "2cee017c1bb26bcc84e0a67bed19dc18e89c121ba92c6d19616e578f9de0f579",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pass",
+  "notes": "2026-10-04实际重新查看完整原图，并对照当前图意、来源小节、标签和图注；内容、纸底、文字、箭头及像素均未变。358px可读性沿用2026-09-30对同一字节图片的实际浏览器审阅，不声称本轮重新打开浏览器预览。当前上下文关系未变；具体事实影响逐项记录。无新生成或像素编辑。",
+  "fact_assessment": {
+    "reasoning-default-guidance": "图中没有Effort档位、菜单或默认值；理解判断和工具读取操作的分工不受档位事实更新影响。",
+    "gpt6-model-use-position": "图中没有型号和选择建议；模型与Codex工具的关系仍成立，加入6.1 Sol不改变图意。"
+  }
+}

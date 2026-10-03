@@ -1,6 +1,6 @@
 schema: 2
 unit: running-control
-input_sha256: fe0a63ae5087f14720cfc4d9c51324050acf9e29c26863653b2a25861d151d94
+input_sha256: fbc47f28904b5d546044e8de45738f698f1a3cc1824dceccf4f809e4e463a984
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -37,50 +37,55 @@ study_brief:
   case_plan: 沿用四项待办与保存失败的自设情景；不展示虚构的运行日志或耗时。
 study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
-  result: pending
-  reason: 2026-10-04写前提要，保存后再修订和复核。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 已会发送、保存、选模型与权限、处理批准请求。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
-    result: pending
-    reason: 普通任务的直接停止控件仍缺官方文字与实机证据，Steer停止要求不能当作即时中断已经教完。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。保持待定。
-      2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    result: pass
+    reason: 全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   information_value:
     result: pass
-    reason: 状态表、队列可编辑、停止与撤销分开、侧聊不改主任务等要点保留。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 否定式表述由17处降到2处；不展示虚构的运行日志。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: 通知键位分Windows与Mac；语音屏幕上下文仅Mac。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 保存失败与四项待办情景为自设。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并核对9个锚点。本轮实际读取prompting、reference/commands、notifications、reference/settings（2026-09-29）、features/voice、reference/slash-commands（2026-09-28）。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。正文没有写停止按钮、Esc或任何CLI按键。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全章回读：状态识别→Steer/Queue→清除旧队列、发送停止要求、确认运行状态→检查文件→继续。自然语言停止与即时中断边界明确，正文没有承诺某个未经证实的按钮。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: '**Steer**把补充加入当前运行'
     fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
     locator: Steering and queuing
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: Steer/Queue区别及示例为独立安排。
     notice: ''
@@ -88,13 +93,13 @@ fact_review:
     fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/reference/settings
     locator: General
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 先看默认，再回任务发送，快捷键不猜。
     notice: ''
@@ -102,13 +107,13 @@ fact_review:
     fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
     locator: Steering and queuing
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 可编辑排序发送删除；排队不等于影响当前运行。
     notice: ''
@@ -116,13 +121,13 @@ fact_review:
     fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
     locator: Steering and queuing; narrow or stop
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 只讲送入要求和检查确认，不声称立即杀掉当前工具；直接按钮缺口仍保留。
     notice: ''

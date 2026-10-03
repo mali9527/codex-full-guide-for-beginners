@@ -1,6 +1,6 @@
 schema: 2
 unit: latest-models
-input_sha256: 85b065f09266c328cd850cd805bef9fc110f5ed06044706f0ef1a7b97b00fdfa
+input_sha256: dc432f32cde8c74c8a0a7484dfc878eba4d7780285d1779aeacc00c6f5eb2f3e
 evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
@@ -37,50 +37,55 @@ study_brief:
   case_plan: 沿用本书自编备忘中的发照片一例，以及自设的两台设备资料比较情景；示例只说明用法，不写成模型测试结果。本轮修订压缩重复的限制句，把判断放在段首。
 study_commit: 072be7c12f042abdb3dee5675671eb5b178142b5
 study_review:
-  result: pending
-  reason: 实际官方阅读后保存提要与原正文，再作定向修订。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 只用日常电脑经验；推理、Effort在第一次出现处结合合并提醒的例子解释，未假定读者已装应用。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
     result: pass
-    reason: 先讲能帮什么，再讲设置；Effort只讲到Light起步，档位细节回指第6章，权限与运行中补充分别指向第7、8章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   information_value:
     result: pass
-    reason: 删去逐段附带的限制提醒（否定式表述由22处降到7处），保留「换模型不补材料」「工作约定不替代权限」两处确会误解的说明。 2026-09-30
-      Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 判断放在段首，例子沿用发照片与设备比较；设问与对仗句已去掉。是否读来轻松仍需真人试读，本项只代表编辑复核。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: 未绑定语种或国家；型号、按钮保留原词；日期为完整年月日。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 两台设备、发照片与请求示例均为本书自设，文中已说明不是模型测试结果；未取用官方示例。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并逐条核对27个锚点仍各出现一次。本轮实际读取models、model-selection、prompting三页（2026-09-29）；developers.openai.com上的Astra型号页、指南与文章Claude未重读，对应断言原文未改，沿用原记录的定位与核对日期。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: OpenAI把它定位为面向高难度完整任务的模型，强调跨资料、跨工具、跨步骤的判断能力。
     fact_id: gpt6-model-use-position
     url: https://learn.chatgpt.com/docs/models
     locator: Where each model shines；Choose a model
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。正文是官方定位，不是比较测试或所有任务效果承诺。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 正文是官方定位，不是比较测试或所有任务效果承诺。
     notice: ''
@@ -326,13 +331,13 @@ fact_review:
     fact_id: gpt6-model-use-position
     url: https://learn.chatgpt.com/docs/model-selection
     locator: Pick a model；Astra/Sol/Luna；Effort
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。覆盖本节三型号表的用途归纳；角色重叠，非唯一选择或跑分结论。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 覆盖本节三型号表的用途归纳；角色重叠，非唯一选择或跑分结论。
     notice: ''
@@ -340,13 +345,13 @@ fact_review:
     fact_id: astra-outcome-guidance
     url: https://learn.chatgpt.com/docs/model-selection
     locator: Experiment
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。同输入比较与选择较轻够用设置；核对项由本书任务自行设计。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 同输入比较与选择较轻够用设置；核对项由本书任务自行设计。
     notice: ''
@@ -354,13 +359,13 @@ fact_review:
     fact_id: desktop-model-control
     url: https://learn.chatgpt.com/docs/models
     locator: Pick a reasoning effort
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。解释推理投入而非回复字数；复杂判断/等待和消耗的关系限于可能改善。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 解释推理投入而非回复字数；复杂判断/等待和消耗的关系限于可能改善。
     notice: ''
@@ -368,27 +373,27 @@ fact_review:
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Pick a reasoning effort：Astra Light
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。这是Astra建议起点，不是全部模型、账号已选中的默认档。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 这是Astra建议起点，不是全部模型、账号已选中的默认档。
+    rationale: 当前Models：Power仅示例，Astra Light、Luna High；6.1 Sol用当前默认。保留Max/Ultra的分别用途。
     notice: ''
   - anchor: 投入增加，可能改善复杂判断，也会增加等待和使用消耗。
     fact_id: desktop-model-control
     url: https://learn.chatgpt.com/docs/models
     locator: Pick a reasoning effort
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。官方时间/token权衡转为非编程解释；具体幅度与质量不作保证。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 官方时间/token权衡转为非编程解释；具体幅度与质量不作保证。
     notice: ''
@@ -396,27 +401,27 @@ fact_review:
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Max and Ultra
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。官方说多数任务不需要最高档；正文是初学建议，不隐去以后选择。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 官方说多数任务不需要最高档；正文是初学建议，不隐去以后选择。
+    rationale: 当前Models：Power仅示例，Astra Light、Luna High；6.1 Sol用当前默认。保留Max/Ultra的分别用途。
     notice: ''
   - anchor: 在桌面Codex输入框下方，打开模型与推理设置控件。
     fact_id: desktop-model-control
     url: https://learn.chatgpt.com/docs/models
     locator: Choose a model in the desktop app
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。文档位置已核对，未实际点击Windows/Mac客户端。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 文档位置已核对，未实际点击Windows/Mac客户端。
     notice: ''
@@ -424,29 +429,43 @@ fact_review:
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Power；Advanced
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。Power组合预设与Advanced分选关系；以可用菜单为条件，不将示意默认当实机。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: Power组合预设与Advanced分选关系；以可用菜单为条件，不将示意默认当实机。
+    rationale: 当前Models：Power仅示例，Astra Light、Luna High；6.1 Sol用当前默认。保留Max/Ultra的分别用途。
     notice: ''
   - anchor: 实际可选项和默认值会受账号、客户端、工作区与开放进度影响。
     fact_id: gpt6-model-use-position
     url: https://learn.chatgpt.com/docs/models
     locator: Availability；Power defaults
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档核对；未实际比较模型、操作桌面或验证账号可用性。型号与预设条件明确；Changelog的逐步开放不升级为全账号稳定。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 型号与预设条件明确；Changelog的逐步开放不升级为全账号稳定。
+    notice: ''
+  - anchor: GPT-6.1 Sol正在按账号和客户端开放
+    fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/models
+    locator: GPT-6.1 Sol rollout
+    checked_on: '2026-10-04'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；本书说明实际可用条件，非操作实测。
+    support: supported
+    rationale: 新增型号与开放条件，不推广为所有账号可用。
     notice: ''
   unused_facts: {}
   reading_reuse:

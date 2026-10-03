@@ -1,11 +1,11 @@
-# Verification scope
+# Reading and verification scope
 
-This is a public reading draft, not a fully tested final tutorial. The Chinese text includes an opening guide, 24 chapters and an appendix. English is an overview only.
+This is a documentation-based beginner guide. The opening, 24 chapters and appendix are in Chinese; English pages provide navigation only.
 
-Official documentation was reviewed chapter by chapter, mainly through 29 September 2026. Claude edited the manuscripts; Codex reviewed the new concept figures and reading pages. These are distinct from hands-on app testing and human reader trials.
+Official reading, published UI image inspection, file-level examples, AI editing and human testing are separate forms of evidence. Running every step on both operating systems is not a prerequisite for this edition, and has not been claimed.
 
-Seven concept diagrams have been visually reviewed. They are not app screenshots. Nineteen proposed interface illustrations still need real screenshot evidence. The original example files can be inspected and compared, but file-level demonstrations do not establish successful Windows and Mac workflows.
+Most chapter research dates from September 2026. On October 4, selected sections were checked for model choice, Fast usage, steering, archive recovery, permissions and related UI controls. This is not a blanket refresh of all facts. The current update revises eight units and reviews their prerequisite impact on the remaining chapters.
 
-Outstanding validation includes fresh installation and sign-in, Windows first-run setup, complete desktop paths in Chapters 3–4, operational records for Chapters 5–24, the direct stop control for ordinary running tasks, and human beginner trials. Four editorial review dimensions remain pending in Chapters 3, 4, 8 and 23. Formal publication checks remain blocked; a passing draft check is not proof of operational verification.
+Seven concept figures already exist. Five interface candidates based on viewed source images still need specification and publication review. Historical screenshots are not presented as current account tests. Direct interruption controls for Computer Use remain a documentation gap; Chapter 23 provides cancellation and file/screenshot alternatives when the stopping method is unclear.
 
-Report a mismatch with the chapter, operating system, app version, visible options and observed result. Redact personal details before attaching screenshots. See the [Chinese verification table](阅读与核验说明.md) for the chapter-level scope.
+No new Windows/Mac GUI walkthrough or human reader trial was performed. Ordinary draft checks do not certify a final edition. Report discrepancies through the repository issues, including the chapter, platform, app version and visible message, with private information removed.

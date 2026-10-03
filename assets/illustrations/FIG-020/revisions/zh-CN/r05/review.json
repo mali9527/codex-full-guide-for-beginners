@@ -1,0 +1,19 @@
+{
+  "image_sha256": "edd8b393fd795c5c2bc8abd90fefa111ccc8273d9d49493ca8d8724394e80617",
+  "input_fingerprint": "2bd6b4e7b86647093382532cb04ad8fd2f9824287285f95a1128a1b72610e929",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pass",
+  "notes": "2026-10-04实际重新查看完整原图，并对照当前图意、来源小节、标签和图注；内容、纸底、文字、箭头及像素均未变。358px可读性沿用2026-09-30对同一字节图片的实际浏览器审阅，不声称本轮重新打开浏览器预览。当前上下文关系未变；具体事实影响逐项记录。无新生成或像素编辑。",
+  "fact_assessment": {
+    "reasoning-default-guidance": "图中两个只读检查汇入主任务，没有Ultra选择器或默认档位；Effort更新不改变分工与合稿关系。"
+  }
+}

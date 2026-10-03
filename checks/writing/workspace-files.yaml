@@ -1,6 +1,6 @@
 schema: 2
 unit: workspace-files
-input_sha256: dab43a736e0ac9a487d1eea44b363557f08e574f4b2948e7008b9bf16c763982
+input_sha256: 22e1dbecabf99c84238dac44a921c9ad623e8c8e95fb7824f21d03fc4fa4d746
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -38,39 +38,43 @@ study_brief:
   case_plan: 三条自设提醒（水杯两次、还书一次），只回复文字；「我的待办」已连接但本章不读写其中文件。修订把重复于后章的设置讲解压成指路，让第一条消息更早出现在读者眼前。
 study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
-  result: pending
-  reason: 2026-10-04写前提要，保存后再修订和复核。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 承接第2章已进入Codex；路径在核对位置时解释；提示词、项目与任务在用到处说明。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
-    result: pending
-    reason: 首次运行前仍未教读者怎样停下一次普通运行。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。需在Windows与Mac实机确认后补入，本项保持待定。
-      2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    result: pass
+    reason: 全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   information_value:
     result: pass
-    reason: 全章由约7150字减到约6400字：把与第6、7、9、10章重复的讲解压成指路，合并「批准／批注」一节；框架要求本章承担的入口一项未删。 2026-09-30
-      Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 三条提醒的例子贯穿发送、读状态和追加；设置表缩成四行。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: 路径给Windows与Mac两种写法；听写键位写明Mac上也是Control；命令菜单与斜杠菜单分开。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 水杯、还书三条提醒与「我的待办」材料为本书自编。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并核对42个锚点。本轮实际读取projects、reference/commands、permission-modes、prompting、environments/modes、models、agent-configuration/speed、artifacts-viewer、reference/settings（2026-09-29），features/voice、reference/slash-commands、plugins（2026-09-28），automations（2026-09-27）。普通任务运行中的直接停止控件或按键，官方commands、prompting两页均无文字说明，Claude本轮也没有GUI操作；应用语言包里的「停止」等词条按写作约定只算线索。正文未写任何停止按钮或按键。
-    本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全章回读：先连接并确认文件夹、选Local和权限，再发短消息；进入文件写入前，已有Settings/Steer入口、Queue区别和等待确认。没有教即时中断，也没有把它作为本例成功条件。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: 侧栏用来找到工作，输入框用来提出要求，消息区域用来看处理过程和回复
     fact_id: desktop-basic-navigation
@@ -170,17 +174,17 @@ fact_review:
     support: supported
     rationale: 按工作状态解释该看什么；操作表为判断建议。
     notice: ''
-  - anchor: 新消息是立即介入还是排队等待，受设置和当前状态影响。
+  - anchor: 选择 **Steer**，回到原任务发送
     fact_id: desktop-followup-behavior
     url: https://learn.chatgpt.com/docs/prompting
     locator: Steer or queue a follow-up
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 所列官方段落支持的文档说明；不是本机GUI、安装、账号可用性或双平台实测。这里只辨区别，未宣称固定默认发送行为。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 这里只辨区别，未宣称固定默认发送行为。
     notice: ''

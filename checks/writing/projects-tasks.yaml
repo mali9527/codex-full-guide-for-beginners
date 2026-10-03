@@ -1,6 +1,6 @@
 schema: 2
 unit: projects-tasks
-input_sha256: 8632f55ba6ac32fb27d1715f134029853d1047c5632c1ed156924d1fb2f14e82
+input_sha256: 14ff0f996568de48888df87e16c5a07ae1cf431df6cf2bb1793c4b7e9985b27f
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -36,38 +36,44 @@ study_brief:
   case_plan: 沿用待办清单与自设的资料查证任务名。
 study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
-  result: pending
-  reason: 2026-10-04写前提要，保存后再修订和复核。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+    chats→Unarchive。旧Data Controls桌面备用说法已移除。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 已有一个项目和完成的任务。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
     result: pass
-    reason: 先找回并核对原任务，再接续；上下文与分支留第13章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   information_value:
     result: pass
-    reason: 修正归档恢复路径：原稿写Settings → Archived chats，项目页对桌面应用写的是Settings > Data Controls
-      > Archived chats；正文现写先找Archived chats、未见时到Data Controls里找。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 否定式表述由16处降到2处。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: 键位分Mac与Windows；chat与任务的对应已说明。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 任务名与接续说明为自设。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并核对锚点。本轮实际读取projects、reference/settings、reference/commands（2026-09-29）、reference/slash-commands（2026-09-28）。归档恢复的实际位置两页官方资料写法不同，待GUI核对；Search
-    chats在快捷键页没有默认键位，正文未给键位。 本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
+    chats→Unarchive。旧Data Controls桌面备用说法已移除。 从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: 仍然各有自己的交流记录
     fact_id: desktop-chat-organization
@@ -143,13 +149,13 @@ fact_review:
     fact_id: desktop-chat-retrieval
     url: https://learn.chatgpt.com/docs/projects
     locator: Organize chats desktop
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 桌面搜索任务非搜索所有磁盘文件。
     notice: ''
@@ -157,29 +163,29 @@ fact_review:
     fact_id: desktop-chat-retrieval
     url: https://learn.chatgpt.com/docs/reference/settings
     locator: Archived chats分区
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 设置参考页把Archived chats列为独立分区并用Unarchive恢复；原锚点所写的单一路径因两页写法不同而改写。
+    rationale: Settings Archived chats及Projects桌面分支一致支持该路径。
     notice: ''
-  - anchor: 到 **Data Controls** 里找
+  - anchor: 那是网页入口的路径
     fact_id: desktop-chat-retrieval
     url: https://learn.chatgpt.com/docs/projects
-    locator: Organize chats：归档恢复
-    checked_on: '2026-09-29'
+    locator: Organize projects and chats中web分支
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 项目页对桌面应用写Settings > Data Controls > Archived chats；与设置参考页写法不同，正文作为第二查找位置，待GUI核对。
+    rationale: 与桌面分支分开读取，Data Controls只用于说明网页差异，不再作为桌面备用入口。
     notice: ''
   unused_facts:
     desktop-remote-host: 本章不教远程，条件与完整可选设置在第17章。

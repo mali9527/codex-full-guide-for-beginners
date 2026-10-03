@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-005",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 779121,
+    "sha256": "ed0f6df9b5f7a065b20938336ed3c04c93104f5fce3a2e09b70d2d2bd1bc4879"
+  },
+  "input_fingerprint": "2cee017c1bb26bcc84e0a67bed19dc18e89c121ba92c6d19616e578f9de0f579",
+  "tool": "editorial-context-review-no-generation",
+  "receipt": {
+    "mode": "context-review",
+    "tool": "editorial-context-review-no-generation",
+    "input_fingerprint": "2cee017c1bb26bcc84e0a67bed19dc18e89c121ba92c6d19616e578f9de0f579",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r05",
+      "image_sha256": "ed0f6df9b5f7a065b20938336ed3c04c93104f5fce3a2e09b70d2d2bd1bc4879",
+      "input_fingerprint": "0c41933277b6a944f1ed97330d76d65ba179e31e70e417ec2e156a3d6f14594d"
+    },
+    "fact_assessment": {
+      "reasoning-default-guidance": "图中没有Effort档位、菜单或默认值；理解判断和工具读取操作的分工不受档位事实更新影响。",
+      "gpt6-model-use-position": "图中没有型号和选择建议；模型与Codex工具的关系仍成立，加入6.1 Sol不改变图意。"
+    },
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-03T16:44:07.018859+00:00"
+}

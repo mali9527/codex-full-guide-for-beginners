@@ -1,0 +1,20 @@
+{
+  "image_sha256": "a61143a0559e158db083f27b19e109ee08b4d5c23f94063f4aa212d86797ca5c",
+  "input_fingerprint": "81a26e728471a70c67c2184628ced9e7c3ce840751035bc815c3a1af2b5bbc81",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "placement": "pass",
+  "notes": "2026-10-04实际重新查看完整原图，并对照当前图意、来源小节、标签和图注；内容、纸底、文字、箭头及像素均未变。358px可读性沿用2026-09-30对同一字节图片的实际浏览器审阅，不声称本轮重新打开浏览器预览。当前上下文关系未变；具体事实影响逐项记录。无新生成或像素编辑。",
+  "fact_assessment": {
+    "reasoning-default-guidance": "图中仅材料与成果文件归属，没有型号或Effort建议。",
+    "desktop-followup-behavior": "新增运行纠正入口不改变原件/结果目录与v1/v2文件关系；图中不表示运行控制。"
+  }
+}

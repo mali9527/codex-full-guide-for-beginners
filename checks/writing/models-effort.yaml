@@ -1,6 +1,6 @@
 schema: 2
 unit: models-effort
-input_sha256: 1d782ec9e2032c7f331491455300411c7bb9d8952d8ba92e48af650dcb98c00c
+input_sha256: ba0b9fe335e9a3e030131be858dd9dbca348e334352c69b9cb450b151f08d02f
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -41,50 +41,55 @@ study_brief:
   case_plan: 沿用漏掉「选10张」与周五前发照片的更新两例，均为自设情景。
 study_commit: 072be7c12f042abdb3dee5675671eb5b178142b5
 study_review:
-  result: pending
-  reason: 实际官方阅读后保存提要与原正文，再作定向修订。
+  result: pass
+  reason: 已对照写前提交、官方理解和修订稿；全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
 reader_review:
   prior_knowledge:
     result: pass
-    reason: 第3、4章已用过模型控件；Power、Effort、Fast在调整之前各自解释。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
   concept_timing:
     result: pass
-    reason: 先找到当前任务的控件再谈调档；子代理细节指向第18章。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   information_value:
     result: pass
-    reason: 补入六个Power预设的清单和起始预设，读者打开控件能对上名称；倍率只说明用量。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   natural_style:
     result: pass
-    reason: 一次只改一项的建议保留；否定式表述由15处降到3处。真人试读未做。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   localization:
     result: pass
-    reason: 型号与档位保留原词；不比较价格。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
   independent_creation:
     result: pass
-    reason: 漏掉「选10张」与照片更新两例为自设情景。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+    reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
+      本项为当前引擎编辑判断；未记为GUI或真人验证。
 fact_review:
   coverage: reviewed
-  reason: Claude通读成稿并核对锚点。本轮实际读取models、agent-configuration/speed、model-selection（2026-09-29）、reference/slash-commands（2026-09-28）。起始预设Sol
-    Light与Advanced中的逐型号起步建议在正文分开表述，未合并成一个「默认值」。 本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。
-    本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
-  docs_checked_on: '2026-09-29'
+  reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+  docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
-    locator: 2026-09-23至2026-09-28各条：CLI 0.156.1至0.158.0、macOS安全更新26.924、iOS 1.2026.258
-    checked_on: '2026-09-29'
-    effect: Claude于本批实际读取；近一周条目为CLI、macOS安全更新与iOS版本，未见改变本章桌面操作的说明。CLI版本与键位不转写为桌面事实。
+    locator: 2026-10-01 CLI 0.160.0条目
+    checked_on: '2026-10-04'
+    effect: 该条目为CLI变化，不用作桌面界面证明；Models/Speed的当前选择与用量变化按对应原页处理。
   claims:
   - anchor: 查看输入框下方的模型与推理控件
     fact_id: desktop-model-control
     url: https://learn.chatgpt.com/docs/models
     locator: Choose a model
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 实际入口与当前选中状态，未猜默认型号。
     notice: ''
@@ -92,15 +97,15 @@ fact_review:
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Power / Advanced
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 预设与单项控制分开，示意值不当本人默认。
+    rationale: 当前Models：Power仅示例，Astra Light、Luna High；6.1 Sol用当前默认。保留Max/Ultra的分别用途。
     notice: ''
   - anchor: '**`/model`**选择当前任务的模型'
     fact_id: desktop-slash-entries
@@ -120,13 +125,13 @@ fact_review:
     fact_id: gpt6-model-use-position
     url: https://learn.chatgpt.com/docs/model-selection
     locator: Meet the models / Experiment
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 本书给任务起点，不称实测横评或唯一适配。
     notice: ''
@@ -134,43 +139,43 @@ fact_review:
     fact_id: desktop-model-control
     url: https://learn.chatgpt.com/docs/models
     locator: Choose a model
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
     rationale: 推理投入不是回复长度或权限。
     notice: ''
-  - anchor: '**Astra用Light，Sol用Medium，Luna用High**'
+  - anchor: '**Astra用Light，Luna用High；GPT-6.1 Sol先保留客户端当前默认投入**'
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Pick a reasoning effort
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 官方起步建议，不是统一默认或跨代等值。
+    rationale: 当前Models：Power仅示例，Astra Light、Luna High；6.1 Sol用当前默认。保留Max/Ultra的分别用途。
     notice: ''
   - anchor: '**Max**让所选模型在一个任务上投入更多推理'
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Know when to use Max or Ultra
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 不承诺人人都可见；Ultra分工及Luna排除已反查。
+    rationale: 当前Models：Power仅示例，Astra Light、Luna High；6.1 Sol用当前默认。保留Max/Ultra的分别用途。
     notice: ''
   - anchor: '**`/fast`**切换'
     fact_id: desktop-slash-entries
@@ -186,34 +191,48 @@ fact_review:
     support: supported
     rationale: 桌面菜单动作，不采用CLI参数。
     notice: ''
-  - anchor: credits按Standard的2.5倍速率消耗
+  - anchor: 使用另购credits或Enterprise按量额度时，按2倍计
     fact_id: fast-mode-choice
     url: https://learn.chatgpt.com/docs/agent-configuration/speed
     locator: Fast mode
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档指定范围；可见选项受当前平台、账号、版本和工作区条件影响。本轮非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 型号与可用条件限定；倍率是消耗而非总时间。
+    rationale: 当前Speed区分订阅内含额度2.5倍与另购credits/Enterprise按量2倍，均非任务速度保证。
     notice: ''
   - anchor: 六个预设依次是Luna High、Sol Light、Sol Medium、Astra Light、Astra Medium和Astra Extra
       High
     fact_id: reasoning-default-guidance
     url: https://learn.chatgpt.com/docs/models
     locator: Power presets
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
     surface: codex-desktop
     platforms:
     - windows
     - mac
     availability: unspecified
-    conditions: 官方文档所列范围；实际显示受平台、账号、版本和工作区条件影响。本轮为文档核对，非GUI或双平台实测。
+    conditions: 2026-10-04官方对应段落确认；实际可用项仍受平台、账号、版本与工作区影响，非GUI实测。
     support: supported
-    rationale: 原文列出六个预设并注明Sol Light为起始预设、部分付费档位不含Astra Extra High；正文写明以控件显示为准。
+    rationale: 当前Models：Power仅示例，Astra Light、Luna High；6.1 Sol用当前默认。保留Max/Ultra的分别用途。
+    notice: ''
+  - anchor: GPT-6.1 Sol有自己的开放进度
+    fact_id: gpt6-model-use-position
+    url: https://learn.chatgpt.com/docs/models
+    locator: GPT-6.1 Sol rollout
+    checked_on: '2026-10-04'
+    surface: codex-desktop
+    platforms:
+    - windows
+    - mac
+    availability: unspecified
+    conditions: 官方文档指定范围；本书说明实际可用条件，非操作实测。
+    support: supported
+    rationale: 新增型号与开放条件，不推广为所有账号可用。
     notice: ''
   unused_facts:
     desktop-file-shortcuts: 本章不教授新的快捷键，设置入口采用对应功能专页；该事实作为已学查找入口保留关联。
