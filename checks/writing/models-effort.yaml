@@ -2,13 +2,13 @@ schema: 2
 unit: models-effort
 input_sha256: 1d782ec9e2032c7f331491455300411c7bb9d8952d8ba92e48af650dcb98c00c
 evidence_paths: []
-batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-30'
+batch_started_on: '2026-10-04'
+reviewed_on: '2026-10-04'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-29'
-  base_manuscript_sha256: bd1c0140f7002e2e692a4946e781a56fdd5a712151b5103b129c35af9da75ae4
+  prepared_on: '2026-10-04'
+  base_manuscript_sha256: 5c58adcb91018d431a675155258bbd435469e32d72210df23f8c08cfd10f4649
   reader_goal: 能在当前任务找到模型控件，读懂Power预设与Advanced，按任务需要选模型与Effort，知道Max、Ultra、Fast各改变什么。
   reader_start:
   - 已会查看用量；在第4章用过模型控件。
@@ -18,38 +18,31 @@ study_brief:
   - Effort不是回答长度
   - Fast换的是速度与用量
   official_readings:
-  - fact_id: reasoning-default-guidance
+  - fact_id: gpt6-model-use-position
     url: https://learn.chatgpt.com/docs/models
-    locator: Power presets；Advanced；起步建议；Max与Ultra
-    checked_on: '2026-09-29'
-    understanding: 六个Power预设依次为Luna High、Sol Light、Sol Medium、Astra Light、Astra Medium、Astra
-      Extra High；Advanced可分选模型、推理投入和速度；Max加深单任务推理，Ultra用子代理并行，Luna不支持Ultra。
-    teaching_use: 补一段解释预设把型号和档位组合在一起，列出官方当前给出的六个组合，说明以自己看到的为准。
+    locator: Recommended models / GPT-6.1 Sol / Pick a reasoning effort
+    checked_on: '2026-10-04'
+    understanding: 模型建议随型号变化；示例控件默认不代表每个账号。Astra开篇保留，补6.1 Sol可用条件。
+    teaching_use: 表格只作任务起点；操作从当前可用设置开始，不把旧Sol Medium强加给新版。
   - fact_id: fast-mode-choice
     url: https://learn.chatgpt.com/docs/agent-configuration/speed
-    locator: 速率说明
-    checked_on: '2026-09-29'
-    understanding: Astra、Sol、Luna的Fast按Standard的2.5倍计credits；用ChatGPT登录时在桌面、CLI和扩展可用。
-    teaching_use: 保留倍率，强调它描述用量而非整项任务的提速比例。
-  - fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/model-selection
-    locator: 比较建议
-    checked_on: '2026-09-29'
-    understanding: 用相同输入比较，保留满足质量要求的最轻设置。
-    teaching_use: 结尾落在用结果决定是否调整。
+    locator: Fast mode
+    checked_on: '2026-10-04'
+    understanding: 内含额度与另购credits倍率不同，都不是任务提速倍率。
+    teaching_use: 纠正原文统一credits2.5倍，解释两种消耗口径，不展开购买建议。
   teaching_sequence:
   - 找到当前任务控件→读Power预设→需要时进Advanced→核对显示
   - 按工作需要的判断选模型→Effort含义与起步建议→Max与Ultra
   - Fast与/fast→用具体问题决定是否调整
+  - 沿用原讲解顺序；Power示例与实际默认分开，6.1 Sol从可用默认开始，Fast按用量来源区分。
   defer:
   - 子代理分工留第18章
   - 额度读法已在第5章
   case_plan: 沿用漏掉「选10张」与周五前发照片的更新两例，均为自设情景。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照写前提要：找到控件→读Power预设→需要时进Advanced→按工作需要选模型→Effort含义与起步建议→Max与Ultra→Fast→用结果决定是否调整。models一页的六个预设与起始预设已写入。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+  result: pending
+  reason: 实际官方阅读后保存提要与原正文，再作定向修订。
 reader_review:
   prior_knowledge:
     result: pass
@@ -224,3 +217,20 @@ fact_review:
     notice: ''
   unused_facts:
     desktop-file-shortcuts: 本章不教授新的快捷键，设置入口采用对应功能专页；该事实作为已学查找入口保留关联。
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/models
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://learn.chatgpt.com/docs/reference/slash-commands
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://learn.chatgpt.com/docs/model-selection
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://learn.chatgpt.com/docs/agent-configuration/speed
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。

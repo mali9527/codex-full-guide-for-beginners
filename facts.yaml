@@ -554,14 +554,12 @@
   critical: true
   ttl_days: 90
 - id: reasoning-default-guidance
-  claim: 官方Models建议先用账号当前可用Power；Advanced分选模型、Effort和速度。起步建议Sol Medium、Luna High、Astra
-    2026-09-29复读补充：同页展示六个Power预设，依次为Luna High、Sol Light（起始预设）、Sol Medium、Astra Light、Astra
-    Medium、Astra Extra High，部分付费档位不含Astra Extra High；预设清单以当前账号控件显示为准，起始预设不等同于Advanced中的逐型号起步建议。
-    Light，并非统一实际默认。Light/Medium/High/Extra High随任务分析需要选择，代际不能机械对应。Max增加单任务推理投入；Ultra用子代理并行，Luna不支持Ultra；可用项仍受模型/账号/设置影响。
+  claim: 先保留账号当前可用Power；Advanced分别选模型、Effort和速度。Models当前六档为演示示例，不能宣称Sol Light是所有账号默认。Astra建议Light、Luna
+    High；GPT-6.1 Sol从客户端当前默认投入开始。代际档位不可机械比较；Max更多单任务推理，Ultra子代理并行，Luna不支持Ultra。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
+    baseline: 2026-10-04定向复读Models、Model selection、Speed；文档事实，非GUI、性能或双平台实测。
     surfaces:
     - codex-desktop
     platforms:
@@ -570,8 +568,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/models
-    checked_on: '2026-09-29'
-  checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: startup
   status: confirmed
   critical: true
@@ -815,11 +813,12 @@
   critical: true
   ttl_days: 90
 - id: fast-mode-choice
-  claim: Fast通过增加使用量换取模型速度；与模型和推理投入是不同选择。官方Speed现列出GPT-6 Astra/Sol/Luna可用时按Standard的2.5倍credits计；ChatGPT登录与API计费范围不同。不能据此保证任务总耗时固定缩短，或把旧型号速度倍率推广给GPT-6。
+  claim: Fast通过增加用量换取模型速度，支持6.1 Sol、Astra、6 Sol和Luna时可选。官方Speed区分：订阅内含额度按Standard
+    2.5倍消耗；另购credits和Enterprise按量使用按2倍计。非整体任务提速倍率；API另按API规则。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-29前四章实质修订的所列官方段落；来源逐页日期保留，不代表GUI、双平台路径或账号默认实测
+    baseline: 2026-10-04定向复读Models、Model selection、Speed；文档事实，非GUI、性能或双平台实测。
     surfaces:
     - codex-desktop
     platforms:
@@ -828,8 +827,8 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/agent-configuration/speed
-    checked_on: '2026-09-29'
-  checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: quota
   status: confirmed
   critical: true
@@ -1134,12 +1133,12 @@
   critical: false
   ttl_days: 90
 - id: gpt6-model-use-position
-  claim: 官方将GPT-6 Astra用于需要持续判断的复杂多步骤工作，Sol用于日常及复杂工作，Luna用于明确且可重复的任务。桌面可在输入区下方选择账号可用模型；型号出现和默认设置受客户端、登录方式、工作区及开放进度影响。2026-09-22的更新说明将GPT-6
-    Sol与Luna标为逐步开放；不据页面列出就认定全部账号可用或已全面稳定。
+  claim: 当前Models与Model selection将Astra用于最难的多步完整任务；GPT-6.1 Sol用于重复、持续的复杂工作；Luna用于明确、重复的任务。6.1
+    Sol逐步开放，账号/客户端/工作区条件决定可见性；Enterprise/Edu默认关闭须管理员启用。保留6 Sol等旧型号不等于新版已全面可用。
   scope:
     product: codex
     evidence: official-documentation-only
-    baseline: 2026-09-28新模型开篇定向阅读；文档定位与用途已核对，非性能对比、GUI或双平台实测；当前开篇采用；型号逐步开放条件保留，文档未明示稳定成熟度
+    baseline: 2026-10-04定向复读Models、Model selection、Speed；文档事实，非GUI、性能或双平台实测。
     surfaces:
     - codex-desktop
     platforms:
@@ -1148,12 +1147,12 @@
     availability: unspecified
   sources:
   - url: https://learn.chatgpt.com/docs/models
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
   - url: https://learn.chatgpt.com/docs/model-selection
-    checked_on: '2026-09-29'
+    checked_on: '2026-10-04'
   - url: https://learn.chatgpt.com/docs/changelog
     checked_on: '2026-09-29'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-04'
   category: startup
   status: confirmed
   critical: true

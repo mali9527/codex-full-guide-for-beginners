@@ -5,13 +5,13 @@ evidence_paths:
 - examples/ch04-notes-to-todos/README.md
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/随手记.txt
 - examples/ch04-notes-to-todos/起始材料/我的待办/材料/补充说明.txt
-batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-30'
+batch_started_on: '2026-10-04'
+reviewed_on: '2026-10-04'
 reviewer: codex
 study_brief:
   mode: revision
-  prepared_on: '2026-09-29'
-  base_manuscript_sha256: 1914ffeaa18ed69aaf3752abce5fe735aae569d3a3ea4f23324fc3bdb09b3f2e
+  prepared_on: '2026-10-04'
+  base_manuscript_sha256: c20225da11edf5fdc1897eeb259372e5be60da1878d4d3fae599d02dade1424a
   reader_goal: 读完能说出Astra、Sol、Luna各自先考虑什么工作，知道Effort指思考投入、Astra从Light起步，并知道从哪一章开始读。
   reader_start:
   - 只有日常电脑与办公经验，尚未安装应用，也没有发过任何请求。
@@ -20,37 +20,25 @@ study_brief:
   - 模型、Codex入口和工具各管什么
   - Effort是思考投入，不是回答长短
   official_readings:
-  - fact_id: reasoning-default-guidance
-    url: https://learn.chatgpt.com/docs/models
-    locator: Choose a model；Power presets与Advanced；起步建议
-    checked_on: '2026-09-29'
-    understanding: 页面给出六个Power预设和Advanced分选；起步建议为Astra Light、Sol Medium、Luna High；Luna不支持Ultra；可用性取决于开放进度、登录方式和客户端。
-    teaching_use: 开篇只讲Astra从Light起步和选择入口，预设清单与Max、Ultra留第6章，不在导读堆档位。
   - fact_id: gpt6-model-use-position
-    url: https://learn.chatgpt.com/docs/model-selection
-    locator: 各模型适用工作与比较建议
-    checked_on: '2026-09-29'
-    understanding: Luna适合范围明确的小改动和提取，Sol适合日常研究与需要判断的工作，Astra适合需要广泛上下文和完整成果的工作；建议用相同输入比较并保留满足质量要求的最轻设置。
-    teaching_use: 用一张三行表给起点，随后用「相同材料比较结果」代替型号排名。
-  - fact_id: astra-outcome-guidance
-    url: https://learn.chatgpt.com/docs/prompting
-    locator: Describe the result；Set boundaries；Make the result ready to use
-    checked_on: '2026-09-29'
-    understanding: 官方建议先说成果、相关背景和少量关键边界，不用固定模板；后续用跟进消息修改。
-    teaching_use: 请求示例只保留读者、依据、何时询问和完成标准四件事，并说明不是要背的句式。
+    url: https://learn.chatgpt.com/docs/models
+    locator: Recommended models / GPT-6.1 Sol / Pick a reasoning effort
+    checked_on: '2026-10-04'
+    understanding: 模型建议随型号变化；示例控件默认不代表每个账号。Astra开篇保留，补6.1 Sol可用条件。
+    teaching_use: 表格只作任务起点；操作从当前可用设置开始，不把旧Sol Medium强加给新版。
   teaching_sequence:
   - 从整理几份资料的实际麻烦进入→说明Astra的定位→四种能帮上忙的情形各用一个自设小例
   - 分清模型、Codex与工具→怎样提要求→何时选Astra与Effort起点
   - 已安装者：输入框下方模型控件→Advanced→核对型号与档位；未安装者指向第1、2章
+  - 沿用原讲解顺序；Power示例与实际默认分开，6.1 Sol从可用默认开始，Fast按用量来源区分。
   defer:
   - Power各预设、Max、Ultra、Fast与用量关系留第6章
   - 权限与批准留第7章，运行中补充留第8章
   case_plan: 沿用本书自编备忘中的发照片一例，以及自设的两台设备资料比较情景；示例只说明用法，不写成模型测试结果。本轮修订压缩重复的限制句，把判断放在段首。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: null
 study_review:
-  result: pass
-  reason: 对照写前提要：三条教学顺序均落在成稿——从整理资料的麻烦进入、四种用途各配自设小例、再讲模型／Codex／工具分工、提要求、选型与Effort、找到Astra；Power预设清单与Max、Ultra按提要留给第6章。三项官方阅读分别落实为三行起点表、「相同材料比较」和请求示例的四件事。
-    写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
+  result: pending
+  reason: 实际官方阅读后保存提要与原正文，再作定向修订。
 reader_review:
   prior_knowledge:
     result: pass
@@ -461,3 +449,36 @@ fact_review:
     rationale: 型号与预设条件明确；Changelog的逐步开放不升级为全账号稳定。
     notice: ''
   unused_facts: {}
+  reading_reuse:
+  - url: https://learn.chatgpt.com/docs/models
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://developers.openai.com/api/docs/models/gpt-6-astra
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://learn.chatgpt.com/docs/use-chatgpt
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://learn.chatgpt.com/docs/prompting
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://learn.chatgpt.com/docs/permission-modes
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
+  - url: https://learn.chatgpt.com/docs/model-selection
+    checked_on: '2026-09-29'
+    from_batch: 2026-09-29原批次
+    reason: 本批仅修模型选择/默认与Fast口径；其他原文及来源沿用，保留原日期。
