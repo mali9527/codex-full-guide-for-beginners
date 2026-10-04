@@ -1,77 +1,53 @@
 # Codex for Complete Beginners
 
-**Start using Codex with everyday computer skills and no programming background.**
+**An English overview of a complete Chinese guide.**
 
-A Chinese beginner guide to the desktop app: from your first message and files to reviewing results, improving requests, and using Plan, Goal, skills and scheduled tasks.
+Learn to turn scattered notes into a useful file, check it against the originals and request a revision. Written for people with everyday computer skills and no programming background, following the Codex desktop app on Windows and Mac.
 
-**Opening guide + 24 chapters + appendix · 31 illustrations · Free online reading · October 2026 update**
+**Free to read · 24 chapters, opening guide and appendix · 31 illustrations**
 
-## [Read the whole book on one page (Chinese) →](全书.md)
+## [Read the full Chinese book →](全书.md#latest-models)
 
-Read from beginning to end without opening a separate page for every chapter. No download, repository clone or Git installation is needed. Use the page contents to return to a chapter later.
+Start directly with the opening guide and scroll through the book. No download or Git installation is needed. Return to a chapter through the [contents](全书.md#目录).
 
-[Browse the reading route](#reading-route) · [Examples](#examples-and-reference) · [中文首页](README.md)
+Planning to read it over several sittings? Star the repository to keep it handy.
 
-![Codex for Complete Beginners / Codex完全零基础入门: from the first screen to completing a task. Chinese text with an English overview.](assets/social/cover-bilingual-20260929.png)
+[中文首页](README.md) · [Reading route](#find-what-you-need)
+
+![Codex for Complete Beginners / Codex完全零基础入门. Chinese text with an English overview.](assets/social/cover-bilingual-20260929.png)
 
 <p><img src="assets/branding/mali-avatar-v1.svg" width="48" height="48" alt="Author Ma Li" align="absmiddle"> <strong>Ma Li · 马力</strong>　|　AI collaboration: Codex</p>
 
-## Who this is for
+## A sample of how the book teaches
 
-You know how to use office software and folders but are new to Codex, or have opened the app and need a clear way to work with it. No programming, terminal or Git knowledge is assumed.
+One note says to send photos before October 6 at 18:00; another says to select ten photos. The resulting to-do list must preserve both the deadline and the number, and leave undecided plans undecided.
 
-The desktop app is the main route, with Windows and Mac guidance. The book is free to read; following the steps assumes an existing paid account. Account limits and feature availability are explained in the chapters. **The complete book is in Chinese. This page is an English overview, not a full translation.**
+[Chapter 4](全书.md#first-task) follows this task from reading the input notes to checking and revising the saved output. The [original inputs and two example outputs](examples/ch04-notes-to-todos/README.md) are available to inspect. Later chapters explain models, permissions, source checking, useful feedback and continuing work. Concepts are introduced as needed; there are no exercises or quizzes.
 
-## What you will learn
+## Find what you need
 
-- Give Codex a complete task: choose a project folder, provide inputs, locate the saved output, check it against the originals and request a revision.
-- Understand model choice, Effort, Fast mode and what permission approvals allow.
-- Give useful feedback, preserve project context and choose between discussing a plan and pursuing a goal.
-- Understand when to use skills, plugins and MCP, browser access, computer use and scheduled tasks, including their availability conditions.
+For a first read, follow the book in order. For reference, revisit:
 
-The explanations introduce unfamiliar concepts as they become useful. Concept sketches and interface drawings support the text. Original examples illustrate the workflow; there are no exercises or quizzes.
+- [Models and effort](全书.md#models-effort) and [permissions](全书.md#permissions).
+- [Providing material](全书.md#materials), [checking results](全书.md#results) and [giving feedback](全书.md#feedback).
+- [Projects and tasks](全书.md#projects-tasks), [Goal](全书.md#goals) and [skills](全书.md#skills).
 
-## Reading route
+All chapter links lead to Chinese text. The [complete chapter list](README.md#全书阅读路线) is available on the Chinese homepage.
 
-For your first read, follow the [single-page book (Chinese)](全书.md) in order. Later, use these entries to revisit a topic:
+## Access and evidence
 
-| Chapters | Questions covered |
-|---|---|
-| [Opening and 1–4](全书.md#latest-models) | What does Codex do? How do I install it and complete my first task? |
-| [5–8](全书.md#account-usage) | How do account limits, models, effort, permissions and running tasks work? |
-| [9–13](全书.md#materials) | How do I provide inputs, check results and sources, and resume work? |
-| [14–18](全书.md#clear-requests) | How do I clarify a request, compare plans, revise output and divide work? |
-| [19–24](全书.md#personalization) | How do I reuse preferences and skills, connect tools and schedule work? |
-| [Appendix](全书.md#quick-reference) | Settings, commands, troubleshooting and terms. |
+The book is free to read; following the steps assumes an existing paid account. The October 2026 edition covers GPT-6 Astra, GPT-6.1 Sol and common features. Selected model, Fast, steering and archive guidance was checked on October 4. Documentation checks and actual workflow tests are recorded separately; see [verification scope](docs/verification-scope.en.md) and [sources (Chinese)](参考来源与致谢.md).
 
-All links in the reading route lead to Chinese text.
+## Share or improve it
 
-## Examples and reference
+A short introduction to share:
 
-[Two notes into a to-do list](examples/ch04-notes-to-todos/README.md): original inputs and two example outputs show how to request, check and improve a result.
+> A Chinese Codex tutorial for people with no programming background. Starting with two notes, it explains how to provide inputs, check output and improve results. Read all 24 chapters, the opening guide and appendix on one page.
 
-[A collection of sources into a reference index](examples/ch17-reference-index/README.md): materials for understanding persistent goals, task delegation and checking the combined result.
+[Share the homepage](https://github.com/mali9527/codex-full-guide-for-beginners#readme) · [Read the Chinese book](全书.md#latest-models)
 
-Revisit [model and effort choices](manuscript/models-effort.md), [permissions](manuscript/permissions.md), [reviewing results](manuscript/results.md) or the [quick reference](manuscript/quick-reference.md). Examples and chapters are in Chinese.
+Choose **Watch → Custom → Releases** for version notifications. [Report a correction](https://github.com/mali9527/codex-full-guide-for-beginners/issues/new/choose) with the chapter, platform and observed issue; remove private information from screenshots.
 
-## Current edition and evidence
+For a terminal-based introduction to another tool, see [Claude Code: A Beginner's Guide](https://github.com/mali9527/claude-code-full-guide-for-beginners), also with a complete Chinese book and an English overview.
 
-The October 2026 edition includes an opening guide, 24 chapters, an appendix and 31 illustrations. Selected sections cover GPT-6.1 Sol, Fast usage, steering and desktop archive recovery, checked against official documentation on October 4. The opening guide and model chapter also discuss GPT-6 Astra.
-
-This independently written book is based on official documentation. Documentation checks and actual workflow tests are recorded separately; platform and account conditions remain explicit. See [verification scope](docs/verification-scope.en.md), [sources and acknowledgements (Chinese)](参考来源与致谢.md) and the [fixed edition](https://github.com/mali9527/codex-full-guide-for-beginners/releases/tag/v2026.10.1).
-
-## Keep it handy and help improve it
-
-Star the repository if it helps you, so you can return to the book or look up a setting later. Share the [single-page Chinese book](全书.md) with someone starting out with Codex. Use **Watch → Custom → Releases** for version notifications.
-
-[Report a correction](https://github.com/mali9527/codex-full-guide-for-beginners/issues/new/choose) with the chapter, platform, version and what you observed. Remove personal information from screenshots. See [contribution guidance (Chinese)](CONTRIBUTING.md).
-
-## Another guide in the series
-
-Want to learn how Claude Code handles files and everyday work? Read [Claude Code for Complete Beginners](https://github.com/mali9527/claude-code-full-guide-for-beginners), a separate guide following that product’s own interface and workflow. Both books have Chinese chapters and English overviews. See the [series directory (Chinese)](docs/系列教程.md).
-
-## Versions and permissions
-
-[Releases](https://github.com/mali9527/codex-full-guide-for-beginners/releases) preserve fixed editions and update notes. The current edition has no PDF attachment.
-
-© 2026 Ma Li. All rights reserved for the book text, original examples and illustrations. Public access does not grant a general license to republish, adapt or use them commercially. See [LICENSE](LICENSE); third-party dependencies retain their respective licenses.
+[Releases](https://github.com/mali9527/codex-full-guide-for-beginners/releases) preserve fixed editions. © 2026 Ma Li. All rights reserved for text, original examples and illustrations; public reading does not grant permission to republish, adapt or use them commercially. See [LICENSE](LICENSE).
