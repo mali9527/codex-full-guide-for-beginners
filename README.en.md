@@ -2,6 +2,8 @@
 
 <p><img src="assets/branding/mali-avatar-v1.svg" width="48" height="48" alt="Ma Li" align="absmiddle"> <strong>Ma Li · 马力</strong></p>
 
+Author: Ma Li　|　AI collaboration: Codex
+
 [中文首页](README.md) · English overview
 
 ![Codex for Complete Beginners: from the first screen to completing a task. Chinese chapters with an English overview.](assets/social/cover-bilingual-20260929.png)
