@@ -29,7 +29,7 @@ study_brief:
   - 不新增教学内容
   - 本版不要求双平台实测；未测记录独立保留。未获证实的控件位置不补猜。
   case_plan: 无案例；修订只同步正文改动与归档路径写法。
-study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
+study_commit: 6b772cd3ba3686ac78f734681570d7da8902bdfa
 study_review:
   result: pass
   reason: 已对照写前提交、官方理解和修订稿；全附录回读并与主讲章对照：只修归档桌面路径，常用命令/快捷键保留原有使用范围与平台差异；不把开发者命令的/stop误写成桌面通用停止。

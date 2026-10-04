@@ -36,7 +36,7 @@ study_brief:
   defer:
   - 技能调用为可选，不作前置
   case_plan: 每周一次只读核对待办清单与两份备忘；时区示例为自设。全书在此收束。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：先手动完成同样一次→写清每次做什么→选目的地→用对话建立→到Scheduled核对→本地条件→首轮检查→更新、暂停、恢复、删除。

@@ -50,7 +50,7 @@ study_brief:
   defer:
   - Skill留第20章
   case_plan: 沿用「我的待办」项目的四条工作约定；自设。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：三种范围→个人偏好→项目说明先查已有→/init起草→新任务确认→记忆→Computer History。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。

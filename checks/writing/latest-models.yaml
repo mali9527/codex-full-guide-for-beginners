@@ -35,7 +35,7 @@ study_brief:
   - Power各预设、Max、Ultra、Fast与用量关系留第6章
   - 权限与批准留第7章，运行中补充留第8章
   case_plan: 沿用本书自编备忘中的发照片一例，以及自设的两台设备资料比较情景；示例只说明用法，不写成模型测试结果。本轮修订压缩重复的限制句，把判断放在段首。
-study_commit: 072be7c12f042abdb3dee5675671eb5b178142b5
+study_commit: 9355c1e4ca7eedc501829dff6c7e9fb60d64d1db
 study_review:
   result: pass
   reason: 已对照写前提交、官方理解和修订稿；全篇回读：保留Astra对普通用户的价值、材料与工具分工；新增6.1 Sol仅在模型比较处，说明开放条件，不打断用途→安装的顺序。自设案例无改动，无性能测试承诺。

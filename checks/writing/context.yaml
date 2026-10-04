@@ -31,7 +31,7 @@ study_brief:
   - 长期要求与记忆留第19章
   - 工作树不教
   case_plan: 沿用待办清单v2与自设的两种排版方案比较。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：上下文是什么→/status看哪种占用→压缩前先整理接续说明→/compact→核对关键约束→继续还是换任务→/fork与文件名区分。

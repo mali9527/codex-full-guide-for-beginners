@@ -36,7 +36,7 @@ study_brief:
   defer:
   - Goal留第17章
   case_plan: 沿用待办清单v2，按状态分组与保持事项顺序两种自设做法。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：确认针对哪份文件→/plan进入并核对→限定调查范围→比较取舍→收束成下一步→/plan切出→明确执行→打开文件检查。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。

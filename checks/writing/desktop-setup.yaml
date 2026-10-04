@@ -38,7 +38,7 @@ study_brief:
   - 权限模式选择留第7章
   - 额度留第5章
   case_plan: 本章无案例文件；以读者自己的电脑为对象。修订只收紧重复提醒，不新增未核对的界面描述。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：下载→安装→登录回应用→进入Codex→认出New chat的主线连续；Windows沙箱设置保持为出现提示才处理的条件分支，完成后回原任务；设置、更新与排查表在后。

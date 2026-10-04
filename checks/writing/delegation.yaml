@@ -39,7 +39,7 @@ study_brief:
   defer:
   - 自定义代理配置不教
   case_plan: 沿用资料目录结果，两个只读检查角度为本书自设。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：两种分工→只读检查的请求→看活动与返回内容→由主任务合稿→成本→回到证据。按subagents一页补入「想引导或停下某个子代理，直接向主任务提出」。

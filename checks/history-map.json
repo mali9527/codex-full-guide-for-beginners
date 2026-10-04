@@ -1,0 +1,1514 @@
+{
+  "schema": 1,
+  "date": "2026-10-04",
+  "purpose": "Author-authorized removal of four Claude coauthor trailers; historical file trees, authors, timestamps, study briefs and graph order preserved.",
+  "original_source_head": "4e9009091edfa27b9be3e3a3413cc82fc0367978",
+  "rewritten_source_head": "776d810d855a73dee7cb28cd18c4e90811fcffc9",
+  "original_bundle_sha256": "74dbc70f75b83cab53a45cac768d66a5c23176fab739c6556bb08a655a7c07ce",
+  "commits_checked": 112,
+  "commits_reidentified": 32,
+  "removed_coauthor_trailers": 4,
+  "all_historical_trees_equal": true,
+  "commits": [
+    {
+      "old": "00925ea81463d8c1726e49acda1721b1850690ef",
+      "new": "00925ea81463d8c1726e49acda1721b1850690ef",
+      "tree": "0fd1f1c802ceaeeb3160aa0606a46ff7f32a20b3",
+      "parents_before": [],
+      "parents_after": [],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "add1603eb507ff7c08640f905419d01c9d0a1e2f",
+      "new": "add1603eb507ff7c08640f905419d01c9d0a1e2f",
+      "tree": "4e10c4b0e0b149eb14dacc951c5f8b40c74d8e20",
+      "parents_before": [
+        "00925ea81463d8c1726e49acda1721b1850690ef"
+      ],
+      "parents_after": [
+        "00925ea81463d8c1726e49acda1721b1850690ef"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "0e644082a7b3328c8b7cdab2796ae023ff5d103a",
+      "new": "0e644082a7b3328c8b7cdab2796ae023ff5d103a",
+      "tree": "8f3d0db826bfbf5de3f107137b545495c583bfe4",
+      "parents_before": [
+        "add1603eb507ff7c08640f905419d01c9d0a1e2f"
+      ],
+      "parents_after": [
+        "add1603eb507ff7c08640f905419d01c9d0a1e2f"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "dd9bd702950beadc4877e6eea794d3327756d727",
+      "new": "dd9bd702950beadc4877e6eea794d3327756d727",
+      "tree": "734595335924bab0292476d387d16b52a6226e86",
+      "parents_before": [
+        "0e644082a7b3328c8b7cdab2796ae023ff5d103a"
+      ],
+      "parents_after": [
+        "0e644082a7b3328c8b7cdab2796ae023ff5d103a"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "c9065514c514987c2b33f57a8baf3dc95e1232dd",
+      "new": "c9065514c514987c2b33f57a8baf3dc95e1232dd",
+      "tree": "411be8644170418ab425ed8509beccd0909072af",
+      "parents_before": [
+        "dd9bd702950beadc4877e6eea794d3327756d727"
+      ],
+      "parents_after": [
+        "dd9bd702950beadc4877e6eea794d3327756d727"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "acf4c1c6bbf911fe80491fd4b335c9499b03e776",
+      "new": "acf4c1c6bbf911fe80491fd4b335c9499b03e776",
+      "tree": "b15fa49ab03d9d72c6ffa69b63542943918b3742",
+      "parents_before": [
+        "c9065514c514987c2b33f57a8baf3dc95e1232dd"
+      ],
+      "parents_after": [
+        "c9065514c514987c2b33f57a8baf3dc95e1232dd"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "42626f709b067920bb22a80191e77825f081f6a3",
+      "new": "42626f709b067920bb22a80191e77825f081f6a3",
+      "tree": "5ae15c3e0557bba9e4d9e03630924fff55000ca7",
+      "parents_before": [
+        "acf4c1c6bbf911fe80491fd4b335c9499b03e776"
+      ],
+      "parents_after": [
+        "acf4c1c6bbf911fe80491fd4b335c9499b03e776"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "344d60bb74938760ee2ded43831e1d36faffea00",
+      "new": "344d60bb74938760ee2ded43831e1d36faffea00",
+      "tree": "b4262c6619964656a85602b575cd9b834b7ecb47",
+      "parents_before": [
+        "42626f709b067920bb22a80191e77825f081f6a3"
+      ],
+      "parents_after": [
+        "42626f709b067920bb22a80191e77825f081f6a3"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "ef80725a74e3089eeba50ff7bb398f57323d3a3d",
+      "new": "ef80725a74e3089eeba50ff7bb398f57323d3a3d",
+      "tree": "9536e3c5726efb7bdfa9d8b41ac51e6c92920a5e",
+      "parents_before": [
+        "344d60bb74938760ee2ded43831e1d36faffea00"
+      ],
+      "parents_after": [
+        "344d60bb74938760ee2ded43831e1d36faffea00"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "ddd523824a02d643d1f971bfd94245be601bb6b6",
+      "new": "ddd523824a02d643d1f971bfd94245be601bb6b6",
+      "tree": "de3f33f02dbabc488fe4f2fdc4a4032bc98ce904",
+      "parents_before": [
+        "ef80725a74e3089eeba50ff7bb398f57323d3a3d"
+      ],
+      "parents_after": [
+        "ef80725a74e3089eeba50ff7bb398f57323d3a3d"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "fbea09b2547b50452f3aff13db48ae18b5e18cd0",
+      "new": "fbea09b2547b50452f3aff13db48ae18b5e18cd0",
+      "tree": "a13021bba02c33179cfb9e161d240ae0d0bc80a6",
+      "parents_before": [
+        "ddd523824a02d643d1f971bfd94245be601bb6b6"
+      ],
+      "parents_after": [
+        "ddd523824a02d643d1f971bfd94245be601bb6b6"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "25a250ecc060a0910cd6493d3c9886aec4cc7154",
+      "new": "25a250ecc060a0910cd6493d3c9886aec4cc7154",
+      "tree": "bbf85157bed70227c908e26a01a7f9b0707943d3",
+      "parents_before": [
+        "fbea09b2547b50452f3aff13db48ae18b5e18cd0"
+      ],
+      "parents_after": [
+        "fbea09b2547b50452f3aff13db48ae18b5e18cd0"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "2f973075854fb9fc6bd2d99ad3c8c405740c2dac",
+      "new": "2f973075854fb9fc6bd2d99ad3c8c405740c2dac",
+      "tree": "aef8ff1e4affd04b7e4c5b7f39452623cf6bedb7",
+      "parents_before": [
+        "25a250ecc060a0910cd6493d3c9886aec4cc7154"
+      ],
+      "parents_after": [
+        "25a250ecc060a0910cd6493d3c9886aec4cc7154"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "6de6e8cca619c40f344d0f6dc09b8138a517b65e",
+      "new": "6de6e8cca619c40f344d0f6dc09b8138a517b65e",
+      "tree": "2f2b33a74dbaf4eef2cebf0bc047dbcb16dc853d",
+      "parents_before": [
+        "2f973075854fb9fc6bd2d99ad3c8c405740c2dac"
+      ],
+      "parents_after": [
+        "2f973075854fb9fc6bd2d99ad3c8c405740c2dac"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "d025f00ec7c921d0b23089ad1bb4d06eb0831f5c",
+      "new": "d025f00ec7c921d0b23089ad1bb4d06eb0831f5c",
+      "tree": "8dfc74611abac49caa847d89971fbb21353c3b7c",
+      "parents_before": [
+        "6de6e8cca619c40f344d0f6dc09b8138a517b65e"
+      ],
+      "parents_after": [
+        "6de6e8cca619c40f344d0f6dc09b8138a517b65e"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "a49bba45673bf7d60ce7db0425286c64ad6456a5",
+      "new": "a49bba45673bf7d60ce7db0425286c64ad6456a5",
+      "tree": "d050316e4a9b03fcd689a255b755b8d11a5d86d5",
+      "parents_before": [
+        "d025f00ec7c921d0b23089ad1bb4d06eb0831f5c"
+      ],
+      "parents_after": [
+        "d025f00ec7c921d0b23089ad1bb4d06eb0831f5c"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "484d3953b648a13174ff9889733fa49f7ba69bac",
+      "new": "484d3953b648a13174ff9889733fa49f7ba69bac",
+      "tree": "133b71b795f20c9b201a403bbab175b2f4e10ca6",
+      "parents_before": [
+        "a49bba45673bf7d60ce7db0425286c64ad6456a5"
+      ],
+      "parents_after": [
+        "a49bba45673bf7d60ce7db0425286c64ad6456a5"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "f55236c22508afa5f3a6397a600c9eae33dfd1fd",
+      "new": "f55236c22508afa5f3a6397a600c9eae33dfd1fd",
+      "tree": "008b27f7d6a5ad252127e79b2fe03d927d46aac3",
+      "parents_before": [
+        "484d3953b648a13174ff9889733fa49f7ba69bac"
+      ],
+      "parents_after": [
+        "484d3953b648a13174ff9889733fa49f7ba69bac"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "a17bf407212d3ed4cfb53bfaf17b841baddc6ff6",
+      "new": "a17bf407212d3ed4cfb53bfaf17b841baddc6ff6",
+      "tree": "e36c0d6f291b0fa048d3a88346386cdbcd15a456",
+      "parents_before": [
+        "f55236c22508afa5f3a6397a600c9eae33dfd1fd"
+      ],
+      "parents_after": [
+        "f55236c22508afa5f3a6397a600c9eae33dfd1fd"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "efaf6041a4dc6dbe912fd839014ec27d937a125b",
+      "new": "efaf6041a4dc6dbe912fd839014ec27d937a125b",
+      "tree": "84c1d6af449c8a814adb1d38fa39b69ca257a0c9",
+      "parents_before": [
+        "a17bf407212d3ed4cfb53bfaf17b841baddc6ff6"
+      ],
+      "parents_after": [
+        "a17bf407212d3ed4cfb53bfaf17b841baddc6ff6"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "cc9c806281a0887448b81f4b9dcd860e3af36091",
+      "new": "cc9c806281a0887448b81f4b9dcd860e3af36091",
+      "tree": "8f8e3b6822f830668a0e6f0816f80d5eba11dc0c",
+      "parents_before": [
+        "efaf6041a4dc6dbe912fd839014ec27d937a125b"
+      ],
+      "parents_after": [
+        "efaf6041a4dc6dbe912fd839014ec27d937a125b"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "8984a76fef00c98c111637126ae56095a2ac8ad9",
+      "new": "8984a76fef00c98c111637126ae56095a2ac8ad9",
+      "tree": "4d2bce3afd7ffdc43df06ded0f565d8c59c1b67d",
+      "parents_before": [
+        "cc9c806281a0887448b81f4b9dcd860e3af36091"
+      ],
+      "parents_after": [
+        "cc9c806281a0887448b81f4b9dcd860e3af36091"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "12294cacb31cac883b3376c57faa38f50924c3ea",
+      "new": "12294cacb31cac883b3376c57faa38f50924c3ea",
+      "tree": "a4d233460c704a411af0837681e07b23fb37dd2b",
+      "parents_before": [
+        "8984a76fef00c98c111637126ae56095a2ac8ad9"
+      ],
+      "parents_after": [
+        "8984a76fef00c98c111637126ae56095a2ac8ad9"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "3c174227c25d87e7269ddbdc701b8db299b98477",
+      "new": "3c174227c25d87e7269ddbdc701b8db299b98477",
+      "tree": "8abcd01d732079d773d7b10630a0b8375abee2e5",
+      "parents_before": [
+        "12294cacb31cac883b3376c57faa38f50924c3ea"
+      ],
+      "parents_after": [
+        "12294cacb31cac883b3376c57faa38f50924c3ea"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "31a04bd33b1f1fa7b0ab663b77eb87a3538e73c2",
+      "new": "31a04bd33b1f1fa7b0ab663b77eb87a3538e73c2",
+      "tree": "2ab7dfe3d27bcdacc008081c5ace650c698a7cfc",
+      "parents_before": [
+        "3c174227c25d87e7269ddbdc701b8db299b98477"
+      ],
+      "parents_after": [
+        "3c174227c25d87e7269ddbdc701b8db299b98477"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "88d71aaf37240ed261d3f5de379399131f7a55f6",
+      "new": "88d71aaf37240ed261d3f5de379399131f7a55f6",
+      "tree": "7e568f1a4e1e77fc77e841ecd32912e21f2009cb",
+      "parents_before": [
+        "31a04bd33b1f1fa7b0ab663b77eb87a3538e73c2"
+      ],
+      "parents_after": [
+        "31a04bd33b1f1fa7b0ab663b77eb87a3538e73c2"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "a7eae15145ed7eb2aaa409a8ce253dca3f57c7ff",
+      "new": "a7eae15145ed7eb2aaa409a8ce253dca3f57c7ff",
+      "tree": "799358ca874573df41745f84a04069825e9f6913",
+      "parents_before": [
+        "88d71aaf37240ed261d3f5de379399131f7a55f6"
+      ],
+      "parents_after": [
+        "88d71aaf37240ed261d3f5de379399131f7a55f6"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "72048e0d1b9fd71fca5a8e11c0459deef419b118",
+      "new": "72048e0d1b9fd71fca5a8e11c0459deef419b118",
+      "tree": "d805f9695501145868065285ede4045d63815b3b",
+      "parents_before": [
+        "a7eae15145ed7eb2aaa409a8ce253dca3f57c7ff"
+      ],
+      "parents_after": [
+        "a7eae15145ed7eb2aaa409a8ce253dca3f57c7ff"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "6a66f2d42902182077e1ec902b85079a3a8de8cc",
+      "new": "6a66f2d42902182077e1ec902b85079a3a8de8cc",
+      "tree": "e763f4abe7befb1dfbb6d5e140d205b6ba8a1681",
+      "parents_before": [
+        "72048e0d1b9fd71fca5a8e11c0459deef419b118"
+      ],
+      "parents_after": [
+        "72048e0d1b9fd71fca5a8e11c0459deef419b118"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "084bbcd117fb7d1b73d9de6d3f345b37f20df3f4",
+      "new": "084bbcd117fb7d1b73d9de6d3f345b37f20df3f4",
+      "tree": "a50aedef31283e1a49e547eb20ecce3193db2c9f",
+      "parents_before": [
+        "6a66f2d42902182077e1ec902b85079a3a8de8cc"
+      ],
+      "parents_after": [
+        "6a66f2d42902182077e1ec902b85079a3a8de8cc"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "ce9e6ec714543114632feedf2f42b54e59ddb010",
+      "new": "ce9e6ec714543114632feedf2f42b54e59ddb010",
+      "tree": "8c62953d328294777aaf6c96105120afee80d36f",
+      "parents_before": [
+        "084bbcd117fb7d1b73d9de6d3f345b37f20df3f4"
+      ],
+      "parents_after": [
+        "084bbcd117fb7d1b73d9de6d3f345b37f20df3f4"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "e451edb7307e8b8fc35f6b6da8ea2a62d3cfe7e3",
+      "new": "e451edb7307e8b8fc35f6b6da8ea2a62d3cfe7e3",
+      "tree": "cdb3d05714e6e962f1c78bb5f8b08931b574d805",
+      "parents_before": [
+        "ce9e6ec714543114632feedf2f42b54e59ddb010"
+      ],
+      "parents_after": [
+        "ce9e6ec714543114632feedf2f42b54e59ddb010"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "9d046b912a6f285a505fb649e4546770b306ff35",
+      "new": "9d046b912a6f285a505fb649e4546770b306ff35",
+      "tree": "8aceb6cb3232eb46c2e42c28b66cca21d55a5952",
+      "parents_before": [
+        "e451edb7307e8b8fc35f6b6da8ea2a62d3cfe7e3"
+      ],
+      "parents_after": [
+        "e451edb7307e8b8fc35f6b6da8ea2a62d3cfe7e3"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "0f392d41fdabd1bcb1901f8ceb8cef4f4c1184b0",
+      "new": "0f392d41fdabd1bcb1901f8ceb8cef4f4c1184b0",
+      "tree": "8d04ae913c75f9c32358814fc06aeffc357e6122",
+      "parents_before": [
+        "9d046b912a6f285a505fb649e4546770b306ff35"
+      ],
+      "parents_after": [
+        "9d046b912a6f285a505fb649e4546770b306ff35"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "fb1517df975f7e5728610065e9770cef7ad111ca",
+      "new": "fb1517df975f7e5728610065e9770cef7ad111ca",
+      "tree": "4e6d75535fa515d59f05afc4676a7c558596104e",
+      "parents_before": [
+        "0f392d41fdabd1bcb1901f8ceb8cef4f4c1184b0"
+      ],
+      "parents_after": [
+        "0f392d41fdabd1bcb1901f8ceb8cef4f4c1184b0"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "de96b07ea2fe969b8d1be927a531ea2381e36746",
+      "new": "de96b07ea2fe969b8d1be927a531ea2381e36746",
+      "tree": "7ef6333339279888d68cf5a8b59bf10bd99ff6bd",
+      "parents_before": [
+        "fb1517df975f7e5728610065e9770cef7ad111ca"
+      ],
+      "parents_after": [
+        "fb1517df975f7e5728610065e9770cef7ad111ca"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "29d565588602ec1300669afe3013ab5a5018461b",
+      "new": "29d565588602ec1300669afe3013ab5a5018461b",
+      "tree": "7fd3d5c7dda2b1752974cbdfcb5d4e0ccb803543",
+      "parents_before": [
+        "de96b07ea2fe969b8d1be927a531ea2381e36746"
+      ],
+      "parents_after": [
+        "de96b07ea2fe969b8d1be927a531ea2381e36746"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "8d758051c54e8f6daa3a3c0e913468400980064e",
+      "new": "8d758051c54e8f6daa3a3c0e913468400980064e",
+      "tree": "e3ef15e13425275b94534c35dd60ec2fa08884f4",
+      "parents_before": [
+        "29d565588602ec1300669afe3013ab5a5018461b"
+      ],
+      "parents_after": [
+        "29d565588602ec1300669afe3013ab5a5018461b"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "1ca26e2ca3d7af335d50e94079b2cd5e0177042d",
+      "new": "1ca26e2ca3d7af335d50e94079b2cd5e0177042d",
+      "tree": "e9a52c0f4a299c34219fbf4fc36bb4648713720a",
+      "parents_before": [
+        "8d758051c54e8f6daa3a3c0e913468400980064e"
+      ],
+      "parents_after": [
+        "8d758051c54e8f6daa3a3c0e913468400980064e"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "e3a38898e317004ee3987e0c608fcb855e21bd86",
+      "new": "e3a38898e317004ee3987e0c608fcb855e21bd86",
+      "tree": "125a1b3fc0a0cef4e412f5713bf34ae73a5f04b8",
+      "parents_before": [
+        "1ca26e2ca3d7af335d50e94079b2cd5e0177042d"
+      ],
+      "parents_after": [
+        "1ca26e2ca3d7af335d50e94079b2cd5e0177042d"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "3510ef135abcb89c81ab2c7e676598531a8580be",
+      "new": "3510ef135abcb89c81ab2c7e676598531a8580be",
+      "tree": "08f9f7dcb192db79cd09eafe4b297cfbfa8b6196",
+      "parents_before": [
+        "e3a38898e317004ee3987e0c608fcb855e21bd86"
+      ],
+      "parents_after": [
+        "e3a38898e317004ee3987e0c608fcb855e21bd86"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "a17451f480abfafd70901e5b80c8e063ee89a089",
+      "new": "a17451f480abfafd70901e5b80c8e063ee89a089",
+      "tree": "e72e100495c66b94658bce41a3304cc2912acad4",
+      "parents_before": [
+        "3510ef135abcb89c81ab2c7e676598531a8580be"
+      ],
+      "parents_after": [
+        "3510ef135abcb89c81ab2c7e676598531a8580be"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "edf1994f01cd9f7b11b7fc77ddd121888674818f",
+      "new": "edf1994f01cd9f7b11b7fc77ddd121888674818f",
+      "tree": "8bebc7fc0b62740831feb22d77e98670be8205e9",
+      "parents_before": [
+        "a17451f480abfafd70901e5b80c8e063ee89a089"
+      ],
+      "parents_after": [
+        "a17451f480abfafd70901e5b80c8e063ee89a089"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "36e08fa9201d9cda05066dfc8d9eb5cf4a6acfe3",
+      "new": "36e08fa9201d9cda05066dfc8d9eb5cf4a6acfe3",
+      "tree": "3fa9e7e8ddd80bfede7a0e3713926096a5671380",
+      "parents_before": [
+        "edf1994f01cd9f7b11b7fc77ddd121888674818f"
+      ],
+      "parents_after": [
+        "edf1994f01cd9f7b11b7fc77ddd121888674818f"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "47cd3c617f19ff4e7c45b5effa77cf04a189af24",
+      "new": "47cd3c617f19ff4e7c45b5effa77cf04a189af24",
+      "tree": "d8020f3ca081621292aab51790bd3f818beafdc7",
+      "parents_before": [
+        "36e08fa9201d9cda05066dfc8d9eb5cf4a6acfe3"
+      ],
+      "parents_after": [
+        "36e08fa9201d9cda05066dfc8d9eb5cf4a6acfe3"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "c5f544f8550b1d8123c61e057e759a669f397ce6",
+      "new": "c5f544f8550b1d8123c61e057e759a669f397ce6",
+      "tree": "098b8c4128834febf1867c263bf44ddb286aa966",
+      "parents_before": [
+        "47cd3c617f19ff4e7c45b5effa77cf04a189af24"
+      ],
+      "parents_after": [
+        "47cd3c617f19ff4e7c45b5effa77cf04a189af24"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "0acb2552e67fd1e6f44407e0059723c3226e1c13",
+      "new": "0acb2552e67fd1e6f44407e0059723c3226e1c13",
+      "tree": "b898d295f5a13b770785a184e3f0670f7af77a81",
+      "parents_before": [
+        "c5f544f8550b1d8123c61e057e759a669f397ce6"
+      ],
+      "parents_after": [
+        "c5f544f8550b1d8123c61e057e759a669f397ce6"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "18cee3f78f7c9745bdf429c25f3dd7c708340440",
+      "new": "18cee3f78f7c9745bdf429c25f3dd7c708340440",
+      "tree": "2d6ea9d787b04e2831cddefc1a7f39e6c990bc99",
+      "parents_before": [
+        "0acb2552e67fd1e6f44407e0059723c3226e1c13"
+      ],
+      "parents_after": [
+        "0acb2552e67fd1e6f44407e0059723c3226e1c13"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "0ffbcb3c53bfe6e58d4ee35ef4b674c69488e3df",
+      "new": "0ffbcb3c53bfe6e58d4ee35ef4b674c69488e3df",
+      "tree": "33acdd3f51c775d7a4039f38d3fa4c7f4321054e",
+      "parents_before": [
+        "18cee3f78f7c9745bdf429c25f3dd7c708340440"
+      ],
+      "parents_after": [
+        "18cee3f78f7c9745bdf429c25f3dd7c708340440"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "c5f3d684e5a29770f1239788c0010958e69b05d2",
+      "new": "c5f3d684e5a29770f1239788c0010958e69b05d2",
+      "tree": "b7bc2bd9ee091551878d982d98531b4e7415d28a",
+      "parents_before": [
+        "0ffbcb3c53bfe6e58d4ee35ef4b674c69488e3df"
+      ],
+      "parents_after": [
+        "0ffbcb3c53bfe6e58d4ee35ef4b674c69488e3df"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "b4d5bcc4740f7ff3fb0e5aeea3f4debd2ec50bb9",
+      "new": "b4d5bcc4740f7ff3fb0e5aeea3f4debd2ec50bb9",
+      "tree": "852f2b4d72f6d5cda1707899cdcb71571d9dbacc",
+      "parents_before": [
+        "c5f3d684e5a29770f1239788c0010958e69b05d2"
+      ],
+      "parents_after": [
+        "c5f3d684e5a29770f1239788c0010958e69b05d2"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "aeba79f89caf9a4f3843823ebe66da1f3ca7dede",
+      "new": "aeba79f89caf9a4f3843823ebe66da1f3ca7dede",
+      "tree": "5f57217168f8e2049a0dbac4501aae960fce0e50",
+      "parents_before": [
+        "b4d5bcc4740f7ff3fb0e5aeea3f4debd2ec50bb9"
+      ],
+      "parents_after": [
+        "b4d5bcc4740f7ff3fb0e5aeea3f4debd2ec50bb9"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "14a2eb56fcc3c457a8dc192e3faf22fede7adcf5",
+      "new": "14a2eb56fcc3c457a8dc192e3faf22fede7adcf5",
+      "tree": "dcd005d84781e6e9bee4885c46e78ca3b9299b8f",
+      "parents_before": [
+        "aeba79f89caf9a4f3843823ebe66da1f3ca7dede"
+      ],
+      "parents_after": [
+        "aeba79f89caf9a4f3843823ebe66da1f3ca7dede"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "0fc6030baab56245270544b168a06eb441adfe3e",
+      "new": "0fc6030baab56245270544b168a06eb441adfe3e",
+      "tree": "5b0c2f9287ad1d708898789e245de8243e7f7236",
+      "parents_before": [
+        "14a2eb56fcc3c457a8dc192e3faf22fede7adcf5"
+      ],
+      "parents_after": [
+        "14a2eb56fcc3c457a8dc192e3faf22fede7adcf5"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "56047b6426bedc24f44ce1173c5a520e0b6df9ae",
+      "new": "56047b6426bedc24f44ce1173c5a520e0b6df9ae",
+      "tree": "5d629e94f0126ff316a884e8ce3c3606ce64f5fc",
+      "parents_before": [
+        "0fc6030baab56245270544b168a06eb441adfe3e"
+      ],
+      "parents_after": [
+        "0fc6030baab56245270544b168a06eb441adfe3e"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "e58ee5793ae2d4be83ff581c4cc73715a81a11e1",
+      "new": "e58ee5793ae2d4be83ff581c4cc73715a81a11e1",
+      "tree": "9bca88ccade375e4068ae1fad19f5784197db50f",
+      "parents_before": [
+        "56047b6426bedc24f44ce1173c5a520e0b6df9ae"
+      ],
+      "parents_after": [
+        "56047b6426bedc24f44ce1173c5a520e0b6df9ae"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "352d4360774fc79d9b3d609b2bfbad46696c0d13",
+      "new": "352d4360774fc79d9b3d609b2bfbad46696c0d13",
+      "tree": "172bbd4690308392949191b4440247e73c60d7c7",
+      "parents_before": [
+        "e58ee5793ae2d4be83ff581c4cc73715a81a11e1"
+      ],
+      "parents_after": [
+        "e58ee5793ae2d4be83ff581c4cc73715a81a11e1"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "971b718d53b63f9c06a63721a94b16dbe8b67e36",
+      "new": "971b718d53b63f9c06a63721a94b16dbe8b67e36",
+      "tree": "6fd6fbe52b398ec2dede21bcc8b1c32072b3e4e3",
+      "parents_before": [
+        "352d4360774fc79d9b3d609b2bfbad46696c0d13"
+      ],
+      "parents_after": [
+        "352d4360774fc79d9b3d609b2bfbad46696c0d13"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "3bfd10d7b73ba322521463c2411e6b34e5a0c4d3",
+      "new": "3bfd10d7b73ba322521463c2411e6b34e5a0c4d3",
+      "tree": "6f83982ae08f20f0c78a85639308dfd3e25f6aeb",
+      "parents_before": [
+        "971b718d53b63f9c06a63721a94b16dbe8b67e36"
+      ],
+      "parents_after": [
+        "971b718d53b63f9c06a63721a94b16dbe8b67e36"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "b3f66a962497222e5d3e6fe5d32ee792216bc357",
+      "new": "b3f66a962497222e5d3e6fe5d32ee792216bc357",
+      "tree": "9dd1e5d534f236cb1b725a6834455b7eae13a9f3",
+      "parents_before": [
+        "3bfd10d7b73ba322521463c2411e6b34e5a0c4d3"
+      ],
+      "parents_after": [
+        "3bfd10d7b73ba322521463c2411e6b34e5a0c4d3"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "b965f26cc1879683aaad8d3772b8adfd98207e8a",
+      "new": "b965f26cc1879683aaad8d3772b8adfd98207e8a",
+      "tree": "0424c4ee10e1f69a00a549272d93aba17c28cbce",
+      "parents_before": [
+        "b3f66a962497222e5d3e6fe5d32ee792216bc357"
+      ],
+      "parents_after": [
+        "b3f66a962497222e5d3e6fe5d32ee792216bc357"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "ce5af70a40b30cc19e47894c4c21633657bb100c",
+      "new": "ce5af70a40b30cc19e47894c4c21633657bb100c",
+      "tree": "991c3b76f82429fefa6a7d03b5bb91a918f58fab",
+      "parents_before": [
+        "b965f26cc1879683aaad8d3772b8adfd98207e8a"
+      ],
+      "parents_after": [
+        "b965f26cc1879683aaad8d3772b8adfd98207e8a"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "810569fd8f3e0428a01fe57c7faea961dcaa4d6f",
+      "new": "810569fd8f3e0428a01fe57c7faea961dcaa4d6f",
+      "tree": "84e5292502b3c18e189ae6a3d6a9f9eb2088ba6d",
+      "parents_before": [
+        "ce5af70a40b30cc19e47894c4c21633657bb100c"
+      ],
+      "parents_after": [
+        "ce5af70a40b30cc19e47894c4c21633657bb100c"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "ddfab38eed78505bfd47e71eaccc1beb6a2ab9b6",
+      "new": "ddfab38eed78505bfd47e71eaccc1beb6a2ab9b6",
+      "tree": "c30332f1dd481d7ff8ace43578d68dd0bc1bd5ad",
+      "parents_before": [
+        "810569fd8f3e0428a01fe57c7faea961dcaa4d6f"
+      ],
+      "parents_after": [
+        "810569fd8f3e0428a01fe57c7faea961dcaa4d6f"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "557cf6d24a474646de0fd290021492d3f0a379b6",
+      "new": "557cf6d24a474646de0fd290021492d3f0a379b6",
+      "tree": "27f20da7921c9627b65b374a7fd4d520506d8e51",
+      "parents_before": [
+        "ddfab38eed78505bfd47e71eaccc1beb6a2ab9b6"
+      ],
+      "parents_after": [
+        "ddfab38eed78505bfd47e71eaccc1beb6a2ab9b6"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "d0b7a7db8f5a4567fee7ac694133dc05859c825b",
+      "new": "d0b7a7db8f5a4567fee7ac694133dc05859c825b",
+      "tree": "932e86454beb6242375e19b2a634708325d79dc5",
+      "parents_before": [
+        "557cf6d24a474646de0fd290021492d3f0a379b6"
+      ],
+      "parents_after": [
+        "557cf6d24a474646de0fd290021492d3f0a379b6"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "e93deb5d59e8fc879a601f85d7c2be2892205b54",
+      "new": "e93deb5d59e8fc879a601f85d7c2be2892205b54",
+      "tree": "99b398c82902ac2847f1afd193e9c0bc8cfccdcf",
+      "parents_before": [
+        "d0b7a7db8f5a4567fee7ac694133dc05859c825b"
+      ],
+      "parents_after": [
+        "d0b7a7db8f5a4567fee7ac694133dc05859c825b"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "65f5db676bb00c792c60e4ca21aac737e04d7517",
+      "new": "65f5db676bb00c792c60e4ca21aac737e04d7517",
+      "tree": "1066c3ae744859d2b1f47223b44968b9728a721f",
+      "parents_before": [
+        "e93deb5d59e8fc879a601f85d7c2be2892205b54"
+      ],
+      "parents_after": [
+        "e93deb5d59e8fc879a601f85d7c2be2892205b54"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "56952d83e45da1528c0779204095cb2370513898",
+      "new": "56952d83e45da1528c0779204095cb2370513898",
+      "tree": "31ad0549dee313304b050e881ce107f233e7f39f",
+      "parents_before": [
+        "65f5db676bb00c792c60e4ca21aac737e04d7517"
+      ],
+      "parents_after": [
+        "65f5db676bb00c792c60e4ca21aac737e04d7517"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8",
+      "new": "d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8",
+      "tree": "0525a33668b991465e9322256448f6972e928f2f",
+      "parents_before": [
+        "56952d83e45da1528c0779204095cb2370513898"
+      ],
+      "parents_after": [
+        "56952d83e45da1528c0779204095cb2370513898"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "fcaf5f493ec2a06bb39aa5ab94bca124ca2f66bf",
+      "new": "fcaf5f493ec2a06bb39aa5ab94bca124ca2f66bf",
+      "tree": "07e7442d385a1d9e9abc22e562c7f14eefad8746",
+      "parents_before": [
+        "d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8"
+      ],
+      "parents_after": [
+        "d69d4d8960301cdc9cd85ccb1238ca9cb20c34a8"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "5d8035d42339d7a4693acf5b53d8e19d22387771",
+      "new": "5d8035d42339d7a4693acf5b53d8e19d22387771",
+      "tree": "5479747bbef89cc08b9bde832cb8a73f2ef8ed03",
+      "parents_before": [
+        "fcaf5f493ec2a06bb39aa5ab94bca124ca2f66bf"
+      ],
+      "parents_after": [
+        "fcaf5f493ec2a06bb39aa5ab94bca124ca2f66bf"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "05a5cad59d67afcb0002c8e480da5ead681bf8f9",
+      "new": "05a5cad59d67afcb0002c8e480da5ead681bf8f9",
+      "tree": "ec8b4b0f92b023df27843cf4ddcaeacc179f70ca",
+      "parents_before": [
+        "5d8035d42339d7a4693acf5b53d8e19d22387771"
+      ],
+      "parents_after": [
+        "5d8035d42339d7a4693acf5b53d8e19d22387771"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "0da0c34859b81f4613567b5f9418692db12a9005",
+      "new": "0da0c34859b81f4613567b5f9418692db12a9005",
+      "tree": "9993f2a8d6de8a2104b5cf9d2d266c2556bb059b",
+      "parents_before": [
+        "05a5cad59d67afcb0002c8e480da5ead681bf8f9"
+      ],
+      "parents_after": [
+        "05a5cad59d67afcb0002c8e480da5ead681bf8f9"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "f6a7b3dfbf49a62fe09d52bad381470f6444dd08",
+      "new": "f6a7b3dfbf49a62fe09d52bad381470f6444dd08",
+      "tree": "f774949d20e5e768449af35f95d97f2cfe99bb20",
+      "parents_before": [
+        "0da0c34859b81f4613567b5f9418692db12a9005"
+      ],
+      "parents_after": [
+        "0da0c34859b81f4613567b5f9418692db12a9005"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "d5b90670cce9d681e1d41463b9208e0bfa8227ab",
+      "new": "d5b90670cce9d681e1d41463b9208e0bfa8227ab",
+      "tree": "e895ffa586090707f1ebc3e2eaedc1196b8b0fdd",
+      "parents_before": [
+        "f6a7b3dfbf49a62fe09d52bad381470f6444dd08"
+      ],
+      "parents_after": [
+        "f6a7b3dfbf49a62fe09d52bad381470f6444dd08"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "38252c20d05896bd1b0a729264f7c7eef5c112c4",
+      "new": "38252c20d05896bd1b0a729264f7c7eef5c112c4",
+      "tree": "534bae9b5eaf86ea6aa2f0f1856ae7669baf7364",
+      "parents_before": [
+        "d5b90670cce9d681e1d41463b9208e0bfa8227ab"
+      ],
+      "parents_after": [
+        "d5b90670cce9d681e1d41463b9208e0bfa8227ab"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "6995af62a6af5afc2b5ee79b7ac23448d8faed22",
+      "new": "6995af62a6af5afc2b5ee79b7ac23448d8faed22",
+      "tree": "bf7f476a173a3700229e53cc298008c4d212a346",
+      "parents_before": [
+        "38252c20d05896bd1b0a729264f7c7eef5c112c4"
+      ],
+      "parents_after": [
+        "38252c20d05896bd1b0a729264f7c7eef5c112c4"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "05e0a143df13b14ff84fd8dcc94e5a16aa55cd6c",
+      "new": "05e0a143df13b14ff84fd8dcc94e5a16aa55cd6c",
+      "tree": "0f12a4f4d6d3a17d762a4d3cdd8021d83de01d48",
+      "parents_before": [
+        "6995af62a6af5afc2b5ee79b7ac23448d8faed22"
+      ],
+      "parents_after": [
+        "6995af62a6af5afc2b5ee79b7ac23448d8faed22"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "8fcc0efbb263614afd055fa57a1b660e6414fe22",
+      "new": "8fcc0efbb263614afd055fa57a1b660e6414fe22",
+      "tree": "2ed2c9bba59e3bc964e2b55edb26718734218d0b",
+      "parents_before": [
+        "05e0a143df13b14ff84fd8dcc94e5a16aa55cd6c"
+      ],
+      "parents_after": [
+        "05e0a143df13b14ff84fd8dcc94e5a16aa55cd6c"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7",
+      "tree": "0ebd04881af5bfad33ee55f4cbc4fae67b3bfa63",
+      "parents_before": [
+        "8fcc0efbb263614afd055fa57a1b660e6414fe22"
+      ],
+      "parents_after": [
+        "8fcc0efbb263614afd055fa57a1b660e6414fe22"
+      ],
+      "removed_coauthor_trailers": 1
+    },
+    {
+      "old": "ee59092290f0bd2d518062d012a9d5bb45a911e7",
+      "new": "514d3c63b8d1538ef7f030b501c6ec3601144dac",
+      "tree": "7e71c1735ff9a0960d51e935d5a7cd60a7ad9e27",
+      "parents_before": [
+        "cc5465ac84231422896a8177597b17992f99ebbe"
+      ],
+      "parents_after": [
+        "ec35021962a05e7a413ad3d3f933c684e42123b7"
+      ],
+      "removed_coauthor_trailers": 1
+    },
+    {
+      "old": "18730d83ea2aefa88ebebf63c147340536211ce8",
+      "new": "00ffbaffd64261451d01c45c54cf05a572541214",
+      "tree": "c759b4e2f97c29a5399a27c0c48fd80d055b2685",
+      "parents_before": [
+        "ee59092290f0bd2d518062d012a9d5bb45a911e7"
+      ],
+      "parents_after": [
+        "514d3c63b8d1538ef7f030b501c6ec3601144dac"
+      ],
+      "removed_coauthor_trailers": 1
+    },
+    {
+      "old": "73c411c5f517af76bd01d6ddc32a5b6344df8a31",
+      "new": "a57fe837398194a47b285c3ffa811f340884c9c2",
+      "tree": "a453b770aa373ceef8728b3976d1fb01115cc27b",
+      "parents_before": [
+        "18730d83ea2aefa88ebebf63c147340536211ce8"
+      ],
+      "parents_after": [
+        "00ffbaffd64261451d01c45c54cf05a572541214"
+      ],
+      "removed_coauthor_trailers": 1
+    },
+    {
+      "old": "880e0086636d74bca3b3f0d73ad125418becb94c",
+      "new": "994eb6de223d2c2beb9b3a0442fb1bba25240ba4",
+      "tree": "d5f372278a9810806a9eb8bab7d8689ac6ae831c",
+      "parents_before": [
+        "73c411c5f517af76bd01d6ddc32a5b6344df8a31"
+      ],
+      "parents_after": [
+        "a57fe837398194a47b285c3ffa811f340884c9c2"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "3156456f330cabad142e85413b5a7309d8654c7c",
+      "new": "92194a6e33ffafaff5b4343956bc78e71ee174d1",
+      "tree": "a8f31b691b71ac51b0fa9dc051fafbe990213bf4",
+      "parents_before": [
+        "880e0086636d74bca3b3f0d73ad125418becb94c"
+      ],
+      "parents_after": [
+        "994eb6de223d2c2beb9b3a0442fb1bba25240ba4"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "cc3f7ea0067f0e955396c36e2bdaf04adf1f9943",
+      "new": "d6be1bec245826e4e39d95619f41fe8cedfee3c9",
+      "tree": "e8abd56e18965fa1dd92481f3983e5607bfdb0c1",
+      "parents_before": [
+        "3156456f330cabad142e85413b5a7309d8654c7c"
+      ],
+      "parents_after": [
+        "92194a6e33ffafaff5b4343956bc78e71ee174d1"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "7a887ab8d1200484f129e14a2cec626b95d40939",
+      "new": "286c64ac7384d9d2bba3403accb67267df5b444f",
+      "tree": "1dc05c992d00d8c56633319487b6d6a5b8a2e6cb",
+      "parents_before": [
+        "cc3f7ea0067f0e955396c36e2bdaf04adf1f9943"
+      ],
+      "parents_after": [
+        "d6be1bec245826e4e39d95619f41fe8cedfee3c9"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "4aba50a9f98475e44677695bf313c6c758578d34",
+      "new": "87fb521ed910ea8296d35b8a00fe3cdd8bcc3ffa",
+      "tree": "050d8b140a01ff7778c14eb4aaec931830f9943f",
+      "parents_before": [
+        "7a887ab8d1200484f129e14a2cec626b95d40939"
+      ],
+      "parents_after": [
+        "286c64ac7384d9d2bba3403accb67267df5b444f"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "b1e6651bc08ae1f9b446513c20123ce390742cf3",
+      "new": "2a5708133b217405019a7c2f70856eda42816196",
+      "tree": "c6b0b0d0b26736ac29845ff1b168407cfb2a5a03",
+      "parents_before": [
+        "4aba50a9f98475e44677695bf313c6c758578d34"
+      ],
+      "parents_after": [
+        "87fb521ed910ea8296d35b8a00fe3cdd8bcc3ffa"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "5c75fb28c94375e274531beaafb8f10cd49a956f",
+      "new": "3d75dacbf8bf7f09312fd5bccef782adc78cafbc",
+      "tree": "d26afe0127be7e0a73ca968a11884dcda1b97dcb",
+      "parents_before": [
+        "b1e6651bc08ae1f9b446513c20123ce390742cf3"
+      ],
+      "parents_after": [
+        "2a5708133b217405019a7c2f70856eda42816196"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "58ab28d3d3f6026dd2ec513603fac07c890e6dbe",
+      "new": "8b88d155c08b80d0f6ca2ab3d8f9f92bfa84730b",
+      "tree": "84041e3316d3fcc8c2c0d8d970d8fb06b3de6a60",
+      "parents_before": [
+        "5c75fb28c94375e274531beaafb8f10cd49a956f"
+      ],
+      "parents_after": [
+        "3d75dacbf8bf7f09312fd5bccef782adc78cafbc"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "a27d269e4c99c431a12a333264264113f9583827",
+      "new": "0357c9f7ae9d67b1db8a002f0ab8c883df4d715b",
+      "tree": "bb8cdc6118731c62acd93ff56d5e61eaa708b4d2",
+      "parents_before": [
+        "58ab28d3d3f6026dd2ec513603fac07c890e6dbe"
+      ],
+      "parents_after": [
+        "8b88d155c08b80d0f6ca2ab3d8f9f92bfa84730b"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "bf2e92443b9c59eaed664764e182166c97b7a0fe",
+      "new": "8731416847d8c658391b08727e11db317acefd2f",
+      "tree": "ac6556c7da21b9e917f698381403824c4434473f",
+      "parents_before": [
+        "a27d269e4c99c431a12a333264264113f9583827"
+      ],
+      "parents_after": [
+        "0357c9f7ae9d67b1db8a002f0ab8c883df4d715b"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "cd6e82ad318473583c7b56d2ff47a6c1674244ef",
+      "new": "60c0ce693c890e09f923f0d12c3d4b170b8ea3c8",
+      "tree": "2a539da492582b42e440c0a4e284da491e8d38a1",
+      "parents_before": [
+        "bf2e92443b9c59eaed664764e182166c97b7a0fe"
+      ],
+      "parents_after": [
+        "8731416847d8c658391b08727e11db317acefd2f"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "776757560b256647d5f0d51743c0d9c4d6ac3d82",
+      "new": "6b772cd3ba3686ac78f734681570d7da8902bdfa",
+      "tree": "d970aa0feaf4cc4e3ffdf9be51f5f95c0d92e7ff",
+      "parents_before": [
+        "cd6e82ad318473583c7b56d2ff47a6c1674244ef"
+      ],
+      "parents_after": [
+        "60c0ce693c890e09f923f0d12c3d4b170b8ea3c8"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "d0349513e2e13d75ce5857eee4520ee16e0c1cd8",
+      "new": "08753be83593252be6c895a25677189f20b4c455",
+      "tree": "68af82266871cb13a5c2f12fb0168e62160f2e20",
+      "parents_before": [
+        "776757560b256647d5f0d51743c0d9c4d6ac3d82"
+      ],
+      "parents_after": [
+        "6b772cd3ba3686ac78f734681570d7da8902bdfa"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "072be7c12f042abdb3dee5675671eb5b178142b5",
+      "new": "9355c1e4ca7eedc501829dff6c7e9fb60d64d1db",
+      "tree": "8cd500c8919e463aee75d01b154463ff7e759971",
+      "parents_before": [
+        "d0349513e2e13d75ce5857eee4520ee16e0c1cd8"
+      ],
+      "parents_after": [
+        "08753be83593252be6c895a25677189f20b4c455"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "151ff7a89d6753d27a85ce89aca1d110538b9911",
+      "new": "2d99310f50f9f37644ec1ad5c0f66e568b1856f6",
+      "tree": "2ffefb56dec9c2dcc5ac17c2cad3f67a0651f4de",
+      "parents_before": [
+        "072be7c12f042abdb3dee5675671eb5b178142b5"
+      ],
+      "parents_after": [
+        "9355c1e4ca7eedc501829dff6c7e9fb60d64d1db"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "f2128c27c38a39cddc8ac242abd93c049549b69a",
+      "new": "006db5b98032964d25b96cecbf7ba88609621f45",
+      "tree": "bed1e01bac6f53ef5be5958ed576378f093abfe6",
+      "parents_before": [
+        "151ff7a89d6753d27a85ce89aca1d110538b9911"
+      ],
+      "parents_after": [
+        "2d99310f50f9f37644ec1ad5c0f66e568b1856f6"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "350831b8a69ea3a36040f3073dd22cbda73b8450",
+      "new": "ee9989efb69833bc3cd7459f76db451f28a85b31",
+      "tree": "356178a5846d90527b74168ef602e69a72532453",
+      "parents_before": [
+        "f2128c27c38a39cddc8ac242abd93c049549b69a"
+      ],
+      "parents_after": [
+        "006db5b98032964d25b96cecbf7ba88609621f45"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "18392a4d4bed0ef95ce39365af76b9c063df68b4",
+      "new": "30408fb4034ea08393a23346c3be3afb59db93ca",
+      "tree": "b2c4afafeb9e3574449df413477673f8dc68d7be",
+      "parents_before": [
+        "350831b8a69ea3a36040f3073dd22cbda73b8450"
+      ],
+      "parents_after": [
+        "ee9989efb69833bc3cd7459f76db451f28a85b31"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "998077d6c7d0b8065edb3214b7fe4490009ef8ad",
+      "new": "c1bfdb5e97b6091688515ddb473bbf0b829c7380",
+      "tree": "fb96129d97bf636a7dce03a042b00da0718f1a1d",
+      "parents_before": [
+        "18392a4d4bed0ef95ce39365af76b9c063df68b4"
+      ],
+      "parents_after": [
+        "30408fb4034ea08393a23346c3be3afb59db93ca"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "76cd6872c4d17985d0e9379cae1bdcfa2ac8be58",
+      "new": "4f400d29e0fa31efda34e10a177b56eaee58e43d",
+      "tree": "e350cb5123fcf9996d545f6370ceda12073df797",
+      "parents_before": [
+        "998077d6c7d0b8065edb3214b7fe4490009ef8ad"
+      ],
+      "parents_after": [
+        "c1bfdb5e97b6091688515ddb473bbf0b829c7380"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "1a9ac4ed69185e740ced0e0b8347ebef59404c6f",
+      "new": "55de6d3f206cb614cfe70d4d6ff21a96dfa850b1",
+      "tree": "b3a753e8b176d8407c493b8e53824a0e6513f888",
+      "parents_before": [
+        "76cd6872c4d17985d0e9379cae1bdcfa2ac8be58"
+      ],
+      "parents_after": [
+        "4f400d29e0fa31efda34e10a177b56eaee58e43d"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "32df66de5f81abe94adafae4efc3339fda04088e",
+      "new": "ab82d940702ed446a254ad4658a7d2997bcc6c53",
+      "tree": "d17a6d5509f03eb393ca411281e10cb3ebbbccce",
+      "parents_before": [
+        "1a9ac4ed69185e740ced0e0b8347ebef59404c6f"
+      ],
+      "parents_after": [
+        "55de6d3f206cb614cfe70d4d6ff21a96dfa850b1"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "72942f5d6c5a545d27d7def3caea5f9241029f95",
+      "new": "5062edc35ae22aedb192f5dabeb1759e21823f9c",
+      "tree": "1e74d1f6307da71379699ed7a08f7dd003bc2e1f",
+      "parents_before": [
+        "32df66de5f81abe94adafae4efc3339fda04088e"
+      ],
+      "parents_after": [
+        "ab82d940702ed446a254ad4658a7d2997bcc6c53"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "0de5392c8398a0a6376dd53031067b612afd5b3d",
+      "new": "ee27372d222e8c286dc786c6ffd6a8d76c8d312d",
+      "tree": "e5616aef32c683e16f4d39ab83ca620eda8ef2b3",
+      "parents_before": [
+        "72942f5d6c5a545d27d7def3caea5f9241029f95"
+      ],
+      "parents_after": [
+        "5062edc35ae22aedb192f5dabeb1759e21823f9c"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "4fd7f37b19a4afdc3368632a758984586c8c8e09",
+      "new": "f51c8705bf38a702e5a3f34b15171bcf9966531a",
+      "tree": "642484842e7df21f8098e8f1aa800abda65308ee",
+      "parents_before": [
+        "b1e6651bc08ae1f9b446513c20123ce390742cf3"
+      ],
+      "parents_after": [
+        "2a5708133b217405019a7c2f70856eda42816196"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "4595461db7c3e1797674f8deac40f10951ad8fa7",
+      "new": "4bab3b6aa3a945a5ea8833bb69d10f7b3b9dfc71",
+      "tree": "e5616aef32c683e16f4d39ab83ca620eda8ef2b3",
+      "parents_before": [
+        "0de5392c8398a0a6376dd53031067b612afd5b3d",
+        "4fd7f37b19a4afdc3368632a758984586c8c8e09"
+      ],
+      "parents_after": [
+        "ee27372d222e8c286dc786c6ffd6a8d76c8d312d",
+        "f51c8705bf38a702e5a3f34b15171bcf9966531a"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "01a76d9893f0beb79b137249d5d9f7fed20a2f64",
+      "new": "c43877293ad076f02d31b24165e2caefd2eb5a04",
+      "tree": "625b83ffc42761fa96e583644003e2eeb6856804",
+      "parents_before": [
+        "4595461db7c3e1797674f8deac40f10951ad8fa7"
+      ],
+      "parents_after": [
+        "4bab3b6aa3a945a5ea8833bb69d10f7b3b9dfc71"
+      ],
+      "removed_coauthor_trailers": 0
+    },
+    {
+      "old": "4e9009091edfa27b9be3e3a3413cc82fc0367978",
+      "new": "776d810d855a73dee7cb28cd18c4e90811fcffc9",
+      "tree": "8b20a9e508e65490011cc6dc81456553c6a1391b",
+      "parents_before": [
+        "01a76d9893f0beb79b137249d5d9f7fed20a2f64"
+      ],
+      "parents_after": [
+        "c43877293ad076f02d31b24165e2caefd2eb5a04"
+      ],
+      "removed_coauthor_trailers": 0
+    }
+  ],
+  "current_reference_updates": [
+    {
+      "file": "checks/writing/account-usage.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/browser.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/clear-requests.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/computer-use.yaml",
+      "field": "study_commit:",
+      "old": "776757560b256647d5f0d51743c0d9c4d6ac3d82",
+      "new": "6b772cd3ba3686ac78f734681570d7da8902bdfa"
+    },
+    {
+      "file": "checks/writing/context.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/delegation.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/desktop-setup.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/feedback.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/first-task.yaml",
+      "field": "study_commit:",
+      "old": "776757560b256647d5f0d51743c0d9c4d6ac3d82",
+      "new": "6b772cd3ba3686ac78f734681570d7da8902bdfa"
+    },
+    {
+      "file": "checks/writing/goals.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/intro.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/latest-models.yaml",
+      "field": "study_commit:",
+      "old": "072be7c12f042abdb3dee5675671eb5b178142b5",
+      "new": "9355c1e4ca7eedc501829dff6c7e9fb60d64d1db"
+    },
+    {
+      "file": "checks/writing/materials.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/models-effort.yaml",
+      "field": "study_commit:",
+      "old": "072be7c12f042abdb3dee5675671eb5b178142b5",
+      "new": "9355c1e4ca7eedc501829dff6c7e9fb60d64d1db"
+    },
+    {
+      "file": "checks/writing/permissions.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/personalization.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/planning.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/plugins.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/projects-tasks.yaml",
+      "field": "study_commit:",
+      "old": "776757560b256647d5f0d51743c0d9c4d6ac3d82",
+      "new": "6b772cd3ba3686ac78f734681570d7da8902bdfa"
+    },
+    {
+      "file": "checks/writing/quick-reference.yaml",
+      "field": "study_commit:",
+      "old": "776757560b256647d5f0d51743c0d9c4d6ac3d82",
+      "new": "6b772cd3ba3686ac78f734681570d7da8902bdfa"
+    },
+    {
+      "file": "checks/writing/results.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/running-control.yaml",
+      "field": "study_commit:",
+      "old": "776757560b256647d5f0d51743c0d9c4d6ac3d82",
+      "new": "6b772cd3ba3686ac78f734681570d7da8902bdfa"
+    },
+    {
+      "file": "checks/writing/scheduled-work.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/skills.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/web-search.yaml",
+      "field": "study_commit:",
+      "old": "cc5465ac84231422896a8177597b17992f99ebbe",
+      "new": "ec35021962a05e7a413ad3d3f933c684e42123b7"
+    },
+    {
+      "file": "checks/writing/workspace-files.yaml",
+      "field": "study_commit:",
+      "old": "776757560b256647d5f0d51743c0d9c4d6ac3d82",
+      "new": "6b772cd3ba3686ac78f734681570d7da8902bdfa"
+    }
+  ]
+}

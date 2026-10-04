@@ -49,7 +49,7 @@ study_brief:
   - 子代理留第18章
   - 定时留第24章
   case_plan: 本书自编「资料目录」：四份输入、12条记录、三份结果；文件级核对已有，Goal桌面运行未实测。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：看要完成什么→取得资料目录→打开文件夹、New chat、Local、只读列出→核对模型与权限→/goal填写目标→进度行管理→等待→核对三份文件→离开电脑前的条件→可选Remote。

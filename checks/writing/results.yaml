@@ -45,7 +45,7 @@ study_brief:
   - 反馈怎样判断留第16章
   - 任务归档留第12章
   case_plan: 沿用待办清单v2与自设的v3排版修改；不新增材料。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：先找文件再读完成说明→预览的用途→内容与呈现分开查→批注的两种意思→检查改到与没改到的地方→保留认可版本→交文件与分享任务。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。

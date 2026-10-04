@@ -37,7 +37,7 @@ study_brief:
   defer:
   - 浏览器扩展留第22章
   case_plan: 自设情景：读取文档服务中一份无敏感信息的测试文档的标题和第一段；不指定服务商。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：插件提供什么→MCP一句话→只读需要的完整流程→五种状态→/mcp与设置页→动作边界→关闭与卸载。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。

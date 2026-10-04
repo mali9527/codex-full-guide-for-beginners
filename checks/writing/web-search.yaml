@@ -32,7 +32,7 @@ study_brief:
   defer:
   - 操作登录网站留第22章
   case_plan: 自设查证问题：Windows首次本地运行前的设置；结果另存为查证记录，不改待办清单。
-study_commit: cc5465ac84231422896a8177597b17992f99ebbe
+study_commit: ec35021962a05e7a413ad3d3f933c684e42123b7
 study_review:
   result: pass
   reason: 对照写前提要：把要查的问题说清→看是否真的搜索与读取→四个检查问题→事实、推断与未知→网页内容与操作边界→保存查证记录。 写前提要保存在cc5465a，其中正文为修订前版本；此前的提要与study_commit保留在历史中。
