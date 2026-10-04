@@ -1,0 +1,50 @@
+kind: interface
+form: detail
+reader_question: 追加消息是排到下一轮，还是影响当前工作？
+takeaway: 追加消息是排到下一轮，还是影响当前工作？
+source_sections:
+- 正在做的时候，又想补一句
+placement: 正在做的时候，又想补一句
+composition: 画设置单行局部，左跟进行为，右两项分段选择排队、引导；只在排队下画轻微灰线表示来源选中。省略整段帮助文字与其他设置。下方中文作者说明「Queue：下一轮」细箭头指排队，「Steer：当前运行」细箭头指引导。英文仅属作者圈注，不放入菜单。不要画队列消息或成功停止状态。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  follow:
+    role: ui
+  queue:
+    role: ui
+  steer:
+    role: ui
+  q:
+    role: author
+  s:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: unknown
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: zh-CN
+  state: follow-up-queue-selected
+  references:
+  - UI-router-follow-up-20261004
+  controls:
+  - label: follow
+    reference: UI-router-follow-up-20261004
+    region: follow
+  - label: queue
+    reference: UI-router-follow-up-20261004
+    region: queue
+  - label: steer
+    reference: UI-router-follow-up-20261004
+    region: steer
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: b3830982da54e275291f5ebbddbac20d8802ada2fddbe15ff1564eb545bbdf4f
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 追加消息是排到下一轮，还是影响当前工作？
+labels:
+  zh-CN: labels.zh-CN.yaml

@@ -1,0 +1,59 @@
+id: UI-official-plugin-directory-20261004
+source_url: https://learn.chatgpt.com/docs/changelog
+asset_url: https://learn.chatgpt.com/images/codex/plugins/directory.webp
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: plugin-directory-browse
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: fc446c5839b9f12e90689bea2950ca561aea5dddf8189bb33444a908bda56cc9
+limitations:
+- 官方2026-03-25条目中的历史Mac界面；具体版本未知。当前页面分类名称可能变化，省略旧分类和宣传图。
+- Computer Use仅作来源中插件卡片示例，图不表示已安装、授权或可用于所有平台。
+regions:
+- id: plugins
+  box:
+  - 0.225
+  - 0.085
+  - 0.254
+  - 0.107
+  text: Plugins
+  treatment: keep
+  reason: 插件页
+- id: manage
+  box:
+  - 0.781
+  - 0.085
+  - 0.815
+  - 0.107
+  text: Manage
+  treatment: keep
+  reason: 管理入口
+- id: search
+  box:
+  - 0.57
+  - 0.183
+  - 0.66
+  - 0.21
+  text: Search plugins
+  treatment: keep
+  reason: 搜索框
+- id: computer
+  box:
+  - 0.365
+  - 0.503
+  - 0.412
+  - 0.522
+  text: Computer Use
+  treatment: keep
+  reason: 真实示例插件名称
+image_sha256: fc446c5839b9f12e90689bea2950ca561aea5dddf8189bb33444a908bda56cc9
+dimensions:
+- 1280
+- 720

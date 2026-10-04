@@ -1,0 +1,64 @@
+kind: interface
+form: detail
+reader_question: 创建定时任务时要核对什么？
+takeaway: 创建定时任务时要核对什么？
+source_sections:
+- 用对话建立安排，再核对保存结果
+placement: 用对话建立安排，再核对保存结果
+composition: 纵向创建表单，依原顺序Name单行空框、Projects空框、Prompt多行空框、Schedule时间区无字留白，右下Create按钮。保持全部英文标签大字清晰。外围中文提示「名称」「项目」「每次要求」「时间」分别与四字段平行排列，小箭头指对应标签。不能写具体时间、项目或成功状态。不要增加标题。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  name:
+    role: ui
+  projects:
+    role: ui
+  prompt:
+    role: ui
+  schedule:
+    role: ui
+  create:
+    role: ui
+  n:
+    role: author
+  p:
+    role: author
+  req:
+    role: author
+  time:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: unknown
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: create-automation-form
+  references:
+  - UI-mirror-create-automation-20261004
+  controls:
+  - label: name
+    reference: UI-mirror-create-automation-20261004
+    region: name
+  - label: projects
+    reference: UI-mirror-create-automation-20261004
+    region: projects
+  - label: prompt
+    reference: UI-mirror-create-automation-20261004
+    region: prompt
+  - label: schedule
+    reference: UI-mirror-create-automation-20261004
+    region: schedule
+  - label: create
+    reference: UI-mirror-create-automation-20261004
+    region: create
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: e6558e4706aafa20df5e86b3bf234ea43c593c5e505b97b72ae2a08b64bea648
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 创建定时任务时要核对什么？
+labels:
+  zh-CN: labels.zh-CN.yaml

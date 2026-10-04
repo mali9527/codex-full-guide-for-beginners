@@ -1,0 +1,38 @@
+kind: interface
+form: detail
+reader_question: 恢复归档任务要选哪个按钮？
+takeaway: 恢复归档任务要选哪个按钮？
+source_sections:
+- 归档以后，怎样回来
+placement: 归档以后，怎样回来
+composition: 只放大归档列表一行：左侧任务名与日期以两条无字短线简化，右侧先垃圾桶图标，最右Unarchive按钮。上方中文「恢复原任务」箭头只指Unarchive。不要画删除工具提示、实际任务名、日期或额外标题。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  restore:
+    role: ui
+  note:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: unknown
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: archived-chat-row
+  references:
+  - UI-official-archive-row-20261004
+  controls:
+  - label: restore
+    reference: UI-official-archive-row-20261004
+    region: restore
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 82ec8a7ee93087c7ae4cee61ffc2c03062e2f2c85f9a53416e44dfeedc2a0e7e
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 恢复归档任务要选哪个按钮？
+labels:
+  zh-CN: labels.zh-CN.yaml

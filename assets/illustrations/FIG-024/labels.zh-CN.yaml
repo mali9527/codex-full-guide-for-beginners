@@ -1,0 +1,8 @@
+title: 页面批注在什么地方？
+caption: 内置浏览器的页面与批注区域。来源图的Commenting表示正在批注；保存批注后，还要回到任务说明希望怎样处理。
+alt: 画真实截图右侧内置浏览器面板局部：上栏Browser，下一栏最右Commenting；下方网页区域只用灰线占位，在靠左中部保留数字1批注圆点。中文「内置页面」箭头指Browser，「页面批注」箭头指Commenting。无其他标题，不复制原价格案例。
+labels:
+  browser: Browser
+  comment: Commenting
+  note: 内置页面
+  purpose: 页面批注

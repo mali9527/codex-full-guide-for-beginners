@@ -1,0 +1,68 @@
+id: UI-mirror-create-automation-20261004
+source_url: https://doc.jarvisuni.com/openai/codex/app/features
+asset_url: https://doc.jarvisuni.com/openai/_official_assets/images/codex/app/create-automation-light.webp
+product: Codex
+surface: desktop
+platform: unknown
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: create-automation-form
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 03b228467ff662313e9e095299cdc3e9fa25d1bed57c69d203517a717c3a1e23
+limitations:
+- 历史官方截图镜像；平台、版本未知。图示是创建表单，不是已保存计划或成功运行证明。
+- 省略原代码测试案例名称、项目、提示词、时间值，不把它换成本书虚构运行记录。
+regions:
+- id: name
+  box:
+  - 0.257
+  - 0.243
+  - 0.299
+  - 0.261
+  text: Name
+  treatment: keep
+  reason: 安排名称
+- id: projects
+  box:
+  - 0.257
+  - 0.356
+  - 0.305
+  - 0.381
+  text: Projects
+  treatment: keep
+  reason: 运行项目
+- id: prompt
+  box:
+  - 0.257
+  - 0.505
+  - 0.305
+  - 0.528
+  text: Prompt
+  treatment: keep
+  reason: 每轮要求
+- id: schedule
+  box:
+  - 0.257
+  - 0.77
+  - 0.309
+  - 0.797
+  text: Schedule
+  treatment: keep
+  reason: 时间安排
+- id: create
+  box:
+  - 0.691
+  - 0.849
+  - 0.723
+  - 0.874
+  text: Create
+  treatment: keep
+  reason: 创建按钮
+image_sha256: 03b228467ff662313e9e095299cdc3e9fa25d1bed57c69d203517a717c3a1e23
+dimensions:
+- 1280
+- 720

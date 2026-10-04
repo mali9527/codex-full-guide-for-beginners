@@ -1,0 +1,50 @@
+id: UI-router-follow-up-20261004
+source_url: https://routerpark.com/ar/t/25689890-88c8-4976-976d-67702c44d24c
+asset_url: https://cdn.nlark.com/yuque/0/2026/png/22304745/1777449476148-33b6b73a-7755-4fff-9f7e-f25c7da0bdcb.png
+product: Codex
+surface: desktop
+platform: unknown
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: zh-CN
+state: follow-up-queue-selected
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 2c218e6b7a998fdf1717637d471c9cf910e5b56a665473654f2c3fd02b76691a
+limitations:
+- 公开转载页面内嵌实图；原作者、许可和版本未知，平台未知。只参考设置行的三个通用界面标签与位置，不复述独特案例或作者教学结构。
+- 实际查看跟进行为行；其余来源文字、网页广告和代码示例全部省略。当前含义另由官方prompting文档核对。
+regions:
+- id: follow
+  box:
+  - 0.351
+  - 0.271
+  - 0.403
+  - 0.298
+  text: 跟进行为
+  treatment: keep
+  reason: 设置名称
+- id: queue
+  box:
+  - 0.646
+  - 0.295
+  - 0.666
+  - 0.319
+  text: 排队
+  treatment: keep
+  reason: 当前来源选择
+- id: steer
+  box:
+  - 0.673
+  - 0.295
+  - 0.696
+  - 0.319
+  text: 引导
+  treatment: keep
+  reason: 另一个行为
+image_sha256: 2c218e6b7a998fdf1717637d471c9cf910e5b56a665473654f2c3fd02b76691a
+dimensions:
+- 1280
+- 720

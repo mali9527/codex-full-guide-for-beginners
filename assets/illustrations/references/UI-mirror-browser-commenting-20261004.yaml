@@ -1,0 +1,41 @@
+id: UI-mirror-browser-commenting-20261004
+source_url: https://doc.jarvisuni.com/openai/codex/app/features
+asset_url: https://doc.jarvisuni.com/openai/_official_assets/images/codex/app/in-app-browser-light.webp
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: in-app-browser-commenting
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 0caa4571eff2548ebc4d4e12af4bf1509473acbc3760061d7b5fe9a30714cbad
+limitations:
+- 历史官方截图镜像；Mac窗口，版本未知。Commenting为来源中显示状态，不冒称当前所有版本入口同名。
+- 省略来源的定价页面内容、任务标题、网址和图表；保留面板层级。
+regions:
+- id: browser
+  box:
+  - 0.55
+  - 0.14
+  - 0.586
+  - 0.16
+  text: Browser
+  treatment: keep
+  reason: 内置浏览器标签
+- id: comment
+  box:
+  - 0.813
+  - 0.168
+  - 0.858
+  - 0.188
+  text: Commenting
+  treatment: keep
+  reason: 来源中的批注状态
+image_sha256: 0caa4571eff2548ebc4d4e12af4bf1509473acbc3760061d7b5fe9a30714cbad
+dimensions:
+- 1280
+- 720

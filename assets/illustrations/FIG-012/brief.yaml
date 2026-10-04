@@ -1,0 +1,52 @@
+kind: interface
+form: detail
+reader_question: 三种批准模式在菜单中怎样区分？
+takeaway: 三种批准模式在菜单中怎样区分？
+source_sections:
+- 三种常见模式怎样选
+placement: 三种常见模式怎样选
+composition: 纵向放大真实三行菜单，第一行承認を求める，第二行代わりに承認，第三行フルアクセス，勾选只在第二行最右。省略菜单标题及各行帮助长句。菜单外右侧中文「请求批准」「帮我批准」「完全访问」各用细线对齐对应行。不要将中文放入软件菜单，不画未查看的设置页面，不增加标题。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  ask:
+    role: ui
+  auto:
+    role: ui
+  full:
+    role: ui
+  a:
+    role: author
+  b:
+    role: author
+  c:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: ja
+  state: approval-mode-menu-open
+  references:
+  - UI-ren-permission-menu-20261004
+  controls:
+  - label: ask
+    reference: UI-ren-permission-menu-20261004
+    region: ask
+  - label: auto
+    reference: UI-ren-permission-menu-20261004
+    region: auto
+  - label: full
+    reference: UI-ren-permission-menu-20261004
+    region: full
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 9e9c97bd5d317df5fcb79367b24b3c0d7381c8258fa410b6add195f1ab38ce91
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 三种批准模式在菜单中怎样区分？
+labels:
+  zh-CN: labels.zh-CN.yaml

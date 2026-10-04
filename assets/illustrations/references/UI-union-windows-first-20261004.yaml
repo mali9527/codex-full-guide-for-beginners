@@ -1,0 +1,50 @@
+id: UI-union-windows-first-20261004
+source_url: https://www.unionai.co.jp/blog/codex-ability
+asset_url: https://cdn.sanity.io/images/mr3a8yq2/production/d410f6c47eb618eeb1cbc240378fb32730defbfe-1919x940.jpg
+product: Codex
+surface: desktop
+platform: windows
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: ja
+state: new-task-no-project
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 62f743331eaa9b6e467136a93ffe02700d4565bae0853aafdd421908666c21f2
+limitations:
+- 来源作者标明Windows；版本未知。来源为日文界面。只用侧栏和选择项目相对输入区位置，不沿用原教程要求先建GitHub仓库的非必要前置。
+- 截屏底部有裁切，省略所有未出现的输入区下沿控件和账号按钮。
+regions:
+- id: new
+  box:
+  - 0.026
+  - 0.183
+  - 0.11
+  - 0.214
+  text: 新しいチャット
+  treatment: keep
+  reason: 新聊天
+- id: projects
+  box:
+  - 0.01
+  - 0.373
+  - 0.08
+  - 0.408
+  text: プロジェクト
+  treatment: keep
+  reason: 项目区
+- id: choose
+  box:
+  - 0.357
+  - 0.8
+  - 0.455
+  - 0.829
+  text: プロジェクトを選択
+  treatment: keep
+  reason: 输入区上方项目选择
+image_sha256: 62f743331eaa9b6e467136a93ffe02700d4565bae0853aafdd421908666c21f2
+dimensions:
+- 1280
+- 720

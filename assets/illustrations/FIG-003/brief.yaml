@@ -1,0 +1,45 @@
+kind: interface
+form: detail
+reader_question: Mac文件夹窗口里，最后确认哪里？
+takeaway: Mac文件夹窗口里，最后确认哪里？
+source_sections:
+- 在Codex中打开它
+placement: 在Codex中打开它
+composition: 依据真实Mac选择器画简单窗口：窄左侧栏用文件夹图标和无字灰线，右侧目录列表用三行无字线与文件夹图标，顶部地址区用无字横线代替。右下并排Cancel、Open。中文「确认文件夹」箭头指Open；其上中文「先核对位置」箭头指顶部地址区。不要画来源专有路径或自创文件夹名，不画已连接结果，无额外标题。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  open:
+    role: ui
+  cancel:
+    role: ui
+  note:
+    role: author
+  location:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: folder-picker-open
+  references:
+  - UI-toucan-mac-picker-20261004
+  controls:
+  - label: open
+    reference: UI-toucan-mac-picker-20261004
+    region: open
+  - label: cancel
+    reference: UI-toucan-mac-picker-20261004
+    region: cancel
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 61ac84f40c0cce1bae0d01e09911d59e0708903f0eab189f40d08fa17c3c9a8a
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: Mac文件夹窗口里，最后确认哪里？
+labels:
+  zh-CN: labels.zh-CN.yaml

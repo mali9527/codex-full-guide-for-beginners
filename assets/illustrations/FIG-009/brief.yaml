@@ -1,0 +1,52 @@
+kind: interface
+form: detail
+reader_question: Windows第一屏，先看哪几个地方？
+takeaway: Windows第一屏，先看哪几个地方？
+source_sections:
+- 侧栏：开始一件事，也找回做过的事
+placement: 侧栏：开始一件事，也找回做过的事
+composition: 真实Windows窗口的左右结构，左侧窄栏上方新しいチャット，中段プロジェクト，其他条目用无字短线简化。右侧工作区上部留白，底部先项目条プロジェクトを選択，其下宽输入框只显示上半部，底部用自然截断边线表示局部。作者中文「找到任务」箭头指左侧新しいチャット，「先选项目」箭头指项目条，「填写要求」箭头指下方输入框。不得补造底部按钮、模型、旧提示卡片或标题。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  new:
+    role: ui
+  projects:
+    role: ui
+  choose:
+    role: ui
+  task:
+    role: author
+  project:
+    role: author
+  input:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: windows
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: ja
+  state: new-task-no-project
+  references:
+  - UI-union-windows-first-20261004
+  controls:
+  - label: new
+    reference: UI-union-windows-first-20261004
+    region: new
+  - label: projects
+    reference: UI-union-windows-first-20261004
+    region: projects
+  - label: choose
+    reference: UI-union-windows-first-20261004
+    region: choose
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 2093b99ac7f472c107a85e2cd3a12df5f60a83a917bc18b7e4e1381036da512b
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: Windows第一屏，先看哪几个地方？
+labels:
+  zh-CN: labels.zh-CN.yaml

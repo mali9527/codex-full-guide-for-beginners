@@ -1,0 +1,38 @@
+kind: interface
+form: detail
+reader_question: 怎样认出已经进入规划？
+takeaway: 怎样认出已经进入规划？
+source_sections:
+- 先确认计划针对哪份材料
+placement: 先确认计划针对哪份材料
+composition: 画宽输入框轮廓，框内下沿靠右出现Plan圆角标签，标签左小列表图标、右小×；中文圈注「当前在规划」箭头指Plan标签。只保留这块局部，不画原图旧型号、旧权限和快捷键。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  plan:
+    role: ui
+  note:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: plan-mode-enabled
+  references:
+  - UI-deepak-plan-chip-20261004
+  controls:
+  - label: plan
+    reference: UI-deepak-plan-chip-20261004
+    region: plan
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 077a4aa82cd5d364e4ab6d0b83307db32923d34209cdad0c80257a4e19249db3
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 怎样认出已经进入规划？
+labels:
+  zh-CN: labels.zh-CN.yaml

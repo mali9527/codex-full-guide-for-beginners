@@ -1,0 +1,77 @@
+id: UI-issue-usage-windows-20261004
+source_url: https://github.com/openai/codex/issues/23192
+asset_url: https://github.com/jjoanna2-debug/test-project-tbd/releases/download/codex-issue-23192-assets/desktop-usage-billing-full.png
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: usage-billing-limits
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 020c6fad998eecc88e95c7a646bc9640f3c4fc26a226717b808f1ada9eacb623
+limitations:
+- 来源是Mac 26.513.31313 (2867)用户报告，2026-05-17截图。案例涉及不同界面数字不一致，仅用于辨认字段，不将数字或同步状态当作正常账户规则。
+- 使用已实际加载的GitHub页面内嵌截图；直开下载附件不能呈现，不以失败页面当截图。
+regions:
+- id: five
+  box:
+  - 0.294
+  - 0.85
+  - 0.355
+  - 0.874
+  text: 5 hour usage limit
+  treatment: keep
+  reason: 五小时范围
+- id: weekly
+  box:
+  - 0.294
+  - 0.905
+  - 0.361
+  - 0.924
+  text: Weekly usage limit
+  treatment: keep
+  reason: 每周范围
+- id: a
+  box:
+  - 0.554
+  - 0.856
+  - 0.588
+  - 0.883
+  text: 100% left
+  treatment: keep
+  reason: 来源剩余百分比
+- id: b
+  box:
+  - 0.557
+  - 0.909
+  - 0.588
+  - 0.934
+  text: 62% left
+  treatment: keep
+  reason: 来源每周剩余百分比
+- id: r1
+  box:
+  - 0.294
+  - 0.873
+  - 0.348
+  - 0.894
+  text: Resets 2:28 AM
+  treatment: keep
+  reason: 来源短窗口重置
+- id: r2
+  box:
+  - 0.294
+  - 0.924
+  - 0.34
+  - 0.944
+  text: Resets May 19
+  treatment: keep
+  reason: 来源周窗口重置
+image_sha256: 020c6fad998eecc88e95c7a646bc9640f3c4fc26a226717b808f1ada9eacb623
+dimensions:
+- 1280
+- 720

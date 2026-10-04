@@ -1,0 +1,40 @@
+id: UI-toucan-mac-picker-20261004
+source_url: https://www.taketoucan.com/help/codex
+asset_url: https://www.taketoucan.com/help/mac-setup/MacSetup02FolderPicker.png
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: folder-picker-open
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: c3fe6a23eaa70fd968e3e39534719d234927270e3da0db780a16c2bc671719ba
+limitations:
+- 来源为Mac文件夹选择器；版本未知。省略案例目录名、iCloud路径与文件名，不把该来源的专用iCloud行为泛化。
+regions:
+- id: open
+  box:
+  - 0.843
+  - 0.87
+  - 0.886
+  - 0.906
+  text: Open
+  treatment: keep
+  reason: 右下确认
+- id: cancel
+  box:
+  - 0.765
+  - 0.87
+  - 0.817
+  - 0.906
+  text: Cancel
+  treatment: keep
+  reason: 取消
+image_sha256: c3fe6a23eaa70fd968e3e39534719d234927270e3da0db780a16c2bc671719ba
+dimensions:
+- 1280
+- 720

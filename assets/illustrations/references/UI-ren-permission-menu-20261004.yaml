@@ -1,0 +1,49 @@
+id: UI-ren-permission-menu-20261004
+source_url: https://note.com/renkon40/n/n48b2b65332db?hl=en
+asset_url: https://assets.st-note.com/img/1786695674-78wuBzYJhIdmenGCNPEbLOgf.png?width=1200
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: ja
+state: approval-mode-menu-open
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 5b1b6cbbe1d7d63427ad36c734c246aa84376b31ecd2b04012d07f8fd0793f91
+limitations:
+- 作者为Mac演示，2026-08月界面，具体版本未知。日本语原文与勾选保留；不采纳作者关于文件夹可完全隔离的过度概括。
+regions:
+- id: ask
+  box:
+  - 0.231
+  - 0.397
+  - 0.308
+  - 0.421
+  text: 承認を求める
+  treatment: keep
+  reason: 请求批准
+- id: auto
+  box:
+  - 0.231
+  - 0.476
+  - 0.308
+  - 0.501
+  text: 代わりに承認
+  treatment: keep
+  reason: 代为批准
+- id: full
+  box:
+  - 0.231
+  - 0.556
+  - 0.308
+  - 0.579
+  text: フルアクセス
+  treatment: keep
+  reason: 完全访问
+image_sha256: 5b1b6cbbe1d7d63427ad36c734c246aa84376b31ecd2b04012d07f8fd0793f91
+dimensions:
+- 1280
+- 720

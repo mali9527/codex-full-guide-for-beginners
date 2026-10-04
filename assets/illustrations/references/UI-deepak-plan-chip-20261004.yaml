@@ -1,0 +1,31 @@
+id: UI-deepak-plan-chip-20261004
+source_url: https://deepakness.com/raw/codex-plan-mode-shortcut/
+asset_url: https://assets.deepakness.com/raw/codex-plan-mode-shortcut/codex-app-plan-mode.png
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: plan-mode-enabled
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: d3bc607fffae843d9bcb4c5c9ffcb060573d3f987c896ffe893996c130090767
+limitations:
+- 来源为2026-02-07的Mac 260206.1448 (565)截图。只沿用Plan标记形态与位置；省略旧模型、旧权限文字和快捷键，不推定为当前默认。
+regions:
+- id: plan
+  box:
+  - 0.407
+  - 0.67
+  - 0.487
+  - 0.728
+  text: Plan
+  treatment: keep
+  reason: 输入区规划模式标记
+image_sha256: d3bc607fffae843d9bcb4c5c9ffcb060573d3f987c896ffe893996c130090767
+dimensions:
+- 1280
+- 720

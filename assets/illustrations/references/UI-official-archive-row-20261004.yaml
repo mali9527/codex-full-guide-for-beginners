@@ -1,0 +1,31 @@
+id: UI-official-archive-row-20261004
+source_url: https://help.openai.com/en/articles/20001333-how-to-archive-and-delete-codex-chats-in-the-chatgpt-app
+asset_url: https://images.ctfassets.net/j22is2dtoxu1/3JI2Miob2ZvMCJEqqXqe5H/fc63703172135d2b7cec9d0fbb1be819/Delete_archived_chat.jpg?fm=webp&q=80&w=512
+product: Codex
+surface: desktop
+platform: unknown
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: archived-chat-row
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 9bed3cc8ee4a7a7b4165cb720282d3961e4192ed9407c18ad964dd9722bcb3fc
+limitations:
+- 官方归档列表局部；平台、版本未知。只保留恢复按钮与相邻删除图标，不画操作后状态。
+regions:
+- id: restore
+  box:
+  - 0.64
+  - 0.487
+  - 0.691
+  - 0.512
+  text: Unarchive
+  treatment: keep
+  reason: 恢复入口
+image_sha256: 9bed3cc8ee4a7a7b4165cb720282d3961e4192ed9407c18ad964dd9722bcb3fc
+dimensions:
+- 1280
+- 720

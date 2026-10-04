@@ -36,7 +36,7 @@
 已入稿12张教学图：7张概念图，以及Windows设置、打开文件夹、关联目录、Goal控制和应用批准的5张界面局部图。其他界面图仍在补充；目录图数包含已登记候选。
 
 <!-- studio:toc -->
-共 26 个单元，15 张图。
+共 26 个单元，28 张图。
 
 1. [开篇：GPT-6 Astra与现在的Codex](manuscript/latest-models.md)
 2. [第1章 Codex能帮你做什么](manuscript/intro.md)

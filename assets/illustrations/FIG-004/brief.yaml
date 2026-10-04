@@ -1,0 +1,50 @@
+kind: interface
+form: detail
+reader_question: Windows文件夹窗口里，怎样确认选中的目录？
+takeaway: Windows文件夹窗口里，怎样确认选中的目录？
+source_sections:
+- 在Codex中打开它
+placement: 在Codex中打开它
+composition: 放大选择器下部两行：上行左フォルダー:、右长字段空白；下一行右侧并排フォルダーの選択与キャンセル按钮。中文「核对所选目录」在上方箭头指空字段；中文「选择文件夹」在下方箭头指左按钮。全部黑灰手绘，不复制红框，不增加目录名称。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  folder:
+    role: ui
+  select:
+    role: ui
+  cancel:
+    role: ui
+  note:
+    role: author
+  confirm:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: windows
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: ja
+  state: folder-picker-confirmation
+  references:
+  - UI-sai-windows-picker-20261004
+  controls:
+  - label: folder
+    reference: UI-sai-windows-picker-20261004
+    region: folder
+  - label: select
+    reference: UI-sai-windows-picker-20261004
+    region: select
+  - label: cancel
+    reference: UI-sai-windows-picker-20261004
+    region: cancel
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 61ac84f40c0cce1bae0d01e09911d59e0708903f0eab189f40d08fa17c3c9a8a
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: Windows文件夹窗口里，怎样确认选中的目录？
+labels:
+  zh-CN: labels.zh-CN.yaml

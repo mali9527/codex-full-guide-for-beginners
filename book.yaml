@@ -550,6 +550,50 @@ diagrams:
   unit: skills
   type: illustration
   spec: assets/illustrations/FIG-022/brief.yaml
+- id: FIG-016
+  unit: projects-tasks
+  type: illustration
+  spec: assets/illustrations/FIG-016/brief.yaml
+- id: FIG-018
+  unit: planning
+  type: illustration
+  spec: assets/illustrations/FIG-018/brief.yaml
+- id: FIG-024
+  unit: browser
+  type: illustration
+  spec: assets/illustrations/FIG-024/brief.yaml
+- id: FIG-026
+  unit: scheduled-work
+  type: illustration
+  spec: assets/illustrations/FIG-026/brief.yaml
+- id: FIG-012
+  unit: permissions
+  type: illustration
+  spec: assets/illustrations/FIG-012/brief.yaml
+- id: FIG-003
+  unit: workspace-files
+  type: illustration
+  spec: assets/illustrations/FIG-003/brief.yaml
+- id: FIG-004
+  unit: workspace-files
+  type: illustration
+  spec: assets/illustrations/FIG-004/brief.yaml
+- id: FIG-009
+  unit: workspace-files
+  type: illustration
+  spec: assets/illustrations/FIG-009/brief.yaml
+- id: FIG-010
+  unit: account-usage
+  type: illustration
+  spec: assets/illustrations/FIG-010/brief.yaml
+- id: FIG-013
+  unit: running-control
+  type: illustration
+  spec: assets/illustrations/FIG-013/brief.yaml
+- id: FIG-023
+  unit: plugins
+  type: illustration
+  spec: assets/illustrations/FIG-023/brief.yaml
 toolkit: 0.1.0
 published:
   version: v2026.09.1-rc.1

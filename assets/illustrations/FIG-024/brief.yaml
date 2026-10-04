@@ -1,0 +1,45 @@
+kind: interface
+form: detail
+reader_question: 页面批注在什么地方？
+takeaway: 页面批注在什么地方？
+source_sections:
+- 在页面上指出具体位置
+placement: 在页面上指出具体位置
+composition: 画真实截图右侧内置浏览器面板局部：上栏Browser，下一栏最右Commenting；下方网页区域只用灰线占位，在靠左中部保留数字1批注圆点。中文「内置页面」箭头指Browser，「页面批注」箭头指Commenting。无其他标题，不复制原价格案例。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  browser:
+    role: ui
+  comment:
+    role: ui
+  note:
+    role: author
+  purpose:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: in-app-browser-commenting
+  references:
+  - UI-mirror-browser-commenting-20261004
+  controls:
+  - label: browser
+    reference: UI-mirror-browser-commenting-20261004
+    region: browser
+  - label: comment
+    reference: UI-mirror-browser-commenting-20261004
+    region: comment
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 8343169b197db3dbd255b04e3bd383d0fcb4a3d7376fa3ea66646fcf0a5ba751
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 页面批注在什么地方？
+labels:
+  zh-CN: labels.zh-CN.yaml

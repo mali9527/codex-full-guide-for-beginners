@@ -1,0 +1,68 @@
+kind: interface
+form: detail
+reader_question: 剩余用量与重置时间怎样一起读？
+takeaway: 剩余用量与重置时间怎样一起读？
+source_sections:
+- 到哪里看剩余用量
+placement: 到哪里看剩余用量
+composition: 只放大来源下方两行用量卡片：上行左5 hour usage limit，其下Resets 2:28 AM，右100% left和细进度条；下行左Weekly
+  usage limit，其下Resets May 19，右62% left和进度条。作者圈注「看时间范围」指左上，「看剩余比例」指右上，「看重置时间」指左下日期。所有数值严格沿用来源，不画来源紫框或其他套餐价格。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  five:
+    role: ui
+  weekly:
+    role: ui
+  a:
+    role: ui
+  b:
+    role: ui
+  r1:
+    role: ui
+  r2:
+    role: ui
+  period:
+    role: author
+  left:
+    role: author
+  reset:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: usage-billing-limits
+  references:
+  - UI-issue-usage-windows-20261004
+  controls:
+  - label: five
+    reference: UI-issue-usage-windows-20261004
+    region: five
+  - label: weekly
+    reference: UI-issue-usage-windows-20261004
+    region: weekly
+  - label: a
+    reference: UI-issue-usage-windows-20261004
+    region: a
+  - label: b
+    reference: UI-issue-usage-windows-20261004
+    region: b
+  - label: r1
+    reference: UI-issue-usage-windows-20261004
+    region: r1
+  - label: r2
+    reference: UI-issue-usage-windows-20261004
+    region: r2
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: fa36c64f92152eac9f2ca77fca6c840b72cc41b74d29ab6c3ed5659aeb0231a3
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 剩余用量与重置时间怎样一起读？
+labels:
+  zh-CN: labels.zh-CN.yaml
