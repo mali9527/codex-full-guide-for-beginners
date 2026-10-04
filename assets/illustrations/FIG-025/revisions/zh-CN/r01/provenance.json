@@ -41,7 +41,7 @@
       }
     ],
     "original_image_sha256": "1c5b5ba14495d6c32dc29e84d7fdc6d91f2751d5b3e74066367f485e94fe01ca",
-    "raw_output": "/Users/mali/.codex/generated_images/01a0e29e-ab9f-7a93-adef-84add4500f55/exec-048bc1ad-11d3-4915-9e6b-685cd4cb63e3.png",
+    "raw_output": "exec-048bc1ad-11d3-4915-9e6b-685cd4cb63e3.png",
     "postprocessing": {
       "authorization": "User explicitly approved Python/Pillow grayscale and size normalization for these five images on 2026-10-04.",
       "software": "Pillow 11.3.0",
