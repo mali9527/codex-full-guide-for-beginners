@@ -542,6 +542,14 @@ diagrams:
   unit: models-effort
   type: illustration
   spec: assets/illustrations/FIG-011/brief.yaml
+- id: FIG-014
+  unit: materials
+  type: illustration
+  spec: assets/illustrations/FIG-014/brief.yaml
+- id: FIG-022
+  unit: skills
+  type: illustration
+  spec: assets/illustrations/FIG-022/brief.yaml
 toolkit: 0.1.0
 published:
   version: v2026.09.1-rc.1

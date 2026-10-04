@@ -1,0 +1,59 @@
+id: UI-arthur-appshot-destination-20261004
+source_url: https://taoyutsun.blogspot.com/2026/09/codex-appshots-setup-guide.html
+asset_url: https://blogger.googleusercontent.com/img/a/AVvXsEiqVCl5BFW_lSSaGa3tOFAB8lwwo4L4XpL82gpCYS4CgcC7KC0YN2xnH3EY8gfN1XFIZYp3UHPFvepULx-uMUfjTw3q6wBTthH2GO8Vrn4Vvx6SOc12JWiJxwCrP7G3v2sSwiF3iCGuPkNTSBUdcqTmL_acIJrovGplAuRVm7Roefp882baL5ZvKwiUjLr_
+product: Codex
+surface: desktop
+platform: windows
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: zh-TW
+state: appshot-destination-menu
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 4555c8c90ad3c484129bf035fbb2b255a25b1e231e9baceed6a27c02bbf7d475
+limitations:
+- 来源作者声明Windows，发布于2026-09-15；具体客户端版本未知。右侧Mac照片为页面插图，不据此改变平台判断。
+- 只画左侧目的地下拉框，保留繁体UI，不复用来源照片、文字教法或示例。
+regions:
+- id: destination
+  box:
+  - 0.22
+  - 0.39
+  - 0.33
+  - 0.42
+  text: Appshot 目的地
+  treatment: keep
+  reason: 目的地下拉入口
+- id: auto
+  box:
+  - 0.214
+  - 0.455
+  - 0.247
+  - 0.482
+  text: 自動
+  treatment: keep
+  reason: 源图选中状态
+- id: current
+  box:
+  - 0.214
+  - 0.547
+  - 0.264
+  - 0.576
+  text: 目前對話
+  treatment: keep
+  reason: 把快照放入当前任务
+- id: new
+  box:
+  - 0.214
+  - 0.618
+  - 0.255
+  - 0.648
+  text: 新對話
+  treatment: keep
+  reason: 另开任务
+image_sha256: 4555c8c90ad3c484129bf035fbb2b255a25b1e231e9baceed6a27c02bbf7d475
+dimensions:
+- 1280
+- 720

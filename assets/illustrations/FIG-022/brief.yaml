@@ -1,0 +1,56 @@
+kind: interface
+form: detail
+reader_question: 先找到技能创建器
+takeaway: 先找到技能创建器
+source_sections:
+- 用内置创建器，把已有流程写下来
+placement: 用内置创建器，把已有流程写下来
+composition: 只画真实技能菜单的一行：左Skill Creator，中间Create or update a skill，右System；该行位于下方宽输入框之上。输入框左上只有$字符，其他控件全部省略，保留菜单在输入框上方的位置。中文圈注「输入后选择」箭头指$，另一圈注「创建或更新技能」指Skill
+  Creator。不得补造本书技能或成功结果。
+content_guard: 固定1448×1086不透明细方格纸，黑笔与中性灰；仅画labels，不画标题、图注、版本声明；省略的控件不能补造。
+text_roles:
+  creator:
+    role: ui
+  desc:
+    role: ui
+  system:
+    role: ui
+  dollar:
+    role: ui
+  note:
+    role: author
+  purpose:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: unknown
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: skill-picker-open
+  references:
+  - UI-mirror-skill-picker-20261004
+  controls:
+  - label: creator
+    reference: UI-mirror-skill-picker-20261004
+    region: creator
+  - label: desc
+    reference: UI-mirror-skill-picker-20261004
+    region: desc
+  - label: system
+    reference: UI-mirror-skill-picker-20261004
+    region: system
+  - label: dollar
+    reference: UI-mirror-skill-picker-20261004
+    region: dollar
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: bd06d00852fc1c4c5f6019b81af99a87840ece9d2d48a8406da22d4de46078cc
+  reviewed_by: Codex：实际回读本章并查看参考图片
+  checked_on: '2026-10-04'
+  reason: 依据已实际查看的真实图片收窄为关键入口局部；省略未取得的后续状态，不改变正文教学范围。
+  benefit: 先找到技能创建器
+labels:
+  zh-CN: labels.zh-CN.yaml
