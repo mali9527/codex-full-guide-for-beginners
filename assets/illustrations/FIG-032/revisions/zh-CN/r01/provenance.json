@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-032",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 453568,
+    "sha256": "6108112b36dbd7bff21a4bb612298cba1321ce668834a47ff5f5ea498a6166d8"
+  },
+  "input_fingerprint": "15dd69e2dacc7fe4bf578c1399afe13df0be8db0053613ad62c65b2139748ba4",
+  "tool": "image_gen__imagegen",
+  "receipt": {
+    "tool": "image_gen__imagegen",
+    "model": "unknown",
+    "input_fingerprint": "15dd69e2dacc7fe4bf578c1399afe13df0be8db0053613ad62c65b2139748ba4",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      }
+    ],
+    "output_sha256": "6108112b36dbd7bff21a4bb612298cba1321ce668834a47ff5f5ea498a6166d8",
+    "generated_original": "exec-b9fd6625-649b-48e5-8ae9-3b9d9203802e.png",
+    "actual_call_file": "FIG-032-call-r01.json",
+    "edit_chain": [
+      {
+        "tool": "image_gen__imagegen",
+        "actual_call_file": "FIG-032-footer-edit-call.json",
+        "input_sha256": "e7c44bd66fbc8284e0e20b6d12d9ea8b3c053df7326db8651c6e707baecc746c",
+        "output_sha256": "747e22bcff31dfcc894679aa2438825cb24b5ffa43d50b46530a0bd557224b51",
+        "output_original": "exec-9e1a9d59-025d-455d-9f7e-b18607049a34.png",
+        "purpose": "删除重复图注；内容纠正"
+      },
+      {
+        "tool": "image_gen__imagegen",
+        "actual_call_file": "FIG-032-final-edit-call.json",
+        "input_sha256": "747e22bcff31dfcc894679aa2438825cb24b5ffa43d50b46530a0bd557224b51",
+        "output_sha256": "eedc5157610d615422fd4fc1c5c22c1065b45954251c7ed9af0616e10c6ac0cc",
+        "purpose": "删除与图注重复的上方标题；保留中心图形与标签"
+      }
+    ],
+    "references_note": "纸底和画风参考实际传给首轮生成；后续编辑仅传前一版图稿，不能声称每轮重新传入母版。",
+    "postprocessing": {
+      "authorization": "2026-10-04作者明确授权：新增3张图及其修订版本使用Python/Pillow仅灰度和尺寸处理。",
+      "software": "Pillow 11.3.0",
+      "source_sha256": "eedc5157610d615422fd4fc1c5c22c1065b45954251c7ed9af0616e10c6ac0cc",
+      "output_sha256": "6108112b36dbd7bff21a4bb612298cba1321ce668834a47ff5f5ea498a6166d8",
+      "operations": [
+        "Pillow.convert(L) only; no resize needed; no text/composition edits"
+      ],
+      "original_size": [
+        1448,
+        1086
+      ],
+      "final_size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "created_at": "2026-10-04T12:48:38.894190+00:00"
+}
