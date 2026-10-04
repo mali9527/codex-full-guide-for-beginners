@@ -1,0 +1,66 @@
+kind: interface
+form: overview
+reader_question: 先认侧栏、项目选择与输入框。此图来自尚未选择项目的新任务首屏，只画本章此刻需要的区域；型号、权限和案例内容省略。
+takeaway: 先认侧栏、项目选择与输入框。此图来自尚未选择项目的新任务首屏，只画本章此刻需要的区域；型号、权限和案例内容省略。
+source_sections:
+- 侧栏：开始一件事，也找回做过的事
+placement: 侧栏：开始一件事，也找回做过的事
+composition: 保留真实图的左窄侧栏、右宽主区域与下方输入区。侧栏从上到下New chat、Scheduled、Plugins、Projects；中间项目名和任务名省略留空，不替换成自编案例。右侧上部留白，右下方Choose
+  project在Do anything输入框上方。省略Full access、模型、麦克风、头像、推荐案例与中央口号。作者圈注找工作指向左侧栏，提要求指向右下输入框。不是Mac独有，也不声称Windows独有；不要添加任何操作系统窗口按钮。
+content_guard: 固定1448×1086不透明细方格纸，黑色中性笔，全部RGB通道严格相等。只出现labels文字，不出现title、caption或alt；原案例、头像、颜色、未知窗口按钮一律不画。
+text_roles:
+  new:
+    role: ui
+  scheduled:
+    role: ui
+  plugins:
+    role: ui
+  projects:
+    role: ui
+  choose:
+    role: ui
+  input:
+    role: ui
+  sidebar_note:
+    role: author
+  input_note:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: unknown
+  environment: published-video-frame-browser-render
+  ui_locale: en
+  state: new-chat-composer-no-project-selected
+  version: unknown
+  references:
+  - UI-ainova-astra-first-screen-20261004
+  controls:
+  - label: new
+    reference: UI-ainova-astra-first-screen-20261004
+    region: new
+  - label: scheduled
+    reference: UI-ainova-astra-first-screen-20261004
+    region: scheduled
+  - label: plugins
+    reference: UI-ainova-astra-first-screen-20261004
+    region: plugins
+  - label: projects
+    reference: UI-ainova-astra-first-screen-20261004
+    region: projects
+  - label: choose
+    reference: UI-ainova-astra-first-screen-20261004
+    region: choose
+  - label: input
+    reference: UI-ainova-astra-first-screen-20261004
+    region: input
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 2093b99ac7f472c107a85e2cd3a12df5f60a83a917bc18b7e4e1381036da512b
+  reviewed_by: Codex：当前正文与实际Astra首屏图片研究
+  checked_on: '2026-10-04'
+  reason: 把前置操作说明与实际可见控件对应，防止初学者只读到名称却找不到位置。
+  benefit: 先认侧栏、项目选择与输入框。此图来自尚未选择项目的新任务首屏，只画本章此刻需要的区域；型号、权限和案例内容省略。
+labels:
+  zh-CN: labels.zh-CN.yaml

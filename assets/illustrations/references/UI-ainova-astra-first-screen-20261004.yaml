@@ -1,0 +1,104 @@
+id: UI-ainova-astra-first-screen-20261004
+source_url: https://ainovatools.com/guides/how-to-use-gpt-6
+asset_url: https://ainovatools.com/imgs/guides/how-to-use-gpt-6/how-to-use-gpt-6-open-desktop-app.webp
+product: Codex
+surface: desktop
+platform: unknown
+version: unknown
+environment: published-video-frame-browser-render
+ui_locale: en
+state: new-chat-composer-no-project-selected
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 62d2cb7d57a79415d1d213f1efe2714d6339ebac3e4a46f7aece8176d187539a
+limitations:
+- 来源称截取AI Search公开视频0:32；本次只查看页面图片，未观看视频、未确认拍摄日/客户端号/操作系统。
+- 不把Full access或Extra High示例作为默认或推荐。项目内容、头像、案例卡片和原始对话全部省略；原图不公开。
+regions:
+- id: new
+  text: New chat
+  box:
+  - 0.015
+  - 0.018
+  - 0.062
+  - 0.047
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: scheduled
+  text: Scheduled
+  box:
+  - 0.016
+  - 0.088
+  - 0.066
+  - 0.117
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: plugins
+  text: Plugins
+  box:
+  - 0.016
+  - 0.124
+  - 0.061
+  - 0.155
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: projects
+  text: Projects
+  box:
+  - 0.001
+  - 0.34
+  - 0.048
+  - 0.371
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: choose
+  text: Choose project
+  box:
+  - 0.383
+  - 0.822
+  - 0.461
+  - 0.85
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: input
+  text: Do anything
+  box:
+  - 0.36
+  - 0.874
+  - 0.427
+  - 0.899
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: model
+  text: GPT-6 Astra
+  box:
+  - 0.688
+  - 0.939
+  - 0.744
+  - 0.96
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: effort
+  text: Extra High
+  box:
+  - 0.744
+  - 0.939
+  - 0.779
+  - 0.96
+  treatment: keep
+  reason: 已实际可见的通用UI标签；按对应图范围采用
+- id: personal
+  text: ''
+  box:
+  - 0.0
+  - 0.22
+  - 0.187
+  - 0.999
+  treatment: omit
+  reason: 项目/任务示例、头像和作者身份不入手绘；只保留单独登记的Projects通用标题
+image_sha256: 62d2cb7d57a79415d1d213f1efe2714d6339ebac3e4a46f7aece8176d187539a
+dimensions:
+- 1280
+- 720

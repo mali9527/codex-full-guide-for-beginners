@@ -1,0 +1,9 @@
+title: 区分模型与Effort
+caption: 模型控件的收起状态：GPT-6 Astra是型号，Extra High是来源当时选用的推理投入。本书不把这个组合当作默认或入门推荐；可选档位需打开自己当前的菜单查看。
+alt: 仅放大一个连续的模型控件局部：GPT-6 Astra在左，Extra High在其右，最右是向下小箭头，严格保留来源的左右关系；无外围输入框。作者圈注模型位于上方左侧，箭头只指向GPT-6
+  Astra；推理投入位于下方右侧，箭头只指向Extra High。不画Power、Advanced、档位列表或Fast开关，因为原图未展开。无额外标题、页脚和推荐标记。
+labels:
+  model: GPT-6 Astra
+  effort: Extra High
+  model_note: 模型
+  effort_note: 推理投入

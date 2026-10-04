@@ -1,0 +1,46 @@
+kind: interface
+form: detail
+reader_question: 模型控件的收起状态：GPT-6 Astra是型号，Extra High是来源当时选用的推理投入。本书不把这个组合当作默认或入门推荐；可选档位需打开自己当前的菜单查看。
+takeaway: 模型控件的收起状态：GPT-6 Astra是型号，Extra High是来源当时选用的推理投入。本书不把这个组合当作默认或入门推荐；可选档位需打开自己当前的菜单查看。
+source_sections:
+- 先找到当前任务的设置
+placement: 先找到当前任务的设置
+composition: 仅放大一个连续的模型控件局部：GPT-6 Astra在左，Extra High在其右，最右是向下小箭头，严格保留来源的左右关系；无外围输入框。作者圈注模型位于上方左侧，箭头只指向GPT-6
+  Astra；推理投入位于下方右侧，箭头只指向Extra High。不画Power、Advanced、档位列表或Fast开关，因为原图未展开。无额外标题、页脚和推荐标记。
+content_guard: 固定1448×1086不透明细方格纸，黑色中性笔，全部RGB通道严格相等。只出现labels文字，不出现title、caption或alt；原案例、头像、颜色、未知窗口按钮一律不画。
+text_roles:
+  model:
+    role: ui
+  effort:
+    role: ui
+  model_note:
+    role: author
+  effort_note:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: unknown
+  environment: published-video-frame-browser-render
+  ui_locale: en
+  state: new-chat-composer-no-project-selected
+  version: unknown
+  references:
+  - UI-ainova-astra-first-screen-20261004
+  controls:
+  - label: model
+    reference: UI-ainova-astra-first-screen-20261004
+    region: model
+  - label: effort
+    reference: UI-ainova-astra-first-screen-20261004
+    region: effort
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 442d3ec398eabd52a7f1bb8c5f9e677f78e8b34b235389c733a83157cb062f63
+  reviewed_by: Codex：当前正文与实际Astra首屏图片研究
+  checked_on: '2026-10-04'
+  reason: 把前置操作说明与实际可见控件对应，防止初学者只读到名称却找不到位置。
+  benefit: 模型控件的收起状态：GPT-6 Astra是型号，Extra High是来源当时选用的推理投入。本书不把这个组合当作默认或入门推荐；可选档位需打开自己当前的菜单查看。
+labels:
+  zh-CN: labels.zh-CN.yaml
