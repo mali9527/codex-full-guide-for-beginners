@@ -1,0 +1,50 @@
+id: UI-mirror-artifact-viewer-20261004
+source_url: https://doc.jarvisuni.com/openai/codex/app/features
+asset_url: https://doc.jarvisuni.com/openai/_official_assets/images/codex/app/artifact-viewer-light.webp
+product: Codex
+surface: desktop
+platform: mac
+version: unknown
+environment: published-source-image-browser-render
+ui_locale: en
+state: presentation-preview-open
+status: verified
+sanitized: true
+reviewed_by: Codex
+checked_on: '2026-10-04'
+viewed_image_sha256: 14ede7fe36f37ba6b431c6ddfb1518843e975dfc5a5529772230be771a67594c
+limitations:
+- 镜像保存的历史Mac界面；版本和拍摄日期未知。原图仅私有保存。
+- 只保留文件卡片与相邻预览位置，不采用演示内容、用户名、路径、旧型号或对话。不能证明批注选区已展开。
+regions:
+- id: file
+  box:
+  - 0.17
+  - 0.395
+  - 0.21
+  - 0.412
+  text: output.pptx
+  treatment: keep
+  reason: 文件卡片上可见文件名
+- id: open
+  box:
+  - 0.385
+  - 0.395
+  - 0.424
+  - 0.427
+  text: Open
+  treatment: keep
+  reason: 文件卡片右侧打开动作
+- id: preview
+  box:
+  - 0.437
+  - 0.125
+  - 0.857
+  - 0.866
+  text: ''
+  treatment: simplify
+  reason: 只保留右侧预览区域与缩略页位置，省去演示文稿内容
+image_sha256: 14ede7fe36f37ba6b431c6ddfb1518843e975dfc5a5529772230be771a67594c
+dimensions:
+- 1280
+- 720

@@ -30,6 +30,13 @@
 
 ### 在Codex中打开它
 
+
+<!-- diagram: FIG-029 -->
+![找到打开文件夹的动作，区分应用菜单与聊天消息。](../assets/illustrations/FIG-029/revisions/zh-CN/r01/zh-CN.png)
+
+*图：Windows来源图中Open Folder菜单的一行。右侧Ctrl+O是该图显示的快捷键；Mac默认用⌘O。*
+<!-- /diagram: FIG-029 -->
+
 在Codex入口中使用 **Open folder（打开文件夹）**，Windows默认快捷键是 **Ctrl+O**，Mac是 **⌘O**，然后在文件夹选择窗口里选中刚才的「我的待办」。
 
 找不到这个动作时，可以打开应用的命令菜单：Windows用 **Ctrl+Shift+P**，Mac用 **⌘⇧P**，搜索 **Open folder**。命令菜单是按名称寻找应用操作的地方，和聊天输入框是两处；把「Open folder」当作消息发出去，起不到打开文件夹的作用。
@@ -43,6 +50,13 @@
 如果发现选错了，先别发送修改文件的要求。重新用Open folder打开正确的目录，核对路径以后再继续。
 
 ### 已有项目的另一种入口
+
+
+<!-- diagram: FIG-028 -->
+![Source folders下方，上行是Documents文件夹和移除叉号，下行是Add folder；两条作者圈注分别指出已关联的文件夹与添加入口。](../assets/illustrations/FIG-028/revisions/zh-CN/r01/zh-CN.png)
+
+*图：Mac创建项目界面的文件夹列表局部：已有目录列在上方，Add folder用于添加。Documents是来源图片中的示例名称；使用时选择自己的材料文件夹。*
+<!-- /diagram: FIG-028 -->
 
 刚才已经用Open folder连接了正确文件夹，可以直接看下一小节。如果你原来建过项目，但还没有连接本地目录，可以从项目菜单进入Edit project，再选择 **Add folder（添加文件夹）**，选中要使用的目录。
 

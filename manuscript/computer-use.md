@@ -24,6 +24,13 @@ Windows的条件不同。目标应用必须在活动桌面可见，操作期间�
 
 ## 应用批准是另一层选择
 
+
+<!-- diagram: FIG-025 -->
+![Computer Use请求框局部。来源以Calculator为例；实际使用时先核对自己请求的应用，再在Allow和Cancel之间选择。Always allow是另一个持续授权选项。](../assets/illustrations/FIG-025/revisions/zh-CN/r01/zh-CN.png)
+
+*图：Computer Use请求框局部。来源以Calculator为例；实际使用时先核对自己请求的应用，再在Allow和Cancel之间选择。Always allow是另一个持续授权选项。*
+<!-- /diagram: FIG-025 -->
+
 系统权限开了以后，Codex要使用具体应用时，还会提出相应的应用访问请求。核对应用名称，确认它正是这次要查看的软件，再决定是否允许。对象正确时选择 **Allow**；名称不对、范围拿不准或尚未准备好，就选择 **Cancel**，回到任务说明需要调整什么。先处理这一请求，再开始读取窗口。
 
 **Always allow**表示以后可继续使用该应用而不重复询问，范围比眼前这一次大。刚开始按单次请求处理，熟悉实际范围以后再决定要不要长期允许。已保存的允许应用，可以在Settings → Computer use中查看和移除。

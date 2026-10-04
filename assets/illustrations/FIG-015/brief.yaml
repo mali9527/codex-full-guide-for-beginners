@@ -1,0 +1,45 @@
+kind: interface
+form: overview
+reader_question: 文件入口和预览区域分别在哪里？
+takeaway: 左侧文件卡片提供打开入口，右侧用于查看内容。
+source_sections:
+- 预览让检查更方便
+placement: 预览让检查更方便
+composition: 按真实图相对位置绘制左右两个区域。左侧简化为一个横向文件卡片，output.pptx居左，Open按钮居右；右侧较大预览面板，上方标签output.pptx，面板中仅画空白页面与左侧窄缩略页轮廓，省略原PPT全部内容。上方中文圈注文件入口指向左侧文件名，预览区域指向右侧面板。只画这两个区域，不重造完整窗口、任务对话、路径、型号、批注、工具栏或菜单。省略部分留白，不增加结构连接箭头。
+content_guard: 严格黑白中性灰，R=G=B，1448×1086固定母版。只画已观察的两个局部关系，不拷贝来源演示内容；不得补造批注控件。无额外标题和图注。
+text_roles:
+  file:
+    role: ui
+  open:
+    role: ui
+  file_note:
+    role: author
+  preview_note:
+    role: author
+ui:
+  product: Codex
+  surface: desktop
+  platform: mac
+  version: unknown
+  environment: published-source-image-browser-render
+  ui_locale: en
+  state: presentation-preview-open
+  references:
+  - UI-mirror-artifact-viewer-20261004
+  controls:
+  - label: file
+    reference: UI-mirror-artifact-viewer-20261004
+    region: file
+  - label: open
+    reference: UI-mirror-artifact-viewer-20261004
+    region: open
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 0f3235b7a38efd63be99c90f4675d1c23446e2da8b92ecc85c00ac3907a1502e
+  reviewed_by: Codex：回读第10章并实际查看成果预览来源图
+  checked_on: '2026-10-04'
+  reason: 让读者把消息中的文件入口与旁边的成果预览分开，避免看完完成说明就离开。
+  benefit: 知道文件卡片可以打开成果，右侧预览用于检查，实际保存位置仍需核对。
+labels:
+  zh-CN: labels.zh-CN.yaml

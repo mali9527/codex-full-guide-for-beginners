@@ -1,0 +1,21 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "72d50c534e5563ba5d2c86395361f09dc79239e41bc6372599684ba6f8742a75",
+  "input_fingerprint": "05f58896f60a4b445e3d94ec3ced8d9fd33598837576d38de8c1ba99b94771aa",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-note-open-folder-20261004": "d73fa21ac49e42257959ca92c052575cfa8e30e099b58abc0d6da3748c3767e4"
+  },
+  "notes": "Open Folder...和Ctrl+O清晰；与Windows打开文件夹段对应，Mac快捷键由正文分别说明。",
+  "reading_method": "使用view_image实际查看1448×1086与358×269派生图片，逐张结合当前章节小节、图注和上下文阅读；非浏览器排版实测。五张图在同次结果中并列核对格距、纸底与笔触。"
+}

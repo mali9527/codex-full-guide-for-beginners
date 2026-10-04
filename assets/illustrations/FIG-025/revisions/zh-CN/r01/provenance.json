@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-025",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 765240,
+    "sha256": "6c686169791c511f6f986ad177bccc5157baab7b07fd04f3e05481853e1494d2"
+  },
+  "input_fingerprint": "c9bdfaba5f9f91f35bedaf3e4d814b39123df8f6d4465cff0e01902d3de4231c",
+  "tool": "image_gen.imagegen (built-in)",
+  "receipt": {
+    "input_fingerprint": "c9bdfaba5f9f91f35bedaf3e4d814b39123df8f6d4465cff0e01902d3de4231c",
+    "tool": "image_gen.imagegen (built-in)",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-mirror-computer-approval-20261004",
+        "role": "interface",
+        "sha256": "e02a4f43fa203f5b87a71c1c62ad324d1905621336a9aab286e2ea4018bb237a",
+        "passed": true
+      }
+    ],
+    "original_image_sha256": "1c5b5ba14495d6c32dc29e84d7fdc6d91f2751d5b3e74066367f485e94fe01ca",
+    "raw_output": "/Users/mali/.codex/generated_images/01a0e29e-ab9f-7a93-adef-84add4500f55/exec-048bc1ad-11d3-4915-9e6b-685cd4cb63e3.png",
+    "postprocessing": {
+      "authorization": "User explicitly approved Python/Pillow grayscale and size normalization for these five images on 2026-10-04.",
+      "software": "Pillow 11.3.0",
+      "source_sha256": "1c5b5ba14495d6c32dc29e84d7fdc6d91f2751d5b3e74066367f485e94fe01ca",
+      "output_sha256": "6c686169791c511f6f986ad177bccc5157baab7b07fd04f3e05481853e1494d2",
+      "operations": [
+        "Pillow.convert(L); preserve all labels and layout"
+      ],
+      "original_size": [
+        1448,
+        1086
+      ],
+      "final_size": [
+        1448,
+        1086
+      ],
+      "original_evidence": "Original generation receipts and source bytes retained in private research records; public record uses hashes and file names."
+    },
+    "actual_call": "FIG-025-call-r02.json",
+    "additional_reference_images": [
+      {
+        "path": "FIG-025-candidate-r01.png",
+        "sha256": "81307339d199b43fd7ca9085afc04ca304bd349b7278848514ae2847f2c4e322",
+        "passed": true,
+        "role": "edit-target"
+      }
+    ]
+  },
+  "created_at": "2026-10-04T08:36:57.545836+00:00"
+}

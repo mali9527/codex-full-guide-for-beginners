@@ -1,0 +1,8 @@
+title: 文件入口与预览
+caption: Mac成果预览局部：文件卡片中的Open用于打开成果，旁边的面板便于查看。output.pptx是来源界面的示例文件名；图中省略了演示文稿内容。
+alt: 左侧output.pptx文件卡片和Open入口，右侧是文稿预览与缩略页区域，两处有中文圈注。
+labels:
+  file: output.pptx
+  open: Open
+  file_note: 文件入口
+  preview_note: 预览区域

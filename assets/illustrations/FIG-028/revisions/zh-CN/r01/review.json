@@ -1,0 +1,21 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "7d2b288bdf239bcbe235688337b1b6c8103fe31f6676d1a19754c5cc49db18f6",
+  "input_fingerprint": "212ce0171dd8890e90f02a09f33019d4f6e26088a8e8531dda1c74706d7b5052",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-toucan-source-folders-20261003": "d216c87a6c0271fd25107d1b61dabdbd61e9b311ff5ace991cf4cece6058ca57"
+  },
+  "notes": "目录行与Add folder互不混淆，箭头指向行内而非移除叉号；图注说明Mac创建项目局部，未冒充Edit project截图。",
+  "reading_method": "使用view_image实际查看1448×1086与358×269派生图片，逐张结合当前章节小节、图注和上下文阅读；非浏览器排版实测。五张图在同次结果中并列核对格距、纸底与笔触。"
+}

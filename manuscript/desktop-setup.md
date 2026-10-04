@@ -55,6 +55,13 @@ Windows的Agent sandbox设置有自己的平台流程，Mac上没有同一套Set
 
 ## Windows：开始本地工作时，如果出现设置提示
 
+
+<!-- diagram: FIG-007 -->
+![Windows出现设置横幅时，从Set up进入本地沙箱配置；图中不表示设置已经成功。](../assets/illustrations/FIG-007/revisions/zh-CN/r01/zh-CN.png)
+
+*图：Windows出现设置横幅时，从Set up进入本地沙箱配置；图中不表示设置已经成功。*
+<!-- /diagram: FIG-007 -->
+
 在第3、4章开始本地工作时，如果应用显示 **Set up Agent sandbox to continue**，并提供 **Set up**，再按本节设置；尚未出现提示时，继续下一章，到时候再回来看。
 
 Codex可能读写文件，也可能运行用来处理文件的程序。电脑需要给这些操作划定范围，限制它们能够接触的文件和网络资源。这层运行限制叫**沙箱**。你在这里做的是配置本地运行环境，与安装应用、登录账号是不同的步骤。

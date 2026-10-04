@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-028",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 782513,
+    "sha256": "7d2b288bdf239bcbe235688337b1b6c8103fe31f6676d1a19754c5cc49db18f6"
+  },
+  "input_fingerprint": "212ce0171dd8890e90f02a09f33019d4f6e26088a8e8531dda1c74706d7b5052",
+  "tool": "image_gen.imagegen",
+  "receipt": {
+    "input_fingerprint": "212ce0171dd8890e90f02a09f33019d4f6e26088a8e8531dda1c74706d7b5052",
+    "tool": "image_gen.imagegen",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-toucan-source-folders-20261003",
+        "role": "interface",
+        "sha256": "d216c87a6c0271fd25107d1b61dabdbd61e9b311ff5ace991cf4cece6058ca57",
+        "passed": true
+      }
+    ],
+    "original_output": "exec-c18cdbcf-04fb-4309-9ed8-99f88d14d736.png",
+    "output_sha256": "7c5e07aafb02994270f3dbc2164ee1e3d312678d80aa5e07c3e4182faf562870",
+    "additional_inputs": [
+      {
+        "role": "edit-target",
+        "path": "FIG-028-candidate-r02.png",
+        "sha256": "9b48289e7bd5f54ca4c70a631b4b99eba671cd7345fbab598c773cfe46118878",
+        "passed": true
+      }
+    ],
+    "postprocessing": {
+      "authorization": "User explicitly approved Python/Pillow grayscale and size normalization for these five images on 2026-10-04.",
+      "software": "Pillow 11.3.0",
+      "source_sha256": "7c5e07aafb02994270f3dbc2164ee1e3d312678d80aa5e07c3e4182faf562870",
+      "output_sha256": "7d2b288bdf239bcbe235688337b1b6c8103fe31f6676d1a19754c5cc49db18f6",
+      "operations": [
+        "Pillow.convert(L); preserve all labels and layout",
+        "resize 1447x1087 to 1448x1086 using LANCZOS; no crop"
+      ],
+      "original_size": [
+        1447,
+        1087
+      ],
+      "final_size": [
+        1448,
+        1086
+      ],
+      "original_evidence": "Original generation receipts and source bytes retained in private research records; public record uses hashes and file names."
+    }
+  },
+  "created_at": "2026-10-04T08:36:27.342523+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "46e2b7f72c90009e4e88d261127759e1a009f07f480248d48bfbf6f5cf2bf332",
+  "input_fingerprint": "bb40b37fe5f916a7a3c022c290e0300e94b06a5e96f8fcbc19e274bed0dcb339",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-mirror-goal-paused-20261004": "20f3c11ba32ecd3959d101219a83a85bb58e6a36dd780d2bd75acf7f94447fc2"
+  },
+  "notes": "原尺寸与358px实际目视，中文/英文标签清晰、箭头端点与原图相符，结合本章相邻小节和图注复核，未补造未见控件。",
+  "reading_method": "view_image查看1448×1086与358×269图片并读当前正文；非浏览器排版实测。五张图同次查看比较风格。"
+}
