@@ -1,6 +1,6 @@
 schema: 2
 unit: models-effort
-input_sha256: ba0b9fe335e9a3e030131be858dd9dbca348e334352c69b9cb450b151f08d02f
+input_sha256: eaba452b320a8ea3088b5abb439d9b5b42e5f7e92da33a984e1172a66d7f7ebf
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -48,6 +48,9 @@ reader_review:
     result: pass
     reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
       本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
+      2026-10-04五张界面图入稿影响复核：FIG-007只显示Windows未完成设置时的横幅和Set up；图注明确不表示设置成功，Mac不执行此流程。
+      FIG-029为Windows来源Open Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit
+      project或本书案例。完整路径确认仍靠已核对文字讲解。 去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
   concept_timing:
     result: pass
     reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
@@ -71,7 +74,9 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全章回读：Power展示示例与实际默认分开；6.1 Sol从当前可用默认开始；Fast的内含额度和另购credits分别说明。没有展开购买选择，保留根据材料和成果调整设置的主线。
-    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。 2026-10-04五张界面图入稿影响复核：FIG-007只显示Windows未完成设置时的横幅和Set
+    up；图注明确不表示设置成功，Mac不执行此流程。 FIG-029为Windows来源Open Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit
+    project或本书案例。完整路径确认仍靠已核对文字讲解。 去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
   docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

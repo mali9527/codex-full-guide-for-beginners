@@ -1,6 +1,6 @@
 schema: 2
 unit: computer-use
-input_sha256: da1fb307a9f310598c047ac3fe2ae348c5bbf2cd4939870f2032717a3afb0a57
+input_sha256: f05ffe1a9bc73c411c7355180b3b11c2931bc8a22f9c1a324981367139d71936
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -41,6 +41,10 @@ reader_review:
     result: pass
     reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
       本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
+      2026-10-04五张界面图入稿影响复核：FIG-025区分Allow/Cancel/Always allow，并先核对应用名；没有即时停止控件，concept_timing继续pending。
+      FIG-007只显示Windows未完成设置时的横幅和Set up；图注明确不表示设置成功，Mac不执行此流程。 FIG-029为Windows来源Open
+      Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit project或本书案例。完整路径确认仍靠已核对文字讲解。
+      去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
   concept_timing:
     result: pending
     reason: 已补应用请求Cancel与不满足停止条件时的文件/Appshot退路。当前官方页说明可停止或接手，但未给可核对的具体控件路径；读者尚不能从本章独立学会即时收回控制。本项保留，关闭条件是取得可靠文档/实际图片并补指引，不再强制GUI实测。
@@ -63,7 +67,10 @@ reader_review:
 fact_review:
   coverage: reviewed
   reason: 全章回读：用途判断、插件/系统权限、单应用Allow/Cancel、停止条件、只读请求与结果核对。补齐了拒绝入口与对象不符处理；直接收回控制的具体平台入口仍未得到官方明确说明，保留该项待定。
-    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。
+    从完整正文反查新增/改动产品断言；未改断言逐条对照原记录复用，真实日期不刷新。 2026-10-04五张界面图入稿影响复核：FIG-025区分Allow/Cancel/Always
+    allow，并先核对应用名；没有即时停止控件，concept_timing继续pending。 FIG-007只显示Windows未完成设置时的横幅和Set
+    up；图注明确不表示设置成功，Mac不执行此流程。 FIG-029为Windows来源Open Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit
+    project或本书案例。完整路径确认仍靠已核对文字讲解。 去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
   docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

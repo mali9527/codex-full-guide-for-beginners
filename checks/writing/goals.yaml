@@ -1,6 +1,6 @@
 schema: 2
 unit: goals
-input_sha256: a8a7e5e1a231601baa685245ad2a8f76ba39427fd3dba9cafb9322b80060ff8c
+input_sha256: 451ce3199f427d4d2fe77e9f221884de72d81a3539696f52ae43d05e55912cca
 evidence_paths:
 - examples/ch17-reference-index/README.md
 - examples/ch17-reference-index/演示结果/分类索引.txt
@@ -12,7 +12,7 @@ evidence_paths:
 - examples/ch17-reference-index/资料目录/材料/补充决定.txt
 - examples/ch17-reference-index/资料目录-起始材料.zip
 batch_started_on: '2026-09-29'
-reviewed_on: '2026-09-30'
+reviewed_on: '2026-10-04'
 reviewer: codex
 study_brief:
   mode: revision
@@ -60,6 +60,9 @@ reader_review:
     reason: 已会打开文件夹、选权限、用Plan与反馈。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
       2026-10-04前置影响复核：本单元正文与cd6e82a逐字一致。前置增量仅补运行纠正入口、归档桌面路径和当前模型建议；没有引入新操作前提或改变备忘材料。原事实结论与日期沿用，原实测状态不变。
       2026-10-04插图影响复核：四张概念图仅换为同字节的事实背景重审修订，图意、图中文字、来源段落和图注不变；FIG-027撤出当前普通文件夹章节，无正文操作增加。已核对受影响的正文及前置关系，不新增产品事实或实测结论。
+      2026-10-04五张界面图入稿影响复核：FIG-007只显示Windows未完成设置时的横幅和Set up；图注明确不表示设置成功，Mac不执行此流程。
+      FIG-019为暂停状态的编辑/恢复/清除，图注明确已存文件另行检查，清除目标不等于删除文件。 FIG-029为Windows来源Open Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit
+      project或本书案例。完整路径确认仍靠已核对文字讲解。 去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
   concept_timing:
     result: pass
     reason: 先定完成标准再启动；暂停、清除与文件撤销分开。 2026-09-30 Codex仅复核插图增量：与73c411c比较，去除受管图块和空行后原正文逐字一致；本单元依赖新增图为FIG-017,FIG-001,FIG-002,FIG-006,FIG-005，图示均解释已讲概念，没有提前增加操作门槛。前次Claude全文及事实复核结论沿用，原pending保留；未重新声明官方阅读、GUI实测或真人试读。
@@ -80,6 +83,9 @@ fact_review:
   reason: Claude通读成稿并核对6个锚点，另对照examples/ch17-reference-index的README确认编号与核对点。本轮实际读取long-running-work、remote、reference/slash-commands（2026-09-28）、reference/commands（2026-09-29）。Goal的桌面运行未实测。
     本记录为Claude编辑审核与修订，不是真人试读，也不是GUI操作验证。 本轮Codex核对新增图示与原断言、原材料一致，原有事实锚点均仍唯一命中；facts.yaml和原文未改。官方阅读日期、来源、support、条件和既有未测状态不变。
     2026-10-04前置影响复核：本单元正文与cd6e82a逐字一致。前置增量仅补运行纠正入口、归档桌面路径和当前模型建议；没有引入新操作前提或改变备忘材料。原事实结论与日期沿用，原实测状态不变。
+    2026-10-04五张界面图入稿影响复核：FIG-007只显示Windows未完成设置时的横幅和Set up；图注明确不表示设置成功，Mac不执行此流程。
+    FIG-019为暂停状态的编辑/恢复/清除，图注明确已存文件另行检查，清除目标不等于删除文件。 FIG-029为Windows来源Open Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit
+    project或本书案例。完整路径确认仍靠已核对文字讲解。 去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
   docs_checked_on: '2026-09-29'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog
