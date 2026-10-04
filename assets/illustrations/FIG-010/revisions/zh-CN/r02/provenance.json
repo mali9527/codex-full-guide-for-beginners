@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-010",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 533646,
+    "sha256": "7c6f1bcab416d3d683f5ffa810dac385d94fec9c9e88f252153b360b22744952"
+  },
+  "input_fingerprint": "bfdbdbf8dabe47fb7956c96a8d6158d4f04b29e7cc4441c092e6ed7f159cb33c",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "bfdbdbf8dabe47fb7956c96a8d6158d4f04b29e7cc4441c092e6ed7f159cb33c",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-issue-usage-windows-20261004",
+        "role": "interface",
+        "sha256": "020c6fad998eecc88e95c7a646bc9640f3c4fc26a226717b808f1ada9eacb623",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "7c6f1bcab416d3d683f5ffa810dac385d94fec9c9e88f252153b360b22744952",
+      "input_fingerprint": "ebf74d65293a9f416ee765c0ab9e9ae6731e3ce57f3ae52f2780c889ed96d0a9"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：用量卡片按五小时和每周分两行，分别显示剩余比例与重置时间；图中100%和62%是来源图片的历史数值。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:13.346597+00:00"
+}

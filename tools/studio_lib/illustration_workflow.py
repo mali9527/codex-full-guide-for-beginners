@@ -337,13 +337,13 @@ def pack(root,figure,destination,language=None):
 
 def validate_receipt(receipt,payload,fingerprint):
     need(receipt.get('input_fingerprint')==fingerprint and nonempty(receipt.get('tool')),'生成回执须绑定本生产包和实际工具')
-    need(receipt.get('mode','generated') in ('generated','reuse','context-review'),'未知制作回执类型')
+    need(receipt.get('mode','generated') in ('generated','reuse','context-review','alt-review'),'未知制作回执类型')
     if receipt.get('mode')=='reuse':need(receipt.get('source') and payload['design'].get('textless') is True,'复用需要明确无字图来源')
     refs=receipt.get('references');need(isinstance(refs,list) and len(refs)==len(payload['reference_assets']),'缺少实际传入参考记录')
     actual={r.get('id'):r for r in refs};need(len(actual)==len(refs),'重复参考记录')
     for expected in payload['reference_assets']:
         got=actual.get(expected['id'],{})
-        need(all(got.get(k)==v for k,v in expected.items()) and (got.get('reused') is True if receipt.get('mode') in ('reuse','context-review') else got.get('passed') is True),'实际传入的参考角色／字节不符：'+expected['id'])
+        need(all(got.get(k)==v for k,v in expected.items()) and (got.get('reused') is True if receipt.get('mode') in ('reuse','context-review','alt-review') else got.get('passed') is True),'实际传入的参考角色／字节不符：'+expected['id'])
 
 
 def revision_path(folder,lang,revision):
@@ -377,7 +377,7 @@ def import_candidate(root,figure,image,production_pack,revision,tool,language=No
         need(tool==receipt['tool'],'实际工具与回执不符')
         info=artwork_info(root,image)
         if receipt.get('mode')=='reuse':verify_reuse(root,figure,payload,receipt,info['sha256'])
-        if receipt.get('mode')=='context-review':verify_context_review(root,figure,payload,receipt,info['sha256'])
+        if receipt.get('mode') in ('context-review','alt-review'):verify_context_review(root,figure,payload,receipt,info['sha256'])
         need(info['width']>=1400,'图片宽度不足 1400 px')
         dest=revision_path(folder,lang,revision);need(not dest.exists(),'修订已存在，禁止覆盖')
         stage=dest.with_name('.'+dest.name+'-import');need(not stage.exists(),'导入临时目录已存在')
@@ -417,7 +417,7 @@ def selected(root,figure,language=None,current=True,reading=False):
     need(core.digest((dest/'prompt.txt').read_text().rstrip('\n').encode())==payload['prompt_sha256'],'采用提示词已变')
     validate_receipt(provenance['receipt'],payload,fp)
     if provenance['receipt'].get('mode')=='reuse':verify_reuse(root,figure,payload,provenance['receipt'],image['sha256'])
-    if provenance['receipt'].get('mode')=='context-review':verify_context_review(root,figure,payload,provenance['receipt'],image['sha256'])
+    if provenance['receipt'].get('mode') in ('context-review','alt-review'):verify_context_review(root,figure,payload,provenance['receipt'],image['sha256'])
     validate_review(core.read_json(dest/'review.json'),payload,image,fp,reading)
     if current:need(inputs(root,figure,lang)[1]==fp,'插图来源／目标语言文字已过期')
     return dest/(lang+'.png'),payload,value
@@ -458,7 +458,7 @@ def select(root,figure,revision,review_path,language=None):
         need(core.digest((dest/'prompt.txt').read_text().rstrip('\n').encode())==payload['prompt_sha256'],'候选提示词改变')
         validate_receipt(provenance['receipt'],payload,fp)
         if provenance['receipt'].get('mode')=='reuse':verify_reuse(root,figure,payload,provenance['receipt'],image['sha256'])
-        if provenance['receipt'].get('mode')=='context-review':verify_context_review(root,figure,payload,provenance['receipt'],image['sha256'])
+        if provenance['receipt'].get('mode') in ('context-review','alt-review'):verify_context_review(root,figure,payload,provenance['receipt'],image['sha256'])
         review=core.read_json(review_path);validate_review(review,payload,image,fp)
         source=source_path(root,book,unit,lang);old=source.read_text()
         if lang!=book.get('language','zh-CN'):
@@ -539,9 +539,21 @@ def verify_reuse(root,figure,payload,receipt,image_hash):
     validate_receipt(provenance['receipt'],other,fp)
 
 
+def verify_alt_change(before,after,assessment):
+    """Only off-image accessibility prose changes; never redraw or recertify UI."""
+    def visual(value):
+        out=dict(value);out.pop('prompt_sha256',None)
+        out['text']={k:v for k,v in value['text'].items() if k!='alt'}
+        return out
+    need(visual(before)==visual(after),'替代文字重审不能改变图内文字、图注、事实、界面依据、正文或风格')
+    need(before['text']['alt']!=after['text']['alt'] and nonempty(after['text']['alt']), '替代文字须有实际修改')
+    need(nonempty(assessment),'须说明替代文字与原图的逐项对应，不可只刷新指纹')
+
+
 def verify_context_review(root,figure,payload,receipt,image_hash):
     """Same-language concept artwork: immutable origin, only fact context may differ."""
-    need(payload['design']['kind']=='concept','原图重审仅用于概念图；界面需按真实依据制作')
+    alt_only=receipt.get('mode')=='alt-review'
+    if not alt_only:need(payload['design']['kind']=='concept','原图重审仅用于概念图；界面需按真实依据制作')
     source=receipt.get('source',{});lang=payload['language']
     need(source.get('language')==lang,'原图重审不能跨语言')
     _,_,_,folder,_=core.resolve(root,figure)
@@ -549,13 +561,16 @@ def verify_context_review(root,figure,payload,receipt,image_hash):
     frozen=core.read_json(dest/'inputs.json');other=frozen['inputs'];fp=core.digest(other)
     need(frozen.get('fingerprint')==fp==source.get('input_fingerprint'),'原始制作输入已变化')
     need(other.get('figure')==figure and other.get('language')==lang,'原始图片身份不符')
-    need({k:v for k,v in payload.items() if k!='facts'}=={k:v for k,v in other.items() if k!='facts'},
-         '只有事实背景变化可重审；图意、文字、段落、参考或风格变化必须另行制作')
-    before={f['id']:f for f in other['facts']};after={f['id']:f for f in payload['facts']}
-    changed={k for k in before.keys()|after.keys() if before.get(k)!=after.get(k)}
-    assessment=receipt.get('fact_assessment',{})
-    need(changed and set(assessment)==changed and all(nonempty(v) for v in assessment.values()),
-         '须逐条说明变动事实为何不影响此图，不能只刷新指纹')
+    if alt_only:
+        verify_alt_change(other,payload,receipt.get('alt_assessment'))
+    else:
+        need({k:v for k,v in payload.items() if k!='facts'}=={k:v for k,v in other.items() if k!='facts'},
+             '只有事实背景变化可重审；图意、文字、段落、参考或风格变化必须另行制作')
+        before={f['id']:f for f in other['facts']};after={f['id']:f for f in payload['facts']}
+        changed={k for k in before.keys()|after.keys() if before.get(k)!=after.get(k)}
+        assessment=receipt.get('fact_assessment',{})
+        need(changed and set(assessment)==changed and all(nonempty(v) for v in assessment.values()),
+             '须逐条说明变动事实为何不影响此图，不能只刷新指纹')
     info=artwork_info(root,dest/(lang+'.png'))
     need(info['sha256']==image_hash==source.get('image_sha256'),'原图重审不能修改像素')
     provenance=core.read_json(dest/'provenance.json')
@@ -572,14 +587,15 @@ def recheck(root,figure,language,revision,production_pack,review_path):
     image,other,selection=selected(root,figure,language,current=False,reading=True)
     lang=other['language'];payload,fp,_=inputs(root,figure,lang)
     origin=core.read_json(image.parent/'provenance.json')['receipt']
-    source=origin['source'] if origin.get('mode')=='context-review' else dict(
+    source=origin['source'] if origin.get('mode') in ('context-review','alt-review') else dict(
         language=lang,revision=selection['revision'],image_sha256=selection['image_sha256'],
         input_fingerprint=selection['input_fingerprint'])
     review=core.read_json(review_path);info=artwork_info(root,image)
     validate_review(review,payload,info,fp,reading=True)
-    receipt=dict(mode='context-review',tool='editorial-context-review-no-generation',
+    mode='alt-review' if review.get('alt_assessment') else 'context-review'
+    receipt=dict(mode=mode,tool='editorial-'+mode+'-no-generation',
         input_fingerprint=fp,references=[dict(a,reused=True) for a in payload['reference_assets']],
-        source=source,fact_assessment=review.get('fact_assessment',{}),
+        source=source,fact_assessment=review.get('fact_assessment',{}),alt_assessment=review.get('alt_assessment'),
         reviewer=review['reviewer'],checked_on=review['checked_on'])
     verify_context_review(root,figure,payload,receipt,info['sha256'])
     receipt_path=safe_path(root,production_pack)/'context-review-receipt.json'

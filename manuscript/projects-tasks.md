@@ -48,6 +48,13 @@
 
 ## 归档以后，怎样回来
 
+
+<!-- diagram: FIG-016 -->
+![归档任务一行的右侧依次是删除图标与Unarchive；恢复原任务的箭头只指向Unarchive。](../assets/illustrations/FIG-016/revisions/zh-CN/r02/zh-CN.png)
+
+*图：归档列表中的Unarchive用于恢复原任务，旁边的垃圾桶是删除入口。先核对任务，再选择恢复。*
+<!-- /diagram: FIG-016 -->
+
 已经告一段落的任务可以归档，让侧栏更清楚。在当前任务中，默认归档快捷键是Mac的 **⌘⇧A**、Windows的 **Ctrl+Shift+A**，也可以在自己的快捷键设置中查对应动作。
 
 要继续已归档的任务，在桌面应用打开 **Settings → Archived chats**，找到对应任务，用 **Unarchive** 恢复。恢复以后先查看最后的成果与未完成事项，再发新要求。网上有些说明会多一层Data Controls，那是网页入口的路径；本书这里讲的是桌面应用。入口与你的版本不同时，先核对[当前桌面设置说明](https://learn.chatgpt.com/docs/reference/settings)，不要为了找回任务重新创建同名项目。

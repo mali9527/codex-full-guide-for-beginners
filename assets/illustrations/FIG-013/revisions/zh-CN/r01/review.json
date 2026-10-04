@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "bdb76452996ef43669d3a6990245c90e19ac26f9ca6f815832df0671121e236d",
+  "input_fingerprint": "68307d019defa187babe45fb59112c3564f4e0591395bb2bdc0af78ec8ed8f54",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-router-follow-up-20261004": "2c218e6b7a998fdf1717637d471c9cf910e5b56a665473654f2c3fd02b76691a"
+  }
+}

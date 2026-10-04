@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-011",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 519386,
+    "sha256": "a9b10171656f902bdc1f9dc4933f79445d5c3b7e4a31bf8e9e67f206077ed963"
+  },
+  "input_fingerprint": "7332508a5b47a825eaf865eb7ad429e5ee7b0475cc66da8cd44b39530701ad46",
+  "tool": "image_gen__imagegen",
+  "receipt": {
+    "input_fingerprint": "7332508a5b47a825eaf865eb7ad429e5ee7b0475cc66da8cd44b39530701ad46",
+    "tool": "image_gen__imagegen",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-ainova-astra-first-screen-20261004",
+        "role": "interface",
+        "sha256": "62d2cb7d57a79415d1d213f1efe2714d6339ebac3e4a46f7aece8176d187539a",
+        "passed": true
+      }
+    ],
+    "output_sha256": "f054b1d13b0a4946542fa74460eb4915bcae1f5e7cf78fe62354bb91d6e34423",
+    "actual_call_file": "FIG-011-call-r02.json",
+    "generated_original": "private-original/exec-fa6c1990-ec1f-4287-a6d3-d4e5187fe06c.png",
+    "postprocessing": {
+      "authorization": "User explicitly extended Python/Pillow grayscale and size-only authorization to these remaining 16 images on 2026-10-04.",
+      "software": "Pillow 12.3.0",
+      "source_sha256": "f054b1d13b0a4946542fa74460eb4915bcae1f5e7cf78fe62354bb91d6e34423",
+      "output_sha256": "a9b10171656f902bdc1f9dc4933f79445d5c3b7e4a31bf8e9e67f206077ed963",
+      "operations": [
+        "Pillow.convert(L); text and composition preserved"
+      ],
+      "original_size": [
+        1448,
+        1086
+      ],
+      "final_size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "created_at": "2026-10-04T11:49:49.863075+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "dc1f9c3bd0a876e99acc0f1d1d24c4f7765aabf7c86a8002b43ad8c094ded314",
+  "input_fingerprint": "1db539235e49785ba7e761445de0cf9fe3155e3f551a6cd1286b21cd226c860b",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-arthur-appshot-destination-20261004": "4555c8c90ad3c484129bf035fbb2b255a25b1e231e9baceed6a27c02bbf7d475"
+  }
+}

@@ -1,7 +1,6 @@
 title: 先找到技能创建器
 caption: 输入$后，可以在可用技能中找到Skill Creator。图中保留真实英文名称；本书拟定的notes-to-todos要先创建，才会出现在你自己的可用项里。
-alt: 只画真实技能菜单的一行：左Skill Creator，中间Create or update a skill，右System；该行位于下方宽输入框之上。输入框左上只有$字符，其他控件全部省略，保留菜单在输入框上方的位置。中文圈注「输入后选择」箭头指$，另一圈注「创建或更新技能」指Skill
-  Creator。不得补造本书技能或成功结果。
+alt: 输入框里的$上方出现Skill Creator菜单项，说明为Create or update a skill，右侧标记System。
 labels:
   creator: Skill Creator
   desc: Create or update a skill

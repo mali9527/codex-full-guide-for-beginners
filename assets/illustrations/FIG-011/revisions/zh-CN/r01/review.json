@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "a9b10171656f902bdc1f9dc4933f79445d5c3b7e4a31bf8e9e67f206077ed963",
+  "input_fingerprint": "7332508a5b47a825eaf865eb7ad429e5ee7b0475cc66da8cd44b39530701ad46",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-ainova-astra-first-screen-20261004": "62d2cb7d57a79415d1d213f1efe2714d6339ebac3e4a46f7aece8176d187539a"
+  }
+}

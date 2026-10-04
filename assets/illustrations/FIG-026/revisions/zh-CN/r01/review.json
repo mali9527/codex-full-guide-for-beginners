@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "bbc05818f010e97294b82945b1998db041700ee8a6cc8c0f9b989fa3c839f346",
+  "input_fingerprint": "6e4a6eec336f6e8ae9209f9ae8554954dffaad2b9a7b4275c816e3a9bb26e274",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-mirror-create-automation-20261004": "03b228467ff662313e9e095299cdc3e9fa25d1bed57c69d203517a717c3a1e23"
+  }
+}

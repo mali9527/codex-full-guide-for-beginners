@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "5259ca23e2a233e89c164ea507a3c97abf8a20e0ec78a6197af0b3114dddae12",
+  "input_fingerprint": "a7a499f3d345374ac1063c1dae891146cda8a1ecbf57df11249ae2820820198e",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-mirror-skill-picker-20261004": "dec80fb4786ba137af79f50b75ead4c4408e49aeeef4259f61dc5e7e6da33d30"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：输入框里的$上方出现Skill Creator菜单项，说明为Create or update a skill，右侧标记System。 图片字节、标签、图注和真实参考均未变。"
+}

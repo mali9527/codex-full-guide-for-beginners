@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "94d95e6c82e17c5e2223a0a1b2490f06a624eab3cbb8fcd1b24076e68c763a16",
+  "input_fingerprint": "0079a90220082249af615ad70b182a819f7af7daf29d10801be046e6f2020ef9",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-deepak-plan-chip-20261004": "d3bc607fffae843d9bcb4c5c9ffcb060573d3f987c896ffe893996c130090767"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：输入框下方显示Plan标签，旁边有关闭叉号；中文圈注提示当前处于规划状态。 图片字节、标签、图注和真实参考均未变。"
+}

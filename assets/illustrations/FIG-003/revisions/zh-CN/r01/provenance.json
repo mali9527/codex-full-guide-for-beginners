@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-003",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 536035,
+    "sha256": "ac31fcca724a9a0a0afe8527827cd12b4924bafc2d46ace3fe0a900501929eaa"
+  },
+  "input_fingerprint": "2fc128e7e78386de7c76b1ec71ec2928453351a87b93d22e917a760beeffbb7d",
+  "tool": "image_gen",
+  "receipt": {
+    "input_fingerprint": "2fc128e7e78386de7c76b1ec71ec2928453351a87b93d22e917a760beeffbb7d",
+    "tool": "image_gen",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-toucan-mac-picker-20261004",
+        "role": "interface",
+        "sha256": "c3fe6a23eaa70fd968e3e39534719d234927270e3da0db780a16c2bc671719ba",
+        "passed": true
+      }
+    ],
+    "actual_call_file": "FIG-003-call-r02.json",
+    "notes": "Actual image_gen call, all pack references passed via referenced_image_paths; r02 also passed prior candidate as fourth edit target.",
+    "postprocessing": {
+      "authorization": "User explicitly extended Python/Pillow grayscale and size-only authorization to these remaining 16 images on 2026-10-04.",
+      "software": "Pillow 12.3.0",
+      "source_sha256": "b431bfddd490d6623f71acfb8a226d9316af2b0e87370a51bb9e5918078814fd",
+      "output_sha256": "ac31fcca724a9a0a0afe8527827cd12b4924bafc2d46ace3fe0a900501929eaa",
+      "operations": [
+        "Pillow.convert(L); text and composition preserved"
+      ],
+      "original_size": [
+        1448,
+        1086
+      ],
+      "final_size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "created_at": "2026-10-04T11:48:43.180545+00:00"
+}

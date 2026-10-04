@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-003",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 536035,
+    "sha256": "ac31fcca724a9a0a0afe8527827cd12b4924bafc2d46ace3fe0a900501929eaa"
+  },
+  "input_fingerprint": "dd3431abd37e76ffc0561bbd343d04a8f0c68ab7c960dd542b499108f7371242",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "dd3431abd37e76ffc0561bbd343d04a8f0c68ab7c960dd542b499108f7371242",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-toucan-mac-picker-20261004",
+        "role": "interface",
+        "sha256": "c3fe6a23eaa70fd968e3e39534719d234927270e3da0db780a16c2bc671719ba",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "ac31fcca724a9a0a0afe8527827cd12b4924bafc2d46ace3fe0a900501929eaa",
+      "input_fingerprint": "2fc128e7e78386de7c76b1ec71ec2928453351a87b93d22e917a760beeffbb7d"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：Mac文件夹选择器局部：先核对顶部位置，再选择右下角Open；Cancel位于Open左侧。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:09.278759+00:00"
+}

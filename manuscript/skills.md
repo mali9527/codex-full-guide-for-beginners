@@ -22,7 +22,14 @@ Codex支持用`$`明确选择技能，也可以根据请求与技能描述的匹
 
 ## 用内置创建器，把已有流程写下来
 
+
 Codex提供内置的 **`$skill-creator`**，用于创建或更新技能，用它之前无须安装任何外部服务插件。输入`$`找到并选择它，再说明你已经跑通的流程、希望何时调用、哪些内容每次会变。[官方创建方式](https://learn.chatgpt.com/docs/build-skills)
+
+<!-- diagram: FIG-022 -->
+![输入框里的$上方出现Skill Creator菜单项，说明为Create or update a skill，右侧标记System。](../assets/illustrations/FIG-022/revisions/zh-CN/r02/zh-CN.png)
+
+*图：输入$后，可以在可用技能中找到Skill Creator。图中保留真实英文名称；本书拟定的notes-to-todos要先创建，才会出现在你自己的可用项里。*
+<!-- /diagram: FIG-022 -->
 
 沿用前面的清单整理，可以这样描述：
 

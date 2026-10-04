@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "ef399651f498ba7030b81f30e3f0a4c260bef1a63efee0c531d5ee4930b45952",
+  "input_fingerprint": "2803f9e60319e0270b3fa367164cce9c648f223b64d0fa74ab15ebe8868756a6",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-ren-permission-menu-20261004": "5b1b6cbbe1d7d63427ad36c734c246aa84376b31ecd2b04012d07f8fd0793f91"
+  }
+}

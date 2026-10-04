@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "f9b599d48465eaff2b463945599bec1283145481c83769993b9acc8d6761397d",
+  "input_fingerprint": "e4aed7da5c13e8fd6f11ba60f555e80fa437c8c0bf71718f0e8e8a32bca9a17c",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-ainova-astra-first-screen-20261004": "62d2cb7d57a79415d1d213f1efe2714d6339ebac3e4a46f7aece8176d187539a"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：首屏左侧有New chat、Scheduled、Plugins和Projects；右下方先选择项目，再在Do anything输入区说明要求。 图片字节、标签、图注和真实参考均未变。"
+}

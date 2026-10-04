@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-014",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 525320,
+    "sha256": "dc1f9c3bd0a876e99acc0f1d1d24c4f7765aabf7c86a8002b43ad8c094ded314"
+  },
+  "input_fingerprint": "ec18f8036fd2f599d376fb10d1460171def43c3562c2cf2ac96d6e5075f9f973",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "ec18f8036fd2f599d376fb10d1460171def43c3562c2cf2ac96d6e5075f9f973",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-arthur-appshot-destination-20261004",
+        "role": "interface",
+        "sha256": "4555c8c90ad3c484129bf035fbb2b255a25b1e231e9baceed6a27c02bbf7d475",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "dc1f9c3bd0a876e99acc0f1d1d24c4f7765aabf7c86a8002b43ad8c094ded314",
+      "input_fingerprint": "1db539235e49785ba7e761445de0cf9fe3155e3f551a6cd1286b21cd226c860b"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：Appshot目的地下拉菜单有自动、目前对话和新对话；中文圈注提示先确认接收任务，来源选中自动。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:17.366207+00:00"
+}

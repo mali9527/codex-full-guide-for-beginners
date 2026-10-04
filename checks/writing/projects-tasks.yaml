@@ -1,6 +1,6 @@
 schema: 2
 unit: projects-tasks
-input_sha256: 8f5960221b7fd875c0cea6000d66a5eadc8b991973b3e2971f64872ac773adaf
+input_sha256: a0da1902b533927dbfdd3748cd46d7311c88f49105a42d437212cf06dfa24951
 evidence_paths: []
 batch_started_on: '2026-10-04'
 reviewed_on: '2026-10-04'
@@ -38,7 +38,10 @@ study_commit: 776757560b256647d5f0d51743c0d9c4d6ac3d82
 study_review:
   result: pass
   reason: 已对照写前提交、官方理解和修订稿；全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
-    chats→Unarchive。旧Data Controls桌面备用说法已移除。
+    chats→Unarchive。旧Data Controls桌面备用说法已移除。 2026-10-04剩余16张界面图入稿复核：Appshot用途先于目的地菜单；图中自动选择只是来源状态，正文仍要求确认接收任务和附件。
+    日文三项与中文解释一一对应；来源勾选中项不代替正文请求批准的入门选择。 恢复箭头指Unarchive，避开相邻删除图标；不把归档当成文件备份。 Open文件卡片与预览区分开；output.pptx明确属于来源，未充作本书清单或真实执行结果。
+    先说明Steer与Queue的用途，再展示跟进行为设置；排队和当前运行未混淆，未画成功停止状态。 先展示New chat用途，再比较两种首屏；Open Folder入口图先于Mac/Windows选择器；Add
+    folder图片放在可选分支说明之后。图中未编造本书目录路径或连接成功状态。 对照图片、图注、替代文字和所在小节审读，并核对递归前置；去除受管图块与排版空白后，正文与4595461一致。15图替代文字由绘图指令改为画面说明，图像字节及来源未改。未新增产品断言、官方读取日期或操作/真人证据。
 reader_review:
   prior_knowledge:
     result: pass
@@ -47,10 +50,17 @@ reader_review:
       2026-10-04五张界面图入稿影响复核：FIG-007只显示Windows未完成设置时的横幅和Set up；图注明确不表示设置成功，Mac不执行此流程。
       FIG-029为Windows来源Open Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit
       project或本书案例。完整路径确认仍靠已核对文字讲解。 去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
+      2026-10-04剩余16张界面图入稿复核：Appshot用途先于目的地菜单；图中自动选择只是来源状态，正文仍要求确认接收任务和附件。 日文三项与中文解释一一对应；来源勾选中项不代替正文请求批准的入门选择。
+      恢复箭头指Unarchive，避开相邻删除图标；不把归档当成文件备份。 Open文件卡片与预览区分开；output.pptx明确属于来源，未充作本书清单或真实执行结果。
+      先说明Steer与Queue的用途，再展示跟进行为设置；排队和当前运行未混淆，未画成功停止状态。 先展示New chat用途，再比较两种首屏；Open
+      Folder入口图先于Mac/Windows选择器；Add folder图片放在可选分支说明之后。图中未编造本书目录路径或连接成功状态。 对照图片、图注、替代文字和所在小节审读，并核对递归前置；去除受管图块与排版空白后，正文与4595461一致。15图替代文字由绘图指令改为画面说明，图像字节及来源未改。未新增产品断言、官方读取日期或操作/真人证据。
   concept_timing:
     result: pass
     reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
-      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04剩余16张界面图入稿复核：Appshot用途先于目的地菜单；图中自动选择只是来源状态，正文仍要求确认接收任务和附件。
+      日文三项与中文解释一一对应；来源勾选中项不代替正文请求批准的入门选择。 恢复箭头指Unarchive，避开相邻删除图标；不把归档当成文件备份。 Open文件卡片与预览区分开；output.pptx明确属于来源，未充作本书清单或真实执行结果。
+      先说明Steer与Queue的用途，再展示跟进行为设置；排队和当前运行未混淆，未画成功停止状态。 先展示New chat用途，再比较两种首屏；Open
+      Folder入口图先于Mac/Windows选择器；Add folder图片放在可选分支说明之后。图中未编造本书目录路径或连接成功状态。 对照图片、图注、替代文字和所在小节审读，并核对递归前置；去除受管图块与排版空白后，正文与4595461一致。15图替代文字由绘图指令改为画面说明，图像字节及来源未改。未新增产品断言、官方读取日期或操作/真人证据。
   information_value:
     result: pass
     reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
@@ -66,7 +76,10 @@ reader_review:
   independent_creation:
     result: pass
     reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
-      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。
+      chats→Unarchive。旧Data Controls桌面备用说法已移除。 本项为当前引擎编辑判断；未记为GUI或真人验证。 2026-10-04剩余16张界面图入稿复核：Appshot用途先于目的地菜单；图中自动选择只是来源状态，正文仍要求确认接收任务和附件。
+      日文三项与中文解释一一对应；来源勾选中项不代替正文请求批准的入门选择。 恢复箭头指Unarchive，避开相邻删除图标；不把归档当成文件备份。 Open文件卡片与预览区分开；output.pptx明确属于来源，未充作本书清单或真实执行结果。
+      先说明Steer与Queue的用途，再展示跟进行为设置；排队和当前运行未混淆，未画成功停止状态。 先展示New chat用途，再比较两种首屏；Open
+      Folder入口图先于Mac/Windows选择器；Add folder图片放在可选分支说明之后。图中未编造本书目录路径或连接成功状态。 对照图片、图注、替代文字和所在小节审读，并核对递归前置；去除受管图块与排版空白后，正文与4595461一致。15图替代文字由绘图指令改为画面说明，图像字节及来源未改。未新增产品断言、官方读取日期或操作/真人证据。
 fact_review:
   coverage: reviewed
   reason: 全章回读：同一成果在原任务修改，独立工作另开；当前工作位置先确认。对照Projects桌面/网页分支与Settings，恢复入口统一为Settings→Archived
@@ -74,6 +87,10 @@ fact_review:
     2026-10-04五张界面图入稿影响复核：FIG-007只显示Windows未完成设置时的横幅和Set up；图注明确不表示设置成功，Mac不执行此流程。
     FIG-029为Windows来源Open Folder/Ctrl+O，图注区分Mac键位；FIG-028为Mac创建项目的文件夹列表局部，不冒称Edit
     project或本书案例。完整路径确认仍靠已核对文字讲解。 去除受管图块后本单元及前置正文与350831b相同；已对照实际图稿、图注及关联段落，未新增实测或刷新官方事实日期。
+    2026-10-04剩余16张界面图入稿复核：Appshot用途先于目的地菜单；图中自动选择只是来源状态，正文仍要求确认接收任务和附件。 日文三项与中文解释一一对应；来源勾选中项不代替正文请求批准的入门选择。
+    恢复箭头指Unarchive，避开相邻删除图标；不把归档当成文件备份。 Open文件卡片与预览区分开；output.pptx明确属于来源，未充作本书清单或真实执行结果。
+    先说明Steer与Queue的用途，再展示跟进行为设置；排队和当前运行未混淆，未画成功停止状态。 先展示New chat用途，再比较两种首屏；Open Folder入口图先于Mac/Windows选择器；Add
+    folder图片放在可选分支说明之后。图中未编造本书目录路径或连接成功状态。 对照图片、图注、替代文字和所在小节审读，并核对递归前置；去除受管图块与排版空白后，正文与4595461一致。15图替代文字由绘图指令改为画面说明，图像字节及来源未改。未新增产品断言、官方读取日期或操作/真人证据。
   docs_checked_on: '2026-10-04'
   change_review:
     url: https://learn.chatgpt.com/docs/changelog

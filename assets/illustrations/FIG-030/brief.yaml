@@ -1,0 +1,32 @@
+kind: concept
+form: comparison
+reader_question: 一份查证里，哪些能下结论？
+takeaway: 区分原文确认、根据材料推断和仍未查到，不让推测变成事实。
+source_sections:
+- 把事实、推断和未知分开
+placement: 把事实、推断和未知分开
+composition: 三张并列的纸质便条，不是软件界面。左便条写事实和原文明确支持，中便条写推断和说清推理依据，右便条写未知和保留待确认；每张上方分别用小文件、思考气泡、问号手绘图形。三列独立，不画等级、时间先后或箭头。
+content_guard: 仅依据本书已写内容；统一1448×1086细方格紙、黑笔、中性灰、不透明；图中文字仅使用labels，不增加标题、图注或编号，不暗示产品保证。
+text_roles:
+  fact:
+    role: author
+  fact_note:
+    role: author
+  guess:
+    role: author
+  guess_note:
+    role: author
+  unknown:
+    role: author
+  unknown_note:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 843a86ef7100debb07cd961259978d718cdb7e2e794d232973ec16a1ed3a4539
+  reviewed_by: Codex：本轮回读全章后补充概念配图研究
+  checked_on: '2026-10-04'
+  reason: 本章判断容易混淆，图形并列有助于回看。
+  benefit: 区分原文确认、根据材料推断和仍未查到，不让推测变成事实。
+labels:
+  zh-CN: labels.zh-CN.yaml

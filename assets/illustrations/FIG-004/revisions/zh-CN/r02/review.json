@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "1ec795be1ba23dfd3b5defe5ec8678cc87bb83ebc1817aab40d85b1a1b36ba68",
+  "input_fingerprint": "e3b47caecd99c8a37fc6c27b28596a97e8b94526d342e9841fbf36cd4392375d",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-sai-windows-picker-20261004": "fa7910e44ecc872afdf87fd9990fce8e7cf585dab9bc43b1c370d281f8256744"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：Windows日文文件夹选择器下方有目录字段，下面是选择文件夹和取消按钮；中文箭头分别提示核对目录与确认选择。 图片字节、标签、图注和真实参考均未变。"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-008",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 528304,
+    "sha256": "f9b599d48465eaff2b463945599bec1283145481c83769993b9acc8d6761397d"
+  },
+  "input_fingerprint": "e4aed7da5c13e8fd6f11ba60f555e80fa437c8c0bf71718f0e8e8a32bca9a17c",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "e4aed7da5c13e8fd6f11ba60f555e80fa437c8c0bf71718f0e8e8a32bca9a17c",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-ainova-astra-first-screen-20261004",
+        "role": "interface",
+        "sha256": "62d2cb7d57a79415d1d213f1efe2714d6339ebac3e4a46f7aece8176d187539a",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "f9b599d48465eaff2b463945599bec1283145481c83769993b9acc8d6761397d",
+      "input_fingerprint": "0f14a6b7d0506b4e976ee0158a796bcd0330db714969554b8cb9eae0c4d424ac"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：首屏左侧有New chat、Scheduled、Plugins和Projects；右下方先选择项目，再在Do anything输入区说明要求。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:11.291815+00:00"
+}

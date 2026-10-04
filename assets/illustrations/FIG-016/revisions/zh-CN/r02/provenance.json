@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-016",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 501367,
+    "sha256": "349ec473c64bd8e0a5723b54da29880bd0a720f24ef5f81acaffca2f1598c6c4"
+  },
+  "input_fingerprint": "d76d1cad80e5b99a3a6f5fb754ed81d7c50c0cd9a4b2334c72885e1841623598",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "d76d1cad80e5b99a3a6f5fb754ed81d7c50c0cd9a4b2334c72885e1841623598",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-official-archive-row-20261004",
+        "role": "interface",
+        "sha256": "9bed3cc8ee4a7a7b4165cb720282d3961e4192ed9407c18ad964dd9722bcb3fc",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "349ec473c64bd8e0a5723b54da29880bd0a720f24ef5f81acaffca2f1598c6c4",
+      "input_fingerprint": "4ed16637afb39eccd9a82a759bce58aa45c38fef8de9a33d0996c89bd787a823"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：归档任务一行的右侧依次是删除图标与Unarchive；恢复原任务的箭头只指向Unarchive。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:18.460829+00:00"
+}

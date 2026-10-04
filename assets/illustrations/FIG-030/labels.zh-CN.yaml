@@ -1,0 +1,10 @@
+title: 一份查证里，哪些能下结论？
+caption: 区分原文确认、根据材料推断和仍未查到，不让推测变成事实。
+alt: 区分原文确认、根据材料推断和仍未查到，不让推测变成事实。
+labels:
+  fact: 事实
+  fact_note: 原文明确支持
+  guess: 推断
+  guess_note: 说清推理依据
+  unknown: 未知
+  unknown_note: 保留待确认

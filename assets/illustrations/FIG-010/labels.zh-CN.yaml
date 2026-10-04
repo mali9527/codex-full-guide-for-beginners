@@ -1,7 +1,6 @@
 title: 剩余用量与重置时间怎样一起读？
 caption: 历史Mac用量页面的字段读法：left是剩余，Resets是重置时间，五小时与每周是不同范围。100%和62%只保留来源当时的显示，请以自己账号当前页面为准。
-alt: 只放大来源下方两行用量卡片：上行左5 hour usage limit，其下Resets 2:28 AM，右100% left和细进度条；下行左Weekly
-  usage limit，其下Resets May 19，右62% left和进度条。作者圈注「看时间范围」指左上，「看剩余比例」指右上，「看重置时间」指左下日期。所有数值严格沿用来源，不画来源紫框或其他套餐价格。
+alt: 用量卡片按五小时和每周分两行，分别显示剩余比例与重置时间；图中100%和62%是来源图片的历史数值。
 labels:
   five: 5 hour usage limit
   weekly: Weekly usage limit

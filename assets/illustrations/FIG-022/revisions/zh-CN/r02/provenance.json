@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-022",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 506129,
+    "sha256": "5259ca23e2a233e89c164ea507a3c97abf8a20e0ec78a6197af0b3114dddae12"
+  },
+  "input_fingerprint": "a7a499f3d345374ac1063c1dae891146cda8a1ecbf57df11249ae2820820198e",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "a7a499f3d345374ac1063c1dae891146cda8a1ecbf57df11249ae2820820198e",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-mirror-skill-picker-20261004",
+        "role": "interface",
+        "sha256": "dec80fb4786ba137af79f50b75ead4c4408e49aeeef4259f61dc5e7e6da33d30",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "5259ca23e2a233e89c164ea507a3c97abf8a20e0ec78a6197af0b3114dddae12",
+      "input_fingerprint": "b506cfa9c9b61b55c0b884094105d5c9b100f0004b2dcb2411a2ce77c6f3336e"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：输入框里的$上方出现Skill Creator菜单项，说明为Create or update a skill，右侧标记System。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:20.459667+00:00"
+}

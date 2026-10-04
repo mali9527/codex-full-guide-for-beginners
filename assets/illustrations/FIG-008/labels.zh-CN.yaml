@@ -1,7 +1,6 @@
 title: 认识首屏区域
 caption: 先认侧栏、项目选择与输入框。此图来自尚未选择项目的新任务首屏，只画本章此刻需要的区域；型号、权限和案例内容省略。
-alt: 保留真实图的左窄侧栏、右宽主区域与下方输入区。侧栏从上到下New chat、Scheduled、Plugins、Projects；中间项目名和任务名省略留空，不替换成自编案例。右侧上部留白，右下方Choose
-  project在Do anything输入框上方。省略Full access、模型、麦克风、头像、推荐案例与中央口号。作者圈注找工作指向左侧栏，提要求指向右下输入框。不是Mac独有，也不声称Windows独有；不要添加任何操作系统窗口按钮。
+alt: 首屏左侧有New chat、Scheduled、Plugins和Projects；右下方先选择项目，再在Do anything输入区说明要求。
 labels:
   new: New chat
   scheduled: Scheduled

@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "349ec473c64bd8e0a5723b54da29880bd0a720f24ef5f81acaffca2f1598c6c4",
+  "input_fingerprint": "d76d1cad80e5b99a3a6f5fb754ed81d7c50c0cd9a4b2334c72885e1841623598",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-official-archive-row-20261004": "9bed3cc8ee4a7a7b4165cb720282d3961e4192ed9407c18ad964dd9722bcb3fc"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：归档任务一行的右侧依次是删除图标与Unarchive；恢复原任务的箭头只指向Unarchive。 图片字节、标签、图注和真实参考均未变。"
+}

@@ -1,0 +1,13 @@
+title: 一句模糊要求该补哪些信息？
+caption: 从用途和当前材料出发，说清保留条件、保存位置和检查依据。
+alt: 从用途和当前材料出发，说清保留条件、保存位置和检查依据。
+labels:
+  use: 用途
+  use_note: 每天扫一眼
+  source: 材料
+  source_note: 以当前版本为准
+  boundary: 边界
+  boundary_note: 事实与状态不变
+  deliver: 交付
+  deliver_note: 另存后对照核查
+  center: 说清这次要什么

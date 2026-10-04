@@ -14,6 +14,13 @@
 
 ## 从一个只读需要开始
 
+
+<!-- diagram: FIG-023 -->
+![插件目录上方有Plugins、Manage与Search plugins，下方Computer Use条目右侧有加号；中文圈注区分查找能力和管理已装插件。](../assets/illustrations/FIG-023/revisions/zh-CN/r02/zh-CN.png)
+
+*图：Plugins中先查找需要的能力，再打开详情核对提供者和条件。Manage是管理入口；卡片上出现加号，不表示外部服务已经连接。*
+<!-- /diagram: FIG-023 -->
+
 假设你在某个文档服务中保存了一份无敏感信息的测试文档，只想让Codex读出标题和第一段。这个任务小，容易核对，只需要读取权限。
 
 打开桌面的 **Plugins**，搜索你实际使用的服务或需要的能力。进入详情，核对提供者、说明、支持入口和所需条件。标为 **Desktop only** 的插件需要桌面应用。

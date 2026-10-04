@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "94d95e6c82e17c5e2223a0a1b2490f06a624eab3cbb8fcd1b24076e68c763a16",
+  "input_fingerprint": "cda51724eace0fd3d232f3908816237649dc31226ce2aa03ebc7cc1fbc812fb1",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-deepak-plan-chip-20261004": "d3bc607fffae843d9bcb4c5c9ffcb060573d3f987c896ffe893996c130090767"
+  }
+}

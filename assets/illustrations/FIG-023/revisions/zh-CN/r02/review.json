@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "b4f4bf29d243bb029875594092982b607164595eaa675c6a2860b29215d3229f",
+  "input_fingerprint": "8ada8927b5c6afc6a17d235bb84415c5fe1cb998a4e3eab3d5d36ce6891b01a0",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-official-plugin-directory-20261004": "fc446c5839b9f12e90689bea2950ca561aea5dddf8189bb33444a908bda56cc9"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：插件目录上方有Plugins、Manage与Search plugins，下方Computer Use条目右侧有加号；中文圈注区分查找能力和管理已装插件。 图片字节、标签、图注和真实参考均未变。"
+}

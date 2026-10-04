@@ -6,7 +6,20 @@
 
 ## 侧栏：开始一件事，也找回做过的事
 
+
 侧栏的 **New chat（新聊天）**用来开始一个新任务。默认快捷键是Windows的 **Ctrl+N**、Mac的 **⌘N**。先认识这个入口，稍后选好文件夹再用它。
+
+<!-- diagram: FIG-008 -->
+![首屏左侧有New chat、Scheduled、Plugins和Projects；右下方先选择项目，再在Do anything输入区说明要求。](../assets/illustrations/FIG-008/revisions/zh-CN/r02/zh-CN.png)
+
+*图：先认侧栏、项目选择与输入框。此图来自尚未选择项目的新任务首屏，只画本章此刻需要的区域；型号、权限和案例内容省略。*
+<!-- /diagram: FIG-008 -->
+
+<!-- diagram: FIG-009 -->
+![Windows日文首屏左侧是新聊天与项目，右侧下方是项目选择条和输入区；中文圈注提示先选项目再填写要求。](../assets/illustrations/FIG-009/revisions/zh-CN/r02/zh-CN.png)
+
+*图：Windows日文起始画面的主要区域：侧栏找任务，输入框上方选项目，下方写要求。图中省略了与本章无关的推荐卡片。*
+<!-- /diagram: FIG-009 -->
 
 侧栏会组织项目和已有任务。**任务**是围绕一件事的连续交流；**项目**把相关工作放在一起，还可以关联电脑上的文件夹。比如，「我的待办」可以成为一个项目，其中有整理清单、更新清单等任务。单独问一个问题，可以先不选项目。
 
@@ -31,15 +44,27 @@
 ### 在Codex中打开它
 
 
+在Codex入口中使用 **Open folder（打开文件夹）**，Windows默认快捷键是 **Ctrl+O**，Mac是 **⌘O**，然后在文件夹选择窗口里选中刚才的「我的待办」。
+
 <!-- diagram: FIG-029 -->
 ![找到打开文件夹的动作，区分应用菜单与聊天消息。](../assets/illustrations/FIG-029/revisions/zh-CN/r01/zh-CN.png)
 
 *图：Windows来源图中Open Folder菜单的一行。右侧Ctrl+O是该图显示的快捷键；Mac默认用⌘O。*
 <!-- /diagram: FIG-029 -->
 
-在Codex入口中使用 **Open folder（打开文件夹）**，Windows默认快捷键是 **Ctrl+O**，Mac是 **⌘O**，然后在文件夹选择窗口里选中刚才的「我的待办」。
-
 找不到这个动作时，可以打开应用的命令菜单：Windows用 **Ctrl+Shift+P**，Mac用 **⌘⇧P**，搜索 **Open folder**。命令菜单是按名称寻找应用操作的地方，和聊天输入框是两处；把「Open folder」当作消息发出去，起不到打开文件夹的作用。
+
+<!-- diagram: FIG-003 -->
+![Mac文件夹选择器局部：先核对顶部位置，再选择右下角Open；Cancel位于Open左侧。](../assets/illustrations/FIG-003/revisions/zh-CN/r02/zh-CN.png)
+
+*图：Mac文件夹选择窗口：先核对当前位置，选中本书的「我的待办」文件夹，再用Open确认。图中省略来源的文件名和路径。*
+<!-- /diagram: FIG-003 -->
+
+<!-- diagram: FIG-004 -->
+![Windows日文文件夹选择器下方有目录字段，下面是选择文件夹和取消按钮；中文箭头分别提示核对目录与确认选择。](../assets/illustrations/FIG-004/revisions/zh-CN/r02/zh-CN.png)
+
+*图：Windows日文选择器的下部：先核对「フォルダー」一栏，再按「フォルダーの選択」确认。中文系统的对应动作是选择文件夹。*
+<!-- /diagram: FIG-004 -->
 
 ### 确认连接的是电脑上的哪一处
 
@@ -52,13 +77,13 @@
 ### 已有项目的另一种入口
 
 
+刚才已经用Open folder连接了正确文件夹，可以直接看下一小节。如果你原来建过项目，但还没有连接本地目录，可以从项目菜单进入Edit project，再选择 **Add folder（添加文件夹）**，选中要使用的目录。
+
 <!-- diagram: FIG-028 -->
 ![Source folders下方，上行是Documents文件夹和移除叉号，下行是Add folder；两条作者圈注分别指出已关联的文件夹与添加入口。](../assets/illustrations/FIG-028/revisions/zh-CN/r01/zh-CN.png)
 
 *图：Mac创建项目界面的文件夹列表局部：已有目录列在上方，Add folder用于添加。Documents是来源图片中的示例名称；使用时选择自己的材料文件夹。*
 <!-- /diagram: FIG-028 -->
-
-刚才已经用Open folder连接了正确文件夹，可以直接看下一小节。如果你原来建过项目，但还没有连接本地目录，可以从项目菜单进入Edit project，再选择 **Add folder（添加文件夹）**，选中要使用的目录。
 
 项目可以关联多个文件夹。若已有多个目录，指向其中一个并选择 **Make primary**，可以把它设为主要工作文件夹，新的任务从这里开始。已经打开的旧任务仍留在原来的位置，所以设置之后要从这个项目新开任务。本例只需要「我的待办」这一处。
 

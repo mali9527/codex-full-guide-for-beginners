@@ -594,6 +594,18 @@ diagrams:
   unit: plugins
   type: illustration
   spec: assets/illustrations/FIG-023/brief.yaml
+- id: FIG-030
+  unit: web-search
+  type: illustration
+  spec: assets/illustrations/FIG-030/brief.yaml
+- id: FIG-031
+  unit: clear-requests
+  type: illustration
+  spec: assets/illustrations/FIG-031/brief.yaml
+- id: FIG-032
+  unit: feedback
+  type: illustration
+  spec: assets/illustrations/FIG-032/brief.yaml
 toolkit: 0.1.0
 published:
   version: v2026.09.1-rc.1

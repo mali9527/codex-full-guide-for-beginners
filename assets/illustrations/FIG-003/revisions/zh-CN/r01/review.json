@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "ac31fcca724a9a0a0afe8527827cd12b4924bafc2d46ace3fe0a900501929eaa",
+  "input_fingerprint": "2fc128e7e78386de7c76b1ec71ec2928453351a87b93d22e917a760beeffbb7d",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-toucan-mac-picker-20261004": "c3fe6a23eaa70fd968e3e39534719d234927270e3da0db780a16c2bc671719ba"
+  }
+}

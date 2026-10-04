@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-015",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 482510,
+    "sha256": "c687deea3d1db05dfa443e79fa05bf26bb3c581d990d0b4f463e421dee14ae46"
+  },
+  "input_fingerprint": "06e65a9aab82dcace27724d50c5b01b1f89615ff082160df8beb80ccd21f816d",
+  "tool": "image_gen.imagegen",
+  "receipt": {
+    "input_fingerprint": "06e65a9aab82dcace27724d50c5b01b1f89615ff082160df8beb80ccd21f816d",
+    "tool": "image_gen.imagegen",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-mirror-artifact-viewer-20261004",
+        "role": "interface",
+        "sha256": "14ede7fe36f37ba6b431c6ddfb1518843e975dfc5a5529772230be771a67594c",
+        "passed": true
+      }
+    ],
+    "original_output": "exec-eb8d5647-f2b1-443c-b412-24c76fb5a228.png",
+    "output_sha256": "17b86aefeb2c56193d46af5d83258a16a91905f3ae405bfa76faab42bdd4ea92",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "max_channel_delta": 17,
+    "additional_inputs": [
+      {
+        "role": "edit-target",
+        "path": "FIG-015-candidate-r01.png",
+        "sha256": "617f8badc1829c595f9b02228a6b9d1a1205f4f6413abca8ca28b63432e2d783",
+        "passed": true
+      }
+    ],
+    "postprocessing": {
+      "authorization": "User explicitly extended Python/Pillow grayscale and size-only authorization to these remaining 16 images on 2026-10-04.",
+      "software": "Pillow 12.3.0",
+      "source_sha256": "17b86aefeb2c56193d46af5d83258a16a91905f3ae405bfa76faab42bdd4ea92",
+      "output_sha256": "c687deea3d1db05dfa443e79fa05bf26bb3c581d990d0b4f463e421dee14ae46",
+      "operations": [
+        "Pillow.convert(L); text and composition preserved"
+      ],
+      "original_size": [
+        1448,
+        1086
+      ],
+      "final_size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "created_at": "2026-10-04T11:49:52.386925+00:00"
+}

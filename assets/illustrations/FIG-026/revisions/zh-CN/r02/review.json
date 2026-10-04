@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "bbc05818f010e97294b82945b1998db041700ee8a6cc8c0f9b989fa3c839f346",
+  "input_fingerprint": "ed19da1f6d5ba823f685816b837af1bbb0711d53fd4e2973ca58375921e83421",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-mirror-create-automation-20261004": "03b228467ff662313e9e095299cdc3e9fa25d1bed57c69d203517a717c3a1e23"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：定时任务创建表单依次包含Name、Projects、Prompt和Schedule，右下是Create；中文说明对应名称、项目、每次要求和时间。 图片字节、标签、图注和真实参考均未变。"
+}

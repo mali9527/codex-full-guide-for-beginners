@@ -1,6 +1,6 @@
 title: 创建定时任务时要核对什么？
 caption: 创建表单依次核对名称（Name）、项目（Projects）、每次要求（Prompt）和时间（Schedule）。看到这张表单还不等于保存成功，完成创建后仍要到Scheduled核对实际安排。
-alt: 纵向创建表单，依原顺序Name单行空框、Projects空框、Prompt多行空框、Schedule时间区无字留白，右下Create按钮。保持全部英文标签大字清晰。外围中文提示「名称」「项目」「每次要求」「时间」分别与四字段平行排列，小箭头指对应标签。不能写具体时间、项目或成功状态。不要增加标题。
+alt: 定时任务创建表单依次包含Name、Projects、Prompt和Schedule，右下是Create；中文说明对应名称、项目、每次要求和时间。
 labels:
   name: Name
   projects: Projects

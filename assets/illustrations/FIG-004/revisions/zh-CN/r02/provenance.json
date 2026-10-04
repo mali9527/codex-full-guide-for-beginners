@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-004",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 516981,
+    "sha256": "1ec795be1ba23dfd3b5defe5ec8678cc87bb83ebc1817aab40d85b1a1b36ba68"
+  },
+  "input_fingerprint": "e3b47caecd99c8a37fc6c27b28596a97e8b94526d342e9841fbf36cd4392375d",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "e3b47caecd99c8a37fc6c27b28596a97e8b94526d342e9841fbf36cd4392375d",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-sai-windows-picker-20261004",
+        "role": "interface",
+        "sha256": "fa7910e44ecc872afdf87fd9990fce8e7cf585dab9bc43b1c370d281f8256744",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "1ec795be1ba23dfd3b5defe5ec8678cc87bb83ebc1817aab40d85b1a1b36ba68",
+      "input_fingerprint": "f24192edf70f9770a2a8dd21f0f3153a25b03d1d974f22a0723b3c9df38e326e"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：Windows日文文件夹选择器下方有目录字段，下面是选择文件夹和取消按钮；中文箭头分别提示核对目录与确认选择。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:10.274047+00:00"
+}

@@ -1,0 +1,38 @@
+kind: concept
+form: relationship
+reader_question: 一句模糊要求该补哪些信息？
+takeaway: 从用途和当前材料出发，说清保留条件、保存位置和检查依据。
+source_sections:
+- 一段完整请求可以这样长出来
+placement: 一段完整请求可以这样长出来
+composition: 中央一张小便条写说清这次要什么，四周四张便条分别写用途/每天扫一眼、材料/以当前版本为准、边界/事实与状态不变、交付/另存后对照核查；四条简单无方向连线，不表现软件按钮或强制四步。文字大而留白充足。
+content_guard: 仅依据本书已写内容；统一1448×1086细方格紙、黑笔、中性灰、不透明；图中文字仅使用labels，不增加标题、图注或编号，不暗示产品保证。
+text_roles:
+  use:
+    role: author
+  use_note:
+    role: author
+  source:
+    role: author
+  source_note:
+    role: author
+  boundary:
+    role: author
+  boundary_note:
+    role: author
+  deliver:
+    role: author
+  deliver_note:
+    role: author
+  center:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 658b65b924e24c55c5e66e3944474bc8758aceddbf0a3193aa1f396b65f9f5c9
+  reviewed_by: Codex：本轮回读全章后补充概念配图研究
+  checked_on: '2026-10-04'
+  reason: 本章判断容易混淆，图形并列有助于回看。
+  benefit: 从用途和当前材料出发，说清保留条件、保存位置和检查依据。
+labels:
+  zh-CN: labels.zh-CN.yaml

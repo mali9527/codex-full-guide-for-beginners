@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-011",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 519386,
+    "sha256": "a9b10171656f902bdc1f9dc4933f79445d5c3b7e4a31bf8e9e67f206077ed963"
+  },
+  "input_fingerprint": "e54ff2cd13a9bf57d50f33d15f41864ea0c0c07013fb33018e1d8328cdc5952e",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "e54ff2cd13a9bf57d50f33d15f41864ea0c0c07013fb33018e1d8328cdc5952e",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-ainova-astra-first-screen-20261004",
+        "role": "interface",
+        "sha256": "62d2cb7d57a79415d1d213f1efe2714d6339ebac3e4a46f7aece8176d187539a",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "a9b10171656f902bdc1f9dc4933f79445d5c3b7e4a31bf8e9e67f206077ed963",
+      "input_fingerprint": "7332508a5b47a825eaf865eb7ad429e5ee7b0475cc66da8cd44b39530701ad46"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：模型控件中，GPT-6 Astra右边是Extra High和下拉箭头；中文圈注分别指出模型与推理投入。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:14.342564+00:00"
+}

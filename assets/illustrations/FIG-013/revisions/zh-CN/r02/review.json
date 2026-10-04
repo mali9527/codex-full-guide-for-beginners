@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "bdb76452996ef43669d3a6990245c90e19ac26f9ca6f815832df0671121e236d",
+  "input_fingerprint": "548634c554a91651a7138d5161a9be10a87594c649551d1524ded72bccad8e1c",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-router-follow-up-20261004": "2c218e6b7a998fdf1717637d471c9cf910e5b56a665473654f2c3fd02b76691a"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：跟进行为设置包含排队和引导：Queue把补充留到下一轮，Steer影响当前运行。图中来源选择了排队。 图片字节、标签、图注和真实参考均未变。"
+}

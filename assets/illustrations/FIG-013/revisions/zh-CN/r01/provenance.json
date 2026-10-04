@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-013",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 488818,
+    "sha256": "bdb76452996ef43669d3a6990245c90e19ac26f9ca6f815832df0671121e236d"
+  },
+  "input_fingerprint": "68307d019defa187babe45fb59112c3564f4e0591395bb2bdc0af78ec8ed8f54",
+  "tool": "image_gen",
+  "receipt": {
+    "input_fingerprint": "68307d019defa187babe45fb59112c3564f4e0591395bb2bdc0af78ec8ed8f54",
+    "tool": "image_gen",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-router-follow-up-20261004",
+        "role": "interface",
+        "sha256": "2c218e6b7a998fdf1717637d471c9cf910e5b56a665473654f2c3fd02b76691a",
+        "passed": true
+      }
+    ],
+    "actual_call_file": "FIG-013-call-r01.json",
+    "notes": "Actual image_gen call; all pack reference image paths passed.",
+    "postprocessing": {
+      "authorization": "User explicitly extended Python/Pillow grayscale and size-only authorization to these remaining 16 images on 2026-10-04.",
+      "software": "Pillow 12.3.0",
+      "source_sha256": "544a42cf1c75288e448e9c55bddfcb6d3e85244b9eba44eb204cb844fbeab318",
+      "output_sha256": "bdb76452996ef43669d3a6990245c90e19ac26f9ca6f815832df0671121e236d",
+      "operations": [
+        "Pillow.convert(L); text and composition preserved"
+      ],
+      "original_size": [
+        1448,
+        1086
+      ],
+      "final_size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "created_at": "2026-10-04T11:49:51.139373+00:00"
+}

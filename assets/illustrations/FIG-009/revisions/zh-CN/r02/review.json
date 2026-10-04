@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "2cd11401e526a1e35785d448ed18da8d374fc76291a1c56a5ddb4fb1be439712",
+  "input_fingerprint": "abb84be8871c87e77643bd5445495b05ce2b8566d1410fa06825e74f2641a8ba",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-union-windows-first-20261004": "62f743331eaa9b6e467136a93ffe02700d4565bae0853aafdd421908666c21f2"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：Windows日文首屏左侧是新聊天与项目，右侧下方是项目选择条和输入区；中文圈注提示先选项目再填写要求。 图片字节、标签、图注和真实参考均未变。"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-004",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 516981,
+    "sha256": "1ec795be1ba23dfd3b5defe5ec8678cc87bb83ebc1817aab40d85b1a1b36ba68"
+  },
+  "input_fingerprint": "f24192edf70f9770a2a8dd21f0f3153a25b03d1d974f22a0723b3c9df38e326e",
+  "tool": "image_gen",
+  "receipt": {
+    "input_fingerprint": "f24192edf70f9770a2a8dd21f0f3153a25b03d1d974f22a0723b3c9df38e326e",
+    "tool": "image_gen",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-sai-windows-picker-20261004",
+        "role": "interface",
+        "sha256": "fa7910e44ecc872afdf87fd9990fce8e7cf585dab9bc43b1c370d281f8256744",
+        "passed": true
+      }
+    ],
+    "actual_call_file": "FIG-004-call-r01.json",
+    "notes": "Actual image_gen call; all pack reference image paths passed.",
+    "postprocessing": {
+      "authorization": "User explicitly extended Python/Pillow grayscale and size-only authorization to these remaining 16 images on 2026-10-04.",
+      "software": "Pillow 12.3.0",
+      "source_sha256": "9ea5946a9ea38600fe9a3c0b6e556281050cb0d038cd2d25aa10a3695cef840a",
+      "output_sha256": "1ec795be1ba23dfd3b5defe5ec8678cc87bb83ebc1817aab40d85b1a1b36ba68",
+      "operations": [
+        "Pillow.convert(L); text and composition preserved"
+      ],
+      "original_size": [
+        1448,
+        1086
+      ],
+      "final_size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "created_at": "2026-10-04T11:48:43.775868+00:00"
+}

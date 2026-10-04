@@ -4,6 +4,13 @@
 
 ## 先找到当前任务的设置
 
+
+<!-- diagram: FIG-011 -->
+![模型控件中，GPT-6 Astra右边是Extra High和下拉箭头；中文圈注分别指出模型与推理投入。](../assets/illustrations/FIG-011/revisions/zh-CN/r02/zh-CN.png)
+
+*图：模型控件的收起状态：GPT-6 Astra是型号，Extra High是来源当时选用的推理投入。本书不把这个组合当作默认或入门推荐；可选档位需打开自己当前的菜单查看。*
+<!-- /diagram: FIG-011 -->
+
 打开准备继续的任务，查看输入框下方的模型与推理控件。每个任务的选择各自独立，先读当前显示，再决定要不要改。
 
 控件可能先显示 **Power** 预设。一个预设就是一组搭配好的型号和推理投入，你沿着较快或思考较多的方向挑一个就行。官方页面当前展示的六个预设依次是Luna High、Sol Light、Sol Medium、Astra Light、Astra Medium和Astra Extra High，其中Sol Light只是该示例选中的一档，部分付费档位没有Astra Extra High。这张演示不代表每个账号的默认设置；实际型号、档位和初始选中项，以你的控件显示为准。

@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-022",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 506129,
+    "sha256": "5259ca23e2a233e89c164ea507a3c97abf8a20e0ec78a6197af0b3114dddae12"
+  },
+  "input_fingerprint": "b506cfa9c9b61b55c0b884094105d5c9b100f0004b2dcb2411a2ce77c6f3336e",
+  "tool": "image_gen",
+  "receipt": {
+    "input_fingerprint": "b506cfa9c9b61b55c0b884094105d5c9b100f0004b2dcb2411a2ce77c6f3336e",
+    "tool": "image_gen",
+    "model": "unknown",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "passed": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "passed": true
+      },
+      {
+        "id": "UI-mirror-skill-picker-20261004",
+        "role": "interface",
+        "sha256": "dec80fb4786ba137af79f50b75ead4c4408e49aeeef4259f61dc5e7e6da33d30",
+        "passed": true
+      }
+    ],
+    "actual_call_file": "FIG-022-call-r02.json",
+    "notes": "Actual image_gen call, all pack references passed via referenced_image_paths; r02 also passed prior candidate as fourth edit target.",
+    "postprocessing": {
+      "authorization": "User explicitly extended Python/Pillow grayscale and size-only authorization to these remaining 16 images on 2026-10-04.",
+      "software": "Pillow 12.3.0",
+      "source_sha256": "b5d252d2f349010a1bb6a6aa3d992fd75721e188905701868b35fbfd29cc99f1",
+      "output_sha256": "5259ca23e2a233e89c164ea507a3c97abf8a20e0ec78a6197af0b3114dddae12",
+      "operations": [
+        "Pillow.convert(L); text and composition preserved",
+        "Pillow.resize((1448,1086), LANCZOS)"
+      ],
+      "original_size": [
+        1447,
+        1087
+      ],
+      "final_size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "created_at": "2026-10-04T11:49:54.169502+00:00"
+}

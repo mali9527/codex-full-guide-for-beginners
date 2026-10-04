@@ -1,6 +1,6 @@
 title: 在哪里找插件，在哪里管理？
 caption: Plugins中先查找需要的能力，再打开详情核对提供者和条件。Manage是管理入口；卡片上出现加号，不表示外部服务已经连接。
-alt: 放大插件目录关键区域：顶栏左Plugins右Manage；中部上方Search plugins搜索框；下方仅一张Computer Use插件行，左通用空白图标，右加号按钮。中文作者「查找能力」箭头指搜索框，「管理已装插件」箭头指Manage。不画官网宣传横幅、长说明、其他插件、已登录或安装成功状态。
+alt: 插件目录上方有Plugins、Manage与Search plugins，下方Computer Use条目右侧有加号；中文圈注区分查找能力和管理已装插件。
 labels:
   plugins: Plugins
   manage: Manage

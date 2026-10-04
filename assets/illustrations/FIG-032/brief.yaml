@@ -1,0 +1,32 @@
+kind: concept
+form: comparison
+reader_question: 第一版不满意时，该反馈哪一种问题？
+takeaway: 先辨清事实错误、表达不便和新进展，再给相应依据或要求。
+source_sections:
+- 让它检查，但你要看证据
+placement: 让它检查，但你要看证据
+composition: 横排三组纸质便条，每组上下排列，用短向下箭头连接。事实错了→带依据纠正；读着不便→指出具体困难；有新进展→说明新旧变化。三个分组之间不连线，没有打分和模型图标，不画软件界面。
+content_guard: 仅依据本书已写内容；统一1448×1086细方格紙、黑笔、中性灰、不透明；图中文字仅使用labels，不增加标题、图注或编号，不暗示产品保证。
+text_roles:
+  wrong:
+    role: author
+  wrong_note:
+    role: author
+  unclear:
+    role: author
+  unclear_note:
+    role: author
+  new:
+    role: author
+  new_note:
+    role: author
+schema_version: 2
+style: notebook-pen-v1
+analysis:
+  source_sha256: 1acc5cbd29241bd5d7d9d4373fc7f605370f71786cf4c89232e919b94a7d3e0e
+  reviewed_by: Codex：本轮回读全章后补充概念配图研究
+  checked_on: '2026-10-04'
+  reason: 本章判断容易混淆，图形并列有助于回看。
+  benefit: 先辨清事实错误、表达不便和新进展，再给相应依据或要求。
+labels:
+  zh-CN: labels.zh-CN.yaml

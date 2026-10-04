@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "ef399651f498ba7030b81f30e3f0a4c260bef1a63efee0c531d5ee4930b45952",
+  "input_fingerprint": "17c62937c85cb46436c521a5039c186b82c2b1693434d2810c69fcac4fa26274",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-ren-permission-menu-20261004": "5b1b6cbbe1d7d63427ad36c734c246aa84376b31ecd2b04012d07f8fd0793f91"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：日文权限菜单从上到下为请求批准、帮我批准和完全访问，右侧中文与三行对齐；来源图片的勾选在第二项。 图片字节、标签、图注和真实参考均未变。"
+}

@@ -1,0 +1,10 @@
+title: 第一版不满意时，该反馈哪一种问题？
+caption: 先辨清事实错误、表达不便和新进展，再给相应依据或要求。
+alt: 先辨清事实错误、表达不便和新进展，再给相应依据或要求。
+labels:
+  wrong: 事实错了
+  wrong_note: 带依据纠正
+  unclear: 读着不便
+  unclear_note: 指出具体困难
+  new: 有新进展
+  new_note: 说明新旧变化

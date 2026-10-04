@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-009",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 515954,
+    "sha256": "2cd11401e526a1e35785d448ed18da8d374fc76291a1c56a5ddb4fb1be439712"
+  },
+  "input_fingerprint": "abb84be8871c87e77643bd5445495b05ce2b8566d1410fa06825e74f2641a8ba",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "abb84be8871c87e77643bd5445495b05ce2b8566d1410fa06825e74f2641a8ba",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-union-windows-first-20261004",
+        "role": "interface",
+        "sha256": "62f743331eaa9b6e467136a93ffe02700d4565bae0853aafdd421908666c21f2",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "2cd11401e526a1e35785d448ed18da8d374fc76291a1c56a5ddb4fb1be439712",
+      "input_fingerprint": "217ffa586ec4e13370147825e5046ab292ce19772afd92db364703161dc044f0"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：Windows日文首屏左侧是新聊天与项目，右侧下方是项目选择条和输入区；中文圈注提示先选项目再填写要求。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:12.325910+00:00"
+}

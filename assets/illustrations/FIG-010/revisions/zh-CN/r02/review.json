@@ -1,0 +1,20 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "7c6f1bcab416d3d683f5ffa810dac385d94fec9c9e88f252153b360b22744952",
+  "input_fingerprint": "bfdbdbf8dabe47fb7956c96a8d6158d4f04b29e7cc4441c092e6ed7f159cb33c",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-issue-usage-windows-20261004": "020c6fad998eecc88e95c7a646bc9640f3c4fc26a226717b808f1ada9eacb623"
+  },
+  "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：用量卡片按五小时和每周分两行，分别显示剩余比例与重置时间；图中100%和62%是来源图片的历史数值。 图片字节、标签、图注和真实参考均未变。"
+}

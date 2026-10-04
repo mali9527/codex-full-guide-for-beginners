@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "figure": "FIG-013",
+  "language": "zh-CN",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 0,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 488818,
+    "sha256": "bdb76452996ef43669d3a6990245c90e19ac26f9ca6f815832df0671121e236d"
+  },
+  "input_fingerprint": "548634c554a91651a7138d5161a9be10a87594c649551d1524ded72bccad8e1c",
+  "tool": "editorial-alt-review-no-generation",
+  "receipt": {
+    "mode": "alt-review",
+    "tool": "editorial-alt-review-no-generation",
+    "input_fingerprint": "548634c554a91651a7138d5161a9be10a87594c649551d1524ded72bccad8e1c",
+    "references": [
+      {
+        "id": "paper",
+        "role": "paper",
+        "sha256": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+        "reused": true
+      },
+      {
+        "id": "style",
+        "role": "style",
+        "sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+        "reused": true
+      },
+      {
+        "id": "UI-router-follow-up-20261004",
+        "role": "interface",
+        "sha256": "2c218e6b7a998fdf1717637d471c9cf910e5b56a665473654f2c3fd02b76691a",
+        "reused": true
+      }
+    ],
+    "source": {
+      "language": "zh-CN",
+      "revision": "r01",
+      "image_sha256": "bdb76452996ef43669d3a6990245c90e19ac26f9ca6f815832df0671121e236d",
+      "input_fingerprint": "68307d019defa187babe45fb59112c3564f4e0591395bb2bdc0af78ec8ed8f54"
+    },
+    "fact_assessment": {},
+    "alt_assessment": "对照本轮已查看的完整图、358px预览及关联小节，将绘图命令改为画面说明：跟进行为设置包含排队和引导：Queue把补充留到下一轮，Steer影响当前运行。图中来源选择了排队。 图片字节、标签、图注和真实参考均未变。",
+    "reviewer": "Codex",
+    "checked_on": "2026-10-04"
+  },
+  "created_at": "2026-10-04T12:11:16.354322+00:00"
+}

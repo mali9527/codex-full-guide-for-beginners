@@ -1,0 +1,19 @@
+{
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "structure": "pass",
+  "localization": "pass",
+  "interface": "pass",
+  "placement": "pass",
+  "image_sha256": "1ec795be1ba23dfd3b5defe5ec8678cc87bb83ebc1817aab40d85b1a1b36ba68",
+  "input_fingerprint": "f24192edf70f9770a2a8dd21f0f3153a25b03d1d974f22a0723b3c9df38e326e",
+  "language": "zh-CN",
+  "reviewer": "Codex",
+  "checked_on": "2026-10-04",
+  "references": {
+    "UI-sai-windows-picker-20261004": "fa7910e44ecc872afdf87fd9990fce8e7cf585dab9bc43b1c370d281f8256744"
+  }
+}
