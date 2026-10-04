@@ -50,4 +50,4 @@ Choose **Watch → Custom → Releases** for version notifications. [Report a co
 
 For a terminal-based introduction to another tool, see [Claude Code: A Beginner's Guide](https://github.com/mali9527/claude-code-full-guide-for-beginners), also with a complete Chinese book and an English overview.
 
-[Releases](https://github.com/mali9527/codex-full-guide-for-beginners/releases) preserve fixed editions. © 2026 Ma Li. All rights reserved for text, original examples and illustrations; public reading does not grant permission to republish, adapt or use them commercially. See [LICENSE](LICENSE).
+[Releases](https://github.com/mali9527/codex-full-guide-for-beginners/releases) preserve fixed editions. © 2026 Ma Li. Original book text, example materials and teaching illustrations are licensed under **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**: noncommercial sharing, translation and adaptation with attribution and ShareAlike. **Commercial use is not permitted under this license.** See [LICENSE](LICENSE) for the full conditions and the scope of software and other materials.

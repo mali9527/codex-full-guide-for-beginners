@@ -1,7 +1,37 @@
-Copyright (c) 2026 马力 (Ma Li). All rights reserved.
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+SPDX-License-Identifier: CC-BY-NC-SA-4.0
 
-本仓库的图书正文、原创案例和原创插图保留作者版权。作者授权本仓库公开展示，供读者阅读并反馈；本声明不授予一般性的转载、改编、再分发或商用许可。需要相关许可，请另行取得作者授权。
+Copyright (c) 2026 马力 (Ma Li).
 
-Public access to this repository does not grant a general license to republish, adapt, redistribute or commercially exploit the book text, original examples or original illustrations. Contact the author for additional permissions.
+授权范围 / Licensed material
 
-This notice does not replace any applicable third-party license. Third-party software, dependencies and materials retain their existing notices and licenses.
+除另有标注外，本仓库中作者有权许可的原创正文、原创案例材料、原创教学插图及配套读者文档，采用 CC BY-NC-SA 4.0（署名—非商业性使用—相同方式共享）许可。作者保留版权。
+
+允许遵守许可条件的非商业性复制、分享、翻译和改编：须适当署名，保留来源与许可信息，提供许可链接并标明修改；分享改编作品须采用该协议允许的相同或兼容许可，不得附加限制他人行使许可权利的法律条款或技术措施。
+
+本许可不授予商业使用权。不得依据本许可销售本书内容或教学图，或将其复制、改编后用于付费课程、商业培训等商业用途。商业性以协议中“主要目的为获得商业优势或金钱回报”的定义为准。把学到的知识、方法用于自己的工作，不等于复制、改编或再分发本书内容。
+
+范围与保留权利 / Scope and exclusions
+
+- 第三方原文及其译文、截图、产品界面要素、标识和其他材料保留相应权利及已有许可；本书的许可不为这些材料提供额外授权。
+- 作者头像与品牌素材不在上述正文及教学图授权范围内。本声明不授予商标、肖像或背书权利，也不撤回此前已经有效授出的许可。
+- 工具程序、构建脚本、独立示例程序和依赖遵循各自已有许可；本声明不为软件新增 MIT 或其他授权。没有单独软件许可的文件不因本声明而获得新的软件使用授权。
+- 公共领域内容以及适用法律允许的合理使用等例外，不受本许可条件限制。是否构成法定例外依适用法律判断，不以引用段落数量或署名一项代替判断。
+
+English notice
+
+Except where otherwise indicated, the original book text, example materials, teaching illustrations and reader documentation that the author has the right to license are licensed under CC BY-NC-SA 4.0. Copyright is retained by the author.
+
+Noncommercial sharing, translation and adaptation are permitted subject to attribution, retention of source and license information, a license link, identification of changes, and the license's ShareAlike and no-additional-restrictions conditions. Commercial exploitation of the licensed material is not granted, including selling copies or reproducing or adapting it for paid courses or commercial training. Applying the knowledge or methods you learn in your own work is distinct from reproducing, adapting or distributing the book.
+
+Third-party material and its translations retain their applicable rights and licenses. Author portraits and branding are outside this content grant; no trademark, personality or endorsement rights are granted. Software and dependencies retain their existing terms; this notice grants no new software license. Applicable copyright exceptions and limitations remain unaffected. Previously valid license grants are not revoked.
+
+许可全文 / Full license
+
+本文件说明授权范围并概述条件，不修改协议条款；许可全文为准。
+This notice identifies the licensed material and summarizes the terms; it does not modify the license. The full legal code governs:
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+中文说明 / Human-readable summary:
+https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans

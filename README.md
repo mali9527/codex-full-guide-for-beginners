@@ -112,6 +112,6 @@
 
 本页和全书随维护稿更新。[发行页](https://github.com/mali9527/codex-full-guide-for-beginners/releases)保留固定版本，当前发行没有PDF附件。
 
-© 2026 马力。正文、原创案例与插图保留版权；免费阅读不自动授予转载、改编或商用许可，详见[LICENSE](LICENSE)。第三方工具和依赖保留各自许可。
+© 2026 马力。本书原创正文、案例材料与教学插图采用 **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)**：允许署名后的非商业分享、翻译与改编，分享改编版须相同方式共享；**不得用于商业用途**。具体条件、代码和其他素材的范围见 [LICENSE](LICENSE)。
 
 </details>
