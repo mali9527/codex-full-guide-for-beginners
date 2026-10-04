@@ -10,7 +10,11 @@ Author: Ma Li　|　AI collaboration: Codex
 
 Learn where to put your files, how to start a task, and how to find, check and revise the result. This guide assumes everyday computer skills, with no programming or Codex experience.
 
-**[Start with Chapter 1 (Chinese)](manuscript/intro.md)** · [Read the complete draft (Chinese)](全书.md)
+## [Read the whole book on one page (Chinese) →](全书.md)
+
+The opening guide, all 24 chapters and the appendix appear in reading order on a single page. Scroll from beginning to end without opening each chapter separately. No download, Git installation or repository clone is needed. The full book is in Chinese; this page is an English overview.
+
+[Jump to Chapter 1 (Chinese)](全书.md#intro) · [Browse by topic](#what-the-guide-covers)
 
 This October 2026 documentation-based update includes an opening guide, 24 Chinese chapters, an appendix, 10 concept illustrations and 21 interface drawings. Selected sections now cover GPT-6.1 Sol, Fast usage, steering and desktop archive recovery, checked against official documentation on October 4. Interface details now cover project folders, the first screen, effort, permissions, results and commonly used features. This is not a claim that every workflow has been tested on Windows, Mac or every account. See [verification scope](docs/verification-scope.en.md).
 
@@ -30,7 +34,7 @@ The [GPT-6 Astra opening guide](manuscript/latest-models.md) connects model capa
 
 The first complete example turns [two original notes into a to-do list](examples/ch04-notes-to-todos/README.md). Later chapters use an original [reference-index example](examples/ch17-reference-index/README.md). Chapters and example text are in Chinese; a full English translation is not yet available.
 
-Star the repository to keep it handy for settings and troubleshooting. Use Watch → Custom → Releases for version updates. [Report a correction](https://github.com/mali9527/codex-full-guide-for-beginners/issues/new/choose) with the chapter, environment and what you observed. Remove personal information from screenshots.
+Star the repository to return to the book and look up settings or troubleshooting. Share the [single-page Chinese book](全书.md) with someone starting out with Codex. Use Watch → Custom → Releases for version updates. [Report a correction](https://github.com/mali9527/codex-full-guide-for-beginners/issues/new/choose) with the chapter, environment and what you observed. Remove personal information from screenshots.
 
 See [sources and acknowledgements (Chinese)](参考来源与致谢.md), [releases](https://github.com/mali9527/codex-full-guide-for-beginners/releases) and the sister [Claude Code guide](https://github.com/mali9527/claude-code-full-guide-for-beginners) (Chinese chapters, English overview).
 
